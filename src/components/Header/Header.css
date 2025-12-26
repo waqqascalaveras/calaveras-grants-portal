@@ -1,0 +1,54 @@
+.header {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-left svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  color: #1a202c;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  color: #718096;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+.cache-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cache-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #718096;
+  font-size: 0.85rem;
+}
