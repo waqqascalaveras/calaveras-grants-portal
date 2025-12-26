@@ -1,0 +1,163 @@
+.grant-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-left: 4px solid #667eea;
+}
+
+.grant-card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.grant-closed {
+  opacity: 0.7;
+  border-left-color: #cbd5e0;
+}
+
+.grant-closed:hover {
+  opacity: 0.85;
+}
+
+.grant-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grant-title-section h3 {
+  font-size: 1.25rem;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.grant-agency {
+  color: #667eea;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.status-open {
+  background: #c6f6d5;
+  color: #22543d;
+}
+
+.status-forecasted {
+  background: #feebc8;
+  color: #7c2d12;
+}
+
+.status-closed {
+  background: #e2e8f0;
+  color: #4a5568;
+}
+
+.grant-meta {
+  margin-bottom: 1.25rem;
+}
+
+.grant-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.category-tag {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.grant-details {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #2d3748;
+  font-size: 0.9rem;
+}
+
+.detail-row svg {
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.match-required svg {
+  color: #ed8936;
+}
+
+.grant-purpose {
+  color: #4a5568;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #e2e8f0;
+}
+
+.grant-purpose strong {
+  color: #2d3748;
+}
+
+.grant-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.view-details-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.view-details-btn:hover {
+  background: #5a67d8;
+  transform: translateX(2px);
+}
+
+.contact-info {
+  color: #718096;
+  font-size: 0.85rem;
+}
