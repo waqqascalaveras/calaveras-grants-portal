@@ -7,7 +7,6 @@
  */
 export const isEligibleForCounty = (grant) => {
   const applicantType = grant.ApplicantType?.toLowerCase() || '';
-  const geography = grant.Geography?.toLowerCase() || '';
   
   // Eligible if it accepts public agencies, local governments, or counties
   const eligibleTypes = [
