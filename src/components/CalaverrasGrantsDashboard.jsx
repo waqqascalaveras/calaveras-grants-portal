@@ -382,9 +382,6 @@ const CalaverraGrantsDashboard = () => {
       </div>
     </div>
   );
-                      {grant.ContactInfo.split(';').slice(0, 1).map((info, idx) => (
-                        <span key={idx}>{info.trim()}</span>
-                      ))}
                     </div>
                   )}
                 </div>
