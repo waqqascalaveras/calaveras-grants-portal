@@ -241,20 +241,13 @@ See [CHANGELOG.md](./CHANGELOG.md) for version history.
 
 ## 👥 Team
 
-- **Project Sponsor**: Calaveras County Public Health
-- **Development Team**: [County IT Department]
-- **Project Lead**: Waqqas (Health Education Specialist II)
+- **Project Lead**: Waqqas Hanafi
 
 ## 📞 Support
 
 For technical issues or questions:
-- **Email**: [it-support@co.calaveras.ca.us]
-- **Phone**: [County IT Help Desk]
+- **Email**: [WHanafi@calaverascounty.gov]
 - **Hours**: Monday-Friday, 8:00 AM - 5:00 PM PST
-
-For grant-related questions:
-- **Email**: [grants@co.calaveras.ca.us]
-- **Phone**: [Grants Coordinator]
 
 ## 📄 License
 
