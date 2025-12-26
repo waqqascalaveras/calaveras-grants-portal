@@ -4,7 +4,7 @@ import {
 } from "recharts";
 import { STATUS_COLORS } from "../config/colors";
 
-export default function GrantScatterPlot({ data, onGrantClick }) {
+export default function GrantScatterPlot({ data, onGrantClick: _onGrantClick }) {
   return (
     <div style={{ background: "var(--cream)", borderRadius: 4, padding: "1.5rem", margin: "2rem 0", border: "1px solid var(--stone-gray)" }}>
       <h3 style={{ color: "var(--forest-green)", marginBottom: 16 }}>Grant Landscape: Amount vs. Deadline</h3>
