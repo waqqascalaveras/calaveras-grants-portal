@@ -382,12 +382,6 @@ const CalaverraGrantsDashboard = () => {
       </div>
     </div>
   );
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })
         )}
       </div>
 
