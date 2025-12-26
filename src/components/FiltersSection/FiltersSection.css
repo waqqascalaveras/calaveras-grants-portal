@@ -5,10 +5,10 @@
 }
 
 .filters-container {
-  background: white;
-  border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--cream);
+  border-radius: 4px;
+  padding: 1.25rem;
+  box-shadow: none;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   gap: 1.5rem;
@@ -20,19 +20,19 @@
   align-items: center;
   gap: 0.75rem;
   padding: 0.75rem 1rem;
-  border: 2px solid #e2e8f0;
-  border-radius: 8px;
-  background: #f7fafc;
-  transition: all 0.2s;
+  border: 2px solid var(--stone-gray);
+  border-radius: 4px;
+  background: var(--cream);
+  transition: border 0.2s;
 }
 
 .search-box:focus-within {
-  border-color: #667eea;
-  background: white;
+  border-color: var(--leaf-green);
+  background: var(--cream);
 }
 
 .search-box svg {
-  color: #a0aec0;
+  color: var(--leaf-green);
   flex-shrink: 0;
 }
 
