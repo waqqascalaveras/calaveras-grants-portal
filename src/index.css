@@ -7,11 +7,51 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #29422d 0%, #6b8e5e 100%);
+  color: #2e2e1f;
+}
+
+/* Forest theme color variables */
+:root {
+  --forest-green: #29422d;
+  --moss-green: #6b8e5e;
+  --earth-brown: #8b6f4e;
+  --bark-brown: #4e3b24;
+  --leaf-green: #4e7c4e;
+  --fern-green: #3c5c3c;
+  --stone-gray: #b2b2a6;
+  --cream: #f5f3e7;
+}
+
+/* Remove bubbly/round look globally */
+button, input, select, textarea, .card, .panel, .modal, .chip {
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+/* General container background */
+.container, .panel, .card {
+  background: var(--cream);
+  color: var(--bark-brown);
+  border: 1px solid var(--stone-gray);
+}
+
+/* Headings and links */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--forest-green);
+  font-family: 'Merriweather', serif;
+}
+a {
+  color: var(--leaf-green);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--earth-brown);
+  text-decoration: underline;
+}
 }
 
 code {
