@@ -97,7 +97,7 @@ const CalaverrasGrantsDashboard = () => {
       const bDeadline = new Date(b.ApplicationDeadline || '2099-12-31');
       return aDeadline - bDeadline;
     });
-  }, [grants, selectedDepartment, searchQuery, statusFilter, matchesDepartment, departments, isEligibleForCounty, isRecentlyClosed]);
+  }, [grants, selectedDepartment, searchQuery, statusFilter]);
 
   // Handle retry on error
   const handleRetry = () => {
