@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Search, Filter, Calendar, DollarSign, ExternalLink, Building2, AlertCircle, Clock, CheckCircle, Loader } from 'lucide-react';
+import { matchesDepartment } from '../utils/eligibilityFilters';
 
 const CalaverraGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
@@ -108,7 +109,6 @@ const CalaverraGrantsDashboard = () => {
   // Filter grants for Calaveras County eligibility
   const isEligibleForCounty = (grant) => {
     const applicantType = grant.ApplicantType?.toLowerCase() || '';
-    const geography = grant.Geography?.toLowerCase() || '';
     
     // Eligible if it accepts public agencies, local governments, or counties
     const eligibleTypes = [
@@ -146,15 +146,7 @@ const CalaverraGrantsDashboard = () => {
     return deadlineDate >= thirtyDaysAgo;
   };
 
-  // Match grant to department
-  const matchesDepartment = (grant, deptKey) => {
-    if (deptKey === 'all') return true;
-    
-    const dept = departments[deptKey];
-    const searchText = `${grant.Title} ${grant.Categories} ${grant.Purpose} ${grant.Description}`.toLowerCase();
-    
-    return dept.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
-  };
+
 
   // Filter and process grants
   const filteredGrants = useMemo(() => {
@@ -175,7 +167,7 @@ const CalaverraGrantsDashboard = () => {
       }
       
       // Department filter
-      if (!matchesDepartment(grant, selectedDepartment)) return false;
+      if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
       
       // Search query
       if (searchQuery) {
@@ -202,7 +194,7 @@ const CalaverraGrantsDashboard = () => {
       const bDeadline = new Date(b.ApplicationDeadline || '2099-12-31');
       return aDeadline - bDeadline;
     });
-  }, [grants, selectedDepartment, searchQuery, statusFilter]);
+  }, [grants, selectedDepartment, searchQuery, statusFilter, matchesDepartment]);
 
   // Format currency
   const formatCurrency = (amount) => {
