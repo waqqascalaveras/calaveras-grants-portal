@@ -1,9 +1,9 @@
 import React from 'react';
-import { Calendar, DollarSign, Target, AlertCircle, ExternalLink, Bookmark, Share2 } from 'lucide-react';
+import { ExternalLink, Bookmark, Share2 } from 'lucide-react';
 import { STATUS_COLORS, FUNDING_TIERS, MATCH_COLORS } from '../config/colors';
 
 // Enhanced Grant Card Component - Information Dense Design
-export default function EnhancedGrantCard({ grant, highlighted = false, viewMode = 'detailed' }) {
+export default function EnhancedGrantCard({ grant, highlighted = false }) {
   // Helper Functions
   const formatCurrency = (amount) => {
     if (!amount) return 'Not specified';
