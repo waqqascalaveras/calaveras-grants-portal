@@ -42,3 +42,19 @@ Desktop.ini
 
 # gh-pages deployment
 .cache
+
+# Cleanup artifacts
+__pycache__/
+.github_token_cache
+.upload_hashes.json
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
