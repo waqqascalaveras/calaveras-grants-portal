@@ -43,33 +43,32 @@
 }
 
 .status-badge {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  background: var(--cream);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: none;
+  transition: background 0.3s ease;
+  border-left: 4px solid var(--leaf-green);
   font-weight: 600;
   white-space: nowrap;
   flex-shrink: 0;
-}
-
+  background: var(--moss-green);
 .status-open {
   background: #c6f6d5;
   color: #22543d;
-}
-
+  opacity: 0.7;
+  border-left-color: var(--stone-gray);
 .status-forecasted {
   background: #feebc8;
   color: #7c2d12;
-}
-
-.status-closed {
-  background: #e2e8f0;
+  font-size: 1.25rem;
+  color: var(--forest-green);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
   color: #4a5568;
 }
 
-.grant-meta {
+  color: var(--leaf-green);
   margin-bottom: 1.25rem;
 }
 
