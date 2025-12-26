@@ -1,0 +1,6 @@
+# Allow all bots to access the site
+User-agent: *
+Allow: /
+
+# Sitemap location (update after deployment)
+# Sitemap: https://[your-org].github.io/calaveras-grants-portal/sitemap.xml
