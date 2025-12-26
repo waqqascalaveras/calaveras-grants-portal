@@ -1,6 +1,6 @@
 .header {
-  background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: var(--forest-green);
+  box-shadow: none;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -22,19 +22,19 @@
 }
 
 .header-left svg {
-  color: #667eea;
+  color: var(--leaf-green);
   flex-shrink: 0;
 }
 
 h1 {
   font-size: 1.75rem;
-  color: #1a202c;
+  color: var(--cream);
   font-weight: 700;
   margin: 0;
 }
 
 .subtitle {
-  color: #718096;
+  color: var(--stone-gray);
   font-size: 0.9rem;
   margin-top: 0.25rem;
 }
