@@ -122,6 +122,18 @@ Before deploying, update these placeholders:
 ⏳ Waiting for deployment
 ✅ Lint check triggered: 2025-12-26
 
+**CI Lint Enforcement:** The Test job now fails when ESLint reports errors. To check locally before pushing, run:
+
+```bash
+npm run lint
+```
+
+To auto-fix formatting issues (if you have Node.js), run:
+
+```bash
+npm run format
+```
+
 ## 🆘 Need Help?
 
 Contact your IT department with this folder. They can:
