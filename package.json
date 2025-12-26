@@ -7,12 +7,12 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/[your-org]/calaveras-grants-portal.git"
+    "url": "git+https://github.com/waqqascalaveras/calaveras-grants-portal.git"
   },
   "bugs": {
-    "url": "https://github.com/[your-org]/calaveras-grants-portal/issues"
+    "url": "https://github.com/waqqascalaveras/calaveras-grants-portal/issues"
   },
-  "homepage": "https://[your-org].github.io/calaveras-grants-portal/",
+  "homepage": "https://waqqascalaveras.github.io/calaveras-grants-portal/",
   "keywords": [
     "grants",
     "funding",
