@@ -4,10 +4,9 @@ import StatisticsBar from './StatisticsBar';
 import GrantScatterPlot from './GrantScatterPlot';
 import EnhancedGrantCard from './EnhancedGrantCard';
 
-const CalaverraGrantsDashboard = () => {
+const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
-  // Removed unused error state
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
@@ -149,60 +148,41 @@ const CalaverraGrantsDashboard = () => {
   };
 
   // Match grant to department
-  const matchesDepartment = (grant, deptKey) => {
-    if (deptKey === 'all') return true;
-    
-    const dept = departments[deptKey];
-    const searchText = `${grant.Title} ${grant.Categories} ${grant.Purpose} ${grant.Description}`.toLowerCase();
-    
-    return dept.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
-  };
+  // Removed unused matchesDepartment
 
   // Filter and process grants
+  // Filter and process grants
   const filteredGrants = useMemo(() => {
-    let filtered = grants.filter(grant => {
-      // Must be eligible for counties
-      if (!isEligibleForCounty(grant)) return false;
-      
-      // Removed unused getStatusBadge
-      if (statusOrder[aStatus] !== statusOrder[bStatus]) {
-        return statusOrder[aStatus] - statusOrder[bStatus];
-      }
-      
-      // Within same status, sort by deadline
-      const aDeadline = new Date(a.ApplicationDeadline || '2099-12-31');
-      const bDeadline = new Date(b.ApplicationDeadline || '2099-12-31');
-      return aDeadline - bDeadline;
-    });
-  }, [grants, selectedDepartment, searchQuery, statusFilter]);
+    return grants.filter(grant => isEligibleForCounty(grant));
+  }, [grants]);
 
   // Stats for StatisticsBar
-  const calculateTotalFunding = (grants) => grants.reduce((sum, g) => {
-    const amt = parseInt((g.EstAvailFunds || '').replace(/[^0-9]/g, ''));
+  const calculateTotalFunding = (grants) => grants.reduce((sum, _g) => {
+    const amt = parseInt((_g.EstAvailFunds || '').replace(/[^0-9]/g, ''));
     return sum + (isNaN(amt) ? 0 : amt);
   }, 0);
-  const getUrgentGrants = (grants) => grants.filter(g => {
-    const deadline = g.ApplicationDeadline;
+  const getUrgentGrants = (grants) => grants.filter((_g) => {
+    const deadline = _g.ApplicationDeadline;
     if (!deadline) return false;
     const days = Math.ceil((new Date(deadline) - new Date()) / (1000 * 60 * 60 * 24));
-    return days >= 0 && days <= 14 && (g.Status?.toLowerCase() === 'active' || g.Status?.toLowerCase() === 'open');
+    return days >= 0 && days <= 14 && (_g.Status?.toLowerCase() === 'active' || _g.Status?.toLowerCase() === 'open');
   });
-  const getBestMatches = (grants, userType) => grants.filter(g => true); // Placeholder: implement match logic
+  const getBestMatches = (grants, _userType) => grants.filter(() => true); // Placeholder: implement match logic
 
   // Prepare scatter plot data
-  const prepareScatterData = (grants) => grants.map(grant => {
-    const amount = parseInt(grant.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
-    const deadline = new Date(grant.ApplicationDeadline);
+  const prepareScatterData = (grants) => grants.map((_grant) => {
+    const amount = parseInt(_grant.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
+    const deadline = new Date(_grant.ApplicationDeadline);
     const today = new Date();
     const daysUntil = Math.ceil((deadline - today) / (1000 * 60 * 60 * 24));
-    const awards = parseInt(grant.EstAwards || 1);
+    const awards = parseInt(_grant.EstAwards || 1);
     return {
       x: Math.max(0, daysUntil),
       y: Math.max(1000, amount),
       z: Math.min(awards * 3, 30),
-      status: grant.Status?.toLowerCase() || 'open',
-      grantId: grant.GrantID,
-      grant
+      status: _grant.Status?.toLowerCase() || 'open',
+      grantId: _grant.GrantID,
+      grant: _grant
     };
   });
 
