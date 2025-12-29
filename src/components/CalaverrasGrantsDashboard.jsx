@@ -380,10 +380,6 @@ const CalaverraGrantsDashboard = () => {
           ))
         )}
       </div>
-    </div>
-  );
-        )}
-      </div>
 
       {/* Footer */}
       <footer className="footer">
@@ -400,13 +396,11 @@ const CalaverraGrantsDashboard = () => {
           padding: 0;
           box-sizing: border-box;
         }
-
         .dashboard {
           min-height: 100vh;
           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
-
         .header {
           background: white;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -414,7 +408,6 @@ const CalaverraGrantsDashboard = () => {
           top: 0;
           z-index: 100;
         }
-
         .header-content {
           max-width: 1400px;
           margin: 0 auto;
@@ -423,37 +416,31 @@ const CalaverraGrantsDashboard = () => {
           justify-content: space-between;
           align-items: center;
         }
-
         .header-left {
           display: flex;
           align-items: center;
           gap: 1rem;
         }
-
         .header-left svg {
           color: #667eea;
           flex-shrink: 0;
         }
-
         h1 {
           font-size: 1.75rem;
           color: #1a202c;
           font-weight: 700;
           margin: 0;
         }
-
         .subtitle {
           color: #718096;
           font-size: 0.9rem;
           margin-top: 0.25rem;
         }
-
         .cache-info {
           display: flex;
           align-items: center;
           gap: 0.5rem;
         }
-
         .cache-time {
           display: flex;
           align-items: center;
@@ -461,13 +448,11 @@ const CalaverraGrantsDashboard = () => {
           color: #718096;
           font-size: 0.85rem;
         }
-
         .filters-section {
           max-width: 1400px;
           margin: 2rem auto;
           padding: 0 2rem;
         }
-
         .filters-container {
           background: white;
           border-radius: 12px;
@@ -478,7 +463,6 @@ const CalaverraGrantsDashboard = () => {
           gap: 1.5rem;
           margin-bottom: 1rem;
         }
-
         .search-box {
           display: flex;
           align-items: center;
@@ -489,17 +473,14 @@ const CalaverraGrantsDashboard = () => {
           background: #f7fafc;
           transition: all 0.2s;
         }
-
         .search-box:focus-within {
           border-color: #667eea;
           background: white;
         }
-
         .search-box svg {
           color: #a0aec0;
           flex-shrink: 0;
         }
-
         .search-box input {
           border: none;
           background: none;
@@ -508,17 +489,14 @@ const CalaverraGrantsDashboard = () => {
           outline: none;
           color: #2d3748;
         }
-
         .search-box input::placeholder {
           color: #a0aec0;
         }
-
         .filter-group {
           display: flex;
           flex-direction: column;
           gap: 0.5rem;
         }
-
         .filter-group label {
           display: flex;
           align-items: center;
@@ -529,7 +507,6 @@ const CalaverraGrantsDashboard = () => {
           text-transform: uppercase;
           letter-spacing: 0.5px;
         }
-
         .filter-group select {
           padding: 0.75rem 1rem;
           border: 2px solid #e2e8f0;
@@ -540,16 +517,13 @@ const CalaverraGrantsDashboard = () => {
           cursor: pointer;
           transition: all 0.2s;
         }
-
         .filter-group select:hover {
           border-color: #cbd5e0;
         }
-
         .filter-group select:focus {
           outline: none;
           border-color: #667eea;
         }
-
         .results-count {
           background: white;
           padding: 1rem 1.5rem;
@@ -559,12 +533,10 @@ const CalaverraGrantsDashboard = () => {
           font-size: 0.95rem;
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
-
         .results-count strong {
           color: #667eea;
           font-size: 1.1rem;
         }
-
         .grants-container {
           max-width: 1400px;
           margin: 0 auto;
@@ -572,7 +544,6 @@ const CalaverraGrantsDashboard = () => {
           display: grid;
           gap: 1.5rem;
         }
-
         .grant-card {
           background: white;
           border-radius: 12px;
@@ -581,21 +552,17 @@ const CalaverraGrantsDashboard = () => {
           transition: all 0.3s ease;
           border-left: 4px solid #667eea;
         }
-
         .grant-card:hover {
           box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
           transform: translateY(-2px);
         }
-
         .grant-closed {
           opacity: 0.7;
           border-left-color: #cbd5e0;
         }
-
         .grant-closed:hover {
           opacity: 0.85;
         }
-
         .grant-header {
           display: flex;
           justify-content: space-between;
@@ -603,20 +570,17 @@ const CalaverraGrantsDashboard = () => {
           gap: 1rem;
           margin-bottom: 1rem;
         }
-
         .grant-title-section h3 {
           font-size: 1.25rem;
           color: #1a202c;
           margin-bottom: 0.5rem;
           line-height: 1.4;
         }
-
         .grant-agency {
           color: #667eea;
           font-size: 0.9rem;
           font-weight: 600;
         }
-
         .status-badge {
           display: flex;
           align-items: center;
@@ -628,32 +592,26 @@ const CalaverraGrantsDashboard = () => {
           white-space: nowrap;
           flex-shrink: 0;
         }
-
         .status-open {
           background: #c6f6d5;
           color: #22543d;
         }
-
         .status-forecasted {
           background: #feebc8;
           color: #7c2d12;
         }
-
         .status-closed {
           background: #e2e8f0;
           color: #4a5568;
         }
-
         .grant-meta {
           margin-bottom: 1.25rem;
         }
-
         .grant-categories {
           display: flex;
           flex-wrap: wrap;
           gap: 0.5rem;
         }
-
         .category-tag {
           background: #edf2f7;
           color: #4a5568;
@@ -662,7 +620,6 @@ const CalaverraGrantsDashboard = () => {
           font-size: 0.8rem;
           font-weight: 500;
         }
-
         .grant-details {
           display: grid;
           gap: 0.75rem;
@@ -671,7 +628,6 @@ const CalaverraGrantsDashboard = () => {
           background: #f7fafc;
           border-radius: 8px;
         }
-
         .detail-row {
           display: flex;
           align-items: center;
@@ -679,16 +635,13 @@ const CalaverraGrantsDashboard = () => {
           color: #2d3748;
           font-size: 0.9rem;
         }
-
         .detail-row svg {
           color: #667eea;
           flex-shrink: 0;
         }
-
         .match-required svg {
           color: #ed8936;
         }
-
         .grant-purpose {
           color: #4a5568;
           font-size: 0.95rem;
@@ -699,11 +652,9 @@ const CalaverraGrantsDashboard = () => {
           border-radius: 8px;
           border-left: 3px solid #e2e8f0;
         }
-
         .grant-purpose strong {
           color: #2d3748;
         }
-
         .grant-footer {
           display: flex;
           justify-content: space-between;
@@ -712,7 +663,6 @@ const CalaverraGrantsDashboard = () => {
           padding-top: 1.25rem;
           border-top: 1px solid #e2e8f0;
         }
-
         .view-details-btn {
           display: flex;
           align-items: center;
@@ -726,17 +676,14 @@ const CalaverraGrantsDashboard = () => {
           font-size: 0.9rem;
           transition: all 0.2s;
         }
-
         .view-details-btn:hover {
           background: #5a67d8;
           transform: translateX(2px);
         }
-
         .contact-info {
           color: #718096;
           font-size: 0.85rem;
         }
-
         .loading-container,
         .error-container,
         .no-results {
@@ -749,7 +696,6 @@ const CalaverraGrantsDashboard = () => {
           text-align: center;
           gap: 1rem;
         }
-
         .error-container {
           background: white;
           color: #1a202c;
@@ -758,11 +704,9 @@ const CalaverraGrantsDashboard = () => {
           margin: 2rem auto;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
-
         .error-container svg {
           color: #f56565;
         }
-
         .error-container button {
           margin-top: 1rem;
           padding: 0.75rem 1.5rem;
@@ -774,20 +718,16 @@ const CalaverraGrantsDashboard = () => {
           cursor: pointer;
           transition: all 0.2s;
         }
-
         .error-container button:hover {
           background: #5a67d8;
         }
-
         .spinner {
           animation: spin 1s linear infinite;
         }
-
         @keyframes spin {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-
         .no-results {
           background: white;
           color: #4a5568;
@@ -795,7 +735,6 @@ const CalaverraGrantsDashboard = () => {
           padding: 3rem;
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
-
         .footer {
           max-width: 1400px;
           margin: 0 auto;
@@ -804,12 +743,10 @@ const CalaverraGrantsDashboard = () => {
           color: rgba(255, 255, 255, 0.8);
           font-size: 0.85rem;
         }
-
         @media (max-width: 1024px) {
           .filters-container {
             grid-template-columns: 1fr;
           }
-
           .grant-footer {
             flex-direction: column;
             align-items: stretch;
@@ -820,4 +757,4 @@ const CalaverraGrantsDashboard = () => {
   );
 };
 
-export default CalaverraGrantsDashboard;
+export default CalaverrasGrantsDashboard;

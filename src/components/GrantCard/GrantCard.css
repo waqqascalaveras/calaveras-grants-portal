@@ -1,56 +1,7 @@
-.grant-card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-left: 4px solid #667eea;
-}
-
-.grant-card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
-}
-
-.grant-closed {
-  opacity: 0.7;
-  border-left-color: #cbd5e0;
-}
-
-.grant-closed:hover {
-  opacity: 0.85;
-}
-
 .grant-header {
-  display: flex;
-  justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  margin-bottom: 1rem;
-}
 
-.grant-title-section h3 {
-  font-size: 1.25rem;
-  color: #1a202c;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
-}
-
-.grant-agency {
-  color: #667eea;
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.status-badge {
-  background: var(--cream);
-  border-radius: 4px;
-  padding: 1.5rem;
-  box-shadow: none;
-  transition: background 0.3s ease;
-  border-left: 4px solid var(--leaf-green);
-  font-weight: 600;
-  white-space: nowrap;
   flex-shrink: 0;
   background: var(--moss-green);
 .status-open {
