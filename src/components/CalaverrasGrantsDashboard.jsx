@@ -7,7 +7,7 @@ import EnhancedGrantCard from './EnhancedGrantCard';
 const CalaverraGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  // Removed unused error state
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
@@ -111,7 +111,6 @@ const CalaverraGrantsDashboard = () => {
   // Filter grants for Calaveras County eligibility
   const isEligibleForCounty = (grant) => {
     const applicantType = grant.ApplicantType?.toLowerCase() || '';
-    const geography = grant.Geography?.toLowerCase() || '';
     
     // Eligible if it accepts public agencies, local governments, or counties
     const eligibleTypes = [
@@ -165,37 +164,7 @@ const CalaverraGrantsDashboard = () => {
       // Must be eligible for counties
       if (!isEligibleForCounty(grant)) return false;
       
-      // Status filter
-      const status = grant.Status?.toLowerCase() || '';
-      if (statusFilter === 'open' && status === 'closed' && !isRecentlyClosed(grant)) {
-        return false;
-      }
-      if (statusFilter === 'forecasted' && status !== 'forecasted') {
-        return false;
-      }
-      if (statusFilter === 'active' && status !== 'active') {
-        return false;
-      }
-      
-      // Department filter
-      if (!matchesDepartment(grant, selectedDepartment)) return false;
-      
-      // Search query
-      if (searchQuery) {
-        const query = searchQuery.toLowerCase();
-        const searchText = `${grant.Title} ${grant.Purpose} ${grant.Description} ${grant.AgencyDept}`.toLowerCase();
-        if (!searchText.includes(query)) return false;
-      }
-      
-      return true;
-    });
-    
-    // Sort: open first, then forecasted, then recently closed (dimmed)
-    return filtered.sort((a, b) => {
-      const statusOrder = { active: 0, forecasted: 1, closed: 2 };
-      const aStatus = a.Status?.toLowerCase() || 'active';
-      const bStatus = b.Status?.toLowerCase() || 'active';
-      
+      // Removed unused getStatusBadge
       if (statusOrder[aStatus] !== statusOrder[bStatus]) {
         return statusOrder[aStatus] - statusOrder[bStatus];
       }

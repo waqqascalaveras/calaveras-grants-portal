@@ -262,7 +262,7 @@ For technical issues or questions:
 ## 📄 License
 
 Copyright © 2025 Calaveras County, California
-Internal use only - Not for public redistribution
+Use or redistribution requires written permission from Calaveras County Health and Human Services Agency.
 
 ## 🙏 Acknowledgments
 
@@ -274,24 +274,4 @@ Internal use only - Not for public redistribution
 
 **Built with ❤️ for Calaveras County**
 
-*Last Updated: January 2025*
-
-## Project Structure
-
-`
-calaveras-grants-portal/
-├── .github/          # GitHub Actions workflows
-├── docs/             # Documentation
-├── public/           # Static assets
-├── scripts/          # Helper scripts (Python, PowerShell)
-├── src/              # React application source
-│   ├── components/   # React components
-│   ├── services/     # API services
-│   ├── utils/        # Utility functions
-│   └── config/       # Configuration
-├── .env.example      # Environment variable template
-├── .gitignore        # Git ignore rules
-├── package.json      # Dependencies and scripts
-├── README.md         # This file
-└── START_HERE.md     # Quick start guide
-```
+*Last Updated: December 2025*
