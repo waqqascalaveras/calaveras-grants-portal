@@ -10,46 +10,47 @@ body {
   font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(135deg, #29422d 0%, #6b8e5e 100%);
-  color: #2e2e1f;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+  color: #1e293b;
 }
 
 /* Forest theme color variables */
 :root {
-  --forest-green: #29422d;
-  --moss-green: #6b8e5e;
-  --earth-brown: #8b6f4e;
-  --bark-brown: #4e3b24;
-  --leaf-green: #4e7c4e;
-  --fern-green: #3c5c3c;
-  --stone-gray: #b2b2a6;
-  --cream: #f5f3e7;
+  --primary-blue: #2563eb;
+  --navy: #1e293b;
+  --gray: #64748b;
+  --light-blue: #e0e7ef;
+  --dark-gray: #6b7280;
+  --stone-gray: #cbd5e1;
+  --cream: #f8fafc;
+  --accent-red: #dc2626;
+  --accent-yellow: #facc15;
 }
 
 /* Remove bubbly/round look globally */
 button, input, select, textarea, .card, .panel, .modal, .chip {
-  border-radius: 4px !important;
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
 /* General container background */
 .container, .panel, .card {
   background: var(--cream);
-  color: var(--bark-brown);
+  color: var(--navy);
   border: 1px solid var(--stone-gray);
 }
 
 /* Headings and links */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--forest-green);
-  font-family: 'Merriweather', serif;
+  color: var(--primary-blue);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', 'Helvetica Neue', sans-serif;
 }
 a {
-  color: var(--leaf-green);
+  color: var(--primary-blue);
   text-decoration: none;
 }
 a:hover {
-  color: var(--earth-brown);
+  color: var(--accent-red);
   text-decoration: underline;
 }
 }

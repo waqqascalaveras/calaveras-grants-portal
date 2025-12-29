@@ -9,7 +9,7 @@
 .no-results {
   background: var(--cream);
   color: var(--bark-brown);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 2rem;
   box-shadow: none;
   display: flex;
