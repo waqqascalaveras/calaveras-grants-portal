@@ -99,7 +99,6 @@ const CalaverrasGrantsDashboard = () => {
         setLastUpdated(new Date(now));
         setLoading(false);
       } catch (err) {
-        setError(err.message);
         setLoading(false);
       }
     };
@@ -530,37 +529,7 @@ const CalaverrasGrantsDashboard = () => {
           font-size: 0.9rem;
           font-weight: 600;
         }
-        .status-badge {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          padding: 0.5rem 1rem;
-          border-radius: 20px;
-          font-size: 0.85rem;
-          font-weight: 600;
-          white-space: nowrap;
-          flex-shrink: 0;
-        }
-        .status-open {
-          background: #c6f6d5;
-          color: #22543d;
-        }
-        .status-forecasted {
-          background: #feebc8;
-          color: #7c2d12;
-        }
-        .status-closed {
-          background: #e2e8f0;
-          color: #4a5568;
-        }
-        .grant-meta {
-          margin-bottom: 1.25rem;
-        }
-        .grant-categories {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.5rem;
-        }
+        // Removed unused getStatusBadge
         .category-tag {
           background: #edf2f7;
           color: #4a5568;
