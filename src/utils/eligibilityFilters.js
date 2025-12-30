@@ -32,17 +32,18 @@ export const isEligibleForCounty = (grant) => {
  * @param {Object} grant - Grant record
  * @returns {boolean} - True if recently closed
  */
-export const isRecentlyClosed = (grant) => {
+export const isRecentlyClosed = (grant, daysThreshold = 30) => {
   if (grant.Status?.toLowerCase() !== 'closed') return false;
-  
+
   const deadline = grant.ApplicationDeadline;
   if (!deadline) return false;
-  
+
   const deadlineDate = new Date(deadline);
+  if (isNaN(deadlineDate)) return false;
+
   const now = new Date();
-  const thirtyDaysAgo = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
-  
-  return deadlineDate >= thirtyDaysAgo;
+  const thresholdAgo = new Date(now.getTime() - (daysThreshold * 24 * 60 * 60 * 1000));
+  return deadlineDate >= thresholdAgo;
 };
 
 /**
