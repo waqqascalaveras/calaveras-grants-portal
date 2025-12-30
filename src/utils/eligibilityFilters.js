@@ -55,12 +55,13 @@ export const isRecentlyClosed = (grant, daysThreshold = 30) => {
  */
 // Flexible matcher: supports array of keywords or department config
 export const matchesDepartment = (grant, keywordsOrDeptKey, departments) => {
-  // If no keywords provided, match everything (all departments)
+  // If no keywords or empty array provided, match everything (all departments)
   if (keywordsOrDeptKey === undefined || keywordsOrDeptKey === null) return true;
   // If array of keywords is passed, match directly
   if (Array.isArray(keywordsOrDeptKey)) {
+    if (keywordsOrDeptKey.length === 0) return true;
     const searchText = `${grant.Title || ''} ${grant.Categories || ''} ${grant.Purpose || ''} ${grant.Description || ''}`.toLowerCase();
-    return (keywordsOrDeptKey || []).some(keyword => searchText.includes((keyword || '').toLowerCase()));
+    return keywordsOrDeptKey.some(keyword => searchText.includes((keyword || '').toLowerCase()));
   }
   // If 'all' department, always match
   if (keywordsOrDeptKey === 'all') return true;
