@@ -132,19 +132,6 @@ const CalaverrasGrantsDashboard = () => {
     return hasEligibleType || (!hasRestrictedType && applicantType.length > 0);
   };
 
-  // Check if grant is recently closed (within 30 days)
-  const isRecentlyClosed = (grant) => {
-    if (grant.Status?.toLowerCase() !== 'closed') return false;
-    
-    const deadline = grant.ApplicationDeadline;
-    if (!deadline) return false;
-    
-    const deadlineDate = new Date(deadline);
-    const now = new Date();
-    const thirtyDaysAgo = new Date(now.getTime() - (30 * 24 * 60 * 60 * 1000));
-    
-    return deadlineDate >= thirtyDaysAgo;
-  };
 
   // Match grant to department
   // Removed unused matchesDepartment
