@@ -53,11 +53,18 @@ export const isRecentlyClosed = (grant, daysThreshold = 30) => {
  * @param {Object} departments - Department configuration object
  * @returns {boolean} - True if matches department
  */
-export const matchesDepartment = (grant, deptKey, departments) => {
-  if (deptKey === 'all') return true;
-  
-  const dept = departments[deptKey];
-  const searchText = `${grant.Title} ${grant.Categories} ${grant.Purpose} ${grant.Description}`.toLowerCase();
-  
-  return dept.keywords.some(keyword => searchText.includes(keyword.toLowerCase()));
+// Flexible matcher: supports array of keywords or department config
+export const matchesDepartment = (grant, keywordsOrDeptKey, departments) => {
+  // If array of keywords is passed, match directly
+  if (Array.isArray(keywordsOrDeptKey)) {
+    const searchText = `${grant.Title || ''} ${grant.Categories || ''} ${grant.Purpose || ''} ${grant.Description || ''}`.toLowerCase();
+    return (keywordsOrDeptKey || []).some(keyword => searchText.includes((keyword || '').toLowerCase()));
+  }
+  // If 'all' department, always match
+  if (keywordsOrDeptKey === 'all') return true;
+  // Otherwise, use department config
+  const dept = departments?.[keywordsOrDeptKey];
+  if (!dept || !Array.isArray(dept.keywords)) return false;
+  const searchText = `${grant.Title || ''} ${grant.Categories || ''} ${grant.Purpose || ''} ${grant.Description || ''}`.toLowerCase();
+  return (dept.keywords || []).some(keyword => searchText.includes((keyword || '').toLowerCase()));
 };
