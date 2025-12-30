@@ -7,8 +7,9 @@
  */
 export const isEligibleForCounty = (grant) => {
   const applicantType = grant.ApplicantType?.toLowerCase() || '';
-  
-  // Eligible if it accepts public agencies, local governments, or counties
+  // If ApplicantType is missing/empty, treat as eligible
+  if (!grant.ApplicantType || !applicantType.trim()) return true;
+
   const eligibleTypes = [
     'public agency',
     'county',
@@ -16,17 +17,13 @@ export const isEligibleForCounty = (grant) => {
     'government',
     'tribal government'
   ];
-  
-  // Not eligible if restricted to specific entities that exclude counties
   const restrictedTypes = [
     'individual only',
     'business only',
     'nonprofit only'
   ];
-  
   const hasEligibleType = eligibleTypes.some(type => applicantType.includes(type));
   const hasRestrictedType = restrictedTypes.some(type => applicantType.includes(type));
-  
   return hasEligibleType || (!hasRestrictedType && applicantType.length > 0);
 };
 
