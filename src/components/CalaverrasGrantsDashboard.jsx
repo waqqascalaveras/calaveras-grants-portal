@@ -185,36 +185,6 @@ const CalaverrasGrantsDashboard = () => {
     };
   });
 
-  // Get status badge
-  const getStatusBadge = (grant) => {
-    const status = grant.Status?.toLowerCase() || 'active';
-    const isClosed = isRecentlyClosed(grant);
-    
-    if (isClosed) {
-      return (
-        <span className="status-badge status-closed">
-          <Clock size={14} />
-          Recently Closed
-        </span>
-      );
-    }
-    
-    if (status === 'forecasted') {
-      return (
-        <span className="status-badge status-forecasted">
-          <AlertCircle size={14} />
-          Forecasted
-        </span>
-      );
-    }
-    
-    return (
-      <span className="status-badge status-open">
-        <CheckCircle size={14} />
-        Open
-      </span>
-    );
-  };
 
   if (loading) {
     return (
