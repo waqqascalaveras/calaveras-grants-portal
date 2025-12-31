@@ -14,7 +14,7 @@ const CalaverrasGrantsDashboard = () => {
   const [lastUpdated, setLastUpdated] = useState(null);
 
   // Department mappings to grant categories
-  const departments = {
+  const departments = useMemo(() => ({
     all: { name: 'All Departments', keywords: [] },
     'public-health': { 
       name: 'Public Health', 
@@ -56,7 +56,7 @@ const CalaverrasGrantsDashboard = () => {
       name: 'IT & Data Modernization', 
       keywords: ['Technology', 'Data', 'Digital', 'Broadband', 'Internet', 'Information Systems', 'Modernization']
     }
-  };
+  }), []);
 
   // Fetch and cache grant data
   useEffect(() => {
