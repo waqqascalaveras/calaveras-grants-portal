@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { isEligibleForCounty, matchesDepartment } from '../utils/eligibilityFilters';
 import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader } from 'lucide-react';
 import StatisticsBar from './StatisticsBar';
 import GrantScatterPlot from './GrantScatterPlot';
@@ -106,41 +107,32 @@ const CalaverrasGrantsDashboard = () => {
     fetchGrants();
   }, []);
 
-  // Filter grants for Calaveras County eligibility
-  const isEligibleForCounty = (grant) => {
-    const applicantType = grant.ApplicantType?.toLowerCase() || '';
-    
-    // Eligible if it accepts public agencies, local governments, or counties
-    const eligibleTypes = [
-      'public agency',
-      'county',
-      'local government',
-      'government',
-      'tribal government'
-    ];
-    
-    // Not eligible if restricted to specific entities that exclude counties
-    const restrictedTypes = [
-      'individual only',
-      'business only',
-      'nonprofit only'
-    ];
-    
-    const hasEligibleType = eligibleTypes.some(type => applicantType.includes(type));
-    const hasRestrictedType = restrictedTypes.some(type => applicantType.includes(type));
-    
-    return hasEligibleType || (!hasRestrictedType && applicantType.length > 0);
-  };
 
-
-  // Match grant to department
-  // Removed unused matchesDepartment
-
-  // Filter and process grants
-  // Filter and process grants
+  // Filter and process grants with all filters
   const filteredGrants = useMemo(() => {
-    return grants.filter(grant => isEligibleForCounty(grant));
-  }, [grants]);
+    return grants.filter(grant => {
+      // County eligibility
+      if (!isEligibleForCounty(grant)) return false;
+
+      // Department filter
+      if (selectedDepartment !== 'all' && !matchesDepartment(grant, selectedDepartment, departments)) return false;
+
+      // Status filter
+      const status = (grant.Status || '').toLowerCase();
+      if (statusFilter === 'open' && !(status === 'open' || status === 'active' || status === 'forecasted')) return false;
+      if (statusFilter === 'forecasted' && status !== 'forecasted') return false;
+      if (statusFilter === 'active' && status !== 'active') return false;
+
+      // Search filter
+      if (searchQuery.trim()) {
+        const q = searchQuery.trim().toLowerCase();
+        const text = `${grant.GrantTitle || ''} ${grant.Purpose || ''} ${grant.Categories || ''} ${grant.Description || ''}`.toLowerCase();
+        if (!text.includes(q)) return false;
+      }
+
+      return true;
+    });
+  }, [grants, selectedDepartment, statusFilter, searchQuery, departments]);
 
   // Stats for StatisticsBar
   const calculateTotalFunding = (grants) => grants.reduce((sum, _g) => {
