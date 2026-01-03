@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { isEligibleForCounty, matchesDepartment } from '../utils/eligibilityFilters';
-import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader, DollarSign, Calendar, Users, FileText, ExternalLink, X } from 'lucide-react';
+import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X } from 'lucide-react';
 
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
