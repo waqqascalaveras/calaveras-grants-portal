@@ -73,6 +73,38 @@ const CalaverrasGrantsDashboard = () => {
         const cachedData = localStorage.getItem('calaverrasGrantsCache');
         const cacheTimestamp = localStorage.getItem('calaverrasGrantsCacheTime');
         
+        // Helper function to cache data with proper error handling
+        const setCacheWithErrorHandling = (key, value, timeKey) => {
+          try {
+            localStorage.setItem(key, value);
+            localStorage.setItem(timeKey, now.toString());
+            // eslint-disable-next-line no-console
+            console.log(`[Cache] Successfully cached ${key}`);
+          } catch (quotaError) {
+            if (quotaError.name === 'QuotaExceededError') {
+              // eslint-disable-next-line no-console
+              console.warn('[Cache] localStorage quota exceeded, clearing old data...');
+              try {
+                // Clear old grants cache
+                localStorage.removeItem('calaverrasGrantsCache');
+                localStorage.removeItem('calaverrasGrantsCacheTime');
+                localStorage.removeItem('grantsGovCache');
+                localStorage.removeItem('grantsGovCacheTime');
+                // Try caching again
+                localStorage.setItem(key, value);
+                localStorage.setItem(timeKey, now.toString());
+                // eslint-disable-next-line no-console
+                console.log('[Cache] Retried caching after clearing old data');
+              } catch (retryError) {
+                // eslint-disable-next-line no-console
+                console.warn('[Cache] Cache storage still exceeded after clearing, proceeding without cache');
+              }
+            } else {
+              throw quotaError;
+            }
+          }
+        };
+
         if (cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours) {
           // Use cached CA data
           caGrants = JSON.parse(cachedData);
@@ -96,9 +128,21 @@ const CalaverrasGrantsDashboard = () => {
               // eslint-disable-next-line no-console
               console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
               
-              // Cache CA data
-              localStorage.setItem('calaverrasGrantsCache', JSON.stringify(caGrants));
-              localStorage.setItem('calaverrasGrantsCacheTime', now.toString());
+              // Cache only essential fields to reduce storage
+              const essentialFields = caGrants.map(g => ({
+                PortalID: g.PortalID,
+                Title: g.Title || g.GrantTitle,
+                AgencyName: g.AgencyName,
+                EstAvailFunds: g.EstAvailFunds,
+                ApplicationDeadline: g.ApplicationDeadline,
+                Status: g.Status,
+                Categories: g.Categories,
+                ApplicantType: g.ApplicantType,
+                Purpose: g.Purpose,
+                Description: g.Description,
+                _source: g._source
+              }));
+              setCacheWithErrorHandling('calaverrasGrantsCache', JSON.stringify(essentialFields), 'calaverrasGrantsCacheTime');
             }
           }
         }

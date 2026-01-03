@@ -171,10 +171,54 @@ export const getCachedGrantsGov = () => {
 export const cacheGrantsGov = (grants) => {
   try {
     const now = Date.now();
-    localStorage.setItem(CACHE_KEY, JSON.stringify(grants));
+    // Cache only essential fields to reduce storage
+    const essentialOnly = grants.map(g => ({
+      OpportunityID: g.OpportunityID,
+      Title: g.Title,
+      AgencyName: g.AgencyName,
+      EstAvailFunds: g.EstAvailFunds,
+      ApplicationDeadline: g.ApplicationDeadline,
+      Status: g.Status,
+      Categories: g.Categories,
+      ApplicantType: g.ApplicantType,
+      _source: g._source
+    }));
+    localStorage.setItem(CACHE_KEY, JSON.stringify(essentialOnly));
     localStorage.setItem(CACHE_TIME_KEY, now.toString());
   } catch (error) {
-    console.error('[Grants.gov] Error saving to cache:', error);
+    if (error.name === 'QuotaExceededError') {
+      // eslint-disable-next-line no-console
+      console.warn('[Grants.gov] Cache quota exceeded, clearing old cache...');
+      try {
+        // Clear old caches to make room
+        localStorage.removeItem(CACHE_KEY);
+        localStorage.removeItem(CACHE_TIME_KEY);
+        localStorage.removeItem('calaverrasGrantsCache');
+        localStorage.removeItem('calaverrasGrantsCacheTime');
+        // Retry with essential fields only
+        const essentialRetry = grants.map(g => ({
+          OpportunityID: g.OpportunityID,
+          Title: g.Title,
+          AgencyName: g.AgencyName,
+          EstAvailFunds: g.EstAvailFunds,
+          ApplicationDeadline: g.ApplicationDeadline,
+          Status: g.Status,
+          Categories: g.Categories,
+          ApplicantType: g.ApplicantType,
+          _source: g._source
+        }));
+        localStorage.setItem(CACHE_KEY, JSON.stringify(essentialRetry));
+        localStorage.setItem(CACHE_TIME_KEY, Date.now().toString());
+        // eslint-disable-next-line no-console
+        console.log('[Grants.gov] Retried caching with essential fields only');
+      } catch (retryError) {
+        // eslint-disable-next-line no-console
+        console.warn('[Grants.gov] Cache still failed after clearing, proceeding without cache');
+      }
+    } else {
+      // eslint-disable-next-line no-console
+      console.error('[Grants.gov] Error saving to cache:', error);
+    }
   }
 };
 
