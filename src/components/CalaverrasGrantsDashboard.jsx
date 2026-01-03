@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { isEligibleForCounty, matchesDepartment } from '../utils/eligibilityFilters';
-import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader } from 'lucide-react';
-import StatisticsBar from './StatisticsBar';
-import GrantScatterPlot from './GrantScatterPlot';
-import EnhancedGrantCard from './EnhancedGrantCard';
+import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader, DollarSign, Calendar, Users, FileText, ExternalLink, X } from 'lucide-react';
 
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
@@ -12,6 +9,7 @@ const CalaverrasGrantsDashboard = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
   const [lastUpdated, setLastUpdated] = useState(null);
+  const [selectedGrant, setSelectedGrant] = useState(null);
 
   // Department mappings to grant categories
   const departments = useMemo(() => ({
@@ -117,16 +115,20 @@ const CalaverrasGrantsDashboard = () => {
       // Department filter
       if (selectedDepartment !== 'all' && !matchesDepartment(grant, selectedDepartment, departments)) return false;
 
-      // Status filter
-      const status = (grant.Status || '').toLowerCase();
-      if (statusFilter === 'open' && !(status === 'open' || status === 'active' || status === 'forecasted')) return false;
-      if (statusFilter === 'forecasted' && status !== 'forecasted') return false;
-      if (statusFilter === 'active' && status !== 'active') return false;
+      // Status filter (relaxed to handle variations)
+      const status = (grant.Status || '').toLowerCase().trim();
+      if (statusFilter === 'open') {
+        // Accept open, active, forecasted, or status containing these words
+        const isOpenStatus = status.includes('open') || status.includes('active') || status.includes('forecast');
+        if (!isOpenStatus) return false;
+      }
+      if (statusFilter === 'forecasted' && !status.includes('forecast')) return false;
+      if (statusFilter === 'active' && !status.includes('active')) return false;
 
       // Search filter
       if (searchQuery.trim()) {
         const q = searchQuery.trim().toLowerCase();
-        const text = `${grant.GrantTitle || ''} ${grant.Purpose || ''} ${grant.Categories || ''} ${grant.Description || ''}`.toLowerCase();
+        const text = `${grant.Title || grant.GrantTitle || ''} ${grant.Purpose || ''} ${grant.Categories || ''} ${grant.Description || ''}`.toLowerCase();
         if (!text.includes(q)) return false;
       }
 
@@ -134,35 +136,56 @@ const CalaverrasGrantsDashboard = () => {
     });
   }, [grants, selectedDepartment, statusFilter, searchQuery, departments]);
 
-  // Stats for StatisticsBar
-  const calculateTotalFunding = (grants) => grants.reduce((sum, _g) => {
-    const amt = parseInt((_g.EstAvailFunds || '').replace(/[^0-9]/g, ''));
-    return sum + (isNaN(amt) ? 0 : amt);
-  }, 0);
-  const getUrgentGrants = (grants) => grants.filter((_g) => {
-    const deadline = _g.ApplicationDeadline;
-    if (!deadline) return false;
-    const days = Math.ceil((new Date(deadline) - new Date()) / (1000 * 60 * 60 * 24));
-    return days >= 0 && days <= 14 && (_g.Status?.toLowerCase() === 'active' || _g.Status?.toLowerCase() === 'open');
-  });
-  const getBestMatches = (grants, _userType) => grants.filter(() => true); // Placeholder: implement match logic
+  // Prepare timeline data
+  const timelineData = useMemo(() => {
+    const sorted = [...filteredGrants]
+      .filter(g => g.ApplicationDeadline)
+      .sort((a, b) => new Date(a.ApplicationDeadline) - new Date(b.ApplicationDeadline))
+      .slice(0, 50); // Show first 50 for timeline
+    
+    return sorted.map(g => {
+      const deadline = new Date(g.ApplicationDeadline);
+      const daysUntil = Math.ceil((deadline - new Date()) / (1000 * 60 * 60 * 24));
+      const amount = parseInt(g.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
+      return {
+        grant: g,
+        deadline,
+        daysUntil,
+        amount,
+        status: (g.Status || '').toLowerCase()
+      };
+    });
+  }, [filteredGrants]);
 
-  // Prepare scatter plot data
-  const prepareScatterData = (grants) => grants.map((_grant) => {
-    const amount = parseInt(_grant.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
-    const deadline = new Date(_grant.ApplicationDeadline);
-    const today = new Date();
-    const daysUntil = Math.ceil((deadline - today) / (1000 * 60 * 60 * 24));
-    const awards = parseInt(_grant.EstAwards || 1);
-    return {
-      x: Math.max(0, daysUntil),
-      y: Math.max(1000, amount),
-      z: Math.min(awards * 3, 30),
-      status: _grant.Status?.toLowerCase() || 'open',
-      grantId: _grant.GrantID,
-      grant: _grant
-    };
-  });
+  // Format currency
+  const formatCurrency = (str) => {
+    const num = parseInt((str || '').replace(/[^0-9]/g, ''));
+    if (isNaN(num)) return 'N/A';
+    if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`;
+    if (num >= 1000) return `$${(num / 1000).toFixed(0)}K`;
+    return `$${num.toLocaleString()}`;
+  };
+
+  // Format deadline
+  const formatDeadline = (dateStr) => {
+    if (!dateStr) return 'N/A';
+    const date = new Date(dateStr);
+    const days = Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24));
+    if (days < 0) return 'Closed';
+    if (days === 0) return 'Today';
+    if (days === 1) return 'Tomorrow';
+    if (days <= 14) return `${days}d (Urgent)`;
+    if (days <= 30) return `${days}d`;
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  };
+
+  // Get status badge
+  const getStatusBadge = (status) => {
+    const s = (status || '').toLowerCase();
+    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
+    if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
+    return { text: 'Closed', color: '#495057' };
+  };
 
 
   if (loading) {
@@ -182,13 +205,13 @@ const CalaverrasGrantsDashboard = () => {
       <header className="header">
         <div className="header-content">
           <div className="header-left">
-            <Building2 size={32} />
+            <Building2 size={28} />
             <div>
               <h1>Calaveras County Grants Portal</h1>
               <p className="subtitle">Find funding opportunities for your department</p>
             </div>
           </div>
-          <div className="cache-info">
+          <div className="header-right">
             {lastUpdated && (
               <span className="cache-time">
                 <Clock size={14} />
@@ -199,40 +222,25 @@ const CalaverrasGrantsDashboard = () => {
         </div>
       </header>
 
-      {/* Statistics Bar */}
-      <StatisticsBar
-        totalFunding={calculateTotalFunding(filteredGrants)}
-        eligibleCount={filteredGrants.length}
-        urgentCount={getUrgentGrants(filteredGrants).length}
-        bestMatches={getBestMatches(filteredGrants).length}
-      />
-
-      {/* Scatter Plot Visualization */}
-      <GrantScatterPlot data={prepareScatterData(filteredGrants)} />
-
-      {/* Filters */}
-      <div className="filters-section">
-        <div className="filters-container">
-          {/* Search */}
+      {/* Sticky Filter Bar */}
+      <div className="filter-bar">
+        <div className="filter-bar-content">
           <div className="search-box">
-            <Search size={20} />
+            <Search size={18} />
             <input
               type="text"
-              placeholder="Search grants by keyword..."
+              placeholder="Search grants..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
           </div>
 
-          {/* Department Filter */}
           <div className="filter-group">
-            <label>
-              <Filter size={16} />
-              Department
-            </label>
+            <Filter size={16} />
             <select 
               value={selectedDepartment} 
               onChange={(e) => setSelectedDepartment(e.target.value)}
+              title="Filter by Department"
             >
               {Object.entries(departments).map(([key, dept]) => (
                 <option key={key} value={key}>{dept.name}</option>
@@ -240,41 +248,187 @@ const CalaverrasGrantsDashboard = () => {
             </select>
           </div>
 
-          {/* Status Filter */}
           <div className="filter-group">
-            <label>
-              <CheckCircle size={16} />
-              Status
-            </label>
+            <CheckCircle size={16} />
             <select 
               value={statusFilter} 
               onChange={(e) => setStatusFilter(e.target.value)}
+              title="Filter by Status"
             >
-              <option value="open">Open & Recent</option>
-              <option value="forecasted">Forecasted Only</option>
+              <option value="open">Open & Active</option>
+              <option value="forecasted">Forecasted</option>
               <option value="active">Active Only</option>
             </select>
           </div>
-        </div>
 
-        {/* Results Count */}
-        <div className="results-count">
-          <strong>{filteredGrants.length}</strong> eligible grants found
+          <div className="results-badge">
+            <strong>{filteredGrants.length}</strong> grants
+          </div>
         </div>
       </div>
 
-      {/* Grants List */}
-      <div className="grants-container">
-        {filteredGrants.length === 0 ? (
-          <div className="no-results">
-            <AlertCircle size={48} />
-            <h3>No Grants Found</h3>
-            <p>Try adjusting your filters or search terms</p>
+      {/* Timeline Visualization */}
+      <div className="timeline-container">
+        <div className="timeline-header">
+          <Calendar size={18} />
+          <h3>Grant Deadlines Timeline</h3>
+          <span className="timeline-count">{timelineData.length} upcoming deadlines</span>
+        </div>
+        <div className="timeline">
+          <div className="timeline-line"></div>
+          {timelineData.map((item, idx) => {
+            const leftPos = Math.min(95, Math.max(2, (idx / Math.max(timelineData.length - 1, 1)) * 100));
+            const statusBadge = getStatusBadge(item.grant.Status);
+            
+            return (
+              <div 
+                key={item.grant.PortalID || idx} 
+                className="timeline-dot"
+                style={{ 
+                  left: `${leftPos}%`,
+                  background: statusBadge.color
+                }}
+                onClick={() => setSelectedGrant(item.grant)}
+              >
+                <div className="timeline-tooltip">
+                  <div className="tooltip-title">{item.grant.Title || item.grant.GrantTitle}</div>
+                  <div className="tooltip-detail">
+                    <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline)}
+                  </div>
+                  <div className="tooltip-detail">
+                    <DollarSign size={12} /> {formatCurrency(item.grant.EstAvailFunds)}
+                  </div>
+                  <div className="tooltip-detail">
+                    <FileText size={12} /> {item.grant.AgencyName}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Main Content Area */}
+      <div className={`main-content ${selectedGrant ? 'split-view' : ''}`}>
+        {/* Grants Table */}
+        <div className="table-container">
+          <table className="grants-table">
+            <thead>
+              <tr>
+                <th>Grant Title</th>
+                <th><DollarSign size={14} /> Amount</th>
+                <th><Calendar size={14} /> Deadline</th>
+                <th><Building2 size={14} /> Agency</th>
+                <th><CheckCircle size={14} /> Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredGrants.length === 0 ? (
+                <tr>
+                  <td colSpan="5" className="no-results-row">
+                    <AlertCircle size={24} />
+                    <span>No grants found matching your criteria</span>
+                  </td>
+                </tr>
+              ) : (
+                filteredGrants.map((grant) => {
+                  const statusBadge = getStatusBadge(grant.Status);
+                  return (
+                    <tr 
+                      key={grant.PortalID || grant.GrantID}
+                      className={selectedGrant?.PortalID === grant.PortalID ? 'selected' : ''}
+                      onClick={() => setSelectedGrant(grant)}
+                    >
+                      <td className="grant-title-cell">
+                        <div className="title-text">{grant.Title || grant.GrantTitle || 'Untitled Grant'}</div>
+                        <div className="categories-text">{grant.Categories}</div>
+                      </td>
+                      <td className="amount-cell">{formatCurrency(grant.EstAvailFunds)}</td>
+                      <td className="deadline-cell">{formatDeadline(grant.ApplicationDeadline)}</td>
+                      <td className="agency-cell">{grant.AgencyName}</td>
+                      <td className="status-cell">
+                        <span className="status-badge" style={{ background: statusBadge.color }}>
+                          {statusBadge.text}
+                        </span>
+                      </td>
+                    </tr>
+                  );
+                })
+              )}
+            </tbody>
+          </table>
+        </div>
+
+        {/* Grant Details Panel */}
+        {selectedGrant && (
+          <div className="detail-panel">
+            <div className="detail-header">
+              <h2>{selectedGrant.Title || selectedGrant.GrantTitle}</h2>
+              <button className="close-btn" onClick={() => setSelectedGrant(null)}>
+                <X size={20} />
+              </button>
+            </div>
+
+            <div className="detail-content">
+              <div className="detail-section">
+                <div className="detail-label">Agency</div>
+                <div className="detail-value">{selectedGrant.AgencyName}</div>
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-label">Amount Available</div>
+                <div className="detail-value amount-highlight">{formatCurrency(selectedGrant.EstAvailFunds)}</div>
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-label">Application Deadline</div>
+                <div className="detail-value">{formatDeadline(selectedGrant.ApplicationDeadline)}</div>
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-label">Estimated Awards</div>
+                <div className="detail-value">{selectedGrant.EstAwards || 'N/A'}</div>
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-label">Categories</div>
+                <div className="detail-value">{selectedGrant.Categories || 'N/A'}</div>
+              </div>
+
+              <div className="detail-section">
+                <div className="detail-label">Applicant Type</div>
+                <div className="detail-value">{selectedGrant.ApplicantType || 'N/A'}</div>
+              </div>
+
+              {selectedGrant.Purpose && (
+                <div className="detail-section full-width">
+                  <div className="detail-label">Purpose</div>
+                  <div className="detail-value description">{selectedGrant.Purpose}</div>
+                </div>
+              )}
+
+              {selectedGrant.Description && (
+                <div className="detail-section full-width">
+                  <div className="detail-label">Description</div>
+                  <div className="detail-value description">{selectedGrant.Description}</div>
+                </div>
+              )}
+
+              {selectedGrant.GrantInfoURL && (
+                <div className="detail-actions">
+                  <a 
+                    href={selectedGrant.GrantInfoURL} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="detail-link"
+                  >
+                    <ExternalLink size={16} />
+                    View Full Grant Details
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
-        ) : (
-          filteredGrants.map((grant) => (
-            <EnhancedGrantCard key={grant.PortalID} grant={grant} />
-          ))
         )}
       </div>
 
@@ -295,20 +449,19 @@ const CalaverrasGrantsDashboard = () => {
         }
         .dashboard {
           min-height: 100vh;
-          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          background: #f5f5f5;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
         }
+        
+        /* Header */
         .header {
-          background: white;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          position: sticky;
-          top: 0;
-          z-index: 100;
+          background: #0d1b2a;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+          border-bottom: 2px solid #1b4965;
         }
         .header-content {
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 1.5rem 2rem;
+          max-width: 100%;
+          padding: 1rem 2rem;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -319,274 +472,413 @@ const CalaverrasGrantsDashboard = () => {
           gap: 1rem;
         }
         .header-left svg {
-          color: #667eea;
+          color: #8b1538;
           flex-shrink: 0;
         }
         h1 {
-          font-size: 1.75rem;
-          color: #1a202c;
+          font-size: 1.5rem;
+          color: #ffffff;
           font-weight: 700;
           margin: 0;
         }
         .subtitle {
-          color: #718096;
-          font-size: 0.9rem;
-          margin-top: 0.25rem;
-        }
-        .cache-info {
-          display: flex;
-          align-items: center;
-          gap: 0.5rem;
+          color: #b0c4de;
+          font-size: 0.85rem;
+          margin-top: 0.15rem;
         }
         .cache-time {
           display: flex;
           align-items: center;
           gap: 0.5rem;
-          color: #718096;
-          font-size: 0.85rem;
+          color: #8899aa;
+          font-size: 0.8rem;
         }
-        .filters-section {
-          max-width: 1400px;
-          margin: 2rem auto;
-          padding: 0 2rem;
+
+        /* Sticky Filter Bar */
+        .filter-bar {
+          background: #ffffff;
+          border-bottom: 1px solid #d1d5db;
+          position: sticky;
+          top: 0;
+          z-index: 90;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        .filters-container {
-          background: white;
-          border-radius: 12px;
-          padding: 1.5rem;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          display: grid;
-          grid-template-columns: 2fr 1fr 1fr;
-          gap: 1.5rem;
-          margin-bottom: 1rem;
+        .filter-bar-content {
+          max-width: 100%;
+          padding: 0.75rem 2rem;
+          display: flex;
+          gap: 1rem;
+          align-items: center;
         }
         .search-box {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-          padding: 0.75rem 1rem;
-          border: 2px solid #e2e8f0;
-          border-radius: 8px;
-          background: #f7fafc;
-          transition: all 0.2s;
+          gap: 0.5rem;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid #6c757d;
+          background: #ffffff;
+          flex: 1;
+          max-width: 400px;
         }
         .search-box:focus-within {
-          border-color: #667eea;
-          background: white;
+          border-color: #1b4965;
+          box-shadow: 0 0 0 2px rgba(27, 73, 101, 0.1);
         }
         .search-box svg {
-          color: #a0aec0;
+          color: #495057;
           flex-shrink: 0;
         }
         .search-box input {
           border: none;
           background: none;
           flex: 1;
-          font-size: 0.95rem;
+          font-size: 0.9rem;
           outline: none;
-          color: #2d3748;
+          color: #212529;
         }
         .search-box input::placeholder {
-          color: #a0aec0;
+          color: #6c757d;
         }
         .filter-group {
           display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-        .filter-group label {
-          display: flex;
           align-items: center;
           gap: 0.5rem;
-          font-size: 0.85rem;
-          font-weight: 600;
-          color: #4a5568;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
+        }
+        .filter-group svg {
+          color: #495057;
+          flex-shrink: 0;
         }
         .filter-group select {
-          padding: 0.75rem 1rem;
-          border: 2px solid #e2e8f0;
-          border-radius: 8px;
-          font-size: 0.95rem;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid #6c757d;
+          font-size: 0.9rem;
           background: white;
-          color: #2d3748;
+          color: #212529;
           cursor: pointer;
-          transition: all 0.2s;
         }
         .filter-group select:hover {
-          border-color: #cbd5e0;
+          border-color: #495057;
         }
         .filter-group select:focus {
           outline: none;
-          border-color: #667eea;
+          border-color: #1b4965;
+          box-shadow: 0 0 0 2px rgba(27, 73, 101, 0.1);
         }
-        .results-count {
-          background: white;
-          padding: 1rem 1.5rem;
-          border-radius: 8px;
-          text-align: center;
-          color: #4a5568;
-          font-size: 0.95rem;
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-        .results-count strong {
-          color: #667eea;
-          font-size: 1.1rem;
-        }
-        .grants-container {
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 0 2rem 3rem 2rem;
-          display: grid;
-          gap: 1.5rem;
-        }
-        .grant-card {
-          background: white;
-          border-radius: 12px;
-          padding: 2rem;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          transition: all 0.3s ease;
-          border-left: 4px solid #667eea;
-        }
-        .grant-card:hover {
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-          transform: translateY(-2px);
-        }
-        .grant-closed {
-          opacity: 0.7;
-          border-left-color: #cbd5e0;
-        }
-        .grant-closed:hover {
-          opacity: 0.85;
-        }
-        .grant-header {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          gap: 1rem;
-          margin-bottom: 1rem;
-        }
-        .grant-title-section h3 {
-          font-size: 1.25rem;
-          color: #1a202c;
-          margin-bottom: 0.5rem;
-          line-height: 1.4;
-        }
-        .grant-agency {
-          color: #667eea;
-          font-size: 0.9rem;
+        .results-badge {
+          margin-left: auto;
+          padding: 0.5rem 1rem;
+          background: #0d1b2a;
+          color: white;
+          font-size: 0.85rem;
           font-weight: 600;
         }
-        // Removed unused getStatusBadge
-        .category-tag {
-          background: #edf2f7;
-          color: #4a5568;
-          padding: 0.4rem 0.75rem;
-          border-radius: 6px;
+        .results-badge strong {
+          color: #8b1538;
+          font-size: 1rem;
+        }
+
+        /* Timeline */
+        .timeline-container {
+          background: white;
+          border-bottom: 1px solid #d1d5db;
+          padding: 1.5rem 2rem;
+        }
+        .timeline-header {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 1rem;
+        }
+        .timeline-header svg {
+          color: #1b4965;
+        }
+        .timeline-header h3 {
+          font-size: 1.1rem;
+          color: #0d1b2a;
+          margin: 0;
+        }
+        .timeline-count {
+          margin-left: auto;
+          color: #6c757d;
+          font-size: 0.85rem;
+        }
+        .timeline {
+          position: relative;
+          height: 60px;
+          margin: 1rem 0;
+        }
+        .timeline-line {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: #d1d5db;
+          transform: translateY(-50%);
+        }
+        .timeline-dot {
+          position: absolute;
+          top: 50%;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          transition: all 0.2s;
+          border: 2px solid white;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .timeline-dot:hover {
+          width: 16px;
+          height: 16px;
+          z-index: 10;
+        }
+        .timeline-dot:hover .timeline-tooltip {
+          display: block;
+        }
+        .timeline-tooltip {
+          display: none;
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #0d1b2a;
+          color: white;
+          padding: 0.75rem;
+          border: 1px solid #1b4965;
+          min-width: 250px;
           font-size: 0.8rem;
-          font-weight: 500;
+          margin-bottom: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+          z-index: 100;
         }
-        .grant-details {
-          display: grid;
-          gap: 0.75rem;
-          margin-bottom: 1.25rem;
-          padding: 1rem;
-          background: #f7fafc;
-          border-radius: 8px;
+        .tooltip-title {
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+          color: white;
+          font-size: 0.85rem;
         }
-        .detail-row {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          color: #2d3748;
-          font-size: 0.9rem;
-        }
-        .detail-row svg {
-          color: #667eea;
-          flex-shrink: 0;
-        }
-        .match-required svg {
-          color: #ed8936;
-        }
-        .grant-purpose {
-          color: #4a5568;
-          font-size: 0.95rem;
-          line-height: 1.6;
-          margin-bottom: 1.25rem;
-          padding: 1rem;
-          background: #fafafa;
-          border-radius: 8px;
-          border-left: 3px solid #e2e8f0;
-        }
-        .grant-purpose strong {
-          color: #2d3748;
-        }
-        .grant-footer {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          gap: 1rem;
-          padding-top: 1.25rem;
-          border-top: 1px solid #e2e8f0;
-        }
-        .view-details-btn {
+        .tooltip-detail {
           display: flex;
           align-items: center;
           gap: 0.5rem;
+          margin-top: 0.25rem;
+          color: #b0c4de;
+        }
+        .tooltip-detail svg {
+          flex-shrink: 0;
+        }
+
+        /* Main Content */
+        .main-content {
+          display: flex;
+          min-height: calc(100vh - 250px);
+          background: #f5f5f5;
+        }
+        .main-content.split-view .table-container {
+          flex: 0 0 50%;
+        }
+        .table-container {
+          flex: 1;
+          overflow-x: auto;
+          background: white;
+          border-right: 1px solid #d1d5db;
+        }
+
+        /* Table */
+        .grants-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.9rem;
+        }
+        .grants-table thead {
+          position: sticky;
+          top: 0;
+          background: #e9ecef;
+          z-index: 10;
+          border-bottom: 2px solid #6c757d;
+        }
+        .grants-table th {
+          text-align: left;
+          padding: 0.75rem 1rem;
+          font-weight: 600;
+          color: #212529;
+          font-size: 0.85rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          white-space: nowrap;
+        }
+        .grants-table th svg {
+          display: inline;
+          vertical-align: middle;
+          margin-right: 0.25rem;
+        }
+        .grants-table tbody tr {
+          border-bottom: 1px solid #e5e7eb;
+          cursor: pointer;
+          transition: background 0.15s;
+        }
+        .grants-table tbody tr:hover {
+          background: #f8f9fa;
+        }
+        .grants-table tbody tr.selected {
+          background: #e3f2fd;
+          border-left: 3px solid #1b4965;
+        }
+        .grants-table td {
+          padding: 0.75rem 1rem;
+          color: #212529;
+        }
+        .grant-title-cell {
+          max-width: 400px;
+        }
+        .title-text {
+          font-weight: 600;
+          color: #0d1b2a;
+          margin-bottom: 0.25rem;
+        }
+        .categories-text {
+          font-size: 0.75rem;
+          color: #6c757d;
+        }
+        .amount-cell {
+          font-weight: 600;
+          color: #1b4965;
+          white-space: nowrap;
+        }
+        .deadline-cell {
+          white-space: nowrap;
+          color: #495057;
+        }
+        .agency-cell {
+          color: #495057;
+        }
+        .status-cell {
+          text-align: center;
+        }
+        .status-badge {
+          display: inline-block;
+          padding: 0.25rem 0.75rem;
+          color: white;
+          font-size: 0.75rem;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+        .no-results-row {
+          text-align: center;
+          padding: 3rem !important;
+          color: #6c757d;
+        }
+        .no-results-row svg {
+          display: block;
+          margin: 0 auto 0.5rem auto;
+        }
+
+        /* Detail Panel */
+        .detail-panel {
+          flex: 0 0 50%;
+          background: white;
+          overflow-y: auto;
+          border-left: 1px solid #d1d5db;
+        }
+        .detail-header {
+          position: sticky;
+          top: 0;
+          background: #0d1b2a;
+          color: white;
+          padding: 1.25rem 1.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 2px solid #1b4965;
+          z-index: 10;
+        }
+        .detail-header h2 {
+          font-size: 1.25rem;
+          margin: 0;
+          flex: 1;
+          padding-right: 1rem;
+        }
+        .close-btn {
+          background: transparent;
+          border: 1px solid #8899aa;
+          color: white;
+          padding: 0.5rem;
+          cursor: pointer;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .close-btn:hover {
+          background: #8b1538;
+          border-color: #8b1538;
+        }
+        .detail-content {
+          padding: 1.5rem;
+        }
+        .detail-section {
+          margin-bottom: 1.25rem;
+          padding-bottom: 1.25rem;
+          border-bottom: 1px solid #e5e7eb;
+        }
+        .detail-section.full-width {
+          grid-column: 1 / -1;
+        }
+        .detail-label {
+          font-size: 0.75rem;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          color: #6c757d;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        .detail-value {
+          font-size: 0.95rem;
+          color: #212529;
+          line-height: 1.5;
+        }
+        .detail-value.description {
+          line-height: 1.6;
+          color: #495057;
+        }
+        .detail-value.amount-highlight {
+          font-size: 1.5rem;
+          font-weight: 700;
+          color: #1b4965;
+        }
+        .detail-actions {
+          margin-top: 1.5rem;
+        }
+        .detail-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
           padding: 0.75rem 1.5rem;
-          background: #667eea;
+          background: #1b4965;
           color: white;
           text-decoration: none;
-          border-radius: 8px;
           font-weight: 600;
           font-size: 0.9rem;
           transition: all 0.2s;
+          border: 1px solid #1b4965;
         }
-        .view-details-btn:hover {
-          background: #5a67d8;
-          transform: translateX(2px);
+        .detail-link:hover {
+          background: #0d1b2a;
+          border-color: #0d1b2a;
         }
-        .contact-info {
-          color: #718096;
-          font-size: 0.85rem;
-        }
-        .loading-container,
-        .error-container,
-        .no-results {
+
+        /* Loading & Footer */
+        .loading-container {
           display: flex;
           flex-direction: column;
           align-items: center;
           justify-content: center;
           padding: 4rem 2rem;
-          color: white;
+          color: #495057;
           text-align: center;
           gap: 1rem;
-        }
-        .error-container {
-          background: white;
-          color: #1a202c;
-          border-radius: 12px;
-          max-width: 500px;
-          margin: 2rem auto;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-        .error-container svg {
-          color: #f56565;
-        }
-        .error-container button {
-          margin-top: 1rem;
-          padding: 0.75rem 1.5rem;
-          background: #667eea;
-          color: white;
-          border: none;
-          border-radius: 8px;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.2s;
-        }
-        .error-container button:hover {
-          background: #5a67d8;
         }
         .spinner {
           animation: spin 1s linear infinite;
@@ -595,28 +887,23 @@ const CalaverrasGrantsDashboard = () => {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        .no-results {
-          background: white;
-          color: #4a5568;
-          border-radius: 12px;
-          padding: 3rem;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
         .footer {
-          max-width: 1400px;
-          margin: 0 auto;
-          padding: 2rem;
+          background: #0d1b2a;
+          padding: 1.5rem 2rem;
           text-align: center;
-          color: rgba(255, 255, 255, 0.8);
-          font-size: 0.85rem;
+          color: #8899aa;
+          font-size: 0.8rem;
+          border-top: 2px solid #1b4965;
         }
-        @media (max-width: 1024px) {
-          .filters-container {
-            grid-template-columns: 1fr;
-          }
-          .grant-footer {
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+          .main-content.split-view {
             flex-direction: column;
-            align-items: stretch;
+          }
+          .main-content.split-view .table-container,
+          .detail-panel {
+            flex: 1 1 auto;
           }
         }
       `}</style>
