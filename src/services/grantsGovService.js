@@ -25,6 +25,7 @@ export const searchGrantsGov = async (params = {}) => {
   const searchParams = { ...defaultParams, ...params };
 
   try {
+    // eslint-disable-next-line no-console
     console.log('[Grants.gov] Searching with params:', searchParams);
     
     const response = await fetch(`${API_BASE_URL}/search2`, {
@@ -45,9 +46,11 @@ export const searchGrantsGov = async (params = {}) => {
       throw new Error(`Grants.gov API error: ${result.msg}`);
     }
 
+    // eslint-disable-next-line no-console
     console.log(`[Grants.gov] Found ${result.data.hitCount} opportunities`);
     return result.data.oppHits || [];
   } catch (error) {
+    // eslint-disable-next-line no-console
     console.error('[Grants.gov] Search error:', error);
     throw error;
   }
@@ -183,6 +186,7 @@ export const getGrantsGovOpportunities = async () => {
   // Try cache first
   const cached = getCachedGrantsGov();
   if (cached) {
+    // eslint-disable-next-line no-console
     console.log('[Grants.gov] Using cached data');
     return cached.data;
   }

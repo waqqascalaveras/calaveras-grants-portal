@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getGrantsGovOpportunities } from '../services/grantsGovService';
-import { Search, Filter, Building2, AlertCircle, Clock, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User } from 'lucide-react';
+import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User } from 'lucide-react';
 
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
@@ -11,9 +11,7 @@ const CalaverrasGrantsDashboard = () => {
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
-  const [lastUpdated, setLastUpdated] = useState(null);
   const [selectedGrant, setSelectedGrant] = useState(null);
-  const [dataSource, setDataSource] = useState({ ca: 0, federal: 0 });
 
   // Department mappings to grant categories
   const departments = useMemo(() => ({
@@ -78,20 +76,24 @@ const CalaverrasGrantsDashboard = () => {
         if (cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours) {
           // Use cached CA data
           caGrants = JSON.parse(cachedData);
+          // eslint-disable-next-line no-console
           console.log(`[CA Grants] Loaded ${caGrants.length} grants from cache`);
         } else {
           // Fetch fresh CA data
+          // eslint-disable-next-line no-console
           console.log('[CA Grants] Fetching fresh data from CA API...');
           const response = await fetch(
             'https://data.ca.gov/api/3/action/datastore_search?resource_id=111c8c88-21f6-453c-ae2c-b4785a0624f5&limit=10000'
           );
           
           if (!response.ok) {
+            // eslint-disable-next-line no-console
             console.warn(`[CA Grants] API returned status ${response.status}`);
           } else {
             const data = await response.json();
             if (data.success && data.result && data.result.records) {
               caGrants = data.result.records.map(g => ({ ...g, _source: 'ca.gov' }));
+              // eslint-disable-next-line no-console
               console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
               
               // Cache CA data
@@ -104,16 +106,20 @@ const CalaverrasGrantsDashboard = () => {
         // Fetch Federal Grants from Grants.gov
         let federalGrants = [];
         try {
+          // eslint-disable-next-line no-console
           console.log('[Federal Grants] Fetching from Grants.gov...');
           federalGrants = await getGrantsGovOpportunities();
+          // eslint-disable-next-line no-console
           console.log(`[Federal Grants] Fetched ${federalGrants.length} grants`);
         } catch (fedError) {
+          // eslint-disable-next-line no-console
           console.warn('[Federal Grants] Error fetching Grants.gov data:', fedError.message);
           // Continue with CA grants only
         }
         
         // Combine both sources
         const allGrants = [...caGrants, ...federalGrants];
+        // eslint-disable-next-line no-console
         console.log(`[Grants Portal] Total grants: ${allGrants.length} (CA: ${caGrants.length}, Federal: ${federalGrants.length})`);
         
         if (allGrants.length === 0) {
@@ -121,10 +127,9 @@ const CalaverrasGrantsDashboard = () => {
         }
         
         setGrants(allGrants);
-        setDataSource({ ca: caGrants.length, federal: federalGrants.length });
-        setLastUpdated(new Date(now));
         setLoading(false);
       } catch (err) {
+        // eslint-disable-next-line no-console
         console.error('[Grants Portal] Error fetching grants:', err);
         setError(err.message);
         setLoading(false);
@@ -138,6 +143,7 @@ const CalaverrasGrantsDashboard = () => {
   // Filter and process grants with all filters
   const filteredGrants = useMemo(() => {
     if (grants.length === 0) {
+      // eslint-disable-next-line no-console
       console.log('[Grants Portal] No grants to filter');
       return [];
     }
@@ -176,13 +182,19 @@ const CalaverrasGrantsDashboard = () => {
       return true;
     });
 
+    // eslint-disable-next-line no-console
     console.log(`[Grants Portal] Filtered ${filtered.length} grants from ${grants.length} total`);
+    // eslint-disable-next-line no-console
     console.log(`[Grants Portal] Filters: userType=${userType}, dept=${selectedDepartment}, status=${statusFilter}, search="${searchQuery}"`);
     
     if (filtered.length === 0 && grants.length > 0) {
+      // eslint-disable-next-line no-console
       console.warn('[Grants Portal] All grants filtered out. Check filter criteria:');
+      // eslint-disable-next-line no-console
       console.log('- Total grants loaded:', grants.length);
+      // eslint-disable-next-line no-console
       console.log('- Sample grant status:', grants[0]?.Status);
+      // eslint-disable-next-line no-console
       console.log('- Sample grant title:', grants[0]?.Title || grants[0]?.GrantTitle);
     }
 
