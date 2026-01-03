@@ -28,6 +28,37 @@ export const isEligibleForCounty = (grant) => {
 };
 
 /**
+ * Check if a grant is eligible for Community-Based Organizations (CBOs)
+ * @param {Object} grant - Grant record
+ * @returns {boolean} - True if CBO eligible
+ */
+export const isEligibleForCBO = (grant) => {
+  const applicantType = grant.ApplicantType?.toLowerCase() || '';
+  // If ApplicantType is missing/empty, treat as potentially eligible
+  if (!grant.ApplicantType || !applicantType.trim()) return true;
+
+  const eligibleTypes = [
+    'nonprofit',
+    '501c3',
+    'community organization',
+    'community-based',
+    'ngo',
+    'faith-based'
+  ];
+  const restrictedTypes = [
+    'individual only',
+    'business only',
+    'government only',
+    'public agency only'
+  ];
+  
+  const hasEligibleType = eligibleTypes.some(type => applicantType.includes(type));
+  const hasRestrictedType = restrictedTypes.some(type => applicantType.includes(type));
+  
+  return hasEligibleType || (!hasRestrictedType && applicantType.length > 0);
+};
+
+/**
  * Check if grant is recently closed (within 30 days)
  * @param {Object} grant - Grant record
  * @returns {boolean} - True if recently closed

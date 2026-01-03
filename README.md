@@ -1,6 +1,6 @@
 # Calaveras County Grants Portal
 
-A professional web application that helps Calaveras County staff discover and track relevant funding opportunities from California's state grants portal.
+A professional web application that helps Calaveras County staff discover and track relevant funding opportunities from California State Grants Portal and Federal Grants.gov.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![React](https://img.shields.io/badge/react-18.0%2B-brightgreen)
@@ -8,12 +8,23 @@ A professional web application that helps Calaveras County staff discover and tr
 
 ## 🎯 Features
 
+### Data Integration
+- **Dual-Source Aggregation**: Combines California State Grants Portal and Federal Grants.gov opportunities
 - **Smart Filtering**: Automatically filters grants to show only those eligible for county agencies
-- **Department Matching**: Intelligent keyword matching across 10 county departments
-- **Automatic Caching**: 12-hour cache system for fast loading and reduced API calls
-- **Status Management**: Displays open, forecasted, and recently closed grants with clear visual indicators
+- **Source Identification**: Clear badges distinguish between state (CA) and federal grants
+
+### Professional Interface
+- **Table-Based Layout**: Dense, scannable data table with sticky headers
+- **Interactive Timeline**: Visual deadline timeline with hover tooltips
+- **Split-Screen Detail View**: Click any grant to open side-by-side detail panel
+- **Enterprise Styling**: Professional color scheme with sharp corners (navy, maroon, grays)
+
+### Intelligent Features
+- **Department Matching**: Keyword matching across 10 county departments
+- **Automatic Caching**: 12-hour cache system for both data sources
+- **Status Management**: Displays open, forecasted, and recently closed grants
 - **Real-time Search**: Search across titles, descriptions, and categories
-- **Professional UI**: Clean, modern interface optimized for desktop workflows
+- **Comprehensive Error Reporting**: Detailed debugging and error messages
 
 ## 📋 Quick Start
 
@@ -47,11 +58,18 @@ The application will open at `http://localhost:3000`
 Create a `.env` file in the root directory:
 
 ```env
+# California State Grants API
 REACT_APP_API_BASE_URL=https://data.ca.gov/api/3/action
 REACT_APP_RESOURCE_ID=111c8c88-21f6-453c-ae2c-b4785a0624f5
+
+# Cache settings
 REACT_APP_CACHE_DURATION=43200000
+
+# County configuration
 REACT_APP_COUNTY_NAME=Calaveras County
 ```
+
+**Note**: Grants.gov API integration uses hardcoded public endpoints and does not require API keys.
 
 ## 🏗️ Project Structure
 
@@ -59,23 +77,29 @@ REACT_APP_COUNTY_NAME=Calaveras County
 calaveras-grants-portal/
 ├── public/                    # Static files
 │   ├── index.html
-│   └── favicon.ico
+│   └── manifest.json
 ├── src/
 │   ├── components/           # React components
-│   │   ├── CalaverrasGrantsDashboard.jsx
-│   │   ├── GrantCard.jsx
-│   │   ├── FilterSection.jsx
-│   │   └── Header.jsx
+│   │   ├── CalaverrasGrantsDashboard.jsx  # Main dashboard with table/timeline
+│   │   ├── EnhancedGrantCard.jsx
+│   │   ├── StatisticsBar.jsx
+│   │   ├── GrantScatterPlot.jsx
+│   │   └── [other components]/
 │   ├── services/            # API and data services
-│   │   ├── grantService.js
-│   │   └── cacheService.js
+│   │   ├── grantService.js          # CA State Grants API
+│   │   └── grantsGovService.js      # Federal Grants.gov API
 │   ├── utils/               # Utility functions
 │   │   ├── formatters.js
 │   │   └── eligibilityFilters.js
 │   ├── config/              # Configuration files
-│   │   └── departments.js
+│   │   ├── departments.js
+│   │   └── colors.js
 │   ├── App.js
 │   └── index.js
+├── scripts/                 # Build and validation scripts
+│   ├── build_validator.py
+│   ├── check_workflows.py
+│   └── cleanup-project.ps1
 ├── .env                     # Environment variables (not in git)
 ├── .env.example            # Example environment file
 ├── package.json
@@ -114,10 +138,10 @@ Every push to `main` branch automatically deploys via GitHub Actions:
 1. Set up `.github/workflows/deploy.yml` (provided)
 2. Enable GitHub Pages in repo Settings → Pages
 3. Push changes → Auto-deploys! ✨
-
-See **QUICK_START_VSCODE.md** for detailed deployment instructions.
-
-## 📖 Documentation
+- **[IMPLEMENTATION_GUIDE_UIUX.md](./ux/IMPLEMENTATION_GUIDE_UIUX.md)** - UI/UX design guide
+- **[UIUX_DESIGN_GUIDE.md](./ux/UIUX_DESIGN_GUIDE.md)** - Design system documentation
+- **[API Documentation - CA](https://data.ca.gov/)** - California Grants Portal API
+- **[API Documentation - Federal](https://www.grants.gov/web/grants/support/web-services-api.html)** - Grants.gov
 
 - **[QUICK_START_VSCODE.md](./QUICK_START_VSCODE.md)** - Get started in 10 minutes!
 - **[IMPLEMENTATION_GUIDE_VSCODE.md](./IMPLEMENTATION_GUIDE_VSCODE.md)** - Complete technical guide
@@ -145,14 +169,23 @@ Runs ESLint to check code quality
 ### `npm run format`
 Formats code using Prettier
 
-### Cleanup script
-PowerShell maintenance script to remove caches, reorganize docs/scripts, and update `.gitignore`.
+### `npm run test:ci`
+Runs tests in CI mode with coverage
 
-Run from PowerShell:
+## 🔄 Data Sources
 
-```powershell
-.\scripts\cleanup-project.ps1
-```
+### California State Grants Portal
+- **API**: `https://data.ca.gov/api/3/action/datastore_search`
+- **Resource ID**: `111c8c88-21f6-453c-ae2c-b4785a0624f5`
+- **Cache Duration**: 12 hours
+- **Filtering**: Automatic county eligibility check
+
+### Federal Grants.gov
+- **Search API**: `https://api.grants.gov/v1/api/search2`
+- **Detail API**: `https://api.grants.gov/v1/api/fetchOpportunity`
+- **Cache Duration**: 12 hours
+- **Filtering**: Pre-filtered for county governments (eligibility code: `01`)
+- **Status Filter**: Only `forecasted|posted` opportunities
 
 
 ## 🏢 Department Categories
@@ -163,11 +196,20 @@ The system intelligently matches grants to these departments:
 - **Social Services** - Human services, housing, family support
 - **Public Works** - Infrastructure, transportation, utilities
 - **Planning & Building** - Land use, zoning, community development
-- **Sheriff / Emergency Services** - Public safety, disaster preparedness
-- **Environmental Health** - Sustainability, conservation, waste management
-- **Parks & Recreation** - Community programs, trails, facilities
-- **Education & Workforce** - Training, employment, skills development
-- **Agriculture** - Farming, rural development, food systems
+### Data Pipeline
+1. **Parallel Fetching**: Simultaneously retrieves data from CA State Portal and Grants.gov
+2. **Normalization**: Converts Grants.gov format to match CA portal schema
+3. **Caching**: Stores normalized data locally for 12 hours
+4. **Aggregation**: Combines both sources into unified dataset
+5. **Filtering**: Applies eligibility rules and department matching
+6. **Display**: Presents in table format with source badges
+
+### User Interface
+- **Table View**: Dense, scannable table shows all grants at once
+- **Timeline Visualization**: Interactive timeline with grant deadlines as dots
+- **Split-Screen Details**: Click any grant row to open side-by-side detail panel
+- **Sticky Filters**: Search, department, and status filters remain accessible while scrolling
+- **Source Badges**: Each grant clearly labeled as "Federal" or "CA"
 - **IT & Data Modernization** - Technology, broadband, data systems
 
 ## 🔍 How It Works
@@ -175,9 +217,23 @@ The system intelligently matches grants to these departments:
 1. **Data Fetching**: Retrieves grant data from California's open data portal
 2. **Caching**: Stores data locally for 12 hours to improve performance
 3. **Filtering**: Applies eligibility rules to show only county-eligible grants
-4. **Matching**: Uses keyword analysis to match grants to departments
-5. **Display**: Presents grants in a clean, searchable interface
+4. **Matchi- Currently accepting applications
+- **Forecasted** - Announced but not yet open
+- **Closed** - Past deadline (limited display)
 
+## 🎨 Design System
+
+### Color Palette (Professional/Enterprise)
+- **Primary Navy**: `#0d1b2a` - Headers, primary elements
+- **Accent Blue**: `#1b4965` - Interactive elements, links
+- **Maroon**: `#8b1538` - Highlights, federal grant badges
+- **Grays**: `#6c757d`, `#495057`, `#212529` - Text, borders
+- **Backgrounds**: `#f5f5f5`, `#ffffff` - Base colors
+
+### Typography
+- **Font Family**: System fonts (-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto)
+- **Sharp Corners**: No rounded borders (professional, government-appropriate)
+- **Dense Layout**: Maximizes information density for desktop use
 ### Eligibility Criteria
 
 Grants are shown if they accept:
@@ -191,26 +247,40 @@ Grants are hidden if restricted to:
 - Businesses only
 - Nonprofits only
 
-### Status Categories
+### Status Categori, clear cache in browser console:
+```javascript
+// Clear CA State cache
+localStorage.removeItem('calaverrasGrantsCache');
+localStorage.removeItem('calaverrasGrantsCacheTime');
 
-- **Open** ✓ - Currently accepting applications
-- **Forecasted** ⚠️ - Announced but not yet open
-- **Recently Closed** 🕒 - Closed within last 30 days (shown dimmed)
+// Clear Federal cache
+localStorage.removeItem('grantsGovCache');
+localStorage.removeItem('grantsGovCacheTime');
+```
 
-## 🔒 Security
+### No Grants Displayed
+1. Open browser DevTools (F12) and check Console tab
+2. Look for logs showing:
+   - `[CA Grants] Loaded X grants`
+   - `[Federal Grants] Fetched X grants`
+   - `[Grants Portal] Filtered X grants from X total`
+3. If filters show count > 0, check filter criteria
+4. If error messages appear, see error details in the UI
 
-- No sensitive data stored in browser
-- All API calls use HTTPS
-- Regular dependency security audits
-- Input sanitization on all user inputs
+### API Connection Issues
+- **CA State Portal**: Verify connection to `data.ca.gov`
+- **Grants.gov**: Check if `api.grants.gov` is accessible
+- Review browser console for specific error messages
+- Note: If one source fails, the other should still work
 
-## 📊 Performance
+### Build Issues
+```bash
+# Clear and reinstall dependencies
+rm -rf node_modules package-lock.json
+npm install
 
-Target metrics:
-- First Contentful Paint: < 1.5s
-- Time to Interactive: < 3.5s
-- Lighthouse Score: > 90
-
+# Clear build cache
+npm run build -- --no-
 ## 🐛 Troubleshooting
 
 ### Cache Issues
@@ -219,7 +289,17 @@ If data seems stale:
 // Clear cache manually in browser console
 localStorage.removeItem('calaverrasGrantsCache');
 localStorage.removeItem('calaverrasGrantsCacheTime');
-```
+### Version 1.0.0 (January 2026)
+- ✨ **Major redesign**: Professional table-based interface
+- 🎯 **Timeline visualization**: Interactive deadline timeline with tooltips
+- 🔄 **Dual-source integration**: Combined CA State + Federal Grants.gov data
+- 🎨 **Enterprise styling**: Professional color scheme (navy, maroon, grays)
+- 📊 **Split-screen detail view**: Click grants to see side-by-side details
+- 🐛 **Enhanced error reporting**: Comprehensive debugging and error messages
+- ⚡ **Performance improvements**: Parallel data fetching, optimized filtering
+- 🔧 **Better data normalization**: Unified schema for both data sources
+
+See [CHANGELOG.md](./CHANGELOG.md) for complete
 
 ### API Connection Issues
 - Verify internet connection
@@ -243,14 +323,15 @@ This is an internal County project. For changes or enhancements:
 1. Create feature branch from `main`
 2. Make changes and test thoroughly
 3. Submit pull request with description
-4. Await review from project lead
+4.Federal Grants.gov for public API access
+- Calaveras County IT Department for infrastructure support
+- County department heads for feedback and requirements
 
-## 📝 Change Log
+---
 
-See [CHANGELOG.md](./CHANGELOG.md) for version history.
+**Built for Calaveras County**
 
-## 👥 Team
-
+*Last Updated: January 2026
 - **Project Lead**: Waqqas Hanafi
 
 ## 📞 Support
