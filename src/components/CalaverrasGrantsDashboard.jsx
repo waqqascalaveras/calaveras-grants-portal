@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getGrantsGovOpportunities } from '../services/grantsGovService';
-import { departments, getDepartmentsByGroup } from '../config/departments';
-import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User, Clock, RefreshCw, Heart } from 'lucide-react';
+import { departments } from '../config/departments';
+import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
 import DepartmentSelector from './DepartmentSelector';
 
