@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getGrantsGovOpportunities } from '../services/grantsGovService';
-import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User } from 'lucide-react';
+import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User, Clock, RefreshCw, Heart } from 'lucide-react';
 
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
@@ -11,179 +11,169 @@ const CalaverrasGrantsDashboard = () => {
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
+  const [favorites, setFavorites] = useState([]);
   const [selectedGrant, setSelectedGrant] = useState(null);
   const [sortColumn, setSortColumn] = useState(null);
   const [sortDirection, setSortDirection] = useState('asc');
+  const [lastUpdated, setLastUpdated] = useState(null);
+  const [hoveredGrantId, setHoveredGrantId] = useState(null);
 
-  // Department mappings to grant categories
-  const departments = useMemo(() => ({
-    all: { name: 'All Departments', keywords: [] },
-    'public-health': { 
-      name: 'Public Health', 
-      keywords: ['Health', 'Human Services', 'Medical', 'Healthcare', 'Disease', 'Prevention', 'Wellness', 'Mental Health', 'Substance']
-    },
-    'social-services': { 
-      name: 'Social Services', 
-      keywords: ['Human Services', 'Social', 'Community', 'Housing', 'Homelessness', 'Family', 'Children', 'Youth', 'Senior']
-    },
-    'public-works': { 
-      name: 'Public Works', 
-      keywords: ['Transportation', 'Infrastructure', 'Water', 'Wastewater', 'Roads', 'Bridges', 'Construction']
-    },
-    'planning': { 
-      name: 'Planning & Building', 
-      keywords: ['Planning', 'Development', 'Land Use', 'Zoning', 'Building', 'Housing', 'Community Development']
-    },
-    'sheriff': { 
-      name: 'Sheriff / Emergency Services', 
-      keywords: ['Public Safety', 'Emergency', 'Law Enforcement', 'Fire', 'Disaster', 'Security', 'Crime']
-    },
-    'environmental': { 
-      name: 'Environmental Health', 
-      keywords: ['Environment', 'Environmental', 'Climate', 'Sustainability', 'Conservation', 'Natural Resources', 'Energy', 'Waste']
-    },
-    'parks': { 
-      name: 'Parks & Recreation', 
-      keywords: ['Recreation', 'Parks', 'Open Space', 'Trails', 'Community Programs', 'Sports', 'Youth Programs']
-    },
-    'education': { 
-      name: 'Education & Workforce', 
-      keywords: ['Education', 'Training', 'Workforce', 'Employment', 'Job', 'Career', 'Skills']
-    },
-    'agriculture': { 
-      name: 'Agriculture', 
-      keywords: ['Agriculture', 'Farming', 'Rural', 'Food', 'Crop']
-    },
-    'it': { 
-      name: 'IT & Data Modernization', 
-      keywords: ['Technology', 'Data', 'Digital', 'Broadband', 'Internet', 'Information Systems', 'Modernization']
-    }
-  }), []);
-
-  // Fetch and cache grant data
-  useEffect(() => {
-    const fetchGrants = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-        
-        const now = Date.now();
-        const twelveHours = 12 * 60 * 60 * 1000;
-        
-        // Fetch California State Grants
-        let caGrants = [];
-        const cachedData = localStorage.getItem('calaverrasGrantsCache');
-        const cacheTimestamp = localStorage.getItem('calaverrasGrantsCacheTime');
-        
-        // Helper function to cache data with proper error handling
-        const setCacheWithErrorHandling = (key, value, timeKey) => {
-          try {
-            localStorage.setItem(key, value);
-            localStorage.setItem(timeKey, now.toString());
-            // eslint-disable-next-line no-console
-            console.log(`[Cache] Successfully cached ${key}`);
-          } catch (quotaError) {
-            if (quotaError.name === 'QuotaExceededError') {
-              // eslint-disable-next-line no-console
-              console.warn('[Cache] localStorage quota exceeded, clearing old data...');
-              try {
-                // Clear old grants cache
-                localStorage.removeItem('calaverrasGrantsCache');
-                localStorage.removeItem('calaverrasGrantsCacheTime');
-                localStorage.removeItem('grantsGovCache');
-                localStorage.removeItem('grantsGovCacheTime');
-                // Try caching again
-                localStorage.setItem(key, value);
-                localStorage.setItem(timeKey, now.toString());
-                // eslint-disable-next-line no-console
-                console.log('[Cache] Retried caching after clearing old data');
-              } catch (retryError) {
-                // eslint-disable-next-line no-console
-                console.warn('[Cache] Cache storage still exceeded after clearing, proceeding without cache');
-              }
-            } else {
-              throw quotaError;
-            }
-          }
-        };
-
-        if (cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours) {
-          // Use cached CA data
-          caGrants = JSON.parse(cachedData);
-          // eslint-disable-next-line no-console
-          console.log(`[CA Grants] Loaded ${caGrants.length} grants from cache`);
-        } else {
-          // Fetch fresh CA data
-          // eslint-disable-next-line no-console
-          console.log('[CA Grants] Fetching fresh data from CA API...');
-          const response = await fetch(
-            'https://data.ca.gov/api/3/action/datastore_search?resource_id=111c8c88-21f6-453c-ae2c-b4785a0624f5&limit=10000'
-          );
-          
-          if (!response.ok) {
-            // eslint-disable-next-line no-console
-            console.warn(`[CA Grants] API returned status ${response.status}`);
-          } else {
-            const data = await response.json();
-            if (data.success && data.result && data.result.records) {
-              caGrants = data.result.records.map(g => ({ ...g, _source: 'ca.gov' }));
-              // eslint-disable-next-line no-console
-              console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
-              
-              // Cache only essential fields to reduce storage
-              const essentialFields = caGrants.map(g => ({
-                PortalID: g.PortalID,
-                Title: g.Title || g.GrantTitle,
-                AgencyName: g.AgencyName,
-                EstAvailFunds: g.EstAvailFunds,
-                ApplicationDeadline: g.ApplicationDeadline,
-                Status: g.Status,
-                Categories: g.Categories,
-                ApplicantType: g.ApplicantType,
-                Purpose: g.Purpose,
-                Description: g.Description,
-                _source: g._source
-              }));
-              setCacheWithErrorHandling('calaverrasGrantsCache', JSON.stringify(essentialFields), 'calaverrasGrantsCacheTime');
-            }
-          }
-        }
-        
-        // Fetch Federal Grants from Grants.gov
-        let federalGrants = [];
-        try {
-          // eslint-disable-next-line no-console
-          console.log('[Federal Grants] Fetching from Grants.gov...');
-          federalGrants = await getGrantsGovOpportunities();
-          // eslint-disable-next-line no-console
-          console.log(`[Federal Grants] Fetched ${federalGrants.length} grants`);
-        } catch (fedError) {
-          // eslint-disable-next-line no-console
-          console.warn('[Federal Grants] Error fetching Grants.gov data:', fedError.message);
-          // Continue with CA grants only
-        }
-        
-        // Combine both sources
-        const allGrants = [...caGrants, ...federalGrants];
-        // eslint-disable-next-line no-console
-        console.log(`[Grants Portal] Total grants: ${allGrants.length} (CA: ${caGrants.length}, Federal: ${federalGrants.length})`);
-        
-        if (allGrants.length === 0) {
-          throw new Error('No grant data available from any source');
-        }
-        
-        setGrants(allGrants);
-        setLoading(false);
-      } catch (err) {
-        // eslint-disable-next-line no-console
-        console.error('[Grants Portal] Error fetching grants:', err);
-        setError(err.message);
-        setLoading(false);
-      }
-    };
-    
-    fetchGrants();
+  // Unique key for grants
+  const getGrantId = useCallback((grant) => {
+    return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
+  // Fetch and cache grant data (reusable for manual refresh)
+  const fetchGrants = useCallback(async (forceRefresh = false) => {
+    try {
+      setLoading(true);
+      setError(null);
+      const now = Date.now();
+      const twelveHours = 12 * 60 * 60 * 1000;
+
+      // Fetch California State Grants
+      let caGrants = [];
+      const cachedData = localStorage.getItem('calaverrasGrantsCache');
+      const cacheTimestamp = localStorage.getItem('calaverrasGrantsCacheTime');
+
+      // Helper function to cache data with proper error handling
+      const setCacheWithErrorHandling = (key, value, timeKey) => {
+        try {
+          localStorage.setItem(key, value);
+          localStorage.setItem(timeKey, now.toString());
+          // eslint-disable-next-line no-console
+          console.log(`[Cache] Successfully cached ${key}`);
+        } catch (quotaError) {
+          if (quotaError.name === 'QuotaExceededError') {
+            // eslint-disable-next-line no-console
+            console.warn('[Cache] localStorage quota exceeded, clearing old data...');
+            try {
+              // Clear old grants cache
+              localStorage.removeItem('calaverrasGrantsCache');
+              localStorage.removeItem('calaverrasGrantsCacheTime');
+              localStorage.removeItem('grantsGovCache');
+              localStorage.removeItem('grantsGovCacheTime');
+              // Try caching again
+              localStorage.setItem(key, value);
+              localStorage.setItem(timeKey, now.toString());
+              // eslint-disable-next-line no-console
+              console.log('[Cache] Retried caching after clearing old data');
+            } catch (retryError) {
+              // eslint-disable-next-line no-console
+              console.warn('[Cache] Cache storage still exceeded after clearing, proceeding without cache');
+            }
+          } else {
+            throw quotaError;
+          }
+        }
+      };
+
+      const useCache = !forceRefresh && cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours;
+
+      if (useCache) {
+        // Use cached CA data
+        caGrants = JSON.parse(cachedData);
+        // eslint-disable-next-line no-console
+        console.log(`[CA Grants] Loaded ${caGrants.length} grants from cache`);
+      } else {
+        // Fetch fresh CA data
+        // eslint-disable-next-line no-console
+        console.log('[CA Grants] Fetching fresh data from CA API...');
+        const response = await fetch(
+          'https://data.ca.gov/api/3/action/datastore_search?resource_id=111c8c88-21f6-453c-ae2c-b4785a0624f5&limit=10000'
+        );
+        
+        if (!response.ok) {
+          // eslint-disable-next-line no-console
+          console.warn(`[CA Grants] API returned status ${response.status}`);
+        } else {
+          const data = await response.json();
+          if (data.success && data.result && data.result.records) {
+            caGrants = data.result.records.map(g => ({ ...g, _source: 'ca.gov' }));
+            // eslint-disable-next-line no-console
+            console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
+            
+            // Cache only essential fields to reduce storage
+            const essentialFields = caGrants.map(g => ({
+              PortalID: g.PortalID,
+              Title: g.Title || g.GrantTitle,
+              AgencyName: g.AgencyName,
+              EstAvailFunds: g.EstAvailFunds,
+              ApplicationDeadline: g.ApplicationDeadline,
+              Status: g.Status,
+              Categories: g.Categories,
+              ApplicantType: g.ApplicantType,
+              Purpose: g.Purpose,
+              Description: g.Description,
+              _source: g._source
+            }));
+            setCacheWithErrorHandling('calaverrasGrantsCache', JSON.stringify(essentialFields), 'calaverrasGrantsCacheTime');
+          }
+        }
+      }
+      
+      // Fetch Federal Grants from Grants.gov
+      let federalGrants = [];
+      try {
+        // eslint-disable-next-line no-console
+        console.log('[Federal Grants] Fetching from Grants.gov...');
+        federalGrants = await getGrantsGovOpportunities();
+        // eslint-disable-next-line no-console
+        console.log(`[Federal Grants] Fetched ${federalGrants.length} grants`);
+      } catch (fedError) {
+        // eslint-disable-next-line no-console
+        console.warn('[Federal Grants] Error fetching Grants.gov data:', fedError.message);
+        // Continue with CA grants only
+      }
+      
+      // Combine both sources
+      const allGrants = [...caGrants, ...federalGrants];
+      // eslint-disable-next-line no-console
+      console.log(`[Grants Portal] Total grants: ${allGrants.length} (CA: ${caGrants.length}, Federal: ${federalGrants.length})`);
+      
+      if (allGrants.length === 0) {
+        throw new Error('No grant data available from any source');
+      }
+      
+      setGrants(allGrants);
+      setLastUpdated(new Date());
+      setLoading(false);
+    } catch (err) {
+      // eslint-disable-next-line no-console
+      console.error('[Grants Portal] Error fetching grants:', err);
+      setError(err.message);
+      setLoading(false);
+    }
+  }, []);
+
+  // Initial fetch
+  useEffect(() => {
+    fetchGrants();
+  }, [fetchGrants]);
+
+  // Load favorites from localStorage
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('favoriteGrants');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed)) {
+          setFavorites(parsed);
+        }
+      }
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.warn('Failed to load favorites');
+    }
+  }, []);
+
+  // Persist favorites
+  useEffect(() => {
+    try {
+      localStorage.setItem('favoriteGrants', JSON.stringify(favorites));
+    } catch (e) {
+      // ignore
+    }
+  }, [favorites]);
 
 
   // Filter and process grants with all filters
@@ -258,7 +248,8 @@ const CalaverrasGrantsDashboard = () => {
         ...grant,
         _matchesDept: selectedDepartment === 'all' || matchesDepartment(grant, selectedDepartment, departments),
         _isTooSoon: isTooSoon,
-        _daysUntil: daysUntil
+        _daysUntil: daysUntil,
+        _id: getGrantId(grant)
       };
     });
     
@@ -322,6 +313,7 @@ const CalaverrasGrantsDashboard = () => {
       const amount = parseInt(g.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
       return {
         grant: g,
+        id: g._id || getGrantId(g),
         deadline,
         daysUntil,
         amount,
@@ -409,15 +401,9 @@ const CalaverrasGrantsDashboard = () => {
 
   return (
     <div className="dashboard">
-      {/* Headediv style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                <span className="data-source-badge">
-                  CA: {dataSource.ca} | Federal: {dataSource.federal}
-                </span>
-                <span className="cache-time">
-                  <Clock size={14} />
-                  Updated: {lastUpdated.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
-                </span>
-              </divName="header-left">
+      <header className="header">
+        <div className="header-content">
+          <div className="header-left">
             <Building2 size={28} />
             <div>
               <h1>Calaveras County Grants Portal</h1>
@@ -426,11 +412,15 @@ const CalaverrasGrantsDashboard = () => {
           </div>
           <div className="header-right">
             {lastUpdated && (
-              <span className="cache-time">
+              <span className="cache-time" title={`Last updated ${lastUpdated.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`}>
                 <Clock size={14} />
-                Updated: {lastUpdated.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
+                {lastUpdated.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
               </span>
             )}
+            <button className="refresh-btn" onClick={() => fetchGrants(true)} title="Refresh grant data">
+              <RefreshCw size={14} />
+              Refresh
+            </button>
           </div>
         </div>
       </header>
@@ -496,100 +486,92 @@ const CalaverrasGrantsDashboard = () => {
             <strong>{grantsWithEmphasis.length}</strong> grants
           </div>
         </div>
-      </div>
-
-      {/* Timeline Visualization */}
-      <div className="timeline-container">
-        <div className="timeline-header">
-          <Calendar size={18} />
-          <h3>Grant Deadlines Timeline</h3>
-          <span className="timeline-count">{timelineData.length} upcoming deadlines</span>
-        </div>
-        <div className="timeline">
-          <div className="timeline-line"></div>
-          
-          {/* Time markers */}
-          {[30, 60, 90, 120, 180].map((days) => {
-            const maxDays = timelineData.length > 0 ? 
-              Math.max(...timelineData.map(item => item.daysUntil || 0)) : 180;
-            if (days > maxDays) return null;
-            const pos = Math.min(95, (days / maxDays) * 100);
-            return (
-              <div
-                key={days}
-                className="timeline-marker"
-                style={{ left: `${pos}%` }}
-              >
-                {days === 30 ? '1 month' : 
-                 days === 60 ? '2 months' : 
-                 days === 90 ? '3 months' : 
-                 days === 120 ? '4 months' : 
-                 '6 months'}
-              </div>
-            );
-          })}
-          
-          {timelineData.map((item, idx) => {
-            const leftPos = Math.min(95, Math.max(2, (idx / Math.max(timelineData.length - 1, 1)) * 100));
-            
-            // Color-code by urgency (days until deadline)
-            let dotColor;
-            if (item.daysUntil <= 7) {
-              dotColor = '#dc3545'; // Red - urgent (1 week or less)
-            } else if (item.daysUntil <= 14) {
-              dotColor = '#fd7e14'; // Orange - very soon (2 weeks)
-            } else if (item.daysUntil <= 30) {
-              dotColor = '#ffc107'; // Yellow - soon (1 month)
-            } else if (item.daysUntil <= 60) {
-              dotColor = '#28a745'; // Green - good time (2 months)
-            } else {
-              dotColor = '#1b4965'; // Blue - plenty of time
-            }
-            
-            // Size based on funding amount (8px to 18px)
-            const amount = parseInt((item.grant.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
-            let dotSize;
-            if (amount >= 10000000) { // $10M+
-              dotSize = 18;
-            } else if (amount >= 5000000) { // $5M+
-              dotSize = 16;
-            } else if (amount >= 1000000) { // $1M+
-              dotSize = 14;
-            } else if (amount >= 500000) { // $500K+
-              dotSize = 12;
-            } else if (amount > 0) {
-              dotSize = 10;
-            } else {
-              dotSize = 8; // Unknown amount
-            }
-            
-            return (
-              <div 
-                key={item.grant.PortalID || idx} 
-                className="timeline-dot"
-                style={{ 
-                  left: `${leftPos}%`,
-                  background: dotColor,
-                  width: `${dotSize}px`,
-                  height: `${dotSize}px`
-                }}
-                onClick={() => setSelectedGrant(item.grant)}
-              >
-                <div className="timeline-tooltip">
-                  <div className="tooltip-title">{item.grant.Title || item.grant.GrantTitle}</div>
-                  <div className="tooltip-detail">
-                    <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline)}
-                  </div>
-                  <div className="tooltip-detail">
-                    <DollarSign size={12} /> {formatCurrency(item.grant.EstAvailFunds)}
-                  </div>
-                  <div className="tooltip-detail">
-                    <FileText size={12} /> {item.grant.AgencyName}
+        <div className="timeline-inline">
+          <div className="timeline-meta">{timelineData.length} deadlines</div>
+          <div className="timeline">
+            <div className="timeline-line"></div>
+            {/* Time markers */}
+            {[30, 60, 90, 120, 180].map((days) => {
+              const maxDays = timelineData.length > 0 ? 
+                Math.max(...timelineData.map(item => item.daysUntil || 0)) : 180;
+              if (days > maxDays) return null;
+              const pos = Math.min(95, (days / maxDays) * 100);
+              return (
+                <div
+                  key={days}
+                  className="timeline-marker"
+                  style={{ left: `${pos}%` }}
+                >
+                  {days === 30 ? '1 month' : 
+                   days === 60 ? '2 months' : 
+                   days === 90 ? '3 months' : 
+                   days === 120 ? '4 months' : 
+                   '6 months'}
+                </div>
+              );
+            })}
+            {timelineData.map((item, idx) => {
+              const leftPos = Math.min(95, Math.max(2, (idx / Math.max(timelineData.length - 1, 1)) * 100));
+              // Color-code by urgency (days until deadline)
+              let dotColor;
+              if (item.daysUntil <= 7) {
+                dotColor = '#dc3545';
+              } else if (item.daysUntil <= 14) {
+                dotColor = '#fd7e14';
+              } else if (item.daysUntil <= 30) {
+                dotColor = '#ffc107';
+              } else if (item.daysUntil <= 60) {
+                dotColor = '#28a745';
+              } else {
+                dotColor = '#1b4965';
+              }
+              const amount = parseInt((item.grant.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
+              let dotSize;
+              if (amount >= 10000000) {
+                dotSize = 18;
+              } else if (amount >= 5000000) {
+                dotSize = 16;
+              } else if (amount >= 1000000) {
+                dotSize = 14;
+              } else if (amount >= 500000) {
+                dotSize = 12;
+              } else if (amount > 0) {
+                dotSize = 10;
+              } else {
+                dotSize = 8;
+              }
+              const isHovered = hoveredGrantId && hoveredGrantId === item.id;
+              const isSelected = selectedGrant && (selectedGrant._id || getGrantId(selectedGrant)) === item.id;
+              return (
+                <div 
+                  key={item.id || idx} 
+                  className={`timeline-dot ${isHovered || isSelected ? 'active' : ''}`}
+                  style={{ 
+                    left: `${leftPos}%`,
+                    background: dotColor,
+                    width: `${dotSize}px`,
+                    height: `${dotSize}px`
+                  }}
+                  onClick={() => setSelectedGrant(item.grant)}
+                  onMouseEnter={() => setHoveredGrantId(item.id)}
+                  onMouseLeave={() => setHoveredGrantId(null)}
+                >
+                  <div className="timeline-tooltip">
+                    <div className="tooltip-title">{item.grant.Title || item.grant.GrantTitle}</div>
+                    <div className="tooltip-detail">
+                      <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline)}
+                    </div>
+                    <div className="tooltip-detail">
+                      <DollarSign size={12} /> {formatCurrency(item.grant.EstAvailFunds)}
+                    </div>
+                    <div className="tooltip-detail">
+                      <FileText size={12} /> {item.grant.AgencyName}
+                    </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
 
@@ -615,6 +597,7 @@ const CalaverrasGrantsDashboard = () => {
                 <th onClick={() => handleSort('status')} className="sortable">
                   <CheckCircle size={14} /> Status {sortColumn === 'status' && (sortDirection === 'asc' ? '▲' : '▼')}
                 </th>
+                <th className="save-col">Save</th>
               </tr>
             </thead>
             <tbody>
@@ -649,9 +632,11 @@ const CalaverrasGrantsDashboard = () => {
                   
                   return (
                     <tr 
-                      key={grant.PortalID || grant.OpportunityID || grant.GrantID}
+                      key={grant._id}
                       className={rowClasses}
                       onClick={() => setSelectedGrant(grant)}
+                      onMouseEnter={() => setHoveredGrantId(grant._id)}
+                      onMouseLeave={() => setHoveredGrantId(null)}
                     >
                       <td className="grant-title-cell">
                         {grant._source === 'grants.gov' && (
@@ -678,6 +663,22 @@ const CalaverrasGrantsDashboard = () => {
                           {statusBadge.text}
                         </span>
                       </td>
+                      <td className="save-cell" onClick={(e) => e.stopPropagation()}>
+                        <button
+                          className={`heart-btn ${favorites.includes(grant._id) ? 'active' : ''}`}
+                          aria-label="Save to favorites"
+                          onClick={() => {
+                            setFavorites((prev) => {
+                              if (prev.includes(grant._id)) {
+                                return prev.filter((id) => id !== grant._id);
+                              }
+                              return [...prev, grant._id];
+                            });
+                          }}
+                        >
+                          <Heart size={16} />
+                        </button>
+                      </td>
                     </tr>
                   );
                 })
@@ -697,63 +698,86 @@ const CalaverrasGrantsDashboard = () => {
             </div>
 
             <div className="detail-content">
-              <div className="detail-section">
-                <div className="detail-label">Data Source</div>
-                <div className="detail-value">
+              <div className="detail-top-row">
+                <div className="detail-chip">
+                  <span className="chip-label">Source</span>
                   {selectedGrant._source === 'grants.gov' ? (
                     <span className="source-badge federal">Federal (Grants.gov)</span>
                   ) : (
                     <span className="source-badge state">California State</span>
                   )}
                 </div>
+                <div className="detail-chip">
+                  <span className="chip-label">Agency</span>
+                  <span className="chip-value">{selectedGrant.AgencyName || 'N/A'}</span>
+                </div>
+                <div className="detail-chip">
+                  <span className="chip-label">Amount</span>
+                  <span className="chip-value strong">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
+                </div>
               </div>
 
-              <div className="detail-section">
-                <div className="detail-label">Agency</div>
-                <div className="detail-value">{selectedGrant.AgencyName}</div>
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-label">Amount Available</div>
-                <div className="detail-value amount-highlight">{formatCurrency(selectedGrant.EstAvailFunds)}</div>
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-label">Application Deadline</div>
-                <div className="detail-value">{formatDeadline(selectedGrant.ApplicationDeadline)}</div>
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-label">Estimated Awards</div>
-                <div className="detail-value">{selectedGrant.EstAwards || 'N/A'}</div>
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-label">Categories</div>
-                <div className="detail-value">{selectedGrant.Categories || 'N/A'}</div>
-              </div>
-
-              <div className="detail-section">
-                <div className="detail-label">Applicant Type</div>
-                <div className="detail-value">{selectedGrant.ApplicantType || 'N/A'}</div>
+              <div className="detail-grid">
+                <div className="detail-card">
+                  <div className="detail-label">Application Deadline</div>
+                  <div className="detail-value">{formatDeadline(selectedGrant.ApplicationDeadline)}</div>
+                </div>
+                <div className="detail-card">
+                  <div className="detail-label">Estimated Awards</div>
+                  <div className="detail-value">{selectedGrant.EstAwards || 'N/A'}</div>
+                </div>
+                <div className="detail-card">
+                  <div className="detail-label">Status</div>
+                  <div className="detail-value">
+                    <span className="status-badge inline" style={{ background: getStatusBadge(selectedGrant.Status).color }}>
+                      {getStatusBadge(selectedGrant.Status).text}
+                    </span>
+                  </div>
+                </div>
+                {selectedGrant.OpportunityNumber && (
+                  <div className="detail-card">
+                    <div className="detail-label">Opportunity #</div>
+                    <div className="detail-value small">{selectedGrant.OpportunityNumber}</div>
+                  </div>
+                )}
+                {selectedGrant.ALN && (
+                  <div className="detail-card">
+                    <div className="detail-label">ALN</div>
+                    <div className="detail-value small">{selectedGrant.ALN}</div>
+                  </div>
+                )}
+                {selectedGrant.PostedDate && (
+                  <div className="detail-card">
+                    <div className="detail-label">Posted</div>
+                    <div className="detail-value small">{new Date(selectedGrant.PostedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</div>
+                  </div>
+                )}
+                <div className="detail-card">
+                  <div className="detail-label">Categories</div>
+                  <div className="detail-value small">{selectedGrant.Categories || 'N/A'}</div>
+                </div>
+                <div className="detail-card">
+                  <div className="detail-label">Applicant Type</div>
+                  <div className="detail-value small">{selectedGrant.ApplicantType || 'N/A'}</div>
+                </div>
               </div>
 
               {selectedGrant.Purpose && (
-                <div className="detail-section full-width">
+                <div className="detail-block">
                   <div className="detail-label">Purpose</div>
-                  <div className="detail-value description">{selectedGrant.Purpose}</div>
+                  <div className="detail-value description compact">{selectedGrant.Purpose}</div>
                 </div>
               )}
 
               {selectedGrant.Description && (
-                <div className="detail-section full-width">
+                <div className="detail-block">
                   <div className="detail-label">Description</div>
-                  <div className="detail-value description">{selectedGrant.Description}</div>
+                  <div className="detail-value description compact">{selectedGrant.Description}</div>
                 </div>
               )}
 
               {selectedGrant.GrantInfoURL && (
-                <div className="detail-actions">
+                <div className="detail-actions tight">
                   <a 
                     href={selectedGrant.GrantInfoURL} 
                     target="_blank" 
@@ -804,6 +828,11 @@ const CalaverrasGrantsDashboard = () => {
           justify-content: space-between;
           align-items: center;
         }
+        .header-right {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
         .header-left {
           display: flex;
           align-items: center;
@@ -841,6 +870,26 @@ const CalaverrasGrantsDashboard = () => {
           gap: 0.5rem;
           color: #8899aa;
           font-size: 0.8rem;
+        }
+        .refresh-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.5rem 0.9rem;
+          border: 1px solid #1b4965;
+          background: #1b4965;
+          color: #ffffff;
+          font-size: 0.85rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .refresh-btn:hover {
+          background: #0d1b2a;
+          border-color: #0d1b2a;
+        }
+        .refresh-btn:active {
+          transform: translateY(1px);
         }
 
         /* Sticky Filter Bar */
@@ -927,37 +976,21 @@ const CalaverrasGrantsDashboard = () => {
         }
 
         /* Timeline */
-        .timeline-container {
-          background: white;
-          border-bottom: 1px solid #d1d5db;
-          padding: 1.5rem 2rem;
-          overflow: visible;
+        .timeline-inline {
+          padding: 0.4rem 2rem 0.7rem;
+          background: #ffffff;
           position: relative;
-          z-index: 1;
+          overflow: visible;
         }
-        .timeline-header {
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-          margin-bottom: 1rem;
-        }
-        .timeline-header svg {
-          color: #1b4965;
-        }
-        .timeline-header h3 {
-          font-size: 1.1rem;
-          color: #0d1b2a;
-          margin: 0;
-        }
-        .timeline-count {
-          margin-left: auto;
+        .timeline-meta {
+          font-size: 0.75rem;
           color: #6c757d;
-          font-size: 0.85rem;
+          margin-bottom: 0.25rem;
         }
         .timeline {
           position: relative;
           height: 60px;
-          margin: 1rem 0;
+          margin: 0.4rem 0;
         }
         .timeline-line {
           position: absolute;
@@ -994,13 +1027,17 @@ const CalaverrasGrantsDashboard = () => {
           z-index: 200;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
+        .timeline-dot.active {
+          box-shadow: 0 0 0 3px rgba(139, 21, 56, 0.25), 0 6px 12px rgba(0,0,0,0.25);
+          border-color: #8b1538;
+        }
         .timeline-dot:hover .timeline-tooltip {
           display: block;
         }
         .timeline-tooltip {
           display: none;
           position: absolute;
-          bottom: 100%;
+          top: 120%;
           left: 50%;
           transform: translateX(-50%);
           background: #0d1b2a;
@@ -1009,9 +1046,9 @@ const CalaverrasGrantsDashboard = () => {
           border: 1px solid #1b4965;
           min-width: 250px;
           font-size: 0.8rem;
-          margin-bottom: 8px;
+          margin-top: 8px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-          z-index: 250;
+          z-index: 1200;
         }
         .tooltip-title {
           font-weight: 600;
@@ -1072,6 +1109,10 @@ const CalaverrasGrantsDashboard = () => {
           letter-spacing: 0.5px;
           white-space: nowrap;
         }
+        .grants-table th.save-col {
+          width: 60px;
+          text-align: center;
+        }
         .grants-table th.sortable {
           cursor: pointer;
           user-select: none;
@@ -1117,6 +1158,30 @@ const CalaverrasGrantsDashboard = () => {
         .grants-table td {
           padding: 0.75rem 1rem;
           color: #212529;
+        }
+        .save-cell {
+          text-align: center;
+        }
+        .heart-btn {
+          border: 1px solid #d1d5db;
+          background: #f8f9fa;
+          color: #6c757d;
+          padding: 0.35rem 0.45rem;
+          cursor: pointer;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.15s;
+        }
+        .heart-btn:hover {
+          color: #8b1538;
+          border-color: #8b1538;
+          background: #fff0f4;
+        }
+        .heart-btn.active {
+          color: #8b1538;
+          border-color: #8b1538;
+          background: #fdecef;
         }
         .grant-title-cell {
           max-width: 400px;
@@ -1221,7 +1286,7 @@ const CalaverrasGrantsDashboard = () => {
           top: 0;
           background: #0d1b2a;
           color: white;
-          padding: 1.25rem 1.5rem;
+          padding: 1rem 1.25rem;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -1229,11 +1294,12 @@ const CalaverrasGrantsDashboard = () => {
           z-index: 10;
         }
         .detail-header h2 {
-          font-size: 1.25rem;
+          font-size: 1.1rem;
           margin: 0;
           flex: 1;
-          padding-right: 1rem;
+          padding-right: 0.75rem;
           color: #ffffff;
+          line-height: 1.3;
         }
         .close-btn {
           background: transparent;
@@ -1251,51 +1317,104 @@ const CalaverrasGrantsDashboard = () => {
           border-color: #8b1538;
         }
         .detail-content {
-          padding: 1.5rem;
+          padding: 1rem 1.25rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.75rem;
         }
-        .detail-section {
-          margin-bottom: 1.25rem;
-          padding-bottom: 1.25rem;
-          border-bottom: 1px solid #e5e7eb;
+        .detail-top-row {
+          display: flex;
+          gap: 0.5rem;
+          flex-wrap: wrap;
         }
-        .detail-section.full-width {
-          grid-column: 1 / -1;
+        .detail-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.4rem 0.6rem;
+          border: 1px solid #e1e5eb;
+          background: #f8f9fb;
+          color: #0d1b2a;
+          font-size: 0.8rem;
+          min-height: 32px;
         }
-        .detail-label {
-          font-size: 0.75rem;
+        .chip-label {
           text-transform: uppercase;
-          letter-spacing: 0.5px;
+          font-size: 0.68rem;
+          letter-spacing: 0.4px;
           color: #6c757d;
+        }
+        .chip-value {
           font-weight: 600;
-          margin-bottom: 0.5rem;
+          color: #0d1b2a;
         }
-        .detail-value {
+        .chip-value.strong {
           font-size: 0.95rem;
-          color: #212529;
-          line-height: 1.5;
-        }
-        .detail-value.description {
-          line-height: 1.6;
-          color: #495057;
-        }
-        .detail-value.amount-highlight {
-          font-size: 1.5rem;
-          font-weight: 700;
           color: #1b4965;
         }
+        .detail-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 0.5rem;
+        }
+        .detail-card {
+          border: 1px solid #e1e5eb;
+          background: #ffffff;
+          padding: 0.65rem 0.8rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem;
+          min-height: 70px;
+        }
+        .detail-label {
+          font-size: 0.72rem;
+          text-transform: uppercase;
+          letter-spacing: 0.4px;
+          color: #6c757d;
+          font-weight: 600;
+        }
+        .detail-value {
+          font-size: 0.9rem;
+          color: #212529;
+          line-height: 1.4;
+        }
+        .detail-value.small {
+          font-size: 0.85rem;
+          color: #495057;
+        }
+        .status-badge.inline {
+          padding: 0.2rem 0.55rem;
+          font-size: 0.75rem;
+        }
+        .detail-block {
+          border: 1px solid #e1e5eb;
+          padding: 0.75rem 0.9rem;
+          background: #ffffff;
+        }
+        .detail-value.description {
+          line-height: 1.4;
+          color: #495057;
+          font-size: 0.9rem;
+        }
+        .detail-value.description.compact {
+          margin-top: 0.25rem;
+        }
         .detail-actions {
-          margin-top: 1.5rem;
+          margin-top: 0.25rem;
+        }
+        .detail-actions.tight {
+          margin-top: 0.5rem;
         }
         .detail-link {
           display: inline-flex;
           align-items: center;
-          gap: 0.5rem;
-          padding: 0.75rem 1.5rem;
+          gap: 0.4rem;
+          padding: 0.6rem 1rem;
           background: #1b4965;
           color: white;
           text-decoration: none;
           font-weight: 600;
-          font-size: 0.9rem;
+          font-size: 0.85rem;
           transition: all 0.2s;
           border: 1px solid #1b4965;
         }
