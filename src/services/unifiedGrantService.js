@@ -108,11 +108,39 @@ export const getUnifiedGrants = async (forceRefresh = false) => {
       throw new Error(`Failed to fetch unified cache: ${response.status} ${response.statusText}`);
     }
     
-    const data = await response.json();
-    
-    if (!data.success || !data.grants) {
+    const rawData = await response.json();
+
+    if (!Array.isArray(rawData?.grants)) {
       throw new Error('Invalid unified cache format');
     }
+
+    if (rawData.success === false) {
+      // eslint-disable-next-line no-console
+      console.warn('[Unified Grants] Cache marked unsuccessful; using available data');
+    }
+
+    // Normalize shape so downstream consumers can render even when the cache build failed
+    const data = {
+      ...rawData,
+      success: rawData.success !== false,
+      grants: rawData.grants,
+      totalCount: typeof rawData.totalCount === 'number' ? rawData.totalCount : rawData.grants.length,
+      fetchedAt: rawData.fetchedAt || new Date().toISOString(),
+      sources: {
+        ca: {
+          count: rawData?.sources?.ca?.count || 0,
+          success: rawData?.sources?.ca?.success ?? false
+        },
+        federal: {
+          count: rawData?.sources?.federal?.count || 0,
+          success: rawData?.sources?.federal?.success ?? false
+        }
+      },
+      duplicates: {
+        count: rawData?.duplicates?.count || 0,
+        examples: rawData?.duplicates?.examples || []
+      }
+    };
     
     // eslint-disable-next-line no-console
     console.log(

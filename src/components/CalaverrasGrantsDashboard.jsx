@@ -405,7 +405,7 @@ const CalaverrasGrantsDashboard = () => {
               {JSON.stringify({
                 error: error,
                 timestamp: new Date().toISOString(),
-                cacheAvailable: !!localStorage.getItem('calaverrasGrantsCache')
+                cacheAvailable: !!(localStorage.getItem('grantsClientCache') || localStorage.getItem('calaverrasGrantsCache'))
               }, null, 2)}
             </pre>
           </details>
