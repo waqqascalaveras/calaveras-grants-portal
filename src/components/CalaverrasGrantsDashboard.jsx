@@ -239,6 +239,29 @@ const CalaverrasGrantsDashboard = () => {
     return counts;
   }, [baseFiltered]);
 
+  // Parse deadline values with fallbacks for odd formats and rolling deadlines
+  const parseDeadline = useCallback((value) => {
+    if (!value) return { date: null, label: 'Deadline TBD' };
+    const raw = String(value).trim();
+    if (!raw) return { date: null, label: 'Deadline TBD' };
+    if (/rolling/i.test(raw)) return { date: null, label: 'Rolling' };
+
+    const normalized = raw.replace(/[\u2013\u2014]/g, '-');
+    let parsed = new Date(normalized);
+
+    if (isNaN(parsed)) {
+      const match = normalized.match(/^(\d{1,2})[/.-](\d{1,2})[/.-](\d{2,4})$/);
+      if (match) {
+        const [, m, d, y] = match;
+        const year = y.length === 2 ? `20${y}` : y;
+        parsed = new Date(`${year}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`);
+      }
+    }
+
+    if (isNaN(parsed)) return { date: null, label: raw };
+    return { date: parsed, label: null };
+  }, []);
+
   // Check if grant matches department (for visual emphasis)
   const grantsWithEmphasis = useMemo(() => {
     const now = new Date();
@@ -320,6 +343,36 @@ const CalaverrasGrantsDashboard = () => {
     return sorted;
   }, [filteredGrants, selectedDepartment, sortColumn, sortDirection, getGrantId, parseDeadline]);
 
+  // Format currency
+  const formatCurrency = (str) => {
+    const num = parseInt((str || '').replace(/[^0-9]/g, ''));
+    if (isNaN(num)) return 'N/A';
+    if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`;
+    if (num >= 1000) return `$${(num / 1000).toFixed(0)}K`;
+    return `$${num.toLocaleString()}`;
+  };
+
+  // Format deadline
+  const formatDeadline = (dateStr, labelOverride) => {
+    const { date, label } = parseDeadline(dateStr);
+    if (!date) return labelOverride || label || 'Deadline TBD';
+    const days = Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24));
+    if (days < 0) return 'Closed';
+    if (days === 0) return 'Today';
+    if (days === 1) return 'Tomorrow';
+    if (days <= 14) return `${days}d (Urgent)`;
+    if (days <= 30) return `${days}d`;
+    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  };
+
+  // Get status badge
+  const getStatusBadge = (status) => {
+    const s = (status || '').toLowerCase();
+    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
+    if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
+    return { text: 'Closed', color: '#495057' };
+  };
+
   // Prepare timeline data
   const timelineData = useMemo(() => {
     const withParsed = grantsWithEmphasis
@@ -347,59 +400,6 @@ const CalaverrasGrantsDashboard = () => {
       };
     });
   }, [grantsWithEmphasis, getGrantId, parseDeadline]);
-
-  // Format currency
-  const formatCurrency = (str) => {
-    const num = parseInt((str || '').replace(/[^0-9]/g, ''));
-    if (isNaN(num)) return 'N/A';
-    if (num >= 1000000) return `$${(num / 1000000).toFixed(1)}M`;
-    if (num >= 1000) return `$${(num / 1000).toFixed(0)}K`;
-    return `$${num.toLocaleString()}`;
-  };
-
-  // Parse deadline values with fallbacks for odd formats and rolling deadlines
-  const parseDeadline = (value) => {
-    if (!value) return { date: null, label: 'Deadline TBD' };
-    const raw = String(value).trim();
-    if (!raw) return { date: null, label: 'Deadline TBD' };
-    if (/rolling/i.test(raw)) return { date: null, label: 'Rolling' };
-
-    const normalized = raw.replace(/[\u2013\u2014]/g, '-');
-    let parsed = new Date(normalized);
-
-    if (isNaN(parsed)) {
-      const match = normalized.match(/^(\d{1,2})[\/\.\-](\d{1,2})[\/\.\-](\d{2,4})$/);
-      if (match) {
-        const [, m, d, y] = match;
-        const year = y.length === 2 ? `20${y}` : y;
-        parsed = new Date(`${year}-${m.padStart(2, '0')}-${d.padStart(2, '0')}`);
-      }
-    }
-
-    if (isNaN(parsed)) return { date: null, label: raw };
-    return { date: parsed, label: null };
-  };
-
-  // Format deadline
-  const formatDeadline = (dateStr, labelOverride) => {
-    const { date, label } = parseDeadline(dateStr);
-    if (!date) return labelOverride || label || 'Deadline TBD';
-    const days = Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24));
-    if (days < 0) return 'Closed';
-    if (days === 0) return 'Today';
-    if (days === 1) return 'Tomorrow';
-    if (days <= 14) return `${days}d (Urgent)`;
-    if (days <= 30) return `${days}d`;
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  };
-
-  // Get status badge
-  const getStatusBadge = (status) => {
-    const s = (status || '').toLowerCase();
-    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
-    if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
-    return { text: 'Closed', color: '#495057' };
-  };
 
   // Handle column sorting
   const handleSort = (column) => {
@@ -590,7 +590,6 @@ const CalaverrasGrantsDashboard = () => {
               } else if (amount >= 5000000) {
                 dotSize = 16;
               } else if (amount >= 1000000) {
-                dotSize = 14;
               } else if (amount >= 500000) {
                 dotSize = 12;
               } else if (amount > 0) {
@@ -601,6 +600,17 @@ const CalaverrasGrantsDashboard = () => {
               const isHovered = hoveredGrantId && hoveredGrantId === item.id;
               const isSelected = selectedGrant && (selectedGrant._id || getGrantId(selectedGrant)) === item.id;
               return (
+                  || grant.Agency
+                  || grant.Department
+                  || grant.DepartmentName
+                  || grant.Division
+                  || grant.Program
+                  || grant.Grantor
+                  || grant.OwnerOrganization
+                  || grant.Organization
+                  || grant.SourceAgency
+                  || grant.FundingAgency
+                  || 'Agency TBD';
                 <div 
                   key={item.id || idx} 
                   className={`timeline-dot ${isHovered || isSelected ? 'active' : ''}`}
