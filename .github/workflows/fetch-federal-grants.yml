@@ -1,4 +1,4 @@
-name: Fetch Federal Grants Data
+name: Fetch & Merge Grants Data
 
 on:
   schedule:
@@ -12,7 +12,7 @@ on:
       - '.github/workflows/fetch-federal-grants.yml'
 
 jobs:
-  fetch-grants:
+  fetch-and-merge:
     runs-on: ubuntu-latest
     
     steps:
@@ -21,13 +21,6 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 1
-
-      - name: Verify workspace contents
-        run: |
-          pwd
-          ls -la
-          ls -la scripts || true
-          test -f scripts/fetch_federal_grants.py || (echo "Missing scripts/fetch_federal_grants.py" && exit 1)
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -35,26 +28,193 @@ jobs:
           python-version: '3.11'
       
       - name: Install dependencies
-        working-directory: scripts
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests urllib3
       
-      - name: Fetch federal grants data
-        working-directory: scripts
+      - name: Fetch and merge CA + Federal grants, generate unified cache
         run: |
-          python fetch_federal_grants.py
+          python << 'EOF'
+          import requests
+          import json
+          import hashlib
+          import re
+          from datetime import datetime
+          import urllib3
+          
+          urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+          
+          CA_API_URL = 'https://data.ca.gov/api/3/action/datastore_search'
+          CA_RESOURCE_ID = '111c8c88-21f6-453c-ae2c-b4785a0624f5'
+          FEDERAL_API_URL = 'https://api.grants.gov/v1/api'
+          OUTPUT_FILE = 'public/grants-unified-cache.json'
+          
+          def normalize_text(text):
+              if not text:
+                  return ""
+              normalized = re.sub(r'[^\w\s]', '', text.lower())
+              normalized = re.sub(r'\s+', ' ', normalized).strip()
+              return normalized
+          
+          def create_grant_fingerprint(grant):
+              title = normalize_text(grant.get('Title', ''))
+              agency = normalize_text(grant.get('AgencyName', ''))
+              fingerprint_str = f"{title[:100]}:{agency[:50]}"
+              return hashlib.md5(fingerprint_str.encode()).hexdigest()
+          
+          def fetch_ca_grants():
+              print("\n" + "="*70)
+              print("  Fetching California Grants")
+              print("="*70)
+              try:
+                  response = requests.get(
+                      f"{CA_API_URL}?resource_id={CA_RESOURCE_ID}&limit=10000",
+                      timeout=30,
+                      verify=False
+                  )
+                  if response.status_code != 200:
+                      print(f"ERROR: CA API returned status {response.status_code}")
+                      return None
+                  data = response.json()
+                  if not data.get('success'):
+                      print(f"ERROR: CA API returned unsuccessful response")
+                      return None
+                  records = data.get('result', {}).get('records', [])
+                  transformed = []
+                  for record in records:
+                      transformed.append({
+                          'Title': record.get('Title', record.get('GrantTitle', '')),
+                          'GrantTitle': record.get('GrantTitle', record.get('Title', '')),
+                          'Description': record.get('Description', ''),
+                          'AgencyName': record.get('AgencyName', record.get('Department', '')),
+                          'Agency': record.get('Department', record.get('AgencyName', '')),
+                          'Status': record.get('Status', ''),
+                          'ApplicationDeadline': record.get('ApplicationDeadline', ''),
+                          'PostedDate': record.get('PostedDate', ''),
+                          'EstAvailFunds': record.get('EstAvailFunds', ''),
+                          'Categories': record.get('Categories', ''),
+                          'ApplicantType': record.get('ApplicantType', ''),
+                          'GrantInfoURL': record.get('GrantInfoURL', ''),
+                          'PortalID': record.get('PortalID', record.get('_id', '')),
+                          'Source': 'ca.gov'
+                      })
+                  print(f"✓ Successfully fetched {len(transformed)} CA grants")
+                  return transformed
+              except Exception as e:
+                  print(f"ERROR: Failed to fetch CA grants - {e}")
+                  return None
+          
+          def fetch_federal_grants():
+              print("\n" + "="*70)
+              print("  Fetching Federal Grants")
+              print("="*70)
+              search_params = {
+                  "rows": 1000,
+                  "keyword": "",
+                  "oppNum": "",
+                  "eligibilities": "01",
+                  "agencies": "",
+                  "oppStatuses": "forecasted|posted|open|active",
+                  "aln": "",
+                  "fundingCategories": ""
+              }
+              try:
+                  response = requests.post(
+                      f"{FEDERAL_API_URL}/search2",
+                      json=search_params,
+                      headers={'Content-Type': 'application/json'},
+                      timeout=30,
+                      verify=False
+                  )
+                  if response.status_code != 200:
+                      print(f"ERROR: Grants.gov API returned status {response.status_code}")
+                      return None
+                  data = response.json()
+                  if data.get('errorcode') != 0:
+                      print(f"ERROR: API error code {data.get('errorcode')}")
+                      return None
+                  opportunities = data.get('data', {}).get('oppHits', [])
+                  transformed = []
+                  for opp in opportunities:
+                      transformed.append({
+                          'Title': opp.get('title', ''),
+                          'GrantTitle': opp.get('title', ''),
+                          'Description': opp.get('description', ''),
+                          'AgencyName': opp.get('agencyName', ''),
+                          'Agency': opp.get('agencyName', ''),
+                          'OpportunityNumber': opp.get('number', ''),
+                          'Status': opp.get('oppStatus', ''),
+                          'ApplicationDeadline': opp.get('closeDate', ''),
+                          'PostedDate': opp.get('openDate', ''),
+                          'EstAvailFunds': f"${opp.get('awardCeiling', 0):,}" if opp.get('awardCeiling') else 'N/A',
+                          'AwardCeiling': opp.get('awardCeiling', 0),
+                          'AwardFloor': opp.get('awardFloor', 0),
+                          'OpportunityID': opp.get('id', ''),
+                          'GrantInfoURL': f"https://www.grants.gov/web/grants/view-opportunity.html?oppId={opp.get('id', '')}",
+                          'Source': 'federal'
+                      })
+                  print(f"✓ Successfully fetched {len(transformed)} federal grants")
+                  return transformed
+              except Exception as e:
+                  print(f"ERROR: Failed to fetch federal grants - {e}")
+                  return None
+          
+          def find_duplicates(grants):
+              print("\n" + "="*70)
+              print("  Detecting Duplicates")
+              print("="*70)
+              fingerprint_map = {}
+              duplicates = []
+              unique = []
+              for grant in grants:
+                  fp = create_grant_fingerprint(grant)
+                  if fp in fingerprint_map:
+                      duplicates.append({"original": fingerprint_map[fp].get('Title'), "duplicate": grant.get('Title')})
+                  else:
+                      fingerprint_map[fp] = grant
+                      unique.append(grant)
+              print(f"✓ Found {len(duplicates)} duplicates, {len(unique)} unique grants")
+              return unique, duplicates
+          
+          ca_grants = fetch_ca_grants() or []
+          federal_grants = fetch_federal_grants() or []
+          all_grants = ca_grants + federal_grants
+          unique_grants, duplicates = find_duplicates(all_grants)
+          
+          output = {
+              'fetchedAt': datetime.utcnow().isoformat() + 'Z',
+              'success': len(unique_grants) > 0 and (len(ca_grants) > 0 or len(federal_grants) > 0),
+              'grants': unique_grants,
+              'totalCount': len(unique_grants),
+              'sources': {
+                  'ca': {'count': len(ca_grants), 'success': len(ca_grants) > 0},
+                  'federal': {'count': len(federal_grants), 'success': len(federal_grants) > 0}
+              },
+              'duplicates': {'count': len(duplicates), 'examples': duplicates[:5]}
+          }
+          
+          with open(OUTPUT_FILE, 'w') as f:
+              json.dump(output, f, indent=2)
+          
+          print("\n" + "="*70)
+          print("  Summary")
+          print("="*70)
+          print(f"Total grants: {output['totalCount']}")
+          print(f"CA: {output['sources']['ca']['count']}, Federal: {output['sources']['federal']['count']}")
+          print(f"Duplicates removed: {output['duplicates']['count']}")
+          print(f"Written to: {OUTPUT_FILE}")
+          print(f"Success: {output['success']}")
+          EOF
       
       - name: Commit and push if changed
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add public/federal-grants-cache.json
+          git add public/grants-unified-cache.json
           
-          # Only commit if there are changes
           if git diff --staged --quiet; then
-            echo "No changes to federal grants data"
+            echo "No changes to grants data"
           else
-            git commit -m "Update federal grants data [automated]"
+            git commit -m "Update unified grants cache (CA + Federal, deduplicated) [automated]"
             git push
           fi

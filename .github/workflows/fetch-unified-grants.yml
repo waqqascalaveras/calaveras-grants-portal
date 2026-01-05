@@ -1,61 +1,18 @@
-name: Fetch Unified Grants Data
+# This workflow has been consolidated into fetch-federal-grants.yml
+# to avoid duplication. The unified cache is now built directly in the
+# fetch-federal-grants workflow which combines CA + Federal data.
+#
+# To run: use workflow_dispatch on fetch-federal-grants.yml or wait for scheduled runs.
+# This file is kept for reference only.
+
+name: '[DEPRECATED] Fetch Unified Grants Data'
 
 on:
-  schedule:
-    # Run every 12 hours at 6 AM and 6 PM UTC
-    - cron: '0 6,18 * * *'
-  workflow_dispatch: # Allow manual trigger
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/fetch-unified-grants.yml'
-      - 'scripts/fetch_unified_grants.py'
+  workflow_dispatch: # Allow manual trigger only
 
 jobs:
-  fetch-grants:
+  deprecated-notice:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 1
-
-      - name: Verify workspace contents
-        run: |
-          pwd
-          ls -la
-          ls -la scripts || true
-          test -f scripts/fetch_unified_grants.py || (echo "Missing scripts/fetch_unified_grants.py" && exit 1)
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-      
-      - name: Install dependencies
-        working-directory: scripts
-        run: |
-          python -m pip install --upgrade pip
-          pip install requests urllib3
-      
-      - name: Fetch and merge grants data
-        working-directory: scripts
-        run: |
-          python fetch_unified_grants.py
-      
-      - name: Commit and push if changed
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add public/grants-unified-cache.json
-          
-          # Only commit if there are changes
-          if git diff --staged --quiet; then
-            echo "No changes to grants data"
-          else
-            git commit -m "Update unified grants cache (CA + Federal, deduplicated) [automated]"
-            git push
-          fi
+      - name: Show notice
+        run: echo "This workflow is deprecated. Use Fetch & Merge Grants Data (fetch-federal-grants.yml) instead."
