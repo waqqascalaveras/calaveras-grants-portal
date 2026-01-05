@@ -11,6 +11,9 @@ on:
     paths:
       - '.github/workflows/fetch-federal-grants.yml'
 
+permissions:
+  contents: write
+
 jobs:
   fetch-and-merge:
     runs-on: ubuntu-latest
