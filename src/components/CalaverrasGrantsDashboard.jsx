@@ -12,6 +12,8 @@ const CalaverrasGrantsDashboard = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('all');
   const [statusFilter, setStatusFilter] = useState('open');
   const [selectedGrant, setSelectedGrant] = useState(null);
+  const [sortColumn, setSortColumn] = useState(null);
+  const [sortDirection, setSortDirection] = useState('asc');
 
   // Department mappings to grant categories
   const departments = useMemo(() => ({
@@ -247,7 +249,7 @@ const CalaverrasGrantsDashboard = () => {
 
   // Check if grant matches department (for visual emphasis)
   const grantsWithEmphasis = useMemo(() => {
-    return filteredGrants.map(grant => {
+    const withEmphasis = filteredGrants.map(grant => {
       const deadline = grant.ApplicationDeadline ? new Date(grant.ApplicationDeadline) : null;
       const daysUntil = deadline ? Math.ceil((deadline - new Date()) / (1000 * 60 * 60 * 24)) : null;
       const isTooSoon = daysUntil !== null && daysUntil >= 0 && daysUntil <= 30;
@@ -259,7 +261,53 @@ const CalaverrasGrantsDashboard = () => {
         _daysUntil: daysUntil
       };
     });
-  }, [filteredGrants, selectedDepartment, departments]);
+    
+    // Sort: highlighted grants first, then apply column sorting
+    let sorted = [...withEmphasis].sort((a, b) => {
+      // Primary sort: highlighted (matching department) grants first
+      if (a._matchesDept !== b._matchesDept) {
+        return b._matchesDept ? 1 : -1; // true comes before false
+      }
+      
+      // Secondary sort: by selected column
+      if (sortColumn) {
+        let aVal, bVal;
+        
+        switch(sortColumn) {
+          case 'title':
+            aVal = (a.Title || a.GrantTitle || '').toLowerCase();
+            bVal = (b.Title || b.GrantTitle || '').toLowerCase();
+            break;
+          case 'amount':
+            aVal = parseInt((a.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
+            bVal = parseInt((b.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
+            break;
+          case 'deadline':
+            aVal = a.ApplicationDeadline ? new Date(a.ApplicationDeadline).getTime() : 0;
+            bVal = b.ApplicationDeadline ? new Date(b.ApplicationDeadline).getTime() : 0;
+            break;
+          case 'agency':
+            aVal = (a.AgencyName || '').toLowerCase();
+            bVal = (b.AgencyName || '').toLowerCase();
+            break;
+          case 'status':
+            aVal = (a.Status || '').toLowerCase();
+            bVal = (b.Status || '').toLowerCase();
+            break;
+          default:
+            return 0;
+        }
+        
+        if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
+        if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+        return 0;
+      }
+      
+      return 0;
+    });
+    
+    return sorted;
+  }, [filteredGrants, selectedDepartment, departments, sortColumn, sortDirection]);
 
   // Prepare timeline data
   const timelineData = useMemo(() => {
@@ -310,6 +358,18 @@ const CalaverrasGrantsDashboard = () => {
     if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
     if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
     return { text: 'Closed', color: '#495057' };
+  };
+
+  // Handle column sorting
+  const handleSort = (column) => {
+    if (sortColumn === column) {
+      // Toggle direction
+      setSortDirection(sortDirection === 'asc' ? 'desc' : 'asc');
+    } else {
+      // New column, default to ascending
+      setSortColumn(column);
+      setSortDirection('asc');
+    }
   };
 
 
@@ -447,9 +507,61 @@ const CalaverrasGrantsDashboard = () => {
         </div>
         <div className="timeline">
           <div className="timeline-line"></div>
+          
+          {/* Time markers */}
+          {[30, 60, 90, 120, 180].map((days) => {
+            const maxDays = timelineData.length > 0 ? 
+              Math.max(...timelineData.map(item => item.daysUntil || 0)) : 180;
+            if (days > maxDays) return null;
+            const pos = Math.min(95, (days / maxDays) * 100);
+            return (
+              <div
+                key={days}
+                className="timeline-marker"
+                style={{ left: `${pos}%` }}
+              >
+                {days === 30 ? '1 month' : 
+                 days === 60 ? '2 months' : 
+                 days === 90 ? '3 months' : 
+                 days === 120 ? '4 months' : 
+                 '6 months'}
+              </div>
+            );
+          })}
+          
           {timelineData.map((item, idx) => {
             const leftPos = Math.min(95, Math.max(2, (idx / Math.max(timelineData.length - 1, 1)) * 100));
-            const statusBadge = getStatusBadge(item.grant.Status);
+            
+            // Color-code by urgency (days until deadline)
+            let dotColor;
+            if (item.daysUntil <= 7) {
+              dotColor = '#dc3545'; // Red - urgent (1 week or less)
+            } else if (item.daysUntil <= 14) {
+              dotColor = '#fd7e14'; // Orange - very soon (2 weeks)
+            } else if (item.daysUntil <= 30) {
+              dotColor = '#ffc107'; // Yellow - soon (1 month)
+            } else if (item.daysUntil <= 60) {
+              dotColor = '#28a745'; // Green - good time (2 months)
+            } else {
+              dotColor = '#1b4965'; // Blue - plenty of time
+            }
+            
+            // Size based on funding amount (8px to 18px)
+            const amount = parseInt((item.grant.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
+            let dotSize;
+            if (amount >= 10000000) { // $10M+
+              dotSize = 18;
+            } else if (amount >= 5000000) { // $5M+
+              dotSize = 16;
+            } else if (amount >= 1000000) { // $1M+
+              dotSize = 14;
+            } else if (amount >= 500000) { // $500K+
+              dotSize = 12;
+            } else if (amount > 0) {
+              dotSize = 10;
+            } else {
+              dotSize = 8; // Unknown amount
+            }
             
             return (
               <div 
@@ -457,7 +569,9 @@ const CalaverrasGrantsDashboard = () => {
                 className="timeline-dot"
                 style={{ 
                   left: `${leftPos}%`,
-                  background: statusBadge.color
+                  background: dotColor,
+                  width: `${dotSize}px`,
+                  height: `${dotSize}px`
                 }}
                 onClick={() => setSelectedGrant(item.grant)}
               >
@@ -486,11 +600,21 @@ const CalaverrasGrantsDashboard = () => {
           <table className="grants-table">
             <thead>
               <tr>
-                <th>Grant Title</th>
-                <th><DollarSign size={14} /> Amount</th>
-                <th><Calendar size={14} /> Deadline</th>
-                <th><Building2 size={14} /> Agency</th>
-                <th><CheckCircle size={14} /> Status</th>
+                <th onClick={() => handleSort('title')} className="sortable">
+                  Grant Title {sortColumn === 'title' && (sortDirection === 'asc' ? '▲' : '▼')}
+                </th>
+                <th onClick={() => handleSort('amount')} className="sortable">
+                  <DollarSign size={14} /> Amount {sortColumn === 'amount' && (sortDirection === 'asc' ? '▲' : '▼')}
+                </th>
+                <th onClick={() => handleSort('deadline')} className="sortable">
+                  <Calendar size={14} /> Deadline {sortColumn === 'deadline' && (sortDirection === 'asc' ? '▲' : '▼')}
+                </th>
+                <th onClick={() => handleSort('agency')} className="sortable">
+                  <Building2 size={14} /> Agency {sortColumn === 'agency' && (sortDirection === 'asc' ? '▲' : '▼')}
+                </th>
+                <th onClick={() => handleSort('status')} className="sortable">
+                  <CheckCircle size={14} /> Status {sortColumn === 'status' && (sortDirection === 'asc' ? '▲' : '▼')}
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -807,6 +931,9 @@ const CalaverrasGrantsDashboard = () => {
           background: white;
           border-bottom: 1px solid #d1d5db;
           padding: 1.5rem 2rem;
+          overflow: visible;
+          position: relative;
+          z-index: 1;
         }
         .timeline-header {
           display: flex;
@@ -841,11 +968,20 @@ const CalaverrasGrantsDashboard = () => {
           background: #d1d5db;
           transform: translateY(-50%);
         }
+        .timeline-marker {
+          position: absolute;
+          top: 100%;
+          transform: translateX(-50%) rotate(-15deg);
+          font-size: 0.7rem;
+          color: #b0b0b0;
+          margin-top: 8px;
+          white-space: nowrap;
+          pointer-events: none;
+          font-style: italic;
+        }
         .timeline-dot {
           position: absolute;
           top: 50%;
-          width: 12px;
-          height: 12px;
           border-radius: 50%;
           transform: translate(-50%, -50%);
           cursor: pointer;
@@ -854,9 +990,9 @@ const CalaverrasGrantsDashboard = () => {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         .timeline-dot:hover {
-          width: 16px;
-          height: 16px;
-          z-index: 10;
+          transform: translate(-50%, -50%) scale(1.4);
+          z-index: 200;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
         .timeline-dot:hover .timeline-tooltip {
           display: block;
@@ -875,7 +1011,7 @@ const CalaverrasGrantsDashboard = () => {
           font-size: 0.8rem;
           margin-bottom: 8px;
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-          z-index: 100;
+          z-index: 250;
         }
         .tooltip-title {
           font-weight: 600;
@@ -897,17 +1033,20 @@ const CalaverrasGrantsDashboard = () => {
         /* Main Content */
         .main-content {
           display: flex;
-          min-height: calc(100vh - 250px);
+          height: calc(100vh - 250px);
           background: #f5f5f5;
+          position: relative;
         }
         .main-content.split-view .table-container {
           flex: 0 0 50%;
         }
         .table-container {
           flex: 1;
+          overflow-y: auto;
           overflow-x: auto;
           background: white;
           border-right: 1px solid #d1d5db;
+          height: 100%;
         }
 
         /* Table */
@@ -932,6 +1071,13 @@ const CalaverrasGrantsDashboard = () => {
           text-transform: uppercase;
           letter-spacing: 0.5px;
           white-space: nowrap;
+        }
+        .grants-table th.sortable {
+          cursor: pointer;
+          user-select: none;
+        }
+        .grants-table th.sortable:hover {
+          background: #d1d5db;
         }
         .grants-table th svg {
           display: inline;
@@ -1066,6 +1212,9 @@ const CalaverrasGrantsDashboard = () => {
           background: white;
           overflow-y: auto;
           border-left: 1px solid #d1d5db;
+          height: 100%;
+          position: sticky;
+          top: 0;
         }
         .detail-header {
           position: sticky;
@@ -1084,6 +1233,7 @@ const CalaverrasGrantsDashboard = () => {
           margin: 0;
           flex: 1;
           padding-right: 1rem;
+          color: #ffffff;
         }
         .close-btn {
           background: transparent;

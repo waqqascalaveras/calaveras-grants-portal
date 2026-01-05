@@ -94,6 +94,47 @@ export const fetchOpportunityDetails = async (opportunityId) => {
  * @returns {Object} Normalized grant object
  */
 export const normalizeGrantsGovData = (opp) => {
+  // Parse and format deadline
+  let deadline = null;
+  if (opp.closeDate) {
+    const parsedDate = new Date(opp.closeDate);
+    if (!isNaN(parsedDate.getTime())) {
+      deadline = parsedDate.toISOString();
+    }
+  }
+  
+  // Parse and format funding amount
+  let fundingAmount = null;
+  if (opp.awardCeiling && opp.awardCeiling > 0) {
+    fundingAmount = `$${opp.awardCeiling.toLocaleString()}`;
+  } else if (opp.estimatedFunding && opp.estimatedFunding > 0) {
+    fundingAmount = `$${opp.estimatedFunding.toLocaleString()}`;
+  } else if (opp.awardFloor && opp.awardFloor > 0) {
+    fundingAmount = `$${opp.awardFloor.toLocaleString()}`;
+  }
+  
+  // Parse estimated awards
+  let estAwards = null;
+  if (opp.expectedAwards && opp.expectedAwards > 0) {
+    estAwards = opp.expectedAwards.toString();
+  }
+  
+  // Build description from available fields
+  let description = opp.title || '';
+  if (opp.description) {
+    description = opp.description;
+  } else if (opp.synopsis) {
+    description = opp.synopsis;
+  }
+  
+  // Build purpose/summary
+  let purpose = `Federal grant opportunity from ${opp.agencyName || 'Federal Government'}`;
+  if (opp.synopsis && opp.synopsis !== description) {
+    purpose = opp.synopsis;
+  } else if (opp.summary) {
+    purpose = opp.summary;
+  }
+  
   return {
     // Source identification
     _source: 'grants.gov',
@@ -105,18 +146,18 @@ export const normalizeGrantsGovData = (opp) => {
     Title: opp.title,
     GrantTitle: opp.title,
     
-    AgencyName: opp.agencyName,
+    AgencyName: opp.agencyName || 'Federal Agency',
     AgencyCode: opp.agencyCode,
     
     Status: opp.oppStatus === 'posted' ? 'Open' : 
             opp.oppStatus === 'forecasted' ? 'Forecasted' : 
             opp.oppStatus === 'closed' ? 'Closed' : 
-            opp.oppStatus,
+            opp.oppStatus || 'Unknown',
     
-    ApplicationDeadline: opp.closeDate || null,
+    ApplicationDeadline: deadline,
     PostedDate: opp.openDate,
     
-    Categories: opp.fundingCategories?.join('; ') || '',
+    Categories: opp.fundingCategories?.join('; ') || opp.categoryOfFundingActivity || '',
     
     // Grants.gov specific fields
     DocumentType: opp.docType,
@@ -128,11 +169,11 @@ export const normalizeGrantsGovData = (opp) => {
     // Applicant eligibility - assume county eligible if in results
     ApplicantType: 'County governments; Local Government; Public Agency',
     
-    // Placeholder fields
-    Purpose: `Federal grant opportunity from ${opp.agencyName}`,
-    Description: opp.title,
-    EstAvailFunds: 'TBD',
-    EstAwards: 'TBD',
+    // Extracted fields
+    Purpose: purpose,
+    Description: description,
+    EstAvailFunds: fundingAmount,
+    EstAwards: estAwards,
     
     GrantInfoURL: `https://www.grants.gov/web/grants/view-opportunity.html?oppId=${opp.id}`
   };
