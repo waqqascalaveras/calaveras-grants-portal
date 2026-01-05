@@ -4,6 +4,26 @@ import { getGrantsGovOpportunities } from '../services/grantsGovService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User, Clock, RefreshCw, Heart } from 'lucide-react';
 
+// Helper function to highlight search terms in text
+const HighlightedText = ({ text, query }) => {
+  if (!query || !text) return <>{text}</>;
+  
+  const regex = new RegExp(`(${query.split(/\s+/).filter(Boolean).join('|')})`, 'gi');
+  const parts = text.split(regex);
+  
+  return (
+    <>
+      {parts.map((part, idx) => 
+        regex.test(part) ? (
+          <mark key={idx} style={{ backgroundColor: '#ffffcc', padding: '0 2px' }}>{part}</mark>
+        ) : (
+          <span key={idx}>{part}</span>
+        )
+      )}
+    </>
+  );
+};
+
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -11,7 +31,7 @@ const CalaverrasGrantsDashboard = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
-  const [statusFilter, setStatusFilter] = useState('open');
+  const [statusFilter, setStatusFilter] = useState('all');
   const [favorites, setFavorites] = useState([]);
   const [selectedGrant, setSelectedGrant] = useState(null);
   const [sortColumn, setSortColumn] = useState(null);
@@ -204,17 +224,13 @@ const CalaverrasGrantsDashboard = () => {
   // Status-filtered list
   const filteredGrants = useMemo(() => {
     if (baseFiltered.length === 0) return [];
+    if (statusFilter === 'all') return baseFiltered;
     return baseFiltered.filter(grant => {
       const status = (grant.Status || '').toLowerCase().trim();
       if (statusFilter === 'open') {
-        if (status) {
-          const isOpenStatus = status.includes('open') || status.includes('active') || status.includes('forecast');
-          if (!isOpenStatus) return false;
-        }
+        return status.includes('open');
       } else if (statusFilter === 'forecasted') {
-        if (!status.includes('forecast')) return false;
-      } else if (statusFilter === 'active') {
-        if (!status.includes('active')) return false;
+        return status.includes('forecast');
       }
       return true;
     });
@@ -222,17 +238,13 @@ const CalaverrasGrantsDashboard = () => {
 
   // Counts for status pills
   const statusCounts = useMemo(() => {
-    const counts = { open: 0, forecasted: 0, active: 0 };
+    const counts = { open: 0, forecasted: 0 };
     baseFiltered.forEach((grant) => {
       const status = (grant.Status || '').toLowerCase().trim();
       if (status.includes('forecast')) {
         counts.forecasted += 1;
-      } else if (status.includes('active')) {
-        counts.active += 1;
-        counts.open += 1;
-      } else if (status.includes('open')) {
-        counts.open += 1;
-      } else {
+      }
+      if (status.includes('open')) {
         counts.open += 1;
       }
     });
@@ -519,14 +531,13 @@ const CalaverrasGrantsDashboard = () => {
 
           <div className="status-toggles" role="group" aria-label="Status filter">
             {[
-              { key: 'open', label: 'Open & Active' },
-              { key: 'forecasted', label: 'Forecasted' },
-              { key: 'active', label: 'Active Only' }
+              { key: 'open', label: 'Open' },
+              { key: 'forecasted', label: 'Forecasted' }
             ].map(item => (
               <button
                 key={item.key}
                 className={`status-pill ${statusFilter === item.key ? 'active' : ''}`}
-                onClick={() => setStatusFilter(item.key)}
+                onClick={() => setStatusFilter(statusFilter === item.key ? 'all' : item.key)}
                 title={`${item.label} (${statusCounts[item.key] || 0})`}
                 type="button"
               >
@@ -809,13 +820,13 @@ const CalaverrasGrantsDashboard = () => {
                   {selectedGrant.Purpose && (
                     <div className="text-section" title="Purpose">
                       <div className="text-heading">Purpose</div>
-                      <p>{selectedGrant.Purpose}</p>
+                      <p><HighlightedText text={selectedGrant.Purpose} query={searchQuery} /></p>
                     </div>
                   )}
                   {selectedGrant.Description && (
                     <div className="text-section" title="Description">
                       <div className="text-heading">Description</div>
-                      <p>{selectedGrant.Description}</p>
+                      <p><HighlightedText text={selectedGrant.Description} query={searchQuery} /></p>
                     </div>
                   )}
                 </div>
