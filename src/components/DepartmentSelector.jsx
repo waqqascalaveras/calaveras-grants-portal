@@ -1,17 +1,5 @@
 import React from "react";
-
-const DEPARTMENTS = [
-  { key: "public_health", label: "Public Health", icon: "🏥" },
-  { key: "social_services", label: "Social Services", icon: "🤝" },
-  { key: "public_works", label: "Public Works", icon: "🏗️" },
-  { key: "planning_building", label: "Planning & Building", icon: "📐" },
-  { key: "sheriff_emergency", label: "Sheriff / Emergency Services", icon: "🚓" },
-  { key: "environmental_health", label: "Environmental Health", icon: "🌲" },
-  { key: "parks_recreation", label: "Parks & Recreation", icon: "🏞️" },
-  { key: "education_workforce", label: "Education & Workforce", icon: "🎓" },
-  { key: "agriculture", label: "Agriculture", icon: "🌾" },
-  { key: "it_data", label: "IT & Data Modernization", icon: "💻" }
-];
+import { getDepartmentsByGroup, departments } from "../config/departments";
 
 const COMMUNITY_TYPES = [
   { key: "nonprofit", label: "Nonprofit", icon: "🏢" },
@@ -22,35 +10,79 @@ const COMMUNITY_TYPES = [
 ];
 
 export default function DepartmentSelector({ userType, subType, onSubTypeSelect }) {
-  const options = userType === "county" ? DEPARTMENTS : COMMUNITY_TYPES;
+  const departmentsByGroup = getDepartmentsByGroup();
+
+  if (userType === "community") {
+    return (
+      <div className="department-selector" style={{ padding: "2rem", maxWidth: 480, margin: "3rem auto", background: "var(--cream)", borderRadius: 4, boxShadow: "none", border: "1px solid var(--stone-gray)" }}>
+        <h2 style={{ color: "var(--forest-green)", marginBottom: 24 }}>
+          Select Your Organization Type
+        </h2>
+        <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
+          {COMMUNITY_TYPES.map(opt => (
+            <button
+              key={opt.key}
+              onClick={() => onSubTypeSelect(opt.key)}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 16,
+                padding: "1.1rem 1.5rem",
+                background: subType === opt.key ? "var(--moss-green)" : "var(--cream)",
+                color: "var(--forest-green)",
+                border: `2px solid ${subType === opt.key ? 'var(--leaf-green)' : 'var(--stone-gray)'}`,
+                borderRadius: 4,
+                fontSize: 18,
+                fontWeight: 600,
+                cursor: "pointer",
+                transition: "background 0.2s, border 0.2s"
+              }}
+            >
+              <span style={{ fontSize: 24 }}>{opt.icon}</span>
+              <span>{opt.label}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className="department-selector" style={{ padding: "2rem", maxWidth: 480, margin: "3rem auto", background: "var(--cream)", borderRadius: 4, boxShadow: "none", border: "1px solid var(--stone-gray)" }}>
+    <div className="department-selector" style={{ padding: "2rem", maxWidth: 600, margin: "3rem auto", background: "var(--cream)", borderRadius: 4, boxShadow: "none", border: "1px solid var(--stone-gray)" }}>
       <h2 style={{ color: "var(--forest-green)", marginBottom: 24 }}>
-        {userType === "county" ? "Select Your County Department" : "Select Your Organization Type"}
+        Select Your County Department
       </h2>
-      <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
-        {options.map(opt => (
-          <button
-            key={opt.key}
-            onClick={() => onSubTypeSelect(opt.key)}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 16,
-              padding: "1.1rem 1.5rem",
-              background: subType === opt.key ? "var(--moss-green)" : "var(--cream)",
-              color: "var(--forest-green)",
-              border: `2px solid ${subType === opt.key ? 'var(--leaf-green)' : 'var(--stone-gray)'}`,
-              borderRadius: 4,
-              fontSize: 18,
-              fontWeight: 600,
-              cursor: "pointer",
-              transition: "background 0.2s, border 0.2s"
-            }}
-          >
-            <span style={{ fontSize: 24 }}>{opt.icon}</span>
-            <span>{opt.label}</span>
-          </button>
+      <div style={{ display: "flex", flexDirection: "column", gap: 28 }}>
+        {Object.entries(departmentsByGroup).map(([groupName, depts]) => (
+          <div key={groupName}>
+            <h3 style={{ color: "var(--bark-brown)", fontSize: 14, fontWeight: 700, marginBottom: 12, textTransform: "uppercase", letterSpacing: 0.5 }}>
+              {groupName}
+            </h3>
+            <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+              {depts.map(dept => (
+                <button
+                  key={dept.key}
+                  onClick={() => onSubTypeSelect(dept.key)}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    padding: "0.85rem 1.2rem",
+                    background: subType === dept.key ? "var(--moss-green)" : "var(--cream)",
+                    color: "var(--forest-green)",
+                    border: `2px solid ${subType === dept.key ? 'var(--leaf-green)' : 'var(--stone-gray)'}`,
+                    borderRadius: 4,
+                    fontSize: 15,
+                    fontWeight: subType === dept.key ? 600 : 500,
+                    cursor: "pointer",
+                    transition: "all 0.2s",
+                    textAlign: "left"
+                  }}
+                >
+                  {dept.name}
+                </button>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
     </div>

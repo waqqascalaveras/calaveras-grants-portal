@@ -200,7 +200,28 @@ const CalaverrasGrantsDashboard = () => {
   // Base filters (user type, department, search)
   const baseFiltered = useMemo(() => {
     if (grants.length === 0) return [];
+    const now = new Date();
+    const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
+    
     return grants.filter(grant => {
+      // Filter out grants closed more than 7 days ago
+      const status = (grant.Status || '').toLowerCase().trim();
+      const isClosed = status.includes('closed') || status.includes('close');
+      
+      if (isClosed) {
+        // Check if deadline is more than 7 days past
+        const deadlineStr = grant.ApplicationDeadline;
+        if (deadlineStr) {
+          const deadlineDate = new Date(deadlineStr);
+          if (!isNaN(deadlineDate) && deadlineDate < sevenDaysAgo) {
+            return false; // Skip grants closed over 7 days ago
+          }
+        } else {
+          // No deadline info and closed status = filter out
+          return false;
+        }
+      }
+      
       if (userType === 'county') {
         if (!isEligibleForCounty(grant)) return false;
       } else if (userType === 'cbo') {
@@ -378,11 +399,25 @@ const CalaverrasGrantsDashboard = () => {
   };
 
   // Get status badge
-  const getStatusBadge = (status) => {
+  const getStatusBadge = (status, deadlineStr) => {
     const s = (status || '').toLowerCase();
-    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
+    
+    // Check if explicitly closed
+    if (s.includes('closed') || s.includes('close')) {
+      return { text: 'Closed', color: '#495057' };
+    }
+    
+    // Check if deadline has passed
+    if (deadlineStr) {
+      const deadlineDate = new Date(deadlineStr);
+      if (!isNaN(deadlineDate) && deadlineDate < new Date()) {
+        return { text: 'Closed', color: '#495057' };
+      }
+    }
+    
     if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
-    return { text: 'Closed', color: '#495057' };
+    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
+    return { text: 'Open', color: '#1b4965' };
   };
 
   // Prepare timeline data
@@ -691,7 +726,7 @@ const CalaverrasGrantsDashboard = () => {
                 </tr>
               ) : (
                 grantsWithEmphasis.map((grant) => {
-                  const statusBadge = getStatusBadge(grant.Status);
+                  const statusBadge = getStatusBadge(grant.Status, grant.ApplicationDeadline);
                   const rowClasses = [
                     selectedGrant?.PortalID === grant.PortalID ? 'selected' : '',
                     !grant._matchesDept ? 'non-match' : '',
@@ -779,8 +814,8 @@ const CalaverrasGrantsDashboard = () => {
                 <span className="quick-pill" title="Agency">{selectedGrant.AgencyName || 'N/A'}</span>
                 <span className="quick-pill strong" title="Amount">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
                 <span className="quick-pill" title="Status">
-                  <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status).color }}></span>
-                  {getStatusBadge(selectedGrant.Status).text}
+                  <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }}></span>
+                  {getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).text}
                 </span>
                 {selectedGrant.OpportunityNumber && (
                   <span className="quick-pill" title="Opportunity Number">{selectedGrant.OpportunityNumber}</span>
