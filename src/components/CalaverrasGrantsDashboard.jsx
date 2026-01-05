@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
-import { getUnifiedGrants, clearClientCache } from '../services/unifiedGrantService';
+import { getUnifiedGrants } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
