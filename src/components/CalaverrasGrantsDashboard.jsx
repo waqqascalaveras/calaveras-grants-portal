@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
-import { getGrantsGovOpportunities } from '../services/grantsGovService';
+import { getUnifiedGrants, clearClientCache } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
@@ -46,120 +46,37 @@ const CalaverrasGrantsDashboard = () => {
   const getGrantId = useCallback((grant) => {
     return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
-  // Fetch and cache grant data (reusable for manual refresh)
+  // Fetch unified grants (CA + Federal, deduplicated, cached)
   const fetchGrants = useCallback(async (forceRefresh = false) => {
     try {
       setLoading(true);
       setError(null);
-      const now = Date.now();
-      const twelveHours = 12 * 60 * 60 * 1000;
 
-      // Fetch California State Grants
-      let caGrants = [];
-      const cachedData = localStorage.getItem('calaverrasGrantsCache');
-      const cacheTimestamp = localStorage.getItem('calaverrasGrantsCacheTime');
-
-      // Helper function to cache data with proper error handling
-      const setCacheWithErrorHandling = (key, value, timeKey) => {
-        try {
-          localStorage.setItem(key, value);
-          localStorage.setItem(timeKey, now.toString());
-          // eslint-disable-next-line no-console
-          console.log(`[Cache] Successfully cached ${key}`);
-        } catch (quotaError) {
-          if (quotaError.name === 'QuotaExceededError') {
-            // eslint-disable-next-line no-console
-            console.warn('[Cache] localStorage quota exceeded, clearing old data...');
-            try {
-              // Clear old grants cache
-              localStorage.removeItem('calaverrasGrantsCache');
-              localStorage.removeItem('calaverrasGrantsCacheTime');
-              localStorage.removeItem('grantsGovCache');
-              localStorage.removeItem('grantsGovCacheTime');
-              // Try caching again
-              localStorage.setItem(key, value);
-              localStorage.setItem(timeKey, now.toString());
-              // eslint-disable-next-line no-console
-              console.log('[Cache] Retried caching after clearing old data');
-            } catch (retryError) {
-              // eslint-disable-next-line no-console
-              console.warn('[Cache] Cache storage still exceeded after clearing, proceeding without cache');
-            }
-          } else {
-            throw quotaError;
-          }
-        }
-      };
-
-      const useCache = !forceRefresh && cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours;
-
-      if (useCache) {
-        caGrants = JSON.parse(cachedData);
-        // eslint-disable-next-line no-console
-        console.log(`[CA Grants] Loaded ${caGrants.length} grants from cache`);
-      } else {
-        // Fetch fresh CA data
-        // eslint-disable-next-line no-console
-        console.log('[CA Grants] Fetching fresh data from CA API...');
-        const response = await fetch(
-          'https://data.ca.gov/api/3/action/datastore_search?resource_id=111c8c88-21f6-453c-ae2c-b4785a0624f5&limit=10000'
-        );
-        
-        if (!response.ok) {
-          // eslint-disable-next-line no-console
-          console.warn(`[CA Grants] API returned status ${response.status}`);
-        } else {
-          const data = await response.json();
-          if (data.success && data.result && data.result.records) {
-            caGrants = data.result.records.map(g => ({ ...g, _source: 'ca.gov' }));
-            // eslint-disable-next-line no-console
-            console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
-            
-            // Cache only essential fields to reduce storage
-            const essentialFields = caGrants.map(g => ({
-              PortalID: g.PortalID,
-              Title: g.Title || g.GrantTitle,
-              AgencyName: g.AgencyName,
-              EstAvailFunds: g.EstAvailFunds,
-              ApplicationDeadline: g.ApplicationDeadline,
-              Status: g.Status,
-              Categories: g.Categories,
-              ApplicantType: g.ApplicantType,
-              Purpose: g.Purpose,
-              Description: g.Description,
-              _source: g._source
-            }));
-            setCacheWithErrorHandling('calaverrasGrantsCache', JSON.stringify(essentialFields), 'calaverrasGrantsCacheTime');
-          }
-        }
-      }
+      // Fetch from unified service (server-side cache + client-side caching)
+      const data = await getUnifiedGrants(forceRefresh);
       
-      // Fetch Federal Grants from Grants.gov
-      let federalGrants = [];
-      try {
-        // eslint-disable-next-line no-console
-        console.log('[Federal Grants] Fetching from Grants.gov...');
-        federalGrants = await getGrantsGovOpportunities();
-        // eslint-disable-next-line no-console
-        console.log(`[Federal Grants] Fetched ${federalGrants.length} grants`);
-      } catch (fedError) {
-        // eslint-disable-next-line no-console
-        console.warn('[Federal Grants] Error fetching Grants.gov data:', fedError.message);
-        // Continue with CA grants only
-      }
+      // Extract grants and metadata
+      const allGrants = data.grants || [];
+      const sources = data.sources || { ca: { count: 0 }, federal: { count: 0 } };
       
-      // Combine both sources
-      const allGrants = [...caGrants, ...federalGrants];
       // eslint-disable-next-line no-console
-      console.log(`[Grants Portal] Total grants: ${allGrants.length} (CA: ${caGrants.length}, Federal: ${federalGrants.length})`);
-      setSourceCounts({ ca: caGrants.length, federal: federalGrants.length });
+      console.log(
+        `[Unified Grants] Loaded ${allGrants.length} grants ` +
+        `(CA: ${sources.ca.count}, Federal: ${sources.federal.count}, ` +
+        `Duplicates removed: ${data.duplicates?.count || 0})`
+      );
+      
+      setSourceCounts({ 
+        ca: sources.ca.count, 
+        federal: sources.federal.count 
+      });
       
       if (allGrants.length === 0) {
-        throw new Error('No grant data available from any source');
+        throw new Error('No grant data available');
       }
       
       setGrants(allGrants);
-      setLastUpdated(new Date());
+      setLastUpdated(new Date(data.fetchedAt));
       setLoading(false);
     } catch (err) {
       // eslint-disable-next-line no-console
