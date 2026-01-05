@@ -6,18 +6,63 @@ const CACHE_TIME_KEY = 'grantsGovCacheTime';
 const CACHE_DURATION = 12 * 60 * 60 * 1000; // 12 hours
 
 /**
+ * Load federal grants from pre-fetched static file (GitHub Actions)
+ * This bypasses CORS issues on GitHub Pages
+ * @returns {Promise<Array>} Array of grant opportunities
+ */
+const loadStaticFederalGrants = async () => {
+  try {
+    // eslint-disable-next-line no-console
+    console.log('[Grants.gov] Loading from static cache...');
+    
+    const response = await fetch(`${process.env.PUBLIC_URL || ''}/federal-grants-cache.json`);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to load static cache: ${response.status}`);
+    }
+    
+    const data = await response.json();
+    
+    if (!data.success || !data.grants) {
+      throw new Error('Invalid cache data');
+    }
+    
+    // eslint-disable-next-line no-console
+    console.log(`[Grants.gov] Loaded ${data.count} grants from static cache (fetched: ${data.fetchedAt})`);
+    
+    return data.grants;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.warn('[Grants.gov] Could not load static cache:', error);
+    return [];
+  }
+};
+
+/**
  * Search for opportunities on Grants.gov
  * @param {Object} params - Search parameters
  * @returns {Promise<Array>} Array of grant opportunities
  */
 export const searchGrantsGov = async (params = {}) => {
+  // Try static file first (bypasses CORS on GitHub Pages)
+  try {
+    const staticGrants = await loadStaticFederalGrants();
+    if (staticGrants.length > 0) {
+      return staticGrants;
+    }
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log('[Grants.gov] Static cache unavailable, trying direct API...');
+  }
+
+  // Fallback to direct API call (will fail on GitHub Pages due to CORS)
   const defaultParams = {
-    rows: 1000, // Get more grants
+    rows: 1000,
     keyword: '',
     oppNum: '',
     eligibilities: '01', // County governments
     agencies: '',
-    oppStatuses: 'forecasted|posted|open|active', // broader active window
+    oppStatuses: 'forecasted|posted|open|active',
     aln: '',
     fundingCategories: ''
   };
@@ -276,14 +321,20 @@ export const getGrantsGovOpportunities = async () => {
     return cached.data;
   }
   
-  // Fetch fresh data
+  // Fetch fresh data - this will try static file first, then direct API
   const opportunities = await searchGrantsGov({
     eligibilities: '01', // County governments
     oppStatuses: 'forecasted|posted|open|active'
   });
   
-  // Normalize data
-  const normalized = opportunities.map(normalizeGrantsGovData);
+  // Check if data is already normalized (from static file)
+  const isAlreadyNormalized = opportunities.length > 0 && 
+    opportunities[0].Source === 'federal';
+  
+  // Normalize data only if needed (direct API results)
+  const normalized = isAlreadyNormalized 
+    ? opportunities 
+    : opportunities.map(normalizeGrantsGovData);
   
   // Cache normalized data
   cacheGrantsGov(normalized);

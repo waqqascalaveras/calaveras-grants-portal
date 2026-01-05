@@ -1,0 +1,49 @@
+name: Fetch Federal Grants Data
+
+on:
+  schedule:
+    # Run every 12 hours at 6 AM and 6 PM UTC
+    - cron: '0 6,18 * * *'
+  workflow_dispatch: # Allow manual trigger
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/fetch-federal-grants.yml'
+
+jobs:
+  fetch-grants:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install requests
+      
+      - name: Fetch federal grants data
+        run: |
+          python scripts/fetch_federal_grants.py
+      
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/federal-grants-cache.json
+          
+          # Only commit if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to federal grants data"
+          else
+            git commit -m "Update federal grants data [automated]"
+            git push
+          fi

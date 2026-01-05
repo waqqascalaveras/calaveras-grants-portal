@@ -8,9 +8,225 @@
   padding: 4rem 2rem;
   color: white;
   text-align: center;
-  gap: 1rem;
+  gap: 3rem;
+  min-height: 400px;
 }
 
+/* Orbital System Container */
+.orbital-system {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Orbit Centers */
+.orbit-center {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbit-1 {
+  animation: orbit-clockwise 4s linear infinite;
+}
+
+.orbit-2 {
+  animation: orbit-counter-clockwise 4s linear infinite;
+}
+
+/* Center Dots */
+.center-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: var(--leaf-green, #4CAF50);
+  border-radius: 50%;
+  box-shadow: 0 0 20px var(--leaf-green, #4CAF50),
+              0 0 40px var(--leaf-green, #4CAF50);
+  z-index: 10;
+}
+
+/* Spinning Lines Container */
+.spinning-lines {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.spinning-lines.clockwise {
+  animation: spin-clockwise 3s linear infinite;
+}
+
+.spinning-lines.counter-clockwise {
+  animation: spin-counter-clockwise 2.5s linear infinite;
+}
+
+/* Radial Lines */
+.radial-line {
+  position: absolute;
+  width: 2px;
+  height: 60px;
+  left: 50%;
+  top: 50%;
+  transform-origin: 50% 0%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--moss-green, #6B8E23) 20%,
+    var(--leaf-green, #4CAF50) 60%,
+    transparent
+  );
+  opacity: 0.6;
+}
+
+.line-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--leaf-green, #4CAF50) 50%,
+    transparent
+  );
+  filter: blur(3px);
+  opacity: 0.8;
+}
+
+/* Dollar Signs */
+.dollar-sign {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--leaf-green, #4CAF50);
+  transform: 
+    rotate(var(--line-angle))
+    translateY(-30px);
+  animation: dollar-travel 2s ease-out forwards;
+  animation-delay: var(--delay);
+  opacity: 0;
+  text-shadow: 0 0 10px var(--leaf-green, #4CAF50);
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Loading Text */
+.loading-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.loading-text h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  font-weight: 600;
+}
+
+.loading-text p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  animation: pulse-text 2s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes orbit-clockwise {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(30px, -30px) rotate(90deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(180deg);
+  }
+  75% {
+    transform: translate(-30px, 30px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+@keyframes orbit-counter-clockwise {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  25% {
+    transform: translate(-30px, 30px) rotate(-90deg);
+  }
+  50% {
+    transform: translate(0, 0) rotate(-180deg);
+  }
+  75% {
+    transform: translate(30px, -30px) rotate(-270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
+
+@keyframes spin-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spin-counter-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+@keyframes dollar-travel {
+  0% {
+    opacity: 0;
+    transform: 
+      rotate(var(--line-angle))
+      translateY(-30px)
+      scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: 
+      rotate(var(--line-angle))
+      translateY(-50px)
+      scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: 
+      rotate(var(--line-angle))
+      translateY(-120px)
+      scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: 
+      rotate(var(--line-angle))
+      translateY(-150px)
+      scale(0.5);
+  }
+}
+
+@keyframes pulse-text {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Legacy spinner for error/no-results */
 .spinner {
   animation: spin 1s linear infinite;
 }

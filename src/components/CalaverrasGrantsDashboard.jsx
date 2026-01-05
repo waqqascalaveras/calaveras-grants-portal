@@ -266,20 +266,20 @@ const CalaverrasGrantsDashboard = () => {
     return { text: 'Open', color: '#1b4965' };
   }, []);
 
-  // Status-filtered list
+  // Status-filtered list - use computed status from getStatusBadge
   const filteredGrants = useMemo(() => {
     if (baseFiltered.length === 0) return [];
     if (statusFilter === 'all') return baseFiltered;
     return baseFiltered.filter(grant => {
-      const status = (grant.Status || '').toLowerCase().trim();
+      const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
       if (statusFilter === 'open') {
-        return status.includes('open');
+        return computedStatus.includes('open');
       } else if (statusFilter === 'forecasted') {
-        return status.includes('forecast');
+        return computedStatus.includes('forecast');
       }
       return true;
     });
-  }, [baseFiltered, statusFilter]);
+  }, [baseFiltered, statusFilter, getStatusBadge]);
 
   // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
