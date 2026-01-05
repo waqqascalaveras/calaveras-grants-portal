@@ -21,6 +21,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
+
+      - name: Verify workspace contents
+        run: |
+          pwd
+          ls -la
+          ls -la scripts || true
+          test -f scripts/fetch_unified_grants.py || (echo "Missing scripts/fetch_unified_grants.py" && exit 1)
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -28,12 +36,15 @@ jobs:
           python-version: '3.11'
       
       - name: Install dependencies
+        working-directory: scripts
         run: |
+          python -m pip install --upgrade pip
           pip install requests urllib3
       
       - name: Fetch and merge grants data
+        working-directory: scripts
         run: |
-          python scripts/fetch_unified_grants.py
+          python fetch_unified_grants.py
       
       - name: Commit and push if changed
         run: |
