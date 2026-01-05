@@ -244,6 +244,28 @@ const CalaverrasGrantsDashboard = () => {
     });
   }, [grants, userType, selectedDepartment, searchQuery]);
 
+  // Get status badge - must be defined before statusCounts
+  const getStatusBadge = useCallback((status, deadlineStr) => {
+    const s = (status || '').toLowerCase();
+    
+    // Check if explicitly closed
+    if (s.includes('closed') || s.includes('close')) {
+      return { text: 'Closed', color: '#495057' };
+    }
+    
+    // Check if deadline has passed
+    if (deadlineStr) {
+      const deadlineDate = new Date(deadlineStr);
+      if (!isNaN(deadlineDate) && deadlineDate < new Date()) {
+        return { text: 'Closed', color: '#495057' };
+      }
+    }
+    
+    if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
+    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
+    return { text: 'Open', color: '#1b4965' };
+  }, []);
+
   // Status-filtered list
   const filteredGrants = useMemo(() => {
     if (baseFiltered.length === 0) return [];
@@ -272,7 +294,7 @@ const CalaverrasGrantsDashboard = () => {
       }
     });
     return counts;
-  }, [baseFiltered]);
+  }, [baseFiltered, getStatusBadge]);
 
   // Parse deadline values with fallbacks for odd formats and rolling deadlines
   const parseDeadline = useCallback((value) => {
@@ -398,28 +420,6 @@ const CalaverrasGrantsDashboard = () => {
     if (days <= 14) return `${days}d (Urgent)`;
     if (days <= 30) return `${days}d`;
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-  };
-
-  // Get status badge
-  const getStatusBadge = (status, deadlineStr) => {
-    const s = (status || '').toLowerCase();
-    
-    // Check if explicitly closed
-    if (s.includes('closed') || s.includes('close')) {
-      return { text: 'Closed', color: '#495057' };
-    }
-    
-    // Check if deadline has passed
-    if (deadlineStr) {
-      const deadlineDate = new Date(deadlineStr);
-      if (!isNaN(deadlineDate) && deadlineDate < new Date()) {
-        return { text: 'Closed', color: '#495057' };
-      }
-    }
-    
-    if (s.includes('forecast')) return { text: 'Forecasted', color: '#6c757d' };
-    if (s.includes('open') || s.includes('active')) return { text: 'Open', color: '#1b4965' };
-    return { text: 'Open', color: '#1b4965' };
   };
 
   // Prepare timeline data
