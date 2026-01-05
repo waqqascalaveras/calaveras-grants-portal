@@ -600,17 +600,6 @@ const CalaverrasGrantsDashboard = () => {
               const isHovered = hoveredGrantId && hoveredGrantId === item.id;
               const isSelected = selectedGrant && (selectedGrant._id || getGrantId(selectedGrant)) === item.id;
               return (
-                  || grant.Agency
-                  || grant.Department
-                  || grant.DepartmentName
-                  || grant.Division
-                  || grant.Program
-                  || grant.Grantor
-                  || grant.OwnerOrganization
-                  || grant.Organization
-                  || grant.SourceAgency
-                  || grant.FundingAgency
-                  || 'Agency TBD';
                 <div 
                   key={item.id || idx} 
                   className={`timeline-dot ${isHovered || isSelected ? 'active' : ''}`}
