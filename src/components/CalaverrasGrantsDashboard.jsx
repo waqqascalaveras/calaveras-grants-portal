@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getGrantsGovOpportunities } from '../services/grantsGovService';
-import { departments } from '../config/departments';
+import { departments, getDepartmentsByGroup } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User, Clock, RefreshCw, Heart } from 'lucide-react';
+import UserTypeSelector from './UserTypeSelector';
+import DepartmentSelector from './DepartmentSelector';
 
 // Helper function to highlight search terms in text
 const HighlightedText = ({ text, query }) => {
@@ -257,15 +259,15 @@ const CalaverrasGrantsDashboard = () => {
     });
   }, [baseFiltered, statusFilter]);
 
-  // Counts for status pills
+  // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
     const counts = { open: 0, forecasted: 0 };
     baseFiltered.forEach((grant) => {
-      const status = (grant.Status || '').toLowerCase().trim();
-      if (status.includes('forecast')) {
+      const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
+      if (computedStatus.includes('forecast')) {
         counts.forecasted += 1;
       }
-      if (status.includes('open')) {
+      if (computedStatus.includes('open')) {
         counts.open += 1;
       }
     });
@@ -523,35 +525,20 @@ const CalaverrasGrantsDashboard = () => {
       {/* Sticky Filter Bar */}
       <div className="filter-bar">
         <div className="filter-bar-content">
-          <div className="filter-group">
-            <User size={16} />
-            <select 
-              value={userType} 
-              onChange={(e) => {
-                setUserType(e.target.value);
-                if (e.target.value !== 'county') setSelectedDepartment('all');
-              }}
-              title="Who are you?"
-            >
-              <option value="all">All Users</option>
-              <option value="county">County Department</option>
-              <option value="cbo">Community Organization</option>
-            </select>
-          </div>
+          <UserTypeSelector 
+            userType={userType} 
+            onUserTypeSelect={(type) => {
+              setUserType(type);
+              if (type !== 'county') setSelectedDepartment('all');
+            }}
+          />
 
-          {userType === 'county' && (
-            <div className="filter-group">
-              <Building2 size={16} />
-              <select 
-                value={selectedDepartment} 
-                onChange={(e) => setSelectedDepartment(e.target.value)}
-                title="Which department?"
-              >
-                {Object.entries(departments).map(([key, dept]) => (
-                  <option key={key} value={key}>{dept.name}</option>
-                ))}
-              </select>
-            </div>
+          {(userType === 'county' || userType === 'cbo') && (
+            <DepartmentSelector 
+              userType={userType}
+              subType={selectedDepartment}
+              onSubTypeSelect={setSelectedDepartment}
+            />
           )}
 
           <div className="search-box">
