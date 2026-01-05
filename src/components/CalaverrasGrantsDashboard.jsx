@@ -18,6 +18,7 @@ const CalaverrasGrantsDashboard = () => {
   const [sortDirection, setSortDirection] = useState('asc');
   const [lastUpdated, setLastUpdated] = useState(null);
   const [hoveredGrantId, setHoveredGrantId] = useState(null);
+  const [sourceCounts, setSourceCounts] = useState({ ca: 0, federal: 0 });
 
   // Unique key for grants
   const getGrantId = useCallback((grant) => {
@@ -31,69 +32,64 @@ const CalaverrasGrantsDashboard = () => {
       const now = Date.now();
       const twelveHours = 12 * 60 * 60 * 1000;
 
-    const baseFiltered = useMemo(() => {
-      if (grants.length === 0) return [];
-      return grants.filter(grant => {
-        if (userType === 'county') {
-          if (!isEligibleForCounty(grant)) return false;
-        } else if (userType === 'cbo') {
-          if (!isEligibleForCBO(grant)) return false;
-        }
-        if (userType === 'county' && selectedDepartment !== 'all') {
-          if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
-        }
-        if (searchQuery) {
-          const q = searchQuery.toLowerCase();
-          const inTitle = (grant.Title || grant.GrantTitle || '').toLowerCase().includes(q);
-          const inAgency = (grant.AgencyName || '').toLowerCase().includes(q);
-          const inPurpose = (grant.Purpose || '').toLowerCase().includes(q);
-          const inDesc = (grant.Description || '').toLowerCase().includes(q);
-          if (!inTitle && !inAgency && !inPurpose && !inDesc) return false;
-        }
-        return true;
-      });
-    }, [grants, userType, selectedDepartment, searchQuery]);
+      // Fetch California State Grants
+      let caGrants = [];
+      const cachedData = localStorage.getItem('calaverrasGrantsCache');
+      const cacheTimestamp = localStorage.getItem('calaverrasGrantsCacheTime');
 
-    const filteredGrants = useMemo(() => {
-      if (baseFiltered.length === 0) {
-        return [];
-      }
-
-      const filtered = baseFiltered.filter(grant => {
-        const status = (grant.Status || '').toLowerCase().trim();
-        if (statusFilter === 'open') {
-          if (status) {
-            const isOpenStatus = status.includes('open') || status.includes('active') || status.includes('forecast');
-            if (!isOpenStatus) return false;
+      // Helper function to cache data with proper error handling
+      const setCacheWithErrorHandling = (key, value, timeKey) => {
+        try {
+          localStorage.setItem(key, value);
+          localStorage.setItem(timeKey, now.toString());
+          // eslint-disable-next-line no-console
+          console.log(`[Cache] Successfully cached ${key}`);
+        } catch (quotaError) {
+          if (quotaError.name === 'QuotaExceededError') {
+            // eslint-disable-next-line no-console
+            console.warn('[Cache] localStorage quota exceeded, clearing old data...');
+            try {
+              // Clear old grants cache
+              localStorage.removeItem('calaverrasGrantsCache');
+              localStorage.removeItem('calaverrasGrantsCacheTime');
+              localStorage.removeItem('grantsGovCache');
+              localStorage.removeItem('grantsGovCacheTime');
+              // Try caching again
+              localStorage.setItem(key, value);
+              localStorage.setItem(timeKey, now.toString());
+              // eslint-disable-next-line no-console
+              console.log('[Cache] Retried caching after clearing old data');
+            } catch (retryError) {
+              // eslint-disable-next-line no-console
+              console.warn('[Cache] Cache storage still exceeded after clearing, proceeding without cache');
+            }
+          } else {
+            throw quotaError;
           }
-        } else if (statusFilter === 'forecasted') {
-          if (!status.includes('forecast')) return false;
-        } else if (statusFilter === 'active') {
-          if (!status.includes('active')) return false;
         }
-        return true;
-      });
+      };
 
-      return filtered;
-    }, [baseFiltered, statusFilter]);
+      const useCache = !forceRefresh && cachedData && cacheTimestamp && (now - parseInt(cacheTimestamp)) < twelveHours;
 
-    const statusCounts = useMemo(() => {
-      const counts = { open: 0, forecasted: 0, active: 0 };
-      baseFiltered.forEach((grant) => {
-        const status = (grant.Status || '').toLowerCase().trim();
-        if (status.includes('forecast')) {
-          counts.forecasted += 1;
-        } else if (status.includes('active')) {
-          counts.active += 1;
-          counts.open += 1;
-        } else if (status.includes('open')) {
-          counts.open += 1;
+      if (useCache) {
+        caGrants = JSON.parse(cachedData);
+        // eslint-disable-next-line no-console
+        console.log(`[CA Grants] Loaded ${caGrants.length} grants from cache`);
+      } else {
+        // Fetch fresh CA data
+        // eslint-disable-next-line no-console
+        console.log('[CA Grants] Fetching fresh data from CA API...');
+        const response = await fetch(
+          'https://data.ca.gov/api/3/action/datastore_search?resource_id=111c8c88-21f6-453c-ae2c-b4785a0624f5&limit=10000'
+        );
+        
+        if (!response.ok) {
+          // eslint-disable-next-line no-console
+          console.warn(`[CA Grants] API returned status ${response.status}`);
         } else {
-          counts.open += 1;
-        }
-      });
-      return counts;
-    }, [baseFiltered]);
+          const data = await response.json();
+          if (data.success && data.result && data.result.records) {
+            caGrants = data.result.records.map(g => ({ ...g, _source: 'ca.gov' }));
             // eslint-disable-next-line no-console
             console.log(`[CA Grants] Fetched ${caGrants.length} grants`);
             
@@ -134,6 +130,7 @@ const CalaverrasGrantsDashboard = () => {
       const allGrants = [...caGrants, ...federalGrants];
       // eslint-disable-next-line no-console
       console.log(`[Grants Portal] Total grants: ${allGrants.length} (CA: ${caGrants.length}, Federal: ${federalGrants.length})`);
+      setSourceCounts({ ca: caGrants.length, federal: federalGrants.length });
       
       if (allGrants.length === 0) {
         throw new Error('No grant data available from any source');
@@ -180,29 +177,36 @@ const CalaverrasGrantsDashboard = () => {
     }
   }, [favorites]);
 
-
-  // Filter and process grants with all filters
-  const filteredGrants = useMemo(() => {
-    if (grants.length === 0) {
-      // eslint-disable-next-line no-console
-      console.log('[Grants Portal] No grants to filter');
-      return [];
-    }
-
-    const filtered = grants.filter(grant => {
-      // User type eligibility
+  // Base filters (user type, department, search)
+  const baseFiltered = useMemo(() => {
+    if (grants.length === 0) return [];
+    return grants.filter(grant => {
       if (userType === 'county') {
         if (!isEligibleForCounty(grant)) return false;
       } else if (userType === 'cbo') {
         if (!isEligibleForCBO(grant)) return false;
       }
-      // 'all' shows everything
+      if (userType === 'county' && selectedDepartment !== 'all') {
+        if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
+      }
+      if (searchQuery) {
+        const q = searchQuery.toLowerCase();
+        const inTitle = (grant.Title || grant.GrantTitle || '').toLowerCase().includes(q);
+        const inAgency = (grant.AgencyName || '').toLowerCase().includes(q);
+        const inPurpose = (grant.Purpose || '').toLowerCase().includes(q);
+        const inDesc = (grant.Description || '').toLowerCase().includes(q);
+        if (!inTitle && !inAgency && !inPurpose && !inDesc) return false;
+      }
+      return true;
+    });
+  }, [grants, userType, selectedDepartment, searchQuery]);
 
-      // Status filter (relaxed to handle variations)
+  // Status-filtered list
+  const filteredGrants = useMemo(() => {
+    if (baseFiltered.length === 0) return [];
+    return baseFiltered.filter(grant => {
       const status = (grant.Status || '').toLowerCase().trim();
       if (statusFilter === 'open') {
-        // Accept open, active, forecasted, or status containing these words
-        // If no status, assume it's eligible
         if (status) {
           const isOpenStatus = status.includes('open') || status.includes('active') || status.includes('forecast');
           if (!isOpenStatus) return false;
@@ -212,35 +216,28 @@ const CalaverrasGrantsDashboard = () => {
       } else if (statusFilter === 'active') {
         if (!status.includes('active')) return false;
       }
-
-      // Search filter
-      if (searchQuery.trim()) {
-        const q = searchQuery.trim().toLowerCase();
-        const text = `${grant.Title || grant.GrantTitle || ''} ${grant.Purpose || ''} ${grant.Categories || ''} ${grant.Description || ''}`.toLowerCase();
-        if (!text.includes(q)) return false;
-      }
-
       return true;
     });
+  }, [baseFiltered, statusFilter]);
 
-    // eslint-disable-next-line no-console
-    console.log(`[Grants Portal] Filtered ${filtered.length} grants from ${grants.length} total`);
-    // eslint-disable-next-line no-console
-    console.log(`[Grants Portal] Filters: userType=${userType}, dept=${selectedDepartment}, status=${statusFilter}, search="${searchQuery}"`);
-    
-    if (filtered.length === 0 && grants.length > 0) {
-      // eslint-disable-next-line no-console
-      console.warn('[Grants Portal] All grants filtered out. Check filter criteria:');
-      // eslint-disable-next-line no-console
-      console.log('- Total grants loaded:', grants.length);
-      // eslint-disable-next-line no-console
-      console.log('- Sample grant status:', grants[0]?.Status);
-      // eslint-disable-next-line no-console
-      console.log('- Sample grant title:', grants[0]?.Title || grants[0]?.GrantTitle);
-    }
-
-    return filtered;
-  }, [grants, userType, selectedDepartment, statusFilter, searchQuery]);
+  // Counts for status pills
+  const statusCounts = useMemo(() => {
+    const counts = { open: 0, forecasted: 0, active: 0 };
+    baseFiltered.forEach((grant) => {
+      const status = (grant.Status || '').toLowerCase().trim();
+      if (status.includes('forecast')) {
+        counts.forecasted += 1;
+      } else if (status.includes('active')) {
+        counts.active += 1;
+        counts.open += 1;
+      } else if (status.includes('open')) {
+        counts.open += 1;
+      } else {
+        counts.open += 1;
+      }
+    });
+    return counts;
+  }, [baseFiltered]);
 
   // Check if grant matches department (for visual emphasis)
   const grantsWithEmphasis = useMemo(() => {
@@ -459,7 +456,6 @@ const CalaverrasGrantsDashboard = () => {
             <Building2 size={28} />
             <div>
               <h1>Calaveras County Grants Portal</h1>
-              <p className="subtitle">Find funding opportunities for your department</p>
             </div>
           </div>
           <div className="header-right">
@@ -546,7 +542,10 @@ const CalaverrasGrantsDashboard = () => {
           </div>
         </div>
         <div className="timeline-inline">
-          <div className="timeline-meta">{timelineData.length} deadlines</div>
+          <div className="timeline-meta" aria-live="polite">
+            CA: {sourceCounts.ca} • Federal: {sourceCounts.federal}
+            {sourceCounts.federal === 0 ? ' (federal feed unavailable?)' : ''}
+          </div>
           <div className="timeline">
             <div className="timeline-line"></div>
             {/* Time markers */}
@@ -698,13 +697,15 @@ const CalaverrasGrantsDashboard = () => {
                       onMouseLeave={() => setHoveredGrantId(null)}
                     >
                       <td className="grant-title-cell">
-                        {grant._source === 'grants.gov' && (
-                          <span className="source-badge federal">Federal</span>
-                        )}
-                        {grant._source === 'ca.gov' && (
-                          <span className="source-badge state">CA</span>
-                        )}
-                        <div className="title-text">{grant.Title || grant.GrantTitle || 'Untitled Grant'}</div>
+                        <div className="title-text">
+                          {grant._source === 'grants.gov' && (
+                            <span className="source-badge federal">Federal</span>
+                          )}
+                          {grant._source === 'ca.gov' && (
+                            <span className="source-badge state">CA</span>
+                          )}
+                          <span className="title-line">{grant.Title || grant.GrantTitle || 'Untitled Grant'}</span>
+                        </div>
                         <div className="categories-text">{grant.Categories}</div>
                       </td>
                       <td className="amount-cell">{formatCurrency(grant.EstAvailFunds)}</td>
@@ -843,8 +844,8 @@ const CalaverrasGrantsDashboard = () => {
       <footer className="footer">
         <p>
           Data from California State Grants Portal & Federal Grants.gov • 
-          Showing grants eligible for county government agencies • 
-          Cache refreshes every 12 hours
+          Cache refreshes every 12 hours • 
+          Contact: <a href="mailto:WHanafi@calaverascounty.gov">Waqqas Hanafi</a>
         </p>
       </footer>
 
@@ -1066,7 +1067,10 @@ const CalaverrasGrantsDashboard = () => {
           overflow: visible;
         }
         .timeline-meta {
-          display: none;
+          display: block;
+          font-size: 0.75rem;
+          color: #6c757d;
+          margin-bottom: 0.1rem;
         }
         .timeline {
           position: relative;
@@ -1274,7 +1278,13 @@ const CalaverrasGrantsDashboard = () => {
           margin-bottom: 0.25rem;
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.4rem;
+          flex-wrap: wrap;
+        }
+        .title-text .title-line {
+          display: inline-flex;
+          align-items: center;
+          line-height: 1.3;
         }
         .title-text.match {
           font-weight: 700;

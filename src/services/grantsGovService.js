@@ -17,7 +17,7 @@ export const searchGrantsGov = async (params = {}) => {
     oppNum: '',
     eligibilities: '01', // County governments
     agencies: '',
-    oppStatuses: 'forecasted|posted', // Only active opportunities
+    oppStatuses: 'forecasted|posted|open|active', // broader active window
     aln: '',
     fundingCategories: ''
   };
@@ -279,7 +279,7 @@ export const getGrantsGovOpportunities = async () => {
   // Fetch fresh data
   const opportunities = await searchGrantsGov({
     eligibilities: '01', // County governments
-    oppStatuses: 'forecasted|posted'
+    oppStatuses: 'forecasted|posted|open|active'
   });
   
   // Normalize data
