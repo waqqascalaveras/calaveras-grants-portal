@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
-import { getUnifiedGrants } from '../services/unifiedGrantService';
+import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
@@ -29,7 +29,7 @@ const HighlightedText = ({ text, query }) => {
 const CalaverrasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [errorInfo, setErrorInfo] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
@@ -41,6 +41,8 @@ const CalaverrasGrantsDashboard = () => {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [hoveredGrantId, setHoveredGrantId] = useState(null);
   const [sourceCounts, setSourceCounts] = useState({ ca: 0, federal: 0 });
+  const [lastAttemptTs, setLastAttemptTs] = useState(null);
+  const [lastMeta, setLastMeta] = useState(null);
 
   // Unique key for grants
   const getGrantId = useCallback((grant) => {
@@ -50,7 +52,8 @@ const CalaverrasGrantsDashboard = () => {
   const fetchGrants = useCallback(async (forceRefresh = false) => {
     try {
       setLoading(true);
-      setError(null);
+      setErrorInfo(null);
+      setLastAttemptTs(new Date());
 
       // Fetch from unified service (server-side cache + client-side caching)
       const data = await getUnifiedGrants(forceRefresh);
@@ -70,18 +73,33 @@ const CalaverrasGrantsDashboard = () => {
         ca: sources.ca.count, 
         federal: sources.federal.count 
       });
+      setLastMeta({
+        fetchedAt: data.fetchedAt || new Date().toISOString(),
+        totalCount: typeof data.totalCount === 'number' ? data.totalCount : allGrants.length,
+        sources: data.sources,
+        duplicates: data.duplicates,
+        success: data.success !== false
+      });
       
       if (allGrants.length === 0) {
-        throw new Error('No grant data available');
+        // No data yet; show empty state but avoid error screen
+        setGrants([]);
+        setLastUpdated(new Date(data.fetchedAt || Date.now()));
+        setLoading(false);
+        return;
       }
       
       setGrants(allGrants);
-      setLastUpdated(new Date(data.fetchedAt));
+      setLastUpdated(new Date(data.fetchedAt || Date.now()));
       setLoading(false);
     } catch (err) {
       // eslint-disable-next-line no-console
       console.error('[Grants Portal] Error fetching grants:', err);
-      setError(err.message);
+      setErrorInfo({
+        message: err?.message || 'Failed to load grants',
+        name: err?.name,
+        stack: err?.stack
+      });
       setLoading(false);
     }
   }, []);
@@ -391,21 +409,62 @@ const CalaverrasGrantsDashboard = () => {
     );
   }
 
-  if (error) {
+  const cacheInfo = getCacheInfo();
+  const baseDiagnostics = {
+    lastAttempt: lastAttemptTs ? lastAttemptTs.toISOString() : null,
+    fetchedAt: lastMeta?.fetchedAt || null,
+    totalCount: lastMeta?.totalCount ?? null,
+    success: lastMeta?.success,
+    sources: lastMeta?.sources || null,
+    duplicates: lastMeta?.duplicates || null,
+    cache: {
+      available: cacheInfo.hasClientCache,
+      ageMinutes: cacheInfo.clientCacheAge,
+      timestamp: cacheInfo.clientCacheTimestamp ? cacheInfo.clientCacheTimestamp.toISOString() : null,
+      durationMs: cacheInfo.clientCacheDuration
+    }
+  };
+
+  if (!loading && !errorInfo && grants.length === 0) {
+    return (
+      <div className="dashboard">
+        <div className="error-container">
+          <AlertCircle size={48} />
+          <h3>No grant data available</h3>
+          <p>We could not load grants yet. Please try refreshing in a moment.</p>
+          <button onClick={() => fetchGrants(true)}>Retry</button>
+          <details style={{ marginTop: '1rem', textAlign: 'left', fontSize: '0.85rem' }}>
+            <summary style={{ cursor: 'pointer', color: '#6c757d' }}>Technical Details</summary>
+            <pre style={{ marginTop: '0.5rem', padding: '0.5rem', background: '#f8f9fa', overflow: 'auto' }}>
+              {JSON.stringify({
+                ...baseDiagnostics,
+                grantsLength: grants.length,
+                timestamp: new Date().toISOString()
+              }, null, 2)}
+            </pre>
+          </details>
+        </div>
+      </div>
+    );
+  }
+
+  if (errorInfo) {
     return (
       <div className="dashboard">
         <div className="error-container">
           <AlertCircle size={48} />
           <h3>Error Loading Grants</h3>
-          <p>{error}</p>
+          <p>{errorInfo.message}</p>
           <button onClick={() => window.location.reload()}>Retry</button>
           <details style={{ marginTop: '1rem', textAlign: 'left', fontSize: '0.85rem' }}>
             <summary style={{ cursor: 'pointer', color: '#6c757d' }}>Technical Details</summary>
             <pre style={{ marginTop: '0.5rem', padding: '0.5rem', background: '#f8f9fa', overflow: 'auto' }}>
               {JSON.stringify({
-                error: error,
-                timestamp: new Date().toISOString(),
-                cacheAvailable: !!(localStorage.getItem('grantsClientCache') || localStorage.getItem('calaverrasGrantsCache'))
+                ...baseDiagnostics,
+                error: errorInfo.message,
+                errorName: errorInfo.name,
+                stack: errorInfo.stack,
+                timestamp: new Date().toISOString()
               }, null, 2)}
             </pre>
           </details>
