@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getGrantsGovOpportunities } from '../services/grantsGovService';
+import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, User, Clock, RefreshCw, Heart } from 'lucide-react';
 
 const CalaverrasGrantsDashboard = () => {
@@ -298,7 +299,7 @@ const CalaverrasGrantsDashboard = () => {
     });
     
     return sorted;
-  }, [filteredGrants, selectedDepartment, departments, sortColumn, sortDirection]);
+  }, [filteredGrants, selectedDepartment, sortColumn, sortDirection, getGrantId]);
 
   // Prepare timeline data
   const timelineData = useMemo(() => {
@@ -320,7 +321,7 @@ const CalaverrasGrantsDashboard = () => {
         status: (g.Status || '').toLowerCase()
       };
     });
-  }, [grantsWithEmphasis]);
+  }, [grantsWithEmphasis, getGrantId]);
 
   // Format currency
   const formatCurrency = (str) => {
