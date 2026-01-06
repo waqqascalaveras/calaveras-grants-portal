@@ -213,8 +213,30 @@ export const normalizeGrantsGovData = (opp) => {
     // ALN (Assistance Listing Numbers)
     ALN: opp.alnist?.join(', ') || '',
     
-    // Applicant eligibility - assume county eligible if in results
-    ApplicantType: 'County governments; Local Government; Public Agency',
+    // Applicant eligibility - map codes to readable text
+    ApplicantType: (() => {
+      const eligibilityCodes = opp.eligibilities || [];
+      const eligibilityMap = {
+        '00': 'State governments',
+        '01': 'County governments',
+        '02': 'City or township governments',
+        '04': 'Special district governments',
+        '05': 'Nonprofits with 501(c)(3)',
+        '06': 'Nonprofits without 501(c)(3)',
+        '07': 'Private institutions of higher education',
+        '08': 'Individuals',
+        '11': 'Native American tribal governments',
+        '12': 'Public and State controlled institutions of higher education',
+        '13': 'Small businesses',
+        '20': 'For profit organizations',
+        '21': 'Native American tribal organizations',
+        '22': 'Public housing authorities',
+        '23': 'Independent school districts',
+        '25': 'Others'
+      };
+      const types = eligibilityCodes.map(code => eligibilityMap[code]).filter(Boolean);
+      return types.length > 0 ? types.join('; ') : 'See grant details';
+    })(),
     
     // Extracted fields
     Purpose: decodeHtmlEntities(purpose),

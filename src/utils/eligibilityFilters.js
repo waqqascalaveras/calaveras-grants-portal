@@ -20,15 +20,23 @@ export const isEligibleForCounty = (grant) => {
   const restrictedTypes = [
     'individual only',
     'business only',
-    'nonprofit only',
-    'nonprofit'  // Also exclude plain "nonprofit" (not just "nonprofit only")
+    'nonprofit only'
   ];
   const hasEligibleType = eligibleTypes.some(type => applicantType.includes(type));
   const hasRestrictedType = restrictedTypes.some(type => applicantType.includes(type));
   
-  // Only return true if explicitly eligible, or if no restricted types AND has content
-  // Changed logic: if it contains "nonprofit" anywhere, exclude it for county
-  return hasEligibleType && !hasRestrictedType;
+  // If has explicit eligible type (Public Agency, County, etc.), allow it even if nonprofit is also listed
+  // This handles mixed types like "Public Agency; Nonprofit; Business"
+  if (hasEligibleType) return true;
+  
+  // If has "only" restriction, exclude it
+  if (hasRestrictedType) return false;
+  
+  // If ONLY contains "nonprofit" (no other eligible types), exclude it for county
+  if (applicantType.includes('nonprofit') && !hasEligibleType) return false;
+  
+  // Allow other general types
+  return applicantType.length > 0;
 };
 
 /**
@@ -83,26 +91,80 @@ export const isRecentlyClosed = (grant, daysThreshold = 30) => {
 
 /**
  * Match grant to CBO organization type
+ * All CBO subtypes see ALL nonprofit-eligible grants
+ * Subtypes are for user identification only, not filtering
  * @param {Object} grant - Grant record
  * @param {string} organizationType - Organization type key (nonprofit, faith_based, etc.)
- * @returns {boolean} - True if grant matches organization type
+ * @returns {boolean} - True if grant matches organization type (always true for CBOs)
  */
 export const matchesCBOType = (grant, organizationType) => {
-  if (organizationType === 'all') return true;
-  if (!organizationType) return true;
-  
+  // All CBO subtypes see all CBO-eligible grants
+  // The dropdown is purely for user identification
+  return true;
+};
+
+/**
+ * Calculate relevance score for a grant based on organization type keywords
+ * Used for prioritizing/highlighting grants, not filtering
+ * @param {Object} grant - Grant record
+ * @param {string} organizationType - Organization type key
+ * @returns {number} - Relevance score (0-10)
+ */
+export const calculateCBORelevance = (grant, organizationType) => {
+  if (!organizationType || organizationType === 'all' || organizationType === 'nonprofit') {
+    return 5; // Neutral/baseline
+  }
+
+  const searchableText = `${grant.Title || ''} ${grant.Categories || ''} ${grant.Purpose || ''} ${grant.Description || ''}`.toLowerCase();
   const applicantType = (grant.ApplicantType || '').toLowerCase();
   
-  const typeMatchers = {
-    nonprofit: ['nonprofit', '501c3', 'npo', 'not-for-profit'],
-    faith_based: ['faith-based', 'faith based', 'religious', 'church', 'mosque', 'synagogue', 'temple'],
-    community_group: ['community organization', 'community-based', 'grassroots', 'community group', 'cbo'],
-    education: ['educational', 'university', 'college', 'school', 'academy', 'institute'],
-    tribal: ['tribal', 'indigenous', 'native american', 'american indian']
+  const typeKeywords = {
+    faith_based: {
+      primary: ['faith', 'religious', 'church', 'ministry', 'congregation', 'spiritual'],
+      secondary: ['mosque', 'synagogue', 'temple', 'parish', 'chapel']
+    },
+    community_group: {
+      primary: ['community', 'neighborhood', 'grassroots', 'civic'],
+      secondary: ['resident', 'local organization', 'community-based']
+    },
+    education: {
+      primary: ['education', 'school', 'student', 'learning', 'academic'],
+      secondary: ['university', 'college', 'teacher', 'scholarship', 'literacy']
+    },
+    tribal: {
+      primary: ['tribal', 'indigenous', 'native american', 'tribe'],
+      secondary: ['alaska native', 'native hawaiian', 'american indian']
+    }
   };
+
+  const keywords = typeKeywords[organizationType];
+  if (!keywords) return 5;
+
+  let score = 5; // Start at baseline
+
+  // Check ApplicantType for exact matches (highest priority)
+  const primaryInApplicant = keywords.primary.some(kw => applicantType.includes(kw));
+  const secondaryInApplicant = keywords.secondary.some(kw => applicantType.includes(kw));
   
-  const keywords = typeMatchers[organizationType] || [];
-  return keywords.some(keyword => applicantType.includes(keyword));
+  if (primaryInApplicant) score += 3;
+  else if (secondaryInApplicant) score += 2;
+
+  // Check title (high priority)
+  const titleText = (grant.Title || grant.GrantTitle || '').toLowerCase();
+  const primaryInTitle = keywords.primary.some(kw => titleText.includes(kw));
+  const secondaryInTitle = keywords.secondary.some(kw => titleText.includes(kw));
+  
+  if (primaryInTitle) score += 2;
+  else if (secondaryInTitle) score += 1;
+
+  // Check categories/description (medium priority)
+  const primaryInContent = keywords.primary.some(kw => searchableText.includes(kw));
+  const secondaryInContent = keywords.secondary.some(kw => searchableText.includes(kw));
+  
+  if (primaryInContent && !primaryInTitle) score += 1;
+  if (secondaryInContent && !secondaryInTitle) score += 0.5;
+
+  return Math.min(10, score); // Cap at 10
 };
 
 /**

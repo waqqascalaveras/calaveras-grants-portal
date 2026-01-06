@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, matchesCBOType } from '../utils/eligibilityFilters';
+import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, matchesCBOType, calculateCBORelevance } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
@@ -180,6 +180,7 @@ const CalaverasGrantsDashboard = () => {
   const [lastMeta, setLastMeta] = useState(null);
   const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
   const [isResizing, setIsResizing] = useState(false);
+  const [loadingGrantDetails, setLoadingGrantDetails] = useState(false);
   const mainContentRef = useRef(null);
   const rowRefs = useRef({});
 
@@ -187,6 +188,107 @@ const CalaverasGrantsDashboard = () => {
   const getGrantId = useCallback((grant) => {
     return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
+
+  // Fetch federal grant details on demand
+  const fetchFederalGrantDetails = useCallback(async (grant) => {
+    const oppId = grant.OpportunityID || grant._sourceId;
+    if (!oppId) {
+      console.warn('No opportunity ID found for federal grant');
+      return null;
+    }
+
+    // Check cache first (24-hour expiry)
+    const cacheKey = `federalGrantDetails_${oppId}`;
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) {
+      try {
+        const { data, timestamp } = JSON.parse(cached);
+        const age = Date.now() - timestamp;
+        if (age < 24 * 60 * 60 * 1000) { // 24 hours
+          console.log('Using cached federal grant details');
+          return data;
+        }
+      } catch (e) {
+        console.warn('Failed to parse cached grant details', e);
+      }
+    }
+
+    // Fetch from API
+    console.log(`Fetching details for federal grant ${oppId}...`);
+    setLoadingGrantDetails(true);
+    
+    try {
+      const response = await fetch(
+        `https://api.grants.gov/v1/api/opportunities/${oppId}`,
+        {
+          headers: { 'Accept': 'application/json' },
+          signal: AbortSignal.timeout(10000) // 10s timeout
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error(`API returned ${response.status}`);
+      }
+
+      const data = await response.json();
+      const oppData = data?.data?.opportunity;
+      
+      if (!oppData) {
+        console.warn('No opportunity data in API response');
+        return null;
+      }
+
+      // Extract description fields
+      const details = {
+        Description: oppData.description || oppData.synopsis || '',
+        Purpose: oppData.synopsis || oppData.summary || '',
+        _detailsFetched: true
+      };
+
+      // Cache the result
+      localStorage.setItem(cacheKey, JSON.stringify({
+        data: details,
+        timestamp: Date.now()
+      }));
+
+      console.log('Successfully fetched federal grant details');
+      return details;
+    } catch (error) {
+      console.error('Failed to fetch federal grant details:', error);
+      return null;
+    } finally {
+      setLoadingGrantDetails(false);
+    }
+  }, []);
+
+  // Handle grant selection with on-demand detail fetching for federal grants
+  const handleGrantSelect = useCallback(async (grant) => {
+    if (!grant) {
+      setSelectedGrant(null);
+      return;
+    }
+
+    // Immediately show the grant (even without full details)
+    setSelectedGrant(grant);
+
+    // If it's a federal grant without description, fetch details
+    const isFederal = (grant.Source || '').toLowerCase() === 'federal' || 
+                      (grant._source || '').toLowerCase().includes('grant');
+    
+    if (isFederal && !grant.Description && !grant._detailsFetched) {
+      const details = await fetchFederalGrantDetails(grant);
+      if (details) {
+        // Update the grant with fetched details
+        const updatedGrant = { ...grant, ...details };
+        setSelectedGrant(updatedGrant);
+        
+        // Also update in the grants array so we don't refetch
+        setGrants(prevGrants => prevGrants.map(g => 
+          getGrantId(g) === getGrantId(grant) ? updatedGrant : g
+        ));
+      }
+    }
+  }, [fetchFederalGrantDetails, getGrantId]);
 
   // Normalize grant record fields with fallbacks (define before fetchGrants which uses it)
   const normalizeGrantRecord = useCallback((grant) => {
@@ -456,9 +558,10 @@ const CalaverasGrantsDashboard = () => {
       if (userType === 'county' && selectedDepartment !== 'all') {
         if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
       }
-      if (userType === 'cbo' && selectedDepartment !== 'all') {
-        if (!matchesCBOType(grant, selectedDepartment)) return false;
-      }
+      // Note: CBO subtype (selectedDepartment for CBOs) does NOT filter grants
+      // All CBO subtypes see all CBO-eligible grants
+      // Relevance scoring is applied later for prioritization
+      
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         const inTitle = (grant.Title || grant.GrantTitle || '').toLowerCase().includes(q);
@@ -499,7 +602,7 @@ const CalaverasGrantsDashboard = () => {
     let result = baseFiltered;
     
     // Apply status filter (multi-select)
-    const activeStatuses = Object.entries(statusFilter).filter(([k, v]) => v).map(([k]) => k);
+    const activeStatuses = Object.entries(statusFilter).filter(([_k, v]) => v).map(([k]) => k);
     if (activeStatuses.length > 0) {
       result = result.filter(grant => {
         const s = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
@@ -515,8 +618,28 @@ const CalaverasGrantsDashboard = () => {
       result = result.filter(grant => favorites.includes(getGrantId(grant)));
     }
     
+    // Add relevance scoring for CBO subtypes
+    if (userType === 'cbo' && selectedDepartment !== 'all') {
+      result = result.map(grant => ({
+        ...grant,
+        _relevanceScore: calculateCBORelevance(grant, selectedDepartment)
+      }));
+      
+      // Sort by relevance (highest first), then by deadline
+      result = result.sort((a, b) => {
+        const scoreDiff = (b._relevanceScore || 0) - (a._relevanceScore || 0);
+        if (Math.abs(scoreDiff) > 0.5) return scoreDiff; // Significant score difference
+        
+        // Similar scores - sort by deadline
+        const dateA = new Date(a.ApplicationDeadline);
+        const dateB = new Date(b.ApplicationDeadline);
+        if (!isNaN(dateA) && !isNaN(dateB)) return dateA - dateB;
+        return 0;
+      });
+    }
+    
     return result;
-  }, [baseFiltered, statusFilter, favoriteFilter, favorites, getStatusBadge, getGrantId]);
+  }, [baseFiltered, statusFilter, favoriteFilter, favorites, getStatusBadge, getGrantId, userType, selectedDepartment]);
 
   // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
@@ -889,7 +1012,7 @@ const CalaverasGrantsDashboard = () => {
           </span>
           <span className="summary-separator">•</span>
           <span className="summary-item">
-            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {(() => { const act = Object.entries(statusFilter).filter(([k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
+            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {(() => { const act = Object.entries(statusFilter).filter(([_k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
           </span>
         </div>
         {/* Active filter chips in summary */}
@@ -903,7 +1026,7 @@ const CalaverasGrantsDashboard = () => {
           {selectedDepartment !== 'all' && (
             <span className="summary-chip" title="Active department filter">🏛️ {selectedDepartment}</span>
           )}
-          {Object.entries(statusFilter).filter(([k,v]) => v).map(([k]) => (
+          {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
             <span key={k} className="summary-chip" title={`Active ${k} status filter`}>
               {k === 'open' ? '✅' : k === 'forecasted' ? '📅' : '🔒'} {k.charAt(0).toUpperCase() + k.slice(1)}
             </span>
@@ -1005,7 +1128,7 @@ const CalaverasGrantsDashboard = () => {
                 Dept: {selectedDepartment} <X size={12} />
               </button>
             )}
-            {Object.entries(statusFilter).filter(([k,v]) => v).map(([k]) => (
+            {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
               <button key={k} className="filter-chip" onClick={() => setStatusFilter(prev => ({ ...prev, [k]: false }))} title={`Remove ${k} filter`} type="button">
                 {k.charAt(0).toUpperCase() + k.slice(1)} <X size={12} />
               </button>
@@ -1150,7 +1273,7 @@ const CalaverasGrantsDashboard = () => {
                       width: `${dotSize}px`,
                       height: `${dotSize}px`
                     }}
-                    onClick={() => setSelectedGrant(item.grant)}
+                    onClick={() => handleGrantSelect(item.grant)}
                     onMouseEnter={() => setHoveredGrantId(item.id)}
                     onMouseLeave={() => setHoveredGrantId(null)}
                   />
@@ -1212,7 +1335,7 @@ const CalaverasGrantsDashboard = () => {
                       <div style={{ fontSize: '0.85rem', color: '#6c757d' }}>
                         Total grants loaded: {grants.length} • 
                         Active filters: {selectedDepartment !== 'all' ? `Department: ${departments[selectedDepartment]?.name}` : 'All departments'} • 
-                        Status: {(() => { const act = Object.entries(statusFilter).filter(([k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
+                        Status: {(() => { const act = Object.entries(statusFilter).filter(([_k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
                         {searchQuery && ` • Search: "${searchQuery}"`}
                       </div>
                       {grants.length === 0 && (
@@ -1242,7 +1365,7 @@ const CalaverasGrantsDashboard = () => {
                       ref={(el) => {
                         if (el) rowRefs.current[rowId] = el; else delete rowRefs.current[rowId];
                       }}
-                      onClick={() => setSelectedGrant(grant)}
+                      onClick={() => handleGrantSelect(grant)}
                       onMouseEnter={() => setHoveredGrantId(rowId)}
                       onMouseLeave={() => setHoveredGrantId(null)}
                     >
@@ -1323,7 +1446,7 @@ const CalaverasGrantsDashboard = () => {
           >
             <div className="detail-header">
               <h2>{selectedGrant.Title || selectedGrant.GrantTitle}</h2>
-              <button className="close-btn" onClick={() => setSelectedGrant(null)}>
+              <button className="close-btn" onClick={() => handleGrantSelect(null)}>
                 <X size={20} />
               </button>
             </div>
@@ -1362,7 +1485,11 @@ const CalaverasGrantsDashboard = () => {
                   <span className="inline-label">
                     Awards <InfoTooltip text="Expected Number of Awards: A single grant may represent one or many awards. Some grantmakers determine the exact number in advance, while others indicate a range." />
                   </span>
-                  <span className="inline-value">{selectedGrant.ExpectedAwards || selectedGrant.EstAwards || 'N/A'}</span>
+                  <span className="inline-value">
+                    {selectedGrant.ExpectedAwards != null && selectedGrant.ExpectedAwards !== '' 
+                      ? selectedGrant.ExpectedAwards 
+                      : selectedGrant.EstAwards || 'N/A'}
+                  </span>
                 </div>
                 {selectedGrant.AwardCeiling ? (
                   <div className="inline-item" title="Award Ceiling">
@@ -1418,7 +1545,7 @@ const CalaverasGrantsDashboard = () => {
                 )}
               </div>
 
-              {(selectedGrant.Purpose || selectedGrant.Description) && (
+              {(selectedGrant.Purpose || selectedGrant.Description || selectedGrant.Source === 'Federal') && (
                 <div className="detail-text-stack">
                   {selectedGrant.Purpose && (
                     <div className="text-section" title="Purpose">
@@ -1428,14 +1555,33 @@ const CalaverasGrantsDashboard = () => {
                       <FormattedText text={selectedGrant.Purpose} query={searchQuery} />
                     </div>
                   )}
-                  {selectedGrant.Description && (
+                  {loadingGrantDetails ? (
+                    <div className="text-section" title="Loading Description">
+                      <div className="text-heading">
+                        Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem' }}>
+                        <Clock size={16} className="spin" />
+                        Loading full description from Grants.gov...
+                      </div>
+                    </div>
+                  ) : selectedGrant.Description ? (
                     <div className="text-section" title="Description">
                       <div className="text-heading">
                         Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
                       </div>
                       <FormattedText text={selectedGrant.Description} query={searchQuery} />
                     </div>
-                  )}
+                  ) : selectedGrant.Source === 'Federal' ? (
+                    <div className="text-section" title="Description">
+                      <div className="text-heading">
+                        Description <InfoTooltip text="Federal grant descriptions are available on the grant detail page. Click the 'View Full Grant Details' button below." />
+                      </div>
+                      <div style={{ color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem' }}>
+                        Description could not be loaded automatically. Click "View Full Grant Details" below to see complete information on Grants.gov.
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
               )}
 
@@ -2333,7 +2479,7 @@ const CalaverasGrantsDashboard = () => {
           text-align: center;
           gap: 1rem;
         }
-        .spinner {
+        .spinner, .spin {
           animation: spin 1s linear infinite;
         }
         @keyframes spin {
