@@ -214,9 +214,9 @@ const CalaverasGrantsDashboard = () => {
         console.warn('Failed to parse cached grant details', e);
       }
     }
-// eslint-disable-next-line no-console
-    
+
     // Fetch from API
+    // eslint-disable-next-line no-console
     console.log(`Fetching details for federal grant ${oppId}...`);
     setLoadingGrantDetails(true);
     
