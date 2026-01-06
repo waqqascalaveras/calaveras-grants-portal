@@ -130,7 +130,7 @@ const CalaverasGrantsDashboard = () => {
     return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
 
-  // Normalize grant record fields with fallbacks
+  // Normalize grant record fields with fallbacks (define before fetchGrants which uses it)
   const normalizeGrantRecord = useCallback((grant) => {
     const agencyFallback = grant.AgencyName
       || grant.Agency
@@ -576,12 +576,14 @@ const CalaverasGrantsDashboard = () => {
     if (!grant) return null;
     if (grant.GrantInfoURL) return grant.GrantInfoURL;
     if (grant._source === 'grants.gov') {
-      const oppId = grant._sourceId || grant.OpportunityID || grant.OpportunityNumber;
-      if (oppId && /^\d+$/.test(String(oppId))) {
-        return `https://www.grants.gov/web/grants/view-opportunity.html?oppId=${oppId}`;
-      }
+      // Use OpportunityNumber for the correct Grants.gov URL format
       if (grant.OpportunityNumber) {
-        return `https://www.grants.gov/search-results-detail?oppNum=${encodeURIComponent(grant.OpportunityNumber)}`;
+        return `https://www.grants.gov/search-results-detail/${encodeURIComponent(grant.OpportunityNumber)}`;
+      }
+      // Fallback to OpportunityID if available
+      const oppId = grant._sourceId || grant.OpportunityID;
+      if (oppId && /^\d+$/.test(String(oppId))) {
+        return `https://www.grants.gov/search-results-detail/${oppId}`;
       }
     }
     return null;
@@ -1120,18 +1122,16 @@ const CalaverasGrantsDashboard = () => {
                 </span>
               </div>
 
-              <div className="detail-quick">
-                <span className="quick-pill" title="Status">
-                  <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }}></span>
-                  {getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).text}
-                </span>
-                {selectedGrant.OpportunityNumber && (
-                  <span className="quick-pill" title="Opportunity Number">{selectedGrant.OpportunityNumber}</span>
-                )}
-                {selectedGrant.ALN && (
-                  <span className="quick-pill" title="Assistance Listing Number">{selectedGrant.ALN}</span>
-                )}
-              </div>
+              {(selectedGrant.OpportunityNumber || selectedGrant.ALN) && (
+                <div className="detail-quick">
+                  {selectedGrant.OpportunityNumber && (
+                    <span className="quick-pill" title="Opportunity Number">Opp #{selectedGrant.OpportunityNumber}</span>
+                  )}
+                  {selectedGrant.ALN && (
+                    <span className="quick-pill" title="Assistance Listing Number">ALN {selectedGrant.ALN}</span>
+                  )}
+                </div>
+              )}
 
               <div className="detail-inline-grid">
                 <div className="inline-item" title="Expected Number of Awards">
@@ -1833,11 +1833,12 @@ const CalaverasGrantsDashboard = () => {
           display: inline-flex;
           align-items: center;
           gap: 0.4rem;
-          padding: 0.35rem 0.55rem;
+          padding: 0.4rem 0.65rem;
           background: #f4f6f8;
           border: 1px solid #dfe4ea;
-          border-radius: 999px;
-          font-size: 0.85rem;
+          border-radius: 3px;
+          font-size: 0.8rem;
+          font-weight: 500;
           color: #0d1b2a;
         }
         .quick-pill.strong {
@@ -1855,13 +1856,20 @@ const CalaverasGrantsDashboard = () => {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          gap: 0.35rem;
-          font-size: 0.85rem;
+          gap: 0.25rem;
+          font-size: 0.8rem;
           color: #0d1b2a;
-          background: #f7f9fb;
-          border: 1px solid #e1e5eb;
-          padding: 0.4rem 0.6rem;
-          border-radius: 4px;
+          background: transparent;
+          border: none;
+          padding: 0;
+          border-radius: 0;
+        }
+        .detail-meta > span:not(.meta-separator) {
+          background: #f4f6f8;
+          border: 1px solid #dfe4ea;
+          border-radius: 3px;
+          padding: 0.4rem 0.65rem;
+          font-weight: 500;
         }
         .detail-meta .meta-source { font-weight: 700; }
         .detail-meta .meta-amount { font-weight: 700; color: #8b1538; }

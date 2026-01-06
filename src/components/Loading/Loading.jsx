@@ -10,7 +10,8 @@ const Loading = () => {
       const newSign = {
         id: Date.now() + Math.random(),
         line: Math.floor(Math.random() * 24), // 24 lines total
-        delay: Math.random() * 0.5
+        delay: Math.random() * 0.5,
+        size: Math.random() * 0.5 + 0.7 // 0.7 - 1.2 scale
       };
       
       setDollarSigns(prev => [...prev, newSign]);
@@ -18,8 +19,8 @@ const Loading = () => {
       // Remove after animation completes
       setTimeout(() => {
         setDollarSigns(prev => prev.filter(s => s.id !== newSign.id));
-      }, 2000);
-    }, 200);
+      }, 2200);
+    }, 140);
     
     return () => clearInterval(interval);
   }, []);
@@ -72,7 +73,8 @@ const Loading = () => {
             className="dollar-sign"
             style={{
               '--line-angle': `${sign.line * 15}deg`,
-              '--delay': `${sign.delay}s`
+              '--delay': `${sign.delay}s`,
+              '--size': sign.size
             }}
           >
             $
