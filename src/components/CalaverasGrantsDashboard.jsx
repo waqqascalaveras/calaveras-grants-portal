@@ -448,7 +448,6 @@ const CalaverasGrantsDashboard = () => {
         }
       }
       
-      const hasApplicantType = !!(grant.ApplicantType && grant.ApplicantType.trim());
       if (userType === 'county') {
         if (!isEligibleForCounty(grant)) return false;
       } else if (userType === 'cbo') {
