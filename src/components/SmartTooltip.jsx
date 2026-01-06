@@ -38,7 +38,9 @@ export default function SmartTooltip({ children, text, content, side = 'top', as
           boxShadow: '0 2px 8px rgba(0, 0, 0, 0.25)',
           zIndex: 9999,
           pointerEvents: 'none',
-          animation: 'fadeIn 0.15s ease-out'
+          opacity: floatingStyles.transform ? 1 : 0,
+          transition: 'opacity 0.15s ease-out',
+          animation: floatingStyles.transform ? 'fadeIn 0.15s ease-out' : 'none'
         }}
       >
         {content ?? text}

@@ -39,71 +39,116 @@ const HighlightedText = ({ text, query }) => {
 const FormattedText = ({ text, query }) => {
   if (!text) return null;
   
-  // Split text by line breaks and create paragraph-like structure
-  const paragraphs = text.split(/\r?\n+/).filter(p => p.trim());
+  // Split by double newlines for paragraph breaks; preserve single newlines
+  const paragraphs = text.split(/\r?\n\r?\n+/).filter(p => p.trim());
   
   const renderParagraph = (para, pIdx) => {
-    // Parse HTML-like content (basic <a> tag support) and auto-link raw URLs
+    // Within each paragraph, convert single newlines to <br /> tags
+    const lines = para.split(/\r?\n/).filter(l => l.trim());
+    // Parse HTML-like content (basic <a> tag support), auto-link raw URLs, and email addresses
     const aTagRegex = /<a\s+href=["']([^"']+)["'][^>]*>([^<]+)<\/a>/gi;
     const urlRegex = /(https?:\/\/[^\s<]+)/gi;
+    const emailRegex = /([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/g;
     let match;
+    
+    // Process all lines together to collect matches across the full paragraph
+    const lineText = lines.join('\n');
     const matches = [];
-    let lastIndex = 0;
     
     // Collect anchor tags
-    while ((match = aTagRegex.exec(para)) !== null) {
+    while ((match = aTagRegex.exec(lineText)) !== null) {
       matches.push({
         start: match.index,
         end: aTagRegex.lastIndex,
         url: match[1],
-        text: match[2]
+        text: match[2],
+        type: 'link'
       });
     }
 
     // Collect bare URLs
-    while ((match = urlRegex.exec(para)) !== null) {
+    while ((match = urlRegex.exec(lineText)) !== null) {
       matches.push({
         start: match.index,
         end: urlRegex.lastIndex,
         url: match[1],
-        text: match[1]
+        text: match[1],
+        type: 'url'
+      });
+    }
+
+    // Collect email addresses
+    emailRegex.lastIndex = 0;
+    while ((match = emailRegex.exec(lineText)) !== null) {
+      matches.push({
+        start: match.index,
+        end: emailRegex.lastIndex,
+        url: `mailto:${match[1]}`,
+        text: match[1],
+        type: 'email'
       });
     }
     
     if (matches.length === 0) {
-      // No HTML tags, just render with highlighting
+      // No HTML tags, just render with line breaks and highlighting
       return (
         <p key={pIdx}>
-          <HighlightedText text={para} query={query} />
+          {lines.map((line, lineIdx) => (
+            <React.Fragment key={lineIdx}>
+              {lineIdx > 0 && <br />}
+              <HighlightedText text={line} query={query} />
+            </React.Fragment>
+          ))}
         </p>
       );
     }
     
-    // Render with links
-    const parts = [];
-    lastIndex = 0;
+    // Sort and deduplicate overlapping matches
+    matches.sort((a, b) => a.start - b.start);
+    const deduped = [];
+    matches.forEach(m => {
+      if (!deduped.some(d => (m.start < d.end && m.end > d.start))) {
+        deduped.push(m);
+      }
+    });
     
-    matches.forEach((m, idx) => {
+    // Render with links and line breaks
+    const parts = [];
+    let lastIndex = 0;
+    
+    deduped.forEach((m, idx) => {
       if (m.start > lastIndex) {
+        const textBefore = lineText.substring(lastIndex, m.start);
         parts.push(
           <React.Fragment key={`text-${idx}`}>
-            <HighlightedText text={para.substring(lastIndex, m.start)} query={query} />
+            {textBefore.split('\n').map((line, lineIdx) => (
+              <React.Fragment key={lineIdx}>
+                {lineIdx > 0 && <br />}
+                <HighlightedText text={line} query={query} />
+              </React.Fragment>
+            ))}
           </React.Fragment>
         );
       }
       parts.push(
-        <a key={`link-${idx}`} href={m.url} target="_blank" rel="noopener noreferrer" 
-           style={{ color: '#1b4965', textDecoration: 'underline', fontWeight: 500 }}>
+        <a key={`link-${idx}`} href={m.url} target={m.type === 'email' ? '_self' : '_blank'} rel={m.type === 'email' ? '' : 'noopener noreferrer'} 
+           style={{ color: m.type === 'email' ? '#8b1538' : '#1b4965', textDecoration: 'underline', fontWeight: 500 }}>
           <HighlightedText text={m.text} query={query} />
         </a>
       );
       lastIndex = m.end;
     });
     
-    if (lastIndex < para.length) {
+    if (lastIndex < lineText.length) {
+      const textEnd = lineText.substring(lastIndex);
       parts.push(
         <React.Fragment key="text-end">
-          <HighlightedText text={para.substring(lastIndex)} query={query} />
+          {textEnd.split('\n').map((line, lineIdx) => (
+            <React.Fragment key={lineIdx}>
+              {lineIdx > 0 && <br />}
+              <HighlightedText text={line} query={query} />
+            </React.Fragment>
+          ))}
         </React.Fragment>
       );
     }
@@ -1068,12 +1113,6 @@ const CalaverasGrantsDashboard = () => {
                     <InfoTooltip text="Application Deadline: The date by which all applications must be submitted to the grantmaker." />
                   </span>
                 </th>
-                <th onClick={() => handleSort('agency')} className="sortable">
-                  <span className="th-content">
-                    <Building2 size={14} /> Agency {sortColumn === 'agency' && (sortDirection === 'asc' ? '▲' : '▼')}
-                    <InfoTooltip text="The grantmaking agency or department administering the grant." />
-                  </span>
-                </th>
                 <th onClick={() => handleSort('status')} className="sortable">
                   <span className="th-content">
                     <CheckCircle size={14} /> Status {sortColumn === 'status' && (sortDirection === 'asc' ? '▲' : '▼')}
@@ -1086,7 +1125,7 @@ const CalaverasGrantsDashboard = () => {
             <tbody>
               {grantsWithEmphasis.length === 0 ? (
                 <tr>
-                  <td colSpan="5" className="no-results-row">
+                  <td colSpan="4" className="no-results-row">
                     <AlertCircle size={24} />
                     <div>
                       <div style={{ marginBottom: '0.5rem', fontWeight: 600 }}>No grants found matching your criteria</div>
@@ -1154,7 +1193,6 @@ const CalaverasGrantsDashboard = () => {
                           </span>
                         )}
                       </td>
-                      <td className="agency-cell">{grant.AgencyName || grant.Agency || grant.Department || 'Agency TBD'}</td>
                       <td className="status-cell">
                         <span className="status-badge" style={{ background: statusBadge.color }}>
                           {statusBadge.text}
