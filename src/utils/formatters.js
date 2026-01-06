@@ -46,3 +46,25 @@ export const formatTime = (date) => {
     minute: '2-digit' 
   });
 };
+
+/**
+ * Decode common HTML entities found in API strings
+ * @param {string} str - Input string possibly containing HTML entities
+ * @returns {string} - Decoded string
+ */
+export const decodeHtmlEntities = (str) => {
+  if (!str || typeof str !== 'string') return str;
+  return str
+    .replace(/&ndash;/g, '–')
+    .replace(/&mdash;/g, '—')
+    .replace(/&amp;/g, '&')
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&lsquo;/g, '‘')
+    .replace(/&rsquo;/g, '’')
+    .replace(/&ldquo;/g, '“')
+    .replace(/&rdquo;/g, '”')
+    .replace(/&#39;/g, "'")
+    .replace(/&#8211;/g, '–')
+    .replace(/&#8212;/g, '—');
+};

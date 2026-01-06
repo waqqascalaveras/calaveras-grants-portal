@@ -658,20 +658,27 @@ const CalaverasGrantsDashboard = () => {
   // Format deadline
   const formatDeadline = (dateStr, labelOverride) => {
     const { date, label } = parseDeadline(dateStr);
-    if (!date) return labelOverride || label || 'Deadline TBD';
+    if (!date) {
+      // Estimate deadline if missing - typically grants have windows of a few months
+      if (labelOverride && labelOverride !== 'Deadline TBD') return labelOverride;
+      return 'Est. deadline varies';
+    }
     const days = Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24));
     if (days < 0) return 'Closed';
     const dateStr_formatted = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
     if (days === 0) return `Today (${dateStr_formatted})`;
     if (days === 1) return `Tomorrow (${dateStr_formatted})`;
-    if (days <= 14) return `${dateStr_formatted} (${days}d - Urgent)`;
+    if (days <= 14) return `${dateStr_formatted} (${days}d)`;
     if (days <= 30) return `${dateStr_formatted} (${days}d)`;
     return dateStr_formatted;
   };
 
   const formatDeadlineDetailed = (dateStr, labelOverride) => {
     const { date, label } = parseDeadline(dateStr);
-    if (!date) return labelOverride || label || 'Deadline TBD';
+    if (!date) {
+      if (labelOverride && labelOverride !== 'Deadline TBD') return labelOverride;
+      return 'Deadline varies (check details)';
+    }
     const now = new Date();
     if (date < now) return 'Closed';
 
@@ -703,12 +710,20 @@ const CalaverasGrantsDashboard = () => {
       }
     }
     if (grant._source === 'grants.gov') {
-      // Prefer numeric opportunity ID (correct modern Grants.gov format)
-      const oppId = grant._sourceId || grant.OpportunityID;
-      if (oppId && /^\d+$/.test(String(oppId))) {
-        return `https://www.grants.gov/search-results-detail/${oppId}`;
+      // Prefer numeric opportunity ID if available
+      const numericId = [grant.OpportunityID, grant.GrantID, grant.OpportunityNumber]
+        .map(v => (v == null ? null : String(v)))
+        .find(v => v && /^\d+$/.test(v));
+      if (numericId) {
+        return `https://www.grants.gov/search-results-detail/${numericId}`;
       }
-      // Fallback: if only an alphanumeric OpportunityNumber exists, leave it to GrantInfoURL or return null
+
+      // Fallback to Simpler Grants using GUID
+      const guid = grant._sourceId || grant.PortalID?.replace(/^gov-/, '');
+      if (guid && /^[0-9a-fA-F-]{36}$/.test(String(guid))) {
+        return `https://simpler.grants.gov/opportunity/${guid}`;
+      }
+      // Else, no valid link
     }
     return null;
   };
@@ -722,19 +737,28 @@ const CalaverasGrantsDashboard = () => {
       })
       .filter(g => g._timelineDeadline);
 
-    const sorted = [...withParsed]
+    // Calculate days until for filtering
+    const now = new Date();
+    const withDaysUntil = withParsed.map(g => ({
+      ...g,
+      _daysUntil: Math.ceil((g._timelineDeadline - now) / (1000 * 60 * 60 * 24))
+    }));
+
+    // Exclude grants expiring in < 30 days
+    const relevant = withDaysUntil.filter(g => g._daysUntil >= 30);
+
+    const sorted = [...relevant]
       .sort((a, b) => a._timelineDeadline - b._timelineDeadline)
       .slice(0, 50); // Show first 50 for timeline
     
     return sorted.map(g => {
       const deadline = g._timelineDeadline;
-      const daysUntil = Math.ceil((deadline - new Date()) / (1000 * 60 * 60 * 24));
       const amount = parseInt(g.EstAvailFunds?.replace(/[^0-9]/g, '') || 0);
       return {
         grant: g,
         id: g._id || getGrantId(g),
         deadline,
-        daysUntil,
+        daysUntil: g._daysUntil,
         amount,
         status: (g.Status || '').toLowerCase()
       };
@@ -862,18 +886,6 @@ const CalaverasGrantsDashboard = () => {
           </span>
           <span className="summary-separator">•</span>
           <span className="summary-item">
-            <strong>Open:</strong> {statusCounts.open}
-          </span>
-          <span className="summary-separator">•</span>
-          <span className="summary-item">
-            <strong>Forecasted:</strong> {statusCounts.forecasted}
-          </span>
-          <span className="summary-separator">•</span>
-          <span className="summary-item">
-            <strong>Saved:</strong> {favorites.length}
-          </span>
-          <span className="summary-separator">•</span>
-          <span className="summary-item">
             <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {statusFilter}
           </span>
         </div>
@@ -935,10 +947,6 @@ const CalaverasGrantsDashboard = () => {
               <span>Saved</span>
               <span className="pill-count">{favorites.length}</span>
             </button>
-          </div>
-
-          <div className="results-badge">
-            <strong>{grantsWithEmphasis.length}</strong> grants
           </div>
         </div>
         <div className="timeline-inline">
@@ -1186,11 +1194,6 @@ const CalaverasGrantsDashboard = () => {
                       </td>
                       <td className="deadline-cell">
                         {formatDeadline(grant.ApplicationDeadline, grant._deadlineLabel)}
-                        {grant._isTooSoon && grant._daysUntil !== null && (
-                          <span className="deadline-warning" title={`Only ${grant._daysUntil} days remaining - may be too short to prepare a quality application`}>
-                            ⚠️
-                          </span>
-                        )}
                       </td>
                       <td className="status-cell">
                         <span className="status-badge" style={{ background: statusBadge.color }}>
@@ -1258,14 +1261,11 @@ const CalaverasGrantsDashboard = () => {
                   {selectedGrant._source === 'grants.gov' ? 'Federal (Grants.gov)' : 'California State'}
                 </span>
                 <span className="meta-separator">•</span>
-                <span className="meta-agency" title="Agency">{selectedGrant.AgencyName || 'Agency TBD'}</span>
-                <span className="meta-separator">•</span>
                 <span className="meta-amount" title="Estimated Available Funds">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
                 <span className="meta-separator">•</span>
-                <span className="meta-deadline" title="Application Deadline">{formatDeadlineDetailed(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
-                {selectedGrant._deadlineSource && (
-                  <span className="meta-note">{selectedGrant._deadlineSource}</span>
-                )}
+                <span className="meta-deadline" title="Application Deadline">
+                  <span className="deadline-pill">Deadline: {formatDeadlineDetailed(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
+                </span>
                 <span className="meta-separator">•</span>
                 <span className="meta-status" title="Status">
                   <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }} />
@@ -1961,6 +1961,8 @@ const CalaverasGrantsDashboard = () => {
         .deadline-cell {
           white-space: nowrap;
           color: #495057;
+          max-width: 140px;
+          font-size: 0.85rem;
         }
         .agency-cell {
           color: #495057;

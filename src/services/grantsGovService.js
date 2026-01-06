@@ -1,3 +1,4 @@
+import { decodeHtmlEntities } from '../utils/formatters';
 // Grants.gov API service
 
 const API_BASE_URL = 'https://api.grants.gov/v1/api';
@@ -188,10 +189,10 @@ export const normalizeGrantsGovData = (opp) => {
     // Standard fields (matching CA portal)
     PortalID: `gov-${opp.id}`,
     GrantID: opp.number,
-    Title: opp.title,
-    GrantTitle: opp.title,
+    Title: decodeHtmlEntities(opp.title || ''),
+    GrantTitle: decodeHtmlEntities(opp.title || ''),
     
-    AgencyName: opp.agencyName || 'Federal Agency',
+    AgencyName: decodeHtmlEntities(opp.agencyName || 'Federal Agency'),
     AgencyCode: opp.agencyCode,
     
     Status: opp.oppStatus === 'posted' ? 'Open' : 
@@ -202,11 +203,12 @@ export const normalizeGrantsGovData = (opp) => {
     ApplicationDeadline: deadline,
     PostedDate: opp.openDate,
     
-    Categories: opp.fundingCategories?.join('; ') || opp.categoryOfFundingActivity || '',
+    Categories: decodeHtmlEntities(opp.fundingCategories?.join('; ') || opp.categoryOfFundingActivity || ''),
     
     // Grants.gov specific fields
     DocumentType: opp.docType,
     OpportunityNumber: opp.number,
+    OpportunityID: opp.number,
     
     // ALN (Assistance Listing Numbers)
     ALN: opp.alnist?.join(', ') || '',
@@ -215,12 +217,17 @@ export const normalizeGrantsGovData = (opp) => {
     ApplicantType: 'County governments; Local Government; Public Agency',
     
     // Extracted fields
-    Purpose: purpose,
-    Description: description,
+    Purpose: decodeHtmlEntities(purpose),
+    Description: decodeHtmlEntities(description),
     EstAvailFunds: fundingAmount,
     EstAwards: estAwards,
+    AwardCeiling: opp.awardCeiling || null,
+    AwardFloor: opp.awardFloor || null,
     
-    GrantInfoURL: `https://www.grants.gov/web/grants/view-opportunity.html?oppId=${opp.id}`
+    // Prefer numeric Grants.gov detail if available; otherwise use Simpler Grants GUID link
+    GrantInfoURL: (opp.number && /^\d+$/.test(String(opp.number)))
+      ? `https://www.grants.gov/search-results-detail/${opp.number}`
+      : `https://simpler.grants.gov/opportunity/${opp.id}`
   };
 };
 

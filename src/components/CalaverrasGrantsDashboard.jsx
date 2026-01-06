@@ -451,9 +451,18 @@ const CalaverasGrantsDashboard = () => {
     if (!grant) return null;
     if (grant.GrantInfoURL) return grant.GrantInfoURL;
     if (grant._source === 'grants.gov') {
-      const oppId = grant._sourceId || grant.OpportunityID;
-      if (oppId && /^\d+$/.test(String(oppId))) {
-        return `https://www.grants.gov/search-results-detail/${oppId}`;
+      // Prefer numeric opportunity ID if available
+      const numericId = [grant.OpportunityID, grant.GrantID, grant.OpportunityNumber]
+        .map(v => (v == null ? null : String(v)))
+        .find(v => v && /^\d+$/.test(v));
+      if (numericId) {
+        return `https://www.grants.gov/search-results-detail/${numericId}`;
+      }
+
+      // Fallback to Simpler Grants using GUID
+      const guid = grant._sourceId || grant.PortalID?.replace(/^gov-/, '');
+      if (guid && /^[0-9a-fA-F-]{36}$/.test(String(guid))) {
+        return `https://simpler.grants.gov/opportunity/${guid}`;
       }
     }
     return null;
