@@ -451,12 +451,9 @@ const CalaverasGrantsDashboard = () => {
     if (!grant) return null;
     if (grant.GrantInfoURL) return grant.GrantInfoURL;
     if (grant._source === 'grants.gov') {
-      const oppId = grant._sourceId || grant.OpportunityID || grant.OpportunityNumber;
+      const oppId = grant._sourceId || grant.OpportunityID;
       if (oppId && /^\d+$/.test(String(oppId))) {
-        return `https://www.grants.gov/web/grants/view-opportunity.html?oppId=${oppId}`;
-      }
-      if (grant.OpportunityNumber) {
-        return `https://www.grants.gov/search-results-detail?oppNum=${encodeURIComponent(grant.OpportunityNumber)}`;
+        return `https://www.grants.gov/search-results-detail/${oppId}`;
       }
     }
     return null;

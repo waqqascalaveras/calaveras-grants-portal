@@ -168,13 +168,21 @@ const CalaverasGrantsDashboard = () => {
       return null;
     };
 
-    const agencyFallback = grant.AgencyName
+    const agencyFallbackRaw = grant.AgencyName
       || grant.Agency
       || grant.Grantor
       || grant.Department
+      || grant.DepartmentName
+      || grant.Division
+      || grant.Program
+      || grant.SourceAgency
       || grant.FundingAgency
       || grant.OrganizationName
-      || grant.AwardingAgency;
+      || grant.OwnerOrganization
+      || grant.Organization
+      || grant.agencyName
+      || grant.agency;
+    const agencyFallback = agencyFallbackRaw ? String(agencyFallbackRaw).trim() : null;
 
     // Pick the best available deadline and remember where it came from
     const deadlineCandidates = [
@@ -220,7 +228,7 @@ const CalaverasGrantsDashboard = () => {
       ...grant,
       _source: normalizedSource,
       Source: normalizedSource || grant.Source,
-      AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
+      AgencyName: agencyFallback || 'Agency TBD',
       ApplicationDeadline: deadlineFallback,
       ApplicationDeadlineSource: deadlineSource,
       ApplicantType: applicantTypeFallback || grant.ApplicantType || '',
@@ -511,7 +519,7 @@ const CalaverasGrantsDashboard = () => {
   const grantsWithEmphasis = useMemo(() => {
     const now = new Date();
     const withEmphasis = filteredGrants.map(grant => {
-      const agencyName = grant.AgencyName
+      const agencyNameRaw = grant.AgencyName
         || grant.Agency
         || grant.Department
         || grant.DepartmentName
@@ -522,7 +530,10 @@ const CalaverasGrantsDashboard = () => {
         || grant.Organization
         || grant.SourceAgency
         || grant.FundingAgency
-        || 'Agency TBD';
+        || grant.agencyName
+        || grant.agency
+        || '';
+      const agencyName = agencyNameRaw ? String(agencyNameRaw).trim() : '';
 
       const deadlineInfo = parseDeadline(grant.ApplicationDeadline);
       const deadlineDate = deadlineInfo.date;
@@ -650,15 +661,12 @@ const CalaverasGrantsDashboard = () => {
       }
     }
     if (grant._source === 'grants.gov') {
-      // Use OpportunityNumber for the correct Grants.gov URL format
-      if (grant.OpportunityNumber) {
-        return `https://www.grants.gov/search-results-detail/${encodeURIComponent(grant.OpportunityNumber)}`;
-      }
-      // Fallback to OpportunityID if available
+      // Prefer numeric opportunity ID (correct modern Grants.gov format)
       const oppId = grant._sourceId || grant.OpportunityID;
       if (oppId && /^\d+$/.test(String(oppId))) {
         return `https://www.grants.gov/search-results-detail/${oppId}`;
       }
+      // Fallback: if only an alphanumeric OpportunityNumber exists, leave it to GrantInfoURL or return null
     }
     return null;
   };
@@ -1120,7 +1128,7 @@ const CalaverasGrantsDashboard = () => {
                           </span>
                         )}
                       </td>
-                      <td className="agency-cell">{grant.AgencyName}</td>
+                      <td className="agency-cell">{grant.AgencyName || grant.Agency || grant.Department || 'Agency TBD'}</td>
                       <td className="status-cell">
                         <span className="status-badge" style={{ background: statusBadge.color }}>
                           {statusBadge.text}

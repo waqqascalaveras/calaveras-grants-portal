@@ -168,7 +168,7 @@ jobs:
                           'AwardCeiling': opp.get('awardCeiling', 0),
                           'AwardFloor': opp.get('awardFloor', 0),
                           'OpportunityID': opp.get('id', ''),
-                          'GrantInfoURL': f"https://www.grants.gov/web/grants/view-opportunity.html?oppId={opp.get('id', '')}",
+                          'GrantInfoURL': f"https://www.grants.gov/search-results-detail/{opp.get('id', '')}",
                           'Source': 'federal'
                       })
                   print(f"✓ Successfully fetched {len(transformed)} federal grants")
