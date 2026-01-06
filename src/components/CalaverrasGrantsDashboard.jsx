@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
@@ -43,6 +43,9 @@ const CalaverrasGrantsDashboard = () => {
   const [sourceCounts, setSourceCounts] = useState({ ca: 0, federal: 0 });
   const [lastAttemptTs, setLastAttemptTs] = useState(null);
   const [lastMeta, setLastMeta] = useState(null);
+  const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
+  const [isResizing, setIsResizing] = useState(false);
+  const mainContentRef = useRef(null);
 
   // Unique key for grants
   const getGrantId = useCallback((grant) => {
@@ -133,6 +136,32 @@ const CalaverrasGrantsDashboard = () => {
       // ignore
     }
   }, [favorites]);
+
+  // Split-pane resizing
+  useEffect(() => {
+    if (!isResizing) return undefined;
+    const handleMove = (event) => {
+      const rect = mainContentRef.current?.getBoundingClientRect();
+      if (!rect) return;
+      const relativeX = event.clientX - rect.left;
+      const pct = (relativeX / rect.width) * 100;
+      const clamped = Math.min(70, Math.max(35, pct));
+      setSplitWidth(clamped);
+    };
+    const stop = () => setIsResizing(false);
+    window.addEventListener('mousemove', handleMove);
+    window.addEventListener('mouseup', stop);
+    return () => {
+      window.removeEventListener('mousemove', handleMove);
+      window.removeEventListener('mouseup', stop);
+    };
+  }, [isResizing]);
+
+  useEffect(() => {
+    if (!selectedGrant) {
+      setIsResizing(false);
+    }
+  }, [selectedGrant]);
 
   // Base filters (user type, department, search)
   const baseFiltered = useMemo(() => {
@@ -355,6 +384,39 @@ const CalaverrasGrantsDashboard = () => {
     if (days <= 14) return `${days}d (Urgent)`;
     if (days <= 30) return `${days}d`;
     return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  };
+
+  const formatDeadlineDetailed = (dateStr, labelOverride) => {
+    const { date, label } = parseDeadline(dateStr);
+    if (!date) return labelOverride || label || 'Deadline TBD';
+    const now = new Date();
+    if (date < now) return 'Closed';
+
+    const days = Math.ceil((date - now) / (1000 * 60 * 60 * 24));
+    const months = Math.floor(days / 30);
+    const weeks = Math.floor((days % 30) / 7);
+    const parts = [];
+    if (months > 0) parts.push(`${months} month${months !== 1 ? 's' : ''}`);
+    if (weeks > 0) parts.push(`${weeks} week${weeks !== 1 ? 's' : ''}`);
+    if (parts.length === 0) parts.push('Under 1 week');
+
+    const longDate = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+    return `${longDate} (${parts.join(', ')})`;
+  };
+
+  const buildGrantLink = (grant) => {
+    if (!grant) return null;
+    if (grant.GrantInfoURL) return grant.GrantInfoURL;
+    if (grant._source === 'grants.gov') {
+      const oppId = grant._sourceId || grant.OpportunityID || grant.OpportunityNumber;
+      if (oppId && /^\d+$/.test(String(oppId))) {
+        return `https://www.grants.gov/web/grants/view-opportunity.html?oppId=${oppId}`;
+      }
+      if (grant.OpportunityNumber) {
+        return `https://www.grants.gov/search-results-detail?oppNum=${encodeURIComponent(grant.OpportunityNumber)}`;
+      }
+    }
+    return null;
   };
 
   // Prepare timeline data
@@ -642,9 +704,16 @@ const CalaverrasGrantsDashboard = () => {
       </div>
 
       {/* Main Content Area */}
-      <div className={`main-content ${selectedGrant ? 'split-view' : ''}`}>
+      <div
+        className={`main-content ${selectedGrant ? 'split-view' : ''}`}
+        ref={mainContentRef}
+        style={selectedGrant ? { userSelect: isResizing ? 'none' : 'auto' } : undefined}
+      >
         {/* Grants Table */}
-        <div className="table-container">
+        <div
+          className="table-container"
+          style={selectedGrant ? { flex: `0 0 ${splitWidth}%` } : undefined}
+        >
           <table className="grants-table">
             <thead>
               <tr>
@@ -689,19 +758,21 @@ const CalaverrasGrantsDashboard = () => {
                 </tr>
               ) : (
                 grantsWithEmphasis.map((grant) => {
+                  const rowId = getGrantId(grant);
+                  const selectedId = selectedGrant ? getGrantId(selectedGrant) : null;
                   const statusBadge = getStatusBadge(grant.Status, grant.ApplicationDeadline);
                   const rowClasses = [
-                    selectedGrant?.PortalID === grant.PortalID ? 'selected' : '',
+                    selectedId && rowId === selectedId ? 'selected' : '',
                     !grant._matchesDept ? 'non-match' : '',
                     grant._isTooSoon ? 'too-soon' : ''
                   ].filter(Boolean).join(' ');
                   
                   return (
                     <tr 
-                      key={grant._id}
+                      key={rowId}
                       className={rowClasses}
                       onClick={() => setSelectedGrant(grant)}
-                      onMouseEnter={() => setHoveredGrantId(grant._id)}
+                      onMouseEnter={() => setHoveredGrantId(rowId)}
                       onMouseLeave={() => setHoveredGrantId(null)}
                     >
                       <td className="grant-title-cell">
@@ -755,9 +826,26 @@ const CalaverrasGrantsDashboard = () => {
           </table>
         </div>
 
+        {/* Drag handle between list and details */}
+        {selectedGrant && (
+          <div
+            className={`split-resizer ${isResizing ? 'active' : ''}`}
+            role="separator"
+            aria-label="Resize details panel"
+            aria-orientation="vertical"
+            onMouseDown={(event) => {
+              event.preventDefault();
+              setIsResizing(true);
+            }}
+          />
+        )}
+
         {/* Grant Details Panel */}
         {selectedGrant && (
-          <div className="detail-panel">
+          <div
+            className="detail-panel"
+            style={selectedGrant ? { flex: `0 0 ${100 - splitWidth}%` } : undefined}
+          >
             <div className="detail-header">
               <h2>{selectedGrant.Title || selectedGrant.GrantTitle}</h2>
               <button className="close-btn" onClick={() => setSelectedGrant(null)}>
@@ -766,16 +854,19 @@ const CalaverrasGrantsDashboard = () => {
             </div>
 
             <div className="detail-content">
-              <div className="detail-quick">
-                <span className="quick-pill" title="Source">
-                  {selectedGrant._source === 'grants.gov' ? (
-                    <span className="source-badge federal">Federal (Grants.gov)</span>
-                  ) : (
-                    <span className="source-badge state">California State</span>
-                  )}
+              <div className="detail-meta">
+                <span className="meta-source" title="Source">
+                  {selectedGrant._source === 'grants.gov' ? 'Federal (Grants.gov)' : 'California State'}
                 </span>
-                <span className="quick-pill" title="Agency">{selectedGrant.AgencyName || 'N/A'}</span>
-                <span className="quick-pill strong" title="Amount">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
+                <span className="meta-separator">•</span>
+                <span className="meta-agency" title="Agency">{selectedGrant.AgencyName || 'N/A'}</span>
+                <span className="meta-separator">•</span>
+                <span className="meta-amount" title="Estimated Available Funds">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
+                <span className="meta-separator">•</span>
+                <span className="meta-deadline" title="Application Deadline">{formatDeadlineDetailed(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
+              </div>
+
+              <div className="detail-quick">
                 <span className="quick-pill" title="Status">
                   <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }}></span>
                   {getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).text}
@@ -789,10 +880,6 @@ const CalaverrasGrantsDashboard = () => {
               </div>
 
               <div className="detail-inline-grid">
-                <div className="inline-item" title="Application Deadline">
-                  <span className="inline-label">Deadline</span>
-                  <span className="inline-value">{formatDeadline(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
-                </div>
                 <div className="inline-item" title="Estimated Awards">
                   <span className="inline-label">Awards</span>
                   <span className="inline-value">{selectedGrant.EstAwards || 'N/A'}</span>
@@ -830,10 +917,10 @@ const CalaverrasGrantsDashboard = () => {
                 </div>
               )}
 
-              {selectedGrant.GrantInfoURL && (
+              {buildGrantLink(selectedGrant) && (
                 <div className="detail-actions tight">
                   <a 
-                    href={selectedGrant.GrantInfoURL} 
+                    href={buildGrantLink(selectedGrant)} 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="detail-link"
@@ -1181,6 +1268,36 @@ const CalaverrasGrantsDashboard = () => {
           border-right: 1px solid #d1d5db;
           height: 100%;
         }
+        .split-resizer {
+          flex: 0 0 12px;
+          cursor: col-resize;
+          background: linear-gradient(180deg, #f5f7fa 0%, #e5e9f0 100%);
+          border-left: 1px solid #d1d5db;
+          border-right: 1px solid #d1d5db;
+          position: relative;
+          transition: background 0.15s ease, box-shadow 0.15s ease;
+          z-index: 20;
+        }
+        .split-resizer::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 4px;
+          height: 32px;
+          border-radius: 999px;
+          background: #b0b7c3;
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+        }
+        .split-resizer:hover,
+        .split-resizer.active {
+          background: linear-gradient(180deg, #eef2f7 0%, #e1e5ec 100%);
+          box-shadow: inset 0 0 0 1px rgba(27, 73, 101, 0.2), 0 0 0 1px rgba(27, 73, 101, 0.08);
+        }
+        .split-resizer.active::after {
+          background: #8b1538;
+        }
 
         /* Table */
         .grants-table {
@@ -1444,6 +1561,29 @@ const CalaverrasGrantsDashboard = () => {
         }
         .status-dot {
           width: 10px;
+        .detail-meta {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+          align-items: center;
+          font-size: 0.95rem;
+          color: #0d1b2a;
+        }
+        .detail-meta .meta-source {
+          font-weight: 700;
+        }
+        .detail-meta .meta-amount {
+          font-weight: 700;
+          color: #8b1538;
+        }
+        .detail-meta .meta-deadline {
+          font-weight: 600;
+          color: #1b4965;
+        }
+        .detail-meta .meta-separator {
+          color: #adb5bd;
+          margin: 0 0.1rem;
+        }
           height: 10px;
           border-radius: 50%;
           display: inline-block;
@@ -1496,6 +1636,7 @@ const CalaverrasGrantsDashboard = () => {
           line-height: 1.45;
           color: #495057;
           font-size: 0.95rem;
+          white-space: pre-line;
         }
         .detail-actions {
           margin-top: 0.25rem;
@@ -1550,12 +1691,18 @@ const CalaverrasGrantsDashboard = () => {
 
         /* Responsive */
         @media (max-width: 1200px) {
+          .main-content {
+            height: auto;
+          }
           .main-content.split-view {
             flex-direction: column;
           }
           .main-content.split-view .table-container,
           .detail-panel {
             flex: 1 1 auto;
+          }
+          .split-resizer {
+            display: none;
           }
         }
       `}</style>
