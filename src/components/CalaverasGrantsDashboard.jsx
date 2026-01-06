@@ -145,6 +145,29 @@ const CalaverasGrantsDashboard = () => {
 
   // Normalize grant record fields with fallbacks (define before fetchGrants which uses it)
   const normalizeGrantRecord = useCallback((grant) => {
+    const rawSource = (grant._source || grant.Source || '').toLowerCase();
+    const normalizedSource = rawSource.includes('grant') || rawSource === 'federal'
+      ? 'grants.gov'
+      : rawSource.includes('ca') || rawSource === 'state'
+        ? 'ca.gov'
+        : rawSource || null;
+
+    const extractDateFromText = (text) => {
+      if (!text) return null;
+      const patterns = [
+        /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/gi,
+        /\b\d{1,2}[\/.-]\d{1,2}[\/.-]\d{4}\b/g
+      ];
+      for (const regex of patterns) {
+        const match = regex.exec(text);
+        if (match && match[0]) {
+          const candidate = new Date(match[0]);
+          if (!isNaN(candidate)) return candidate.toISOString();
+        }
+      }
+      return null;
+    };
+
     const agencyFallback = grant.AgencyName
       || grant.Agency
       || grant.Grantor
@@ -170,9 +193,17 @@ const CalaverasGrantsDashboard = () => {
       { value: grant.EndDate, source: 'End Date' }
     ];
 
-    const chosenDeadline = deadlineCandidates.find(c => c.value && String(c.value).trim());
-    const deadlineFallback = chosenDeadline?.value || null;
-    const deadlineSource = chosenDeadline?.source || null;
+    let chosenDeadline = deadlineCandidates.find(c => c.value && String(c.value).trim());
+    let deadlineFallback = chosenDeadline?.value || null;
+    let deadlineSource = chosenDeadline?.source || null;
+
+    if (!deadlineFallback) {
+      const derived = extractDateFromText(grant.Description || grant.Purpose || '');
+      if (derived) {
+        deadlineFallback = derived;
+        deadlineSource = 'Derived from description';
+      }
+    }
 
     const applicantTypeFallback = grant.ApplicantType
       || grant.EligibleApplicants
@@ -187,6 +218,8 @@ const CalaverasGrantsDashboard = () => {
 
     return {
       ...grant,
+      _source: normalizedSource,
+      Source: normalizedSource || grant.Source,
       AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
       ApplicationDeadline: deadlineFallback,
       ApplicationDeadlineSource: deadlineSource,
@@ -1063,13 +1096,22 @@ const CalaverasGrantsDashboard = () => {
                       <td className="grant-title-cell">
                         <div className="title-text">
                           <span className={`title-prefix ${grant._source === 'grants.gov' ? 'federal' : 'state'}`}>
-                            {grant._source === 'grants.gov' ? '[FED]' : '[CA]'}
+                            {grant._source === 'grants.gov' ? 'FED' : 'CA'}
                           </span>
                           <span className="title-line">{grant.Title || grant.GrantTitle || 'Untitled Grant'}</span>
                         </div>
                         <div className="categories-text">{grant.Categories}</div>
                       </td>
-                      <td className="amount-cell">{formatCurrency(grant.EstAvailFunds)}</td>
+                      <td className="amount-cell">
+                        <div className="amount-primary">{formatCurrency(grant.EstAvailFunds)}</div>
+                        {(grant.AwardFloor || grant.AwardCeiling) && (
+                          <div className="amount-range" title="Award range">
+                            {grant.AwardFloor ? formatCurrency(String(grant.AwardFloor)) : 'Min N/A'}
+                            <span className="amount-sep">–</span>
+                            {grant.AwardCeiling ? formatCurrency(String(grant.AwardCeiling)) : 'Max N/A'}
+                          </div>
+                        )}
+                      </td>
                       <td className="deadline-cell">
                         {formatDeadline(grant.ApplicationDeadline, grant._deadlineLabel)}
                         {grant._isTooSoon && grant._daysUntil !== null && (
@@ -1259,15 +1301,6 @@ const CalaverasGrantsDashboard = () => {
         )}
       </div>
 
-      {/* Footer */}
-      <footer className="footer">
-        <p>
-          Data from California State Grants Portal & Federal Grants.gov • 
-          Cache refreshes every 12 hours • 
-          Contact: <a href="mailto:WHanafi@calaverascounty.gov">Waqqas Hanafi</a>
-        </p>
-      </footer>
-
       <style jsx>{`
         * {
           margin: 0;
@@ -1275,9 +1308,13 @@ const CalaverasGrantsDashboard = () => {
           box-sizing: border-box;
         }
         .dashboard {
-          min-height: 100vh;
+          height: 100vh;
+          width: 100vw;
           background: #f5f5f5;
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
         }
         
         /* Header */
@@ -1511,9 +1548,9 @@ const CalaverasGrantsDashboard = () => {
           background: #e9edf2;
         }
         .source-filter-btn.active.ca {
-          background: #fde8ef;
-          color: #8b1538;
-          border-color: #f0b6cb;
+          background: #e4f4f0;
+          color: #0f6d5f;
+          border-color: #b9e3d8;
         }
         .source-filter-btn.active.federal {
           background: #e6f0ff;
@@ -1592,15 +1629,18 @@ const CalaverasGrantsDashboard = () => {
         /* Main Content */
         .main-content {
           display: flex;
-          height: calc(100vh - 250px);
+          flex: 1;
+          min-height: 0;
           background: #f5f5f5;
           position: relative;
+          overflow: hidden;
         }
         .main-content.split-view .table-container {
           flex: 0 0 50%;
         }
         .table-container {
           flex: 1;
+          min-height: 0;
           overflow-y: auto;
           overflow-x: auto;
           background: white;
@@ -1784,10 +1824,10 @@ const CalaverasGrantsDashboard = () => {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          min-width: 52px;
-          padding: 0.15rem 0.4rem;
-          margin-right: 0.45rem;
-          font-size: 0.78rem;
+          min-width: 46px;
+          padding: 0.12rem 0.35rem;
+          margin-right: 0.35rem;
+          font-size: 0.76rem;
           font-weight: 800;
           letter-spacing: 0.4px;
           border: 1px solid transparent;
@@ -1799,9 +1839,9 @@ const CalaverasGrantsDashboard = () => {
           border-color: #b6cffc;
         }
         .title-prefix.state {
-          background: #fde8ef;
-          color: #8b1538;
-          border-color: #f5c2d6;
+          background: #e4f4f0;
+          color: #0f6d5f;
+          border-color: #b9e3d8;
         }
         .deadline-warning {
           margin-left: 0.5rem;
@@ -1812,6 +1852,21 @@ const CalaverasGrantsDashboard = () => {
           font-weight: 600;
           color: #1b4965;
           white-space: nowrap;
+        .amount-primary {
+          font-size: 0.95rem;
+        }
+        .amount-range {
+          margin-top: 2px;
+          font-size: 0.8rem;
+          font-weight: 500;
+          color: #495057;
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+        }
+        .amount-sep {
+          color: #adb5bd;
+        }
         }
         .deadline-cell {
           white-space: nowrap;
@@ -1849,6 +1904,7 @@ const CalaverasGrantsDashboard = () => {
           overflow-y: auto;
           border-left: 1px solid #d1d5db;
           height: 100%;
+          min-height: 0;
           position: sticky;
           top: 0;
         }
@@ -2046,7 +2102,7 @@ const CalaverasGrantsDashboard = () => {
           border-color: #0d1b2a;
         }
 
-        /* Loading & Footer */
+        /* Loading */
         .loading-container {
           display: flex;
           flex-direction: column;
@@ -2064,19 +2120,13 @@ const CalaverasGrantsDashboard = () => {
           from { transform: rotate(0deg); }
           to { transform: rotate(360deg); }
         }
-        .footer {
-          background: #0d1b2a;
-          padding: 1.5rem 2rem;
-          text-align: center;
-          color: #8899aa;
-          font-size: 0.8rem;
-          border-top: 2px solid #1b4965;
-        }
 
         /* Responsive */
         @media (max-width: 1200px) {
           .main-content {
+            flex-direction: column;
             height: auto;
+            min-height: 0;
           }
           .main-content.split-view {
             flex-direction: column;
@@ -2084,6 +2134,11 @@ const CalaverasGrantsDashboard = () => {
           .main-content.split-view .table-container,
           .detail-panel {
             flex: 1 1 auto;
+            max-height: none;
+          }
+          .detail-panel {
+            position: relative;
+            top: auto;
           }
           .split-resizer {
             display: none;
