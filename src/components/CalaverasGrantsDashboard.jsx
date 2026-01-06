@@ -657,7 +657,7 @@ const CalaverasGrantsDashboard = () => {
 
   // Format deadline
   const formatDeadline = (dateStr, labelOverride) => {
-    const { date, label } = parseDeadline(dateStr);
+    const { date } = parseDeadline(dateStr);
     if (!date) {
       // Estimate deadline if missing - typically grants have windows of a few months
       if (labelOverride && labelOverride !== 'Deadline TBD') return labelOverride;
@@ -674,7 +674,7 @@ const CalaverasGrantsDashboard = () => {
   };
 
   const formatDeadlineDetailed = (dateStr, labelOverride) => {
-    const { date, label } = parseDeadline(dateStr);
+    const { date } = parseDeadline(dateStr);
     if (!date) {
       if (labelOverride && labelOverride !== 'Deadline TBD') return labelOverride;
       return 'Deadline varies (check details)';
