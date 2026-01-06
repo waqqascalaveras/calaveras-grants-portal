@@ -156,7 +156,7 @@ const CalaverasGrantsDashboard = () => {
       if (!text) return null;
       const patterns = [
         /\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)[a-z]*\s+\d{1,2},\s+\d{4}\b/gi,
-        /\b\d{1,2}[\/.-]\d{1,2}[\/.-]\d{4}\b/g
+        /\b\d{1,2}[./-]\d{1,2}[./-]\d{4}\b/g
       ];
       for (const regex of patterns) {
         const match = regex.exec(text);
