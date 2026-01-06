@@ -323,7 +323,7 @@ const CalaverasGrantsDashboard = () => {
     }
     
     return result;
-  }, [baseFiltered, statusFilter, favoriteFilter, favorites, getStatusBadge]);
+  }, [baseFiltered, statusFilter, favoriteFilter, favorites, getStatusBadge, getGrantId]);
 
   // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
