@@ -34,6 +34,73 @@ const HighlightedText = ({ text, query }) => {
   );
 };
 
+// Helper function to render HTML and formatted text safely
+const FormattedText = ({ text, query }) => {
+  if (!text) return null;
+  
+  // Split text by line breaks and create paragraph-like structure
+  const paragraphs = text.split(/\r?\n+/).filter(p => p.trim());
+  
+  const renderParagraph = (para, pIdx) => {
+    // Parse HTML-like content (basic <a> tag support)
+    const aTagRegex = /<a\s+href=["']([^"']+)["'][^>]*>([^<]+)<\/a>/gi;
+    let match;
+    const matches = [];
+    let lastIndex = 0;
+    
+    while ((match = aTagRegex.exec(para)) !== null) {
+      matches.push({
+        start: match.index,
+        end: aTagRegex.lastIndex,
+        url: match[1],
+        text: match[2]
+      });
+    }
+    
+    if (matches.length === 0) {
+      // No HTML tags, just render with highlighting
+      return (
+        <p key={pIdx}>
+          <HighlightedText text={para} query={query} />
+        </p>
+      );
+    }
+    
+    // Render with links
+    const parts = [];
+    lastIndex = 0;
+    
+    matches.forEach((m, idx) => {
+      if (m.start > lastIndex) {
+        parts.push(
+          <React.Fragment key={`text-${idx}`}>
+            <HighlightedText text={para.substring(lastIndex, m.start)} query={query} />
+          </React.Fragment>
+        );
+      }
+      parts.push(
+        <a key={`link-${idx}`} href={m.url} target="_blank" rel="noopener noreferrer" 
+           style={{ color: '#1b4965', textDecoration: 'underline', fontWeight: 500 }}>
+          <HighlightedText text={m.text} query={query} />
+        </a>
+      );
+      lastIndex = m.end;
+    });
+    
+    if (lastIndex < para.length) {
+      parts.push(
+        <React.Fragment key="text-end">
+          <HighlightedText text={para.substring(lastIndex)} query={query} />
+        </React.Fragment>
+      );
+    }
+    
+    return <p key={pIdx}>{parts}</p>;
+  };
+  
+  return <>{paragraphs.map((para, idx) => renderParagraph(para, idx))}</>;
+};
+
 const CalaverasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -56,6 +123,7 @@ const CalaverasGrantsDashboard = () => {
   const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
   const [isResizing, setIsResizing] = useState(false);
   const mainContentRef = useRef(null);
+  const rowRefs = useRef({});
 
   // Unique key for grants
   const getGrantId = useCallback((grant) => {
@@ -211,6 +279,21 @@ const CalaverasGrantsDashboard = () => {
       setIsResizing(false);
     }
   }, [selectedGrant]);
+
+  // When a grant is selected (e.g., from the timeline), scroll its row into view in the list
+  useEffect(() => {
+    if (!selectedGrant) return;
+    const id = getGrantId(selectedGrant);
+    const el = rowRefs.current[id];
+    if (el && typeof el.scrollIntoView === 'function') {
+      try {
+        el.scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'nearest' });
+      } catch (e) {
+        // Fallback without smooth behavior if not supported
+        el.scrollIntoView();
+      }
+    }
+  }, [selectedGrant, getGrantId]);
 
   // Base filters (user type, department, search, source)
   const baseFiltered = useMemo(() => {
@@ -397,14 +480,9 @@ const CalaverasGrantsDashboard = () => {
       };
     });
     
-    // Sort: highlighted grants first, then apply column sorting
+    // Sort: apply column sorting without department match interference
     let sorted = [...withEmphasis].sort((a, b) => {
-      // Primary sort: highlighted (matching department) grants first
-      if (a._matchesDept !== b._matchesDept) {
-        return b._matchesDept ? 1 : -1; // true comes before false
-      }
-      
-      // Secondary sort: by selected column
+      // If a column is selected, apply that sort FIRST (don't let department match interfere)
       if (sortColumn) {
         let aVal, bVal;
         
@@ -435,7 +513,16 @@ const CalaverasGrantsDashboard = () => {
         
         if (aVal < bVal) return sortDirection === 'asc' ? -1 : 1;
         if (aVal > bVal) return sortDirection === 'asc' ? 1 : -1;
+        // When values are equal, use department match as tiebreaker
+        if (a._matchesDept !== b._matchesDept) {
+          return b._matchesDept ? 1 : -1;
+        }
         return 0;
+      }
+      
+      // No column selected: highlight matching department grants first
+      if (a._matchesDept !== b._matchesDept) {
+        return b._matchesDept ? 1 : -1; // true comes before false
       }
       
       return 0;
@@ -925,6 +1012,10 @@ const CalaverasGrantsDashboard = () => {
                     <tr 
                       key={rowId}
                       className={rowClasses}
+                      data-grant-id={rowId}
+                      ref={(el) => {
+                        if (el) rowRefs.current[rowId] = el; else delete rowRefs.current[rowId];
+                      }}
                       onClick={() => setSelectedGrant(grant)}
                       onMouseEnter={() => setHoveredGrantId(rowId)}
                       onMouseLeave={() => setHoveredGrantId(null)}
@@ -958,18 +1049,18 @@ const CalaverasGrantsDashboard = () => {
                       </td>
                       <td className="save-cell" onClick={(e) => e.stopPropagation()}>
                         <button
-                          className={`heart-btn ${favorites.includes(grant._id) ? 'active' : ''}`}
+                          className={`heart-btn ${favorites.includes(rowId) ? 'active' : ''}`}
                           aria-label="Save to favorites"
                           onClick={() => {
                             setFavorites((prev) => {
-                              if (prev.includes(grant._id)) {
-                                return prev.filter((id) => id !== grant._id);
+                              if (prev.includes(rowId)) {
+                                return prev.filter((id) => id !== rowId);
                               }
-                              return [...prev, grant._id];
+                              return [...prev, rowId];
                             });
                           }}
                         >
-                          {favorites.includes(grant._id) ? (
+                          {favorites.includes(rowId) ? (
                             <span style={{ color: '#dc3545', fontSize: '16px' }}>❤️</span>
                           ) : (
                             <Heart size={16} />
@@ -1076,7 +1167,7 @@ const CalaverasGrantsDashboard = () => {
                       <div className="text-heading">
                         Purpose <InfoTooltip text="The grant purpose answers why the grant exists—what the grantmaker intends to achieve, its goals and desired outcomes." />
                       </div>
-                      <p><HighlightedText text={selectedGrant.Purpose} query={searchQuery} /></p>
+                      <FormattedText text={selectedGrant.Purpose} query={searchQuery} />
                     </div>
                   )}
                   {selectedGrant.Description && (
@@ -1084,7 +1175,7 @@ const CalaverasGrantsDashboard = () => {
                       <div className="text-heading">
                         Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
                       </div>
-                      <p><HighlightedText text={selectedGrant.Description} query={searchQuery} /></p>
+                      <FormattedText text={selectedGrant.Description} query={searchQuery} />
                     </div>
                   )}
                 </div>
@@ -1534,9 +1625,15 @@ const CalaverasGrantsDashboard = () => {
         .grants-table tbody tr:hover {
           background: #f8f9fa;
         }
+        @keyframes highlight-flash {
+          0% { background: #fffacd; }
+          50% { background: #fff9c4; }
+          100% { background: #e3f2fd; }
+        }
         .grants-table tbody tr.selected {
           background: #e3f2fd;
           border-left: 3px solid #1b4965;
+          animation: highlight-flash 0.8s ease-out;
         }
         .grants-table tbody tr.non-match {
           opacity: 0.5;
@@ -1821,11 +1918,25 @@ const CalaverasGrantsDashboard = () => {
           gap: 0.5rem;
         }
         .text-section p {
-          margin: 0;
+          margin: 0.5rem 0 0 0;
           line-height: 1.45;
           color: #495057;
           font-size: 0.95rem;
-          white-space: pre-line;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+        }
+        .text-section p:first-of-type {
+          margin-top: 0;
+        }
+        .text-section a {
+          color: #1b4965;
+          text-decoration: underline;
+          font-weight: 500;
+          cursor: pointer;
+        }
+        .text-section a:hover {
+          color: #0d1b2a;
+          text-decoration-thickness: 2px;
         }
         .detail-actions {
           margin-top: 0.25rem;
