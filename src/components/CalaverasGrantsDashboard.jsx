@@ -1138,26 +1138,48 @@ const CalaverasGrantsDashboard = () => {
                   <span className="inline-label">
                     Awards <InfoTooltip text="Expected Number of Awards: A single grant may represent one or many awards. Some grantmakers determine the exact number in advance, while others indicate a range." />
                   </span>
-                  <span className="inline-value">{selectedGrant.EstAwards || 'N/A'}</span>
+                  <span className="inline-value">{selectedGrant.ExpectedAwards || selectedGrant.EstAwards || 'N/A'}</span>
                 </div>
+                {selectedGrant.AwardCeiling ? (
+                  <div className="inline-item" title="Award Ceiling">
+                    <span className="inline-label">Award Ceiling</span>
+                    <span className="inline-value">{formatCurrency(String(selectedGrant.AwardCeiling))}</span>
+                  </div>
+                ) : null}
+                {selectedGrant.AwardFloor ? (
+                  <div className="inline-item" title="Award Floor">
+                    <span className="inline-label">Award Floor</span>
+                    <span className="inline-value">{formatCurrency(String(selectedGrant.AwardFloor))}</span>
+                  </div>
+                ) : null}
                 {selectedGrant.PostedDate && (
                   <div className="inline-item" title="Posted">
                     <span className="inline-label">Posted</span>
                     <span className="inline-value">{new Date(selectedGrant.PostedDate).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
                   </div>
                 )}
-                <div className="inline-item" title="Categories">
-                  <span className="inline-label">
-                    Categories <InfoTooltip text="The topic areas or sectors this grant addresses (e.g., Education, Health, Environment)." />
-                  </span>
-                  <span className="inline-value">{selectedGrant.Categories || 'N/A'}</span>
-                </div>
+                {(selectedGrant.CategoryName || selectedGrant.Category || selectedGrant.Categories) && (
+                  <div className="inline-item" title="Funding Category">
+                    <span className="inline-label">Category</span>
+                    <span className="inline-value">{selectedGrant.CategoryName || selectedGrant.Category || selectedGrant.Categories}</span>
+                  </div>
+                )}
                 <div className="inline-item" title="Eligible Applicants">
                   <span className="inline-label">
                     Applicants <InfoTooltip text="Eligible Applicants: Who can apply for this grant, including nonprofit organizations, public agencies, businesses, individuals, tribal governments, or other legal entities." />
                   </span>
                   <span className="inline-value">{selectedGrant.ApplicantType || 'N/A'}</span>
                 </div>
+                {(selectedGrant.OpportunityID || selectedGrant.PortalID) && (
+                  <div className="inline-item" title="Source IDs">
+                    <span className="inline-label">IDs</span>
+                    <span className="inline-value">
+                      {selectedGrant.OpportunityID ? `OppID ${selectedGrant.OpportunityID}` : ''}
+                      {selectedGrant.OpportunityID && selectedGrant.PortalID ? ' · ' : ''}
+                      {selectedGrant.PortalID ? `Portal ${selectedGrant.PortalID}` : ''}
+                    </span>
+                  </div>
+                )}
               </div>
 
               {(selectedGrant.Purpose || selectedGrant.Description) && (
