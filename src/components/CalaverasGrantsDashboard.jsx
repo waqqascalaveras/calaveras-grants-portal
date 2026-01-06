@@ -253,12 +253,12 @@ const CalaverasGrantsDashboard = () => {
         data: details,
         timestamp: Date.now()
       }));
-// eslint-disable-next-line no-console
+
+      // eslint-disable-next-line no-console
       console.log('Successfully fetched federal grant details');
       return details;
     } catch (error) {
       // eslint-disable-next-line no-console
-    } catch (error) {
       console.error('Failed to fetch federal grant details:', error);
       return null;
     } finally {
