@@ -139,14 +139,28 @@ const CalaverasGrantsDashboard = () => {
       || grant.FundingAgency
       || grant.OrganizationName
       || grant.AwardingAgency;
-    const deadlineFallback = grant.ApplicationDeadline
-      || grant.Deadline
-      || grant.CloseDate
-      || grant.DueDate
-      || grant.SubmissionDeadline
-      || grant.SubmissionCloseDate
-      || grant.SubmissionDueDate
-      || grant.EndDate;
+
+    // Pick the best available deadline and remember where it came from
+    const deadlineCandidates = [
+      { value: grant.ApplicationDeadline, source: 'Application Deadline' },
+      { value: grant.Deadline, source: 'Deadline' },
+      { value: grant.CloseDate, source: 'Close Date' },
+      { value: grant.DueDate, source: 'Due Date' },
+      { value: grant.SubmissionDeadline, source: 'Submission Deadline' },
+      { value: grant.SubmissionCloseDate, source: 'Submission Close Date' },
+      { value: grant.SubmissionDueDate, source: 'Submission Due Date' },
+      { value: grant.EstimatedApplicationDueDate || grant.EstimatedAppDueDate, source: 'Estimated Application Due Date' },
+      { value: grant.EstimatedDueDate, source: 'Estimated Due Date' },
+      { value: grant.EstimatedCloseDate, source: 'Estimated Close Date' },
+      { value: grant.EstimatedPostDate, source: 'Estimated Post Date' },
+      { value: grant.ForecastedDate, source: 'Forecasted Date' },
+      { value: grant.EndDate, source: 'End Date' }
+    ];
+
+    const chosenDeadline = deadlineCandidates.find(c => c.value && String(c.value).trim());
+    const deadlineFallback = chosenDeadline?.value || null;
+    const deadlineSource = chosenDeadline?.source || null;
+
     const applicantTypeFallback = grant.ApplicantType
       || grant.EligibleApplicants
       || grant.Eligibility
@@ -161,7 +175,8 @@ const CalaverasGrantsDashboard = () => {
     return {
       ...grant,
       AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
-      ApplicationDeadline: deadlineFallback || grant.ApplicationDeadline || null,
+      ApplicationDeadline: deadlineFallback,
+      ApplicationDeadlineSource: deadlineSource,
       ApplicantType: applicantTypeFallback || grant.ApplicantType || '',
       EstAvailFunds: fundingFallback || grant.EstAvailFunds || 'N/A'
     };
@@ -476,6 +491,7 @@ const CalaverasGrantsDashboard = () => {
         _daysUntil: daysUntil,
         _deadlineDate: deadlineDate,
         _deadlineLabel: deadlineInfo.label,
+        _deadlineSource: grant.ApplicationDeadlineSource || (deadlineInfo.label ? 'Deadline Label' : null),
         _id: getGrantId(grant)
       };
     });
@@ -1115,6 +1131,9 @@ const CalaverasGrantsDashboard = () => {
                 <span className="meta-amount" title="Estimated Available Funds">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
                 <span className="meta-separator">•</span>
                 <span className="meta-deadline" title="Application Deadline">{formatDeadlineDetailed(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
+                {selectedGrant._deadlineSource && (
+                  <span className="meta-note">{selectedGrant._deadlineSource}</span>
+                )}
                 <span className="meta-separator">•</span>
                 <span className="meta-status" title="Status">
                   <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }} />
@@ -1878,7 +1897,7 @@ const CalaverasGrantsDashboard = () => {
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          gap: 0.25rem;
+          gap: 0.2rem;
           font-size: 0.8rem;
           color: #0d1b2a;
           background: transparent;
@@ -1892,6 +1911,13 @@ const CalaverasGrantsDashboard = () => {
           border-radius: 3px;
           padding: 0.4rem 0.65rem;
           font-weight: 500;
+        }
+        .detail-meta .meta-note {
+          background: #eef2f6;
+          border: 1px dashed #d0d7e2;
+          color: #4b5563;
+          font-size: 0.75rem;
+          padding: 0.3rem 0.55rem;
         }
         .detail-meta .meta-source { font-weight: 700; }
         .detail-meta .meta-amount { font-weight: 700; color: #8b1538; }
