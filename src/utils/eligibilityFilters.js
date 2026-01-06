@@ -78,6 +78,30 @@ export const isRecentlyClosed = (grant, daysThreshold = 30) => {
 };
 
 /**
+ * Match grant to CBO organization type
+ * @param {Object} grant - Grant record
+ * @param {string} organizationType - Organization type key (nonprofit, faith_based, etc.)
+ * @returns {boolean} - True if grant matches organization type
+ */
+export const matchesCBOType = (grant, organizationType) => {
+  if (organizationType === 'all') return true;
+  if (!organizationType) return true;
+  
+  const applicantType = (grant.ApplicantType || '').toLowerCase();
+  
+  const typeMatchers = {
+    nonprofit: ['nonprofit', '501c3', 'npo', 'not-for-profit'],
+    faith_based: ['faith-based', 'faith based', 'religious', 'church', 'mosque', 'synagogue', 'temple'],
+    community_group: ['community organization', 'community-based', 'grassroots', 'community group', 'cbo'],
+    education: ['educational', 'university', 'college', 'school', 'academy', 'institute'],
+    tribal: ['tribal', 'indigenous', 'native american', 'american indian']
+  };
+  
+  const keywords = typeMatchers[organizationType] || [];
+  return keywords.some(keyword => applicantType.includes(keyword));
+};
+
+/**
  * Match grant to department based on keywords
  * @param {Object} grant - Grant record
  * @param {string} deptKey - Department key

@@ -1,17 +1,17 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
+import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, matchesCBOType } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
 import DepartmentSelector from './DepartmentSelector';
+import SmartTooltip from './SmartTooltip';
 
-// Helper component for info tooltips
+// Helper component for info tooltips - now using SmartTooltip with Floating UI
 const InfoTooltip = ({ text }) => (
-  <span className="info-tooltip-wrapper">
-    <HelpCircle size={14} className="info-icon" />
-    <span className="info-tooltip-text">{text}</span>
-  </span>
+  <SmartTooltip text={text} side="top">
+    <HelpCircle size={14} className="info-icon" style={{ cursor: 'help' }} />
+  </SmartTooltip>
 );
 
 // Helper function to highlight search terms in text
@@ -49,6 +49,8 @@ const CalaverasGrantsDashboard = () => {
   const [lastUpdated, setLastUpdated] = useState(null);
   const [hoveredGrantId, setHoveredGrantId] = useState(null);
   const [sourceCounts, setSourceCounts] = useState({ ca: 0, federal: 0 });
+  const [sourceFilters, setSourceFilters] = useState({ ca: true, federal: true });
+  const [favoriteFilter, setFavoriteFilter] = useState('all');
   const [lastAttemptTs, setLastAttemptTs] = useState(null);
   const [lastMeta, setLastMeta] = useState(null);
   const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
@@ -81,12 +83,19 @@ const CalaverasGrantsDashboard = () => {
       || grant.EligibleApplicants
       || grant.Eligibility
       || grant.EligibleApplicantsText;
+    const fundingFallback = grant.EstAvailFunds
+      || grant.FundingAmount
+      || grant.AwardAmount
+      || grant.MaxAward
+      || grant.Amount
+      || grant.EstimatedAmount;
 
     return {
       ...grant,
       AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
       ApplicationDeadline: deadlineFallback || grant.ApplicationDeadline || null,
-      ApplicantType: applicantTypeFallback || grant.ApplicantType || ''
+      ApplicantType: applicantTypeFallback || grant.ApplicantType || '',
+      EstAvailFunds: fundingFallback || grant.EstAvailFunds || 'N/A'
     };
   }, []);
 
@@ -144,6 +153,7 @@ const CalaverasGrantsDashboard = () => {
       });
       setLoading(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [normalizeGrantRecord]);
 
   // Initial fetch
@@ -202,13 +212,27 @@ const CalaverasGrantsDashboard = () => {
     }
   }, [selectedGrant]);
 
-  // Base filters (user type, department, search)
+  // Base filters (user type, department, search, source)
   const baseFiltered = useMemo(() => {
     if (grants.length === 0) return [];
     const now = new Date();
     const sevenDaysAgo = new Date(now.getTime() - (7 * 24 * 60 * 60 * 1000));
     
     return grants.filter(grant => {
+      // Source filter - skip if neither source is selected, or grant doesn't match selected sources
+      const grantSource = grant._source;
+      const isCAGrant = grantSource === 'ca.gov';
+      const isFederalGrant = grantSource === 'grants.gov';
+      
+      // If neither source is selected, show no grants
+      if (!sourceFilters.ca && !sourceFilters.federal) {
+        return false;
+      }
+      
+      // Skip grants that don't match any selected source
+      if (isCAGrant && !sourceFilters.ca) return false;
+      if (isFederalGrant && !sourceFilters.federal) return false;
+      
       // Filter out grants closed more than 7 days ago
       const status = (grant.Status || '').toLowerCase().trim();
       const isClosed = status.includes('closed') || status.includes('close');
@@ -238,6 +262,9 @@ const CalaverasGrantsDashboard = () => {
       if (userType === 'county' && selectedDepartment !== 'all') {
         if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
       }
+      if (userType === 'cbo' && selectedDepartment !== 'all') {
+        if (!matchesCBOType(grant, selectedDepartment)) return false;
+      }
       if (searchQuery) {
         const q = searchQuery.toLowerCase();
         const inTitle = (grant.Title || grant.GrantTitle || '').toLowerCase().includes(q);
@@ -248,7 +275,7 @@ const CalaverasGrantsDashboard = () => {
       }
       return true;
     });
-  }, [grants, userType, selectedDepartment, searchQuery]);
+  }, [grants, userType, selectedDepartment, searchQuery, sourceFilters]);
 
   // Get status badge - must be defined before statusCounts
   const getStatusBadge = useCallback((status, deadlineStr) => {
@@ -275,17 +302,28 @@ const CalaverasGrantsDashboard = () => {
   // Status-filtered list - use computed status from getStatusBadge
   const filteredGrants = useMemo(() => {
     if (baseFiltered.length === 0) return [];
-    if (statusFilter === 'all') return baseFiltered;
-    return baseFiltered.filter(grant => {
-      const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
-      if (statusFilter === 'open') {
-        return computedStatus.includes('open');
-      } else if (statusFilter === 'forecasted') {
-        return computedStatus.includes('forecast');
-      }
-      return true;
-    });
-  }, [baseFiltered, statusFilter, getStatusBadge]);
+    let result = baseFiltered;
+    
+    // Apply status filter
+    if (statusFilter !== 'all') {
+      result = result.filter(grant => {
+        const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
+        if (statusFilter === 'open') {
+          return computedStatus.includes('open');
+        } else if (statusFilter === 'forecasted') {
+          return computedStatus.includes('forecast');
+        }
+        return true;
+      });
+    }
+    
+    // Apply favorites filter
+    if (favoriteFilter === 'saved') {
+      result = result.filter(grant => favorites.includes(grant._id));
+    }
+    
+    return result;
+  }, [baseFiltered, statusFilter, favoriteFilter, favorites, getStatusBadge]);
 
   // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
@@ -631,7 +669,7 @@ const CalaverasGrantsDashboard = () => {
             />
           </div>
 
-          <div className="status-toggles" role="group" aria-label="Status filter">
+          <div className="status-toggles" role="group" aria-label="Status and favorites filter">
             {[
               { key: 'open', label: 'Open' },
               { key: 'forecasted', label: 'Forecasted' }
@@ -648,6 +686,16 @@ const CalaverasGrantsDashboard = () => {
                 <span className="pill-count">{statusCounts[item.key] || 0}</span>
               </button>
             ))}
+            <button
+              className={`status-pill ${favoriteFilter === 'saved' ? 'active' : ''}`}
+              onClick={() => setFavoriteFilter(favoriteFilter === 'saved' ? 'all' : 'saved')}
+              title={`Saved Grants (${favorites.length})`}
+              type="button"
+            >
+              <Heart size={14} />
+              <span>Saved</span>
+              <span className="pill-count">{favorites.length}</span>
+            </button>
           </div>
 
           <div className="results-badge">
@@ -656,7 +704,25 @@ const CalaverasGrantsDashboard = () => {
         </div>
         <div className="timeline-inline">
           <div className="timeline-meta" aria-live="polite">
-            CA: {sourceCounts.ca} • Federal: {sourceCounts.federal}
+            <div className="source-filters" role="group" aria-label="Source filters">
+              <button
+                className={`source-filter-btn ${sourceFilters.ca ? 'active' : ''}`}
+                onClick={() => setSourceFilters(prev => ({ ...prev, ca: !prev.ca }))}
+                title="Toggle California grants"
+                type="button"
+              >
+                CA: {sourceCounts.ca}
+              </button>
+              <span className="source-separator">•</span>
+              <button
+                className={`source-filter-btn ${sourceFilters.federal ? 'active' : ''}`}
+                onClick={() => setSourceFilters(prev => ({ ...prev, federal: !prev.federal }))}
+                title="Toggle Federal grants"
+                type="button"
+              >
+                Federal: {sourceCounts.federal}
+              </button>
+            </div>
             {sourceCounts.federal === 0 ? ' (federal feed unavailable?)' : ''}
           </div>
           <div className="timeline">
@@ -697,18 +763,37 @@ const CalaverasGrantsDashboard = () => {
                 dotColor = '#1b4965';
               }
               const amount = parseInt((item.grant.EstAvailFunds || '').replace(/[^0-9]/g, '') || 0);
+              const numAwards = parseInt((item.grant.EstAwards || '1').toString().replace(/[^0-9]/g, '') || 1);
+              const perApplicantAmount = numAwards > 0 ? amount / numAwards : amount;
+              
+              // Determine dot size based on per-applicant award amount
+              // Scaling: 18px (minimum) to 36px (maximum)
+              // Expects awards from $50k to $5M per applicant
               let dotSize;
-              if (amount >= 10000000) {
-                dotSize = 18;
-              } else if (amount >= 5000000) {
-                dotSize = 16;
-              } else if (amount >= 1000000) {
-              } else if (amount >= 500000) {
-                dotSize = 12;
+              if (perApplicantAmount >= 2000000) {
+                // $2M+ per applicant = largest dots
+                dotSize = 36;
+              } else if (perApplicantAmount >= 1000000) {
+                // $1M-$2M
+                dotSize = 32;
+              } else if (perApplicantAmount >= 500000) {
+                // $500k-$1M
+                dotSize = 28;
+              } else if (perApplicantAmount >= 250000) {
+                // $250k-$500k
+                dotSize = 24;
+              } else if (perApplicantAmount >= 100000) {
+                // $100k-$250k
+                dotSize = 22;
+              } else if (perApplicantAmount >= 50000) {
+                // $50k-$100k
+                dotSize = 20;
               } else if (amount > 0) {
-                dotSize = 10;
+                // $0-$50k per applicant
+                dotSize = 18;
               } else {
-                dotSize = 8;
+                // No funding info
+                dotSize = 18;
               }
               const isHovered = hoveredGrantId && hoveredGrantId === item.id;
               const isSelected = selectedGrant && (selectedGrant._id || getGrantId(selectedGrant)) === item.id;
@@ -732,8 +817,13 @@ const CalaverasGrantsDashboard = () => {
                       <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline, item.grant._deadlineLabel)}
                     </div>
                     <div className="tooltip-detail">
-                      <DollarSign size={12} /> {formatCurrency(item.grant.EstAvailFunds)}
+                      <DollarSign size={12} /> Total: {formatCurrency(item.grant.EstAvailFunds)}
                     </div>
+                    {numAwards > 0 && (
+                      <div className="tooltip-detail" style={{ fontSize: '0.7rem', color: '#b0d4f1' }}>
+                        Per Award: {formatCurrency(perApplicantAmount.toString())} ({numAwards} award{numAwards !== 1 ? 's' : ''})
+                      </div>
+                    )}
                     <div className="tooltip-detail">
                       <FileText size={12} /> {item.grant.AgencyName}
                     </div>
@@ -872,7 +962,11 @@ const CalaverasGrantsDashboard = () => {
                             });
                           }}
                         >
-                          <Heart size={16} />
+                          {favorites.includes(grant._id) ? (
+                            <span style={{ color: '#dc3545', fontSize: '16px' }}>❤️</span>
+                          ) : (
+                            <Heart size={16} />
+                          )}
                         </button>
                       </td>
                     </tr>
@@ -1234,10 +1328,40 @@ const CalaverasGrantsDashboard = () => {
           color: #6c757d;
           margin-bottom: 0.1rem;
         }
+        .source-filters {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .source-filter-btn {
+          border: none;
+          background: #e9ecef;
+          color: #495057;
+          padding: 0.25rem 0.65rem;
+          font-size: 0.75rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          border: 1px solid transparent;
+        }
+        .source-filter-btn:hover {
+          background: #dee2e6;
+        }
+        .source-filter-btn.active {
+          background: #0d1b2a;
+          color: #ffffff;
+          border-color: #0d1b2a;
+        }
+        .source-separator {
+          color: #adb5bd;
+          margin: 0 2px;
+        }
         .timeline {
           position: relative;
-          height: 60px;
-          margin: 0.4rem 0;
+          height: 80px;
+          margin: 0.6rem 0;
+          display: flex;
+          align-items: center;
         }
         .timeline-line {
           position: absolute;
@@ -1289,29 +1413,29 @@ const CalaverasGrantsDashboard = () => {
           transform: translateX(-50%);
           background: #0d1b2a;
           color: white;
-          padding: 0.45rem 0.55rem;
+          padding: 0.35rem 0.5rem;
           border: 1px solid #1b4965;
-          min-width: 200px;
-          font-size: 0.72rem;
+          min-width: 190px;
+          font-size: 0.65rem;
           line-height: 1.3;
-          margin-top: 6px;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+          margin-top: 4px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
           z-index: 1200;
           transition: none;
         }
         .tooltip-title {
           font-weight: 700;
-          margin-bottom: 0.25rem;
+          margin-bottom: 0.15rem;
           color: white;
-          font-size: 0.78rem;
+          font-size: 0.7rem;
         }
         .tooltip-detail {
           display: flex;
           align-items: center;
-          gap: 0.5rem;
-          margin-top: 0.25rem;
+          gap: 0.35rem;
+          margin-top: 0.15rem;
           color: #c5d5f2;
-          font-size: 0.72rem;
+          font-size: 0.65rem;
         }
         .tooltip-detail svg {
           flex-shrink: 0;
@@ -1765,61 +1889,6 @@ const CalaverasGrantsDashboard = () => {
           color: #8899aa;
           font-size: 0.8rem;
           border-top: 2px solid #1b4965;
-        }
-
-        /* Info Tooltips */
-        .info-tooltip-wrapper {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          cursor: help;
-        }
-        .info-icon {
-          color: #6c757d;
-          opacity: 0.6;
-          transition: opacity 0.15s ease;
-        }
-        .info-tooltip-wrapper:hover .info-icon {
-          opacity: 1;
-          color: #1b4965;
-        }
-        .info-tooltip-text {
-          visibility: hidden;
-          opacity: 0;
-          position: absolute;
-          bottom: 125%;
-          left: 50%;
-          transform: translateX(-50%);
-          background: #0d1b2a;
-          color: #ffffff;
-          padding: 0.5rem 0.75rem;
-          border-radius: 4px;
-          font-size: 0.75rem;
-          line-height: 1.4;
-          white-space: normal;
-          width: 240px;
-          text-align: left;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-          z-index: 1000;
-          pointer-events: none;
-          transition: opacity 0.2s ease, visibility 0.2s ease;
-          border: 1px solid #1b4965;
-          text-transform: none;
-          letter-spacing: normal;
-          font-weight: 400;
-        }
-        .info-tooltip-text::after {
-          content: '';
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform: translateX(-50%);
-          border: 6px solid transparent;
-          border-top-color: #0d1b2a;
-        }
-        .info-tooltip-wrapper:hover .info-tooltip-text {
-          visibility: visible;
-          opacity: 1;
         }
 
         /* Responsive */
