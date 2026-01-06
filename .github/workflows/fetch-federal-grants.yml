@@ -211,15 +211,15 @@ jobs:
               'duplicates': {'count': len(duplicates), 'examples': duplicates[:5]}
           }
           
-            # Backup old cache before overwriting (for recovery)
-            import os, shutil
-            try:
+          # Backup old cache before overwriting (for recovery)
+          import os, shutil
+          try:
               if os.path.exists(OUTPUT_FILE):
-                shutil.copy(OUTPUT_FILE, BACKUP_FILE)
-            except Exception as e:
+                  shutil.copy(OUTPUT_FILE, BACKUP_FILE)
+          except Exception as e:
               print(f"Warning: Failed to backup old cache: {e}")
 
-            with open(OUTPUT_FILE, 'w') as f:
+          with open(OUTPUT_FILE, 'w') as f:
               json.dump(output, f, indent=2)
           
           print("\n" + "="*70)

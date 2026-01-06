@@ -1,8 +1,8 @@
 // Unified grant data service with server-side + client-side caching
 // Server-side: GitHub Actions fetches CA + Federal, deduplicates, saves to static JSON
 // Client-side: Browser caches for fast filtering/sorting/searching
-
-const UNIFIED_CACHE_URL = `${process.env.PUBLIC_URL || ''}/grants-unified-cache.json`;
+// Stable cache filename; schema changes handled via cache-busting query + defensive parsing
+const UNIFIED_CACHE_URL = `${process.env.PUBLIC_URL || ''}/grants-cache.json`;
 const CLIENT_CACHE_KEY = 'grantsClientCache';
 const CLIENT_CACHE_TIME_KEY = 'grantsClientCacheTime';
 const CLIENT_CACHE_DURATION = 12 * 60 * 60 * 1000; // 12 hours
@@ -32,8 +32,7 @@ export const getClientCache = () => {
     console.error('[Client Cache] Error reading cache:', error);
     return null;
   }
-  // Stable cache filename; schema changes handled via client cache-busting query and backward-compatible parsing
-  const UNIFIED_CACHE_URL = `${process.env.PUBLIC_URL || ''}/grants-cache.json`;
+};
 
 /**
  * Save grants to browser localStorage
