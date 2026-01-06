@@ -92,7 +92,7 @@ const CalaverrasGrantsDashboard = () => {
         return;
       }
       
-      setGrants(allGrants);
+      setGrants(allGrants.map(normalizeGrantRecord));
       setLastUpdated(new Date(data.fetchedAt || Date.now()));
       setLoading(false);
     } catch (err) {
@@ -188,10 +188,13 @@ const CalaverrasGrantsDashboard = () => {
         }
       }
       
+      const hasApplicantType = !!(grant.ApplicantType && grant.ApplicantType.trim());
       if (userType === 'county') {
         if (!isEligibleForCounty(grant)) return false;
+        if (!hasApplicantType) return false;
       } else if (userType === 'cbo') {
         if (!isEligibleForCBO(grant)) return false;
+        if (!hasApplicantType) return false;
       }
       if (userType === 'county' && selectedDepartment !== 'all') {
         if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
@@ -281,6 +284,35 @@ const CalaverrasGrantsDashboard = () => {
 
     if (isNaN(parsed)) return { date: null, label: raw };
     return { date: parsed, label: null };
+  }, []);
+
+  const normalizeGrantRecord = useCallback((grant) => {
+    const agencyFallback = grant.AgencyName
+      || grant.Agency
+      || grant.Grantor
+      || grant.Department
+      || grant.FundingAgency
+      || grant.OrganizationName
+      || grant.AwardingAgency;
+    const deadlineFallback = grant.ApplicationDeadline
+      || grant.Deadline
+      || grant.CloseDate
+      || grant.DueDate
+      || grant.SubmissionDeadline
+      || grant.SubmissionCloseDate
+      || grant.SubmissionDueDate
+      || grant.EndDate;
+    const applicantTypeFallback = grant.ApplicantType
+      || grant.EligibleApplicants
+      || grant.Eligibility
+      || grant.EligibleApplicantsText;
+
+    return {
+      ...grant,
+      AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
+      ApplicationDeadline: deadlineFallback || grant.ApplicationDeadline || null,
+      ApplicantType: applicantTypeFallback || grant.ApplicantType || ''
+    };
   }, []);
 
   // Check if grant matches department (for visual emphasis)
