@@ -1015,35 +1015,6 @@ const CalaverasGrantsDashboard = () => {
           <span className="summary-item">
             <strong>Showing:</strong> {filteredGrants.length}
           </span>
-          <span className="summary-separator">•</span>
-          <span className="summary-item">
-            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {(() => { const act = Object.entries(statusFilter).filter(([_k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
-          </span>
-        </div>
-        {/* Active filter chips in summary */}
-        <div className="summary-chips">
-          {searchQuery && (
-            <span className="summary-chip" title="Active search filter">🔍 "{searchQuery}"</span>
-          )}
-          {userType !== 'all' && (
-            <span className="summary-chip" title="Active user type filter">👤 {userType === 'county' ? 'County' : 'CBO'}</span>
-          )}
-          {selectedDepartment !== 'all' && (
-            <span className="summary-chip" title="Active department filter">🏛️ {selectedDepartment}</span>
-          )}
-          {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
-            <span key={k} className="summary-chip" title={`Active ${k} status filter`}>
-              {k === 'open' ? '✅' : k === 'forecasted' ? '📅' : '🔒'} {k.charAt(0).toUpperCase() + k.slice(1)}
-            </span>
-          ))}
-          {favoriteFilter === 'saved' && (
-            <span className="summary-chip" title="Showing saved grants only">❤️ Saved</span>
-          )}
-          {(sourceFilters.ca === false || sourceFilters.federal === false) && (
-            <span className="summary-chip" title="Source filter active">
-              {sourceFilters.ca && !sourceFilters.federal ? '🏛️ CA only' : (!sourceFilters.ca && sourceFilters.federal ? '🇺🇸 Federal only' : '⚙️ Custom sources')}
-            </span>
-          )}
         </div>
       </div>
 
@@ -1338,10 +1309,7 @@ const CalaverasGrantsDashboard = () => {
                     <div>
                       <div style={{ marginBottom: '0.5rem', fontWeight: 600 }}>No grants found matching your criteria</div>
                       <div style={{ fontSize: '0.85rem', color: '#6c757d' }}>
-                        Total grants loaded: {grants.length} • 
-                        Active filters: {selectedDepartment !== 'all' ? `Department: ${departments[selectedDepartment]?.name}` : 'All departments'} • 
-                        Status: {(() => { const act = Object.entries(statusFilter).filter(([_k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
-                        {searchQuery && ` • Search: "${searchQuery}"`}
+                        Total grants available: {grants.length} • Check the active filters in the header to adjust your search
                       </div>
                       {grants.length === 0 && (
                         <div style={{ marginTop: '0.5rem', color: '#8b1538' }}>
