@@ -1,5 +1,19 @@
 name: Fetch & Merge Grants Data
 
+# CACHE STRATEGY
+# - Stable filename: public/grants-cache.json (avoid version suffix in name)
+# - Cache busting: clients always append ?t=Date.now() to bypass stale CDN/browser cache
+# - Schema: {
+#     fetchedAt: ISO string,
+#     success: boolean,
+#     grants: array,
+#     totalCount: number,
+#     sources: { ca: {count, success}, federal: {count, success} },
+#     duplicates: { count, examples }
+#   }
+# - When schema changes: keep stable filename, extend parser defensively (already implemented)
+# - Backup: creates public/grants-cache.backup.json before overwrite
+
 on:
   schedule:
     # Run every 12 hours at 6 AM and 6 PM UTC
@@ -50,7 +64,8 @@ jobs:
           CA_API_URL = 'https://data.ca.gov/api/3/action/datastore_search'
           CA_RESOURCE_ID = '111c8c88-21f6-453c-ae2c-b4785a0624f5'
           FEDERAL_API_URL = 'https://api.grants.gov/v1/api'
-          OUTPUT_FILE = 'public/grants-unified-cache.json'
+          OUTPUT_FILE = 'public/grants-cache.json'
+          BACKUP_FILE = 'public/grants-cache.backup.json'
           
           def normalize_text(text):
               if not text:
@@ -196,7 +211,15 @@ jobs:
               'duplicates': {'count': len(duplicates), 'examples': duplicates[:5]}
           }
           
-          with open(OUTPUT_FILE, 'w') as f:
+            # Backup old cache before overwriting (for recovery)
+            import os, shutil
+            try:
+              if os.path.exists(OUTPUT_FILE):
+                shutil.copy(OUTPUT_FILE, BACKUP_FILE)
+            except Exception as e:
+              print(f"Warning: Failed to backup old cache: {e}")
+
+            with open(OUTPUT_FILE, 'w') as f:
               json.dump(output, f, indent=2)
           
           print("\n" + "="*70)
@@ -213,7 +236,15 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add public/grants-unified-cache.json
+          git add public/grants-cache.json
+          
+          # Clean up old cache files if they exist (legacy names)
+          if [ -f public/grants-unified-cache.json ]; then
+            git rm public/grants-unified-cache.json || true
+          fi
+          if [ -f public/grants-cache-v2.json ]; then
+            git rm public/grants-cache-v2.json || true
+          fi
           
           if git diff --staged --quiet; then
             echo "No changes to grants data"

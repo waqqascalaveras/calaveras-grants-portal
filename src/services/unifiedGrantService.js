@@ -32,7 +32,8 @@ export const getClientCache = () => {
     console.error('[Client Cache] Error reading cache:', error);
     return null;
   }
-};
+  // Stable cache filename; schema changes handled via client cache-busting query and backward-compatible parsing
+  const UNIFIED_CACHE_URL = `${process.env.PUBLIC_URL || ''}/grants-cache.json`;
 
 /**
  * Save grants to browser localStorage
@@ -100,45 +101,60 @@ export const getUnifiedGrants = async (forceRefresh = false) => {
     // eslint-disable-next-line no-console
     console.log('[Unified Grants] Fetching from server cache...');
     
-    // Add cache-busting parameter to ensure fresh data
-    const cacheBuster = forceRefresh ? `?t=${Date.now()}` : '';
-    const response = await fetch(`${UNIFIED_CACHE_URL}${cacheBuster}`);
+    // Add cache-busting parameter to ensure fresh data from server
+    const cacheBuster = `t=${Date.now()}`;
+    const response = await fetch(`${UNIFIED_CACHE_URL}?${cacheBuster}`);
     
     if (!response.ok) {
       throw new Error(`Failed to fetch unified cache: ${response.status} ${response.statusText}`);
     }
     
-    const rawData = await response.json();
+    let rawData;
+    try {
+      rawData = await response.json();
+    } catch (parseErr) {
+      throw new Error(`Failed to parse cache JSON: ${parseErr?.message || 'unknown error'}`);
+    }
+
+    // Validate core structure
+    if (!rawData || typeof rawData !== 'object') {
+      throw new Error('Cache is not a valid JSON object');
+    }
 
     if (!Array.isArray(rawData?.grants)) {
-      throw new Error('Invalid unified cache format');
+      throw new Error(`Invalid grants array: expected array, got ${typeof rawData?.grants}`);
     }
 
+    // Warn if cache build failed but continue with available data
     if (rawData.success === false) {
       // eslint-disable-next-line no-console
-      console.warn('[Unified Grants] Cache marked unsuccessful; using available data');
+      console.warn('[Unified Grants] Cache marked unsuccessful (API fetch may have failed); using available data');
     }
 
-    // Normalize shape so downstream consumers can render even when the cache build failed
+    // Defensive normalization: handle missing/malformed fields gracefully
+    const grants = Array.isArray(rawData.grants) ? rawData.grants : [];
+    const sources = rawData?.sources || {};
+    const duplicates = rawData?.duplicates || {};
+
     const data = {
       ...rawData,
-      success: rawData.success !== false,
-      grants: rawData.grants,
-      totalCount: typeof rawData.totalCount === 'number' ? rawData.totalCount : rawData.grants.length,
+      success: rawData.success === true,
+      grants: grants,
+      totalCount: typeof rawData.totalCount === 'number' ? rawData.totalCount : grants.length,
       fetchedAt: rawData.fetchedAt || new Date().toISOString(),
       sources: {
         ca: {
-          count: rawData?.sources?.ca?.count || 0,
-          success: rawData?.sources?.ca?.success ?? false
+          count: typeof sources?.ca?.count === 'number' ? sources.ca.count : 0,
+          success: sources?.ca?.success === true
         },
         federal: {
-          count: rawData?.sources?.federal?.count || 0,
-          success: rawData?.sources?.federal?.success ?? false
+          count: typeof sources?.federal?.count === 'number' ? sources.federal.count : 0,
+          success: sources?.federal?.success === true
         }
       },
       duplicates: {
-        count: rawData?.duplicates?.count || 0,
-        examples: rawData?.duplicates?.examples || []
+        count: typeof duplicates?.count === 'number' ? duplicates.count : 0,
+        examples: Array.isArray(duplicates?.examples) ? duplicates.examples.slice(0, 10) : []
       }
     };
     
@@ -155,8 +171,9 @@ export const getUnifiedGrants = async (forceRefresh = false) => {
     return data;
     
   } catch (error) {
+    const errorMsg = error?.message || 'Unknown error';
     // eslint-disable-next-line no-console
-    console.error('[Unified Grants] Error fetching:', error);
+    console.error('[Unified Grants] Error fetching:', errorMsg, error?.stack);
     
     // Try client cache as fallback even if expired
     const staleCache = getClientCache();
@@ -166,6 +183,9 @@ export const getUnifiedGrants = async (forceRefresh = false) => {
       return staleCache.data;
     }
     
+    // If all else fails, log and re-throw
+    // eslint-disable-next-line no-console
+    console.error('[Unified Grants] No fallback cache available, throwing error');
     throw error;
   }
 };
