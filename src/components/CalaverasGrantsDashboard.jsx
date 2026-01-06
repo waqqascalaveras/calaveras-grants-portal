@@ -459,11 +459,12 @@ const CalaverasGrantsDashboard = () => {
     if (!date) return labelOverride || label || 'Deadline TBD';
     const days = Math.ceil((date - new Date()) / (1000 * 60 * 60 * 24));
     if (days < 0) return 'Closed';
-    if (days === 0) return 'Today';
-    if (days === 1) return 'Tomorrow';
-    if (days <= 14) return `${days}d (Urgent)`;
-    if (days <= 30) return `${days}d`;
-    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    const dateStr_formatted = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    if (days === 0) return `Today (${dateStr_formatted})`;
+    if (days === 1) return `Tomorrow (${dateStr_formatted})`;
+    if (days <= 14) return `${dateStr_formatted} (${days}d - Urgent)`;
+    if (days <= 30) return `${dateStr_formatted} (${days}d)`;
+    return dateStr_formatted;
   };
 
   const formatDeadlineDetailed = (dateStr, labelOverride) => {
