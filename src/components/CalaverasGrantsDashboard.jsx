@@ -861,12 +861,13 @@ const CalaverasGrantsDashboard = () => {
             </div>
           </div>
           <div className="header-right">
-            {lastUpdated && (
-              <span className="cache-time" title={`Last updated ${lastUpdated.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}`}>
-                <Clock size={14} />
-                {lastUpdated.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' })}
-              </span>
-            )}
+            <span
+              className="cache-time"
+              title={`Last refreshed ${lastAttemptTs ? lastAttemptTs.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }) : 'n/a'} • Server cache updated ${lastUpdated ? lastUpdated.toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' }) : 'n/a'}`}
+            >
+              <Clock size={14} />
+              {(lastAttemptTs || lastUpdated) ? (lastAttemptTs || lastUpdated).toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }) : 'n/a'}
+            </span>
             <button className="refresh-btn" onClick={() => fetchGrants(true)} title="Refresh grant data">
               <RefreshCw size={14} />
               Refresh
@@ -1313,6 +1314,18 @@ const CalaverasGrantsDashboard = () => {
                   <div className="inline-item" title="Funding Category">
                     <span className="inline-label">Category</span>
                     <span className="inline-value">{selectedGrant.CategoryName || selectedGrant.Category || selectedGrant.Categories}</span>
+                  </div>
+                )}
+                {selectedGrant.DocumentType && (
+                  <div className="inline-item" title="Document Type">
+                    <span className="inline-label">Document Type</span>
+                    <span className="inline-value">{selectedGrant.DocumentType}</span>
+                  </div>
+                )}
+                {selectedGrant.AgencyCode && (
+                  <div className="inline-item" title="Agency Code">
+                    <span className="inline-label">Agency Code</span>
+                    <span className="inline-value">{selectedGrant.AgencyCode}</span>
                   </div>
                 )}
                 <div className="inline-item" title="Eligible Applicants">
