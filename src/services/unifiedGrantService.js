@@ -53,8 +53,8 @@ export const saveClientCache = (data) => {
         // Clear old caches
         localStorage.removeItem(CLIENT_CACHE_KEY);
         localStorage.removeItem(CLIENT_CACHE_TIME_KEY);
-        localStorage.removeItem('calaverrasGrantsCache');
-        localStorage.removeItem('calaverrasGrantsCacheTime');
+        localStorage.removeItem('calaverasGrantsCache');
+        localStorage.removeItem('calaverasGrantsCacheTime');
         localStorage.removeItem('grantsGovCache');
         localStorage.removeItem('grantsGovCacheTime');
         
