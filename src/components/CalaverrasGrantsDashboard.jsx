@@ -105,7 +105,7 @@ const CalaverrasGrantsDashboard = () => {
       });
       setLoading(false);
     }
-  }, []);
+  }, [normalizeGrantRecord]);
 
   // Initial fetch
   useEffect(() => {
