@@ -319,7 +319,7 @@ const CalaverasGrantsDashboard = () => {
     
     // Apply favorites filter
     if (favoriteFilter === 'saved') {
-      result = result.filter(grant => favorites.includes(grant._id));
+      result = result.filter(grant => favorites.includes(getGrantId(grant)));
     }
     
     return result;
@@ -799,37 +799,43 @@ const CalaverasGrantsDashboard = () => {
               const isHovered = hoveredGrantId && hoveredGrantId === item.id;
               const isSelected = selectedGrant && (selectedGrant._id || getGrantId(selectedGrant)) === item.id;
               return (
-                <div 
-                  key={item.id || idx} 
-                  className={`timeline-dot ${isHovered || isSelected ? 'active' : ''}`}
-                  style={{ 
-                    left: `${leftPos}%`,
-                    background: dotColor,
-                    width: `${dotSize}px`,
-                    height: `${dotSize}px`
-                  }}
-                  onClick={() => setSelectedGrant(item.grant)}
-                  onMouseEnter={() => setHoveredGrantId(item.id)}
-                  onMouseLeave={() => setHoveredGrantId(null)}
-                >
-                  <div className="timeline-tooltip">
-                    <div className="tooltip-title">{item.grant.Title || item.grant.GrantTitle}</div>
-                    <div className="tooltip-detail">
-                      <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline, item.grant._deadlineLabel)}
-                    </div>
-                    <div className="tooltip-detail">
-                      <DollarSign size={12} /> Total: {formatCurrency(item.grant.EstAvailFunds)}
-                    </div>
-                    {numAwards > 0 && (
-                      <div className="tooltip-detail" style={{ fontSize: '0.7rem', color: '#b0d4f1' }}>
-                        Per Award: {formatCurrency(perApplicantAmount.toString())} ({numAwards} award{numAwards !== 1 ? 's' : ''})
+                <SmartTooltip
+                  key={item.id || idx}
+                  asChild
+                  side="top"
+                  content={(
+                    <div>
+                      <div className="tooltip-title">{item.grant.Title || item.grant.GrantTitle}</div>
+                      <div className="tooltip-detail">
+                        <Calendar size={12} /> {formatDeadline(item.grant.ApplicationDeadline, item.grant._deadlineLabel)}
                       </div>
-                    )}
-                    <div className="tooltip-detail">
-                      <FileText size={12} /> {item.grant.AgencyName}
+                      <div className="tooltip-detail">
+                        <DollarSign size={12} /> Total: {formatCurrency(item.grant.EstAvailFunds)}
+                      </div>
+                      {numAwards > 0 && (
+                        <div className="tooltip-detail" style={{ fontSize: '0.7rem', color: '#b0d4f1' }}>
+                          Per Award: {formatCurrency(perApplicantAmount.toString())} ({numAwards} award{numAwards !== 1 ? 's' : ''})
+                        </div>
+                      )}
+                      <div className="tooltip-detail">
+                        <FileText size={12} /> {item.grant.AgencyName}
+                      </div>
                     </div>
-                  </div>
-                </div>
+                  )}
+                >
+                  <div 
+                    className={`timeline-dot ${isHovered || isSelected ? 'active' : ''}`}
+                    style={{ 
+                      left: `${leftPos}%`,
+                      background: dotColor,
+                      width: `${dotSize}px`,
+                      height: `${dotSize}px`
+                    }}
+                    onClick={() => setSelectedGrant(item.grant)}
+                    onMouseEnter={() => setHoveredGrantId(item.id)}
+                    onMouseLeave={() => setHoveredGrantId(null)}
+                  />
+                </SmartTooltip>
               );
             })}
           </div>
@@ -1011,11 +1017,16 @@ const CalaverasGrantsDashboard = () => {
                   {selectedGrant._source === 'grants.gov' ? 'Federal (Grants.gov)' : 'California State'}
                 </span>
                 <span className="meta-separator">•</span>
-                <span className="meta-agency" title="Agency">{selectedGrant.AgencyName || 'N/A'}</span>
+                <span className="meta-agency" title="Agency">{selectedGrant.AgencyName || 'Agency TBD'}</span>
                 <span className="meta-separator">•</span>
                 <span className="meta-amount" title="Estimated Available Funds">{formatCurrency(selectedGrant.EstAvailFunds)}</span>
                 <span className="meta-separator">•</span>
                 <span className="meta-deadline" title="Application Deadline">{formatDeadlineDetailed(selectedGrant.ApplicationDeadline, selectedGrant._deadlineLabel)}</span>
+                <span className="meta-separator">•</span>
+                <span className="meta-status" title="Status">
+                  <span className="status-dot" style={{ background: getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).color }} />
+                  {getStatusBadge(selectedGrant.Status, selectedGrant.ApplicationDeadline).text}
+                </span>
               </div>
 
               <div className="detail-quick">
@@ -1403,27 +1414,7 @@ const CalaverasGrantsDashboard = () => {
           box-shadow: 0 0 0 3px rgba(139, 21, 56, 0.25), 0 6px 12px rgba(0,0,0,0.25);
           border-color: #8b1538;
         }
-        .timeline-dot:hover .timeline-tooltip {
-          display: block;
-        }
-        .timeline-tooltip {
-          display: none;
-          position: absolute;
-          top: 120%;
-          left: 50%;
-          transform: translateX(-50%);
-          background: #0d1b2a;
-          color: white;
-          padding: 0.35rem 0.5rem;
-          border: 1px solid #1b4965;
-          min-width: 190px;
-          font-size: 0.65rem;
-          line-height: 1.3;
-          margin-top: 4px;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-          z-index: 1200;
-          transition: none;
-        }
+        /* timeline tooltips now use SmartTooltip (Floating UI) */
         .tooltip-title {
           font-weight: 700;
           margin-bottom: 0.15rem;
@@ -1758,33 +1749,28 @@ const CalaverasGrantsDashboard = () => {
         }
         .status-dot {
           width: 10px;
-        .detail-meta {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 0.35rem;
-          align-items: center;
-          font-size: 0.95rem;
-          color: #0d1b2a;
-        }
-        .detail-meta .meta-source {
-          font-weight: 700;
-        }
-        .detail-meta .meta-amount {
-          font-weight: 700;
-          color: #8b1538;
-        }
-        .detail-meta .meta-deadline {
-          font-weight: 600;
-          color: #1b4965;
-        }
-        .detail-meta .meta-separator {
-          color: #adb5bd;
-          margin: 0 0.1rem;
-        }
           height: 10px;
           border-radius: 50%;
           display: inline-block;
+          margin-right: 6px;
         }
+        .detail-meta {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.35rem;
+          font-size: 0.85rem;
+          color: #0d1b2a;
+          background: #f7f9fb;
+          border: 1px solid #e1e5eb;
+          padding: 0.4rem 0.6rem;
+          border-radius: 4px;
+        }
+        .detail-meta .meta-source { font-weight: 700; }
+        .detail-meta .meta-amount { font-weight: 700; color: #8b1538; }
+        .detail-meta .meta-deadline { font-weight: 600; color: #1b4965; }
+        .detail-meta .meta-separator { color: #adb5bd; margin: 0 0.1rem; }
+        .detail-meta .meta-status { display: inline-flex; align-items: center; font-weight: 600; }
         .detail-inline-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
