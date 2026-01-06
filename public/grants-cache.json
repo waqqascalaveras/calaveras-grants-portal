@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-01-06T06:11:19.687977Z",
+  "fetchedAt": "2026-01-06T18:10:22.576596Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
+      "GrantTitle": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
+      "Description": "The California Department of Public Health, Injury and Violence Prevention Branch (CDPH/IVPB) anticipates releasing Request for Application (RFA): 25-10031, Local Training and Education Program for the Prevention of DV. CDPH/IVPB anticipates awarding up to one (1) local project with (3) three or more years of demonstrated experience and capabilities implementing local community organizing and/or public health policy, system, and environmental (PSE) change work.\u00a0  Funding will be available from State of California Penal Code Section 1203.097. The DVP Program anticipates funding one (1) project for a four-year contract term with an annual budget up to $292,800 for a total amount of $1,171,200 until June 30, 2030.  Funding for each fiscal year is subject to the annual appropriation of revenues in the California State Budget Act.\u00a0  Prospective Applicants are required to indicate their intent to submit an application. Failure to submit the mandatory Non\u00ad Binding Letter of Intent (LOI) will result in application rejection. The mandatory LOI is not binding, and prospective Applicants are not required to submit an application merely because an LOI is submitted. The LOI must be electronically submitted on the Applicant's letterhead and must be received by January 30, 2026 at 5:00 P.M. Pacific Standard Time (PST).* Submit the LOI to DVP.Program@cdph.ca.gov with subject line: \"DVP Program RFA: 25-10031 Mandatory Letter of Intent from [Agency Name].\"\u00a0  Electronic applications are required. All applications are due by February 19, 2026 at 5:00 P.M. PST.*Applications must be submitted electronically DVP.Program@cdph.ca.gov with subject line: \"DVP Program RFA: 25-10031 Application Submission by [Agency Name].\" The electronic date and timestamp will be used to verify on-time submission.  Applications received after the due date/time will not be reviewed. Written questions for this RFA will be accepted until January 15, 2026 at 5:00 P.M. PST* by email to DVP.Program@cdph.ca.gov, and responses will be posted to the DVP Program Website on January 27, 2026.*\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-19 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,171,200",
+      "Categories": "Disadvantaged Communities; Health & Human Services",
+      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "156183",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Legacy Disposal Site Abatement Grant Program",
+      "GrantTitle": "Legacy Disposal Site Abatement Grant Program",
+      "Description": "Public entities bear a financial responsibility for maintaining public landfill sites in compliance with state regulations and standards. The program provides financial assistance in the form of reimbursement grants up to $750,000 in matching funds for eligible costs to assist public entities requiring financial assistance, and committed to accelerating the pace of cleanup, restoring sites, and protecting public health and safety and the environment. Eligible projects include the remediation of disposal sites closed in accordance with the local laws at the time of the closure and prior to implementation of the State\u2019s current permitting and/or closure requirements for landfills and disposal sites.\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-11 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Disadvantaged Communities; Environment & Water; Health & Human Services; Housing, Community and Economic Development",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "156753",
+      "Source": "ca.gov"
+    },
     {
       "Title": "California Advanced Services Fund: Broadband Adoption Account \u2013 July 2026 Cycle",
       "GrantTitle": "California Advanced Services Fund: Broadband Adoption Account \u2013 July 2026 Cycle",
@@ -19,8 +51,88 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "2025-26 LISTOS CALIFORNIA CERT SUPPORT GRANT (LC) PROGRAM",
-      "GrantTitle": "2025-26 LISTOS CALIFORNIA CERT SUPPORT GRANT (LC) PROGRAM",
+      "Title": "FY 2025-26 Listos California Tribal Grant (LI) Program",
+      "GrantTitle": "FY 2025-26 Listos California Tribal Grant (LI) Program",
+      "Description": "To support federally-recognized tribes located in California and nonprofits that serve federally-recognized tribal governments to increase disaster preparedness, response, recovery, and mitigation capabilities in tribal communities. Tribal governments and nonprofits can work independently, with other tribal governments, or with local nonprofits to provide disaster preparedness information and resources to tribal communities.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$500,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "156543",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FY 2025-26 Listos California Statewide Grant (LS) Program",
+      "GrantTitle": "FY 2025-26 Listos California Statewide Grant (LS) Program",
+      "Description": "The purpose of the LS Program is to support organizations throughout California that serve multiple counties with equity priority factors located in areas at moderate to high risk of disaster. Nonprofits throughout the State work independently through their local chapters and/or affiliates to provide disaster training and resources to diverse populations disproportionately impacted by emergencies. This work is intended to increase their communities\u2019 disaster preparedness, response, recovery, and mitigation capabilities.  Social vulnerability refers to the potential negative effects on communities caused by external stresses on human health. Such stresses include natural or human-caused disasters, or disease outbreaks. Reducing social vulnerability can decrease both human suffering and economic loss.  Vulnerable communities include, but are not limited to, immigrants and refugees, farmworkers, people with disabilities, seniors/older adults, individuals and families experiencing homelessness, areas with geographically isolated individuals or families with low broadband subscriptions, and households with limited English proficiency.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,250,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "156537",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FY 2025-26 Listos California Regional Grant (LL) \u2013 Southern",
+      "GrantTitle": "FY 2025-26 Listos California Regional Grant (LL) \u2013 Southern",
+      "Description": "The purpose of the LL Program is to support organizations within California\u2019s Southern Region as defined in Section E. 1. above, that serve multiple counties with equity priority factors located in areas at moderate to high risk of disaster. Nonprofits throughout the Southern Region can work independently or subgrant with local nonprofits to provide disaster training and resources to diverse populations disproportionately impacted by emergencies. This work is intended to increase their communities\u2019 disaster preparedness, response, recovery, and mitigation capabilities.  Social vulnerability refers to the potential negative effects on communities caused by external stresses on human health. Such stresses include natural or human-caused disasters, or disease outbreaks. Reducing social vulnerability can decrease both human suffering and economic loss.  Vulnerable communities include, but are not limited to, immigrants and refugees, farmworkers, people with disabilities, seniors/older adults, individuals and families experiencing homelessness, areas with geographically isolated individuals or families with low broadband subscriptions, and households with limited English proficiency.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "156531",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FY 2025-26 Listos California Regional Grant (LN) \u2013 Inland",
+      "GrantTitle": "FY 2025-26 Listos California Regional Grant (LN) \u2013 Inland",
+      "Description": "The purpose of the LN Program is to support organizations within California\u2019s Inland Region as defined in Section E.1. above, that serve multiple counties with equity priority factors located in areas at moderate to high risk of disaster. Nonprofits throughout the Inland Region can work independently or subgrant with local nonprofits to provide disaster training and resources to diverse populations disproportionately impacted by emergencies. This work is intended to increase their communities\u2019 disaster preparedness, response, recovery, and mitigation capabilities.  Social vulnerability refers to the potential negative effects on communities caused by external stresses on human health. Such stresses include natural or human-caused disasters, or disease outbreaks. Reducing social vulnerability can decrease both human suffering and economic loss.  Vulnerable communities include, but are not limited to, immigrants and refugees, farmworkers, people with disabilities, seniors/older adults, individuals and families experiencing homelessness, areas with geographically isolated individuals or families with low broadband subscriptions, and households with limited English proficiency.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "156516",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FY 2025-26 Listos California Regional Grant (LM) \u2013 Coastal",
+      "GrantTitle": "FY 2025-26 Listos California Regional Grant (LM) \u2013 Coastal",
+      "Description": "The purpose of the LM Program is to support organizations within California\u2019s Coastal Region as defined in Section E.1. above, that serve multiple counties with equity priority factors located in areas at moderate to high risk of disaster. Nonprofits throughout the Coastal Region can work independently or subgrant with local nonprofits to provide disaster training and resources to diverse populations disproportionately impacted by emergencies. This work is intended to increase their communities\u2019 disaster preparedness, response, recovery, and mitigation capabilities.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "156501",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FY 2025-26 Listos California CERT Support Grant (LC) Program",
+      "GrantTitle": "FY 2025-26 Listos California CERT Support Grant (LC) Program",
       "Description": "The purpose of the LC Program is to provide funding to a fiscal administrator which will in coordination with Cal OES, support new and existing CERT programs to build their capacity to prepare vulnerable and underserved populations including, but not limited to: providing CERT training in languages other than English, providing CERT training to underserved populations and/or populations that are at high risk for disasters, providing accommodations for training participants that have access and functional needs, such as English as a Second Language (ESL) interpretation, and building capacity to respond to disasters.",
       "AgencyName": "",
       "Agency": "",
@@ -48,22 +160,6 @@
       "ApplicantType": "Nonprofit; Public Agency",
       "GrantInfoURL": "",
       "PortalID": "152454",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
-      "GrantTitle": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
-      "Description": "The California Department of Public Health, Injury and Violence Prevention Branch (CDPH/IVPB) anticipates releasing Request for Application (RFA): 25-10031, Local Training and Education Program for the Prevention of DV. CDPH/IVPB anticipates awarding up to one (1) local project with (3) three or more years of demonstrated experience and capabilities implementing local community organizing and/or public health policy, system, and environmental (PSE) change work.\u00a0  Funding will be available from State of California Penal Code Section 1203.097. The DVP Program anticipates funding one (1) project for a four-year contract term with an annual budget up to $292,800 for a total amount of $1,171,200 until June 30, 2030.  Funding for each fiscal year is subject to the annual appropriation of revenues in the California State Budget Act.\u00a0  Prospective Applicants are required to indicate their intent to submit an application. Failure to submit the mandatory Non\u00ad Binding Letter of Intent (LOI) will result in application rejection. The mandatory LOI is not binding, and prospective Applicants are not required to submit an application merely because an LOI is submitted. The LOI must be electronically submitted on the Applicant's letterhead and must be received by January 30, 2026 at 5:00 P.M. Pacific Standard Time (PST).* Submit the LOI to DVP.Program@cdph.ca.gov with subject line: \"DVP Program RFA: 25-10031 Mandatory Letter of Intent from [Agency Name].\"\u00a0  Electronic applications are required. All applications are due by February 19, 2026 at 5:00 P.M. PST.*Applications must be submitted electronically DVP.Program@cdph.ca.gov with subject line: \"DVP Program RFA: 25-10031 Application Submission by [Agency Name].\" The electronic date and timestamp will be used to verify on-time submission.  Applications received after the due date/time will not be reviewed. Written questions for this RFA will be accepted until January 15, 2026 at 5:00 P.M. PST* by email to DVP.Program@cdph.ca.gov, and responses will be posted to the DVP Program Website on January 27, 2026.*\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$1,171,200",
-      "Categories": "Disadvantaged Communities; Health & Human Services",
-      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "156183",
       "Source": "ca.gov"
     },
     {
@@ -211,22 +307,6 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "Legacy Disposal Site Abatement Grant Program",
-      "GrantTitle": "Legacy Disposal Site Abatement Grant Program",
-      "Description": "Public entities bear a financial responsibility for maintaining public landfill sites in compliance with state regulations and standards. The program provides financial assistance in the form of reimbursement grants up to $750,000 in matching funds for eligible costs to assist public entities requiring financial assistance, and committed to accelerating the pace of cleanup, restoring sites, and protecting public health and safety and the environment. Eligible projects include the remediation of disposal sites closed in accordance with the local laws at the time of the closure and prior to implementation of the State\u2019s current permitting and/or closure requirements for landfills and disposal sites.\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2025-12-06 12:00:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$1,500,000",
-      "Categories": "Disadvantaged Communities; Environment & Water; Health & Human Services; Housing, Community and Economic Development",
-      "ApplicantType": "Public Agency",
-      "GrantInfoURL": "",
-      "PortalID": "154182",
-      "Source": "ca.gov"
-    },
-    {
       "Title": "Illegal Disposal Site Abatement Grant Program",
       "GrantTitle": "Illegal Disposal Site Abatement Grant Program",
       "Description": "Widespread illegal dumping of solid waste adversely impacts Californians in many ways. Properties on which illegal dumping occurs lose economic value; create public health and safety and environmental problems; and degrade the enjoyment and pride in the affected communities. Abandoned, idled, or underutilized properties due to unauthorized dumping impact what were once the sources of economic benefits to a community. Many such properties have been abandoned or have owners who are unable or unwilling to pay the costs of cleanup.",
@@ -248,7 +328,7 @@
       "Description": "The California Department of Food and Agriculture (CDFA) is pleased to announce a competitive solicitation process to award grants under the Pet Lover\u2019s Spay and Neuter Grant Program. CDFA anticipates that up to $500,000 will be awarded to projects that help provide spay/neuter services to alleviate pet overpopulation. Individual grant award amounts can range from $25,000 to $50,000. CDFA reserves the right to offer an award amount different than the amount requested. Applicant organizations may only submit one grant proposal to the Pet Lover\u2019s Spay and Neuter Grant Program.  This program is funded by the following sources:\u2022 Pet Lover\u2019s License Plate Program: Fees associated with the original purchase,annual renewal, and conversion of Pet Lover\u2019s license plates from the CaliforniaDepartment of Motor Vehicles.\u2022 Prevention of Animal Homelessness and Cruelty Voluntary Tax ContributionFund: Contributions provided by California individuals in excess of their taxliability when filing their annual tax returns.  To be eligible, an organization must be a veterinary facility, operated by a licensee manager. Both the facility and the manager must be registered and in good standing with the Veterinary Medical Board. The veterinary facility must be operated by either:  - A California city or county animal control facility that provides spay and neuter services to the public; or,  - A California non-profit 501(c)(3) organization holding a municipal contract for animal control service; or,  - A California non-profit 501(c)(3) organization that offers low-cost or no-cost spay and neuter services and is registered and in good standing with the Secretary of State.  A city, county, or city and county animal control agency or nonprofit shelter holding a municipal contract that offers spay and neuter services for dogs and cats owned by individual members of the public is required to be current on its yearly rabies reporting requirements to the California Department of Public Health, Veterinary Public Health Section.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-01-05 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$500,000",
@@ -40380,22 +40460,43 @@
       "OpportunityID": "358911",
       "GrantInfoURL": "https://www.grants.gov/web/grants/view-opportunity.html?oppId=358911",
       "Source": "federal"
+    },
+    {
+      "Title": "NIH Director&rsquo;s Transformative Research Awards (R01 Clinical Trial Optional)",
+      "GrantTitle": "NIH Director&rsquo;s Transformative Research Awards (R01 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-26-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361084",
+      "GrantInfoURL": "https://www.grants.gov/web/grants/view-opportunity.html?oppId=361084",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2468,
+  "totalCount": 2474,
   "sources": {
     "ca": {
-      "count": 1801,
+      "count": 1807,
       "success": true
     },
     "federal": {
-      "count": 924,
+      "count": 925,
       "success": true
     }
   },
   "duplicates": {
-    "count": 257,
+    "count": 258,
     "examples": [
+      {
+        "original": "Legacy Disposal Site Abatement Grant Program",
+        "duplicate": "Legacy Disposal Site Abatement Grant Program"
+      },
       {
         "original": "Tire-Derived Aggregate Grant",
         "duplicate": "Tire-Derived Aggregate Grant"
@@ -40411,10 +40512,6 @@
       {
         "original": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 Prop 68 River San Fernando Valley \u2013 California",
         "duplicate": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 (Prop 68 River San Fernando Valley  \u2013 Severely Disadvantaged Community)"
-      },
-      {
-        "original": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 Prop 68 River San Fernando Valley \u2013 California",
-        "duplicate": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 Prop 68 River San Fernando Valley"
       }
     ]
   }
