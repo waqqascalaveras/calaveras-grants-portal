@@ -89,10 +89,17 @@ export const getUnifiedGrants = async (forceRefresh = false) => {
   // Try client cache first (fast!)
   if (!forceRefresh) {
     const clientCache = getClientCache();
-    if (clientCache) {
+    const cacheData = clientCache?.data;
+    const cacheGrants = cacheData?.grants;
+    const cacheOk = cacheData?.success === true && Array.isArray(cacheGrants) && cacheGrants.length > 0;
+    if (clientCache && cacheOk) {
       // eslint-disable-next-line no-console
       console.log(`[Unified Grants] Using client cache (${clientCache.age} minutes old)`);
-      return clientCache.data;
+      return cacheData;
+    }
+    if (clientCache && !cacheOk) {
+      // eslint-disable-next-line no-console
+      console.warn('[Unified Grants] Skipping client cache (empty or unsuccessful); fetching fresh');
     }
   }
   
