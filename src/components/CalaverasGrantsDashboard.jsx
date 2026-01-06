@@ -2,10 +2,11 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, matchesCBOType } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
-import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
+import { Search, Building2, AlertCircle, CheckCircle, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
 import DepartmentSelector from './DepartmentSelector';
 import SmartTooltip from './SmartTooltip';
+import Loading from './Loading/Loading';
 
 // Helper component for info tooltips - now using SmartTooltip with Floating UI
 const InfoTooltip = ({ text }) => (
@@ -42,18 +43,30 @@ const FormattedText = ({ text, query }) => {
   const paragraphs = text.split(/\r?\n+/).filter(p => p.trim());
   
   const renderParagraph = (para, pIdx) => {
-    // Parse HTML-like content (basic <a> tag support)
+    // Parse HTML-like content (basic <a> tag support) and auto-link raw URLs
     const aTagRegex = /<a\s+href=["']([^"']+)["'][^>]*>([^<]+)<\/a>/gi;
+    const urlRegex = /(https?:\/\/[^\s<]+)/gi;
     let match;
     const matches = [];
     let lastIndex = 0;
     
+    // Collect anchor tags
     while ((match = aTagRegex.exec(para)) !== null) {
       matches.push({
         start: match.index,
         end: aTagRegex.lastIndex,
         url: match[1],
         text: match[2]
+      });
+    }
+
+    // Collect bare URLs
+    while ((match = urlRegex.exec(para)) !== null) {
+      matches.push({
+        start: match.index,
+        end: urlRegex.lastIndex,
+        url: match[1],
+        text: match[1]
       });
     }
     
@@ -591,6 +604,18 @@ const CalaverasGrantsDashboard = () => {
   const buildGrantLink = (grant) => {
     if (!grant) return null;
     if (grant.GrantInfoURL) return grant.GrantInfoURL;
+    if (grant.URL) return grant.URL;
+    if (grant.Source === 'ca.gov' || grant._source === 'ca') {
+      // Attempt to build grants.ca.gov URL from title slug if PortalID missing
+      const slug = (grant.Title || grant.GrantTitle || '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/\s+/g, '-');
+      if (slug) {
+        return `https://www.grants.ca.gov/grants/${slug}/`;
+      }
+    }
     if (grant._source === 'grants.gov') {
       // Use OpportunityNumber for the correct Grants.gov URL format
       if (grant.OpportunityNumber) {
@@ -649,10 +674,7 @@ const CalaverasGrantsDashboard = () => {
   if (loading) {
     return (
       <div className="dashboard">
-        <div className="loading-container">
-          <Loader className="spinner" size={48} />
-          <p>Loading California grant opportunities...</p>
-        </div>
+        <Loading />
       </div>
     );
   }

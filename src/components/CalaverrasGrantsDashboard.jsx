@@ -2,9 +2,18 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
-import { Search, Building2, AlertCircle, CheckCircle, Loader, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart } from 'lucide-react';
+import { Search, Building2, AlertCircle, CheckCircle, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
 import UserTypeSelector from './UserTypeSelector';
 import DepartmentSelector from './DepartmentSelector';
+import Loading from './Loading/Loading';
+
+// Helper component for info tooltips
+const InfoTooltip = ({ text }) => (
+  <span className="info-tooltip-wrapper">
+    <HelpCircle size={14} className="info-icon" />
+    <span className="info-tooltip-text">{text}</span>
+  </span>
+);
 
 // Helper function to highlight search terms in text
 const HighlightedText = ({ text, query }) => {
@@ -26,7 +35,7 @@ const HighlightedText = ({ text, query }) => {
   );
 };
 
-const CalaverrasGrantsDashboard = () => {
+const CalaverasGrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorInfo, setErrorInfo] = useState(null);
@@ -51,6 +60,37 @@ const CalaverrasGrantsDashboard = () => {
   const getGrantId = useCallback((grant) => {
     return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
+
+  // Normalize grant record fields with fallbacks
+  const normalizeGrantRecord = useCallback((grant) => {
+    const agencyFallback = grant.AgencyName
+      || grant.Agency
+      || grant.Grantor
+      || grant.Department
+      || grant.FundingAgency
+      || grant.OrganizationName
+      || grant.AwardingAgency;
+    const deadlineFallback = grant.ApplicationDeadline
+      || grant.Deadline
+      || grant.CloseDate
+      || grant.DueDate
+      || grant.SubmissionDeadline
+      || grant.SubmissionCloseDate
+      || grant.SubmissionDueDate
+      || grant.EndDate;
+    const applicantTypeFallback = grant.ApplicantType
+      || grant.EligibleApplicants
+      || grant.Eligibility
+      || grant.EligibleApplicantsText;
+
+    return {
+      ...grant,
+      AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
+      ApplicationDeadline: deadlineFallback || grant.ApplicationDeadline || null,
+      ApplicantType: applicantTypeFallback || grant.ApplicantType || ''
+    };
+  }, []);
+
   // Fetch unified grants (CA + Federal, deduplicated, cached)
   const fetchGrants = useCallback(async (forceRefresh = false) => {
     try {
@@ -286,35 +326,6 @@ const CalaverrasGrantsDashboard = () => {
     return { date: parsed, label: null };
   }, []);
 
-  const normalizeGrantRecord = useCallback((grant) => {
-    const agencyFallback = grant.AgencyName
-      || grant.Agency
-      || grant.Grantor
-      || grant.Department
-      || grant.FundingAgency
-      || grant.OrganizationName
-      || grant.AwardingAgency;
-    const deadlineFallback = grant.ApplicationDeadline
-      || grant.Deadline
-      || grant.CloseDate
-      || grant.DueDate
-      || grant.SubmissionDeadline
-      || grant.SubmissionCloseDate
-      || grant.SubmissionDueDate
-      || grant.EndDate;
-    const applicantTypeFallback = grant.ApplicantType
-      || grant.EligibleApplicants
-      || grant.Eligibility
-      || grant.EligibleApplicantsText;
-
-    return {
-      ...grant,
-      AgencyName: agencyFallback || grant.AgencyName || 'Agency TBD',
-      ApplicationDeadline: deadlineFallback || grant.ApplicationDeadline || null,
-      ApplicantType: applicantTypeFallback || grant.ApplicantType || ''
-    };
-  }, []);
-
   // Check if grant matches department (for visual emphasis)
   const grantsWithEmphasis = useMemo(() => {
     const now = new Date();
@@ -495,10 +506,7 @@ const CalaverrasGrantsDashboard = () => {
   if (loading) {
     return (
       <div className="dashboard">
-        <div className="loading-container">
-          <Loader className="spinner" size={48} />
-          <p>Loading California grant opportunities...</p>
-        </div>
+        <Loading />
       </div>
     );
   }
@@ -750,19 +758,34 @@ const CalaverrasGrantsDashboard = () => {
             <thead>
               <tr>
                 <th onClick={() => handleSort('title')} className="sortable">
-                  Grant Title {sortColumn === 'title' && (sortDirection === 'asc' ? '▲' : '▼')}
+                  <span className="th-content">
+                    Grant Title {sortColumn === 'title' && (sortDirection === 'asc' ? '▲' : '▼')}
+                    <InfoTooltip text="The title of the grant opportunity." />
+                  </span>
                 </th>
                 <th onClick={() => handleSort('amount')} className="sortable">
-                  <DollarSign size={14} /> Amount {sortColumn === 'amount' && (sortDirection === 'asc' ? '▲' : '▼')}
+                  <span className="th-content">
+                    <DollarSign size={14} /> Amount {sortColumn === 'amount' && (sortDirection === 'asc' ? '▲' : '▼')}
+                    <InfoTooltip text="Total Estimated Available Funding: The total projected dollar amount of the grant." />
+                  </span>
                 </th>
                 <th onClick={() => handleSort('deadline')} className="sortable">
-                  <Calendar size={14} /> Deadline {sortColumn === 'deadline' && (sortDirection === 'asc' ? '▲' : '▼')}
+                  <span className="th-content">
+                    <Calendar size={14} /> Deadline {sortColumn === 'deadline' && (sortDirection === 'asc' ? '▲' : '▼')}
+                    <InfoTooltip text="Application Deadline: The date by which all applications must be submitted to the grantmaker." />
+                  </span>
                 </th>
                 <th onClick={() => handleSort('agency')} className="sortable">
-                  <Building2 size={14} /> Agency {sortColumn === 'agency' && (sortDirection === 'asc' ? '▲' : '▼')}
+                  <span className="th-content">
+                    <Building2 size={14} /> Agency {sortColumn === 'agency' && (sortDirection === 'asc' ? '▲' : '▼')}
+                    <InfoTooltip text="The grantmaking agency or department administering the grant." />
+                  </span>
                 </th>
                 <th onClick={() => handleSort('status')} className="sortable">
-                  <CheckCircle size={14} /> Status {sortColumn === 'status' && (sortDirection === 'asc' ? '▲' : '▼')}
+                  <span className="th-content">
+                    <CheckCircle size={14} /> Status {sortColumn === 'status' && (sortDirection === 'asc' ? '▲' : '▼')}
+                    <InfoTooltip text="Forecasted: Planned but not yet open. Active/Open: Currently accepting applications. Closed: No longer accepting applications." />
+                  </span>
                 </th>
                 <th className="save-col">Save</th>
               </tr>
@@ -912,8 +935,10 @@ const CalaverrasGrantsDashboard = () => {
               </div>
 
               <div className="detail-inline-grid">
-                <div className="inline-item" title="Estimated Awards">
-                  <span className="inline-label">Awards</span>
+                <div className="inline-item" title="Expected Number of Awards">
+                  <span className="inline-label">
+                    Awards <InfoTooltip text="Expected Number of Awards: A single grant may represent one or many awards. Some grantmakers determine the exact number in advance, while others indicate a range." />
+                  </span>
                   <span className="inline-value">{selectedGrant.EstAwards || 'N/A'}</span>
                 </div>
                 {selectedGrant.PostedDate && (
@@ -923,11 +948,15 @@ const CalaverrasGrantsDashboard = () => {
                   </div>
                 )}
                 <div className="inline-item" title="Categories">
-                  <span className="inline-label">Categories</span>
+                  <span className="inline-label">
+                    Categories <InfoTooltip text="The topic areas or sectors this grant addresses (e.g., Education, Health, Environment)." />
+                  </span>
                   <span className="inline-value">{selectedGrant.Categories || 'N/A'}</span>
                 </div>
-                <div className="inline-item" title="Applicant Type">
-                  <span className="inline-label">Applicants</span>
+                <div className="inline-item" title="Eligible Applicants">
+                  <span className="inline-label">
+                    Applicants <InfoTooltip text="Eligible Applicants: Who can apply for this grant, including nonprofit organizations, public agencies, businesses, individuals, tribal governments, or other legal entities." />
+                  </span>
                   <span className="inline-value">{selectedGrant.ApplicantType || 'N/A'}</span>
                 </div>
               </div>
@@ -936,13 +965,17 @@ const CalaverrasGrantsDashboard = () => {
                 <div className="detail-text-stack">
                   {selectedGrant.Purpose && (
                     <div className="text-section" title="Purpose">
-                      <div className="text-heading">Purpose</div>
+                      <div className="text-heading">
+                        Purpose <InfoTooltip text="The grant purpose answers why the grant exists—what the grantmaker intends to achieve, its goals and desired outcomes." />
+                      </div>
                       <p><HighlightedText text={selectedGrant.Purpose} query={searchQuery} /></p>
                     </div>
                   )}
                   {selectedGrant.Description && (
                     <div className="text-section" title="Description">
-                      <div className="text-heading">Description</div>
+                      <div className="text-heading">
+                        Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
+                      </div>
                       <p><HighlightedText text={selectedGrant.Description} query={searchQuery} /></p>
                     </div>
                   )}
@@ -1354,6 +1387,11 @@ const CalaverrasGrantsDashboard = () => {
           letter-spacing: 0.5px;
           white-space: nowrap;
         }
+        .grants-table th .th-content {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
         .grants-table th.save-col {
           width: 60px;
           text-align: center;
@@ -1639,6 +1677,9 @@ const CalaverrasGrantsDashboard = () => {
           text-transform: uppercase;
           letter-spacing: 0.3px;
           color: #6c757d;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
         }
         .inline-value {
           font-size: 0.9rem;
@@ -1662,6 +1703,9 @@ const CalaverrasGrantsDashboard = () => {
           font-size: 0.85rem;
           font-weight: 700;
           color: #0d1b2a;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
         }
         .text-section p {
           margin: 0;
@@ -1721,6 +1765,61 @@ const CalaverrasGrantsDashboard = () => {
           border-top: 2px solid #1b4965;
         }
 
+        /* Info Tooltips */
+        .info-tooltip-wrapper {
+          position: relative;
+          display: inline-flex;
+          align-items: center;
+          cursor: help;
+        }
+        .info-icon {
+          color: #6c757d;
+          opacity: 0.6;
+          transition: opacity 0.15s ease;
+        }
+        .info-tooltip-wrapper:hover .info-icon {
+          opacity: 1;
+          color: #1b4965;
+        }
+        .info-tooltip-text {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          bottom: 125%;
+          left: 50%;
+          transform: translateX(-50%);
+          background: #0d1b2a;
+          color: #ffffff;
+          padding: 0.5rem 0.75rem;
+          border-radius: 4px;
+          font-size: 0.75rem;
+          line-height: 1.4;
+          white-space: normal;
+          width: 240px;
+          text-align: left;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          z-index: 1000;
+          pointer-events: none;
+          transition: opacity 0.2s ease, visibility 0.2s ease;
+          border: 1px solid #1b4965;
+          text-transform: none;
+          letter-spacing: normal;
+          font-weight: 400;
+        }
+        .info-tooltip-text::after {
+          content: '';
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          border: 6px solid transparent;
+          border-top-color: #0d1b2a;
+        }
+        .info-tooltip-wrapper:hover .info-tooltip-text {
+          visibility: visible;
+          opacity: 1;
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
           .main-content {
@@ -1742,4 +1841,4 @@ const CalaverrasGrantsDashboard = () => {
   );
 };
 
-export default CalaverrasGrantsDashboard;
+export default CalaverasGrantsDashboard;
