@@ -834,7 +834,7 @@ const CalaverasGrantsDashboard = () => {
           <div className="timeline-meta" aria-live="polite">
             <div className="source-filters" role="group" aria-label="Source filters">
               <button
-                className={`source-filter-btn ${sourceFilters.ca ? 'active' : ''}`}
+                className={`source-filter-btn ${sourceFilters.ca ? 'active ca' : ''}`}
                 onClick={() => setSourceFilters(prev => ({ ...prev, ca: !prev.ca }))}
                 title="Toggle California grants"
                 type="button"
@@ -843,7 +843,7 @@ const CalaverasGrantsDashboard = () => {
               </button>
               <span className="source-separator">•</span>
               <button
-                className={`source-filter-btn ${sourceFilters.federal ? 'active' : ''}`}
+                className={`source-filter-btn ${sourceFilters.federal ? 'active federal' : ''}`}
                 onClick={() => setSourceFilters(prev => ({ ...prev, federal: !prev.federal }))}
                 title="Toggle Federal grants"
                 type="button"
@@ -1062,12 +1062,9 @@ const CalaverasGrantsDashboard = () => {
                     >
                       <td className="grant-title-cell">
                         <div className="title-text">
-                          {grant._source === 'grants.gov' && (
-                            <span className="source-badge federal">Federal</span>
-                          )}
-                          {grant._source === 'ca.gov' && (
-                            <span className="source-badge state">CA</span>
-                          )}
+                          <span className={`title-prefix ${grant._source === 'grants.gov' ? 'federal' : 'state'}`}>
+                            {grant._source === 'grants.gov' ? '[FED]' : '[CA]'}
+                          </span>
                           <span className="title-line">{grant.Title || grant.GrantTitle || 'Untitled Grant'}</span>
                         </div>
                         <div className="categories-text">{grant.Categories}</div>
@@ -1500,23 +1497,28 @@ const CalaverasGrantsDashboard = () => {
           gap: 6px;
         }
         .source-filter-btn {
-          border: none;
-          background: #e9ecef;
-          color: #495057;
-          padding: 0.25rem 0.65rem;
-          font-size: 0.75rem;
-          font-weight: 600;
+          border: 1px solid transparent;
+          background: #f4f6f8;
+          color: #334155;
+          padding: 0.28rem 0.75rem;
+          font-size: 0.78rem;
+          font-weight: 700;
           cursor: pointer;
           transition: all 0.2s ease;
-          border: 1px solid transparent;
+          border-radius: 4px;
         }
         .source-filter-btn:hover {
-          background: #dee2e6;
+          background: #e9edf2;
         }
-        .source-filter-btn.active {
-          background: #0d1b2a;
-          color: #ffffff;
-          border-color: #0d1b2a;
+        .source-filter-btn.active.ca {
+          background: #fde8ef;
+          color: #8b1538;
+          border-color: #f0b6cb;
+        }
+        .source-filter-btn.active.federal {
+          background: #e6f0ff;
+          color: #0b3d91;
+          border-color: #b6cffc;
         }
         .source-separator {
           color: #adb5bd;
@@ -1778,24 +1780,28 @@ const CalaverasGrantsDashboard = () => {
           font-size: 0.75rem;
           color: #6c757d;
         }
-        .source-badge {
-          display: inline-block;
-          padding: 0.15rem 0.5rem;
-          font-size: 0.65rem;
-          font-weight: 700;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          border-radius: 2px;
+        .title-prefix {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 52px;
+          padding: 0.15rem 0.4rem;
+          margin-right: 0.45rem;
+          font-size: 0.78rem;
+          font-weight: 800;
+          letter-spacing: 0.4px;
+          border: 1px solid transparent;
+          border-radius: 3px;
         }
-        .source-badge.federal {
-          background: #1b4965;
-          color: white;
-          border: 1px solid #0d1b2a;
+        .title-prefix.federal {
+          background: #e6f0ff;
+          color: #0b3d91;
+          border-color: #b6cffc;
         }
-        .source-badge.state {
-          background: #8b1538;
-          color: white;
-          border: 1px solid #6d0f2a;
+        .title-prefix.state {
+          background: #fde8ef;
+          color: #8b1538;
+          border-color: #f5c2d6;
         }
         .deadline-warning {
           margin-left: 0.5rem;
