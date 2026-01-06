@@ -166,7 +166,7 @@ const CalaverasGrantsDashboard = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
-  const [statusFilter, setStatusFilter] = useState('all');
+  const [statusFilter, setStatusFilter] = useState({ open: false, forecasted: false, closed: false });
   const [favorites, setFavorites] = useState([]);
   const [selectedGrant, setSelectedGrant] = useState(null);
   const [sortColumn, setSortColumn] = useState(null);
@@ -498,16 +498,15 @@ const CalaverasGrantsDashboard = () => {
     if (baseFiltered.length === 0) return [];
     let result = baseFiltered;
     
-    // Apply status filter
-    if (statusFilter !== 'all') {
+    // Apply status filter (multi-select)
+    const activeStatuses = Object.entries(statusFilter).filter(([k, v]) => v).map(([k]) => k);
+    if (activeStatuses.length > 0) {
       result = result.filter(grant => {
-        const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
-        if (statusFilter === 'open') {
-          return computedStatus.includes('open');
-        } else if (statusFilter === 'forecasted') {
-          return computedStatus.includes('forecast');
-        }
-        return true;
+        const s = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
+        const matchOpen = activeStatuses.includes('open') && s.includes('open');
+        const matchForecast = activeStatuses.includes('forecasted') && s.includes('forecast');
+        const matchClosed = activeStatuses.includes('closed') && s.includes('closed');
+        return matchOpen || matchForecast || matchClosed;
       });
     }
     
@@ -521,7 +520,7 @@ const CalaverasGrantsDashboard = () => {
 
   // Counts for status pills - use computed status from getStatusBadge
   const statusCounts = useMemo(() => {
-    const counts = { open: 0, forecasted: 0 };
+    const counts = { open: 0, forecasted: 0, closed: 0 };
     baseFiltered.forEach((grant) => {
       const computedStatus = getStatusBadge(grant.Status, grant.ApplicationDeadline).text.toLowerCase();
       if (computedStatus.includes('forecast')) {
@@ -529,6 +528,9 @@ const CalaverasGrantsDashboard = () => {
       }
       if (computedStatus.includes('open')) {
         counts.open += 1;
+      }
+      if (computedStatus.includes('closed')) {
+        counts.closed += 1;
       }
     });
     return counts;
@@ -887,8 +889,33 @@ const CalaverasGrantsDashboard = () => {
           </span>
           <span className="summary-separator">•</span>
           <span className="summary-item">
-            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {statusFilter}
+            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {(() => { const act = Object.entries(statusFilter).filter(([k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
           </span>
+        </div>
+        {/* Active filter chips in summary */}
+        <div className="summary-chips">
+          {searchQuery && (
+            <span className="summary-chip" title="Active search filter">🔍 "{searchQuery}"</span>
+          )}
+          {userType !== 'all' && (
+            <span className="summary-chip" title="Active user type filter">👤 {userType === 'county' ? 'County' : 'CBO'}</span>
+          )}
+          {selectedDepartment !== 'all' && (
+            <span className="summary-chip" title="Active department filter">🏛️ {selectedDepartment}</span>
+          )}
+          {Object.entries(statusFilter).filter(([k,v]) => v).map(([k]) => (
+            <span key={k} className="summary-chip" title={`Active ${k} status filter`}>
+              {k === 'open' ? '✅' : k === 'forecasted' ? '📅' : '🔒'} {k.charAt(0).toUpperCase() + k.slice(1)}
+            </span>
+          ))}
+          {favoriteFilter === 'saved' && (
+            <span className="summary-chip" title="Showing saved grants only">❤️ Saved</span>
+          )}
+          {(sourceFilters.ca === false || sourceFilters.federal === false) && (
+            <span className="summary-chip" title="Source filter active">
+              {sourceFilters.ca && !sourceFilters.federal ? '🏛️ CA only' : (!sourceFilters.ca && sourceFilters.federal ? '🇺🇸 Federal only' : '⚙️ Custom sources')}
+            </span>
+          )}
         </div>
       </div>
 
@@ -924,12 +951,13 @@ const CalaverasGrantsDashboard = () => {
           <div className="status-toggles" role="group" aria-label="Status and favorites filter">
             {[
               { key: 'open', label: 'Open' },
-              { key: 'forecasted', label: 'Forecasted' }
+              { key: 'forecasted', label: 'Forecasted' },
+              { key: 'closed', label: 'Closed' }
             ].map(item => (
               <button
                 key={item.key}
-                className={`status-pill ${statusFilter === item.key ? 'active' : ''}`}
-                onClick={() => setStatusFilter(statusFilter === item.key ? 'all' : item.key)}
+                className={`status-pill ${statusFilter[item.key] ? 'active' : ''}`}
+                onClick={() => setStatusFilter(prev => ({ ...prev, [item.key]: !prev[item.key] }))}
                 title={`${item.label} (${statusCounts[item.key] || 0})`}
                 type="button"
               >
@@ -940,7 +968,17 @@ const CalaverasGrantsDashboard = () => {
             ))}
             <button
               className={`status-pill ${favoriteFilter === 'saved' ? 'active' : ''}`}
-              onClick={() => setFavoriteFilter(favoriteFilter === 'saved' ? 'all' : 'saved')}
+              onClick={() => {
+                const willActivate = favoriteFilter !== 'saved';
+                setFavoriteFilter(willActivate ? 'saved' : 'all');
+                if (willActivate) {
+                  setStatusFilter({ open: false, forecasted: false, closed: false });
+                  setUserType('all');
+                  setSelectedDepartment('all');
+                  setSearchQuery('');
+                  setSourceFilters({ ca: true, federal: true });
+                }
+              }}
               title={`Saved Grants (${favorites.length})`}
               type="button"
             >
@@ -948,6 +986,40 @@ const CalaverasGrantsDashboard = () => {
               <span>Saved</span>
               <span className="pill-count">{favorites.length}</span>
             </button>
+          </div>
+
+          {/* Active filter chips */}
+          <div className="active-filters" aria-live="polite">
+            {searchQuery && (
+              <button className="filter-chip" onClick={() => setSearchQuery('')} title="Remove search filter" type="button">
+                Search: "{searchQuery}" <X size={12} />
+              </button>
+            )}
+            {userType !== 'all' && (
+              <button className="filter-chip" onClick={() => setUserType('all')} title="Remove user filter" type="button">
+                User: {userType === 'county' ? 'County Dept' : 'CBO'} <X size={12} />
+              </button>
+            )}
+            {selectedDepartment !== 'all' && (
+              <button className="filter-chip" onClick={() => setSelectedDepartment('all')} title="Remove department filter" type="button">
+                Dept: {selectedDepartment} <X size={12} />
+              </button>
+            )}
+            {Object.entries(statusFilter).filter(([k,v]) => v).map(([k]) => (
+              <button key={k} className="filter-chip" onClick={() => setStatusFilter(prev => ({ ...prev, [k]: false }))} title={`Remove ${k} filter`} type="button">
+                {k.charAt(0).toUpperCase() + k.slice(1)} <X size={12} />
+              </button>
+            ))}
+            {favoriteFilter === 'saved' && (
+              <button className="filter-chip" onClick={() => setFavoriteFilter('all')} title="Show all grants" type="button">
+                Saved <X size={12} />
+              </button>
+            )}
+            {(sourceFilters.ca === false || sourceFilters.federal === false) && (
+              <button className="filter-chip" onClick={() => setSourceFilters({ ca: true, federal: true })} title="Reset sources" type="button">
+                Sources: {sourceFilters.ca && !sourceFilters.federal ? 'CA only' : (!sourceFilters.ca && sourceFilters.federal ? 'Federal only' : 'Custom')} <X size={12} />
+              </button>
+            )}
           </div>
         </div>
         <div className="timeline-inline">
@@ -1140,7 +1212,7 @@ const CalaverasGrantsDashboard = () => {
                       <div style={{ fontSize: '0.85rem', color: '#6c757d' }}>
                         Total grants loaded: {grants.length} • 
                         Active filters: {selectedDepartment !== 'all' ? `Department: ${departments[selectedDepartment]?.name}` : 'All departments'} • 
-                        Status: {statusFilter}
+                        Status: {(() => { const act = Object.entries(statusFilter).filter(([k,v])=>v).map(([k])=>k); return act.length? act.map(s=>s.charAt(0).toUpperCase()+s.slice(1)).join(' + ') : 'All'; })()}
                         {searchQuery && ` • Search: "${searchQuery}"`}
                       </div>
                       {grants.length === 0 && (
@@ -1186,7 +1258,7 @@ const CalaverasGrantsDashboard = () => {
                       <td className="amount-cell">
                         <div className="amount-primary">{formatCurrency(grant.EstAvailFunds)}</div>
                         {(grant.AwardFloor || grant.AwardCeiling) && (
-                          <div className="amount-range" title="Award range">
+                          <div className="amount-range" title="Individual award range per applicant">
                             {grant.AwardFloor ? formatCurrency(String(grant.AwardFloor)) : 'Min N/A'}
                             <span className="amount-sep">–</span>
                             {grant.AwardCeiling ? formatCurrency(String(grant.AwardCeiling)) : 'Max N/A'}
@@ -1431,12 +1503,29 @@ const CalaverasGrantsDashboard = () => {
           gap: 0.5rem;
           color: #333;
           font-size: 0.9rem;
+          margin-bottom: 0.35rem;
         }
         .summary-item strong {
           color: #0d1b2a;
         }
         .summary-separator {
           color: #6c757d;
+        }
+        .summary-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+        }
+        .summary-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 4px;
+          padding: 0.2rem 0.5rem;
+          background: rgba(139, 21, 56, 0.15);
+          border: 1px solid rgba(139, 21, 56, 0.3);
+          border-radius: 999px;
+          font-size: 0.75rem;
+          color: #333;
         }
         .header-left {
           display: flex;
@@ -1616,6 +1705,28 @@ const CalaverasGrantsDashboard = () => {
           line-height: 1.2;
           min-width: 20px;
           text-align: center;
+        }
+        .active-filters {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.35rem;
+          margin-top: 0.25rem;
+        }
+        .filter-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          padding: 0.25rem 0.6rem;
+          border: 1px solid #d1d5db;
+          background: #f8f9fa;
+          color: #212529;
+          border-radius: 999px;
+          cursor: pointer;
+          font-size: 0.8rem;
+        }
+        .filter-chip:hover {
+          border-color: #1b4965;
+          color: #1b4965;
         }
 
         /* Timeline */
@@ -1955,21 +2066,25 @@ const CalaverasGrantsDashboard = () => {
           font-weight: 600;
           color: #1b4965;
           white-space: nowrap;
+        }
         .amount-primary {
           font-size: 0.95rem;
         }
         .amount-range {
-          margin-top: 2px;
-          font-size: 0.8rem;
+          margin-top: 3px;
+          font-size: 0.76rem;
           font-weight: 500;
+          color: #6c757d;
+          display: block;
+        }
+        .amount-range::before {
+          content: "Per applicant: ";
+          font-weight: 600;
           color: #495057;
-          display: inline-flex;
-          align-items: center;
-          gap: 4px;
         }
         .amount-sep {
           color: #adb5bd;
-        }
+          margin: 0 2px;
         }
         .deadline-cell {
           white-space: nowrap;

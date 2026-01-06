@@ -20,11 +20,15 @@ export const isEligibleForCounty = (grant) => {
   const restrictedTypes = [
     'individual only',
     'business only',
-    'nonprofit only'
+    'nonprofit only',
+    'nonprofit'  // Also exclude plain "nonprofit" (not just "nonprofit only")
   ];
   const hasEligibleType = eligibleTypes.some(type => applicantType.includes(type));
   const hasRestrictedType = restrictedTypes.some(type => applicantType.includes(type));
-  return hasEligibleType || (!hasRestrictedType && applicantType.length > 0);
+  
+  // Only return true if explicitly eligible, or if no restricted types AND has content
+  // Changed logic: if it contains "nonprofit" anywhere, exclude it for county
+  return hasEligibleType && !hasRestrictedType;
 };
 
 /**

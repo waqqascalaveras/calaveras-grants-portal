@@ -17,20 +17,21 @@ export default function DepartmentSelector({ userType, subType, onSubTypeSelect 
     // CBO dropdown with organization types
     return (
       <div className="filter-group" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-        <Building2 size={16} />
+        <Building2 size={16} style={{ color: '#1b4965' }} />
         <select
           value={subType || "all"}
           onChange={(e) => onSubTypeSelect(e.target.value)}
           title="Organization type"
           style={{
             padding: "0.5rem 1rem",
-            border: "2px solid var(--stone-gray)",
+            border: "1px solid #d1d5db",
             borderRadius: 4,
-            background: "var(--cream)",
-            color: "var(--forest-green)",
-            fontSize: 14,
+            background: "#ffffff",
+            color: "#0d1b2a",
+            fontSize: "0.85rem",
             fontWeight: 500,
-            cursor: "pointer"
+            cursor: "pointer",
+            outline: "none"
           }}
         >
           <option value="all">All Organizations</option>
@@ -47,21 +48,22 @@ export default function DepartmentSelector({ userType, subType, onSubTypeSelect 
   // County dropdown with grouped departments
   return (
     <div className="filter-group" style={{ display: "flex", alignItems: "center", gap: 8 }}>
-      <Building2 size={16} />
+      <Building2 size={16} style={{ color: '#1b4965' }} />
       <select
         value={subType || "all"}
         onChange={(e) => onSubTypeSelect(e.target.value)}
         title="County department"
         style={{
           padding: "0.5rem 1rem",
-          border: "2px solid var(--stone-gray)",
+          border: "1px solid #d1d5db",
           borderRadius: 4,
-          background: "var(--cream)",
-          color: "var(--forest-green)",
-          fontSize: 14,
+          background: "#ffffff",
+          color: "#0d1b2a",
+          fontSize: "0.85rem",
           fontWeight: 500,
           cursor: "pointer",
-          minWidth: 200
+          minWidth: 200,
+          outline: "none"
         }}
       >
         <option value="all">All Departments</option>
