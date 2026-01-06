@@ -406,10 +406,8 @@ const CalaverasGrantsDashboard = () => {
       const hasApplicantType = !!(grant.ApplicantType && grant.ApplicantType.trim());
       if (userType === 'county') {
         if (!isEligibleForCounty(grant)) return false;
-        if (!hasApplicantType) return false;
       } else if (userType === 'cbo') {
         if (!isEligibleForCBO(grant)) return false;
-        if (!hasApplicantType) return false;
       }
       if (userType === 'county' && selectedDepartment !== 'all') {
         if (!matchesDepartment(grant, selectedDepartment, departments)) return false;
@@ -808,6 +806,34 @@ const CalaverasGrantsDashboard = () => {
           </div>
         </div>
       </header>
+      {/* Persistent Summary Bar */}
+      <div className="summary-bar" aria-live="polite">
+        <div className="summary-content">
+          <span className="summary-item">
+            <strong>Total:</strong> {lastMeta?.totalCount ?? grants.length}
+          </span>
+          <span className="summary-separator">•</span>
+          <span className="summary-item">
+            <strong>Showing:</strong> {filteredGrants.length}
+          </span>
+          <span className="summary-separator">•</span>
+          <span className="summary-item">
+            <strong>Open:</strong> {statusCounts.open}
+          </span>
+          <span className="summary-separator">•</span>
+          <span className="summary-item">
+            <strong>Forecasted:</strong> {statusCounts.forecasted}
+          </span>
+          <span className="summary-separator">•</span>
+          <span className="summary-item">
+            <strong>Saved:</strong> {favorites.length}
+          </span>
+          <span className="summary-separator">•</span>
+          <span className="summary-item">
+            <strong>Filters:</strong> {userType === 'county' ? 'County Dept' : userType === 'cbo' ? 'CBO' : 'All users'}, {selectedDepartment === 'all' ? 'All departments' : selectedDepartment}, Status: {statusFilter}
+          </span>
+        </div>
+      </div>
 
       {/* Sticky Filter Bar */}
       <div className="filter-bar">
@@ -1342,6 +1368,25 @@ const CalaverasGrantsDashboard = () => {
           display: flex;
           align-items: center;
           gap: 0.75rem;
+        }
+        .summary-bar {
+          background: #e9ecef;
+          border-bottom: 1px solid #d1d5db;
+          padding: 0.5rem 2rem;
+        }
+        .summary-content {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.5rem;
+          color: #333;
+          font-size: 0.9rem;
+        }
+        .summary-item strong {
+          color: #0d1b2a;
+        }
+        .summary-separator {
+          color: #6c757d;
         }
         .header-left {
           display: flex;
