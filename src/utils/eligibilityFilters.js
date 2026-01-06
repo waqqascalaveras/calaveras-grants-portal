@@ -93,11 +93,11 @@ export const isRecentlyClosed = (grant, daysThreshold = 30) => {
  * Match grant to CBO organization type
  * All CBO subtypes see ALL nonprofit-eligible grants
  * Subtypes are for user identification only, not filtering
- * @param {Object} grant - Grant record
- * @param {string} organizationType - Organization type key (nonprofit, faith_based, etc.)
+ * @param {Object} _grant - Grant record
+ * @param {string} _organizationType - Organization type key (nonprofit, faith_based, etc.)
  * @returns {boolean} - True if grant matches organization type (always true for CBOs)
  */
-export const matchesCBOType = (grant, organizationType) => {
+export const matchesCBOType = (_grant, _organizationType) => {
   // All CBO subtypes see all CBO-eligible grants
   // The dropdown is purely for user identification
   return true;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, matchesCBOType, calculateCBORelevance } from '../utils/eligibilityFilters';
+import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, calculateCBORelevance } from '../utils/eligibilityFilters';
 import { getUnifiedGrants, getCacheInfo } from '../services/unifiedGrantService';
 import { departments } from '../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
@@ -205,14 +205,17 @@ const CalaverasGrantsDashboard = () => {
         const { data, timestamp } = JSON.parse(cached);
         const age = Date.now() - timestamp;
         if (age < 24 * 60 * 60 * 1000) { // 24 hours
+          // eslint-disable-next-line no-console
           console.log('Using cached federal grant details');
           return data;
         }
       } catch (e) {
+        // eslint-disable-next-line no-console
         console.warn('Failed to parse cached grant details', e);
       }
     }
-
+// eslint-disable-next-line no-console
+    
     // Fetch from API
     console.log(`Fetching details for federal grant ${oppId}...`);
     setLoadingGrantDetails(true);
@@ -250,9 +253,11 @@ const CalaverasGrantsDashboard = () => {
         data: details,
         timestamp: Date.now()
       }));
-
+// eslint-disable-next-line no-console
       console.log('Successfully fetched federal grant details');
       return details;
+    } catch (error) {
+      // eslint-disable-next-line no-console
     } catch (error) {
       console.error('Failed to fetch federal grant details:', error);
       return null;
