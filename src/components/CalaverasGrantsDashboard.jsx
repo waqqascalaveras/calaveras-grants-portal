@@ -1016,113 +1016,120 @@ const CalaverasGrantsDashboard = () => {
             <strong>Showing:</strong> {filteredGrants.length}
           </span>
         </div>
+
+        {/* Active filter chips - consolidated in one place */}
+        <div className="active-filters" aria-live="polite" style={{ marginTop: '0.75rem', display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+          {searchQuery && (
+            <button className="filter-chip" onClick={() => setSearchQuery('')} title="Remove search filter" type="button">
+              Search: "{searchQuery}" <X size={12} />
+            </button>
+          )}
+          {userType !== 'all' && (
+            <button className="filter-chip" onClick={() => setUserType('all')} title="Remove user filter" type="button">
+              User: {userType === 'county' ? 'County Dept' : 'CBO'} <X size={12} />
+            </button>
+          )}
+          {selectedDepartment !== 'all' && (
+            <button className="filter-chip" onClick={() => setSelectedDepartment('all')} title="Remove department filter" type="button">
+              Dept: {selectedDepartment} <X size={12} />
+            </button>
+          )}
+          {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
+            <button key={k} className="filter-chip" onClick={() => setStatusFilter(prev => ({ ...prev, [k]: false }))} title={`Remove ${k} filter`} type="button">
+              {k.charAt(0).toUpperCase() + k.slice(1)} <X size={12} />
+            </button>
+          ))}
+          {favoriteFilter === 'saved' && (
+            <button className="filter-chip" onClick={() => setFavoriteFilter('all')} title="Show all grants" type="button">
+              Saved <X size={12} />
+            </button>
+          )}
+          {(sourceFilters.ca === false || sourceFilters.federal === false) && (
+            <button className="filter-chip" onClick={() => setSourceFilters({ ca: true, federal: true })} title="Reset sources" type="button">
+              Sources: {sourceFilters.ca && !sourceFilters.federal ? 'CA only' : (!sourceFilters.ca && sourceFilters.federal ? 'Federal only' : 'Custom')} <X size={12} />
+            </button>
+          )}
+        </div>
       </div>
 
       {/* Sticky Filter Bar */}
       <div className="filter-bar">
         <div className="filter-bar-content">
-          <UserTypeSelector 
-            userType={userType} 
-            onUserTypeSelect={(type) => {
-              setUserType(type);
-              if (type !== 'county') setSelectedDepartment('all');
-            }}
-          />
+          {/* Filter Inputs - Left Section */}
+          <div className="filter-inputs-group">
+            <div className="filter-input-row">
+              <UserTypeSelector 
+                userType={userType} 
+                onUserTypeSelect={(type) => {
+                  setUserType(type);
+                  if (type !== 'county') setSelectedDepartment('all');
+                }}
+              />
 
-          {(userType === 'county' || userType === 'cbo') && (
-            <DepartmentSelector 
-              userType={userType}
-              subType={selectedDepartment}
-              onSubTypeSelect={setSelectedDepartment}
-            />
-          )}
+              {(userType === 'county' || userType === 'cbo') && (
+                <DepartmentSelector 
+                  userType={userType}
+                  subType={selectedDepartment}
+                  onSubTypeSelect={setSelectedDepartment}
+                />
+              )}
+            </div>
 
-          <div className="search-box">
-            <Search size={18} />
-            <input
-              type="text"
-              placeholder="Search grants..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-            />
+            <div className="filter-input-row">
+              <div className="search-box">
+                <Search size={18} />
+                <input
+                  type="text"
+                  placeholder="Search grants..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="status-toggles" role="group" aria-label="Status and favorites filter">
-            {[
-              { key: 'open', label: 'Open' },
-              { key: 'forecasted', label: 'Forecasted' },
-              { key: 'closed', label: 'Closed' }
-            ].map(item => (
+          {/* Filter Controls - Right Section */}
+          <div className="filter-controls-group">
+            <div className="status-toggles" role="group" aria-label="Status and favorites filter">
+              {[
+                { key: 'open', label: 'Open' },
+                { key: 'forecasted', label: 'Forecasted' },
+                { key: 'closed', label: 'Closed' }
+              ].map(item => (
+                <button
+                  key={item.key}
+                  className={`status-pill ${statusFilter[item.key] ? 'active' : ''}`}
+                  onClick={() => setStatusFilter(prev => ({ ...prev, [item.key]: !prev[item.key] }))}
+                  title={`${item.label} (${statusCounts[item.key] || 0})`}
+                  type="button"
+                >
+                  <CheckCircle size={14} />
+                  <span>{item.label}</span>
+                  <span className="pill-count">{statusCounts[item.key] || 0}</span>
+                </button>
+              ))}
               <button
-                key={item.key}
-                className={`status-pill ${statusFilter[item.key] ? 'active' : ''}`}
-                onClick={() => setStatusFilter(prev => ({ ...prev, [item.key]: !prev[item.key] }))}
-                title={`${item.label} (${statusCounts[item.key] || 0})`}
+                className={`status-pill ${favoriteFilter === 'saved' ? 'active' : ''}`}
+                onClick={() => {
+                  const willActivate = favoriteFilter !== 'saved';
+                  setFavoriteFilter(willActivate ? 'saved' : 'all');
+                  if (willActivate) {
+                    setStatusFilter({ open: false, forecasted: false, closed: false });
+                    setUserType('all');
+                    setSelectedDepartment('all');
+                    setSearchQuery('');
+                    setSourceFilters({ ca: true, federal: true });
+                  }
+                }}
+                title={`Saved Grants (${favorites.length})`}
                 type="button"
               >
-                <CheckCircle size={14} />
-                <span>{item.label}</span>
-                <span className="pill-count">{statusCounts[item.key] || 0}</span>
+                <Heart size={14} />
+                <span>Saved</span>
+                <span className="pill-count">{favorites.length}</span>
               </button>
-            ))}
-            <button
-              className={`status-pill ${favoriteFilter === 'saved' ? 'active' : ''}`}
-              onClick={() => {
-                const willActivate = favoriteFilter !== 'saved';
-                setFavoriteFilter(willActivate ? 'saved' : 'all');
-                if (willActivate) {
-                  setStatusFilter({ open: false, forecasted: false, closed: false });
-                  setUserType('all');
-                  setSelectedDepartment('all');
-                  setSearchQuery('');
-                  setSourceFilters({ ca: true, federal: true });
-                }
-              }}
-              title={`Saved Grants (${favorites.length})`}
-              type="button"
-            >
-              <Heart size={14} />
-              <span>Saved</span>
-              <span className="pill-count">{favorites.length}</span>
-            </button>
-          </div>
+            </div>
 
-          {/* Active filter chips */}
-          <div className="active-filters" aria-live="polite">
-            {searchQuery && (
-              <button className="filter-chip" onClick={() => setSearchQuery('')} title="Remove search filter" type="button">
-                Search: "{searchQuery}" <X size={12} />
-              </button>
-            )}
-            {userType !== 'all' && (
-              <button className="filter-chip" onClick={() => setUserType('all')} title="Remove user filter" type="button">
-                User: {userType === 'county' ? 'County Dept' : 'CBO'} <X size={12} />
-              </button>
-            )}
-            {selectedDepartment !== 'all' && (
-              <button className="filter-chip" onClick={() => setSelectedDepartment('all')} title="Remove department filter" type="button">
-                Dept: {selectedDepartment} <X size={12} />
-              </button>
-            )}
-            {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
-              <button key={k} className="filter-chip" onClick={() => setStatusFilter(prev => ({ ...prev, [k]: false }))} title={`Remove ${k} filter`} type="button">
-                {k.charAt(0).toUpperCase() + k.slice(1)} <X size={12} />
-              </button>
-            ))}
-            {favoriteFilter === 'saved' && (
-              <button className="filter-chip" onClick={() => setFavoriteFilter('all')} title="Show all grants" type="button">
-                Saved <X size={12} />
-              </button>
-            )}
-            {(sourceFilters.ca === false || sourceFilters.federal === false) && (
-              <button className="filter-chip" onClick={() => setSourceFilters({ ca: true, federal: true })} title="Reset sources" type="button">
-                Sources: {sourceFilters.ca && !sourceFilters.federal ? 'CA only' : (!sourceFilters.ca && sourceFilters.federal ? 'Federal only' : 'Custom')} <X size={12} />
-              </button>
-            )}
-          </div>
-        </div>
-        <div className="timeline-inline">
-          <div className="timeline-meta" aria-live="polite">
             <div className="source-filters" role="group" aria-label="Source filters">
               <button
                 className={`source-filter-btn ${sourceFilters.ca ? 'active ca' : ''}`}
@@ -1142,8 +1149,12 @@ const CalaverasGrantsDashboard = () => {
                 Federal: {sourceCounts.federal}
               </button>
             </div>
-            {sourceCounts.federal === 0 ? ' (federal feed unavailable?)' : ''}
           </div>
+        </div>
+      </div>
+
+      {/* Timeline visualization */}
+      <div className="timeline-container">
           <div className="timeline">
             <div className="timeline-line"></div>
             {/* Time markers */}
@@ -1257,7 +1268,6 @@ const CalaverasGrantsDashboard = () => {
               );
             })}
           </div>
-        </div>
       </div>
 
       {/* Main Content Area */}
