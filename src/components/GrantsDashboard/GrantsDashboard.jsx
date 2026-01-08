@@ -167,7 +167,7 @@ const GrantsDashboard = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
   const [selectedDepartment, setSelectedDepartment] = useState('all');
-  const [statusFilter, setStatusFilter] = useState({ open: false, forecasted: false, closed: false });
+  const [statusFilter, setStatusFilter] = useState({ open: true, forecasted: true, closed: false });
   const [favorites, setFavorites] = useState([]);
   const [selectedGrant, setSelectedGrant] = useState(null);
   const [sortColumn, setSortColumn] = useState(null);
@@ -1147,7 +1147,7 @@ const GrantsDashboard = () => {
               )}
               {selectedDepartment !== 'all' && (
                 <button className="filter-chip" onClick={() => setSelectedDepartment('all')} title="Remove department filter" type="button">
-                  {selectedDepartment} <X size={12} />
+                  {departments[selectedDepartment]?.name || selectedDepartment} <X size={12} />
                 </button>
               )}
               {Object.entries(statusFilter).filter(([_k,v]) => v).map(([k]) => (
