@@ -1,6 +1,6 @@
 import React from "react";
 import StatCard from "./StatCard";
-import { STATUS_COLORS } from "../config/colors";
+import { STATUS_COLORS } from "../../config/colors";
 
 export default function StatisticsBar({ totalFunding, eligibleCount, urgentCount, bestMatches }) {
   return (

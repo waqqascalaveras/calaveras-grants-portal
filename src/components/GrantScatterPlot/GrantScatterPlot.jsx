@@ -2,7 +2,7 @@ import React from "react";
 import {
   ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell
 } from "recharts";
-import { STATUS_COLORS } from "../config/colors";
+import { STATUS_COLORS } from "../../config/colors";
 
 export default function GrantScatterPlot({ data, onGrantClick: _onGrantClick }) {
   return (

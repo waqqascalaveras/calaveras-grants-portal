@@ -1,5 +1,5 @@
 import React from "react";
-import { getDepartmentsByGroup } from "../config/departments";
+import { getDepartmentsByGroup } from "../../config/departments";
 import { Building2 } from "lucide-react";
 
 const COMMUNITY_TYPES = [
