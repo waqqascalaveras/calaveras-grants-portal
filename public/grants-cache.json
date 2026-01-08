@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-08T06:11:09.101512Z",
+  "fetchedAt": "2026-01-08T18:09:16.464387Z",
   "success": true,
   "grants": [
     {
@@ -28613,23 +28613,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Assessing the Feasibility of Incorporating Mechanisms in Multisite Clinical Trials of Mind and Body Interventions on Whole Person Health Restoration (R01 Clinical Trial Required)",
-      "GrantTitle": "Assessing the Feasibility of Incorporating Mechanisms in Multisite Clinical Trials of Mind and Body Interventions on Whole Person Health Restoration (R01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AT-25-007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359941",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359941",
-      "Source": "federal"
-    },
-    {
       "Title": "Using Archived Data and Specimen Collections to Advance Maternal and Pediatric HIV/AIDS Research",
       "GrantTitle": "Using Archived Data and Specimen Collections to Advance Maternal and Pediatric HIV/AIDS Research",
       "Description": "",
@@ -37283,23 +37266,6 @@
       "Source": "federal"
     },
     {
-      "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
-      "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-006",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360366",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360366",
-      "Source": "federal"
-    },
-    {
       "Title": "Stephen I. Katz Early Stage Investigator Research Project Grant (R01 Clinical Trial Not Allowed)",
       "GrantTitle": "Stephen I. Katz Early Stage Investigator Research Project Grant (R01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -40188,16 +40154,84 @@
       "OpportunityID": "360270",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360270",
       "Source": "federal"
+    },
+    {
+      "Title": "Lead Hazard Reduction Capacity Building Grant Program",
+      "GrantTitle": "Lead Hazard Reduction Capacity Building Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-6900-N-31",
+      "Status": "posted",
+      "ApplicationDeadline": "02/26/2026",
+      "PostedDate": "01/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361107",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361107",
+      "Source": "federal"
+    },
+    {
+      "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
+      "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-27-006",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/27/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360366",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360366",
+      "Source": "federal"
+    },
+    {
+      "Title": "Assessing the Feasibility of Incorporating Mechanisms in Multisite Clinical Trials of Mind and Body Interventions on Whole Person Health Restoration",
+      "GrantTitle": "Assessing the Feasibility of Incorporating Mechanisms in Multisite Clinical Trials of Mind and Body Interventions on Whole Person Health Restoration",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-AT-25-007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359941",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359941",
+      "Source": "federal"
+    },
+    {
+      "Title": "Accelerating Discovery through Partnered Research with All of Us to Analyze Participant Biospecimens",
+      "GrantTitle": "Accelerating Discovery through Partnered Research with All of Us to Analyze Participant Biospecimens",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-127",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361104",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361104",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2457,
+  "totalCount": 2459,
   "sources": {
     "ca": {
       "count": 1807,
       "success": true
     },
     "federal": {
-      "count": 905,
+      "count": 907,
       "success": true
     }
   },
