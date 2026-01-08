@@ -1,9 +1,9 @@
 
 import React from 'react';
-import CalaverasGrantsDashboard from './components/CalaverasGrantsDashboard';
+import GrantsDashboard from './components/GrantsDashboard/GrantsDashboard';
 
 function App() {
-  return <CalaverasGrantsDashboard />;
+  return <GrantsDashboard />;
 }
 
 export default App;

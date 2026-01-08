@@ -1,0 +1,68 @@
+/* Detailed Grant Card Styles */
+.grant-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.grant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.grant-card.highlighted {
+  border-left: 4px solid #3b82f6;
+  background: #f8fafc;
+}
+
+.grant-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.grant-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.grant-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.grant-card-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.grant-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 14px;
+  color: #64748b;
+}
+
+.grant-card-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.grant-card-description {
+  margin-top: 12px;
+  color: #475569;
+  line-height: 1.6;
+}

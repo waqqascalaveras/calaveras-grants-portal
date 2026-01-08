@@ -74,20 +74,36 @@ REACT_APP_COUNTY_NAME=Calaveras County
 ## 🏗️ Project Structure
 
 ```
-calaveras-grants-portal/
+grant-finder/
 ├── public/                    # Static files
 │   ├── index.html
-│   └── manifest.json
+│   ├── manifest.json
+│   └── federal-grants-cache.json
 ├── src/
-│   ├── components/           # React components
-│   │   ├── CalaverrasGrantsDashboard.jsx  # Main dashboard with table/timeline
-│   │   ├── EnhancedGrantCard.jsx
-│   │   ├── StatisticsBar.jsx
-│   │   ├── GrantScatterPlot.jsx
-│   │   └── [other components]/
+│   ├── components/           # React components (organized by feature)
+│   │   ├── GrantsDashboard/
+│   │   │   ├── GrantsDashboard.jsx  # Main dashboard with table/timeline
+│   │   │   └── GrantsDashboard.css
+│   │   ├── DetailedGrantCard/
+│   │   │   ├── DetailedGrantCard.jsx
+│   │   │   └── DetailedGrantCard.css
+│   │   ├── DepartmentSelector/
+│   │   ├── UserTypeSelector/
+│   │   ├── StatisticsBar/
+│   │   ├── GrantScatterPlot/
+│   │   ├── GrantCard/
+│   │   ├── GrantsList/
+│   │   ├── Header/
+│   │   ├── Footer/
+│   │   ├── Loading/
+│   │   ├── Error/
+│   │   ├── FiltersSection/
+│   │   ├── SmartTooltip/
+│   │   └── StatCard/
 │   ├── services/            # API and data services
 │   │   ├── grantService.js          # CA State Grants API
-│   │   └── grantsGovService.js      # Federal Grants.gov API
+│   │   ├── grantsGovService.js      # Federal Grants.gov API
+│   │   └── unifiedGrantService.js   # Combined data service
 │   ├── utils/               # Utility functions
 │   │   ├── formatters.js
 │   │   └── eligibilityFilters.js
@@ -155,7 +171,13 @@ Every push to `main` branch automatically deploys via GitHub Actions:
 Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm test`
-Launches the test runner in interactive watch mode
+Launches the test runner in interactive watch mode. Tests are located in `tests/unit/`.
+
+### `npm run test:coverage`
+Runs all tests and generates a coverage report.
+
+### `npm run test:ci`
+Runs tests in CI mode with coverage (non-interactive).
 
 ### `npm run build`
 Builds the app for production to the `build` folder
@@ -169,8 +191,15 @@ Runs ESLint to check code quality
 ### `npm run format`
 Formats code using Prettier
 
-### `npm run test:ci`
-Runs tests in CI mode with coverage
+## 🧪 Testing
+
+Tests are organized in the `tests/` directory:
+
+- **Unit Tests** (`tests/unit/`): Component and utility function tests
+- **Integration Tests** (`tests/integration/`): Build and deployment verification
+- **Python Tests** (`tests/python/`): API connectivity and data feed validation
+
+See [tests/README.md](tests/README.md) for detailed testing documentation.
 
 ## 🔄 Data Sources
 
