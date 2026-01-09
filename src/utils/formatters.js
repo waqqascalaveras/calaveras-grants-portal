@@ -68,3 +68,24 @@ export const decodeHtmlEntities = (str) => {
     .replace(/&#8211;/g, '–')
     .replace(/&#8212;/g, '—');
 };
+/**
+ * Pre-process grant descriptions to improve formatting
+ * Adds line breaks before bullet points (•) and numbered lists (1., 2., etc.)
+ * unless they appear at the very beginning of the text
+ * @param {string} text - Raw description text
+ * @returns {string} - Formatted description text
+ */
+export const preprocessDescription = (text) => {
+  if (!text || typeof text !== 'string') return text;
+  
+  let result = text;
+  
+  // Add line break before bullet points (•) unless at the beginning
+  result = result.replace(/([^\n])(\s*•)/g, '$1\n$2');
+  
+  // Add line break before numbered lists (1., 2., etc.) unless at the beginning
+  // Pattern: not at start of line + optional spaces + digit(s) + period + space
+  result = result.replace(/([^\n])(\s*)(\d+\.)\s/g, '$1\n$2$3 ');
+  
+  return result;
+};

@@ -400,7 +400,7 @@
 .timeline-container {
   background: #fff;
   border: 1px solid #e0e0e0;
-  padding: 1rem;
+  padding: 0;
   margin-bottom: 0.5rem;
   position: relative;
   height: auto;

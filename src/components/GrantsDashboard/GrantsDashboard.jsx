@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { isEligibleForCounty, isEligibleForCBO, matchesDepartment, calculateCBORelevance } from '../../utils/eligibilityFilters';
+import { preprocessDescription } from '../../utils/formatters';
 import { getUnifiedGrants, getCacheInfo } from '../../services/unifiedGrantService';
 import { departments } from '../../config/departments';
 import { Search, Building2, AlertCircle, CheckCircle, DollarSign, Calendar, FileText, ExternalLink, X, Clock, RefreshCw, Heart, HelpCircle } from 'lucide-react';
@@ -190,81 +191,14 @@ const GrantsDashboard = () => {
     return grant?.PortalID || grant?.OpportunityID || grant?.GrantID || grant?._sourceId || `${grant?.Title || grant?.GrantTitle || 'grant'}-${grant?.AgencyName || 'agency'}`;
   }, []);
 
-  // Fetch federal grant details on demand
+  // Fetch federal grant details on demand (DISABLED DUE TO CORS - use server-side fetching instead)
   const fetchFederalGrantDetails = useCallback(async (grant) => {
-    const oppId = grant.OpportunityID || grant._sourceId;
-    if (!oppId) {
-      console.warn('No opportunity ID found for federal grant');
-      return null;
-    }
-
-    // Check cache first (24-hour expiry)
-    const cacheKey = `federalGrantDetails_${oppId}`;
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      try {
-        const { data, timestamp } = JSON.parse(cached);
-        const age = Date.now() - timestamp;
-        if (age < 24 * 60 * 60 * 1000) { // 24 hours
-          // eslint-disable-next-line no-console
-          console.log('Using cached federal grant details');
-          return data;
-        }
-      } catch (e) {
-        // eslint-disable-next-line no-console
-        console.warn('Failed to parse cached grant details', e);
-      }
-    }
-
-    // Fetch from API
-    // eslint-disable-next-line no-console
-    console.log(`Fetching details for federal grant ${oppId}...`);
-    setLoadingGrantDetails(true);
+    // NOTE: This function is disabled because Grants.gov API blocks CORS requests from browsers
+    // The API is accessible from server-side (GitHub Actions) but NOT from GitHub Pages origin
+    // Solution: Pre-fetch detailed descriptions during GitHub Actions build and include in cache
     
-    try {
-      const response = await fetch(
-        `https://api.grants.gov/v1/api/opportunities/${oppId}`,
-        {
-          headers: { 'Accept': 'application/json' },
-          signal: AbortSignal.timeout(10000) // 10s timeout
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error(`API returned ${response.status}`);
-      }
-
-      const data = await response.json();
-      const oppData = data?.data?.opportunity;
-      
-      if (!oppData) {
-        console.warn('No opportunity data in API response');
-        return null;
-      }
-
-      // Extract description fields
-      const details = {
-        Description: oppData.description || oppData.synopsis || '',
-        Purpose: oppData.synopsis || oppData.summary || '',
-        _detailsFetched: true
-      };
-
-      // Cache the result
-      localStorage.setItem(cacheKey, JSON.stringify({
-        data: details,
-        timestamp: Date.now()
-      }));
-
-      // eslint-disable-next-line no-console
-      console.log('Successfully fetched federal grant details');
-      return details;
-    } catch (error) {
-      // eslint-disable-next-line no-console
-      console.error('Failed to fetch federal grant details:', error);
-      return null;
-    } finally {
-      setLoadingGrantDetails(false);
-    }
+    // For now, return null to indicate details are not available
+    return null;
   }, []);
 
   // Handle grant selection with on-demand detail fetching for federal grants
@@ -1572,7 +1506,7 @@ const GrantsDashboard = () => {
                       <div className="text-heading">
                         Purpose <InfoTooltip text="The grant purpose answers why the grant exists—what the grantmaker intends to achieve, its goals and desired outcomes." />
                       </div>
-                      <FormattedText text={selectedGrant.Purpose} query={searchQuery} />
+                      <FormattedText text={preprocessDescription(selectedGrant.Purpose)} query={searchQuery} />
                     </div>
                   )}
                   {loadingGrantDetails ? (
@@ -1590,7 +1524,7 @@ const GrantsDashboard = () => {
                       <div className="text-heading">
                         Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
                       </div>
-                      <FormattedText text={selectedGrant.Description} query={searchQuery} />
+                      <FormattedText text={preprocessDescription(selectedGrant.Description)} query={searchQuery} />
                     </div>
                   ) : selectedGrant.Source === 'Federal' ? (
                     <div className="text-section" title="Description">
