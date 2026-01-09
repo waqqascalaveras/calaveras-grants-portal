@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-08T18:09:16.464387Z",
+  "fetchedAt": "2026-01-09T06:11:18.672445Z",
   "success": true,
   "grants": [
     {
@@ -31962,23 +31962,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Multidisciplinary Studies of HIV/AIDS and Aging (R01 Clinical Trial Optional)",
-      "GrantTitle": "Multidisciplinary Studies of HIV/AIDS and Aging (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-354",
-      "Status": "posted",
-      "ApplicationDeadline": "01/07/2027",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358076",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358076",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Research Project Grant (Parent R01 Clinical Trial Not Allowed)",
       "GrantTitle": "NIH Research Project Grant (Parent R01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -31993,23 +31976,6 @@
       "AwardFloor": 0,
       "OpportunityID": "357812",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357812",
-      "Source": "federal"
-    },
-    {
-      "Title": "Multidisciplinary Studies of HIV/AIDS and Aging (R21 Clinical Trial Optional)",
-      "GrantTitle": "Multidisciplinary Studies of HIV/AIDS and Aging (R21 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-355",
-      "Status": "posted",
-      "ApplicationDeadline": "01/07/2027",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358078",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358078",
       "Source": "federal"
     },
     {
@@ -33662,23 +33628,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Novel approaches to support therapeutic development in ultra-rare cancers",
-      "GrantTitle": "Novel approaches to support therapeutic development in ultra-rare cancers",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-FD-26-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/04/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360223",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360223",
-      "Source": "federal"
-    },
-    {
       "Title": "National Digital Newspaper Program",
       "GrantTitle": "National Digital Newspaper Program",
       "Description": "",
@@ -35138,23 +35087,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360536",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360536",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY2025 ABPP - Battlefield Restoration Grants",
-      "GrantTitle": "FY2025 ABPP - Battlefield Restoration Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P25AS00475",
-      "Status": "posted",
-      "ApplicationDeadline": "01/08/2026",
-      "PostedDate": "09/09/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360540",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360540",
       "Source": "federal"
     },
     {
@@ -39918,23 +39850,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-009",
-      "Status": "posted",
-      "ApplicationDeadline": "03/31/2026",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361053",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
-      "Source": "federal"
-    },
-    {
       "Title": "OVC FY25 Housing Assistance for Victims of Human Trafficking",
       "GrantTitle": "OVC FY25 Housing Assistance for Victims of Human Trafficking",
       "Description": "",
@@ -40034,6 +39949,23 @@
       "AwardFloor": 0,
       "OpportunityID": "361084",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361084",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-009",
+      "Status": "posted",
+      "ApplicationDeadline": "03/31/2026",
+      "PostedDate": "12/23/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361053",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
       "Source": "federal"
     },
     {
@@ -40222,16 +40154,50 @@
       "OpportunityID": "361104",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361104",
       "Source": "federal"
+    },
+    {
+      "Title": "FY22 CRISI- Darby Township PA Main Street Crossing",
+      "GrantTitle": "FY22 CRISI- Darby Township PA Main Street Crossing",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-CCD-22-003",
+      "Status": "posted",
+      "ApplicationDeadline": "01/31/2026",
+      "PostedDate": "12/15/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360932",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360932",
+      "Source": "federal"
+    },
+    {
+      "Title": "Novel approaches to support therapeutic development in ultra-rare cancers",
+      "GrantTitle": "Novel approaches to support therapeutic development in ultra-rare cancers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-FD-26-004",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/04/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360223",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360223",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2459,
+  "totalCount": 2457,
   "sources": {
     "ca": {
       "count": 1807,
       "success": true
     },
     "federal": {
-      "count": 907,
+      "count": 905,
       "success": true
     }
   },
