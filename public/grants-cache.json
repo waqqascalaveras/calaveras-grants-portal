@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-09T06:11:18.672445Z",
+  "fetchedAt": "2026-01-09T18:10:31.241571Z",
   "success": true,
   "grants": [
     {
@@ -40037,23 +40037,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Notice of Intent to Publish a Funding Opportunity Announcement for Liver Cirrhosis Network: Scientific and Data Coordination Center (U24 Clinical Trial Optional)",
-      "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement for Liver Cirrhosis Network: Scientific and Data Coordination Center (U24 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-26-309",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/13/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358911",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358911",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "GrantTitle": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "Description": "",
@@ -40190,14 +40173,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2457,
+  "totalCount": 2456,
   "sources": {
     "ca": {
       "count": 1807,
       "success": true
     },
     "federal": {
-      "count": 905,
+      "count": 904,
       "success": true
     }
   },
