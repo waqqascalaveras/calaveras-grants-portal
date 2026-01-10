@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-09T18:10:31.241571Z",
+  "fetchedAt": "2026-01-10T06:09:51.781118Z",
   "success": true,
   "grants": [
     {
@@ -40171,16 +40171,33 @@
       "OpportunityID": "360223",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360223",
       "Source": "federal"
+    },
+    {
+      "Title": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
+      "GrantTitle": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-6800-N-25",
+      "Status": "posted",
+      "ApplicationDeadline": "02/09/2026",
+      "PostedDate": "07/31/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "355762",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/355762",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2456,
+  "totalCount": 2457,
   "sources": {
     "ca": {
       "count": 1807,
       "success": true
     },
     "federal": {
-      "count": 904,
+      "count": 905,
       "success": true
     }
   },
