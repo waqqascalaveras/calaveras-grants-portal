@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-01-10T06:09:51.781118Z",
+  "fetchedAt": "2026-01-10T18:09:21.045277Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Workforce Education and Training Peer Personnel Training and Placement",
+      "GrantTitle": "Workforce Education and Training Peer Personnel Training and Placement",
+      "Description": "Applicants must implement a peer personnel training and placement program that contains recruitment and outreach, career counseling, training, placement, support, evaluation, and if applicable, financial assistance.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Education; Health & Human Services",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "107955",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
       "GrantTitle": "Request for Application (RFA) 25-10031: Local Training and Education Program for the Prevention of Domestic Violence (DV)",
@@ -296,7 +312,7 @@
       "Description": "This project will provide $1 million in grants per year for two years ($2 million total) to eligible nonprofit organizations to provide facilitation services within the CDCR VOD program. The grant period begins on July 1, 2026 and ends on June 30, 2028.  The Victim-Offender Dialogue (VOD) is a victim-centered, offender-sensitive facilitated preparation and dialogue process typically involving victims or the surviving family members, the offender who committed the offense and a facilitator. VOD supports personal justice and healing by empowering victims to meet with the offender in a safe and secure environment and address the personal impacts of violent crimes. VOD also encourages interested offenders to express remorse, develop empathy and accept full responsibility for the harm caused to the victims and their family. The VOD facilitator will arrange individual preparatory meetings over the course of several months with the victim and offender separately to prepare them for the face-to-face meeting.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-01-09 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$2,000,000",
@@ -1040,6 +1056,86 @@
       "ApplicantType": "Nonprofit",
       "GrantInfoURL": "",
       "PortalID": "147903",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025-26 Associate Degree Nursing Scholarship Program",
+      "GrantTitle": "2025-26 Associate Degree Nursing Scholarship Program",
+      "Description": "The Associate Degree Nursing Scholarship Program (ADNSP) makes awards to eligible applicants currently accepted or enrolled in an Associate's Degree Nursing Program that prepares them to become a Registered Nurse for a scholarship of up to $8,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation within six months of graduation.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-10-03 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$50,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157095",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025-26 Licensed Vocational Nurse to Associate Degree Nursing Scholarship Program",
+      "GrantTitle": "2025-26 Licensed Vocational Nurse to Associate Degree Nursing Scholarship Program",
+      "Description": "The Licensed Vocational Nurse to Associate Degree Nursing Scholarship Program (LVN to ADN) makes awards to eligible applicants currently accepted or enrolled in an Associate Degree Bridge Program\u00a0prepares them to become a Registered Nurse for a scholarship of up to $8,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation within six months of graduation.  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-10-03 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$60,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157119",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025-2026 Advanced Practice Healthcare Scholarship Program",
+      "GrantTitle": "2025-2026 Advanced Practice Healthcare Scholarship Program",
+      "Description": "The Advanced Practice Healthcare Scholarship Program (APHSP) makes awards to eligible applicants currently accepted or enrolled in an accredited graduate or postgraduate degree program that prepares them to become one of the eligible program advanced healthcare professionals for a scholarship of up to $25,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation within six months of graduation.  \u00a0  \u00a0  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-10-03 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$500,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157113",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025-2026 Bachelor of Science Nursing Scholarship Program",
+      "GrantTitle": "2025-2026 Bachelor of Science Nursing Scholarship Program",
+      "Description": "The Bachelor of Science Nursing Scholarship Program (BSNP) makes awards to eligible applicants currently accepted or enrolled in a Bachelor's Degree Nursing Program that prepares them to become a Registered Nurse for a scholarship of up to $10,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation within six months of graduation.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-10-03 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$100,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157107",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025-2026 Vocational Nurse Scholarship Program",
+      "GrantTitle": "2025-2026 Vocational Nurse Scholarship Program",
+      "Description": "The Vocational Nurse Scholarship Program (VNSP) makes awards to eligible applicants currently accepted or enrolled in a certificate, diploma, or accredited Associate degree program that prepares them to become a Licensed Vocational Nurse for a scholarship of up to $4,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation within six months of graduation.  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-10-03 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$60,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157101",
       "Source": "ca.gov"
     },
     {
@@ -2016,6 +2112,70 @@
       "ApplicantType": "Nonprofit",
       "GrantInfoURL": "",
       "PortalID": "106176",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 Licensed Mental Health Services Provider Education Program",
+      "GrantTitle": "2025 Licensed Mental Health Services Provider Education Program",
+      "Description": "The Licensed Mental Health Services Provider Education Program (LMH) makes awards to eligible applicants currently licensed and practicing in an eligible mental health profession for loan repayment of up to $15,000 in exchange for a 12-month service obligation practicing and providing direct client care in an eligible geographic or approved site designation.\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-06-13 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$693,000",
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157143",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 Licensed Vocational Nursing Loan Repayment Program",
+      "GrantTitle": "2025 Licensed Vocational Nursing Loan Repayment Program",
+      "Description": "The Licensed Vocational Nurse Loan Repayment Program (LVNLRP) makes awards to eligible applicants currently licensed and practicing as a vocational nurse for loan repayment of up to $8,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-06-13 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$117,000",
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157137",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 Steven M. Thompson Physician Corps Loan Repayment Program",
+      "GrantTitle": "2025 Steven M. Thompson Physician Corps Loan Repayment Program",
+      "Description": "The Steven M. Thompson Physician Corps Loan Repayment Program (STLRP) makes awards to eligible applicants currently licensed and practicing as a physician for loan repayment of up to $105,000 in exchange for a 36-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation.\u00a0  \u00a0  \u00a0  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-06-13 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157131",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 Bachelor of Science Nursing Loan Repayment Program",
+      "GrantTitle": "2025 Bachelor of Science Nursing Loan Repayment Program",
+      "Description": "The Bachelor of Science Nursing Loan Repayment Program (BSNLRP) makes awards to eligible applicants currently licensed and practicing as a registered nurse for loan repayment of up to $15,000 in exchange for a 12-month service obligation practicing and providing direct patient care in an eligible geographic or approved site designation.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-06-13 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Individual",
+      "GrantInfoURL": "",
+      "PortalID": "157125",
       "Source": "ca.gov"
     },
     {
@@ -22115,22 +22275,6 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "Workforce Education and Training Peer Personnel Training and Placement",
-      "GrantTitle": "Workforce Education and Training Peer Personnel Training and Placement",
-      "Description": "Applicants must implement a peer personnel training and placement program that contains recruitment and outreach, career counseling, training, placement, support, evaluation, and if applicable, financial assistance.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2021-03-16 15:00:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$2,000,000",
-      "Categories": "Education; Health & Human Services",
-      "ApplicantType": "Nonprofit; Public Agency",
-      "GrantInfoURL": "",
-      "PortalID": "5155",
-      "Source": "ca.gov"
-    },
-    {
       "Title": "COVID-19 Health Equity Pilot Projects",
       "GrantTitle": "COVID-19 Health Equity Pilot Projects",
       "Description": "\u2022 CDPH OHE will be administering $5M from the Centers for Disease and Control Epidemiology and Laboratory Capacity Grant (totaling $499M) to ~16-30 community based organizations led by and serving communities facing inequities in COVID-19 impacts and infection. Once projects are completed, awardees will be sharing the best practices, outcomes, and impact of their pilot projects to their Local Health Jurisdictions and CDPH, with the goal that successful pilot projects can be replicated to reduce the risks of COVID-19 among priority populations who are taking the burden of COVID-19 impacts.  \u2022 Eligible entities must be a CBO with their 501(c)(3) certification or be fiscally sponsored by a 501(c)(3) organization. Refer to the RFA for complete details on application requirements.  \u2022 Allowable activities of these pilot projects must address the social determinants of health and underlying inequities of communities experiencing disproportionate risk of COVID-19 and its associated impacts. Unallowable activities include but are not limited to: testing and laboratory services; contact tracing; media campaigns on handwashing, face coverings, social distancing; data systems; research; skilled nursing facility staffing, or direct services. Refer to the RFA for detailed explanations and examples about allowable vs unallowable activities.  \u2022 Project period ends November 17, 2022.  \u2022 Applicants must submit their application packet to ELCCovidHealthEquity@cdph.ca.gov by 5pm PT March 2, 2021. Refer to the RFA for detailed application requirements and instructions.  \u2022 Applicants can request from a minimum of $50,000 and up to a maximum of $300,000. o Tier 1: $50,000 - $99,999o Tier 2: $100,000 - $199,999o Tier 3: $200,000 - $300,000  \u2022 Organizations can submit individual applications or joint applications with other eligible entities. Organizations can only participate in 1 application and cannot be involved in multiple applications. CDPH OHE encourages diverse and smaller CBOs to apply, either as individual applicants or as a joint applicant with other eligible entities.  \u2022 Refer to the RFA for detailed application requirements  \u2022 There will be NO one on one (1-1) technical assistance will be provided, but there will 3 opportunities for applicants to ask questions: 2 written question submission periods where answers will be posted on the OHE website and 1 informational webinar walking through application requirements. A recording of the webinar will be posted on the OHE website. Refer to the RFA for the tentative time schedule of events.",
@@ -40190,10 +40334,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2457,
+  "totalCount": 2466,
   "sources": {
     "ca": {
-      "count": 1807,
+      "count": 1817,
       "success": true
     },
     "federal": {
@@ -40202,7 +40346,7 @@
     }
   },
   "duplicates": {
-    "count": 255,
+    "count": 256,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
