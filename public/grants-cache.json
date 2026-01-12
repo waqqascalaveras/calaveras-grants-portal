@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-11T18:09:13.939067Z",
+  "fetchedAt": "2026-01-12T06:12:43.269012Z",
   "success": true,
   "grants": [
     {
@@ -27567,57 +27567,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Clinical Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
-      "GrantTitle": "Clinical Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-029",
-      "Status": "posted",
-      "ApplicationDeadline": "01/11/2026",
-      "PostedDate": "12/11/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357669",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357669",
-      "Source": "federal"
-    },
-    {
-      "Title": "Data Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative U24 Clinical Trial Required)",
-      "GrantTitle": "Data Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative U24 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-22-193",
-      "Status": "posted",
-      "ApplicationDeadline": "01/11/2026",
-      "PostedDate": "07/12/2022",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "342125",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/342125",
-      "Source": "federal"
-    },
-    {
-      "Title": "Single-Site Investigator-Initiated Clinical Trials (R61/R33 Clinical Trial Required)",
-      "GrantTitle": "Single-Site Investigator-Initiated Clinical Trials (R61/R33 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-028",
-      "Status": "posted",
-      "ApplicationDeadline": "01/11/2026",
-      "PostedDate": "12/11/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357659",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357659",
-      "Source": "federal"
-    },
-    {
       "Title": "Genomic Variant Interactions With Other Variants Or The Environment (UM1 Clinical Trials Not Allowed)",
       "GrantTitle": "Genomic Variant Interactions With Other Variants Or The Environment (UM1 Clinical Trials Not Allowed)",
       "Description": "",
@@ -33769,6 +33718,57 @@
       "AwardFloor": 0,
       "OpportunityID": "360210",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360210",
+      "Source": "federal"
+    },
+    {
+      "Title": "Data Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative U24 Clinical Trial Required)",
+      "GrantTitle": "Data Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative U24 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-HL-25-018",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/13/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358938",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358938",
+      "Source": "federal"
+    },
+    {
+      "Title": "Clinical Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
+      "GrantTitle": "Clinical Coordinating Center for Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-HL-25-029",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/09/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358851",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358851",
+      "Source": "federal"
+    },
+    {
+      "Title": "Single-Site Investigator-Initiated Clinical Trials (R61/R33 Clinical Trial Required)",
+      "GrantTitle": "Single-Site Investigator-Initiated Clinical Trials (R61/R33 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-HL-25-028",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/09/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358850",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358850",
       "Source": "federal"
     },
     {
@@ -40341,12 +40341,12 @@
       "success": true
     },
     "federal": {
-      "count": 905,
+      "count": 902,
       "success": true
     }
   },
   "duplicates": {
-    "count": 256,
+    "count": 253,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
