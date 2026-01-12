@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-01-12T06:12:43.269012Z",
+  "fetchedAt": "2026-01-12T18:10:25.515559Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Grants and Cooperative Agreements Program (GCA) \u2013 G26",
+      "GrantTitle": "Grants and Cooperative Agreements Program (GCA) \u2013 G26",
+      "Description": "The GCA Program supports the planning, acquisition, development, maintenance, administration, operation, enforcement, restoration, and conservation of trails, trailheads, areas, and other facilities associated with the use of Off-Highway Motor Vehicles, and programs involving Off-Highway Motor Vehicle safety and/or education.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-02 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$30,000,000",
+      "Categories": "Education; Environment & Water; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "146205",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Workforce Education and Training Peer Personnel Training and Placement",
       "GrantTitle": "Workforce Education and Training Peer Personnel Training and Placement",
@@ -40113,74 +40129,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Resource-Related Research Projects for Development of Models and Related Materials for Studying Human Health and Diseases (R24 Clinical Trials Not Allowed)",
-      "GrantTitle": "Resource-Related Research Projects for Development of Models and Related Materials for Studying Human Health and Diseases (R24 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-OD-25-010",
-      "Status": "posted",
-      "ApplicationDeadline": "09/28/2028",
-      "PostedDate": "12/05/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359648",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359648",
-      "Source": "federal"
-    },
-    {
-      "Title": "Extension of the World Trade Center Health Registry (U50)",
-      "GrantTitle": "Extension of the World Trade Center Health Registry (U50)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-OH-26-016",
-      "Status": "posted",
-      "ApplicationDeadline": "02/20/2026",
-      "PostedDate": "12/19/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360555",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360555",
-      "Source": "federal"
-    },
-    {
-      "Title": "YouthBuild 2025",
-      "GrantTitle": "YouthBuild 2025",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOA-ETA-26-38",
-      "Status": "posted",
-      "ApplicationDeadline": "03/02/2026",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361057",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361057",
-      "Source": "federal"
-    },
-    {
-      "Title": "HEAL Initiative: Integrative Management of Chronic Pain and Opioid Use Disorder (OUD) for Whole Recovery: Health Systems",
-      "GrantTitle": "HEAL Initiative: Integrative Management of Chronic Pain and Opioid Use Disorder (OUD) for Whole Recovery: Health Systems",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360048",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360048",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "GrantTitle": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "Description": "",
@@ -40283,20 +40231,71 @@
       "Source": "federal"
     },
     {
-      "Title": "FY22 CRISI- Darby Township PA Main Street Crossing",
-      "GrantTitle": "FY22 CRISI- Darby Township PA Main Street Crossing",
+      "Title": "Resource-Related Research Projects for Development of Models and Related Materials for Studying Human Health and Diseases (R24 Clinical Trials Not Allowed)",
+      "GrantTitle": "Resource-Related Research Projects for Development of Models and Related Materials for Studying Human Health and Diseases (R24 Clinical Trials Not Allowed)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "FR-CCD-22-003",
+      "OpportunityNumber": "RFA-OD-25-010",
       "Status": "posted",
-      "ApplicationDeadline": "01/31/2026",
-      "PostedDate": "12/15/2025",
+      "ApplicationDeadline": "09/28/2028",
+      "PostedDate": "12/05/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "360932",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360932",
+      "OpportunityID": "359648",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359648",
+      "Source": "federal"
+    },
+    {
+      "Title": "Extension of the World Trade Center Health Registry (U50)",
+      "GrantTitle": "Extension of the World Trade Center Health Registry (U50)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-OH-26-016",
+      "Status": "posted",
+      "ApplicationDeadline": "02/20/2026",
+      "PostedDate": "12/19/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360555",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360555",
+      "Source": "federal"
+    },
+    {
+      "Title": "YouthBuild 2025",
+      "GrantTitle": "YouthBuild 2025",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOA-ETA-26-38",
+      "Status": "posted",
+      "ApplicationDeadline": "03/02/2026",
+      "PostedDate": "12/23/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361057",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361057",
+      "Source": "federal"
+    },
+    {
+      "Title": "HEAL Initiative: Integrative Management of Chronic Pain and Opioid Use Disorder (OUD) for Whole Recovery: Health Systems",
+      "GrantTitle": "HEAL Initiative: Integrative Management of Chronic Pain and Opioid Use Disorder (OUD) for Whole Recovery: Health Systems",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-27-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/17/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360048",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360048",
       "Source": "federal"
     },
     {
@@ -40317,6 +40316,23 @@
       "Source": "federal"
     },
     {
+      "Title": "FY22 CRISI- Darby Township PA Main Street Crossing",
+      "GrantTitle": "FY22 CRISI- Darby Township PA Main Street Crossing",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-CCD-22-003",
+      "Status": "posted",
+      "ApplicationDeadline": "01/31/2026",
+      "PostedDate": "12/15/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360932",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360932",
+      "Source": "federal"
+    },
+    {
       "Title": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
       "GrantTitle": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
       "Description": "",
@@ -40334,19 +40350,19 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2466,
+  "totalCount": 2467,
   "sources": {
     "ca": {
-      "count": 1817,
+      "count": 1818,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 903,
       "success": true
     }
   },
   "duplicates": {
-    "count": 253,
+    "count": 254,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
