@@ -10,6 +10,24 @@ import SmartTooltip from '../SmartTooltip/SmartTooltip';
 import Loading from '../Loading/Loading';
 import './GrantsDashboard.css';
 
+// Lightweight heuristic to drop clearly non-US grants (e.g., Namibia) when federal data lacks geography metadata
+const FOREIGN_KEYWORDS = [
+  'namibia', 'nigeria', 'uganda', 'tanzania', 'kenya', 'south africa', 'botswana', 'eswatini', 'lesotho', 'zambia',
+  'zimbabwe', 'ethiopia', 'rwanda', 'malawi', 'mozambique', 'ghana', 'sierra leone', 'liberia', 'angola', 'congo',
+  'cameroon', 'somalia', 'sudan', 'afghanistan', 'pakistan', 'bangladesh', 'nepal', 'sri lanka', 'india',
+  'indonesia', 'philippines', 'vietnam', 'laos', 'cambodia', 'thailand', 'malaysia', 'myanmar', 'mongolia',
+  'china', 'ukraine', 'turkey', 'yemen', 'jordan', 'palestine', 'israel', 'iraq', 'iran', 'syria', 'lebanon',
+  'egypt', 'morocco', 'tunisia', 'algeria', 'niger', 'mali', 'burkina faso', 'senegal', 'guatemala', 'honduras',
+  'nicaragua', 'el salvador', 'costa rica', 'panama', 'colombia', 'peru', 'bolivia', 'paraguay', 'uruguay',
+  'argentina', 'chile', 'brazil', 'canada'
+];
+
+const isForeignOpportunity = (grant) => {
+  const text = `${grant?.Title || grant?.GrantTitle || ''} ${grant?.Purpose || ''} ${grant?.Description || ''}`.toLowerCase();
+  if (text.includes('united states') || text.includes('u.s.') || text.includes('usa')) return false;
+  return FOREIGN_KEYWORDS.some(keyword => text.includes(keyword));
+};
+
 // Helper component for info tooltips - now using SmartTooltip with Floating UI
 const InfoTooltip = ({ text }) => (
   <SmartTooltip text={text} side="top">
@@ -182,7 +200,6 @@ const GrantsDashboard = () => {
   const [lastMeta, setLastMeta] = useState(null);
   const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
   const [isResizing, setIsResizing] = useState(false);
-  const [loadingGrantDetails, setLoadingGrantDetails] = useState(false);
   const mainContentRef = useRef(null);
   const rowRefs = useRef({});
 
@@ -192,7 +209,7 @@ const GrantsDashboard = () => {
   }, []);
 
   // Fetch federal grant details on demand (DISABLED DUE TO CORS - use server-side fetching instead)
-  const fetchFederalGrantDetails = useCallback(async (grant) => {
+  const fetchFederalGrantDetails = useCallback(async (_grant) => {
     // NOTE: This function is disabled because Grants.gov API blocks CORS requests from browsers
     // The API is accessible from server-side (GitHub Actions) but NOT from GitHub Pages origin
     // Solution: Pre-fetch detailed descriptions during GitHub Actions build and include in cache
@@ -459,9 +476,9 @@ const GrantsDashboard = () => {
     
     return grants.filter(grant => {
       // Source filter - skip if neither source is selected, or grant doesn't match selected sources
-      const grantSource = grant._source;
+      const grantSource = grant._source || grant.Source?.toLowerCase();
       const isCAGrant = grantSource === 'ca.gov';
-      const isFederalGrant = grantSource === 'grants.gov';
+      const isFederalGrant = grantSource === 'grants.gov' || grant.Source === 'Federal' || grant.Source === 'federal';
       
       // If neither source is selected, show no grants
       if (!sourceFilters.ca && !sourceFilters.federal) {
@@ -471,6 +488,9 @@ const GrantsDashboard = () => {
       // Skip grants that don't match any selected source
       if (isCAGrant && !sourceFilters.ca) return false;
       if (isFederalGrant && !sourceFilters.federal) return false;
+
+      // Drop obvious non-US federal grants to reduce noise for local users
+      if (isFederalGrant && isForeignOpportunity(grant)) return false;
       
       // Filter out grants closed more than 7 days ago
       const status = (grant.Status || '').toLowerCase().trim();
@@ -1509,17 +1529,7 @@ const GrantsDashboard = () => {
                       <FormattedText text={preprocessDescription(selectedGrant.Purpose)} query={searchQuery} />
                     </div>
                   )}
-                  {loadingGrantDetails ? (
-                    <div className="text-section" title="Loading Description">
-                      <div className="text-heading">
-                        Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
-                      </div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem' }}>
-                        <Clock size={16} className="spin" />
-                        Loading full description from Grants.gov...
-                      </div>
-                    </div>
-                  ) : selectedGrant.Description ? (
+                  {selectedGrant.Description ? (
                     <div className="text-section" title="Description">
                       <div className="text-heading">
                         Description <InfoTooltip text="A detailed summary covering project scope, covered activities, eligibility exclusions, timeline, announcement mechanism, and past/average awards." />
