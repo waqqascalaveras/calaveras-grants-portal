@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-01-13T06:11:11.042238Z",
+  "fetchedAt": "2026-01-13T18:11:03.783319Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Helping Justice-Involved Reenter Employment 2.0",
+      "GrantTitle": "Helping Justice-Involved Reenter Employment 2.0",
+      "Description": "HIRE 2.0 aims to increase employment opportunities and job mobility for justice-involved individuals by supporting training, supportive services, reskilling and upskilling, and needs-related payments. This funding builds on the CWDB\u2019s past and current investments in workforce programming for the reentry population.  HIRE 2.0 funding is available only to existing HIRE 1.0 grantees and Network Spokes (subrecipients). A HIRE 1.0 grantee is defined as an existing Network Hub or Independent project awarded grant funds to operate programming under HIRE 1.0. A subrecipient refers to a HIRE 1.0 Network Spoke that operated programming under a HIRE Network.  The HIRE 2.0 grant program\u2019s objectives are to: \u2022 Increase employment opportunities and job mobility for justice-involved individuals.\u2022 Provide training, reskilling, upskilling, and supportive services to justice-involved individuals to improve employment opportunities and job mobility.  Applicants must identify a single project type prior to applying. Organizations may only apply for one project type. The CWDB has identified two different project types for the HIRE 2.0 grant program: 1. Independent 2. HIRE Network projects  Local workforce development boards, community-based organizations (CBOs), and other agencies areexpected to operate in a collaborative relationship for each project type to recruit and support participants, assess their needs, and provide supportive, direct, and needs-related payments to participants.  Award ranges for HIRE 2.0 will be determined by the designations established for large and small CBOs under HIRE 1.0. For example, a HIRE 1.0 grantee or subrecipient designated as a small CBO may apply only for the award range designated for small CBOs under HIRE 2.0.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-26 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$9,500,000",
+      "Categories": "Employment, Labor & Training",
+      "ApplicantType": "Business; Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "157155",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Grants and Cooperative Agreements Program (GCA) \u2013 G26",
       "GrantTitle": "Grants and Cooperative Agreements Program (GCA) \u2013 G26",
@@ -632,7 +648,7 @@
       "Description": "Eligible Projects:  Projects generally fall into one of five categories (see\u00a0TDA Uses\u00a0for more complete descriptions):  Category 1: Mechanically Stabilized TDA (retaining walls).  Category 2: Low Impact Development (storm water mitigation including storm water infiltration galleries).  Category 3: Lightweight fill (slope stabilization, embankment fill, landslide repair, and retaining walls).  Category 4: Vibration mitigation (under rail lines).  Category 5: Landfill application (aggregate replacement projects such as leachate and gas collection systems, drainage layers, leachate injection).  All projects are subject to the following requirements:  \u2022 Only California-generated waste tires that are processed in California shall be used in the TDA portion of the project(s).  \u2022 The project(s) must be located in California.  \u2022 A combined minimum of\u00a0500 tons\u00a0of TDA must be used in the project(s), except for Low Impact Development projects, which must use a minimum of\u00a0200 tons\u00a0of TDA in the project(s).  \u2022 Plans and specifications must be reviewed by CalRecycle staff and/or its contractor(s) prior to commencement of work.\u00a0 The project design plans must be uploaded in GMS at a minimum 50 percent complete during application submittal and 100 percent design prior to the start of the project.\u00a0 The design plans must include: project costs (preliminary costs during application submittal), the project location (TDA placement), type and quantity of TDA (initial estimate during application submittal), and any analysis necessary to validate the design.  \u2022 Each project must incorporate technical assistance/training that will be provided by CalRecycle contractors and/or staff.\u00a0 All the following must receive CalRecycle sponsored technical training prior to implementation of the project, (1) Owner representative, (2) Construction Management engineer (Quality Assurance / Quality Control), and (3) Construction company project supervisor.  \u2022 The real property on which the project will be located must be owned by the applicant.  \u2022 If applicant\u2019s ownership of the property on which the project(s) is located does not give it complete and clear access to the project site(s), then prior to incurring any grant-eligible costs, applicant must obtain any and all access rights (e.g., easements) to the project site(s) necessary to complete the project(s) within the grant term and shall ensure that such access extends to CalRecycle staff and/or its designated contractors for the purpose of observing the project, providing technical assistance and/or training during the grant term.\u00a0 Such access must be in writing from the legal owner or his/her authorized agent.  \u2022 Reimbursement will not exceed the amount stated on the Grant Agreement Cover Sheet (CalRecycle 110).  \u2022 Construction of the TDA portion of any project must commence on or after the date indicated in CalRecycle\u2019s written Notice to Proceed and be completed by April 1, 2027.  Additionally, landfill projects will not be reimbursed for use of more than 0.75 cubic yards (0.5 tons) of TDA per lineal foot of landfill gas collection or leachate injection line.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-01-13 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$750,000",
@@ -40112,23 +40128,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-009",
-      "Status": "posted",
-      "ApplicationDeadline": "03/31/2026",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361053",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "GrantTitle": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
       "Description": "",
@@ -40316,6 +40315,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Restoring Reliability: Coal Recommissioning and Modernization",
+      "GrantTitle": "Restoring Reliability: Coal Recommissioning and Modernization",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003605",
+      "Status": "posted",
+      "ApplicationDeadline": "02/11/2026",
+      "PostedDate": "10/03/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360731",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360731",
+      "Source": "federal"
+    },
+    {
       "Title": "FY22 CRISI- Darby Township PA Main Street Crossing",
       "GrantTitle": "FY22 CRISI- Darby Township PA Main Street Crossing",
       "Description": "",
@@ -40348,16 +40364,67 @@
       "OpportunityID": "355762",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/355762",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
+      "GrantTitle": "BJA FY25 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172473",
+      "Status": "posted",
+      "ApplicationDeadline": "02/20/2026",
+      "PostedDate": "01/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361135",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361135",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-009",
+      "Status": "posted",
+      "ApplicationDeadline": "03/31/2026",
+      "PostedDate": "12/23/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361053",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
+      "Source": "federal"
+    },
+    {
+      "Title": "Service Area Competition - Additional Area 1",
+      "GrantTitle": "Service Area Competition - Additional Area 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361137",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361137",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2467,
+  "totalCount": 2471,
   "sources": {
     "ca": {
-      "count": 1818,
+      "count": 1819,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 906,
       "success": true
     }
   },
