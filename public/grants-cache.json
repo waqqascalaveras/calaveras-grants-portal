@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-14T18:11:00.764075Z",
+  "fetchedAt": "2026-01-15T06:11:10.970011Z",
   "success": true,
   "grants": [
     {
@@ -28312,40 +28312,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Center on Program Management and Quality Assurance",
-      "GrantTitle": "National Center on Program Management and Quality Assurance",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OHS-HC-0103",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/26/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359837",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359837",
-      "Source": "federal"
-    },
-    {
-      "Title": "National Center on Head Start Early Learning, Health and Family Engagement",
-      "GrantTitle": "National Center on Head Start Early Learning, Health and Family Engagement",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OHS-HC-0002",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/26/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359836",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359836",
-      "Source": "federal"
-    },
-    {
       "Title": "Selective Precision Targeting (SPoT)",
       "GrantTitle": "Selective Precision Targeting (SPoT)",
       "Description": "",
@@ -40433,14 +40399,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2472,
+  "totalCount": 2470,
   "sources": {
     "ca": {
       "count": 1820,
       "success": true
     },
     "federal": {
-      "count": 906,
+      "count": 904,
       "success": true
     }
   },
