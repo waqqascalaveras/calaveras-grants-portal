@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-15T06:11:10.970011Z",
+  "fetchedAt": "2026-01-15T18:13:32.553344Z",
   "success": true,
   "grants": [
     {
@@ -48,22 +48,6 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "146205",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Workforce Education and Training Peer Personnel Training and Placement",
-      "GrantTitle": "Workforce Education and Training Peer Personnel Training and Placement",
-      "Description": "Applicants must implement a peer personnel training and placement program that contains recruitment and outreach, career counseling, training, placement, support, evaluation, and if applicable, financial assistance.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$2,000,000",
-      "Categories": "Education; Health & Human Services",
-      "ApplicantType": "Nonprofit; Public Agency",
-      "GrantInfoURL": "",
-      "PortalID": "107955",
       "Source": "ca.gov"
     },
     {
@@ -456,7 +440,7 @@
       "Description": "The Sustainable Agricultural Lands Conservation Program supports the state\u2019s greenhouse gas (GHG) emission goals by making strategic investments to protect agricultural lands. Sustainable Agricultural Lands Conservation Planning Grants support the development and implementation of plans for the protection of agricultural land at risk of conversion to non-agricultural uses, maintaining the economic viability of the region\u2019s agricultural lands, and developing the economic viability of regional food systems and infrastructure to support the production, aggregation, processing and distribution of agricultural products. \u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-01-15 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -22323,6 +22307,22 @@
       "Source": "ca.gov"
     },
     {
+      "Title": "Workforce Education and Training Peer Personnel Training and Placement",
+      "GrantTitle": "Workforce Education and Training Peer Personnel Training and Placement",
+      "Description": "Applicants must implement a peer personnel training and placement program that contains recruitment and outreach, career counseling, training, placement, support, evaluation, and if applicable, financial assistance.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2021-03-16 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Education; Health & Human Services",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "5155",
+      "Source": "ca.gov"
+    },
+    {
       "Title": "COVID-19 Health Equity Pilot Projects",
       "GrantTitle": "COVID-19 Health Equity Pilot Projects",
       "Description": "\u2022 CDPH OHE will be administering $5M from the Centers for Disease and Control Epidemiology and Laboratory Capacity Grant (totaling $499M) to ~16-30 community based organizations led by and serving communities facing inequities in COVID-19 impacts and infection. Once projects are completed, awardees will be sharing the best practices, outcomes, and impact of their pilot projects to their Local Health Jurisdictions and CDPH, with the goal that successful pilot projects can be replicated to reduce the risks of COVID-19 among priority populations who are taking the burden of COVID-19 impacts.  \u2022 Eligible entities must be a CBO with their 501(c)(3) certification or be fiscally sponsored by a 501(c)(3) organization. Refer to the RFA for complete details on application requirements.  \u2022 Allowable activities of these pilot projects must address the social determinants of health and underlying inequities of communities experiencing disproportionate risk of COVID-19 and its associated impacts. Unallowable activities include but are not limited to: testing and laboratory services; contact tracing; media campaigns on handwashing, face coverings, social distancing; data systems; research; skilled nursing facility staffing, or direct services. Refer to the RFA for detailed explanations and examples about allowable vs unallowable activities.  \u2022 Project period ends November 17, 2022.  \u2022 Applicants must submit their application packet to ELCCovidHealthEquity@cdph.ca.gov by 5pm PT March 2, 2021. Refer to the RFA for detailed application requirements and instructions.  \u2022 Applicants can request from a minimum of $50,000 and up to a maximum of $300,000. o Tier 1: $50,000 - $99,999o Tier 2: $100,000 - $199,999o Tier 3: $200,000 - $300,000  \u2022 Organizations can submit individual applications or joint applications with other eligible entities. Organizations can only participate in 1 application and cannot be involved in multiple applications. CDPH OHE encourages diverse and smaller CBOs to apply, either as individual applicants or as a joint applicant with other eligible entities.  \u2022 Refer to the RFA for detailed application requirements  \u2022 There will be NO one on one (1-1) technical assistance will be provided, but there will 3 opportunities for applicants to ask questions: 2 written question submission periods where answers will be posted on the OHE website and 1 informational webinar walking through application requirements. A recording of the webinar will be posted on the OHE website. Refer to the RFA for the tentative time schedule of events.",
@@ -40397,21 +40397,55 @@
       "OpportunityID": "361053",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
       "Source": "federal"
+    },
+    {
+      "Title": "BJS FY25 National Corrections Reporting Program (NCRP) National Prisoner Statistics (NPS) Program, Reference Years (RY) 2025&ndash;2029",
+      "GrantTitle": "BJS FY25 National Corrections Reporting Program (NCRP) National Prisoner Statistics (NPS) Program, Reference Years (RY) 2025&ndash;2029",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJS-2025-172528",
+      "Status": "posted",
+      "ApplicationDeadline": "02/24/2026",
+      "PostedDate": "01/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361156",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361156",
+      "Source": "federal"
+    },
+    {
+      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-TS-26-165",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/31/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360195",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2470,
+  "totalCount": 2472,
   "sources": {
     "ca": {
-      "count": 1820,
+      "count": 1819,
       "success": true
     },
     "federal": {
-      "count": 904,
+      "count": 906,
       "success": true
     }
   },
   "duplicates": {
-    "count": 254,
+    "count": 253,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
