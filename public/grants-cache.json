@@ -1,10 +1,10 @@
 {
-  "fetchedAt": "2026-01-16T06:11:21.188875Z",
+  "fetchedAt": "2026-01-16T18:10:46.838582Z",
   "success": true,
   "grants": [
     {
-      "Title": "2026-27 School Breakfast Program and Summer Meals Start-Up and Expansion Grants",
-      "GrantTitle": "2026-27 School Breakfast Program and Summer Meals Start-Up and Expansion Grants",
+      "Title": "2026-27 School Breakfast Program (SBP) and Summer Meal Program (SMP) Start-Up and Expansion Grant",
+      "GrantTitle": "2026-27 School Breakfast Program (SBP) and Summer Meal Program (SMP) Start-Up and Expansion Grant",
       "Description": "Overview  School food authorities (SFA) can submit the 2026-27 School Breakfast Program (SBP) and Summer Meal Programs (SMP) Start-up and Expansion Grant, known as the Breakfast Grant (BG), application found online on the California Department of Education (CDE) BG Request for Applications (RFA) web page. Please carefully review the Application Scoring Criteria on the CDE BG web page and read the Instructions for completing the BG application. Complete the application and have the appropriate agency official electronically sign and submit it. The CDE must receive your SFA\u2019s online submission no later than 4 p.m. on Friday, February 13, 2026. No late or mailed applications will be accepted.  Questions:\u00a0School Breakfast Grant Team, email:\u00a0breakfastgrant@cde.ca.gov  Grant Award Information  If your SFA requires board approval to receive grant funding, please provide a copy of the board approval with your grant application. The CDE will not process an application without these approvals (if needed). All grant recipients must sign and return the original grant award notification (GAN) before the CDE will release grant funds. An original GAN includes the signature of the State Superintendent of Public Instruction.  The CDE will bill SFAs for any grant funds received or may withhold final payment if the requirements of the grant are not fulfilled. Please note that awarded SFAs must be approved to participate in the SBP or SMP before receiving their first grant payment.  If an SFA knowingly submits false information on the grant application or invoices, the CDE may deny or recover the SFA\u2019s grant funding.  The CDE will send grant awardees an approved procurement form, which represents an estimate of approved grant expenses for claim submittal.  The CDE administers these grants and reserves the right to make changes to the approved budget, which includes reducing the amount of funding to reflect actual, allowable, and reasonable costs.  SFAs should keep the following information in mind when applying for this grant:  SFAs may receive a grant for the same site no more than once every three years. \u00a0  Eligible SFAs may apply for the SBP grant or the SMP grant; however,\u00a0SFAs may not request both grants for one site.  For SBP grants, the SFA must have at least 20 percent of students enrolled at the site approved for Free/Reduced Price (F/RP) meals. For SMP grants, sites must meet all Summer Food Service Program (SFSP) eligibility criteria.  An SFA must have a current vendor number on file with the California State Controller\u2019s Office to be eligible for an SBP or SMP grant. SFAs can obtain a vendor number from the CDE as part of the application process to participate in the National School Lunch Program (NSLP), SBP, or SMP.  The CDE may consider SFAs with excess net cash resources (NCR) to be ineligible to receive a grant. In accordance with Title 7, CFR, Section 210.14(b), an SFA shall limit its NCRs to an amount that does not exceed three months\u2019 average expenditures from its food service account. SFAs with excess NCRs must include a detailed explanation of their excess NCRs in their application.  SFAs must be in good standing in all Child Nutrition Programs in which they participate.",
       "AgencyName": "",
       "Agency": "",
@@ -34687,23 +34687,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOA-VETS-26-01",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/28/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360161",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
-      "Source": "federal"
-    },
-    {
       "Title": "HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Clinical Trial Center and Clinical Centers (U01 Clinical Trial Optional)",
       "GrantTitle": "HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Clinical Trial Center and Clinical Centers (U01 Clinical Trial Optional)",
       "Description": "",
@@ -40379,6 +40362,23 @@
       "AwardFloor": 0,
       "OpportunityID": "360950",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360950",
+      "Source": "federal"
+    },
+    {
+      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOA-VETS-26-01",
+      "Status": "posted",
+      "ApplicationDeadline": "03/06/2026",
+      "PostedDate": "01/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360161",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
       "Source": "federal"
     }
   ],
