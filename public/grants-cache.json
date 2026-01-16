@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-15T18:13:32.553344Z",
+  "fetchedAt": "2026-01-16T06:11:21.188875Z",
   "success": true,
   "grants": [
     {
@@ -33786,23 +33786,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Digital Newspaper Program",
-      "GrantTitle": "National Digital Newspaper Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20260109-PJ",
-      "Status": "posted",
-      "ApplicationDeadline": "01/15/2026",
-      "PostedDate": "08/20/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358394",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358394",
-      "Source": "federal"
-    },
-    {
       "Title": "Enhancing sustainable HIV health systems and networks for quality detection, management, and monitoring to end HIV as a public health threat in India under the President's Emergency Plan for AIDS Relief (PEPFAR)",
       "GrantTitle": "Enhancing sustainable HIV health systems and networks for quality detection, management, and monitoring to end HIV as a public health threat in India under the President's Emergency Plan for AIDS Relief (PEPFAR)",
       "Description": "",
@@ -35517,23 +35500,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360674",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360674",
-      "Source": "federal"
-    },
-    {
-      "Title": "Rediscovering Our Revolutionary Tradition",
-      "GrantTitle": "Rediscovering Our Revolutionary Tradition",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20250904-PQ",
-      "Status": "posted",
-      "ApplicationDeadline": "01/15/2026",
-      "PostedDate": "06/16/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359731",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359731",
       "Source": "federal"
     },
     {
@@ -38903,23 +38869,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
-      "GrantTitle": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-6900-N-34",
-      "Status": "posted",
-      "ApplicationDeadline": "03/09/2026",
-      "PostedDate": "12/09/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360950",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360950",
-      "Source": "federal"
-    },
-    {
       "Title": "Opportunities for Collaborative Research at the NIH Clinical Center (U01 Clinical Trial Optional)",
       "GrantTitle": "Opportunities for Collaborative Research at the NIH Clinical Center (U01 Clinical Trial Optional)",
       "Description": "",
@@ -39019,23 +38968,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360957",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360957",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY 2026 Notice of Funding Opportunity: Infrastructure Investment and Jobs Act (IIJA) Airport Terminal Program (ATP) Grants",
-      "GrantTitle": "FY 2026 Notice of Funding Opportunity: Infrastructure Investment and Jobs Act (IIJA) Airport Terminal Program (ATP) Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FAA-ARP-IIJA-G-26-001",
-      "Status": "posted",
-      "ApplicationDeadline": "01/15/2026",
-      "PostedDate": "12/10/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360955",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360955",
       "Source": "federal"
     },
     {
@@ -40382,20 +40314,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "HRSA-26-009",
-      "Status": "posted",
-      "ApplicationDeadline": "03/31/2026",
-      "PostedDate": "12/23/2025",
+      "OpportunityNumber": "RFA-TS-26-165",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/31/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361053",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
+      "OpportunityID": "360195",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
       "Source": "federal"
     },
     {
@@ -40416,31 +40348,48 @@
       "Source": "federal"
     },
     {
-      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
+      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-TS-26-165",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/31/2025",
+      "OpportunityNumber": "HRSA-26-009",
+      "Status": "posted",
+      "ApplicationDeadline": "03/31/2026",
+      "PostedDate": "12/23/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "360195",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
+      "OpportunityID": "361053",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
+      "Source": "federal"
+    },
+    {
+      "Title": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
+      "GrantTitle": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-6900-N-34",
+      "Status": "posted",
+      "ApplicationDeadline": "03/09/2026",
+      "PostedDate": "12/09/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360950",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360950",
       "Source": "federal"
     }
   ],
-  "totalCount": 2472,
+  "totalCount": 2469,
   "sources": {
     "ca": {
       "count": 1819,
       "success": true
     },
     "federal": {
-      "count": 906,
+      "count": 903,
       "success": true
     }
   },
