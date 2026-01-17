@@ -1,7 +1,71 @@
 {
-  "fetchedAt": "2026-01-17T06:09:42.576855Z",
+  "fetchedAt": "2026-01-17T18:09:33.645106Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Senate Bill 1 Sea Level Rise Adaptation Grant Program \u2013 Track 2",
+      "GrantTitle": "Senate Bill 1 Sea Level Rise Adaptation Grant Program \u2013 Track 2",
+      "Description": "The SB 1 Grant Program \u2013 Track 2 provides competitive grant funding for nature-based sea level rise (SLR) adaptation projects along the California coast and the San Francisco Bay shoreline. Track 2 is intended for jurisdictions that have completed, or are actively advancing, SLR adaptation planning and are ready to implement priority projects.  Eligible projects must be identified as a priority in a completed or in-progress SLR adaptation plan, coastal resilience plan, or comparable land-use planning effort. Projects located in jurisdictions currently developing SLR plans (e.g., to comply with SB 272) must demonstrate alignment and coordination with that planning effort. An exception may be considered, on a case-by-case basis, for strategic relocation projects.  Track 2 exclusively funds nature-based adaptation projects, defined as projects that rely on natural or mostly natural features to enhance coastal processes, ecosystem function, and long-term resilience while protecting inland areas. Hybrid green-gray designs may be considered where limited gray infrastructure is clearly justified and incorporated in a manner that minimizes environmental impacts. Projects that rely primarily on gray infrastructure (e.g., seawalls, revetments, shoreline armoring) or that are solely research or monitoring efforts are not eligible.  Applicants may request funding for the following project types:    Site Assessment and Preliminary Design, including site evaluation, feasibility studies, baseline data collection, stakeholder engagement, and preliminary project design;  Final Design and Permitting, including final engineering design, environmental planning, permitting, and detailed cost estimates; and  Construction for shovel-ready projects with completed designs, required permits, and site control.    Track 2 prioritizes projects that protect or restore coastal habitats, reduce coastal hazard risk to communities and critical infrastructure, maintain public access, build resilience of public trust resources, and provide multiple co-benefits. Consistent with Proposition 4, priority is given to projects that deliver meaningful and direct benefits to vulnerable populations, disadvantaged communities (DAC), and severely disadvantaged communities (SDAC). Tribal consultation and partnerships with California Native American tribes are strongly encouraged.  For Round 1, approximately $7 million is anticipated to be available, with typical awards expected to range from $500,000 to $2,500,000. The maximum project length is three years.  Track 2 uses a Letter of Intent (LOI) process. Applicants must submit a completed LOI by the posted deadline for initial eligibility and programmatic review. LOIs are evaluated to determine project eligibility, alignment with solicitation priorities, and readiness for implementation. Only applicants invited by OPC following LOI review may submit a full proposal. Detailed LOI requirements, templates, and submission instructions are available on the SB 1 Funding webpage.  Keywordssea level rise; SLR; coastal resilience; coastal adaptation; nature-based adaptation; nature-based solutions; living shoreline",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-20 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$7,000,000",
+      "Categories": "Disadvantaged Communities; Disaster Prevention & Relief; Environment & Water",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "158313",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Literacy Coaches and Reading Specialists Educator Training Grant Program",
+      "GrantTitle": "Literacy Coaches and Reading Specialists Educator Training Grant Program",
+      "Description": "Assembly Bill 121, Section 51 (Chapter 8, Statutes of 2025) authorizes this second competition for the LCRSET program. The CDE, subject to the approval of the State Board of Education, will award $15 million to a County Office of Education or consortium of county offices of education with expertise in both literacy instruction and multilingual education and demonstrated success in improving literacy instruction and outcomes through dual language immersion and other programs for multilingual learners through professional development based on the English Language Arts/English Language Development Framework, the English Learner Roadmap, and the Literacy Roadmap, especially for English Learners and other high-need pupil groups. Additionally, priority will be given to county offices of education that are partnering with institutions of higher education with demonstrated success in providing statewide professional development for expert literacy practice for multilingual learners.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-23 16:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$15,000,000",
+      "Categories": "Education",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "158307",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FFY 2024 State & Local Cybersecurity Grant \u2013 Local & Tribal (SL) RFP",
+      "GrantTitle": "FFY 2024 State & Local Cybersecurity Grant \u2013 Local & Tribal (SL) RFP",
+      "Description": "The purpose of the SL Program is to assist local governments, including school districts and special districts, and federally recognized tribes address cybersecurity risks and threats to information systems, and improve security of critical infrastructure and resilience of the services these entities provide to their communities.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-13 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$9,682,381",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "158304",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "FFY 2024 State & Local Cybersecurity Grant \u2013 State Agency (SG) RFP",
+      "GrantTitle": "FFY 2024 State & Local Cybersecurity Grant \u2013 State Agency (SG) RFP",
+      "Description": "The purpose of the SG Program is to assist agencies of the State of California address cybersecurity risks and threats to information systems, and improve security of critical infrastructure and resilience of the services these entities provide to their communities.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-13 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,815,446",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "158301",
+      "Source": "ca.gov"
+    },
     {
       "Title": "2026-27 School Breakfast Program (SBP) and Summer Meal Program (SMP) Start-Up and Expansion Grant",
       "GrantTitle": "2026-27 School Breakfast Program (SBP) and Summer Meal Program (SMP) Start-Up and Expansion Grant",
@@ -568,7 +632,7 @@
       "Description": "see solicitation manual for more details",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-01-16 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$9,289,757",
@@ -7971,15 +8035,15 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "Senate Bill 1 Sea Level Rise Adaptation Planning Grant Program",
-      "GrantTitle": "Senate Bill 1 Sea Level Rise Adaptation Planning Grant Program",
+      "Title": "Senate Bill 1 Sea Level Rise Adaptation Grant Program \u2013 Track 1",
+      "GrantTitle": "Senate Bill 1 Sea Level Rise Adaptation Grant Program \u2013 Track 1",
       "Description": "The SB 1 Grant Program aims to provide funding for sea level rise (SLR) adaptation planning to help prepare communities for the impacts of climate change. While many jurisdictions have advanced planning already underway or complete, many others have yet to begin comprehensive planning or assessments. The Ocean Protection Council (OPC) aims to address this need by offering funding for a range of SLR planning activities. These fall into the following categories:  Track 1: SLR Adaptation Planning  Phase 1: Pre-planning (explore, define, assess)  Community Visioning Vulnerability Assessment  Phase 2: Data Collection  Data/Information Gathering  Phase 3: Planning (define adaptation frameworks and strategies)  SLR Adaptation Plan SF Bay Subregional Shoreline Plan Sector-Specific Adaptation Plan  Track 2: SLR Implementation Projects  Phase 4: Project Implementation (implement, innovate, assess, adjust)  Nature-based and Green-Grey Hybrid2 Adaptation Projects/Feasibility Study/Design Plans  Track One proposals (Projects in the Pre-planning, Data Collection, and Planning Phases) will be accepted through a rolling, quarterly, non-competitive process, provided the proposals satisfy the Sea Level Rise Adaptation Criteria and requirements of the SB 1 Grant Program solicitation. Track Two proposals (Projects in the Implementation Project Phase) will be accepted through a competitive process starting in mid-late 2024, subject to availability of funding.  A complementary SB 1 Technical Assistance (TA) Program provides application assistance to eligible SB 1 applicants facing significant and imminent sea level rise threats along the California coast and San Francisco Bay shoreline. TA is tailored based on the applicants\u2019 needs, including but not limited to capacity building and grant writing support. The most up-to-date information on the SB 1 TA Program, including information on how to apply for TA, can be found on the SB 1 Funding webpage.  Keywords: sea level rise; SLR; climate change; adaptation; planning; coastal resilience",
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
       "ApplicationDeadline": "Ongoing",
       "PostedDate": "",
-      "EstAvailFunds": "$22,800,819",
+      "EstAvailFunds": "$21,331,028",
       "Categories": "Disadvantaged Communities; Disaster Prevention & Relief; Environment & Water",
       "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
@@ -40399,10 +40463,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2470,
+  "totalCount": 2474,
   "sources": {
     "ca": {
-      "count": 1819,
+      "count": 1823,
       "success": true
     },
     "federal": {
