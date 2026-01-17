@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-16T18:10:46.838582Z",
+  "fetchedAt": "2026-01-17T06:09:42.576855Z",
   "success": true,
   "grants": [
     {
@@ -40380,16 +40380,33 @@
       "OpportunityID": "360161",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
       "Source": "federal"
+    },
+    {
+      "Title": "SOI - Rural Transportation Match and Gap Funding Assistance Program",
+      "GrantTitle": "SOI - Rural Transportation Match and Gap Funding Assistance Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "26-DC-MG-SOI-TRX",
+      "Status": "posted",
+      "ApplicationDeadline": "02/13/2026",
+      "PostedDate": "01/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361161",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361161",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2469,
+  "totalCount": 2470,
   "sources": {
     "ca": {
       "count": 1819,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 904,
       "success": true
     }
   },
