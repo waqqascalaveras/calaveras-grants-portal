@@ -183,21 +183,46 @@ const GrantsDashboard = () => {
   const [grants, setGrants] = useState([]);
   const [loading, setLoading] = useState(true);
   const [errorInfo, setErrorInfo] = useState(null);
-  const [searchQuery, setSearchQuery] = useState('');
-  const [userType, setUserType] = useState('all'); // 'all', 'county', 'cbo'
-  const [selectedDepartment, setSelectedDepartment] = useState('all');
-  const [statusFilter, setStatusFilter] = useState({ open: true, forecasted: true, closed: false });
-  const [favorites, setFavorites] = useState([]);
+  // Load persisted filters from localStorage
+  const persistedFilters = (() => {
+    try {
+      return JSON.parse(window.localStorage.getItem('grantFinderFilters') || '{}');
+    } catch {
+      return {};
+    }
+  })();
+
+  const [searchQuery, setSearchQuery] = useState(persistedFilters.searchQuery || '');
+  const [userType, setUserType] = useState(persistedFilters.userType || 'all'); // 'all', 'county', 'cbo'
+  const [selectedDepartment, setSelectedDepartment] = useState(persistedFilters.selectedDepartment || 'all');
+  const [statusFilter, setStatusFilter] = useState(persistedFilters.statusFilter || { open: true, forecasted: true, closed: false });
+  const [favorites, setFavorites] = useState(persistedFilters.favorites || []);
   const [selectedGrant, setSelectedGrant] = useState(null);
-  const [sortColumn, setSortColumn] = useState(null);
-  const [sortDirection, setSortDirection] = useState('asc');
+  const [sortColumn, setSortColumn] = useState(persistedFilters.sortColumn || null);
+  const [sortDirection, setSortDirection] = useState(persistedFilters.sortDirection || 'asc');
   const [lastUpdated, setLastUpdated] = useState(null);
   const [hoveredGrantId, setHoveredGrantId] = useState(null);
   const [sourceCounts, setSourceCounts] = useState({ ca: 0, federal: 0 });
-  const [sourceFilters, setSourceFilters] = useState({ ca: true, federal: true });
-  const [favoriteFilter, setFavoriteFilter] = useState('all');
+  const [sourceFilters, setSourceFilters] = useState(persistedFilters.sourceFilters || { ca: true, federal: true });
+  const [favoriteFilter, setFavoriteFilter] = useState(persistedFilters.favoriteFilter || 'all');
   const [lastAttemptTs, setLastAttemptTs] = useState(null);
   const [lastMeta, setLastMeta] = useState(null);
+
+  // Persist filters to localStorage on change
+  useEffect(() => {
+    const filtersToPersist = {
+      searchQuery,
+      userType,
+      selectedDepartment,
+      statusFilter,
+      favorites,
+      sortColumn,
+      sortDirection,
+      sourceFilters,
+      favoriteFilter
+    };
+    window.localStorage.setItem('grantFinderFilters', JSON.stringify(filtersToPersist));
+  }, [searchQuery, userType, selectedDepartment, statusFilter, favorites, sortColumn, sortDirection, sourceFilters, favoriteFilter]);
   const [splitWidth, setSplitWidth] = useState(55); // percent width for table when detail open
   const [isResizing, setIsResizing] = useState(false);
   const mainContentRef = useRef(null);
