@@ -371,7 +371,7 @@ For technical issues or questions:
 
 ## 📄 License
 
-Copyright © 2025 Calaveras County, California
+Copyright © 2026 Calaveras County, California
 Use or redistribution requires written permission from Calaveras County Health and Human Services Agency.
 
 ## 🙏 Acknowledgments
@@ -384,4 +384,4 @@ Use or redistribution requires written permission from Calaveras County Health a
 
 **Built with ❤️ for Calaveras County**
 
-*Last Updated: December 2025*
+*Last Updated: December 2026*

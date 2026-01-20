@@ -225,25 +225,29 @@ const GrantsDashboard = () => {
       return;
     }
 
-    // Immediately show the grant (even without full details)
-    setSelectedGrant(grant);
-
-    // If it's a federal grant without description, fetch details
+    // If it's a federal grant without description, show loading and fetch details
     const isFederal = (grant.Source || '').toLowerCase() === 'federal' || 
                       (grant._source || '').toLowerCase().includes('grant');
-    
+
     if (isFederal && !grant.Description && !grant._detailsFetched) {
+      // Show loading spinner
+      setSelectedGrant({ ...grant, _isLoadingDescription: true });
       const details = await fetchFederalGrantDetails(grant);
       if (details) {
         // Update the grant with fetched details
-        const updatedGrant = { ...grant, ...details };
+        const updatedGrant = { ...grant, ...details, _isLoadingDescription: false, _detailsFetched: true };
         setSelectedGrant(updatedGrant);
-        
         // Also update in the grants array so we don't refetch
         setGrants(prevGrants => prevGrants.map(g => 
           getGrantId(g) === getGrantId(grant) ? updatedGrant : g
         ));
+      } else {
+        // Remove loading spinner if fetch fails
+        setSelectedGrant({ ...grant, _isLoadingDescription: false, _detailsFetched: true });
       }
+    } else {
+      // Immediately show the grant (even without full details)
+      setSelectedGrant(grant);
     }
   }, [fetchFederalGrantDetails, getGrantId]);
 
@@ -1541,9 +1545,18 @@ const GrantsDashboard = () => {
                       <div className="text-heading">
                         Description <InfoTooltip text="Federal grant descriptions are available on the grant detail page. Click the 'View Full Grant Details' button below." />
                       </div>
-                      <div style={{ color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem' }}>
-                        Description could not be loaded automatically. Click "View Full Grant Details" below to see complete information on Grants.gov.
-                      </div>
+                      {selectedGrant._isLoadingDescription ? (
+                        <div style={{ margin: '2rem 0' }}>
+                          <Loading />
+                          <div style={{ color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem', marginTop: '1rem' }}>
+                            Fetching full grant description from Grants.gov...
+                          </div>
+                        </div>
+                      ) : (
+                        <div style={{ color: '#6c757d', fontStyle: 'italic', fontSize: '0.9rem' }}>
+                          Description could not be loaded automatically. Click "View Full Grant Details" below to see complete information on Grants.gov.
+                        </div>
+                      )}
                     </div>
                   ) : null}
                 </div>
