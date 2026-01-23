@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-23T06:11:16.936191Z",
+  "fetchedAt": "2026-01-23T18:10:41.891366Z",
   "success": true,
   "grants": [
     {
@@ -40427,21 +40427,72 @@
       "OpportunityID": "361193",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361193",
       "Source": "federal"
+    },
+    {
+      "Title": "Mentored Clinical Scientist Research Career Development Award (Parent K08  Independent Clinical Trial Not Allowed)",
+      "GrantTitle": "Mentored Clinical Scientist Research Career Development Award (Parent K08  Independent Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-24-182",
+      "Status": "posted",
+      "ApplicationDeadline": "05/08/2027",
+      "PostedDate": "04/24/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "353746",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/353746",
+      "Source": "federal"
+    },
+    {
+      "Title": "Mentored Clinical Scientist Research Career Development Award (Parent K08 Independent Basic Experimental Studies with Humans Required)",
+      "GrantTitle": "Mentored Clinical Scientist Research Career Development Award (Parent K08 Independent Basic Experimental Studies with Humans Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-24-183",
+      "Status": "posted",
+      "ApplicationDeadline": "05/08/2027",
+      "PostedDate": "04/24/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "353747",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/353747",
+      "Source": "federal"
+    },
+    {
+      "Title": "Mentored Patient-Oriented Research Career Development Award (Parent K23  Independent Clinical Trial Required)",
+      "GrantTitle": "Mentored Patient-Oriented Research Career Development Award (Parent K23  Independent Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-24-184",
+      "Status": "posted",
+      "ApplicationDeadline": "05/08/2027",
+      "PostedDate": "04/09/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "353458",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/353458",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2472,
+  "totalCount": 2475,
   "sources": {
     "ca": {
       "count": 1823,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 903,
       "success": true
     }
   },
   "duplicates": {
-    "count": 250,
+    "count": 251,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
