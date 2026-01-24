@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-23T18:10:41.891366Z",
+  "fetchedAt": "2026-01-24T06:09:51.801359Z",
   "success": true,
   "grants": [
     {
@@ -38355,23 +38355,6 @@
       "Source": "federal"
     },
     {
-      "Title": "F25AS00317 Crane Creek Lacustuary Restoration",
-      "GrantTitle": "F25AS00317 Crane Creek Lacustuary Restoration",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "F25AS00317",
-      "Status": "posted",
-      "ApplicationDeadline": "01/23/2026",
-      "PostedDate": "11/19/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360891",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360891",
-      "Source": "federal"
-    },
-    {
       "Title": "Comprehensive Addiction and Recovery Act (CARA)",
       "GrantTitle": "Comprehensive Addiction and Recovery Act (CARA)",
       "Description": "",
@@ -40480,14 +40463,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2475,
+  "totalCount": 2474,
   "sources": {
     "ca": {
       "count": 1823,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 902,
       "success": true
     }
   },
