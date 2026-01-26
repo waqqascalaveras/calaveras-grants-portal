@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-25T18:09:41.281179Z",
+  "fetchedAt": "2026-01-26T06:13:03.775779Z",
   "success": true,
   "grants": [
     {
@@ -30075,23 +30075,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Genomic Community Resources (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Genomic Community Resources (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-124",
-      "Status": "posted",
-      "ApplicationDeadline": "01/25/2026",
-      "PostedDate": "03/01/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "346565",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/346565",
-      "Source": "federal"
-    },
-    {
       "Title": "Laboratory Flexible Funding Model (LFFM)",
       "GrantTitle": "Laboratory Flexible Funding Model (LFFM)",
       "Description": "",
@@ -36331,40 +36314,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Enhancement and Management of Established Biomedical Data Repositories and Knowledgebases (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Enhancement and Management of Established Biomedical Data Repositories and Knowledgebases (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-237",
-      "Status": "posted",
-      "ApplicationDeadline": "01/25/2026",
-      "PostedDate": "08/30/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "350051",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/350051",
-      "Source": "federal"
-    },
-    {
-      "Title": "Early-stage Biomedical Data Repositories and Knowledgebases (R24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Early-stage Biomedical Data Repositories and Knowledgebases (R24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-236",
-      "Status": "posted",
-      "ApplicationDeadline": "01/25/2026",
-      "PostedDate": "08/30/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "350050",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/350050",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Support for Conferences and Scientific Meetings (Parent R13 Clinical Trial Not Allowed)",
       "GrantTitle": "NIH Support for Conferences and Scientific Meetings (Parent R13 Clinical Trial Not Allowed)",
       "Description": "",
@@ -40479,14 +40428,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2475,
+  "totalCount": 2472,
   "sources": {
     "ca": {
       "count": 1824,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 899,
       "success": true
     }
   },
