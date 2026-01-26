@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-26T06:13:03.775779Z",
+  "fetchedAt": "2026-01-26T18:11:34.175464Z",
   "success": true,
   "grants": [
     {
@@ -40426,16 +40426,50 @@
       "OpportunityID": "353458",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/353458",
       "Source": "federal"
+    },
+    {
+      "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
+      "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-092",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361204",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361204",
+      "Source": "federal"
+    },
+    {
+      "Title": "BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level",
+      "GrantTitle": "BRAIN Initiative: Brain-Behavior Quantification and Synchronization &ndash; Transformative Research on Behavior at the Organismal Level",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-27-011",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361205",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361205",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2472,
+  "totalCount": 2474,
   "sources": {
     "ca": {
       "count": 1824,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 901,
       "success": true
     }
   },
