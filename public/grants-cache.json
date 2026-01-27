@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-01-27T06:11:37.332175Z",
+  "fetchedAt": "2026-01-27T18:12:54.261068Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Paid Family Leave Small Business Grant 4 (PFL SB 4 Grant)",
+      "GrantTitle": "Paid Family Leave Small Business Grant 4 (PFL SB 4 Grant)",
+      "Description": "The Employment Training Panel (ETP) and Labor and Workforce Development Agency (LWDA),announce the availability of up to $920,000 in California State General Fund dollars, for Multiple Employer organizations to outreach to California\u2019s small businesses impacted by the Paid Family Leave (PFL) program, to help offset the costs incurred when training employees to cover the duties of the individual utilizing PFL. PFL is part of the California State Disability Insurance program providing benefits to eligible California workers who need time off work to care for a seriously ill or injured family member, to bond with a new child, or to participate in a qualifying military event. PFL pays up to eight weeks of benefits in a 12-month period. Although PFL does not provide job protection, there are various federal and state laws that provide protected leave for up to 12 weeks. The PFL SB Grant will provide to California small businesses (within the grant) equal to or between 100\u201351 employees a payment of $1,000 and a payment of $2,000 to small businesses less than or equal to 50 for each employee who is utilizing the PFL program, to help offset the costs involved with training other employees to cover the duties of this individual on PFL leave.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$920,000",
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training; Health & Human Services",
+      "ApplicantType": "Business",
+      "GrantInfoURL": "",
+      "PortalID": "158484",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Social Entrepreneurs for Economic Development 3 (SEED 3)",
+      "GrantTitle": "Social Entrepreneurs for Economic Development 3 (SEED 3)",
+      "Description": "In June 2020, the California Legislature approved Assembly Bill 82 (Chapter 14, Stats. 2020), which established the Social Entrepreneurs for Economic Development (SEED) Initiative (See California Unemployment Insurance Code, sections 14106 to 14110). The Employment Training Panel (ETP), within the Labor and Workforce Development Agency (Agency), is administering this round of SEED funding on behalf of the California Governor\u2019s Office of Business and Economic Development (GO-Biz). SEED target populations are individuals who face significant barriers to employment, specifically: (1) individuals with limited English proficiency, regardless of immigration or citizenship status; or (2) individuals who are neither U.S. citizens nor lawful permanent residents. This includes individuals who may not be lawfully present in the United States, and individuals who have been granted Deferred Action for Childhood Arrivals (DACA) or Temporary Protected Status (TPS). In addition, SEED is open to all individuals in the target populations, including other immigrants, refugees and asylees, and United States citizens.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$6,750,000",
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training",
+      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "158481",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Fisheries Restoration Grant Program (2026)",
       "GrantTitle": "Fisheries Restoration Grant Program (2026)",
@@ -24520,8 +24552,8 @@
       "Description": "Office of Sustainable Water Solution (office) was created within the State Water Resources Control Board to promote permanent and sustainable drinking water and wastewater treatment solutions to ensure effective and efficient provision of safe, clean, affordable, and reliable drinking water and wastewater treatment services. The Office is focused on addressing financial and technical assistance needs, particularly for small disadvantaged communities through the Small Community Funding Program:  Small Community Drinking Water Funding Small Community Clean Water/Wastewater Funding Small Community Emergency Grant Funds Safe and Affordable Funding for Equity and Resilience Program  Small Community Drinking Water (SCDW) Funding Program provides assistance to help small disadvantage communities (DACs) implement eligible drinking water capital improvement projects. Small communities are defined as having population no more than 10,000 or no more than 3,300 service connections. DACs are defined as communities with a median household income (MHI) less than 80% of the average statewide MHI and severely disadvantage communities (SDACs) have a MHI less than 60% of the average statewide MHI.  The SCDW Funding Program provides low-interest loans and other financing mechanisms, such as grants or principal forgiveness using federal and state funds, for the planning/design and construction of drinking water infrastructure projects that are needed to achieve or maintain compliance with federal and state drinking water statutes and regulations. Eligible planning/design and construction drinking water projects include treatment systems, distribution systems, interconnections, consolidations, pipeline extensions, water sources, and water meters.  The SCDW Funding Program utilizes the Drinking Water State Revolving Fund (DWSRF) Policies and annual Drinking Water State Revolving Fund Intended Use Plan (IUP) to administer the program.\u00a0  Loan interest rate of 0% may be available with repayment term up to 40 years or the useful life of the financed assets for construction financing.\u00a0  \u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-05-01 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$50,000,000",
       "Categories": "Disadvantaged Communities; Environment & Water",
@@ -24536,8 +24568,8 @@
       "Description": "Office of Sustainable Water Solution (Office) was created within the State Water Resources Control Board to promote permanent and sustainable drinking water and wastewater treatment solutions to ensure effective and efficient provision of safe, clean, affordable, and reliable drinking water and wastewater treatment services. The Office is focused on addressing financial and technical assistance needs, particularly for small disadvantaged communities through the Small Community Funding Program:  Small Community Drinking Water Funding Small Community Clean Water/Wastewater Funding Small Community Emergency Grant Funds Safe and Affordable Funding for Equity and Resilience Program  Small Community Clean Water/Wastewater (SCWW) Funding Program provides financial assistance to help small disadvantage communities (DAC) implementing water quality improvement projects. Small communities are defined as having population less than 20,000. DACs are defined as communities with a median household income (MHI) less than 80% of the average statewide MHI and severely disadvantage communities (SDAC) have a MHI less than 60% of the average statewide MHI.  The SCWW Funding Program provides low-interest loans and other financing mechanism, such as grants or principal forgiveness using federal and state fund for the planning/design and construction of publicly-owned facilities including wastewater treatment plants, sewer collectors and interceptors, combined sewers, septic to sewer conversions, regionalization, landfill leachate treatment, storm water reduction and treatment, and water reclamation facilities.  The SCWW Funding Program utilizes the Drinking Water State Revolving Fund (CWSRF) Policies and annual Clean Water State Revolving Fund Intended Use Plan (IUP) to administer the program.\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-05-01 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$110,000,000",
       "Categories": "Disadvantaged Communities; Environment & Water",
@@ -40479,10 +40511,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2475,
+  "totalCount": 2477,
   "sources": {
     "ca": {
-      "count": 1824,
+      "count": 1826,
       "success": true
     },
     "federal": {
