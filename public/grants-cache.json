@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-27T18:12:54.261068Z",
+  "fetchedAt": "2026-01-28T06:12:28.026299Z",
   "success": true,
   "grants": [
     {
@@ -29002,23 +29002,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Modules for Enhancing Biomedical Research Workforce Training (R25 - Independent Clinical Trial Not Allowed)",
-      "GrantTitle": "Modules for Enhancing Biomedical Research Workforce Training (R25 - Independent Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-040",
-      "Status": "posted",
-      "ApplicationDeadline": "01/27/2026",
-      "PostedDate": "11/22/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "351109",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/351109",
-      "Source": "federal"
-    },
-    {
       "Title": "Specialized Programs of Research Excellence (SPOREs) in Human Cancers for Years 2024, 2025, and 2026 (P50 Clinical Trial Required)",
       "GrantTitle": "Specialized Programs of Research Excellence (SPOREs) in Human Cancers for Years 2024, 2025, and 2026 (P50 Clinical Trial Required)",
       "Description": "",
@@ -30121,23 +30104,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358411",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358411",
-      "Source": "federal"
-    },
-    {
-      "Title": "Biomedical Technology Optimization and Dissemination Center (BTOD)(RM1-Clinical Trial Not Allowed)",
-      "GrantTitle": "Biomedical Technology Optimization and Dissemination Center (BTOD)(RM1-Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-110",
-      "Status": "posted",
-      "ApplicationDeadline": "01/27/2026",
-      "PostedDate": "03/07/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "346659",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/346659",
       "Source": "federal"
     },
     {
@@ -36312,23 +36278,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collaborative Program Grant for Multidisciplinary Teams (RM1 - Clinical Trial Optional)",
-      "GrantTitle": "Collaborative Program Grant for Multidisciplinary Teams (RM1 - Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-077",
-      "Status": "posted",
-      "ApplicationDeadline": "01/27/2026",
-      "PostedDate": "02/03/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "345794",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/345794",
-      "Source": "federal"
-    },
-    {
       "Title": "National Cancer Institute Program Project Applications for the Years 2023, 2024, and 2025 (P01 Clinical Trial Optional)",
       "GrantTitle": "National Cancer Institute Program Project Applications for the Years 2023, 2024, and 2025 (P01 Clinical Trial Optional)",
       "Description": "",
@@ -40509,16 +40458,33 @@
       "OpportunityID": "361207",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361207",
       "Source": "federal"
+    },
+    {
+      "Title": "Coordinating Center for National Resource Network for the Study of Human Auditory and Vestibular Disorders",
+      "GrantTitle": "Coordinating Center for National Resource Network for the Study of Human Auditory and Vestibular Disorders",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DC-27-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/27/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361208",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361208",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2477,
+  "totalCount": 2475,
   "sources": {
     "ca": {
       "count": 1826,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 900,
       "success": true
     }
   },
