@@ -1,15 +1,31 @@
 {
-  "fetchedAt": "2026-01-28T06:12:28.026299Z",
+  "fetchedAt": "2026-01-28T18:13:07.013795Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Vertebrate Pest Control Research Program",
+      "GrantTitle": "Vertebrate Pest Control Research Program",
+      "Description": "Proposals may focus on research and/or education projects to enhance control measures of vertebrate pests that pose a significant threat to the welfare of state\u2019s agricultural economy, infrastructure, environment, and the public.\u00a0 CDFA does not support proprietary product development projects.\u00a0 Proposals that originate from outside of California are considered if the proposal includes relevance to vertebrate pest concerns within California.\u00a0 Proposals that include other sources of funding are strongly encouraged and welcomed.\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-09-20 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$200,000",
+      "Categories": "Agriculture; Environment & Water; Health & Human Services; Science, Technology, and Research & Development",
+      "ApplicantType": "Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "159342",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Paid Family Leave Small Business Grant 4 (PFL SB 4 Grant)",
       "GrantTitle": "Paid Family Leave Small Business Grant 4 (PFL SB 4 Grant)",
       "Description": "The Employment Training Panel (ETP) and Labor and Workforce Development Agency (LWDA),announce the availability of up to $920,000 in California State General Fund dollars, for Multiple Employer organizations to outreach to California\u2019s small businesses impacted by the Paid Family Leave (PFL) program, to help offset the costs incurred when training employees to cover the duties of the individual utilizing PFL. PFL is part of the California State Disability Insurance program providing benefits to eligible California workers who need time off work to care for a seriously ill or injured family member, to bond with a new child, or to participate in a qualifying military event. PFL pays up to eight weeks of benefits in a 12-month period. Although PFL does not provide job protection, there are various federal and state laws that provide protected leave for up to 12 weeks. The PFL SB Grant will provide to California small businesses (within the grant) equal to or between 100\u201351 employees a payment of $1,000 and a payment of $2,000 to small businesses less than or equal to 50 for each employee who is utilizing the PFL program, to help offset the costs involved with training other employees to cover the duties of this individual on PFL leave.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-13 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$920,000",
       "Categories": "Disadvantaged Communities; Employment, Labor & Training; Health & Human Services",
@@ -24,8 +40,8 @@
       "Description": "In June 2020, the California Legislature approved Assembly Bill 82 (Chapter 14, Stats. 2020), which established the Social Entrepreneurs for Economic Development (SEED) Initiative (See California Unemployment Insurance Code, sections 14106 to 14110). The Employment Training Panel (ETP), within the Labor and Workforce Development Agency (Agency), is administering this round of SEED funding on behalf of the California Governor\u2019s Office of Business and Economic Development (GO-Biz). SEED target populations are individuals who face significant barriers to employment, specifically: (1) individuals with limited English proficiency, regardless of immigration or citizenship status; or (2) individuals who are neither U.S. citizens nor lawful permanent residents. This includes individuals who may not be lawfully present in the United States, and individuals who have been granted Deferred Action for Childhood Arrivals (DACA) or Temporary Protected Status (TPS). In addition, SEED is open to all individuals in the target populations, including other immigrants, refugees and asylees, and United States citizens.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
+      "Status": "active",
+      "ApplicationDeadline": "2026-02-26 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$6,750,000",
       "Categories": "Disadvantaged Communities; Employment, Labor & Training",
@@ -160,6 +176,22 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "146205",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Farm and Ranch Solid Waste Clean Up and Abatement Grant Program FR90",
+      "GrantTitle": "Farm and Ranch Solid Waste Clean Up and Abatement Grant Program FR90",
+      "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY25-26 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-04-07 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "158988",
       "Source": "ca.gov"
     },
     {
@@ -1731,6 +1763,22 @@
       "Source": "ca.gov"
     },
     {
+      "Title": "Farm and Ranch Solid Waste Clean Up and Abatement Grant Program FR89",
+      "GrantTitle": "Farm and Ranch Solid Waste Clean Up and Abatement Grant Program FR89",
+      "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY25-26 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-01-07 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$391,423",
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "158979",
+      "Source": "ca.gov"
+    },
+    {
       "Title": "Sustainable Recreation, Tourism, and Equitable Outdoor Access Directed Grant Program (2025-2027)",
       "GrantTitle": "Sustainable Recreation, Tourism, and Equitable Outdoor Access Directed Grant Program (2025-2027)",
       "Description": "Proposition 68 recognizes the critical importance of recreation and tourism to California\u2019s economy and ecology and specifically directs funds to be used to support and expand recreation economies, opportunities, and access to outdoor recreation.\u00a0  Projects must fall within one of the following three focus areas to be considered for funding: 1. Build Climate Resilience: Support the planning, development, and maintenance of recreation and outdoor infrastructure that anticipates or adapts to increased use and pressure from climate change and visitors escaping extreme weather. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 2. Improve/Increase Access for All: Improve and/or increase access to nature, including for communities that have not traditionally had equitable access through grants which result in either the implementation or identification, prioritization, and preparation for capital improvement projects. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 3. Landscape-scale Assessments: Support landscape-scale partnerships to develop an assessment of landscape conditions and risks to recreational infrastructure and other assets. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection.  Eligibility: Projects must meet all the following criteria: Be located within the Sierra-Cascade Region; be consistent with the Program Objectives described in the Grant Program Guidelines and the SNC mission and program areas as defined in the SNC Strategic Plan and the Sierra Nevada Watershed Improvement Program; meet all requirements of Proposition 68 and result in a clear, demonstrable, and enduring public benefit. The SNC may give favorable consideration to projects that: Employ a collaborative approach in project development or implementation; result in a beneficial impact across a defined geographic region; directly benefit severely disadvantaged or disadvantaged communities; consider climate impacts and risks and identify specific adaptation strategies or actions to remedy climate-related vulnerability and leverage private, federal, or local resources.  To initiate consideration of a project, a project organizer should review the Grant Guidelines and Guidelines Companion Document and contact the appropriate SNC Area Representative. If it is determined that SNC will consider partnering on the project, the Area Representative will share the SNC Proposal Form with the organizer and assist in developing the project and completing the Proposal Form. Proposals will be accepted and reviewed on a rolling basis as long as funding is available.\u00a0Recommendations may be made to the SNC Governing Board on a quarterly basis beginning in June 2026. First review of project proposals will begin December 2025. Please review the full Grant Program Guidelines and Guidelines Companion Document.",
@@ -2864,22 +2912,6 @@
       "ApplicantType": "Nonprofit",
       "GrantInfoURL": "",
       "PortalID": "99765",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Vertebrate Pest Control Research Program",
-      "GrantTitle": "Vertebrate Pest Control Research Program",
-      "Description": "Proposals may focus on research and/or education projects to enhance control measures of vertebrate pests that pose a significant threat to the welfare of state\u2019s agricultural economy, infrastructure, environment, and the public.\u00a0 CDFA does not support proprietary product development projects.\u00a0 Proposals that originate from outside of California are considered if the proposal includes relevance to vertebrate pest concerns within California.\u00a0 Proposals that include other sources of funding are strongly encouraged and welcomed.\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2025-09-20 23:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$200,000",
-      "Categories": "Agriculture; Environment & Water; Health & Human Services; Science, Technology, and Research & Development",
-      "ApplicantType": "Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "99762",
       "Source": "ca.gov"
     },
     {
@@ -28322,23 +28354,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
-      "GrantTitle": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-DA-27-007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359275",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359275",
-      "Source": "federal"
-    },
-    {
       "Title": "Notice of Intent to Publish a Funding Opportunity Announcement for Impact of Technology and Digital Media Exposure Usage on Child and Adolescent Development",
       "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement for Impact of Technology and Digital Media Exposure Usage on Child and Adolescent Development",
       "Description": "",
@@ -39389,23 +39404,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Rural Residency Planning and Development Program",
-      "GrantTitle": "Rural Residency Planning and Development Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-047",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/11/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360998",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360998",
-      "Source": "federal"
-    },
-    {
       "Title": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "GrantTitle": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "Description": "",
@@ -40426,6 +40424,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
+      "GrantTitle": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-27-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/06/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359275",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359275",
+      "Source": "federal"
+    },
+    {
       "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "Description": "",
@@ -40475,12 +40490,29 @@
       "OpportunityID": "361208",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361208",
       "Source": "federal"
+    },
+    {
+      "Title": "Rural Residency Planning and Development Program",
+      "GrantTitle": "Rural Residency Planning and Development Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-047",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/11/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360998",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360998",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2475,
+  "totalCount": 2477,
   "sources": {
     "ca": {
-      "count": 1826,
+      "count": 1829,
       "success": true
     },
     "federal": {
@@ -40489,7 +40521,7 @@
     }
   },
   "duplicates": {
-    "count": 251,
+    "count": 252,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
