@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-01-29T06:20:30.906339Z",
+  "fetchedAt": "2026-01-29T18:17:16.470487Z",
   "success": true,
   "grants": [
+    {
+      "Title": "CAL FIRE Business and Workforce Development",
+      "GrantTitle": "CAL FIRE Business and Workforce Development",
+      "Description": "Eligible business development projects\u202finclude facilities, operations, and professional services that support the restoration of healthy, resilient forests. Eligible workforce development projects\u202finclude universities, colleges, government and community organizations, and businesses that aim to increase workforce capacity in the fields of logging, fuels treatment, manufacturing, or other support services that bolster the development of a resilient forest sector workforce. Research proposals that have the potential to facilitate an immediate benefit to California\u2019s forest-sector businesses and/or workforce will also be considered. Check out the Wood Products website and subscribe for updates.\u202f\u00a0\u00a0\u202f\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training; Energy; Science, Technology, and Research & Development; Transportation",
+      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "159480",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Vertebrate Pest Control Research Program",
       "GrantTitle": "Vertebrate Pest Control Research Program",
@@ -8640,22 +8656,6 @@
       "ApplicantType": "Nonprofit; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "66024",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "CAL FIRE Business and Workforce Development",
-      "GrantTitle": "CAL FIRE Business and Workforce Development",
-      "Description": "Eligible business development projects\u202finclude facilities, operations, and professional services that support the restoration of healthy, resilient forests.\u202f\u00a0\u00a0Eligible workforce development projects\u202finclude universities, colleges, government and community organizations, and businesses that aim to increase workforce capacity in the fields of logging, fuels treatment, transportation, manufacturing, or other support services that bolster the development of a resilient forest sector workforce.\u202f\u00a0\u00a0Research and development projects\u202frelated to both business and workforce development will also be considered. Check\u00a0out\u00a0the Wood Products\u00a0website\u00a0and\u00a0subscribe\u00a0for updates.\u202f\u00a0\u00a0\u202f\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2024-03-08 23:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$20,000,000",
-      "Categories": "Disadvantaged Communities; Employment, Labor & Training; Energy; Science, Technology, and Research & Development; Transportation",
-      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "8237",
       "Source": "ca.gov"
     },
     {
@@ -40427,7 +40427,7 @@
   "totalCount": 2472,
   "sources": {
     "ca": {
-      "count": 1829,
+      "count": 1830,
       "success": true
     },
     "federal": {
@@ -40436,7 +40436,7 @@
     }
   },
   "duplicates": {
-    "count": 252,
+    "count": 253,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
