@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-01-31T18:10:53.943441Z",
+  "fetchedAt": "2026-02-01T06:22:16.931923Z",
   "success": true,
   "grants": [
     {
@@ -38230,23 +38230,6 @@
       "Source": "federal"
     },
     {
-      "Title": "APEX Accelerator-Open Announcement for Idaho",
-      "GrantTitle": "APEX Accelerator-Open Announcement for Idaho",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DOD2026APEXACCELERATORIDAHO",
-      "Status": "posted",
-      "ApplicationDeadline": "01/31/2026",
-      "PostedDate": "11/18/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360877",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360877",
-      "Source": "federal"
-    },
-    {
       "Title": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
       "GrantTitle": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
       "Description": "",
@@ -39162,23 +39145,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360731",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360731",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY22 CRISI- Darby Township PA Main Street Crossing",
-      "GrantTitle": "FY22 CRISI- Darby Township PA Main Street Crossing",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-CCD-22-003",
-      "Status": "posted",
-      "ApplicationDeadline": "01/31/2026",
-      "PostedDate": "12/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360932",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360932",
       "Source": "federal"
     },
     {
@@ -40542,14 +40508,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2479,
+  "totalCount": 2477,
   "sources": {
     "ca": {
       "count": 1831,
       "success": true
     },
     "federal": {
-      "count": 900,
+      "count": 898,
       "success": true
     }
   },
