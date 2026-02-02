@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-01T18:11:41.439503Z",
+  "fetchedAt": "2026-02-02T06:30:12.123773Z",
   "success": true,
   "grants": [
     {
@@ -34303,23 +34303,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Enhancing Global Health Security: Expanding Efforts and Strategies to Protect and Improve Public Health in Bangladesh",
-      "GrantTitle": "Enhancing Global Health Security: Expanding Efforts and Strategies to Protect and Improve Public Health in Bangladesh",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0039",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/21/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360328",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360328",
-      "Source": "federal"
-    },
-    {
       "Title": "Stroke Preclinical Assessment Network (SPAN) to Support Translational Studies for Acute Cerebroprotection &ndash; Network Sites and Coordinating Center (U01- CT Not Allowed)",
       "GrantTitle": "Stroke Preclinical Assessment Network (SPAN) to Support Translational Studies for Acute Cerebroprotection &ndash; Network Sites and Coordinating Center (U01- CT Not Allowed)",
       "Description": "",
@@ -36816,23 +36799,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358880",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358880",
-      "Source": "federal"
-    },
-    {
-      "Title": "Strengthening and Development of Sustainable Regional Public Health and Epidemiological Workforce Capacity through Collaboration, Program Development, and Implementation",
-      "GrantTitle": "Strengthening and Development of Sustainable Regional Public Health and Epidemiological Workforce Capacity through Collaboration, Program Development, and Implementation",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0108",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360345",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360345",
       "Source": "federal"
     },
     {
@@ -40508,14 +40474,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2477,
+  "totalCount": 2475,
   "sources": {
     "ca": {
       "count": 1831,
       "success": true
     },
     "federal": {
-      "count": 898,
+      "count": 896,
       "success": true
     }
   },
