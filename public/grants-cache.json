@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-02-03T06:22:52.407985Z",
+  "fetchedAt": "2026-02-03T18:23:42.704914Z",
   "success": true,
   "grants": [
+    {
+      "Title": "FY 2025-26 Earthquake Early Warning Implementation (EA) Program for Airports Program Supplemental",
+      "GrantTitle": "FY 2025-26 Earthquake Early Warning Implementation (EA) Program for Airports Program Supplemental",
+      "Description": "The purpose of the EA Program for Airports is to create a safer California by implementing and integrating the CEEWS statewide in key industries and critical sector",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$800,000",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Other Legal Entity",
+      "GrantInfoURL": "",
+      "PortalID": "159912",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Clean Energy Access: LA County TECH Grant: Round 2",
+      "GrantTitle": "Clean Energy Access: LA County TECH Grant: Round 2",
+      "Description": "Proposals will undergo a competitive selection process. Please refer to the\u00a0CEA-LAT Grant Guidelines\u00a0and application forms, located on the right sidebar under Applicant Resources, to create a complete and competitive application.  Activities: Potential activities include, but are not limited to:  Conducting community outreach and education activities that enrich outreach and education, such as: staff training evaluating grant project impact coordination with TECH Initiative implementer",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-31 11:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$700,000",
+      "Categories": "Disadvantaged Communities; Education; Employment, Labor & Training",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "155097",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Tribal Nature-Based Solutions Climate Bond 2026 Solicitation",
       "GrantTitle": "Tribal Nature-Based Solutions Climate Bond 2026 Solicitation",
@@ -648,7 +680,7 @@
       "Description": "The authority for the Shoreline Erosion Control Grant Program (Harbors and Navigation Code 65-67.4) was part of the legislation that created the Department of Navigation and Ocean Development, the predecessor agency to the Department of Boating and Waterways. Many projects in this program are partially funded by the U.S. Army Corps of Engineers, with the State paying up to 50% of the cost of the local sponsor\u2019s required project cost share for construction. *Note: The letter of intent is due by 12/15/2025 at 5pm.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-02 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -664,7 +696,7 @@
       "Description": "The Public Beach Restoration Grant Program was created in 1999 via the Public Beach Restoration Act (Harbors and Navigation Code 69.5-69.9, AB64\u2013Ducheny). Carefully planned beach restoration can minimize the erosive forces of ocean waves to protect vital public infrastructure and accommodate the recreational needs of visitors to California\u2019s beaches. This program is also consistent with the California Natural Resources Agency\u2019s Shoreline Erosion Protection Policy (1978) favoring beach nourishment as a method of erosion control. *Note: The letter of intent is due 12/15/2025 by 5:00 pm.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-02 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -3464,7 +3496,7 @@
       "Description": "The Statewide Ramp Repair and Modification Grant Program provides grant funding to public agencies to quickly restore safe and convenient public boating access by correcting public health and safety issues caused by unexpected damage due to flood, accidents, wildfires or by extending existing boat ramps as needed due to drought conditions at DBW-funded boat launching facilities. Typical grant-funded items include repairing or replacing boat ramps, boarding floats, restroom and parking facilities for vehicles with boat trailers.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-02 12:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -3480,7 +3512,7 @@
       "Description": "In accordance with Section 72.5 of the Harbors and Navigation Code, Boat Launching Facility (BLF) grants are provided to local government agencies for the construction or improvement of boat launching ramps, restrooms, boarding floats, shore protection, parking for vehicles and boat trailers, and ancillary items.\u00a0 Also included in the grant are monies to pay for engineering, construction inspection, permits from regulatory agencies, special studies, construction contingency, and other project related costs. The primary purpose of the grant is to provide and improve access to California\u2019s waterways by the recreational boating public using trailerable watercraft.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-02 12:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -3496,7 +3528,7 @@
       "Description": "The Statewide Non-Motorized Boat Launching Facility Grant Program provides funding to create or improve public non-motorized boating access. Typical grant-funded items include the construction of small, hand-launched boat ramps, small parking lots, and restrooms.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-02 12:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -40474,10 +40506,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2475,
+  "totalCount": 2477,
   "sources": {
     "ca": {
-      "count": 1831,
+      "count": 1833,
       "success": true
     },
     "federal": {
