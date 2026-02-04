@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-03T18:23:42.704914Z",
+  "fetchedAt": "2026-02-04T06:22:27.095596Z",
   "success": true,
   "grants": [
     {
@@ -36528,23 +36528,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Maximizing Investigators Research Award (MIRA) for Early Stage Investigators (ESI) (R35 - Clinical Trial Optional)",
-      "GrantTitle": "Maximizing Investigators Research Award (MIRA) for Early Stage Investigators (ESI) (R35 - Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-145",
-      "Status": "posted",
-      "ApplicationDeadline": "02/03/2026",
-      "PostedDate": "04/24/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "347720",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/347720",
-      "Source": "federal"
-    },
-    {
       "Title": "NEI Collaborative Clinical Vision Research: Chair's Grant (UG1-Clinical Trial Required)",
       "GrantTitle": "NEI Collaborative Clinical Vision Research: Chair's Grant (UG1-Clinical Trial Required)",
       "Description": "",
@@ -40506,14 +40489,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2477,
+  "totalCount": 2476,
   "sources": {
     "ca": {
       "count": 1833,
       "success": true
     },
     "federal": {
-      "count": 896,
+      "count": 895,
       "success": true
     }
   },
