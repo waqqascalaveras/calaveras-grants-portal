@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-05T18:23:49.763069Z",
+  "fetchedAt": "2026-02-06T06:23:37.081201Z",
   "success": true,
   "grants": [
     {
@@ -40181,23 +40181,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)",
-      "GrantTitle": "Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DC-26-001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359274",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359274",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "Description": "",
@@ -40351,23 +40334,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
-      "GrantTitle": "Adult-Adolescent Brain Cognitive Development (A-ABCD) Study Renewal-Data Analysis, Informatics and Resource Center, and Coordinating Center (U24)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-003",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359275",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359275",
-      "Source": "federal"
-    },
-    {
       "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "Description": "",
@@ -40453,20 +40419,37 @@
       "Source": "federal"
     },
     {
-      "Title": "Addressing Methodological Challenges with Clinical Trials of Psychotomimetic Agents",
-      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Psychotomimetic Agents",
+      "Title": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-135",
+      "OpportunityNumber": "RFA-NS-27-001",
       "Status": "forecasted",
       "ApplicationDeadline": "",
-      "PostedDate": "06/17/2025",
+      "PostedDate": "05/09/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "359202",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
+      "OpportunityID": "358859",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
+      "Source": "federal"
+    },
+    {
+      "Title": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
+      "GrantTitle": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DK-27-138",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361242",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361242",
       "Source": "federal"
     },
     {
@@ -40487,6 +40470,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Single Source: Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium- Renal and Environmental Science Core (U01-Clinical Trial Not Allowed)",
+      "GrantTitle": "Single Source: Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium- Renal and Environmental Science Core (U01-Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DK-27-137",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361241",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361241",
+      "Source": "federal"
+    },
+    {
       "Title": "The Accelerating Medicines Partnership (AMP) in Common Metabolic Diseases (CMD) Knowledge Portal: Roadmap for Future Development (Cooperative Agreement, Clinical Trial Optional)",
       "GrantTitle": "The Accelerating Medicines Partnership (AMP) in Common Metabolic Diseases (CMD) Knowledge Portal: Roadmap for Future Development (Cooperative Agreement, Clinical Trial Optional)",
       "Description": "",
@@ -40501,6 +40501,23 @@
       "AwardFloor": 0,
       "OpportunityID": "359015",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359015",
+      "Source": "federal"
+    },
+    {
+      "Title": "Addressing Methodological Challenges with Clinical Trials of Psychotomimetic Agents",
+      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Psychotomimetic Agents",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-135",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/17/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359202",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
       "Source": "federal"
     },
     {
@@ -40521,15 +40538,32 @@
       "Source": "federal"
     },
     {
-      "Title": "National Centers for Cryo-electron Tomography (cryoET)",
-      "GrantTitle": "National Centers for Cryo-electron Tomography (cryoET)",
+      "Title": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study-Research Project Sites (U01 Clinical Trial Not Allowed)",
+      "GrantTitle": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study-Research Project Sites (U01 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-27-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/28/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358885",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358885",
+      "Source": "federal"
+    },
+    {
+      "Title": "National Centers for Cryo-electron Tomography (cryoET) (R24 -Clinical Trial Not Allowed)",
+      "GrantTitle": "National Centers for Cryo-electron Tomography (cryoET) (R24 -Clinical Trial Not Allowed)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
       "OpportunityNumber": "PAR-26-138",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/09/2025",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "02/05/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
@@ -40538,31 +40572,65 @@
       "Source": "federal"
     },
     {
-      "Title": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "Title": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center (U24 Clinical Trial Not Allowed)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-NS-27-001",
+      "OpportunityNumber": "RFA-DA-27-003",
       "Status": "forecasted",
       "ApplicationDeadline": "",
-      "PostedDate": "05/09/2025",
+      "PostedDate": "06/06/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "358859",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
+      "OpportunityID": "359275",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359275",
+      "Source": "federal"
+    },
+    {
+      "Title": "Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)",
+      "GrantTitle": "Early-Stage Dissemination and Implementation Research in Communication Disorders (R21 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DC-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "06/17/2027",
+      "PostedDate": "02/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359274",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359274",
+      "Source": "federal"
+    },
+    {
+      "Title": "New World Screwworm Grand Challenge",
+      "GrantTitle": "New World Screwworm Grand Challenge",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-APHIS-10025-OA000000-26-0001",
+      "Status": "posted",
+      "ApplicationDeadline": "02/23/2026",
+      "PostedDate": "01/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361182",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361182",
       "Source": "federal"
     }
   ],
-  "totalCount": 2480,
+  "totalCount": 2484,
   "sources": {
     "ca": {
       "count": 1836,
       "success": true
     },
     "federal": {
-      "count": 897,
+      "count": 901,
       "success": true
     }
   },
