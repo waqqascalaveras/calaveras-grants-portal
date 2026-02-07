@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-06T18:20:18.444323Z",
+  "fetchedAt": "2026-02-07T06:17:39.509775Z",
   "success": true,
   "grants": [
     {
@@ -37818,23 +37818,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY24-25 Federal-State Partnership for Intercity Passenger Rail Grant Program - National",
-      "GrantTitle": "FY24-25 Federal-State Partnership for Intercity Passenger Rail Grant Program - National",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-FSP-25-006",
-      "Status": "posted",
-      "ApplicationDeadline": "02/06/2026",
-      "PostedDate": "09/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360636",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360636",
-      "Source": "federal"
-    },
-    {
       "Title": "Cancer Intervention and Surveillance Modeling Network (CISNET) (U01 Clinical Trial Not Allowed)",
       "GrantTitle": "Cancer Intervention and Surveillance Modeling Network (CISNET) (U01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -38206,23 +38189,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361002",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361002",
-      "Source": "federal"
-    },
-    {
-      "Title": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
-      "GrantTitle": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-057",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361001",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361001",
       "Source": "federal"
     },
     {
@@ -40555,23 +40521,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
-      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-135",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359202",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
-      "Source": "federal"
-    },
-    {
       "Title": "Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network",
       "GrantTitle": "Groundwater and Streamflow Information Program, National Ground-Water Monitoring Network",
       "Description": "",
@@ -40604,16 +40553,84 @@
       "OpportunityID": "358861",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358861",
       "Source": "federal"
+    },
+    {
+      "Title": "Next Gen STEM (NGS) NASA Aerospace Skilled Technical Workforce Hubs (NAS_Hub)",
+      "GrantTitle": "Next Gen STEM (NGS) NASA Aerospace Skilled Technical Workforce Hubs (NAS_Hub)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NNH26ZHA001C",
+      "Status": "posted",
+      "ApplicationDeadline": "03/20/2026",
+      "PostedDate": "02/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361254",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361254",
+      "Source": "federal"
+    },
+    {
+      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
+      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-135",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/17/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359202",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
+      "Source": "federal"
+    },
+    {
+      "Title": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
+      "GrantTitle": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-105",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361255",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361255",
+      "Source": "federal"
+    },
+    {
+      "Title": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
+      "GrantTitle": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-057",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/12/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361001",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361001",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2483,
+  "totalCount": 2484,
   "sources": {
     "ca": {
       "count": 1836,
       "success": true
     },
     "federal": {
-      "count": 900,
+      "count": 901,
       "success": true
     }
   },
