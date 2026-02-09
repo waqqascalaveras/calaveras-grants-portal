@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-09T06:31:06.692110Z",
+  "fetchedAt": "2026-02-09T18:23:50.606352Z",
   "success": true,
   "grants": [
     {
@@ -40368,23 +40368,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Forecast for BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-NS-27-001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/09/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358859",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
-      "Source": "federal"
-    },
-    {
       "Title": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
       "GrantTitle": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
       "Description": "",
@@ -40572,23 +40555,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
-      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-135",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359202",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
-      "Source": "federal"
-    },
-    {
       "Title": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
       "GrantTitle": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
       "Description": "",
@@ -40621,16 +40587,67 @@
       "OpportunityID": "361001",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361001",
       "Source": "federal"
+    },
+    {
+      "Title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-NS-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "10/06/2028",
+      "PostedDate": "02/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358859",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
+      "Source": "federal"
+    },
+    {
+      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
+      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-135",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/17/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359202",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
+      "Source": "federal"
+    },
+    {
+      "Title": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
+      "GrantTitle": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-HG-26-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361263",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361263",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2484,
+  "totalCount": 2485,
   "sources": {
     "ca": {
       "count": 1836,
       "success": true
     },
     "federal": {
-      "count": 901,
+      "count": 902,
       "success": true
     }
   },
