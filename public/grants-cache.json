@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-02-10T06:31:37.844113Z",
+  "fetchedAt": "2026-02-10T18:28:30.391171Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Ocean Acidification, Hypoxia, and Harmful Algal Bloom Solicitation",
+      "GrantTitle": "Ocean Acidification, Hypoxia, and Harmful Algal Bloom Solicitation",
+      "Description": "The\u00a0Monitoring, Research, and Modeling to Support Ocean Acidification, Hypoxia, and Marine Harmful Algal Bloom Management in California solicitation\u00a0provides funding to enhance scientific understanding of these two water quality concerns in order to advance the State\u2019s response related to growing threats to California\u2019s coastal ecosystems and communities.  The solicitation includes two funding tracks:  Track 1: Advancing Knowledge of the Biological Impacts of Ocean Acidification and HypoxiaTrack 2: Marine Harmful Algal Bloom Research Monitoring, and Synthesis for Early Warning, Control, and Ecosystem Resiliency  Letters of intent (LOI) for both tracks are due\u00a0Friday, March 6, 2026\u00a0by\u00a05:00 p.m.\u00a0\u00a0More information and instructions for applying can be found in the\u00a0solicitation.  This solicitation is part of\u00a0California Climate Investments.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-06 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$6,000,000",
+      "Categories": "Science, Technology, and Research & Development",
+      "ApplicantType": "Business; Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "161703",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Nesting Bird Habitat Incentive Program Public Lands Funding 2026-27",
       "GrantTitle": "Nesting Bird Habitat Incentive Program Public Lands Funding 2026-27",
@@ -38192,23 +38208,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Senior Medicare Patrol State Project Grants - Pennsylvania",
-      "GrantTitle": "Senior Medicare Patrol State Project Grants - Pennsylvania",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACL-CIP-MPPG-0020",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361003",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361003",
-      "Source": "federal"
-    },
-    {
       "Title": "Leadership Education in Neurodevelopmental and Other Related Disabilities (LEND)",
       "GrantTitle": "Leadership Education in Neurodevelopmental and Other Related Disabilities (LEND)",
       "Description": "",
@@ -40079,23 +40078,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Impact of Initial Influenza Exposure on Immunity in Infants",
-      "GrantTitle": "Impact of Initial Influenza Exposure on Immunity in Infants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-019",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359939",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359939",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "Description": "",
@@ -40589,6 +40571,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Senior Medicare Patrol State Project Grants - Pennsylvania",
+      "GrantTitle": "Senior Medicare Patrol State Project Grants - Pennsylvania",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACL-CIP-MPPG-0020",
+      "Status": "posted",
+      "ApplicationDeadline": "04/13/2026",
+      "PostedDate": "02/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361003",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361003",
+      "Source": "federal"
+    },
+    {
+      "Title": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
+      "GrantTitle": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-27-019",
+      "Status": "posted",
+      "ApplicationDeadline": "06/04/2026",
+      "PostedDate": "02/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359939",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359939",
+      "Source": "federal"
+    },
+    {
       "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
       "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
       "Description": "",
@@ -40606,10 +40622,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2483,
+  "totalCount": 2484,
   "sources": {
     "ca": {
-      "count": 1836,
+      "count": 1837,
       "success": true
     },
     "federal": {
