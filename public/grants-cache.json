@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-09T18:23:50.606352Z",
+  "fetchedAt": "2026-02-10T06:31:37.844113Z",
   "success": true,
   "grants": [
     {
@@ -38430,23 +38430,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Public Programming and Educational Outreach: Brown v. Board of Education National Historical Park",
-      "GrantTitle": "Public Programming and Educational Outreach: Brown v. Board of Education National Historical Park",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P26AS00046",
-      "Status": "posted",
-      "ApplicationDeadline": "02/09/2026",
-      "PostedDate": "12/11/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360989",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360989",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Director&rsquo;s Early Independence Awards (DP5 Clinical Trial Optional)",
       "GrantTitle": "NIH Director&rsquo;s Early Independence Awards (DP5 Clinical Trial Optional)",
       "Description": "",
@@ -38937,23 +38920,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361137",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361137",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
-      "GrantTitle": "FY 2024 and FY 2025 Continuum of Care Competition and Renewal or Replacement of Youth Homeless Demonstration Program Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-6800-N-25",
-      "Status": "posted",
-      "ApplicationDeadline": "02/09/2026",
-      "PostedDate": "07/31/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "355762",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/355762",
       "Source": "federal"
     },
     {
@@ -40351,23 +40317,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOA-VETS-26-01",
-      "Status": "posted",
-      "ApplicationDeadline": "03/06/2026",
-      "PostedDate": "01/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360161",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
-      "Source": "federal"
-    },
-    {
       "Title": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
       "GrantTitle": "Single Source for Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium - Data Coordinating Center (DCC)",
       "Description": "",
@@ -40555,6 +40504,23 @@
       "Source": "federal"
     },
     {
+      "Title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-NS-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "10/06/2028",
+      "PostedDate": "02/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358859",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
+      "Source": "federal"
+    },
+    {
       "Title": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
       "GrantTitle": "ORACLE 3C: Chronic Conditions, Coinfections, and Comorbidities in HIV",
       "Description": "",
@@ -40589,20 +40555,20 @@
       "Source": "federal"
     },
     {
-      "Title": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "BRAIN Initiative: Research Resource Grants for Technology Integration and Dissemination (U24 Clinical Trial Not Allowed)",
+      "Title": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
+      "GrantTitle": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-NS-27-001",
-      "Status": "posted",
-      "ApplicationDeadline": "10/06/2028",
+      "OpportunityNumber": "RFA-HG-26-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
       "PostedDate": "02/09/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "358859",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358859",
+      "OpportunityID": "361263",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361263",
       "Source": "federal"
     },
     {
@@ -40623,31 +40589,31 @@
       "Source": "federal"
     },
     {
-      "Title": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
-      "GrantTitle": "Genomic Community Resources (U24 Clinical Trials Not Allowed)",
+      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-HG-26-002",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "02/09/2026",
+      "OpportunityNumber": "FOA-VETS-26-01",
+      "Status": "posted",
+      "ApplicationDeadline": "03/06/2026",
+      "PostedDate": "01/16/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361263",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361263",
+      "OpportunityID": "360161",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
       "Source": "federal"
     }
   ],
-  "totalCount": 2485,
+  "totalCount": 2483,
   "sources": {
     "ca": {
       "count": 1836,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 900,
       "success": true
     }
   },
