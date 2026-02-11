@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-10T18:28:30.391171Z",
+  "fetchedAt": "2026-02-11T06:30:46.437660Z",
   "success": true,
   "grants": [
     {
@@ -38446,23 +38446,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Endowments for Advancing the Humanities",
-      "GrantTitle": "Endowments for Advancing the Humanities",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20260210-CHE",
-      "Status": "posted",
-      "ApplicationDeadline": "02/10/2026",
-      "PostedDate": "12/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361006",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361006",
-      "Source": "federal"
-    },
-    {
       "Title": "VA GPD Per Diem Only NOFO",
       "GrantTitle": "VA GPD Per Diem Only NOFO",
       "Description": "",
@@ -40622,14 +40605,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2484,
+  "totalCount": 2483,
   "sources": {
     "ca": {
       "count": 1837,
       "success": true
     },
     "federal": {
-      "count": 900,
+      "count": 899,
       "success": true
     }
   },
