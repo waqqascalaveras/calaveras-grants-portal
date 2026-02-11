@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-11T06:30:46.437660Z",
+  "fetchedAt": "2026-02-11T18:26:13.070915Z",
   "success": true,
   "grants": [
     {
@@ -344,7 +344,7 @@
       "Description": "Public entities bear a financial responsibility for maintaining public landfill sites in compliance with state regulations and standards. The program provides financial assistance in the form of reimbursement grants up to $750,000 in matching funds for eligible costs to assist public entities requiring financial assistance, and committed to accelerating the pace of cleanup, restoring sites, and protecting public health and safety and the environment. Eligible projects include the remediation of disposal sites closed in accordance with the local laws at the time of the closure and prior to implementation of the State\u2019s current permitting and/or closure requirements for landfills and disposal sites.\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-11 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -2256,6 +2256,22 @@
       "ApplicantType": "Business; Nonprofit; Public Agency",
       "GrantInfoURL": "",
       "PortalID": "104562",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Farm and Ranch Solid Waste Cleanup and Abatement Grant FR87",
+      "GrantTitle": "Farm and Ranch Solid Waste Cleanup and Abatement Grant FR87",
+      "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY25-26 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2025-07-08 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "161727",
       "Source": "ca.gov"
     },
     {
@@ -40044,40 +40060,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (R01 Clinical Trial Optional)",
-      "GrantTitle": "Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-040",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359003",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359003",
-      "Source": "federal"
-    },
-    {
-      "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
-      "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-042",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359004",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359004",
-      "Source": "federal"
-    },
-    {
       "Title": "Rigor and Reproducibility for Biomarkers in Type 1 Diabetes Clinical Research",
       "GrantTitle": "Rigor and Reproducibility for Biomarkers in Type 1 Diabetes Clinical Research",
       "Description": "",
@@ -40603,16 +40585,84 @@
       "OpportunityID": "360161",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
       "Source": "federal"
+    },
+    {
+      "Title": "Pancreatic Cancer Detection Consortium: Research Units (U01 Clinical Trial Optional)",
+      "GrantTitle": "Pancreatic Cancer Detection Consortium: Research Units (U01 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-120",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361275",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361275",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-126",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361276",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361276",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (R01 Clinical Trial Optional)",
+      "GrantTitle": "Advancing Bioinformatics, Translational Bioinformatics and Computational Biology Research (R01 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-040",
+      "Status": "posted",
+      "ApplicationDeadline": "03/05/2029",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359003",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359003",
+      "Source": "federal"
+    },
+    {
+      "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
+      "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-042",
+      "Status": "posted",
+      "ApplicationDeadline": "03/05/2029",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359004",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359004",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2483,
+  "totalCount": 2486,
   "sources": {
     "ca": {
-      "count": 1837,
+      "count": 1838,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 901,
       "success": true
     }
   },
