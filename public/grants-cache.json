@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-11T18:26:13.070915Z",
+  "fetchedAt": "2026-02-12T06:30:10.556233Z",
   "success": true,
   "grants": [
     {
@@ -38921,23 +38921,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Restoring Reliability: Coal Recommissioning and Modernization",
-      "GrantTitle": "Restoring Reliability: Coal Recommissioning and Modernization",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003605",
-      "Status": "posted",
-      "ApplicationDeadline": "02/11/2026",
-      "PostedDate": "10/03/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360731",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360731",
-      "Source": "federal"
-    },
-    {
       "Title": "Resource-Related Research Projects Cooperative Agreements in Aging and/or Alzheimer's Disease (AD) and Alzheimer's Disease-Related Dementias (ADRD) Research",
       "GrantTitle": "Resource-Related Research Projects Cooperative Agreements in Aging and/or Alzheimer's Disease (AD) and Alzheimer's Disease-Related Dementias (ADRD) Research",
       "Description": "",
@@ -40604,20 +40587,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
+      "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
+      "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "PAR-26-126",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
+      "OpportunityNumber": "PAR-26-042",
+      "Status": "posted",
+      "ApplicationDeadline": "03/05/2029",
       "PostedDate": "02/11/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361276",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361276",
+      "OpportunityID": "359004",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359004",
       "Source": "federal"
     },
     {
@@ -40638,31 +40621,99 @@
       "Source": "federal"
     },
     {
-      "Title": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
-      "GrantTitle": "Research Grants in Clinical Informatics (R01 Clinical Trial Optional)",
+      "Title": "Network of the National Library of Medicine Coordinating Center (U24 Clinical Trial Optional)",
+      "GrantTitle": "Network of the National Library of Medicine Coordinating Center (U24 Clinical Trial Optional)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "PAR-26-042",
-      "Status": "posted",
-      "ApplicationDeadline": "03/05/2029",
+      "OpportunityNumber": "RFA-LM-26-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
       "PostedDate": "02/11/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "359004",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359004",
+      "OpportunityID": "361282",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361282",
+      "Source": "federal"
+    },
+    {
+      "Title": "Network of the National Library of Medicine Training Center (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Network of the National Library of Medicine Training Center (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-LM-26-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361281",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361281",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Research Program Projects (Parent P01 Clinical Trial Optional)",
+      "GrantTitle": "NIH Research Program Projects (Parent P01 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-26-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361279",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361279",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Pancreatic Cancer Detection Consortium: Management and Data Coordination Unit (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-126",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361276",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361276",
+      "Source": "federal"
+    },
+    {
+      "Title": "Network of the National Library of Medicine Regional Medical Libraries (UG4 Clinical Trial Not Allowed)",
+      "GrantTitle": "Network of the National Library of Medicine Regional Medical Libraries (UG4 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-LM-26-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361284",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361284",
       "Source": "federal"
     }
   ],
-  "totalCount": 2486,
+  "totalCount": 2489,
   "sources": {
     "ca": {
       "count": 1838,
       "success": true
     },
     "federal": {
-      "count": 901,
+      "count": 904,
       "success": true
     }
   },
