@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-13T18:18:13.886648Z",
+  "fetchedAt": "2026-02-14T06:19:00.906243Z",
   "success": true,
   "grants": [
     {
@@ -40057,23 +40057,6 @@
       "Source": "federal"
     },
     {
-      "Title": "SOI - Rural Transportation Match and Gap Funding Assistance Program",
-      "GrantTitle": "SOI - Rural Transportation Match and Gap Funding Assistance Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "26-DC-MG-SOI-TRX",
-      "Status": "posted",
-      "ApplicationDeadline": "02/13/2026",
-      "PostedDate": "01/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361161",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361161",
-      "Source": "federal"
-    },
-    {
       "Title": "Rural Residency Planning and Development Program",
       "GrantTitle": "Rural Residency Planning and Development Program",
       "Description": "",
@@ -40669,23 +40652,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan",
-      "GrantTitle": "Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-108",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "02/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361294",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361294",
-      "Source": "federal"
-    },
-    {
       "Title": "BRAIN Initiative: Optimization of Instrumentation and Device Technologies for Recording and Modulation in the Nervous System (U01 Clinical Trials Not Allowed)",
       "GrantTitle": "BRAIN Initiative: Optimization of Instrumentation and Device Technologies for Recording and Modulation in the Nervous System (U01 Clinical Trials Not Allowed)",
       "Description": "",
@@ -40720,6 +40686,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan",
+      "GrantTitle": "Global Collaborative Research Training on Non-Communicable Diseases and Disorders Across the Lifespan",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-108",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361294",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361294",
+      "Source": "federal"
+    },
+    {
       "Title": "Notice of Intent to Publish a Funding Opportunity Announcement: Technology Development to Reduce Health Disparities (R01 Clinical Trial Optional)",
       "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement: Technology Development to Reduce Health Disparities (R01 Clinical Trial Optional)",
       "Description": "",
@@ -40735,16 +40718,50 @@
       "OpportunityID": "358869",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358869",
       "Source": "federal"
+    },
+    {
+      "Title": "NEA Research Grants in the Arts, FY 2027",
+      "GrantTitle": "NEA Research Grants in the Arts, FY 2027",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "2026NEA01ORAGRANTS",
+      "Status": "posted",
+      "ApplicationDeadline": "03/23/2026",
+      "PostedDate": "02/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361295",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361295",
+      "Source": "federal"
+    },
+    {
+      "Title": "NEA Research Labs, FY 2027",
+      "GrantTitle": "NEA Research Labs, FY 2027",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "2026NEA01ORALABS",
+      "Status": "posted",
+      "ApplicationDeadline": "03/23/2026",
+      "PostedDate": "02/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361296",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361296",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2491,
+  "totalCount": 2492,
   "sources": {
     "ca": {
       "count": 1841,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 904,
       "success": true
     }
   },
