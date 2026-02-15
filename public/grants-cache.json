@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-14T18:10:59.652651Z",
+  "fetchedAt": "2026-02-15T06:22:53.803147Z",
   "success": true,
   "grants": [
     {
@@ -40703,23 +40703,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Notice of Intent to Publish a Funding Opportunity Announcement: Technology Development to Reduce Health Disparities (R01 Clinical Trial Optional)",
-      "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement: Technology Development to Reduce Health Disparities (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-EB-26-001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/21/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358869",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358869",
-      "Source": "federal"
-    },
-    {
       "Title": "NEA Research Grants in the Arts, FY 2027",
       "GrantTitle": "NEA Research Grants in the Arts, FY 2027",
       "Description": "",
@@ -40754,14 +40737,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2492,
+  "totalCount": 2491,
   "sources": {
     "ca": {
       "count": 1841,
       "success": true
     },
     "federal": {
-      "count": 904,
+      "count": 903,
       "success": true
     }
   },
