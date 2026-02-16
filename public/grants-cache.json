@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-15T18:11:25.635349Z",
+  "fetchedAt": "2026-02-16T06:30:46.885062Z",
   "success": true,
   "grants": [
     {
@@ -33138,23 +33138,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Enhancing Reuse of NHGRI Data Assets (R03 Clinical Trial Not Allowed)",
-      "GrantTitle": "Enhancing Reuse of NHGRI Data Assets (R03 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HG-25-005",
-      "Status": "posted",
-      "ApplicationDeadline": "02/15/2026",
-      "PostedDate": "11/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357170",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357170",
-      "Source": "federal"
-    },
-    {
       "Title": "NCCIH Natural Product Early Phase Clinical Trial Phased Innovation Award (R61/R33 Clinical Trial Required)",
       "GrantTitle": "NCCIH Natural Product Early Phase Clinical Trial Phased Innovation Award (R61/R33 Clinical Trial Required)",
       "Description": "",
@@ -40737,14 +40720,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2491,
+  "totalCount": 2490,
   "sources": {
     "ca": {
       "count": 1841,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 902,
       "success": true
     }
   },
