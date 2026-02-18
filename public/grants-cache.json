@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-17T18:24:20.355884Z",
+  "fetchedAt": "2026-02-18T06:29:05.949177Z",
   "success": true,
   "grants": [
     {
@@ -38408,40 +38408,6 @@
       "Source": "federal"
     },
     {
-      "Title": "VA GPD Special Need Renewal NOFO",
-      "GrantTitle": "VA GPD Special Need Renewal NOFO",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-GPD-SN-FY2027",
-      "Status": "posted",
-      "ApplicationDeadline": "02/17/2026",
-      "PostedDate": "12/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361016",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361016",
-      "Source": "federal"
-    },
-    {
-      "Title": "VA GPD Transition In Place NOFO",
-      "GrantTitle": "VA GPD Transition In Place NOFO",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-GPD-TIP-FY2027",
-      "Status": "posted",
-      "ApplicationDeadline": "02/17/2026",
-      "PostedDate": "12/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361015",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361015",
-      "Source": "federal"
-    },
-    {
       "Title": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "GrantTitle": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "Description": "",
@@ -39054,23 +39020,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY 2026 Notice of Funding Opportunity: Infrastructure Investment and Jobs Act (IIJA) FAA Contract Tower (FCT) Competitive Grant Program",
-      "GrantTitle": "FY 2026 Notice of Funding Opportunity: Infrastructure Investment and Jobs Act (IIJA) FAA Contract Tower (FCT) Competitive Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FAA-ARP-IIJA-G-26-002",
-      "Status": "posted",
-      "ApplicationDeadline": "02/17/2026",
-      "PostedDate": "01/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361165",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361165",
-      "Source": "federal"
-    },
-    {
       "Title": "PRIMED-AI: Multi-use Framework Playbooks (UG3 Clinical Trial Not Allowed)",
       "GrantTitle": "PRIMED-AI: Multi-use Framework Playbooks (UG3 Clinical Trial Not Allowed)",
       "Description": "",
@@ -39221,23 +39170,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360332",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360332",
-      "Source": "federal"
-    },
-    {
-      "Title": "Comprehensive Addiction and Recovery Act (CARA)",
-      "GrantTitle": "Comprehensive Addiction and Recovery Act (CARA)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CE-26-0110",
-      "Status": "posted",
-      "ApplicationDeadline": "04/28/2026",
-      "PostedDate": "01/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360887",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360887",
       "Source": "federal"
     },
     {
@@ -40737,14 +40669,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2491,
+  "totalCount": 2487,
   "sources": {
     "ca": {
       "count": 1841,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 899,
       "success": true
     }
   },
