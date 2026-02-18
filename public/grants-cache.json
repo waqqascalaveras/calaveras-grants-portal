@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-02-18T06:29:05.949177Z",
+  "fetchedAt": "2026-02-18T18:20:47.635377Z",
   "success": true,
   "grants": [
+    {
+      "Title": "CAL FIRE Forest Health",
+      "GrantTitle": "CAL FIRE Forest Health",
+      "Description": "This Fiscal Year 2025-26 solicitation will include one grant type: \u2022 Forest Health\u00a0\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Individual; Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "154710",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Strategic Growth Council Factory Built Housing Pilot Program Round 3 Planning Grant",
       "GrantTitle": "Strategic Growth Council Factory Built Housing Pilot Program Round 3 Planning Grant",
@@ -120,7 +136,7 @@
       "Description": "\u201cMade in California\u201d is California\u2019s manufacturing promotion and product labeling program (herein defined as \u201cProgram\u201d). The Program is designed to develop and promote the Made in California label, to encourage consumer product awareness, and to foster purchases of high-quality products in this state. The Program is administered by the California Office of the Small Business Advocate (herein referred to as \u201cCalOSBA\u201d) within the Governor's Office of Business & Economic Development (herein referred to as GO-Biz). The Program supports California-based manufacturers that meet the eligibility requirements across California\u2019s diverse range of manufacturing categories.  The Program was enacted in 2013 and established in Government Code section 12098.10 and et seq. On April 7, 2021, SB 808 amended statutes associated with Made in California. The Program is designed to serve manufacturers of all sizes and stages and to reinforce the Made in California label as a credible, inclusive, and statewide certification that supports economic development, workforce stability, and supply-chain resilience.  See full details on the program announcement.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-02-17 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$500,000",
@@ -4720,22 +4736,6 @@
       "ApplicantType": "Nonprofit; Other Legal Entity",
       "GrantInfoURL": "",
       "PortalID": "82949",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "CAL FIRE Forest Health",
-      "GrantTitle": "CAL FIRE Forest Health",
-      "Description": "This Fiscal Year 2024-25 solicitation will include one grant type: \u2022 Forest Health\u00a0\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2025-01-15 00:00:00",
-      "PostedDate": "",
-      "EstAvailFunds": null,
-      "Categories": "Environment & Water",
-      "ApplicantType": "Business; Individual; Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "81164",
       "Source": "ca.gov"
     },
     {
@@ -28361,23 +28361,6 @@
       "Source": "federal"
     },
     {
-      "Title": "The Primary Prevention Youth Homelessness Demonstration Program",
-      "GrantTitle": "The Primary Prevention Youth Homelessness Demonstration Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2025-ACF-ACYF-YY-0081",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/14/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "356037",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356037",
-      "Source": "federal"
-    },
-    {
       "Title": "Notice of Intent to Publish a Funding Opportunity Announcement for Impact of Technology and Digital Media Exposure Usage on Child and Adolescent Development",
       "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement for Impact of Technology and Digital Media Exposure Usage on Child and Adolescent Development",
       "Description": "",
@@ -40667,21 +40650,55 @@
       "OpportunityID": "361135",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361135",
       "Source": "federal"
+    },
+    {
+      "Title": "2026 Wood Innovations Grant Funding Opportunity",
+      "GrantTitle": "2026 Wood Innovations Grant Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-FS-WOOD-INNOVATIONS-2026",
+      "Status": "posted",
+      "ApplicationDeadline": "04/22/2026",
+      "PostedDate": "02/18/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360250",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360250",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Community Health Support Program",
+      "GrantTitle": "Rural Community Health Support Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-083",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "02/18/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361316",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361316",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2487,
+  "totalCount": 2488,
   "sources": {
     "ca": {
-      "count": 1841,
+      "count": 1842,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 901,
       "success": true
     }
   },
   "duplicates": {
-    "count": 253,
+    "count": 255,
     "examples": [
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
