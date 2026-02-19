@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-18T18:20:47.635377Z",
+  "fetchedAt": "2026-02-19T06:28:22.689473Z",
   "success": true,
   "grants": [
     {
@@ -27953,23 +27953,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Research Education Projects",
-      "GrantTitle": "Research Education Projects",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-OD-25-653",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/11/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359703",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359703",
-      "Source": "federal"
-    },
-    {
       "Title": "Intervention Research to Improve Native American Health (R01 Clinical Trial Optional)",
       "GrantTitle": "Intervention Research to Improve Native American Health (R01 Clinical Trial Optional)",
       "Description": "",
@@ -38374,23 +38357,6 @@
       "Source": "federal"
     },
     {
-      "Title": "VA GPD Per Diem Only NOFO",
-      "GrantTitle": "VA GPD Per Diem Only NOFO",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-GPD-PDO-FY2027",
-      "Status": "posted",
-      "ApplicationDeadline": "02/18/2026",
-      "PostedDate": "12/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361012",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361012",
-      "Source": "federal"
-    },
-    {
       "Title": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "GrantTitle": "Maximizing Investigators' Research Award (MIRA) (R35 - Clinical Trial Optional)",
       "Description": "",
@@ -39717,40 +39683,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Elucidating Immunometabolic Responses to HIV Infection that Increase TB or HBV Risk (R21 Clinical Trial Not Allowed)",
-      "GrantTitle": "Elucidating Immunometabolic Responses to HIV Infection that Increase TB or HBV Risk (R21 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-316",
-      "Status": "posted",
-      "ApplicationDeadline": "05/07/2026",
-      "PostedDate": "12/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357822",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357822",
-      "Source": "federal"
-    },
-    {
-      "Title": "Elucidating Immunometabolic Responses to HIV Infection that Increase TB or HBV Risk (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Elucidating Immunometabolic Responses to HIV Infection that Increase TB or HBV Risk (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-315",
-      "Status": "posted",
-      "ApplicationDeadline": "05/07/2026",
-      "PostedDate": "12/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357821",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357821",
-      "Source": "federal"
-    },
-    {
       "Title": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R21 Clinical Trial Optional)",
       "GrantTitle": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R21 Clinical Trial Optional)",
       "Description": "",
@@ -40652,6 +40584,23 @@
       "Source": "federal"
     },
     {
+      "Title": "NIH Research Education Program - Courses, Curriculum &amp; Methods (Parent R25 - Clinical Trial Not Allowed)",
+      "GrantTitle": "NIH Research Education Program - Courses, Curriculum &amp; Methods (Parent R25 - Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-26-084",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/11/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359703",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359703",
+      "Source": "federal"
+    },
+    {
       "Title": "2026 Wood Innovations Grant Funding Opportunity",
       "GrantTitle": "2026 Wood Innovations Grant Funding Opportunity",
       "Description": "",
@@ -40684,16 +40633,50 @@
       "OpportunityID": "361316",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361316",
       "Source": "federal"
+    },
+    {
+      "Title": "OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children",
+      "GrantTitle": "OJJDP FY25 Second Chance Act Addressing the Needs of Incarcerated Parents and Their Minor Children",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-OJJDP-2025-172513",
+      "Status": "posted",
+      "ApplicationDeadline": "03/30/2026",
+      "PostedDate": "02/18/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361320",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361320",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJJDP FY25 Second Chance Act Youth Reentry Program",
+      "GrantTitle": "OJJDP FY25 Second Chance Act Youth Reentry Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-OJJDP-2025-172511",
+      "Status": "posted",
+      "ApplicationDeadline": "03/30/2026",
+      "PostedDate": "02/18/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361321",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361321",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2488,
+  "totalCount": 2487,
   "sources": {
     "ca": {
       "count": 1842,
       "success": true
     },
     "federal": {
-      "count": 901,
+      "count": 900,
       "success": true
     }
   },
