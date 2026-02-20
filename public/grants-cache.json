@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-19T18:23:20.995551Z",
+  "fetchedAt": "2026-02-20T06:24:44.928134Z",
   "success": true,
   "grants": [
     {
@@ -38253,23 +38253,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Rural Health Clinic Technical Assistance Program",
-      "GrantTitle": "Rural Health Clinic Technical Assistance Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-048",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361052",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361052",
-      "Source": "federal"
-    },
-    {
       "Title": "FY 2025 Continuum of Care Competition and Youth Homeless Demonstration Program Grants NOFO",
       "GrantTitle": "FY 2025 Continuum of Care Competition and Youth Homeless Demonstration Program Grants NOFO",
       "Description": "",
@@ -38559,23 +38542,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
-      "GrantTitle": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-050",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361055",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361055",
-      "Source": "federal"
-    },
-    {
       "Title": "Traumatic Brain Injury State Partnership",
       "GrantTitle": "Traumatic Brain Injury State Partnership",
       "Description": "",
@@ -38641,23 +38607,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361066",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361066",
-      "Source": "federal"
-    },
-    {
-      "Title": "Rural Health Research Dissemination Program",
-      "GrantTitle": "Rural Health Research Dissemination Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-049",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361054",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361054",
       "Source": "federal"
     },
     {
@@ -40684,40 +40633,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Role of Defective Proviruses in HIV Persistence (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Role of Defective Proviruses in HIV Persistence (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-330",
-      "Status": "posted",
-      "ApplicationDeadline": "02/19/2026",
-      "PostedDate": "12/09/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357590",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357590",
-      "Source": "federal"
-    },
-    {
-      "Title": "NIDDK High Risk Multi-Center Clinical Study Implementation Planning Cooperative Agreements (U34 Clinical Trial Optional)",
-      "GrantTitle": "NIDDK High Risk Multi-Center Clinical Study Implementation Planning Cooperative Agreements (U34 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-090",
-      "Status": "posted",
-      "ApplicationDeadline": "02/19/2026",
-      "PostedDate": "01/10/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358129",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358129",
-      "Source": "federal"
-    },
-    {
       "Title": "Comprehensive Addiction and Recovery Act (CARA)",
       "GrantTitle": "Comprehensive Addiction and Recovery Act (CARA)",
       "Description": "",
@@ -40732,40 +40647,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361329",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361329",
-      "Source": "federal"
-    },
-    {
-      "Title": "Planning for Product Development Strategy (R34 Clinical Trial Not Allowed)",
-      "GrantTitle": "Planning for Product Development Strategy (R34 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-099",
-      "Status": "posted",
-      "ApplicationDeadline": "02/19/2026",
-      "PostedDate": "12/30/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357945",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357945",
-      "Source": "federal"
-    },
-    {
-      "Title": "Targeting Cell Surface HIV Envelope for Cell Elimination (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Targeting Cell Surface HIV Envelope for Cell Elimination (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-300",
-      "Status": "posted",
-      "ApplicationDeadline": "02/19/2026",
-      "PostedDate": "12/02/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357488",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357488",
       "Source": "federal"
     },
     {
@@ -40784,16 +40665,67 @@
       "OpportunityID": "361326",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361326",
       "Source": "federal"
+    },
+    {
+      "Title": "Rural Health Research Dissemination Program",
+      "GrantTitle": "Rural Health Research Dissemination Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-049",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/23/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361054",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361054",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
+      "GrantTitle": "Rapid Response Rural Data Analysis and Issue Specific Rural Research Studies",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-050",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/23/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361055",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361055",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Health Clinic Technical Assistance Program",
+      "GrantTitle": "Rural Health Clinic Technical Assistance Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-048",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/22/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361052",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361052",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2494,
+  "totalCount": 2490,
   "sources": {
     "ca": {
       "count": 1844,
       "success": true
     },
     "federal": {
-      "count": 905,
+      "count": 901,
       "success": true
     }
   },
