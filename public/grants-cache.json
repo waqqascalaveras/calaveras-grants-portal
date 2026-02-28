@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-27T18:15:20.315904Z",
+  "fetchedAt": "2026-02-28T06:13:02.473161Z",
   "success": true,
   "grants": [
     {
@@ -38618,23 +38618,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Rural Residency Planning and Development Program",
-      "GrantTitle": "Rural Residency Planning and Development Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-047",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/11/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360998",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360998",
-      "Source": "federal"
-    },
-    {
       "Title": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
       "GrantTitle": "Choice Neighborhoods Implementation Grants for Fiscal Year 2025",
       "Description": "",
@@ -40706,6 +40689,23 @@
       "AwardFloor": 0,
       "OpportunityID": "361059",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361059",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Residency Planning and Development Program",
+      "GrantTitle": "Rural Residency Planning and Development Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-047",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/11/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360998",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360998",
       "Source": "federal"
     }
   ],
