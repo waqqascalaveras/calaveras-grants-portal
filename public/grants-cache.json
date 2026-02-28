@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-02-28T06:13:02.473161Z",
+  "fetchedAt": "2026-02-28T18:09:55.970881Z",
   "success": true,
   "grants": [
     {
@@ -400,6 +400,38 @@
       "ApplicantType": "Nonprofit; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "158985",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 HOME Projects NOFA \u2013 Tribal Applicants",
+      "GrantTitle": "2025 HOME Projects NOFA \u2013 Tribal Applicants",
+      "Description": "The 2025 HOME Project NOFA will provide funds to develop affordable rental housing for low- and very low-income households, as well as to provide first time homebuyer assistance to low income families who purchase a home in the Applicant's housing development. The maximum award amount will be $8 million for rental housing projects, and $2 million for first time homebuyer projects. The minimum award amount for all project types will be $10,000 per unit. State Recipient Applicants may apply for an administrative costs grant up to a $300,000 or ten percent (10%) of the activity award amount, whichever is lower. CHDO Applicants may apply for a CHDO operating expenses grant up to a $200,000 or ten percent (10%) of the activity award amount, whichever is lower.  Eligibility is described below.  Eligible Activities:*New construction of affordable rental units*Rehabilitation of affordable rental units with or without acquisition*First Time Homebuyer projects  Eligible Applicants:*State Recipients*Developers*CHDOs*Native American Entities  Eligible Jurisdictions: Projects located in non-entitlement jurisdictions, which are those that did not receive a direct HOME award from HUD, are eligible under this NOFA.  Key Words:Affordable HousingLow-IncomeVery Low-IncomeHomelessnessRental HousingHomebuyer AssistanceFirst Time HomebuyerDeveloperCHDO (Community Housing Development Organization)State RecipientCityCountyNAE (Native American Entity)",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-06-30 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$34,866,126",
+      "Categories": "Housing, Community and Economic Development",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "162360",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2025 HOME Projects NOFA \u2013 Non-Tribal",
+      "GrantTitle": "2025 HOME Projects NOFA \u2013 Non-Tribal",
+      "Description": "The 2025 HOME Project NOFA will provide funds to develop affordable rental housing for low- and very low-income households, as well as to provide first time homebuyer assistance to low income families who purchase a home in the Applicant's housing development. The maximum award amount will be $8 million for rental housing projects, and $2 million for first time homebuyer projects. The minimum award amount for all project types will be $10,000 per unit. State Recipient Applicants may apply for an administrative costs grant up to a $300,000 or ten percent (10%) of the activity award amount, whichever is lower. CHDO Applicants may apply for a CHDO operating expenses grant up to a $200,000 or ten percent (10%) of the activity award amount, whichever is lower.  Eligibility is described below.  Eligible Activities:*New construction of affordable rental units*Rehabilitation of affordable rental units with or without acquisition*First Time Homebuyer projects  Eligible Applicants:*State Recipients*Developers*CHDOs*Native American Entities  Eligible Jurisdictions: Projects located in non-entitlement jurisdictions, which are those that did not receive a direct HOME award from HUD, are eligible under this NOFA.  Key Words:Affordable HousingLow-IncomeVery Low-IncomeHomelessnessRental HousingHomebuyer AssistanceFirst Time HomebuyerDeveloperCHDO (Community Housing Development Organization)State RecipientCityCountyNAE (Native American Entity)",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-31 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$34,866,126",
+      "Categories": "Housing, Community and Economic Development",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "162354",
       "Source": "ca.gov"
     },
     {
@@ -40709,10 +40741,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2490,
+  "totalCount": 2492,
   "sources": {
     "ca": {
-      "count": 1853,
+      "count": 1855,
       "success": true
     },
     "federal": {
