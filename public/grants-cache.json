@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-03-03T06:22:24.377331Z",
+  "fetchedAt": "2026-03-03T18:20:07.052487Z",
   "success": true,
   "grants": [
+    {
+      "Title": "CAL FIRE Forest Health",
+      "GrantTitle": "CAL FIRE Forest Health",
+      "Description": "This Fiscal Year 2025-26 solicitation will include one grant type: \u2022 Forest Health\u00a0\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-06-08 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Individual; Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "162393",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "California Permitting Academy",
+      "GrantTitle": "California Permitting Academy",
+      "Description": "The Governor\u2019s Office of Business & Economic Development (GO-Biz) serves as\u00a0the State of California\u2019s\u00a0primary technical\u00a0assistance\u00a0provider to businesses and developers in navigating California\u2019s state and local permitting regimes.\u00a0As part of this work, GO-Biz assists businesses in accessing information and resources related to permitting and regulatory compliance,\u00a0provides mediation and third-party neutral facilitation to resolve conflicts between applicants and permitting and regulatory entities, and works with federal, state, regional, and local permitting and regulatory entities to exchange best practices and implement improvements to modernize permitting processes.\u00a0  Over the past seven years, various units within GO-Biz have developed technical expertise and educational materials intended to help local governments with process improvements and streamlining efforts, specifically in support of zero-emission vehicles charging infrastructure and clean energy projects.\u00a0\u00a0  The California Permitting Academy is intended to be structured as one-week intensive, in-person,\u00a0training courses\u00a0for\u00a0representatives from\u00a0up to five local governments per academy session.\u00a0\u00a0  This RFP is open to qualified organizations with demonstrated experience in government process improvement, technical assistance, and training delivery to serve as the host administrator of the proposed California Permitting Academy and provide support to local governments statewide.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-03-06 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$5,000,000",
+      "Categories": "Education; Employment, Labor & Training; Housing, Community and Economic Development",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "162033",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Endangered Species Conservation and Recovery Grant Program",
       "GrantTitle": "Endangered Species Conservation and Recovery Grant Program",
@@ -80,22 +112,6 @@
       "ApplicantType": "Business; Nonprofit; Public Agency",
       "GrantInfoURL": "",
       "PortalID": "161952",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "California Permitting Academy",
-      "GrantTitle": "California Permitting Academy",
-      "Description": "The Governor\u2019s Office of Business & Economic Development (GO-Biz) serves as\u00a0the State of California\u2019s\u00a0primary technical\u00a0assistance\u00a0provider to businesses and developers in navigating California\u2019s state and local permitting regimes.\u00a0As part of this work, GO-Biz assists businesses in accessing information and resources related to permitting and regulatory compliance,\u00a0provides mediation and third-party neutral facilitation to resolve conflicts between applicants and permitting and regulatory entities, and works with federal, state, regional, and local permitting and regulatory entities to exchange best practices and implement improvements to modernize permitting processes.\u00a0  Over the past seven years, various units within GO-Biz have developed technical expertise and educational materials intended to help local governments with process improvements and streamlining efforts, specifically in support of zero-emission vehicles charging infrastructure and clean energy projects.\u00a0\u00a0  The California Permitting Academy is intended to be structured as one-week intensive, in-person,\u00a0training courses\u00a0for\u00a0representatives from\u00a0up to five local governments per academy session.\u00a0\u00a0This academy is designed to support local governments that are committed to permit streamlining. Local governments\u00a0may\u00a0apply to\u00a0participate\u00a0in the academy and will\u00a0be required\u00a0to\u00a0identify\u00a0an executive sponsor (city manager, county administrator, chief executive, etc.) and a specific project or\u00a0permitting\u00a0process\u00a0they want to streamline.\u00a0  The\u00a0local government\u00a0applicant must identify\u00a0a minimum of\u00a0three and up to\u00a0six staff members\u00a0(Director of Community Development, Director of Public Works, Fire Marshall, Building Division Manager, etc.)\u00a0that have responsibilities for and/or oversight of permitting processes\u00a0to participate in their cohort during the\u00a0academy.\u00a0\u00a0Each cohort will\u00a0be required\u00a0to complete pre-academy surveys outlining their goals and existing permitting timelines, as well as post-academy surveys outlining their implementation efforts, updated permitting timelines and plans to instill and measure continuous improvement opportunities.\u00a0\u00a0\u00a0The curriculum must include sessions on best practices in permit streamlining/\u00a0modernization, review of the California Permitting Guides\u00a0developed by GO-Biz and other state agency entities,\u00a0process mapping of\u00a0the attendees' current internal procedures, and process mapping a streamlined approach.\u00a0The curriculum should also include training and education to\u00a0assist\u00a0with compliance\u00a0on\u00a0new rules and laws.\u00a0\u00a0Following the academy sessions, the cohorts will be provided with\u00a0between one and\u00a0three months of technical\u00a0assistance\u00a0from the academy host and GO-Biz.\u00a0\u00a0GO-Biz\u00a0anticipates\u00a0the academy implementor hosting\u00a0a minimum of six\u00a0in-person academy cohorts\u00a0during the contract period, rotating across Northern, Central, and Southern California.\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$5,000,000",
-      "Categories": "Education; Employment, Labor & Training; Housing, Community and Economic Development",
-      "ApplicantType": "Nonprofit",
-      "GrantInfoURL": "",
-      "PortalID": "162033",
       "Source": "ca.gov"
     },
     {
@@ -192,22 +208,6 @@
       "ApplicantType": "Public Agency",
       "GrantInfoURL": "",
       "PortalID": "161805",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "CAL FIRE Forest Health",
-      "GrantTitle": "CAL FIRE Forest Health",
-      "Description": "This Fiscal Year 2025-26 solicitation will include one grant type: \u2022 Forest Health\u00a0\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": null,
-      "Categories": "Environment & Water",
-      "ApplicantType": "Business; Individual; Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "154710",
       "Source": "ca.gov"
     },
     {
@@ -344,7 +344,7 @@
       "Description": "FAP PY 25-26 programs will position farmworkers to obtain access to good-quality jobs\u00a0 including jobs that pay family-sustaining wages, offer benefits, have predictable hours, opportunities for career advancement, and promote worker voice. Projects will also provide wrap-around support and resources to build skills to prevent job loss and lay the foundation for upward mobility. Funded programs will assist with referrals to health, housing, educational resources, and career and financial coaching.  This SFP aims to build on previous Farmworkers Advancement Program efforts. Funding is available for programs demonstrating a track record of workforce outcomes. There is $5 million available through FAP PY 25-26, and the EDD anticipates that an estimated 8 organizations will be funded. Only one application per organization will be accepted.  Applicants must demonstrate the ability to leverage at least 20 percent of their budget with leveraged resources from other sources.\u00a0 Applicants are encouraged to leverage human capital, and utilize other resources to maximize the project's success.  Proposals must be received by 3 p.m. PT on March 2, 2026. An informational webinar will be held on February 11, 2026, at 1:30 p.m. PT.\u00a0 Pre-registration is required for all attendees. \u00a0Please register through the link in the SFP by noon PT on February, 2026.  The EDD encourages applicants to submit a Notice of Intent to apply by February 17, 2026, at noon PT to WSBSFP3@edd.ca.gov. To view the SFP, visit the EDD Workforce Development Solicitation for Proposals webpage",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-02 15:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$5,000,000",
@@ -600,7 +600,7 @@
       "Description": "The GCA Program supports the planning, acquisition, development, maintenance, administration, operation, enforcement, restoration, and conservation of trails, trailheads, areas, and other facilities associated with the use of Off-Highway Motor Vehicles, and programs involving Off-Highway Motor Vehicle safety and/or education.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-02 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$30,000,000",
@@ -2184,7 +2184,7 @@
       "Description": "Proposition 68 recognizes the critical importance of recreation and tourism to California\u2019s economy and ecology and specifically directs funds to be used to support and expand recreation economies, opportunities, and access to outdoor recreation.\u00a0  Projects must fall within one of the following three focus areas to be considered for funding: 1. Build Climate Resilience: Support the planning, development, and maintenance of recreation and outdoor infrastructure that anticipates or adapts to increased use and pressure from climate change and visitors escaping extreme weather. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 2. Improve/Increase Access for All: Improve and/or increase access to nature, including for communities that have not traditionally had equitable access through grants which result in either the implementation or identification, prioritization, and preparation for capital improvement projects. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 3. Landscape-scale Assessments: Support landscape-scale partnerships to develop an assessment of landscape conditions and risks to recreational infrastructure and other assets. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection.  Eligibility: Projects must meet all the following criteria: Be located within the Sierra-Cascade Region; be consistent with the Program Objectives described in the Grant Program Guidelines and the SNC mission and program areas as defined in the SNC Strategic Plan and the Sierra Nevada Watershed Improvement Program; meet all requirements of Proposition 68 and result in a clear, demonstrable, and enduring public benefit. The SNC may give favorable consideration to projects that: Employ a collaborative approach in project development or implementation; result in a beneficial impact across a defined geographic region; directly benefit severely disadvantaged or disadvantaged communities; consider climate impacts and risks and identify specific adaptation strategies or actions to remedy climate-related vulnerability and leverage private, federal, or local resources.  To initiate consideration of a project, a project organizer should review the Grant Guidelines and Guidelines Companion Document and contact the appropriate SNC Area Representative. If it is determined that SNC will consider partnering on the project, the Area Representative will share the SNC Proposal Form with the organizer and assist in developing the project and completing the Proposal Form. Proposals will be accepted and reviewed on a rolling basis as long as funding is available.\u00a0Recommendations may be made to the SNC Governing Board on a quarterly basis beginning in June 2026. First review of project proposals will begin December 2025. Please review the full Grant Program Guidelines and Guidelines Companion Document.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-02 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$4,100,000",
@@ -33142,23 +33142,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
-      "GrantTitle": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-049",
-      "Status": "posted",
-      "ApplicationDeadline": "03/06/2026",
-      "PostedDate": "11/07/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357036",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357036",
-      "Source": "federal"
-    },
-    {
       "Title": "Analytical and Clinical Validation of Biomarkers for Alzheimers Disease (AD) and AD-Related Dementias (ADRD) (U01 Clinical Trial Optional)",
       "GrantTitle": "Analytical and Clinical Validation of Biomarkers for Alzheimers Disease (AD) and AD-Related Dementias (ADRD) (U01 Clinical Trial Optional)",
       "Description": "",
@@ -40722,22 +40705,77 @@
       "OpportunityID": "360888",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360888",
       "Source": "federal"
+    },
+    {
+      "Title": "NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)",
+      "GrantTitle": "NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-119",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361394",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361394",
+      "Source": "federal"
+    },
+    {
+      "Title": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
+      "GrantTitle": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-152",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361399",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361399",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
+      "GrantTitle": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-25-049",
+      "Status": "posted",
+      "ApplicationDeadline": "07/09/2026",
+      "PostedDate": "11/07/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "357036",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357036",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2491,
+  "totalCount": 2493,
   "sources": {
     "ca": {
-      "count": 1855,
+      "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 889,
+      "count": 891,
       "success": true
     }
   },
   "duplicates": {
-    "count": 253,
+    "count": 254,
     "examples": [
+      {
+        "original": "CAL FIRE Forest Health",
+        "duplicate": "CAL FIRE Forest Health"
+      },
       {
         "original": "Legacy Disposal Site Abatement Grant Program",
         "duplicate": "Legacy Disposal Site Abatement Grant Program"
@@ -40753,10 +40791,6 @@
       {
         "original": "Beverage Container Redemption Innovation Grant Program",
         "duplicate": "Beverage Container Redemption Innovation Grant Program"
-      },
-      {
-        "original": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 Prop 68 River San Fernando Valley \u2013 California",
-        "duplicate": "The California Drought, Water, Parks, Climate, Coastal Protection and Outdoor Access for All Act of 2018 (Proposition 68) SMMC Grant Program \u2013 (Prop 68 River San Fernando Valley  \u2013 Severely Disadvantaged Community)"
       }
     ]
   }
