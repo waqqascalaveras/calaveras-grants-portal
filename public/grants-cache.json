@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-02T18:18:37.983032Z",
+  "fetchedAt": "2026-03-03T06:22:24.377331Z",
   "success": true,
   "grants": [
     {
@@ -38106,23 +38106,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
-      "GrantTitle": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CE-26-0061",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "11/19/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360888",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360888",
-      "Source": "federal"
-    },
-    {
       "Title": "Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)",
       "GrantTitle": "Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)",
       "Description": "",
@@ -38443,23 +38426,6 @@
       "AwardFloor": 0,
       "OpportunityID": "359648",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359648",
-      "Source": "federal"
-    },
-    {
-      "Title": "YouthBuild 2025",
-      "GrantTitle": "YouthBuild 2025",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOA-ETA-26-38",
-      "Status": "posted",
-      "ApplicationDeadline": "03/02/2026",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361057",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361057",
       "Source": "federal"
     },
     {
@@ -39055,23 +39021,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361000",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361000",
-      "Source": "federal"
-    },
-    {
-      "Title": "Conservation Interns at the Raystown Lake Project, USACE",
-      "GrantTitle": "Conservation Interns at the Raystown Lake Project, USACE",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "W912DR26RA021",
-      "Status": "posted",
-      "ApplicationDeadline": "03/02/2026",
-      "PostedDate": "01/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360945",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360945",
       "Source": "federal"
     },
     {
@@ -40756,16 +40705,33 @@
       "OpportunityID": "360210",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360210",
       "Source": "federal"
+    },
+    {
+      "Title": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
+      "GrantTitle": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-CE-26-0061",
+      "Status": "posted",
+      "ApplicationDeadline": "04/14/2026",
+      "PostedDate": "03/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360888",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360888",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2493,
+  "totalCount": 2491,
   "sources": {
     "ca": {
       "count": 1855,
       "success": true
     },
     "federal": {
-      "count": 891,
+      "count": 889,
       "success": true
     }
   },
