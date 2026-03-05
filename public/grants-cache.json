@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-04T18:19:14.679781Z",
+  "fetchedAt": "2026-03-05T06:22:06.657269Z",
   "success": true,
   "grants": [
     {
@@ -40503,23 +40503,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
-      "GrantTitle": "Drug-Free Communities (DFC) Support Program &ndash; NEW (Year 1)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CE-26-0061",
-      "Status": "posted",
-      "ApplicationDeadline": "04/14/2026",
-      "PostedDate": "03/02/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360888",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360888",
-      "Source": "federal"
-    },
-    {
       "Title": "NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)",
       "GrantTitle": "NEI Collaborative Clinical Vision Research (UG1 - Clinical Trial Optional)",
       "Description": "",
@@ -40656,57 +40639,6 @@
       "Source": "federal"
     },
     {
-      "Title": "New NIA Institutional Training Programs for Aging Research",
-      "GrantTitle": "New NIA Institutional Training Programs for Aging Research",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-410",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359276",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359276",
-      "Source": "federal"
-    },
-    {
-      "Title": "Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)",
-      "GrantTitle": "Drug-Free Communities (DFC) Support Program &ndash; COMPETING CONTINUATION (Year 6)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CE21-210206CONT26",
-      "Status": "posted",
-      "ApplicationDeadline": "04/14/2026",
-      "PostedDate": "03/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360889",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360889",
-      "Source": "federal"
-    },
-    {
-      "Title": "Research Opportunities in Crisis Response Services for Suicide Prevention",
-      "GrantTitle": "Research Opportunities in Crisis Response Services for Suicide Prevention",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-MH-26-130",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359273",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359273",
-      "Source": "federal"
-    },
-    {
       "Title": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
       "GrantTitle": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
       "Description": "",
@@ -40790,16 +40722,33 @@
       "OpportunityID": "361408",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361408",
       "Source": "federal"
+    },
+    {
+      "Title": "Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)",
+      "GrantTitle": "Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-132",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361411",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361411",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2495,
+  "totalCount": 2492,
   "sources": {
     "ca": {
       "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 893,
+      "count": 890,
       "success": true
     }
   },
