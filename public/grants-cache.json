@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-06T06:21:09.030815Z",
+  "fetchedAt": "2026-03-06T18:17:02.002374Z",
   "success": true,
   "grants": [
     {
@@ -168,7 +168,7 @@
       "Description": "Project proposal submittals should provide the following:  1.\u00a0\u00a0\u00a0\u00a0\u00a0 Submit a Technical Report providing design basis, existing topography, site hydrology, and existing and proposed conditions hydraulic modeling demonstrating the project\u2019s ability to successfully impede upstream passage of an 18-inch rainbow trout, for flows up to the peak of a 5-year recurrence interval storm.  2.\u00a0\u00a0\u00a0\u00a0\u00a0 Submit design and construction details, including proposed materials and construction methodology, site access plan, site dewatering plan, and project implementation schedule.\u00a0 Implementation must be completed by August 2026. The design shall meet requirements of NOAA\u2019s \u201cAnadromous Salmonid Design Manual (NOAA, 2022) for a combined velocity and jump height barrier.  3.\u00a0\u00a0\u00a0\u00a0\u00a0 Applicants must submit a complete project budget with the Proposal. The budget must provide sufficient detail for reviewers to understand how the requested funds will be used, why the expenses are necessary, and how the applicant is estimating project costs. Eligible costs are project related costs associated with an eligible activity identified in the Grant Agreement.  \u00a0 Eligible costs can only be incurred during the project period specified in the Grant Agreement. All eligible costs must be supported by appropriate invoices, purchase orders, canceled warrants, and/or other records. Applicants should budget for all costs associated with project delivery, including any travel costs, permit fees, subcontractor costs, etc. Subcontractor costs must be reasonable and customary according to the circumstances of the Proposal.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Cost share, if applicable, is any portion of the project cost not funded by the awarding agency (CDFW) and provided by the applicant and/or other sources (e.g., private companies, nonprofit organizations, public agencies, and/or other entities). The cost share must support the proposed project and be spent during the grant term after the grant is executed. \u00a0While cost share is encouraged, it is not required as part of this Solicitation.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-05 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$500,000",
@@ -409,11 +409,11 @@
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
-      "ApplicationDeadline": "2026-06-30 17:00:00",
+      "ApplicationDeadline": "2026-06-22 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$34,866,126",
       "Categories": "Housing, Community and Economic Development",
-      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "162360",
       "Source": "ca.gov"
@@ -425,11 +425,11 @@
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
-      "ApplicationDeadline": "2026-03-31 17:00:00",
+      "ApplicationDeadline": "2026-03-30 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$34,866,126",
       "Categories": "Housing, Community and Economic Development",
-      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "162354",
       "Source": "ca.gov"
@@ -40690,6 +40690,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Snow Water Supply Forecasting Program FY 2026",
+      "GrantTitle": "Snow Water Supply Forecasting Program FY 2026",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "R25AS00210",
+      "Status": "posted",
+      "ApplicationDeadline": "05/05/2026",
+      "PostedDate": "03/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361419",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361419",
+      "Source": "federal"
+    },
+    {
       "Title": "Urgent Competitive Revision to Existing NIH Grants and Cooperative Agreements (Urgent Supplement Clinical Trial Optional)",
       "GrantTitle": "Urgent Competitive Revision to Existing NIH Grants and Cooperative Agreements (Urgent Supplement Clinical Trial Optional)",
       "Description": "",
@@ -40707,14 +40724,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2490,
+  "totalCount": 2491,
   "sources": {
     "ca": {
       "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 888,
+      "count": 889,
       "success": true
     }
   },
