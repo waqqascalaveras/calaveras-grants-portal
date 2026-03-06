@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-05T18:41:38.609765Z",
+  "fetchedAt": "2026-03-06T06:21:09.030815Z",
   "success": true,
   "grants": [
     {
@@ -27991,23 +27991,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NLM Research Grants in Biomedical Informatics and Data Science (R01 Clinical Trial Optional)",
-      "GrantTitle": "NLM Research Grants in Biomedical Informatics and Data Science (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-238",
-      "Status": "posted",
-      "ApplicationDeadline": "03/05/2026",
-      "PostedDate": "11/25/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357380",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357380",
-      "Source": "federal"
-    },
-    {
       "Title": "Genomic Variant Interactions With Other Variants Or The Environment (UM1 Clinical Trials Not Allowed)",
       "GrantTitle": "Genomic Variant Interactions With Other Variants Or The Environment (UM1 Clinical Trials Not Allowed)",
       "Description": "",
@@ -33105,23 +33088,6 @@
       "AwardFloor": 0,
       "OpportunityID": "357379",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357379",
-      "Source": "federal"
-    },
-    {
-      "Title": "Analytical and Clinical Validation of Biomarkers for Alzheimers Disease (AD) and AD-Related Dementias (ADRD) (U01 Clinical Trial Optional)",
-      "GrantTitle": "Analytical and Clinical Validation of Biomarkers for Alzheimers Disease (AD) and AD-Related Dementias (ADRD) (U01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-209",
-      "Status": "posted",
-      "ApplicationDeadline": "03/05/2026",
-      "PostedDate": "11/14/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357139",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357139",
       "Source": "federal"
     },
     {
@@ -40741,14 +40707,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2492,
+  "totalCount": 2490,
   "sources": {
     "ca": {
       "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 890,
+      "count": 888,
       "success": true
     }
   },
