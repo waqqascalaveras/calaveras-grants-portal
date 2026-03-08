@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-07T18:10:00.560085Z",
+  "fetchedAt": "2026-03-08T06:18:23.767878Z",
   "success": true,
   "grants": [
     {
@@ -37766,23 +37766,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Engineering Improved Stem Cell-Derived Islet Cells for Replacement Therapies (R01 - Clinical Trial Not Allowed)",
-      "GrantTitle": "Engineering Improved Stem Cell-Derived Islet Cells for Replacement Therapies (R01 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-26-306",
-      "Status": "posted",
-      "ApplicationDeadline": "03/07/2026",
-      "PostedDate": "12/03/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360931",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360931",
-      "Source": "federal"
-    },
-    {
       "Title": "Autoimmune Diseases Statistical and Clinical Coordinating Center (AD-SCCC)",
       "GrantTitle": "Autoimmune Diseases Statistical and Clinical Coordinating Center (AD-SCCC)",
       "Description": "",
@@ -40724,14 +40707,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2491,
+  "totalCount": 2490,
   "sources": {
     "ca": {
       "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 889,
+      "count": 888,
       "success": true
     }
   },
