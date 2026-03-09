@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-08T18:10:30.502006Z",
+  "fetchedAt": "2026-03-09T06:28:24.835626Z",
   "success": true,
   "grants": [
     {
@@ -31748,23 +31748,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collaborative Research Using Biosamples and/or Data from Type 1 Diabetes Clinical Studies (R01 - Clinical Trial Not Allowed)",
-      "GrantTitle": "Collaborative Research Using Biosamples and/or Data from Type 1 Diabetes Clinical Studies (R01 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-26-007",
-      "Status": "posted",
-      "ApplicationDeadline": "03/08/2026",
-      "PostedDate": "01/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358238",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358238",
-      "Source": "federal"
-    },
-    {
       "Title": "Supporting Talented Early Career Researchers in Genomics (R01 Clinical Trial Optional)",
       "GrantTitle": "Supporting Talented Early Career Researchers in Genomics (R01 Clinical Trial Optional)",
       "Description": "",
@@ -40707,14 +40690,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2490,
+  "totalCount": 2489,
   "sources": {
     "ca": {
       "count": 1856,
       "success": true
     },
     "federal": {
-      "count": 888,
+      "count": 887,
       "success": true
     }
   },
