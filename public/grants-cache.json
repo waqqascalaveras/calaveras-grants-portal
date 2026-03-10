@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-03-10T06:20:58.991717Z",
+  "fetchedAt": "2026-03-10T18:21:15.899179Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Local Government Waste Tire Cleanup Grant Program (TCU21)",
+      "GrantTitle": "Local Government Waste Tire Cleanup Grant Program (TCU21)",
+      "Description": "CalRecycle oversees the Waste Tire Cleanup Grant, a competitive grant program to provide funding for collection, removal, transportation, recycling, and disposing of California waste tires from tire piles and illegal dumping areas along public rights-of-way or on private property.  California cities, counties, special districts, Qualifying California Native American tribes and joint powers authorities are eligible to apply.  Funding:\u00a0 $1,500,000 available for fiscal year (FY) 2026\u201327 - $100,000 for individual grant awards and $250,000 for regional grant awards.\u00a0\u00a0  See for https://www.calrecycle.ca.gov/Tires/Grants/Cleanup/ for eligible costs and additional grant specific information.  Resolution required.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$1,500,000",
+      "Categories": "Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "162744",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Division of Boating and Waterways Local Assistance QZ Mussel Infestation Prevention Grant",
+      "GrantTitle": "Division of Boating and Waterways Local Assistance QZ Mussel Infestation Prevention Grant",
+      "Description": "The Quagga and Zebra Mussel Infestation Prevention Grant Program provides funding for two tiers/types of projects: 1) Planning and Assessment; and 2) Implementation. Examples of projects include: developing prevention plans, purchasing pressure washers/decontamination units or other equipment, outreach/education effort, and inspection programs including staffing, materials and supplies. DBW coordinates and collaborates with the California Department of Fish and Wildlife on many aspects of this program.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-04-17 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Environment & Water; Parks & Recreation",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "162729",
+      "Source": "ca.gov"
+    },
     {
       "Title": "2025-26 Preservation & Accessibility of California's LGBTQ+ History",
       "GrantTitle": "2025-26 Preservation & Accessibility of California's LGBTQ+ History",
@@ -377,7 +409,7 @@
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
-      "ApplicationDeadline": "2026-03-31 11:59:00",
+      "ApplicationDeadline": "2026-04-30 11:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$700,000",
       "Categories": "Disadvantaged Communities; Education; Employment, Labor & Training",
@@ -2640,6 +2672,22 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "108120",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Charter School Facilities Incentive Grants Program",
+      "GrantTitle": "Charter School Facilities Incentive Grants Program",
+      "Description": "In 2004, 2009, and 2014, the United States Department of Education approved grant awards to the Authority pursuant to the State Charter School Incentive Grant Program (Program), authorized under Title V, Part B, Subpart 1 of the Elementary and Secondary Education Act, as amended by the No Child Left Behind Act of 2001. The California School Finance Authority was recently awarded a $30 million grant award in Fall 2024. Per the Authority\u2019s application to the Department of Education, the Authority is proposing three more funding rounds of the Program starting for the 2025-26 school year.\u00a0  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$30,000,000",
+      "Categories": "Education",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "157089",
       "Source": "ca.gov"
     },
     {
@@ -37885,23 +37933,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Limited Competition: NIGMS Mature Synchrotron Resources for Structural Biology",
-      "GrantTitle": "Limited Competition: NIGMS Mature Synchrotron Resources for Structural Biology",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-029",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360947",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360947",
-      "Source": "federal"
-    },
-    {
       "Title": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
       "GrantTitle": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
       "Description": "",
@@ -40622,6 +40653,57 @@
       "Source": "federal"
     },
     {
+      "Title": "AD/ADRD Clinical Trials Short Course",
+      "GrantTitle": "AD/ADRD Clinical Trials Short Course",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-TEMP-28387",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/27/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359856",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359856",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
+      "GrantTitle": "NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-029",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360947",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360947",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pilot Projects to Enhance the Human Virome Program (R03, Clinical Trials Not Allowed)",
+      "GrantTitle": "Pilot Projects to Enhance the Human Virome Program (R03, Clinical Trials Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-26-024",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361431",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361431",
+      "Source": "federal"
+    },
+    {
       "Title": "Leadership Education in Neurodevelopmental and Other Related Disabilities (LEND)",
       "GrantTitle": "Leadership Education in Neurodevelopmental and Other Related Disabilities (LEND)",
       "Description": "",
@@ -40636,6 +40718,23 @@
       "AwardFloor": 0,
       "OpportunityID": "360996",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360996",
+      "Source": "federal"
+    },
+    {
+      "Title": "Nursing Workforce Diversity",
+      "GrantTitle": "Nursing Workforce Diversity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-095",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361434",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361434",
       "Source": "federal"
     },
     {
@@ -40654,33 +40753,16 @@
       "OpportunityID": "361419",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361419",
       "Source": "federal"
-    },
-    {
-      "Title": "AD/ADRD Clinical Trials Short Course",
-      "GrantTitle": "AD/ADRD Clinical Trials Short Course",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-TEMP-28387",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359856",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359856",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2488,
+  "totalCount": 2493,
   "sources": {
     "ca": {
-      "count": 1856,
+      "count": 1859,
       "success": true
     },
     "federal": {
-      "count": 886,
+      "count": 888,
       "success": true
     }
   },
