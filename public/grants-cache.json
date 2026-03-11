@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-10T18:21:15.899179Z",
+  "fetchedAt": "2026-03-11T06:22:49.417064Z",
   "success": true,
   "grants": [
     {
@@ -33190,23 +33190,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Mitochondrial-associated Mechanisms of Neuropathological and Immunodeficient Aging in the Context of HIV and SUD (R01 Clinical Trials Not Allowed)",
-      "GrantTitle": "Mitochondrial-associated Mechanisms of Neuropathological and Immunodeficient Aging in the Context of HIV and SUD (R01 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-26-009",
-      "Status": "posted",
-      "ApplicationDeadline": "03/10/2026",
-      "PostedDate": "09/30/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "356596",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356596",
-      "Source": "federal"
-    },
-    {
       "Title": "NIDCR Drug, Biologic, Device and/or Procedure Intervention Clinical Trial Planning and Implementation Cooperative Agreement (UG3/UH3 Clinical Trial Required)",
       "GrantTitle": "NIDCR Drug, Biologic, Device and/or Procedure Intervention Clinical Trial Planning and Implementation Cooperative Agreement (UG3/UH3 Clinical Trial Required)",
       "Description": "",
@@ -39395,23 +39378,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Lead Hazard Reduction Capacity Building Grant Program",
-      "GrantTitle": "Lead Hazard Reduction Capacity Building Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-6900-N-31",
-      "Status": "posted",
-      "ApplicationDeadline": "03/10/2026",
-      "PostedDate": "01/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361107",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361107",
-      "Source": "federal"
-    },
-    {
       "Title": "Rigor and Reproducibility for Biomarkers in Type 1 Diabetes Clinical Research",
       "GrantTitle": "Rigor and Reproducibility for Biomarkers in Type 1 Diabetes Clinical Research",
       "Description": "",
@@ -40653,23 +40619,6 @@
       "Source": "federal"
     },
     {
-      "Title": "AD/ADRD Clinical Trials Short Course",
-      "GrantTitle": "AD/ADRD Clinical Trials Short Course",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-TEMP-28387",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359856",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359856",
-      "Source": "federal"
-    },
-    {
       "Title": "NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
       "GrantTitle": "NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -40753,16 +40702,50 @@
       "OpportunityID": "361419",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361419",
       "Source": "federal"
+    },
+    {
+      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOA-VETS-26-01",
+      "Status": "posted",
+      "ApplicationDeadline": "03/12/2026",
+      "PostedDate": "01/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360161",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360161",
+      "Source": "federal"
+    },
+    {
+      "Title": "Early-Onset Cancers: Investigating Etiology, Mechanisms, and Early Detection Strategies (RP1 Clinical Trials Optional)",
+      "GrantTitle": "Early-Onset Cancers: Investigating Etiology, Mechanisms, and Early Detection Strategies (RP1 Clinical Trials Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-26-150",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361438",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361438",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2493,
+  "totalCount": 2492,
   "sources": {
     "ca": {
       "count": 1859,
       "success": true
     },
     "federal": {
-      "count": 888,
+      "count": 887,
       "success": true
     }
   },
