@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-03-14T06:20:44.325952Z",
+  "fetchedAt": "2026-03-14T18:12:36.687386Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Coachella Valley Mountains Conservancy Proposition 4 Nature Based Solutions and Climate Adaptation Grant Program",
+      "GrantTitle": "Coachella Valley Mountains Conservancy Proposition 4 Nature Based Solutions and Climate Adaptation Grant Program",
+      "Description": "Awards are made for projects that reduce climate change risks, protect natural and cultural resources, restore habitat and watershed systems, and improve public access to outdoor recreation within the Coachella Valley and its surrounding mountains. Eligible projects may include conservation land acquisition, habitat restoration and enhancement, watershed and ecosystem restoration, wildfire risk reduction, and improvements that expand safe and equitable access to parks, trails, and natural areas.  Funding is provided through the Safe Drinking Water, Wildfire Prevention, Drought Preparedness, and Clean Air Bond Act of 2024 (Proposition 4). Applications begin with submission of a Letter of Intent using the Conservancy\u2019s Pre-Application Consultation Form. Following administrative review, eligible applicants may be invited to submit a full application. Additional information about the application process and eligibility requirements is available in the Proposition 4 Grant Program Guidelines on the Conservancy\u2019s website.  Projects that provide meaningful and direct benefits to disadvantaged communities (DACs), severely disadvantaged communities (SDACs), or vulnerable populations will receive priority consideration. Projects that demonstrate strong community engagement, leverage matching funds, support regional conservation objectives, and align with state initiatives such as California\u2019s 30x30 conservation goal may also receive additional consideration during the evaluation process.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$11,000,000",
+      "Categories": "Disadvantaged Communities; Environment & Water; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "162927",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Local Government Waste Tire Cleanup Grant Program (TCU21)",
       "GrantTitle": "Local Government Waste Tire Cleanup Grant Program (TCU21)",
@@ -360,7 +376,7 @@
       "Description": "Public land projects funded through NBHIP may include the cultivation or retention of upland cover such as annual nesting cover or perennial native grasses and forbs, or management activities to improve the quality of perennial grass habitats such as managing noxious weeds and other undesirable plants. Any project that is funded by NBHIP will be required to leave the upland cover habitat unmanipulated (e.g., no discing, spraying herbicides, mowing, chopping, or rolling of vegetation) during the nesting season (April 1 \u2013 July 15). Furthermore, to be selected all projects must provide and maintain summer water habitats within one mile of the enhancement areas.  To accomplish the objectives of this program, the Department is authorized to enter into grants or contracts with public and private entities, including nonprofit organizations, and California Native American tribes to help the department implement the program and improve breeding waterfowl and other upland game bird habitats in California (Fish and Game Code \u00a7 3480 \u201c\u2026the department may carry out the game bird breeding habitat purposes of the Nesting Bird Habitat Incentive Program on State Wildlife Areas and National Wildlife Refuges when necessary and as the department deems appropriate\u2026\u201d) The organizations must have the specific capacity (waterfowl habitat enhancement, native grass restoration, upland habitat creation or agricultural and farming experience to deliver the objectives).  Examples of eligible projects are limited to the following categories:  1.\u00a0\u00a0\u00a0 Maintenance of existing perennial grass habitat for breeding waterfowl  2.\u00a0\u00a0\u00a0 Restoration and enhancement of existing perennial grass habitat for breeding waterfowl  3.\u00a0\u00a0\u00a0 Establishment of new perennial native grass and forb habitat for breeding waterfowl",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-13 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$850,000",
@@ -485,13 +501,13 @@
     {
       "Title": "Vertebrate Pest Control Research Program",
       "GrantTitle": "Vertebrate Pest Control Research Program",
-      "Description": "Proposals may focus on research and/or education projects to enhance control measures of vertebrate pests that pose a significant threat to the welfare of state\u2019s agricultural economy, infrastructure, environment, and the public.\u00a0 CDFA does not support proprietary product development projects.\u00a0 Proposals that originate from outside of California are considered if the proposal includes relevance to vertebrate pest concerns within California.\u00a0 Proposals that include other sources of funding are strongly encouraged and welcomed.\u00a0",
+      "Description": "Proposals may focus on research and/or education projects to enhance control measures of vertebrate pests that pose a significant threat to the welfare of state\u2019s agricultural economy, infrastructure, environment, and the public.\u00a0 CDFA does not support proprietary product development projects.\u00a0 Proposals that originate from outside of California are considered if the proposal includes relevance to vertebrate pest concerns within California.\u00a0 Proposals that include other sources of funding are strongly encouraged and welcomed.",
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
       "ApplicationDeadline": "2026-09-20 23:59:00",
       "PostedDate": "",
-      "EstAvailFunds": "$200,000",
+      "EstAvailFunds": "$500,000",
       "Categories": "Agriculture; Environment & Water; Health & Human Services; Science, Technology, and Research & Development",
       "ApplicantType": "Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
       "GrantInfoURL": "",
@@ -584,7 +600,7 @@
       "Description": "The purpose of the SL Program is to assist local governments, including school districts and special districts, and federally recognized tribes address cybersecurity risks and threats to information systems, and improve security of critical infrastructure and resilience of the services these entities provide to their communities.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-13 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$9,682,381",
@@ -600,7 +616,7 @@
       "Description": "The purpose of the SG Program is to assist agencies of the State of California address cybersecurity risks and threats to information systems, and improve security of critical infrastructure and resilience of the services these entities provide to their communities.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-03-13 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,815,446",
@@ -40686,10 +40702,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2489,
+  "totalCount": 2490,
   "sources": {
     "ca": {
-      "count": 1860,
+      "count": 1861,
       "success": true
     },
     "federal": {
