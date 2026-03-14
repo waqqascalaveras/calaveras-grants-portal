@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-13T18:15:45.890166Z",
+  "fetchedAt": "2026-03-14T06:20:44.325952Z",
   "success": true,
   "grants": [
     {
@@ -26695,23 +26695,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Omics Phenotypes Related to Down Syndrome for the INCLUDE Project (X01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Omics Phenotypes Related to Down Syndrome for the INCLUDE Project (X01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-081",
-      "Status": "posted",
-      "ApplicationDeadline": "03/13/2026",
-      "PostedDate": "12/05/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "351318",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/351318",
-      "Source": "federal"
-    },
-    {
       "Title": "Medical Scientist Training Program (MSTP) (T32)",
       "GrantTitle": "Medical Scientist Training Program (MSTP) (T32)",
       "Description": "",
@@ -29276,23 +29259,6 @@
       "AwardFloor": 0,
       "OpportunityID": "350279",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/350279",
-      "Source": "federal"
-    },
-    {
-      "Title": "HIV Vaccine Research and Design (HIVRAD) Program (P01 Clinical Trial Not Allowed)",
-      "GrantTitle": "HIV Vaccine Research and Design (HIVRAD) Program (P01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-037",
-      "Status": "posted",
-      "ApplicationDeadline": "03/13/2026",
-      "PostedDate": "10/04/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "350461",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/350461",
       "Source": "federal"
     },
     {
@@ -40329,23 +40295,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Nursing Workforce Diversity",
-      "GrantTitle": "Nursing Workforce Diversity",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-095",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "03/10/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361434",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361434",
-      "Source": "federal"
-    },
-    {
       "Title": "Snow Water Supply Forecasting Program FY 2026",
       "GrantTitle": "Snow Water Supply Forecasting Program FY 2026",
       "Description": "",
@@ -40701,16 +40650,50 @@
       "OpportunityID": "361496",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361496",
       "Source": "federal"
+    },
+    {
+      "Title": "Nursing Workforce Diversity",
+      "GrantTitle": "Nursing Workforce Diversity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-095",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361434",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361434",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
+      "GrantTitle": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172542",
+      "Status": "posted",
+      "ApplicationDeadline": "04/21/2026",
+      "PostedDate": "03/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361501",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361501",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2490,
+  "totalCount": 2489,
   "sources": {
     "ca": {
       "count": 1860,
       "success": true
     },
     "federal": {
-      "count": 884,
+      "count": 883,
       "success": true
     }
   },
