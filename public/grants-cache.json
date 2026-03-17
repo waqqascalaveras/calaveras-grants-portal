@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-16T18:25:52.043512Z",
+  "fetchedAt": "2026-03-17T06:29:19.843004Z",
   "success": true,
   "grants": [
     {
@@ -29804,23 +29804,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Small Research Grant Program for the Next Generation of Researchers in AD/ADRD Research (R03 Clinical Trial Optional)",
-      "GrantTitle": "Small Research Grant Program for the Next Generation of Researchers in AD/ADRD Research (R03 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-25-246",
-      "Status": "posted",
-      "ApplicationDeadline": "03/16/2026",
-      "PostedDate": "11/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357172",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357172",
-      "Source": "federal"
-    },
-    {
       "Title": "Occupational Safety and Health Education and Research Centers (T42)",
       "GrantTitle": "Occupational Safety and Health Education and Research Centers (T42)",
       "Description": "",
@@ -38134,40 +38117,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Service Area Competition - Additional Area 1",
-      "GrantTitle": "Service Area Competition - Additional Area 1",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-007",
-      "Status": "posted",
-      "ApplicationDeadline": "03/16/2026",
-      "PostedDate": "01/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361137",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361137",
-      "Source": "federal"
-    },
-    {
-      "Title": "Support for a National Electronic Interstate Records Exchange System",
-      "GrantTitle": "Support for a National Electronic Interstate Records Exchange System",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ACYF-CO-0079",
-      "Status": "posted",
-      "ApplicationDeadline": "03/16/2026",
-      "PostedDate": "01/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360995",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360995",
-      "Source": "federal"
-    },
-    {
       "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
       "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
       "Description": "",
@@ -40803,14 +40752,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2496,
+  "totalCount": 2493,
   "sources": {
     "ca": {
       "count": 1862,
       "success": true
     },
     "federal": {
-      "count": 889,
+      "count": 886,
       "success": true
     }
   },
