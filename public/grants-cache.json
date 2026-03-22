@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-21T18:11:54.942042Z",
+  "fetchedAt": "2026-03-22T06:23:03.326376Z",
   "success": true,
   "grants": [
     {
@@ -40223,23 +40223,6 @@
       "Source": "federal"
     },
     {
-      "Title": "AHRQ Mentored Career Enhancement Awards for Established Investigators in Patient-Centered Outcome Research (K18)",
-      "GrantTitle": "AHRQ Mentored Career Enhancement Awards for Established Investigators in Patient-Centered Outcome Research (K18)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-22-051",
-      "Status": "posted",
-      "ApplicationDeadline": "03/21/2026",
-      "PostedDate": "12/08/2021",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "335143",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/335143",
-      "Source": "federal"
-    },
-    {
       "Title": "Nurse Faculty Loan Program (NFLP)",
       "GrantTitle": "Nurse Faculty Loan Program (NFLP)",
       "Description": "",
@@ -40359,14 +40342,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2470,
+  "totalCount": 2469,
   "sources": {
     "ca": {
       "count": 1864,
       "success": true
     },
     "federal": {
-      "count": 861,
+      "count": 860,
       "success": true
     }
   },
