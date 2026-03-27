@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-03-27T06:33:13.543966Z",
+  "fetchedAt": "2026-03-27T18:24:10.289090Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Prop 4 \u2013 Randall Preserve",
+      "GrantTitle": "Prop 4 \u2013 Randall Preserve",
+      "Description": "The funds appropriated in this item shall be available for the Randall Preserve for work that supports the reduction of climate impacts on disadvantaged communities and vulnerable populations and the creation, protection, and expansion of outdoor recreation opportunities pursuant to Section 94020 of the Public Resources Code and shall be available for encumbrance or expenditure until June 30, 2028.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164013",
+      "Source": "ca.gov"
+    },
     {
       "Title": "State-Local Partner Mentorship",
       "GrantTitle": "State-Local Partner Mentorship",
@@ -33099,23 +33115,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces (Equine Therapy Grants)",
-      "GrantTitle": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces (Equine Therapy Grants)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-EQUINE-26",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/02/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360405",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360405",
-      "Source": "federal"
-    },
-    {
       "Title": "NINDS Efficacy and Exploratory Clinical Trials (UG3/UH3 - Clinical Trial Required)",
       "GrantTitle": "NINDS Efficacy and Exploratory Clinical Trials (UG3/UH3 - Clinical Trial Required)",
       "Description": "",
@@ -40137,23 +40136,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
-      "GrantTitle": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-SPORTS-26",
-      "Status": "posted",
-      "ApplicationDeadline": "05/13/2026",
-      "PostedDate": "03/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360391",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360391",
-      "Source": "federal"
-    },
-    {
       "Title": "Port Infrastructure Development Program",
       "GrantTitle": "Port Infrastructure Development Program",
       "Description": "",
@@ -40239,6 +40221,23 @@
       "Source": "federal"
     },
     {
+      "Title": "BJA FY25 Smart Reentry Demonstration Program",
+      "GrantTitle": "BJA FY25 Smart Reentry Demonstration Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172494",
+      "Status": "posted",
+      "ApplicationDeadline": "04/01/2026",
+      "PostedDate": "02/19/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361324",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361324",
+      "Source": "federal"
+    },
+    {
       "Title": "BJA FY25 Investigating and Prosecuting Sexual Assaults in Confinement Facilities Program",
       "GrantTitle": "BJA FY25 Investigating and Prosecuting Sexual Assaults in Confinement Facilities Program",
       "Description": "",
@@ -40256,31 +40255,65 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY25 Smart Reentry Demonstration Program",
-      "GrantTitle": "BJA FY25 Smart Reentry Demonstration Program",
+      "Title": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
+      "GrantTitle": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "O-BJA-2025-172494",
+      "OpportunityNumber": "VA-SPORTS-26",
       "Status": "posted",
-      "ApplicationDeadline": "04/01/2026",
-      "PostedDate": "02/19/2026",
+      "ApplicationDeadline": "05/13/2026",
+      "PostedDate": "03/27/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361324",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361324",
+      "OpportunityID": "360391",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360391",
+      "Source": "federal"
+    },
+    {
+      "Title": "Safe Streets and Roads for All Funding Opportunity",
+      "GrantTitle": "Safe Streets and Roads for All Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DOT-SS4A-FY26-01",
+      "Status": "posted",
+      "ApplicationDeadline": "05/26/2026",
+      "PostedDate": "03/27/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361291",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361291",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 Upholding the Rule of Law and Preventing Wrongful Convictions Program",
+      "GrantTitle": "BJA FY25 Upholding the Rule of Law and Preventing Wrongful Convictions Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172493",
+      "Status": "posted",
+      "ApplicationDeadline": "05/04/2026",
+      "PostedDate": "03/27/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361698",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361698",
       "Source": "federal"
     }
   ],
-  "totalCount": 2465,
+  "totalCount": 2467,
   "sources": {
     "ca": {
-      "count": 1869,
+      "count": 1870,
       "success": true
     },
     "federal": {
-      "count": 855,
+      "count": 856,
       "success": true
     }
   },
