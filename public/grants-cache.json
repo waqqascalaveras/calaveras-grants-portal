@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-03-28T06:26:32.851592Z",
+  "fetchedAt": "2026-03-28T18:13:17.060372Z",
   "success": true,
   "grants": [
+    {
+      "Title": "FY25-26 Next Generation Warning System Grant Program \u2013 CFO",
+      "GrantTitle": "FY25-26 Next Generation Warning System Grant Program \u2013 CFO",
+      "Description": "The Program will identify capability gaps and implement solutions for alert and warning.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-05-22 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$953,958",
+      "Categories": "Disaster Prevention & Relief",
+      "ApplicantType": "Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164022",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Prop 4 \u2013 Randall Preserve",
       "GrantTitle": "Prop 4 \u2013 Randall Preserve",
@@ -40306,10 +40322,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2467,
+  "totalCount": 2468,
   "sources": {
     "ca": {
-      "count": 1870,
+      "count": 1871,
       "success": true
     },
     "federal": {
