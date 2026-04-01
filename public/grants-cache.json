@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-03-31T18:25:35.084438Z",
+  "fetchedAt": "2026-04-01T06:42:02.026193Z",
   "success": true,
   "grants": [
     {
@@ -32824,40 +32824,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Economic and Modeling Analyses to Support Immunization Policy and Programs",
-      "GrantTitle": "Economic and Modeling Analyses to Support Immunization Policy and Programs",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-IP-26-032",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360198",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360198",
-      "Source": "federal"
-    },
-    {
-      "Title": "Preparedness for and Prevention of Severe Disease and Sequelae of Respiratory Viruses and Other Respiratory Pathogens",
-      "GrantTitle": "Preparedness for and Prevention of Severe Disease and Sequelae of Respiratory Viruses and Other Respiratory Pathogens",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-IP-26-100",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360203",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360203",
-      "Source": "federal"
-    },
-    {
       "Title": "Collaborative Surveys to Provide Inputs into Vaccine-Related Economic Evaluations",
       "GrantTitle": "Collaborative Surveys to Provide Inputs into Vaccine-Related Economic Evaluations",
       "Description": "",
@@ -32872,40 +32838,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360201",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360201",
-      "Source": "federal"
-    },
-    {
-      "Title": "US Travelers Health Research, Surveillance, and Outreach Network",
-      "GrantTitle": "US Travelers Health Research, Surveillance, and Outreach Network",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CK-26-036",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360200",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360200",
-      "Source": "federal"
-    },
-    {
-      "Title": "Emerging Infections Network - Research for Preventing, Detecting, and Managing Travel-associated Infectious Diseases",
-      "GrantTitle": "Emerging Infections Network - Research for Preventing, Detecting, and Managing Travel-associated Infectious Diseases",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CK-26-035",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360199",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360199",
       "Source": "federal"
     },
     {
@@ -33076,23 +33008,6 @@
       "AwardFloor": 0,
       "OpportunityID": "357250",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357250",
-      "Source": "federal"
-    },
-    {
-      "Title": "Eliminating Parasitic and Neglected Tropical Disease Threats to the United States - Program Support and Research to Reduce Threats to Americans at Home and Abroad",
-      "GrantTitle": "Eliminating Parasitic and Neglected Tropical Disease Threats to the United States - Program Support and Research to Reduce Threats to Americans at Home and Abroad",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CK-26-104",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360269",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360269",
       "Source": "federal"
     },
     {
@@ -38485,23 +38400,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "GrantTitle": "Fiscal Year (FY) 2026 National Technical Assistance Programs (NTAP) Cooperative Agreements",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-009",
-      "Status": "posted",
-      "ApplicationDeadline": "03/31/2026",
-      "PostedDate": "12/23/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361053",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361053",
-      "Source": "federal"
-    },
-    {
       "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "Description": "",
@@ -38907,23 +38805,6 @@
       "AwardFloor": 0,
       "OpportunityID": "359879",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359879",
-      "Source": "federal"
-    },
-    {
-      "Title": "Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants",
-      "GrantTitle": "Fiscal Year (FY) 2026 AmeriCorps State and National Competitive Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "AC-01-31-26",
-      "Status": "posted",
-      "ApplicationDeadline": "03/31/2026",
-      "PostedDate": "01/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361222",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361222",
       "Source": "federal"
     },
     {
@@ -40304,14 +40185,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2467,
+  "totalCount": 2460,
   "sources": {
     "ca": {
       "count": 1872,
       "success": true
     },
     "federal": {
-      "count": 854,
+      "count": 847,
       "success": true
     }
   },
