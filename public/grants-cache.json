@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-04-02T06:33:28.106502Z",
+  "fetchedAt": "2026-04-02T18:23:30.875456Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Prop 4 \u2013 Regional Wildfire",
+      "GrantTitle": "Prop 4 \u2013 Regional Wildfire",
+      "Description": "The funds appropriated in this item shall be available for regional projects to improve local fire prevention capacity, improve forest health and resilience, and reduce the risk of wildfire spreading into populated areas from wildlands pursuant to subdivision (b) of Section 91520 of the Public Resources Code and shall be available for encumbrance or expenditure until June 30, 2028, and for liquidation until June 30, 2031.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$15,000,000",
+      "Categories": "Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164031",
+      "Source": "ca.gov"
+    },
     {
       "Title": "CalMoneySmart 2026-2028 Grant Program",
       "GrantTitle": "CalMoneySmart 2026-2028 Grant Program",
@@ -248,7 +264,7 @@
       "Description": "This opportunity is targeted at archives of all sizes for projects that preserve and make publicly accessible collections relevant to the LGBTQ+ movement, culture, experience, and/or history in California.  This opportunity aims to preserve and make accessible materials demonstrating the significant role of LGBTQ+ Californians and the LGBTQ+ movement in this state. By preserving and making these resources available to others, funded projects will help provide a more comprehensive and inclusive view of California\u2019s history.\u00a0  Organizations and collections must be California-based, and projects must support the physical or digital preservation of lesbian, gay, bisexual, transgender, or queer materials relevant to the LGBTQ+ movement, culture, experience, and/or history within California.\u00a0  Projects must include activities that focus on educating the public, researchers, and other stakeholders about and encouraging them to access the collection(s).\u00a0  Projects must focus on research-value materials, including monographs, serials, manuscripts, archival materials, maps, architectural drawings, sound recordings, photographs, moving images, and newspapers. This funding is not for the preservation of works of art on paper, paintings, sculptures, or other objects.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-04-01 12:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$750,000",
@@ -40066,6 +40082,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
+      "GrantTitle": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "W9127N-26-2-R001",
+      "Status": "posted",
+      "ApplicationDeadline": "04/30/2026",
+      "PostedDate": "03/31/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361721",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361721",
+      "Source": "federal"
+    },
+    {
       "Title": "Fiscal Year (FY) 2026 AmeriCorps Martin Luther King Jr. Day of Service",
       "GrantTitle": "Fiscal Year (FY) 2026 AmeriCorps Martin Luther King Jr. Day of Service",
       "Description": "",
@@ -40115,29 +40148,12 @@
       "OpportunityID": "361042",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361042",
       "Source": "federal"
-    },
-    {
-      "Title": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
-      "GrantTitle": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "W9127N-26-2-R001",
-      "Status": "posted",
-      "ApplicationDeadline": "04/30/2026",
-      "PostedDate": "03/31/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361721",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361721",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2457,
+  "totalCount": 2458,
   "sources": {
     "ca": {
-      "count": 1872,
+      "count": 1873,
       "success": true
     },
     "federal": {
