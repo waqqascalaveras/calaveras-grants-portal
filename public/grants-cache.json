@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-02T18:23:30.875456Z",
+  "fetchedAt": "2026-04-03T06:32:35.502323Z",
   "success": true,
   "grants": [
     {
@@ -36087,23 +36087,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Comprehensive Suicide Prevention Program for States",
-      "GrantTitle": "Comprehensive Suicide Prevention Program for States",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CE-26-0101",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360595",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360595",
-      "Source": "federal"
-    },
-    {
       "Title": "Maximizing Investigators&rsquo; Research Award (MIRA) for Early Stage Investigators (ESI)",
       "GrantTitle": "Maximizing Investigators&rsquo; Research Award (MIRA) for Early Stage Investigators (ESI)",
       "Description": "",
@@ -40147,6 +40130,23 @@
       "AwardFloor": 0,
       "OpportunityID": "361042",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361042",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003339",
+      "Status": "posted",
+      "ApplicationDeadline": "09/30/2026",
+      "PostedDate": "01/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358100",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358100",
       "Source": "federal"
     }
   ],
