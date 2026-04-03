@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-04-03T06:32:35.502323Z",
+  "fetchedAt": "2026-04-03T18:17:16.585513Z",
   "success": true,
   "grants": [
+    {
+      "Title": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
+      "GrantTitle": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
+      "Description": "The CSSA is a Department of Health Care Services (DHCS) program that provides an opportunity for primary prevention providers who are delivering locally developed and innovative substance use disorder (SUD) prevention interventions to generate evidence as either practices or case studies of intervention implementation or adaptation to serve as a resource on the Substance Use Prevention Evidence-Based Resource (SUPER) website for other prevention providers across the state.  The CSSA Cohort 2.0 will support prevention providers seeking to generate and demonstrate credible evidence of effectiveness for locally developed and innovative prevention activities, with the goal of increasing the number of effective interventions to be featured on the SUPER website, thus strengthening prevention providers\u2019 ability to address SUDs and behavioral health-related challenges across diverse communities.\u00a0\u00a0  CSSA Cohort 2.0, managed by the University of California, Los Angeles Integrated Substance Use & Addiction Programs (UCLA-ISAP) will work with grantees to craft individualized, site-specific evaluation plans to help generate evidence of intervention impact. Additionally, there will be optional pre-planning meetings with each grantee site to review general evaluation strategies and skills and develop plans for training and technical assistance through monthly individual and group sessions to support grantees with customized feedback for ongoing data collection and reporting.  Grantees will be expected to participate in mandatory ongoing evaluation training and technical assistance through monthly Learning Collaboratives, group sessions, individual check-ins, and coaching calls. Selected grantees will receive funding up to $102,500 per organization to be used to plan and implement individualized evaluation activities of the CSSA Cohort 2.0 across California.  The project period is December 1, 2026 through March 1, 2028 (15-months). All eligible youth-serving non-profit community or tribal organizations, or counties must submit their completed applications online via a Qualtrics form embedded on the SUPER website no later than 5:00 p.m. Pacific Daylight Time (PDT) on May 29, 2026.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$820,000",
+      "Categories": "Disadvantaged Communities; Health & Human Services",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164004",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Prop 4 \u2013 Regional Wildfire",
       "GrantTitle": "Prop 4 \u2013 Regional Wildfire",
@@ -28335,40 +28351,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Community Based Participatory Research To Advance DAta and Practice Transformation (ADAPT) For Optimizing Oral Health For All Across the Lifespan (UG3/UH3 Clinical Trial Optional)",
-      "GrantTitle": "Community Based Participatory Research To Advance DAta and Practice Transformation (ADAPT) For Optimizing Oral Health For All Across the Lifespan (UG3/UH3 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-DE-25-049",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358864",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358864",
-      "Source": "federal"
-    },
-    {
-      "Title": "Community Engagement Evaluation and Data Coordination (CEED) Hub to Advance Data and Practice Transformation for Optimizing Oral Health For All Across the Lifespan (U01, Clinical Trial Not Allowed)",
-      "GrantTitle": "Community Engagement Evaluation and Data Coordination (CEED) Hub to Advance Data and Practice Transformation for Optimizing Oral Health For All Across the Lifespan (U01, Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-DE-26-005",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359123",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359123",
-      "Source": "federal"
-    },
-    {
       "Title": "NIA Career Transition Award (K22 Independent Clinical Trial Not Allowed)",
       "GrantTitle": "NIA Career Transition Award (K22 Independent Clinical Trial Not Allowed)",
       "Description": "",
@@ -40133,6 +40115,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Community Based Participatory Research To Advance DAta and Practice Transformation (ADAPT) For Optimizing Oral Health For All (UG3/UH3 Clinical Trial Optional)",
+      "GrantTitle": "Community Based Participatory Research To Advance DAta and Practice Transformation (ADAPT) For Optimizing Oral Health For All (UG3/UH3 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-27-015",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/12/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358864",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358864",
+      "Source": "federal"
+    },
+    {
       "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "Description": "",
@@ -40148,16 +40147,67 @@
       "OpportunityID": "358100",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358100",
       "Source": "federal"
+    },
+    {
+      "Title": "Community Engagement Evaluation and Data Coordination (CEED) Hub to Advance Data and Practice Transformation for Optimizing Oral Health for All (U01, Clinical Trial Not Allowed)",
+      "GrantTitle": "Community Engagement Evaluation and Data Coordination (CEED) Hub to Advance Data and Practice Transformation for Optimizing Oral Health for All (U01, Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DE-27-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/27/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359123",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359123",
+      "Source": "federal"
+    },
+    {
+      "Title": "Title X Family Planning Services Grants",
+      "GrantTitle": "Title X Family Planning Services Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-FPH-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "01/09/2027",
+      "PostedDate": "04/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361754",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361754",
+      "Source": "federal"
+    },
+    {
+      "Title": "F26AS00026-NAWCA 2026-2 US Standard Grants",
+      "GrantTitle": "F26AS00026-NAWCA 2026-2 US Standard Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "F26AS00026",
+      "Status": "posted",
+      "ApplicationDeadline": "05/07/2026",
+      "PostedDate": "04/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361755",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361755",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2458,
+  "totalCount": 2461,
   "sources": {
     "ca": {
-      "count": 1873,
+      "count": 1874,
       "success": true
     },
     "federal": {
-      "count": 844,
+      "count": 846,
       "success": true
     }
   },
