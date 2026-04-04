@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-03T18:17:16.585513Z",
+  "fetchedAt": "2026-04-04T06:27:56.192013Z",
   "success": true,
   "grants": [
     {
@@ -34148,23 +34148,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Chemical Screening and Optimization Facility (X01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Chemical Screening and Optimization Facility (X01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-193",
-      "Status": "posted",
-      "ApplicationDeadline": "04/03/2026",
-      "PostedDate": "05/19/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "348234",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/348234",
-      "Source": "federal"
-    },
-    {
       "Title": "NEI Collaborative Clinical Vision Research Project: Coordinating Center Grant (UG1 Clinical Trial Required)",
       "GrantTitle": "NEI Collaborative Clinical Vision Research Project: Coordinating Center Grant (UG1 Clinical Trial Required)",
       "Description": "",
@@ -40200,14 +40183,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2461,
+  "totalCount": 2460,
   "sources": {
     "ca": {
       "count": 1874,
       "success": true
     },
     "federal": {
-      "count": 846,
+      "count": 845,
       "success": true
     }
   },
