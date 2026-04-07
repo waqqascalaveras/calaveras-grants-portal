@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-04-07T06:37:58.600820Z",
+  "fetchedAt": "2026-04-07T18:27:26.648799Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Healthy Soils Program Block Grant",
+      "GrantTitle": "Healthy Soils Program Block Grant",
+      "Description": "The California Department of Food and Agriculture (CDFA) Office of Agricultural Resilience and Sustainability (OARS) is pleased to announce funding availability for the Healthy Soils Program (HSP) - Block Grants. These grants of $2 - $4 M will fund organizations to provide technical assistance to producers, select on-farm projects for financial support, and to manage those projects over an implementation period of up to three years. Lead Applicants will propose a project that addresses the resource needs of their service area while aligning with the purpose of the funding. OARS will award grants through a competitive two-phase application process. These application guidelines provide an overview of the HSP application process and requirements.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-05-15 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$65,000,000",
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water; Food & Nutrition; Science, Technology, and Research & Development",
+      "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164064",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "State Water Efficiency and Enhancement Program Block Grants",
+      "GrantTitle": "State Water Efficiency and Enhancement Program Block Grants",
+      "Description": "The California Department of Food and Agriculture (CDFA) Office of Agricultural Resilience and Sustainability (OARS) is accepting concept proposals for the State Water Efficiency and Enhancement Programs (SWEEP) Block Grant.\u00a0 This proposal is for eligible organizations who wish to administer a community project, provide technical assistance to local farmers and ranchers within their service area, and support the implementation of on-farm SWEEP projects with financial assistance. On-farm SWEEP projects provide funding to producers in California to improve irrigation systems for the purposes of water conservation, energy use efficiency, and the reduction of greenhouse (GHG) emissions.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-05-15 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$34,000,000",
+      "Categories": "Agriculture; Energy; Environment & Water",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164025",
+      "Source": "ca.gov"
+    },
     {
       "Title": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
       "GrantTitle": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
@@ -328,7 +360,7 @@
       "Description": "The California Department of Fish and Wildlife receives grant funds from the U.S. Fish and Wildlife Service Cooperative Endangered Species Conservation Fund (Traditional Section 6) to support conservation actions designed to further the recovery of species listed as threatened or endangered under the federal Endangered Species Act. CDFW staff, alone, or in collaboration with partner organizations, develop research and management projects to compete for this funding through the state's Endangered Species Conservation and Recovery Program. Authority for CDFW to administer the Section 6 grant program is found in section 1501.5 of the Fish and Game Code.  The primary objective of endangered species conservation and recovery grants is to support the development and implementation of state programs to conserve and recover federally threatened and endangered inland fish and wildlife species. Grant funds to support the conservation of certain marine species and anadromous fish species are administered through separate programs. Project proposals must be developed in close coordination with CDFW and USFWS biologists and identify a CDFW employee who will sponsor the project by administering the grant. Eligible projects are those which target recovery actions for species listed as threatened or endangered under the U.S. Endangered Species Act.\u00a0 Applicants must provide a minimum of 25% of the total project cost in non-federal matching funds or in-kind services.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-04-06 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -888,7 +920,7 @@
       "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY25-26 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-04-07 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -40200,6 +40232,23 @@
       "Source": "federal"
     },
     {
+      "Title": "NIH Specialized Center Grant (Parent P50)",
+      "GrantTitle": "NIH Specialized Center Grant (Parent P50)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-28-011",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/07/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361769",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361769",
+      "Source": "federal"
+    },
+    {
       "Title": "Technology-enabled Collaborative Learning Program",
       "GrantTitle": "Technology-enabled Collaborative Learning Program",
       "Description": "",
@@ -40217,14 +40266,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2462,
+  "totalCount": 2465,
   "sources": {
     "ca": {
-      "count": 1874,
+      "count": 1876,
       "success": true
     },
     "federal": {
-      "count": 847,
+      "count": 848,
       "success": true
     }
   },
