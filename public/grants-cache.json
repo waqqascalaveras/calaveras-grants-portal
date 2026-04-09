@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-04-09T06:39:30.834741Z",
+  "fetchedAt": "2026-04-09T18:26:35.067174Z",
   "success": true,
   "grants": [
+    {
+      "Title": "HOME Investment Partnerships Program (HOME) 2024 Program Activities reopened NOFA",
+      "GrantTitle": "HOME Investment Partnerships Program (HOME) 2024 Program Activities reopened NOFA",
+      "Description": "The HOME Program is a federal formula grant program that provides annual allocations to states to increase and preserve the supply of decent, safe, and sanitary affordable housing specifically for serving low-income [at or below 80 percent (80%) of Area Median Income (AMI)] and very low-income [at or below 50 percent (50%) of AMI] households.\u00a0  This NOFA is to make available unclaimed HOME 2024 NOFA Program Activities funding, on an over-the-counter basis, until the next HOME Program Activities NOFA is released or funds are exhausted.\u00a0 With this funding, the Department will award HOME funds to eligible applicants on a first-come, first-served basis, in the form of loans/grants to fund Program Activities including first-time homebuyer programs, owner-occupied rehabilitation programs, and tenant-based rental assistance programs.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$14,000,000",
+      "Categories": "Housing, Community and Economic Development",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164586",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR91",
       "GrantTitle": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR91",
@@ -40298,6 +40314,57 @@
       "Source": "federal"
     },
     {
+      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "693JK326NF0013",
+      "Status": "posted",
+      "ApplicationDeadline": "05/22/2026",
+      "PostedDate": "03/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361603",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
+      "Source": "federal"
+    },
+    {
+      "Title": "F26AS00068 Partners for Fish and Wildlife FY26",
+      "GrantTitle": "F26AS00068 Partners for Fish and Wildlife FY26",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "F26AS00068",
+      "Status": "posted",
+      "ApplicationDeadline": "09/30/2026",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361814",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361814",
+      "Source": "federal"
+    },
+    {
+      "Title": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
+      "GrantTitle": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-004",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361821",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361821",
+      "Source": "federal"
+    },
+    {
       "Title": "USGS Cooperative Landslide Hazard Mapping and Assessment Program Announcement for Fiscal Year 2026",
       "GrantTitle": "USGS Cooperative Landslide Hazard Mapping and Assessment Program Announcement for Fiscal Year 2026",
       "Description": "",
@@ -40417,23 +40484,6 @@
       "Source": "federal"
     },
     {
-      "Title": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
-      "GrantTitle": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-28-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361821",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361821",
-      "Source": "federal"
-    },
-    {
       "Title": "Home Study and Post-Release Services for Unaccompanied Alien Children&#8203;&#8203;",
       "GrantTitle": "Home Study and Post-Release Services for Unaccompanied Alien Children&#8203;&#8203;",
       "Description": "",
@@ -40451,48 +40501,31 @@
       "Source": "federal"
     },
     {
-      "Title": "F26AS00068 Partners for Fish and Wildlife FY26",
-      "GrantTitle": "F26AS00068 Partners for Fish and Wildlife FY26",
+      "Title": "F26AS00018 - NAWCA 2026 Canada Grants",
+      "GrantTitle": "F26AS00018 - NAWCA 2026 Canada Grants",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "F26AS00068",
+      "OpportunityNumber": "F26AS00018",
       "Status": "posted",
-      "ApplicationDeadline": "09/30/2026",
-      "PostedDate": "04/08/2026",
+      "ApplicationDeadline": "06/11/2026",
+      "PostedDate": "04/09/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361814",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361814",
-      "Source": "federal"
-    },
-    {
-      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "693JK326NF0013",
-      "Status": "posted",
-      "ApplicationDeadline": "05/22/2026",
-      "PostedDate": "03/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361603",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
+      "OpportunityID": "361830",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361830",
       "Source": "federal"
     }
   ],
-  "totalCount": 2478,
+  "totalCount": 2480,
   "sources": {
     "ca": {
-      "count": 1878,
+      "count": 1879,
       "success": true
     },
     "federal": {
-      "count": 859,
+      "count": 860,
       "success": true
     }
   },
