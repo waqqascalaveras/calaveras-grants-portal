@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-08T18:32:46.822893Z",
+  "fetchedAt": "2026-04-09T06:39:30.834741Z",
   "success": true,
   "grants": [
     {
@@ -39618,23 +39618,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "693JK326NF0013",
-      "Status": "posted",
-      "ApplicationDeadline": "05/22/2026",
-      "PostedDate": "03/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361603",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
-      "Source": "federal"
-    },
-    {
       "Title": "NIJ FY25 Research on the Abuse, Neglect, and Financial Exploitation of Older Adults",
       "GrantTitle": "NIJ FY25 Research on the Abuse, Neglect, and Financial Exploitation of Older Adults",
       "Description": "",
@@ -40315,6 +40298,23 @@
       "Source": "federal"
     },
     {
+      "Title": "USGS Cooperative Landslide Hazard Mapping and Assessment Program Announcement for Fiscal Year 2026",
+      "GrantTitle": "USGS Cooperative Landslide Hazard Mapping and Assessment Program Announcement for Fiscal Year 2026",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "G26AS00010",
+      "Status": "posted",
+      "ApplicationDeadline": "06/08/2026",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361818",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361818",
+      "Source": "federal"
+    },
+    {
       "Title": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
       "GrantTitle": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
       "Description": "",
@@ -40329,6 +40329,74 @@
       "AwardFloor": 0,
       "OpportunityID": "361806",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361806",
+      "Source": "federal"
+    },
+    {
+      "Title": "HIV/AIDS Clinical Trials Network Leadership and Operations Centers",
+      "GrantTitle": "HIV/AIDS Clinical Trials Network Leadership and Operations Centers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361815",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361815",
+      "Source": "federal"
+    },
+    {
+      "Title": "HIV/AIDS Clinical Trials Network Laboratory Centers",
+      "GrantTitle": "HIV/AIDS Clinical Trials Network Laboratory Centers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361820",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361820",
+      "Source": "federal"
+    },
+    {
+      "Title": "HIV/AIDS Clinical Trials Network Statistical and Data Management Centers",
+      "GrantTitle": "HIV/AIDS Clinical Trials Network Statistical and Data Management Centers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361816",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361816",
+      "Source": "federal"
+    },
+    {
+      "Title": "Cellular Senescence Network (SenNet): SenNet Data Coordination and Integration Center (SenNet DCIC) (UM1 Clinical Trials Not Allowed)",
+      "GrantTitle": "Cellular Senescence Network (SenNet): SenNet Data Coordination and Integration Center (SenNet DCIC) (UM1 Clinical Trials Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-27-025",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361817",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361817",
       "Source": "federal"
     },
     {
@@ -40349,6 +40417,40 @@
       "Source": "federal"
     },
     {
+      "Title": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
+      "GrantTitle": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-004",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361821",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361821",
+      "Source": "federal"
+    },
+    {
+      "Title": "Home Study and Post-Release Services for Unaccompanied Alien Children&#8203;&#8203;",
+      "GrantTitle": "Home Study and Post-Release Services for Unaccompanied Alien Children&#8203;&#8203;",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ORR-ZU-0019",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361822",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361822",
+      "Source": "federal"
+    },
+    {
       "Title": "F26AS00068 Partners for Fish and Wildlife FY26",
       "GrantTitle": "F26AS00068 Partners for Fish and Wildlife FY26",
       "Description": "",
@@ -40364,16 +40466,33 @@
       "OpportunityID": "361814",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361814",
       "Source": "federal"
+    },
+    {
+      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "693JK326NF0013",
+      "Status": "posted",
+      "ApplicationDeadline": "05/22/2026",
+      "PostedDate": "03/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361603",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2471,
+  "totalCount": 2478,
   "sources": {
     "ca": {
       "count": 1878,
       "success": true
     },
     "federal": {
-      "count": 852,
+      "count": 859,
       "success": true
     }
   },
