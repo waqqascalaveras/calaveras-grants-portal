@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-15T06:44:45.249590Z",
+  "fetchedAt": "2026-04-15T18:30:57.096852Z",
   "success": true,
   "grants": [
     {
@@ -328,7 +328,7 @@
       "Description": "CalRecycle oversees the Waste Tire Cleanup Grant, a competitive grant program to provide funding for collection, removal, transportation, recycling, and disposing of California waste tires from tire piles and illegal dumping areas along public rights-of-way or on private property.  California cities, counties, special districts, Qualifying California Native American tribes and joint powers authorities are eligible to apply.  Funding:\u00a0 $1,500,000 available for fiscal year (FY) 2026\u201327 - $100,000 for individual grant awards and $250,000 for regional grant awards.\u00a0\u00a0  See for https://www.calrecycle.ca.gov/Tires/Grants/Cleanup/ for eligible costs and additional grant specific information.  Resolution required.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-04-14 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -40549,16 +40549,67 @@
       "OpportunityID": "361545",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361545",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 Rural Law Enforcement Violent Crime Reduction Initiative",
+      "GrantTitle": "BJA FY25 Rural Law Enforcement Violent Crime Reduction Initiative",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172495",
+      "Status": "posted",
+      "ApplicationDeadline": "05/27/2026",
+      "PostedDate": "04/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361906",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361906",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 De-escalation and Crisis Response Training Program",
+      "GrantTitle": "BJA FY25 De-escalation and Crisis Response Training Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172498",
+      "Status": "posted",
+      "ApplicationDeadline": "05/27/2026",
+      "PostedDate": "04/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361907",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361907",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
+      "GrantTitle": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-OJJDP-2025-172518",
+      "Status": "posted",
+      "ApplicationDeadline": "05/21/2026",
+      "PostedDate": "04/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361910",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361910",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2482,
+  "totalCount": 2485,
   "sources": {
     "ca": {
       "count": 1880,
       "success": true
     },
     "federal": {
-      "count": 861,
+      "count": 864,
       "success": true
     }
   },
