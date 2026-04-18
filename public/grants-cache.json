@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-04-18T06:32:47.952487Z",
+  "fetchedAt": "2026-04-18T18:18:23.812760Z",
   "success": true,
   "grants": [
+    {
+      "Title": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
+      "GrantTitle": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
+      "Description": "The CSSA is a Department of Health Care Services (DHCS) program that provides an opportunity for primary prevention providers who are delivering locally developed and innovative substance use disorder (SUD) prevention interventions to generate evidence as either practices or case studies of intervention implementation or adaptation to serve as a resource on the Substance Use Prevention Evidence-Based Resource (SUPER) website for other prevention providers across the state.  The CSSA Cohort 2.0 will support prevention providers seeking to generate and demonstrate credible evidence of effectiveness for locally developed and innovative prevention activities, with the goal of increasing the number of effective interventions to be featured on the SUPER website, thus strengthening prevention providers\u2019 ability to address SUDs and behavioral health-related challenges across diverse communities.\u00a0\u00a0  CSSA Cohort 2.0, managed by the University of California, Los Angeles Integrated Substance Use & Addiction Programs (UCLA-ISAP) will work with grantees to craft individualized, site-specific evaluation plans to help generate evidence of intervention impact. Additionally, there will be optional pre-planning meetings with each grantee site to review general evaluation strategies and skills and develop plans for training and technical assistance through monthly individual and group sessions to support grantees with customized feedback for ongoing data collection and reporting.  Grantees will be expected to participate in mandatory ongoing evaluation training and technical assistance through monthly Learning Collaboratives, group sessions, individual check-ins, and coaching calls. Selected grantees will receive funding up to $102,500 per organization to be used to plan and implement individualized evaluation activities of the CSSA Cohort 2.0 across California.  The project period is December 1, 2026 through March 1, 2028 (15-months). All eligible youth-serving non-profit community or tribal organizations, or counties must submit their completed applications online via a Qualtrics form embedded on the SUPER website no later than 5:00 p.m. Pacific Daylight Time (PDT) on May 29, 2026.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-05-29 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$820,000",
+      "Categories": "Disadvantaged Communities; Health & Human Services",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "164004",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Fertilizer Research and Education Program (FREP) Call for Proposals",
       "GrantTitle": "Fertilizer Research and Education Program (FREP) Call for Proposals",
@@ -160,22 +176,6 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "164025",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
-      "GrantTitle": "California Services to Science Academy (CSSA) Cohort 2.0: Technical Support and Assistance for Promising and Innovative Prevention Programs",
-      "Description": "The CSSA is a Department of Health Care Services (DHCS) program that provides an opportunity for primary prevention providers who are delivering locally developed and innovative substance use disorder (SUD) prevention interventions to generate evidence as either practices or case studies of intervention implementation or adaptation to serve as a resource on the Substance Use Prevention Evidence-Based Resource (SUPER) website for other prevention providers across the state.  The CSSA Cohort 2.0 will support prevention providers seeking to generate and demonstrate credible evidence of effectiveness for locally developed and innovative prevention activities, with the goal of increasing the number of effective interventions to be featured on the SUPER website, thus strengthening prevention providers\u2019 ability to address SUDs and behavioral health-related challenges across diverse communities.\u00a0\u00a0  CSSA Cohort 2.0, managed by the University of California, Los Angeles Integrated Substance Use & Addiction Programs (UCLA-ISAP) will work with grantees to craft individualized, site-specific evaluation plans to help generate evidence of intervention impact. Additionally, there will be optional pre-planning meetings with each grantee site to review general evaluation strategies and skills and develop plans for training and technical assistance through monthly individual and group sessions to support grantees with customized feedback for ongoing data collection and reporting.  Grantees will be expected to participate in mandatory ongoing evaluation training and technical assistance through monthly Learning Collaboratives, group sessions, individual check-ins, and coaching calls. Selected grantees will receive funding up to $102,500 per organization to be used to plan and implement individualized evaluation activities of the CSSA Cohort 2.0 across California.  The project period is December 1, 2026 through March 1, 2028 (15-months). All eligible youth-serving non-profit community or tribal organizations, or counties must submit their completed applications online via a Qualtrics form embedded on the SUPER website no later than 5:00 p.m. Pacific Daylight Time (PDT) on May 29, 2026.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$820,000",
-      "Categories": "Disadvantaged Communities; Health & Human Services",
-      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "164004",
       "Source": "ca.gov"
     },
     {
@@ -424,7 +424,7 @@
       "Description": "The Quagga and Zebra Mussel Infestation Prevention Grant Program provides funding for two tiers/types of projects: 1) Planning and Assessment; and 2) Implementation. Examples of projects include: developing prevention plans, purchasing pressure washers/decontamination units or other equipment, outreach/education effort, and inspection programs including staffing, materials and supplies. DBW coordinates and collaborates with the California Department of Fish and Wildlife on many aspects of this program.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-04-17 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$2,000,000",
