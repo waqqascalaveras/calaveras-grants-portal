@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-18T18:18:23.812760Z",
+  "fetchedAt": "2026-04-19T06:40:52.991672Z",
   "success": true,
   "grants": [
     {
@@ -40649,57 +40649,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Resource-based Centers for Bone, Muscle and Orthopaedic Research",
-      "GrantTitle": "Resource-based Centers for Bone, Muscle and Orthopaedic Research",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AR-26-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359147",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359147",
-      "Source": "federal"
-    },
-    {
-      "Title": "Resource-based Centers for Rheumatic Diseases Research",
-      "GrantTitle": "Resource-based Centers for Rheumatic Diseases Research",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AR-26-003",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359135",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359135",
-      "Source": "federal"
-    },
-    {
-      "Title": "Ancillary Studies to Ongoing Clinical Projects (R21 Clinical Trial Not Allowed)",
-      "GrantTitle": "Ancillary Studies to Ongoing Clinical Projects (R21 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AR-25-007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359092",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359092",
-      "Source": "federal"
-    },
-    {
       "Title": "FY 2026 Defense Community Infrastructure Program",
       "GrantTitle": "FY 2026 Defense Community Infrastructure Program",
       "Description": "",
@@ -40714,23 +40663,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361941",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361941",
-      "Source": "federal"
-    },
-    {
-      "Title": "Core Centers for Clinical Research (CCCR) (P30 Clinical Trial Not Allowed)",
-      "GrantTitle": "Core Centers for Clinical Research (CCCR) (P30 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AR-26-008",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359075",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359075",
       "Source": "federal"
     },
     {
@@ -40785,14 +40717,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2496,
+  "totalCount": 2492,
   "sources": {
     "ca": {
       "count": 1884,
       "success": true
     },
     "federal": {
-      "count": 871,
+      "count": 867,
       "success": true
     }
   },
