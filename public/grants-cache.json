@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-20T18:26:36.398461Z",
+  "fetchedAt": "2026-04-21T06:45:49.987976Z",
   "success": true,
   "grants": [
     {
@@ -40665,6 +40665,23 @@
       "Source": "federal"
     },
     {
+      "Title": "F26AS00007-NAWCA 2026 US Small Grants",
+      "GrantTitle": "F26AS00007-NAWCA 2026 US Small Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "F26AS00007",
+      "Status": "posted",
+      "ApplicationDeadline": "06/25/2026",
+      "PostedDate": "04/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361965",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361965",
+      "Source": "federal"
+    },
+    {
       "Title": "Foster Parents Network Analytics Hub (HUB)",
       "GrantTitle": "Foster Parents Network Analytics Hub (HUB)",
       "Description": "",
@@ -40733,23 +40750,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Richardson Training Area Land Rehabilitation and Maintenance Support, Joint Base Elmendorf-Richardson, Alaska (SOW26-105)",
-      "GrantTitle": "Richardson Training Area Land Rehabilitation and Maintenance Support, Joint Base Elmendorf-Richardson, Alaska (SOW26-105)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "W911KB-26-2-0001",
-      "Status": "posted",
-      "ApplicationDeadline": "05/18/2026",
-      "PostedDate": "04/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361951",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361951",
-      "Source": "federal"
-    },
-    {
       "Title": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "GrantTitle": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "Description": "",
@@ -40764,57 +40764,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361721",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361721",
-      "Source": "federal"
-    },
-    {
-      "Title": "F26AS00007-NAWCA 2026 US Small Grants",
-      "GrantTitle": "F26AS00007-NAWCA 2026 US Small Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "F26AS00007",
-      "Status": "posted",
-      "ApplicationDeadline": "06/25/2026",
-      "PostedDate": "04/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361965",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361965",
-      "Source": "federal"
-    },
-    {
-      "Title": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
-      "GrantTitle": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-OJJDP-2025-172518",
-      "Status": "posted",
-      "ApplicationDeadline": "05/21/2026",
-      "PostedDate": "04/15/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361910",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361910",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
-      "GrantTitle": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-CRS-26-001",
-      "Status": "posted",
-      "ApplicationDeadline": "06/22/2026",
-      "PostedDate": "04/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361966",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361966",
       "Source": "federal"
     },
     {
@@ -40835,6 +40784,23 @@
       "Source": "federal"
     },
     {
+      "Title": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
+      "GrantTitle": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-CRS-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "06/22/2026",
+      "PostedDate": "04/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361966",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361966",
+      "Source": "federal"
+    },
+    {
       "Title": "FY25-26 Federal-State Partnership for Intercity Passenger Rail Program for projects located on the Northeast Corridor (Partnership-NEC)",
       "GrantTitle": "FY25-26 Federal-State Partnership for Intercity Passenger Rail Program for projects located on the Northeast Corridor (Partnership-NEC)",
       "Description": "",
@@ -40850,16 +40816,67 @@
       "OpportunityID": "361971",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361971",
       "Source": "federal"
+    },
+    {
+      "Title": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
+      "GrantTitle": "OJJDP FY25 Youth Gang Prevention and Intervention Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-OJJDP-2025-172518",
+      "Status": "posted",
+      "ApplicationDeadline": "05/21/2026",
+      "PostedDate": "04/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361910",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361910",
+      "Source": "federal"
+    },
+    {
+      "Title": "Richardson Training Area Land Rehabilitation and Maintenance Support, Joint Base Elmendorf-Richardson, Alaska (SOW26-105)",
+      "GrantTitle": "Richardson Training Area Land Rehabilitation and Maintenance Support, Joint Base Elmendorf-Richardson, Alaska (SOW26-105)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "W911KB-26-2-0001",
+      "Status": "posted",
+      "ApplicationDeadline": "05/18/2026",
+      "PostedDate": "04/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361951",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361951",
+      "Source": "federal"
+    },
+    {
+      "Title": "Natural Resource Management (NRM) Education and Training of Eugene, OR, Area Youth",
+      "GrantTitle": "Natural Resource Management (NRM) Education and Training of Eugene, OR, Area Youth",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "W9127N-26-2-R002",
+      "Status": "posted",
+      "ApplicationDeadline": "05/20/2026",
+      "PostedDate": "04/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361974",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361974",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2500,
+  "totalCount": 2501,
   "sources": {
     "ca": {
       "count": 1885,
       "success": true
     },
     "federal": {
-      "count": 874,
+      "count": 875,
       "success": true
     }
   },
