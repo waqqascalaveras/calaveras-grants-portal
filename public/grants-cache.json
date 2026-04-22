@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-21T18:29:48.251005Z",
+  "fetchedAt": "2026-04-22T06:45:37.707420Z",
   "success": true,
   "grants": [
     {
@@ -38930,23 +38930,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "GrantTitle": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2025-172542",
-      "Status": "posted",
-      "ApplicationDeadline": "04/21/2026",
-      "PostedDate": "03/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361501",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361501",
-      "Source": "federal"
-    },
-    {
       "Title": "Impact of Immunotherapies on CNS Outcomes in People with HIV: Potential Benefits, Challenges and Risks",
       "GrantTitle": "Impact of Immunotherapies on CNS Outcomes in People with HIV: Potential Benefits, Challenges and Risks",
       "Description": "",
@@ -40951,16 +40934,50 @@
       "OpportunityID": "353747",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/353747",
       "Source": "federal"
+    },
+    {
+      "Title": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "GrantTitle": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CPD-2600-DC-0025",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361999",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJP FY 2026 Special Attorneys Program",
+      "GrantTitle": "OJP FY 2026 Special Attorneys Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172587",
+      "Status": "posted",
+      "ApplicationDeadline": "05/15/2026",
+      "PostedDate": "04/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362000",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362000",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2506,
+  "totalCount": 2507,
   "sources": {
     "ca": {
       "count": 1886,
       "success": true
     },
     "federal": {
-      "count": 879,
+      "count": 880,
       "success": true
     }
   },
