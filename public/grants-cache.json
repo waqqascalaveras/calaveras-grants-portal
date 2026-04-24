@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-04-24T06:47:04.974083Z",
+  "fetchedAt": "2026-04-24T18:19:57.452357Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR91",
+      "GrantTitle": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR91",
+      "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY26-27 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-07-08 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "161736",
+      "Source": "ca.gov"
+    },
     {
       "Title": "2026-2027 Zip Books",
       "GrantTitle": "2026-2027 Zip Books",
@@ -192,22 +208,6 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "164586",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Beverage Container Redemption Innovation Grant",
-      "GrantTitle": "Beverage Container Redemption Innovation Grant",
-      "Description": "The fundamental goal of the Program is to support start-up costs for mobile recycling programs to increase the California Refund Value (CRV) beverage container redemption opportunities that utilize innovative projects.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$20,000,000",
-      "Categories": "Environment & Water",
-      "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "164127",
       "Source": "ca.gov"
     },
     {
@@ -39591,23 +39591,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "693JK326NF0013",
-      "Status": "posted",
-      "ApplicationDeadline": "05/22/2026",
-      "PostedDate": "03/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361603",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
-      "Source": "federal"
-    },
-    {
       "Title": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
       "GrantTitle": "HIV/AIDS Clinical Trials Network Clinical Trials Units",
       "Description": "",
@@ -40849,23 +40832,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
-      "GrantTitle": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FR-CRS-26-001",
-      "Status": "posted",
-      "ApplicationDeadline": "06/22/2026",
-      "PostedDate": "04/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361966",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361966",
-      "Source": "federal"
-    },
-    {
       "Title": "FY25-26 Federal-State Partnership for Intercity Passenger Rail Program for projects located on the Northeast Corridor (Partnership-NEC)",
       "GrantTitle": "FY25-26 Federal-State Partnership for Intercity Passenger Rail Program for projects located on the Northeast Corridor (Partnership-NEC)",
       "Description": "",
@@ -41104,23 +41070,6 @@
       "Source": "federal"
     },
     {
-      "Title": "OJP FY 2026 Special Attorneys Program",
-      "GrantTitle": "OJP FY 2026 Special Attorneys Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172587",
-      "Status": "posted",
-      "ApplicationDeadline": "05/15/2026",
-      "PostedDate": "04/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362000",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362000",
-      "Source": "federal"
-    },
-    {
       "Title": "Landmarks of American History and Culture and Summer Institutes",
       "GrantTitle": "Landmarks of American History and Culture and Summer Institutes",
       "Description": "",
@@ -41155,6 +41104,40 @@
       "Source": "federal"
     },
     {
+      "Title": "2026 Alaska Marine Education and Training Mini-Grant Program",
+      "GrantTitle": "2026 Alaska Marine Education and Training Mini-Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NOAA-NMFS-AK-2026-33268",
+      "Status": "posted",
+      "ApplicationDeadline": "05/01/2028",
+      "PostedDate": "04/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362034",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362034",
+      "Source": "federal"
+    },
+    {
+      "Title": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "GrantTitle": "Natural Gas Distribution Infrastructure Safety and Modernization (NGDISM) Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "693JK326NF0013",
+      "Status": "posted",
+      "ApplicationDeadline": "05/22/2026",
+      "PostedDate": "03/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361603",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361603",
+      "Source": "federal"
+    },
+    {
       "Title": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "GrantTitle": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "Description": "",
@@ -41172,31 +41155,65 @@
       "Source": "federal"
     },
     {
-      "Title": "2026 Alaska Marine Education and Training Mini-Grant Program",
-      "GrantTitle": "2026 Alaska Marine Education and Training Mini-Grant Program",
+      "Title": "FY25-26 Railroad Crossing Elimination Grant Program",
+      "GrantTitle": "FY25-26 Railroad Crossing Elimination Grant Program",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "NOAA-NMFS-AK-2026-33268",
+      "OpportunityNumber": "FR-RCE-26-001",
       "Status": "posted",
-      "ApplicationDeadline": "05/01/2028",
-      "PostedDate": "04/23/2026",
+      "ApplicationDeadline": "06/08/2026",
+      "PostedDate": "04/24/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362034",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362034",
+      "OpportunityID": "362049",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362049",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJP FY 2026 Special Attorneys Program",
+      "GrantTitle": "OJP FY 2026 Special Attorneys Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172587",
+      "Status": "posted",
+      "ApplicationDeadline": "05/15/2026",
+      "PostedDate": "04/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362000",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362000",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
+      "GrantTitle": "FY25-26 Consolidated Rail Infrastructure and Safety Improvements Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FR-CRS-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "06/22/2026",
+      "PostedDate": "04/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361966",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361966",
       "Source": "federal"
     }
   ],
-  "totalCount": 2520,
+  "totalCount": 2521,
   "sources": {
     "ca": {
       "count": 1888,
       "success": true
     },
     "federal": {
-      "count": 892,
+      "count": 893,
       "success": true
     }
   },
