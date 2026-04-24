@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-23T18:31:19.683925Z",
+  "fetchedAt": "2026-04-24T06:47:04.974083Z",
   "success": true,
   "grants": [
     {
@@ -40968,23 +40968,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Consortia for Structure-based Immunogen Design for HIV (CSID-HIV) (UM1 Clinical Trial Not Allowed)",
-      "GrantTitle": "Consortia for Structure-based Immunogen Design for HIV (CSID-HIV) (UM1 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-020",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360591",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360591",
-      "Source": "federal"
-    },
-    {
       "Title": "Mentored Clinical Scientist Research Career Development Award (Parent K08 Independent Basic Experimental Studies with Humans Required)",
       "GrantTitle": "Mentored Clinical Scientist Research Career Development Award (Parent K08 Independent Basic Experimental Studies with Humans Required)",
       "Description": "",
@@ -41155,6 +41138,23 @@
       "Source": "federal"
     },
     {
+      "Title": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
+      "GrantTitle": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172542",
+      "Status": "posted",
+      "ApplicationDeadline": "04/28/2026",
+      "PostedDate": "03/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361501",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361501",
+      "Source": "federal"
+    },
+    {
       "Title": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "GrantTitle": "Willamette Valley Project (WVP) 2026 NRM Education and Training of Botanically Sophisticated Restoration Workers",
       "Description": "",
@@ -41187,33 +41187,16 @@
       "OpportunityID": "362034",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362034",
       "Source": "federal"
-    },
-    {
-      "Title": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "GrantTitle": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2025-172542",
-      "Status": "posted",
-      "ApplicationDeadline": "04/28/2026",
-      "PostedDate": "03/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361501",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361501",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2521,
+  "totalCount": 2520,
   "sources": {
     "ca": {
       "count": 1888,
       "success": true
     },
     "federal": {
-      "count": 893,
+      "count": 892,
       "success": true
     }
   },
