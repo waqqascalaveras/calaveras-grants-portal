@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-04-29T06:57:43.319035Z",
+  "fetchedAt": "2026-04-29T18:37:25.697406Z",
   "success": true,
   "grants": [
     {
@@ -37,7 +37,7 @@
     {
       "Title": "2026-2027 LSTA Digital Literacy and Access",
       "GrantTitle": "2026-2027 LSTA Digital Literacy and Access",
-      "Description": "California public library jurisdictions can apply for grant funding to support the following activities:  Digital navigation services for library users.  Digital literacy training and classes for library users.  AI and/or internet safety classes or programs for library users.  Allowable expenditures:  Staff time to co-design, coordinate, and implement digital literacy and access programs and services.  Supplies to support digital literacy and access programs, including devices such as laptops, computers, projectors, and tablets. Projects that include the purchase of devices that can connect to and browse the internet must be conducted in compliance with the Children\u2019s Internet Protection Act (CIPA).  Services from community organizations, including workshops and presentations about digital literacy and access. Participation by library workers in professional development opportunities to gain knowledge and skills around digital literacy and access.  Outreach and promotion of project programs and services.  Evaluation of project activities and outcomes.  Additional allowable expenditures to help libraries and communities achieve the project goals of improving access to high-speed broadband and improving digital literacy in their communities.  Please note that if grant funds will be used to pay for a service from a community organization or organizations, those organization(s) cannot be considered as a partner in the application.  Refer to the application instructions for full details about allowable and unallowable costs.  The digital literacy and access LSTA-funded projects meet Goal 4 of the\u00a0California Library Services and Technology Act Investment Plan 2023\u20132027 (PDF): Strengthen resource-sharing and access to information, services, and opportunity with an emphasis on local community strengths and challenges.  Applicants should have at least one community connection in place before submitting an application.  California library workers funded through this opportunity will commit to the following:  Attend virtual Community of Practice sessions to meet with other grantees and share best practices.  Attend virtual one-on-one progress meetings on a quarterly basis where the State Library team will provide support to grantees.  Report data to the State Library related to the goals of the program, which are to help libraries improve access to high-speed broadband and improve digital literacy in their communities. Reporting requirements will include information required by the federal government and the State Library. Data may include program attendance, outcome survey results, and measurements about improved access to broadband. Reporting information will be provided at the start of the project period.  The digital literacy and access LSTA-funded projects meet Goal 4 of the\u00a0California Library Services and Technology Act Investment Plan 2023\u20132027 (PDF): Strengthen resource-sharing and access to information, services, and opportunity with an emphasis on local community strengths and challenges.",
+      "Description": "California public libraries and nonprofit organizations supporting these libraries, such as Friends groups and library cooperative systems can apply for grant funding to support the following activities:  Digital navigation services for library users.  Digital literacy training and classes for library users.  AI and/or internet safety classes or programs for library users.  Allowable expenditures:  Staff time to co-design, coordinate, and implement digital literacy and access programs and services.  Supplies to support digital literacy and access programs, including devices such as laptops, computers, projectors, and tablets. Projects that include the purchase of devices that can connect to and browse the internet must be conducted in compliance with the Children\u2019s Internet Protection Act (CIPA).  Services from community organizations, including workshops and presentations about digital literacy and access. Participation by library workers in professional development opportunities to gain knowledge and skills around digital literacy and access.  Outreach and promotion of project programs and services.  Evaluation of project activities and outcomes.  Additional allowable expenditures to help libraries and communities achieve the project goals of improving access to high-speed broadband and improving digital literacy in their communities.  Please note that if grant funds will be used to pay for a service from a community organization or organizations, those organization(s) cannot be considered as a partner in the application.  Refer to the application instructions for full details about allowable and unallowable costs.  The digital literacy and access LSTA-funded projects meet Goal 4 of the\u00a0California Library Services and Technology Act Investment Plan 2023\u20132027 (PDF): Strengthen resource-sharing and access to information, services, and opportunity with an emphasis on local community strengths and challenges.  Applicants should have at least one community connection in place before submitting an application.  California library workers funded through this opportunity will commit to the following:  Attend virtual Community of Practice sessions to meet with other grantees and share best practices.  Attend virtual one-on-one progress meetings on a quarterly basis where the State Library team will provide support to grantees.  Report data to the State Library related to the goals of the program, which are to help libraries improve access to high-speed broadband and improve digital literacy in their communities. Reporting requirements will include information required by the federal government and the State Library. Data may include program attendance, outcome survey results, and measurements about improved access to broadband. Reporting information will be provided at the start of the project period.  The digital literacy and access LSTA-funded projects meet Goal 4 of the\u00a0California Library Services and Technology Act Investment Plan 2023\u20132027 (PDF): Strengthen resource-sharing and access to information, services, and opportunity with an emphasis on local community strengths and challenges.",
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
@@ -37398,23 +37398,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
-      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-135",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359202",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
-      "Source": "federal"
-    },
-    {
       "Title": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
       "GrantTitle": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41138,6 +41121,23 @@
       "Source": "federal"
     },
     {
+      "Title": "NIH Pragmatic Trials Conducted in Health Care Systems",
+      "GrantTitle": "NIH Pragmatic Trials Conducted in Health Care Systems",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-010",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362108",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362108",
+      "Source": "federal"
+    },
+    {
       "Title": "Community Services Block Grant (CSBG) Performance Management, Data Collection, and Compliance Support",
       "GrantTitle": "Community Services Block Grant (CSBG) Performance Management, Data Collection, and Compliance Support",
       "Description": "",
@@ -41308,6 +41308,23 @@
       "Source": "federal"
     },
     {
+      "Title": "USGS Earthquake Hazards Program External Research Support Announcement for Fiscal Year 2027",
+      "GrantTitle": "USGS Earthquake Hazards Program External Research Support Announcement for Fiscal Year 2027",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "G27AS00075",
+      "Status": "posted",
+      "ApplicationDeadline": "06/04/2026",
+      "PostedDate": "04/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362130",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362130",
+      "Source": "federal"
+    },
+    {
       "Title": "Molecular, Neural, and Cognitive Mechanisms of Non-Invasive Brain Stimulation to Treat Substance Use Disorders",
       "GrantTitle": "Molecular, Neural, and Cognitive Mechanisms of Non-Invasive Brain Stimulation to Treat Substance Use Disorders",
       "Description": "",
@@ -41357,16 +41374,67 @@
       "OpportunityID": "362079",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362079",
       "Source": "federal"
+    },
+    {
+      "Title": "FY26 Marine Turtle Conservation for Sustainable U.S. Fisheries Grant Program",
+      "GrantTitle": "FY26 Marine Turtle Conservation for Sustainable U.S. Fisheries Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NOAA-NMFS-PIR-2026-33156",
+      "Status": "posted",
+      "ApplicationDeadline": "06/30/2026",
+      "PostedDate": "04/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362110",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362110",
+      "Source": "federal"
+    },
+    {
+      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
+      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-135",
+      "Status": "posted",
+      "ApplicationDeadline": "10/11/2026",
+      "PostedDate": "04/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359202",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
+      "Source": "federal"
+    },
+    {
+      "Title": "Title V Competitive Sexual Risk Avoidance Education",
+      "GrantTitle": "Title V Competitive Sexual Risk Avoidance Education",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ACYF-TS-0013",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362128",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362128",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2530,
+  "totalCount": 2534,
   "sources": {
     "ca": {
       "count": 1888,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 906,
       "success": true
     }
   },
