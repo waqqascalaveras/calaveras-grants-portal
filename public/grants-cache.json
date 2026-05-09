@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-05-09T06:50:09.381502Z",
+  "fetchedAt": "2026-05-09T18:25:04.066080Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Beverage Container Redemption Innovation Grant",
+      "GrantTitle": "Beverage Container Redemption Innovation Grant",
+      "Description": "The fundamental goal of the Program is to support start-up costs for establishing a recycling center to increase the California Refund Value (CRV) beverage container redemption opportunities.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-06-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$19,999,336",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "170769",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Beverage Container Redemption Innovation Grant Program",
       "GrantTitle": "Beverage Container Redemption Innovation Grant Program",
@@ -15,7 +31,23 @@
       "Categories": "Environment & Water",
       "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
       "GrantInfoURL": "",
-      "PortalID": "170763",
+      "PortalID": "170766",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "CAL FIRE Wood Products and Bioenergy \u2013 Local Conservation Corps",
+      "GrantTitle": "CAL FIRE Wood Products and Bioenergy \u2013 Local Conservation Corps",
+      "Description": "Certified Local Conservation Corps are the only eligible applicants for this solicitation. Eligible project(s) will support workforce development for fire prevention and wildfire resiliency work in California.  The following are examples of activities eligible for funding: developing and expanding the workforce in fire prevention, wildfire resiliency, prescribed fire, right-of-way clearing, forestry, and other forest-industry support services.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-05-18 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000",
+      "Categories": "Employment, Labor & Training; Environment & Water",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "171588",
       "Source": "ca.gov"
     },
     {
@@ -41402,10 +41434,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2533,
+  "totalCount": 2535,
   "sources": {
     "ca": {
-      "count": 1897,
+      "count": 1901,
       "success": true
     },
     "federal": {
@@ -41414,8 +41446,16 @@
     }
   },
   "duplicates": {
-    "count": 262,
+    "count": 264,
     "examples": [
+      {
+        "original": "Beverage Container Redemption Innovation Grant",
+        "duplicate": "Beverage Container Redemption Innovation Grant"
+      },
+      {
+        "original": "Beverage Container Redemption Innovation Grant Program",
+        "duplicate": "Beverage Container Redemption Innovation Grant Program"
+      },
       {
         "original": "CAL FIRE Forest Health",
         "duplicate": "CAL FIRE Forest Health"
@@ -41427,14 +41467,6 @@
       {
         "original": "Tire-Derived Aggregate Grant",
         "duplicate": "Tire-Derived Aggregate Grant"
-      },
-      {
-        "original": "Beverage Container Redemption Innovation Grant Program",
-        "duplicate": "Beverage Container Redemption Innovation Grant Program"
-      },
-      {
-        "original": "Redemption Innovation Grant Program",
-        "duplicate": "Redemption Innovation Grant Program"
       }
     ]
   }
