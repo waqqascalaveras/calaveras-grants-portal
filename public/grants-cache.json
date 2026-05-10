@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-09T18:25:04.066080Z",
+  "fetchedAt": "2026-05-10T07:01:46.950394Z",
   "success": true,
   "grants": [
     {
@@ -37592,23 +37592,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Animal and Biological Material Resource Centers (P40) (Clinical Trials Not-Allowed)",
-      "GrantTitle": "Animal and Biological Material Resource Centers (P40) (Clinical Trials Not-Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-OD-23-001",
-      "Status": "posted",
-      "ApplicationDeadline": "05/09/2026",
-      "PostedDate": "01/09/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "345295",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/345295",
-      "Source": "federal"
-    },
-    {
       "Title": "Research Project Cooperative Agreements in Aging and/or Alzheimer's disease (AD) and Alzheimer's disease-related dementias (ADRD) Research",
       "GrantTitle": "Research Project Cooperative Agreements in Aging and/or Alzheimer's disease (AD) and Alzheimer's disease-related dementias (ADRD) Research",
       "Description": "",
@@ -41434,14 +41417,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2535,
+  "totalCount": 2534,
   "sources": {
     "ca": {
       "count": 1901,
       "success": true
     },
     "federal": {
-      "count": 898,
+      "count": 897,
       "success": true
     }
   },
