@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-11T07:23:11.702120Z",
+  "fetchedAt": "2026-05-11T18:44:22.530080Z",
   "success": true,
   "grants": [
     {
@@ -36232,23 +36232,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
-      "GrantTitle": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PWEAA2023",
-      "Status": "posted",
-      "ApplicationDeadline": "",
-      "PostedDate": "03/14/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "346815",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/346815",
-      "Source": "federal"
-    },
-    {
       "Title": "Funding Opportunity Announcement - NIBIB Technology Development Networks",
       "GrantTitle": "Funding Opportunity Announcement - NIBIB Technology Development Networks",
       "Description": "",
@@ -39598,23 +39581,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Distance Learning and Telemedicine Grants",
-      "GrantTitle": "Distance Learning and Telemedicine Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RUS-26-01-DLT",
-      "Status": "posted",
-      "ApplicationDeadline": "06/30/2026",
-      "PostedDate": "05/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361474",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361474",
-      "Source": "federal"
-    },
-    {
       "Title": "Accelerating Product Excellence in Innovation and for Clinical Adoption (APEx) (U24 Clinical Trial Not Allowed)",
       "GrantTitle": "Accelerating Product Excellence in Innovation and for Clinical Adoption (APEx) (U24 Clinical Trial Not Allowed)",
       "Description": "",
@@ -40822,23 +40788,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Housing Policy Research Grant Notice of Funding Opportunity",
-      "GrantTitle": "Housing Policy Research Grant Notice of Funding Opportunity",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PDR-2600-DC-029M",
-      "Status": "posted",
-      "ApplicationDeadline": "06/01/2026",
-      "PostedDate": "04/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361988",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361988",
-      "Source": "federal"
-    },
-    {
       "Title": "National Research Center for Promoting Work and Strong Families",
       "GrantTitle": "National Research Center for Promoting Work and Strong Families",
       "Description": "",
@@ -41414,6 +41363,57 @@
       "AwardFloor": 0,
       "OpportunityID": "360753",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360753",
+      "Source": "federal"
+    },
+    {
+      "Title": "Distance Learning and Telemedicine Grants",
+      "GrantTitle": "Distance Learning and Telemedicine Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RUS-26-01-DLT",
+      "Status": "posted",
+      "ApplicationDeadline": "06/30/2026",
+      "PostedDate": "05/01/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361474",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361474",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+      "GrantTitle": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PWEAA2023",
+      "Status": "posted",
+      "ApplicationDeadline": "",
+      "PostedDate": "03/14/2023",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "346815",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/346815",
+      "Source": "federal"
+    },
+    {
+      "Title": "Housing Policy Research Grant Notice of Funding Opportunity",
+      "GrantTitle": "Housing Policy Research Grant Notice of Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PDR-2600-DC-029M",
+      "Status": "posted",
+      "ApplicationDeadline": "06/01/2026",
+      "PostedDate": "04/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361988",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361988",
       "Source": "federal"
     }
   ],
