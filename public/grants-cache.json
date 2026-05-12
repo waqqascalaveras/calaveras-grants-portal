@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-11T18:44:22.530080Z",
+  "fetchedAt": "2026-05-12T07:07:04.041867Z",
   "success": true,
   "grants": [
     {
@@ -35790,23 +35790,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Grants to Support New Investigators in Conducting Research Related to Preventing Interpersonal Violence and Suicide Among Children and Youth (K01)",
-      "GrantTitle": "Grants to Support New Investigators in Conducting Research Related to Preventing Interpersonal Violence and Suicide Among Children and Youth (K01)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CE-26-021",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360270",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360270",
-      "Source": "federal"
-    },
-    {
       "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
       "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
       "Description": "",
@@ -37082,23 +37065,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collections Stewardship",
-      "GrantTitle": "Collections Stewardship",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20260511-PCS",
-      "Status": "posted",
-      "ApplicationDeadline": "05/11/2026",
-      "PostedDate": "03/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361480",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361480",
-      "Source": "federal"
-    },
-    {
       "Title": "Expanding global health security through local partnerships in Ethiopia",
       "GrantTitle": "Expanding global health security through local partnerships in Ethiopia",
       "Description": "",
@@ -37368,23 +37334,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360338",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360338",
-      "Source": "federal"
-    },
-    {
-      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-TS-26-165",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/31/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360195",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
       "Source": "federal"
     },
     {
@@ -38983,40 +38932,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361059",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361059",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY 2026 Competitive Funding Opportunity: Passenger Ferry Grant Program",
-      "GrantTitle": "FY 2026 Competitive Funding Opportunity: Passenger Ferry Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FTA-2026-005-TPM-FERRY",
-      "Status": "posted",
-      "ApplicationDeadline": "05/11/2026",
-      "PostedDate": "04/06/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361746",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361746",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY 2026 Competitive Funding Opportunity: Electric or Low-Emitting Ferry Pilot Program",
-      "GrantTitle": "FY 2026 Competitive Funding Opportunity: Electric or Low-Emitting Ferry Pilot Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FTA-2026-007-TPM-FERRYPILOT",
-      "Status": "posted",
-      "ApplicationDeadline": "05/11/2026",
-      "PostedDate": "04/06/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361745",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361745",
       "Source": "federal"
     },
     {
@@ -41298,6 +41213,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0008",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362349",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
+      "Source": "federal"
+    },
+    {
       "Title": "Pediatric Mental Health Care Access Program (PMHCA)",
       "GrantTitle": "Pediatric Mental Health Care Access Program (PMHCA)",
       "Description": "",
@@ -41415,16 +41347,50 @@
       "OpportunityID": "361988",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361988",
       "Source": "federal"
+    },
+    {
+      "Title": "Grants to Support New Investigators in Conducting Research Related to Preventing Interpersonal Violence and Suicide Among Children and Youth (K01)",
+      "GrantTitle": "Grants to Support New Investigators in Conducting Research Related to Preventing Interpersonal Violence and Suicide Among Children and Youth (K01)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-26-021",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360270",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360270",
+      "Source": "federal"
+    },
+    {
+      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-TS-26-165",
+      "Status": "posted",
+      "ApplicationDeadline": "06/10/2026",
+      "PostedDate": "05/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360195",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2534,
+  "totalCount": 2532,
   "sources": {
     "ca": {
       "count": 1901,
       "success": true
     },
     "federal": {
-      "count": 897,
+      "count": 895,
       "success": true
     }
   },
