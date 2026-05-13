@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-12T18:43:18.633913Z",
+  "fetchedAt": "2026-05-13T07:11:05.598698Z",
   "success": true,
   "grants": [
     {
@@ -38850,23 +38850,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Technology Development Research for Establishing Feasibility and Proof of Concept (R21 - Clinical Trial Not Allowed)",
-      "GrantTitle": "Technology Development Research for Establishing Feasibility and Proof of Concept (R21 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-202",
-      "Status": "posted",
-      "ApplicationDeadline": "05/12/2026",
-      "PostedDate": "11/14/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357113",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357113",
-      "Source": "federal"
-    },
-    {
       "Title": "Housing Policy Research Grant Notice of Funding Opportunity",
       "GrantTitle": "Housing Policy Research Grant Notice of Funding Opportunity",
       "Description": "",
@@ -39969,23 +39952,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361496",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361496",
-      "Source": "federal"
-    },
-    {
-      "Title": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "GrantTitle": "BJA FY25 Edward Byrne Memorial Justice Assistance Grant (JAG) Program &ndash; Local Formula",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2025-172542",
-      "Status": "posted",
-      "ApplicationDeadline": "05/12/2026",
-      "PostedDate": "03/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361501",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361501",
       "Source": "federal"
     },
     {
@@ -41366,6 +41332,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Healthy Homes Production Grant Program",
+      "GrantTitle": "Healthy Homes Production Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LHC-2600-DC-0044",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362368",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
+      "Source": "federal"
+    },
+    {
+      "Title": "Older Adults Home Modification Grant Program",
+      "GrantTitle": "Older Adults Home Modification Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LHC-2600-DC-0069",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362369",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362369",
+      "Source": "federal"
+    },
+    {
       "Title": "Automated Permitting Systems Demonstration NOFO",
       "GrantTitle": "Automated Permitting Systems Demonstration NOFO",
       "Description": "",
@@ -41383,6 +41383,57 @@
       "Source": "federal"
     },
     {
+      "Title": "Lead Hazard Reduction Grant Program",
+      "GrantTitle": "Lead Hazard Reduction Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LHC-2600-DC-0013",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362367",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362367",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY25 State Criminal Alien Assistance Program (SCAAP)",
+      "GrantTitle": "BJA FY25 State Criminal Alien Assistance Program (SCAAP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2025-172612",
+      "Status": "posted",
+      "ApplicationDeadline": "06/23/2026",
+      "PostedDate": "05/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362366",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362366",
+      "Source": "federal"
+    },
+    {
+      "Title": "Limited Competition: Small Grant Program for NHLBI K01/K08/K23/K25 Recipients (R03 Clinical Trial Optional)",
+      "GrantTitle": "Limited Competition: Small Grant Program for NHLBI K01/K08/K23/K25 Recipients (R03 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-HL-27-004",
+      "Status": "posted",
+      "ApplicationDeadline": "11/07/2028",
+      "PostedDate": "05/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359675",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359675",
+      "Source": "federal"
+    },
+    {
       "Title": "INCLUDE Project: Exploratory/Developmental Research Awards for Down syndrome (R21 Clinical Trial Not Allowed)",
       "GrantTitle": "INCLUDE Project: Exploratory/Developmental Research Awards for Down syndrome (R21 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41397,23 +41448,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360653",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360653",
-      "Source": "federal"
-    },
-    {
-      "Title": "Limited Competition: Small Grant Program for NHLBI Career Development Recipients (Clinical Trial Optional)",
-      "GrantTitle": "Limited Competition: Small Grant Program for NHLBI Career Development Recipients (Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HL-27-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/18/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359675",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359675",
       "Source": "federal"
     },
     {
@@ -41451,14 +41485,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2536,
+  "totalCount": 2538,
   "sources": {
     "ca": {
       "count": 1901,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 901,
       "success": true
     }
   },
