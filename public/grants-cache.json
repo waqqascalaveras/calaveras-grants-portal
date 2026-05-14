@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-13T18:44:59.775053Z",
+  "fetchedAt": "2026-05-14T07:09:08.517472Z",
   "success": true,
   "grants": [
     {
@@ -35686,23 +35686,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
-      "GrantTitle": "Research Grants for Preventing Interpersonal Violence and Suicide Among Youth and Young Adults (R01)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CE-26-020",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/07/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360263",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360263",
-      "Source": "federal"
-    },
-    {
       "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
       "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center",
       "Description": "",
@@ -35938,23 +35921,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360357",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360357",
-      "Source": "federal"
-    },
-    {
-      "Title": "Notice of Intent to Publish a Funding Opportunity Announcement for Intellectual and Developmental Disabilities Research Centers 2025 (P50 Clinical Trial Optional)",
-      "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement for Intellectual and Developmental Disabilities Research Centers 2025 (P50 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HD-26-012",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/12/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358915",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358915",
       "Source": "federal"
     },
     {
@@ -39290,23 +39256,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
-      "GrantTitle": "Grants for Adaptive Sports Programs for Disabled Veterans and Disabled Members of the Armed Forces",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "VA-SPORTS-26",
-      "Status": "posted",
-      "ApplicationDeadline": "05/13/2026",
-      "PostedDate": "03/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360391",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360391",
-      "Source": "federal"
-    },
-    {
       "Title": "Safe Streets and Roads for All Funding Opportunity",
       "GrantTitle": "Safe Streets and Roads for All Funding Opportunity",
       "Description": "",
@@ -41432,6 +41381,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Community Connect Grant Program",
+      "GrantTitle": "Community Connect Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RDRUS-CC-2026",
+      "Status": "posted",
+      "ApplicationDeadline": "06/29/2026",
+      "PostedDate": "05/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362382",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362382",
+      "Source": "federal"
+    },
+    {
+      "Title": "Notice of Intent to Publish a Funding Opportunity Announcement for Intellectual and Developmental Disabilities Research Centers 2025 (P50 Clinical Trial Optional)",
+      "GrantTitle": "Notice of Intent to Publish a Funding Opportunity Announcement for Intellectual and Developmental Disabilities Research Centers 2025 (P50 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-HD-27-012",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/12/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358915",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358915",
+      "Source": "federal"
+    },
+    {
       "Title": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
       "GrantTitle": "FY 2025 EDA Public Works and Economic Adjustment Assistance Programs",
       "Description": "",
@@ -41463,23 +41446,6 @@
       "AwardFloor": 0,
       "OpportunityID": "359675",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359675",
-      "Source": "federal"
-    },
-    {
-      "Title": "Community Connect Grant Program",
-      "GrantTitle": "Community Connect Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RDRUS-CC-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "06/29/2026",
-      "PostedDate": "05/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362382",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362382",
       "Source": "federal"
     },
     {
@@ -41534,14 +41500,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2541,
+  "totalCount": 2539,
   "sources": {
     "ca": {
       "count": 1904,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 900,
       "success": true
     }
   },
