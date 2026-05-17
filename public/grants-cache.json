@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-05-16T18:24:50.041379Z",
+  "fetchedAt": "2026-05-17T07:04:56.909577Z",
   "success": true,
   "grants": [
     {
@@ -37077,23 +37077,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
-      "GrantTitle": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0113",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/18/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360617",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360617",
-      "Source": "federal"
-    },
-    {
       "Title": "Advancing Outbreak Detection, Notification, and Response Capacity by Implementing 7-1-7 in Partner Countries",
       "GrantTitle": "Advancing Outbreak Detection, Notification, and Response Capacity by Implementing 7-1-7 in Partner Countries",
       "Description": "",
@@ -41565,14 +41548,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2543,
+  "totalCount": 2542,
   "sources": {
     "ca": {
       "count": 1907,
       "success": true
     },
     "federal": {
-      "count": 901,
+      "count": 900,
       "success": true
     }
   },
