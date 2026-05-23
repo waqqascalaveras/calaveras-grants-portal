@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-05-23T07:02:43.771816Z",
+  "fetchedAt": "2026-05-23T18:26:32.708547Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Deaf and Hard of Hearing (DHH) grant for Program Year 2026-27",
+      "GrantTitle": "Deaf and Hard of Hearing (DHH) grant for Program Year 2026-27",
+      "Description": "The Employment Development Department (EDD) announces the availability of up to $2.7 million in Wagner-Peyser 10 percent Governor\u2019s Discretionary funds for the Deaf and Hard of Hearing (DHH) Program Year 2026-27 (PY 26-27) grant.  This program provides deaf and hard of hearing individuals with enhanced employment services in select America\u2019s Job Center of California (AJCC) locations throughout California. The program will ensure effective communication and increased service opportunities for deaf and hard of hearing individuals by providing specialized counseling, interpretation services, job placement, follow-up services, advocacy that ensures deaf and hard of hearing individuals receive equal access to public and private employment services, and specialized employment preparation services to assist them in becoming job-ready.  Eligible applicants for DHH PY 26-27 SFP include public agencies or private non-profit organizations. Individuals are not eligible apply.  Leveraged funds are not required for this project, but applicants are encouraged to maximize impact by leveraging other resources; These may include funds, human capital, and other resources from various sources, such as businesses, industry associations, labor organizations, and government programs. Leveraged funds and in-kind resources must be consistent with allowable project activities and may be used by the awardee.  Proposals must be received by 3 p.m. PT on June 18, 2026. An informational webinar will be held on Wednesday, June 3, 2026, at 10:00 a.m. PT.\u00a0 Pre-registration is required for all attendees. Please refer to the EDD's Workforce Development Solicitation for Proposals website link below for pre-register instructions:  https://edd.ca.gov/en/jobs_and_training/WDSFP_Workforce_Development_Solicitations_for_Proposals  The EDD encourages applicants to submit a Notice of Intent to apply by June 12, 2026 at noon PT to WSBSFP2@edd.ca.gov. To view this SFP, visit the EDD Workforce Development Solicitations for Proposals webpage.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-06-18 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,700,000",
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "171693",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Campesino de California Outreach Grant \u2013 Radio Media (CCOG-RM) for Program Year 2026-27 (PY 26-27)",
       "GrantTitle": "Campesino de California Outreach Grant \u2013 Radio Media (CCOG-RM) for Program Year 2026-27 (PY 26-27)",
@@ -552,7 +568,7 @@
       "Description": "The Program will identify capability gaps and implement solutions for alert and warning.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-05-22 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$953,958",
@@ -41834,10 +41850,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2559,
+  "totalCount": 2560,
   "sources": {
     "ca": {
-      "count": 1909,
+      "count": 1910,
       "success": true
     },
     "federal": {
