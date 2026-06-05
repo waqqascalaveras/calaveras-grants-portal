@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-04T18:54:25.315895Z",
+  "fetchedAt": "2026-06-05T07:38:15.246665Z",
   "success": true,
   "grants": [
     {
@@ -36058,23 +36058,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Impact of Initial Influenza Exposure on Immunity in Infants (U01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-019",
-      "Status": "posted",
-      "ApplicationDeadline": "06/04/2026",
-      "PostedDate": "02/10/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359939",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359939",
-      "Source": "federal"
-    },
-    {
       "Title": "Centers without Walls for mechanisms of neurodegeneration in Alzheimer&rsquo;s disease-related dementias (ADRD)",
       "GrantTitle": "Centers without Walls for mechanisms of neurodegeneration in Alzheimer&rsquo;s disease-related dementias (ADRD)",
       "Description": "",
@@ -40903,23 +40886,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Conservation Innovation Grants (CIG) On-Farm Conservation Innovation Trials for fiscal year (FY) 2026",
-      "GrantTitle": "Conservation Innovation Grants (CIG) On-Farm Conservation Innovation Trials for fiscal year (FY) 2026",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-NRCS-NHQ-CIGOFT-26-NOFO0001447",
-      "Status": "posted",
-      "ApplicationDeadline": "07/27/2026",
-      "PostedDate": "05/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362550",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362550",
-      "Source": "federal"
-    },
-    {
       "Title": "Mentored Research Scientist Development Award (Parent K01 - Independent Clinical Trial Required)",
       "GrantTitle": "Mentored Research Scientist Development Award (Parent K01 - Independent Clinical Trial Required)",
       "Description": "",
@@ -41274,23 +41240,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362635",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362635",
-      "Source": "federal"
-    },
-    {
-      "Title": "USGS Earthquake Hazards Program External Research Support Announcement for Fiscal Year 2027",
-      "GrantTitle": "USGS Earthquake Hazards Program External Research Support Announcement for Fiscal Year 2027",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "G27AS00075",
-      "Status": "posted",
-      "ApplicationDeadline": "06/04/2026",
-      "PostedDate": "04/29/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362130",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362130",
       "Source": "federal"
     },
     {
@@ -41819,16 +41768,50 @@
       "OpportunityID": "362686",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362686",
       "Source": "federal"
+    },
+    {
+      "Title": "Conservation Innovation Grants (CIG) On-Farm Conservation Innovation Trials for fiscal year (FY) 2026",
+      "GrantTitle": "Conservation Innovation Grants (CIG) On-Farm Conservation Innovation Trials for fiscal year (FY) 2026",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-NRCS-NHQ-CIGOFT-26-NOFO0001447",
+      "Status": "posted",
+      "ApplicationDeadline": "07/27/2026",
+      "PostedDate": "05/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362550",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362550",
+      "Source": "federal"
+    },
+    {
+      "Title": "Eliminating Parasitic and Neglected Tropical Disease Threats to the United States - Program Support and Research to Reduce Threats to Americans at Home and Abroad",
+      "GrantTitle": "Eliminating Parasitic and Neglected Tropical Disease Threats to the United States - Program Support and Research to Reduce Threats to Americans at Home and Abroad",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CK-26-104",
+      "Status": "posted",
+      "ApplicationDeadline": "07/06/2026",
+      "PostedDate": "06/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360269",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360269",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2559,
+  "totalCount": 2558,
   "sources": {
     "ca": {
       "count": 1924,
       "success": true
     },
     "federal": {
-      "count": 899,
+      "count": 898,
       "success": true
     }
   },
