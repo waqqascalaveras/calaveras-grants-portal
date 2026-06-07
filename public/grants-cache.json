@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-07T07:31:42.397758Z",
+  "fetchedAt": "2026-06-07T18:33:47.747314Z",
   "success": true,
   "grants": [
     {
@@ -37979,23 +37979,6 @@
       "Source": "federal"
     },
     {
-      "Title": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
-      "GrantTitle": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "LEO-PD-APS-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "06/08/2026",
-      "PostedDate": "04/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361806",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361806",
-      "Source": "federal"
-    },
-    {
       "Title": "HIV/AIDS Clinical Trials Network Leadership and Operations Centers",
       "GrantTitle": "HIV/AIDS Clinical Trials Network Leadership and Operations Centers",
       "Description": "",
@@ -41835,6 +41818,23 @@
       "AwardFloor": 0,
       "OpportunityID": "358853",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358853",
+      "Source": "federal"
+    },
+    {
+      "Title": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
+      "GrantTitle": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LEO-PD-APS-2026",
+      "Status": "posted",
+      "ApplicationDeadline": "06/15/2026",
+      "PostedDate": "04/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361806",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361806",
       "Source": "federal"
     }
   ],
