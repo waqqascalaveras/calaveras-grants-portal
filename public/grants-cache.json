@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-06T18:33:10.048242Z",
+  "fetchedAt": "2026-06-07T07:31:42.397758Z",
   "success": true,
   "grants": [
     {
@@ -41226,23 +41226,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Notice to Publish a Funding Opportunity Announcement for the Academic Career Excellence (ACE) Award (K32 - Independent Clinical Trial Not Allowed)",
-      "GrantTitle": "Notice to Publish a Funding Opportunity Announcement for the Academic Career Excellence (ACE) Award (K32 - Independent Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-CA-25-103",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359869",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359869",
-      "Source": "federal"
-    },
-    {
       "Title": "Rural Communities Opioid Response Program (RCORP)-Impact",
       "GrantTitle": "Rural Communities Opioid Response Program (RCORP)-Impact",
       "Description": "",
@@ -41853,33 +41836,16 @@
       "OpportunityID": "358853",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358853",
       "Source": "federal"
-    },
-    {
-      "Title": "HEAL: Translating Addiction Epidemiology, Prevention, Treatment, and Recovery Research into Practice (R61/R33 - Clinical Trial Optional)",
-      "GrantTitle": "HEAL: Translating Addiction Epidemiology, Prevention, Treatment, and Recovery Research into Practice (R61/R33 - Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-DA-26-001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/05/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358819",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358819",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2562,
+  "totalCount": 2560,
   "sources": {
     "ca": {
       "count": 1925,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 900,
       "success": true
     }
   },
