@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-09T18:50:59.862608Z",
+  "fetchedAt": "2026-06-10T07:38:18.482354Z",
   "success": true,
   "grants": [
     {
@@ -27232,23 +27232,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NEI Institutional Mentored Physician Scientist Award (K12 Clinical Trial Optional)",
-      "GrantTitle": "NEI Institutional Mentored Physician Scientist Award (K12 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-23-197",
-      "Status": "posted",
-      "ApplicationDeadline": "06/09/2026",
-      "PostedDate": "06/12/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "348702",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/348702",
-      "Source": "federal"
-    },
-    {
       "Title": "National Institute of General Medical Sciences Predoctoral Basic Biomedical Sciences Research Training Program (T32)",
       "GrantTitle": "National Institute of General Medical Sciences Predoctoral Basic Biomedical Sciences Research Training Program (T32)",
       "Description": "",
@@ -37296,23 +37279,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIJ FY25 Research and Evaluation of Policing Practices",
-      "GrantTitle": "NIJ FY25 Research and Evaluation of Policing Practices",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2025-172603",
-      "Status": "posted",
-      "ApplicationDeadline": "06/09/2026",
-      "PostedDate": "05/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362301",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362301",
-      "Source": "federal"
-    },
-    {
       "Title": "Intervention Research to Improve Native American Health",
       "GrantTitle": "Intervention Research to Improve Native American Health",
       "Description": "",
@@ -41869,20 +41835,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
-      "GrantTitle": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
+      "Title": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
+      "GrantTitle": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PS-27-0009",
+      "OpportunityNumber": "CDC-RFA-JG-26-0113",
       "Status": "forecasted",
       "ApplicationDeadline": "",
-      "PostedDate": "06/09/2026",
+      "PostedDate": "09/18/2025",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362731",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362731",
+      "OpportunityID": "360617",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360617",
       "Source": "federal"
     },
     {
@@ -41903,6 +41869,74 @@
       "Source": "federal"
     },
     {
+      "Title": "FY26 Preparing for Active Shooter Situations (PASS)",
+      "GrantTitle": "FY26 Preparing for Active Shooter Situations (PASS)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-COPS-2026-172557",
+      "Status": "posted",
+      "ApplicationDeadline": "08/04/2026",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362735",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362735",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 COPS School Violence Prevention Program",
+      "GrantTitle": "FY26 COPS School Violence Prevention Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-COPS-2026-172540",
+      "Status": "posted",
+      "ApplicationDeadline": "08/04/2026",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362738",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362738",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 COPS Hiring Program",
+      "GrantTitle": "FY26 COPS Hiring Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-COPS-2026-172611",
+      "Status": "posted",
+      "ApplicationDeadline": "07/23/2026",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362739",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362739",
+      "Source": "federal"
+    },
+    {
+      "Title": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
+      "GrantTitle": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0009",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362731",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362731",
+      "Source": "federal"
+    },
+    {
       "Title": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R01 Clinical Trial Optional)",
       "GrantTitle": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R01 Clinical Trial Optional)",
       "Description": "",
@@ -41917,23 +41951,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358079",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358079",
-      "Source": "federal"
-    },
-    {
-      "Title": "MINE HEALTH AND SAFETY STATE GRANTS",
-      "GrantTitle": "MINE HEALTH AND SAFETY STATE GRANTS",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "MSHA-2026-1",
-      "Status": "posted",
-      "ApplicationDeadline": "08/10/2026",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362729",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362729",
       "Source": "federal"
     },
     {
@@ -41954,31 +41971,31 @@
       "Source": "federal"
     },
     {
-      "Title": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
-      "GrantTitle": "Preventing global health threats by strengthening surveillance systems to accelerate outbreak detection, notification, and response",
+      "Title": "MINE HEALTH AND SAFETY STATE GRANTS",
+      "GrantTitle": "MINE HEALTH AND SAFETY STATE GRANTS",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0113",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/18/2025",
+      "OpportunityNumber": "MSHA-2026-1",
+      "Status": "posted",
+      "ApplicationDeadline": "08/10/2026",
+      "PostedDate": "06/09/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "360617",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360617",
+      "OpportunityID": "362729",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362729",
       "Source": "federal"
     }
   ],
-  "totalCount": 2568,
+  "totalCount": 2569,
   "sources": {
     "ca": {
       "count": 1928,
       "success": true
     },
     "federal": {
-      "count": 907,
+      "count": 908,
       "success": true
     }
   },
