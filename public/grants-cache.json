@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-10T19:00:15.025775Z",
+  "fetchedAt": "2026-06-11T07:50:36.433952Z",
   "success": true,
   "grants": [
     {
@@ -34234,23 +34234,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Standardizing Data and Metadata from Wearable Devices (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Standardizing Data and Metadata from Wearable Devices (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-250",
-      "Status": "posted",
-      "ApplicationDeadline": "06/10/2026",
-      "PostedDate": "07/02/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "355241",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/355241",
-      "Source": "federal"
-    },
-    {
       "Title": "Accelerating the Pace of Substance Use Research Using Existing Data (R21 Clinical Trial Not Allowed)",
       "GrantTitle": "Accelerating the Pace of Substance Use Research Using Existing Data (R21 Clinical Trial Not Allowed)",
       "Description": "",
@@ -37243,23 +37226,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-TS-26-165",
-      "Status": "posted",
-      "ApplicationDeadline": "06/10/2026",
-      "PostedDate": "05/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360195",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360195",
-      "Source": "federal"
-    },
-    {
       "Title": "Cooperative Research Agreements Related to the World Trade Center Health Program (U01)",
       "GrantTitle": "Cooperative Research Agreements Related to the World Trade Center Health Program (U01)",
       "Description": "",
@@ -37342,23 +37308,6 @@
       "AwardFloor": 0,
       "OpportunityID": "359732",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359732",
-      "Source": "federal"
-    },
-    {
-      "Title": "NIJ FY25 Research and Evaluation on Youth Justice Topics",
-      "GrantTitle": "NIJ FY25 Research and Evaluation on Youth Justice Topics",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2025-172607",
-      "Status": "posted",
-      "ApplicationDeadline": "06/10/2026",
-      "PostedDate": "05/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362333",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362333",
       "Source": "federal"
     },
     {
@@ -38379,23 +38328,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361986",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361986",
-      "Source": "federal"
-    },
-    {
-      "Title": "Youth Homelessness NOFO for FY2024 and FY2025",
-      "GrantTitle": "Youth Homelessness NOFO for FY2024 and FY2025",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CPD-2600-DC-0035",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/22/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362002",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362002",
       "Source": "federal"
     },
     {
@@ -41816,23 +41748,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NINDS Ruth L. Kirschstein National Research Service Award (NRSA) for Training of Postdoctoral Fellows (F32 Clinical Trial Not Allowed)",
-      "GrantTitle": "NINDS Ruth L. Kirschstein National Research Service Award (NRSA) for Training of Postdoctoral Fellows (F32 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-234",
-      "Status": "posted",
-      "ApplicationDeadline": "06/10/2026",
-      "PostedDate": "11/07/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357035",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357035",
-      "Source": "federal"
-    },
-    {
       "Title": "Embryo Adoption Awareness and Services",
       "GrantTitle": "Embryo Adoption Awareness and Services",
       "Description": "",
@@ -42069,16 +41984,33 @@
       "OpportunityID": "362747",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362747",
       "Source": "federal"
+    },
+    {
+      "Title": "Youth Homelessness NOFO for FY2024 and FY2025",
+      "GrantTitle": "Youth Homelessness NOFO for FY2024 and FY2025",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CPD-2600-DC-0035",
+      "Status": "posted",
+      "ApplicationDeadline": "08/10/2026",
+      "PostedDate": "06/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362002",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362002",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2574,
+  "totalCount": 2570,
   "sources": {
     "ca": {
       "count": 1930,
       "success": true
     },
     "federal": {
-      "count": 911,
+      "count": 907,
       "success": true
     }
   },
