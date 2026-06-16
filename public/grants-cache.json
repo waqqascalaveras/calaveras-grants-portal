@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-15T19:24:46.282298Z",
+  "fetchedAt": "2026-06-16T08:06:49.349962Z",
   "success": true,
   "grants": [
     {
@@ -31458,23 +31458,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BRAIN Initiative: New Concepts and Early-Stage Research for Recording and Modulation in the Nervous System (R21) (Clinical Trial Not Allowed)",
-      "GrantTitle": "BRAIN Initiative: New Concepts and Early-Stage Research for Recording and Modulation in the Nervous System (R21) (Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-EY-25-001",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "12/09/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357601",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357601",
-      "Source": "federal"
-    },
-    {
       "Title": "Innovative Mental Health Services Research Not Involving Clinical Trials (R01 Clinical Trials Not Allowed)",
       "GrantTitle": "Innovative Mental Health Services Research Not Involving Clinical Trials (R01 Clinical Trials Not Allowed)",
       "Description": "",
@@ -39516,23 +39499,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Japanese American Confinement Sites Grant Program",
-      "GrantTitle": "Japanese American Confinement Sites Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P26AS00021",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "04/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362146",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362146",
-      "Source": "federal"
-    },
-    {
       "Title": "Rural Business Development Grant Program",
       "GrantTitle": "Rural Business Development Grant Program",
       "Description": "",
@@ -39717,40 +39683,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360439",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360439",
-      "Source": "federal"
-    },
-    {
-      "Title": "NIJ FY25 Research and Evaluation of Artificial Intelligence for Criminal Justice Purposes",
-      "GrantTitle": "NIJ FY25 Research and Evaluation of Artificial Intelligence for Criminal Justice Purposes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2025-172615",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "05/14/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362406",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362406",
-      "Source": "federal"
-    },
-    {
-      "Title": "NIJ FY25 Research and Evaluation of Emerging Technology Implementation and Impact for Law Enforcement Purposes",
-      "GrantTitle": "NIJ FY25 Research and Evaluation of Emerging Technology Implementation and Impact for Law Enforcement Purposes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2025-172616",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "05/14/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362405",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362405",
       "Source": "federal"
     },
     {
@@ -40329,23 +40261,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362284",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362284",
-      "Source": "federal"
-    },
-    {
-      "Title": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
-      "GrantTitle": "U.S. Mission to Libya Public Diplomacy Small Grants Program Annual Program Statement (APS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "LEO-PD-APS-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "04/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361806",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361806",
       "Source": "federal"
     },
     {
@@ -41043,23 +40958,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362670",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362670",
-      "Source": "federal"
-    },
-    {
-      "Title": "Understanding and Promoting Resources and Opportunities for People with Autism and Fragile X and their Families Across the Lifespan",
-      "GrantTitle": "Understanding and Promoting Resources and Opportunities for People with Autism and Fragile X and their Families Across the Lifespan",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-DD-26-0025",
-      "Status": "posted",
-      "ApplicationDeadline": "06/15/2026",
-      "PostedDate": "05/15/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360357",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360357",
       "Source": "federal"
     },
     {
@@ -42217,21 +42115,38 @@
       "OpportunityID": "360506",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360506",
       "Source": "federal"
+    },
+    {
+      "Title": "DOJ FY 2026 Bridging Immigration-related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program",
+      "GrantTitle": "DOJ FY 2026 Bridging Immigration-related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172641",
+      "Status": "posted",
+      "ApplicationDeadline": "07/15/2026",
+      "PostedDate": "06/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362821",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362821",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2583,
+  "totalCount": 2578,
   "sources": {
     "ca": {
       "count": 1935,
       "success": true
     },
     "federal": {
-      "count": 915,
+      "count": 909,
       "success": true
     }
   },
   "duplicates": {
-    "count": 267,
+    "count": 266,
     "examples": [
       {
         "original": "Beverage Container Redemption Innovation Grant",
