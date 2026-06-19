@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-06-19T08:01:22.195218Z",
+  "fetchedAt": "2026-06-19T18:43:39.409066Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Tire Incentive Program",
+      "GrantTitle": "Tire Incentive Program",
+      "Description": "The Tire Incentive Program (TIP) provides a reimbursement incentive payment to eligible businesses that:  Use recycled crumb rubber in eligible products orSubstitute crumb rubber for virgin rubber, plastic, or other raw materials in products.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-08-19 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$3,000,000",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business",
+      "GrantInfoURL": "",
+      "PortalID": "177765",
+      "Source": "ca.gov"
+    },
     {
       "Title": "2026 Dairy Plus Program",
       "GrantTitle": "2026 Dairy Plus Program",
@@ -3347,6 +3363,22 @@
       "Source": "ca.gov"
     },
     {
+      "Title": "California Advanced Services Fund: Broadband Public Housing Account \u2013 January 2026 Cycle",
+      "GrantTitle": "California Advanced Services Fund: Broadband Public Housing Account \u2013 January 2026 Cycle",
+      "Description": "The CASF Broadband Public Housing Account provides grants and loans to build broadband networks offering free broadband service for residents of low-income communities including, but not limited to, publicly supported housing developments, farmworker housing, and other housing developments or mobile home parks with low-income residents that do not have access to any broadband service provider that offers free broadband service that meets or exceeds state standards for the residents of the low-income community. The allocated funding for the Broadband Public Housing Account is $30.1 million for fiscal year 2025-2026. The Broadband Public Housing Account will award grants to finance up to 100 percent of the costs to install last mile infrastructure, inside wiring and broadband network equipment but will not finance operations and maintenance costs through this program.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-01-01 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$30,141,000",
+      "Categories": "Disadvantaged Communities; Science, Technology, and Research & Development",
+      "ApplicantType": "Business; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "176160",
+      "Source": "ca.gov"
+    },
+    {
       "Title": "Sustainable Recreation, Tourism, and Equitable Outdoor Access Directed Grant Program (2025-2027)",
       "GrantTitle": "Sustainable Recreation, Tourism, and Equitable Outdoor Access Directed Grant Program (2025-2027)",
       "Description": "Proposition 68 recognizes the critical importance of recreation and tourism to California\u2019s economy and ecology and specifically directs funds to be used to support and expand recreation economies, opportunities, and access to outdoor recreation.\u00a0  Projects must fall within one of the following three focus areas to be considered for funding: 1. Build Climate Resilience: Support the planning, development, and maintenance of recreation and outdoor infrastructure that anticipates or adapts to increased use and pressure from climate change and visitors escaping extreme weather. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 2. Improve/Increase Access for All: Improve and/or increase access to nature, including for communities that have not traditionally had equitable access through grants which result in either the implementation or identification, prioritization, and preparation for capital improvement projects. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection. 3. Landscape-scale Assessments: Support landscape-scale partnerships to develop an assessment of landscape conditions and risks to recreational infrastructure and other assets. Projects must clearly have multiple benefits, such as tourism as well as education, recreation infrastructure with water-quality benefits, or recreation with habitat protection.  Eligibility: Projects must meet all the following criteria: Be located within the Sierra-Cascade Region; be consistent with the Program Objectives described in the Grant Program Guidelines and the SNC mission and program areas as defined in the SNC Strategic Plan and the Sierra Nevada Watershed Improvement Program; meet all requirements of Proposition 68 and result in a clear, demonstrable, and enduring public benefit. The SNC may give favorable consideration to projects that: Employ a collaborative approach in project development or implementation; result in a beneficial impact across a defined geographic region; directly benefit severely disadvantaged or disadvantaged communities; consider climate impacts and risks and identify specific adaptation strategies or actions to remedy climate-related vulnerability and leverage private, federal, or local resources.  To initiate consideration of a project, a project organizer should review the Grant Guidelines and Guidelines Companion Document and contact the appropriate SNC Area Representative. If it is determined that SNC will consider partnering on the project, the Area Representative will share the SNC Proposal Form with the organizer and assist in developing the project and completing the Proposal Form. Proposals will be accepted and reviewed on a rolling basis as long as funding is available.\u00a0Recommendations may be made to the SNC Governing Board on a quarterly basis beginning in June 2026. First review of project proposals will begin December 2025. Please review the full Grant Program Guidelines and Guidelines Companion Document.",
@@ -3632,22 +3664,6 @@
       "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "118170",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Tire Incentive Program",
-      "GrantTitle": "Tire Incentive Program",
-      "Description": "The Tire Incentive Program (TIP) provides a reimbursement incentive payment to eligible businesses that:  Use recycled crumb rubber in eligible products orSubstitute crumb rubber for virgin rubber, plastic, or other raw materials in products.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2025-08-20 11:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$3,200,000",
-      "Categories": "Environment & Water",
-      "ApplicantType": "Business",
-      "GrantInfoURL": "",
-      "PortalID": "116805",
       "Source": "ca.gov"
     },
     {
@@ -5429,17 +5445,17 @@
     {
       "Title": "California Advanced Services Fund: Broadband Public Housing Account \u2013 July 2025 Cycle",
       "GrantTitle": "California Advanced Services Fund: Broadband Public Housing Account \u2013 July 2025 Cycle",
-      "Description": "The CASF Broadband Public Housing Account provides grants and loans to build broadband networks offering free broadband service for residents of low-income communities including, but not limited to, publicly supported housing developments, farmworker housing, and other housing developments or mobile home parks with low-income residents that do not have access to any broadband service provider that offers free broadband service that meets or exceeds state standards for the residents of the low-income community. The allocated funding for the Broadband Public Housing Account is $30.1 million for fiscal year 2024-2025. \u00a0The Broadband Public Housing Account will award grants to finance up to 100 percent of the costs to install last mile infrastructure, inside wiring and broadband network equipment but will not finance operations and maintenance costs through this program.",
+      "Description": "The CASF Broadband Public Housing Account provides grants and loans to build broadband networks offering free broadband service for residents of low-income communities including, but not limited to, publicly supported housing developments, farmworker housing, and other housing developments or mobile home parks with low-income residents that do not have access to any broadband service provider that offers free broadband service that meets or exceeds state standards for the residents of the low-income community. The allocated funding for the Broadband Public Housing Account is $30.1 million for fiscal year 2024-2025. The Broadband Public Housing Account will award grants to finance up to 100 percent of the costs to install last mile infrastructure, inside wiring and broadband network equipment but will not finance operations and maintenance costs through this program.",
       "AgencyName": "",
       "Agency": "",
       "Status": "closed",
       "ApplicationDeadline": "2025-07-01 00:00:00",
       "PostedDate": "",
-      "EstAvailFunds": null,
+      "EstAvailFunds": "$30,141,000",
       "Categories": "Disadvantaged Communities; Science, Technology, and Research & Development",
-      "ApplicantType": "Business; Nonprofit; Public Agency",
+      "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
-      "PortalID": "85295",
+      "PortalID": "176157",
       "Source": "ca.gov"
     },
     {
@@ -42048,10 +42064,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2573,
+  "totalCount": 2574,
   "sources": {
     "ca": {
-      "count": 1937,
+      "count": 1940,
       "success": true
     },
     "federal": {
@@ -42060,7 +42076,7 @@
     }
   },
   "duplicates": {
-    "count": 267,
+    "count": 269,
     "examples": [
       {
         "original": "Beverage Container Redemption Innovation Grant",
