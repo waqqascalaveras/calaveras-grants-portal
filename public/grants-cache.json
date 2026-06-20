@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-19T18:43:39.409066Z",
+  "fetchedAt": "2026-06-20T07:28:08.377555Z",
   "success": true,
   "grants": [
     {
@@ -37287,23 +37287,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
-      "GrantTitle": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CK-26-0193",
-      "Status": "posted",
-      "ApplicationDeadline": "06/19/2026",
-      "PostedDate": "05/19/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360958",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360958",
-      "Source": "federal"
-    },
-    {
       "Title": "Teen Pregnancy Prevention Evaluation Grants",
       "GrantTitle": "Teen Pregnancy Prevention Evaluation Grants",
       "Description": "",
@@ -42064,14 +42047,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2574,
+  "totalCount": 2573,
   "sources": {
     "ca": {
       "count": 1940,
       "success": true
     },
     "federal": {
-      "count": 903,
+      "count": 902,
       "success": true
     }
   },
