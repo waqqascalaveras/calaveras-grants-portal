@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-06-22T08:14:12.357128Z",
+  "fetchedAt": "2026-06-22T19:15:38.476791Z",
   "success": true,
   "grants": [
     {
@@ -39751,23 +39751,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Rural Residency Planning and Development Program",
-      "GrantTitle": "Rural Residency Planning and Development Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-047",
-      "Status": "posted",
-      "ApplicationDeadline": "07/08/2026",
-      "PostedDate": "06/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362294",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362294",
-      "Source": "federal"
-    },
-    {
       "Title": "Technology-enabled Collaborative Learning Program",
       "GrantTitle": "Technology-enabled Collaborative Learning Program",
       "Description": "",
@@ -40499,23 +40482,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Nutrition Security for People with HIV: Implementation Technical Assistance Provider",
-      "GrantTitle": "Nutrition Security for People with HIV: Implementation Technical Assistance Provider",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-111",
-      "Status": "posted",
-      "ApplicationDeadline": "07/10/2026",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362730",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362730",
-      "Source": "federal"
-    },
-    {
       "Title": "DOJ FY 2026 Bridging Immigration-related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program",
       "GrantTitle": "DOJ FY 2026 Bridging Immigration-related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program",
       "Description": "",
@@ -40632,23 +40598,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360343",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360343",
-      "Source": "federal"
-    },
-    {
-      "Title": "Pediatric Mental Health Care Access Program (PMHCA)",
-      "GrantTitle": "Pediatric Mental Health Care Access Program (PMHCA)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-058",
-      "Status": "posted",
-      "ApplicationDeadline": "07/10/2026",
-      "PostedDate": "06/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362286",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362286",
       "Source": "federal"
     },
     {
@@ -41672,23 +41621,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
-      "GrantTitle": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-057",
-      "Status": "posted",
-      "ApplicationDeadline": "07/10/2026",
-      "PostedDate": "06/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361001",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361001",
-      "Source": "federal"
-    },
-    {
       "Title": "HEAL Initiative: Non-addictive Analgesic Therapeutics Development [Small Molecules and Biologics] to Treat Pain (UG3/UH3 Clinical Trial Optional)",
       "GrantTitle": "HEAL Initiative: Non-addictive Analgesic Therapeutics Development [Small Molecules and Biologics] to Treat Pain (UG3/UH3 Clinical Trial Optional)",
       "Description": "",
@@ -41927,23 +41859,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Telehealth Nutrition Services Network Grant Program",
-      "GrantTitle": "Telehealth Nutrition Services Network Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-076",
-      "Status": "posted",
-      "ApplicationDeadline": "07/08/2026",
-      "PostedDate": "06/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362151",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362151",
-      "Source": "federal"
-    },
-    {
       "Title": "Discovery of the Genetic Basis of Childhood Cancers and of Congenital Anomalies: Gabriella Miller Kids First Pediatric Research Program (X01 Clinical Trial Not Allowed)",
       "GrantTitle": "Discovery of the Genetic Basis of Childhood Cancers and of Congenital Anomalies: Gabriella Miller Kids First Pediatric Research Program (X01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -42029,6 +41944,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Telehealth Nutrition Services Network Grant Program",
+      "GrantTitle": "Telehealth Nutrition Services Network Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-076",
+      "Status": "posted",
+      "ApplicationDeadline": "07/08/2026",
+      "PostedDate": "06/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362151",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362151",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2026 Pre-Disaster Mitigation Grant Program",
+      "GrantTitle": "Fiscal Year 2026 Pre-Disaster Mitigation Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DHS-26-MT-143-00-01",
+      "Status": "posted",
+      "ApplicationDeadline": "07/22/2026",
+      "PostedDate": "06/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362877",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362877",
+      "Source": "federal"
+    },
+    {
       "Title": "Building National Partnerships for the Prevention of Emerging and Reemerging Infectious Diseases",
       "GrantTitle": "Building National Partnerships for the Prevention of Emerging and Reemerging Infectious Diseases",
       "Description": "",
@@ -42061,16 +42010,84 @@
       "OpportunityID": "362447",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362447",
       "Source": "federal"
+    },
+    {
+      "Title": "Nutrition Security for People with HIV: Implementation Technical Assistance Provider",
+      "GrantTitle": "Nutrition Security for People with HIV: Implementation Technical Assistance Provider",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-111",
+      "Status": "posted",
+      "ApplicationDeadline": "07/10/2026",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362730",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362730",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pediatric Mental Health Care Access Program (PMHCA)",
+      "GrantTitle": "Pediatric Mental Health Care Access Program (PMHCA)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-058",
+      "Status": "posted",
+      "ApplicationDeadline": "07/10/2026",
+      "PostedDate": "06/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362286",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362286",
+      "Source": "federal"
+    },
+    {
+      "Title": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
+      "GrantTitle": "Early Childhood Comprehensive Systems SEED Project: Scaling Effective Early Childhood Systems Development (ECCS SEED)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-057",
+      "Status": "posted",
+      "ApplicationDeadline": "07/10/2026",
+      "PostedDate": "06/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361001",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361001",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Residency Planning and Development Program",
+      "GrantTitle": "Rural Residency Planning and Development Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-047",
+      "Status": "posted",
+      "ApplicationDeadline": "07/08/2026",
+      "PostedDate": "06/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362294",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362294",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2574,
+  "totalCount": 2575,
   "sources": {
     "ca": {
       "count": 1941,
       "success": true
     },
     "federal": {
-      "count": 902,
+      "count": 903,
       "success": true
     }
   },
