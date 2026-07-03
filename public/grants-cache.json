@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-02T18:35:03.607374Z",
+  "fetchedAt": "2026-07-03T07:12:00.989091Z",
   "success": true,
   "grants": [
     {
@@ -42311,6 +42311,23 @@
       "Source": "federal"
     },
     {
+      "Title": "CDC National Centers of Excellence in Youth Violence Prevention (YVPCs): Rigorous Evaluation of Prevention Approaches to Prevent and Reduce Youth Violence",
+      "GrantTitle": "CDC National Centers of Excellence in Youth Violence Prevention (YVPCs): Rigorous Evaluation of Prevention Approaches to Prevent and Reduce Youth Violence",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-013",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363055",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363055",
+      "Source": "federal"
+    },
+    {
       "Title": "FY26 Community Policing Development (CPD) Microgrants",
       "GrantTitle": "FY26 Community Policing Development (CPD) Microgrants",
       "Description": "",
@@ -42343,16 +42360,101 @@
       "OpportunityID": "363051",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363051",
       "Source": "federal"
+    },
+    {
+      "Title": "National Training Center for Family Planning",
+      "GrantTitle": "National Training Center for Family Planning",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-FPT-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "08/05/2026",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362544",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362544",
+      "Source": "federal"
+    },
+    {
+      "Title": "Teen Pregnancy Prevention Evaluation Grants",
+      "GrantTitle": "Teen Pregnancy Prevention Evaluation Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-PHE-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "08/05/2026",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362542",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362542",
+      "Source": "federal"
+    },
+    {
+      "Title": "World Trade Center Health Program Mentored Research Scientist Career Development Award (K01)",
+      "GrantTitle": "World Trade Center Health Program Mentored Research Scientist Career Development Award (K01)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-OH-27-031",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363054",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363054",
+      "Source": "federal"
+    },
+    {
+      "Title": "Solutions for Linkage to Care Implementation Challenges for People with Opioid Use Disorder",
+      "GrantTitle": "Solutions for Linkage to Care Implementation Challenges for People with Opioid Use Disorder",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-017",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363058",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363058",
+      "Source": "federal"
+    },
+    {
+      "Title": "Grants to Support New Investigators in Conducting Research to Prevent Interpersonal Violence and Suicide Among Children and Adolescents",
+      "GrantTitle": "Grants to Support New Investigators in Conducting Research to Prevent Interpersonal Violence and Suicide Among Children and Adolescents",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-019",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363059",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363059",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2591,
+  "totalCount": 2597,
   "sources": {
     "ca": {
       "count": 1950,
       "success": true
     },
     "federal": {
-      "count": 912,
+      "count": 918,
       "success": true
     }
   },
