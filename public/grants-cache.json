@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-03T18:32:27.385355Z",
+  "fetchedAt": "2026-07-04T07:05:53.085757Z",
   "success": true,
   "grants": [
     {
@@ -42209,23 +42209,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS) (K12 Clinical Trial Not Allowed)",
-      "GrantTitle": "National K12 Program for the Career Development of Clinician-Scientists in Diabetes Research (Diabetes-DOCS) (K12 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-27-107",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/29/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361066",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361066",
-      "Source": "federal"
-    },
-    {
       "Title": "Digital Health Technology and Reciprocal Innovation to Improve Clinical and Public Health Outcomes",
       "GrantTitle": "Digital Health Technology and Reciprocal Innovation to Improve Clinical and Public Health Outcomes",
       "Description": "",
@@ -42447,14 +42430,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2597,
+  "totalCount": 2596,
   "sources": {
     "ca": {
       "count": 1950,
       "success": true
     },
     "federal": {
-      "count": 918,
+      "count": 917,
       "success": true
     }
   },
