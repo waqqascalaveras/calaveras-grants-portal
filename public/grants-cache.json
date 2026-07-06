@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-05T18:26:56.384251Z",
+  "fetchedAt": "2026-07-06T07:41:40.717623Z",
   "success": true,
   "grants": [
     {
@@ -39098,23 +39098,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R01 Clinical Trial Optional)",
-      "GrantTitle": "Advancing HIV/AIDS Research within the Mission of the NIDCD (R01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-319",
-      "Status": "posted",
-      "ApplicationDeadline": "07/05/2026",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358079",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358079",
-      "Source": "federal"
-    },
-    {
       "Title": "OVW Fiscal Year 2026 Demonstration Program on Trauma-Informed, Victim Centered Training for Law Enforcement on Domestic Violence, Dating Violence, Sexual Assault, and Stalking (Abby Honold) Program",
       "GrantTitle": "OVW Fiscal Year 2026 Demonstration Program on Trauma-Informed, Victim Centered Training for Law Enforcement on Domestic Violence, Dating Violence, Sexual Assault, and Stalking (Abby Honold) Program",
       "Description": "",
@@ -42430,14 +42413,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2596,
+  "totalCount": 2595,
   "sources": {
     "ca": {
       "count": 1950,
       "success": true
     },
     "federal": {
-      "count": 917,
+      "count": 916,
       "success": true
     }
   },
