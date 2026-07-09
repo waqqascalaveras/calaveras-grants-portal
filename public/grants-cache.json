@@ -1,7 +1,55 @@
 {
-  "fetchedAt": "2026-07-09T07:23:32.911265Z",
+  "fetchedAt": "2026-07-09T18:39:56.291049Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR92",
+      "GrantTitle": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR92",
+      "Description": "The project sites eligible for the grant must be located on 'farm and ranch' property, encompassing both private and public land, where the owner is not held responsible for the illegal disposal. The definition of 'farm and ranch' property can be found in the Eligible Geographies section below. Grantees are given approximately two years to complete the project(s). The sites should be fully remediated (cleaned up) using grant funds, or a combination of grant funds and in-kind contributions in terms of funds or services. The funding covers various costs, including Administrative, Recycling/Disposal (tires), Equipment, Material, and Personnel expenses. If necessary, measures for abatement and prevention, such as site security and public education/outreach efforts, should also be addressed. The program encourages innovative approaches. For further information and requirements, please refer to the Notice of Funds Available FY26-27 webpage, particularly the Application Guidelines and Instructions and Procedures and Requirements resource documents. The application typically includes several items for each project/site, such as Budget, Land Use/Zoning Designation, photos, Property Affidavit, Site Characterization, map, Work Plan, and Resolution. The Resolution is carried out through the governing body of the applicant (additional information is available). It is possible to include multiple projects/sites within a single application.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-07 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "163098",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Tribal Wildfire Resilience Grants Solicitation 2026",
+      "GrantTitle": "Tribal Wildfire Resilience Grants Solicitation 2026",
+      "Description": "Tribal Wildfire Resilience grants fund projects that serve California Native American tribes, support Traditional Ecological Knowledge and cultural fire, improve forest health through forest fuels reduction, pest management, reforestation, biomass utilization, forest watershed restoration, upper watershed, riparian, and mountain meadow restoration, or research thereof, and directly or indirectly reduce greenhouse gas emissions. These projects address critical needs in tribal communities, and may include a combination of:  Implementing & training Traditional Ecological Knowledges & indigenous stewardship Cultural and prescribed burns Creation and maintenance of shaded fuel breaks and defensible space Forest and wildfire resilience projects such as: reforestation dead and dying tree removal understory thinning and/or removal Forest health & restoration projects Increasing biodiversity and improving access to and use of traditional foods and culturally significant species Workforce Development and training programs in fire, forestry, and related Traditional Ecological Knowledge Mapping projects Development of restoration plans, fire or forest management plans Biological and cultural surveys Environmental compliance and permitting Fuels management Fire reintroduction (and planning for fire reintroduction)",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$10,000,000",
+      "Categories": "Agriculture; Disadvantaged Communities; Disaster Prevention & Relief; Employment, Labor & Training; Environment & Water; Food & Nutrition; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "180519",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2026 Wildfire Resilience Block Grants",
+      "GrantTitle": "2026 Wildfire Resilience Block Grants",
+      "Description": "Projects under this grant:  Make funding available through agreements with private nonindustrial forest landowners to pay for specific, non-commercial ecological forest improvement and wildfire resilience practices to the extent they support reforestation and longevity of existing regeneration.Provide technical assistance to promote information sharing and education on the full range of effective reforestation practices and opportunities as well as forest management education and management planni\u00a0 \u00a0 \u00a0 \u00a0 \u00a0Promote long-term storage of carbon in forest trees and soils through reforestation and reduction of forest overcrowding and pests.  Further the goals of the California Forest Carbon Plan, California\u2019s Natural and Working Lands Climate Smart Strategy, California\u2019s Wildfire & Forest Resilience Action Plan, California\u2019s Strategic Plan for Expanding the Use of Beneficial Fire, and AB 32 Climate Change Scoping Plan.CAL FIRE seeks to significantly increase reforestation of forests degraded by overcrowding, drought, pest infestation, and catastrophic fire.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-08-07 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$10,000,000",
+      "Categories": "Agriculture",
+      "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "180546",
+      "Source": "ca.gov"
+    },
     {
       "Title": "FY 2026-27 Bullying and Violence in School Advocacy (XB) Program Supplemental",
       "GrantTitle": "FY 2026-27 Bullying and Violence in School Advocacy (XB) Program Supplemental",
@@ -272,22 +320,6 @@
       "ApplicantType": "Business; Individual; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "182694",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "2026 Wildfire Resilience Block Grants",
-      "GrantTitle": "2026 Wildfire Resilience Block Grants",
-      "Description": "Projects under this grant:  Make funding available through agreements with private nonindustrial forest landowners to pay for specific, non-commercial ecological forest improvement and wildfire resilience practices to the extent they support reforestation and longevity of existing regeneration.Provide technical assistance to promote information sharing and education on the full range of effective reforestation practices and opportunities as well as forest management education and management planni\u00a0 \u00a0 \u00a0 \u00a0 \u00a0Promote long-term storage of carbon in forest trees and soils through reforestation and reduction of forest overcrowding and pests.  Further the goals of the California Forest Carbon Plan, California\u2019s Natural and Working Lands Climate Smart Strategy, California\u2019s Wildfire & Forest Resilience Action Plan, California\u2019s Strategic Plan for Expanding the Use of Beneficial Fire, and AB 32 Climate Change Scoping Plan.CAL FIRE seeks to significantly increase reforestation of forests degraded by overcrowding, drought, pest infestation, and catastrophic fire.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$10,000,000",
-      "Categories": "Agriculture",
-      "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency",
-      "GrantInfoURL": "",
-      "PortalID": "180546",
       "Source": "ca.gov"
     },
     {
@@ -595,22 +627,6 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "Regional Wildfire & Landscape Resilience Grants",
-      "GrantTitle": "Regional Wildfire & Landscape Resilience Grants",
-      "Description": "The program will follow a two-phase application process, with concept proposals due by 3 p.m. PDT on June 30, 2026.  ELIGIBLE ACTIVITIES  A. Regionally appropriate landscape resilience  B. Community hazardous fuels reduction or modification  C. Prescribed and cultural fire  D. Pest management  E. Reforestation and revegetation  F.\u00a0 Biomass Utilization  G. Maintenance of and/or improvements to previously established and completed wildfire and landscape resilience projects.  H. Planning: Up to 10% of total funds or $1 million (whichever is less).  I. Workforce Education & Training that is appropriately scaled to the overall project and clearly aligned with its primary objectives.  FUNDING PRIORITIES  A. Multi-benefit projects that have been identified as a regional priority using a transparent prioritization process that integrates data-driven analysis, practitioner expertise, and community input. P  B. Applicants that have demonstrated sufficient administrative, technical, and operational capacity to successfully manage and deliver large, multi-partner projects.  C. Projects that leverage CAL FIRE funds with other state, federal, local, and/or private/philanthropic investments including projects that align program funding across Climate Bond programs.  D. Projects that advance regional capacity to develop, prioritize, and implement wildfire and landscape resilience projects.\u00a0  E. Projects that have broad involvement from regional stakeholders, including tribes.  F.\u00a0 Projects that enlist the services of the California Conservation Corps, certified community conservation corps, or tribal corps.\u00a0  G. Projects that provide meaningful and direct benefits to disadvantaged communities, severely disadvantaged communities, or vulnerable populations.  H. Projects that advance the State\u2019s strategic goals and priorities.  I. Projects that have environmental compliance completed or have environmental compliance completed for a majority of the sub-projects.\u00a0  \u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
-      "PostedDate": "",
-      "EstAvailFunds": "$30,000,000",
-      "Categories": "Environment & Water",
-      "ApplicantType": "Individual; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "171582",
-      "Source": "ca.gov"
-    },
-    {
       "Title": "2026 Natural Community Conservation Planning Local Assistance Grant Program",
       "GrantTitle": "2026 Natural Community Conservation Planning Local Assistance Grant Program",
       "Description": "The California Department of Fish and Wildlife seeks proposals for highest priority projects associated with the implementation of an NCCP. The intention of this Proposal Solicitation Package (PSP) is to solicit proposals of the highest quality that are consistent with the goals of the NCCP Program. To help achieve this intention, the PSP provides guidance on Applicant eligibility, the grant process and deadlines, and application and submission procedures.  Proposals must address the highest priority tasks associated with the implementation of an NCCP such as:  Management Activities: Immediate management actions on newly acquired NCCP reserve lands.  Restoration/Enhancement: Restoration or enhancement of habitats or species populations on NCCP reserve lands.  Monitoring: Design and implementation of biological monitoring programs identified in an NCCP, including the establishment of sampling methods, monitoring plots, data collection, management, and analysis.  Reserve Management Plans: Development and implementation of individual reserve management plans.  Mapping: New or updated mapping in support of NCCP management or monitoring activities, such as vegetation community mapping.  Targeted Studies for Adaptive Management: Studies to evaluate management actions for covered habitats or species, and whether such actions are meeting stated goals or require adjustments through adaptive management.  Other: Other non-land acquisition priority tasks, identified by the applicant and implementing partners, which are needed to ensure effective implementation of the NCCP.  This solicitation opens on June 1st, 2026, and closes at 8:00 pm (PDT) July 31st, 2026.",
@@ -835,6 +851,22 @@
       "Source": "ca.gov"
     },
     {
+      "Title": "Regional Wildfire & Landscape Resilience Grants",
+      "GrantTitle": "Regional Wildfire & Landscape Resilience Grants",
+      "Description": "The program will follow a two-phase application process, with concept proposals due by 3 p.m. PDT on June 30, 2026.  ELIGIBLE ACTIVITIES  A. Regionally appropriate landscape resilience  B. Community hazardous fuels reduction or modification  C. Prescribed and cultural fire  D. Pest management  E. Reforestation and revegetation  F.\u00a0 Biomass Utilization  G. Maintenance of and/or improvements to previously established and completed wildfire and landscape resilience projects.  H. Planning: Up to 10% of total funds or $1 million (whichever is less).  I. Workforce Education & Training that is appropriately scaled to the overall project and clearly aligned with its primary objectives.  FUNDING PRIORITIES  A. Multi-benefit projects that have been identified as a regional priority using a transparent prioritization process that integrates data-driven analysis, practitioner expertise, and community input. P  B. Applicants that have demonstrated sufficient administrative, technical, and operational capacity to successfully manage and deliver large, multi-partner projects.  C. Projects that leverage CAL FIRE funds with other state, federal, local, and/or private/philanthropic investments including projects that align program funding across Climate Bond programs.  D. Projects that advance regional capacity to develop, prioritize, and implement wildfire and landscape resilience projects.\u00a0  E. Projects that have broad involvement from regional stakeholders, including tribes.  F.\u00a0 Projects that enlist the services of the California Conservation Corps, certified community conservation corps, or tribal corps.\u00a0  G. Projects that provide meaningful and direct benefits to disadvantaged communities, severely disadvantaged communities, or vulnerable populations.  H. Projects that advance the State\u2019s strategic goals and priorities.  I. Projects that have environmental compliance completed or have environmental compliance completed for a majority of the sub-projects.\u00a0  \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-06-30 14:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$30,000,000",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "171582",
+      "Source": "ca.gov"
+    },
+    {
       "Title": "CAL FIRE Wood Products and Bioenergy \u2013 Local Conservation Corps",
       "GrantTitle": "CAL FIRE Wood Products and Bioenergy \u2013 Local Conservation Corps",
       "Description": "This grant opportunity is for workforce development for fire prevention and wildfire resiliency work in California.\u00a0The following are examples of activities eligible for funding: developing and expanding the workforce in fire prevention, wildfire resiliency, prescribed fire, right-of-way clearing, forestry, and other forest-industry support services.",
@@ -888,7 +920,7 @@
       "Description": "The Wildfire Prevention Grants Program funds three types of activities: hazardous fuels reduction, Wildfire prevention planning, and Wildfire prevention education. Please see the corresponding FY 2025-26 Wildfire Prevention Grants Procedural Guide located on the Wildfire Prevention Grants webpage.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-07-08 15:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$70,000,000",
@@ -7027,9 +7059,9 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "F-gas Reduction Incentive Program (FRIP): Commercial and Industrial Refrigeration",
-      "GrantTitle": "F-gas Reduction Incentive Program (FRIP): Commercial and Industrial Refrigeration",
-      "Description": "The goal of FRIP is to reduce fluorinated gas emissions by incentivizing the adoption of climate-friendly technologies, particularly ultra-low-GWP technologies, defined as having a GWP less than ten, as directed by the legislature. Incentives are expected to help these technologies achieve economies of scale, which will lead to wider market adoption and, therefore, greater greenhouse gas (GHG) reductions and support California in achieving the Senate Bill 1383 legislative mandate.  The California Air Resources Board (CARB) has $38.5 million for commercial and industrial refrigeration in existing facilities with >50 pounds of high-GWP refrigerant in at least one refrigeration system. Funding will be allocated across three commercial and industrial refrigeration sectors including Retail Food Refrigeration, Industrial Process Refrigeration, and Cold Storage and Other Refrigeration.  Applicants must use the FRIP web portal to apply for funding. Funding will be awarded on a first come, first served basis.  FRIP is administered in partnership with CARB\u2019s third-party administrator, the North American Sustainable Refrigeration Council (NASRC). NASRC is available to provide application assistance, including support understanding eligible technologies, scoping projects, obtaining project bids, and submitting FRIP applications. Contact info@fripfunding.com or 833-852-FRIP (833-852-3747) for more information and for application assistance.",
+      "Title": "F-gas Reduction Incentive Program (FRIP): Commercial and Industrial Refrigeration (Window 1)",
+      "GrantTitle": "F-gas Reduction Incentive Program (FRIP): Commercial and Industrial Refrigeration (Window 1)",
+      "Description": "The goal of FRIP is to reduce fluorinated gas emissions by incentivizing the adoption of climate-friendly technologies, particularly ultra-low-GWP technologies, defined as having a GWP less than ten, as directed by the legislature. Incentives are expected to help these technologies achieve economies of scale, which will lead to wider market adoption and, therefore, greater greenhouse gas (GHG) reductions and support California in achieving the Senate Bill 1383 legislative mandate.    The California Air Resources Board (CARB) has $38.5 million for commercial and industrial refrigeration in existing facilities with >50 pounds of high-GWP refrigerant in at least one refrigeration system. Funding will be allocated across three commercial and industrial refrigeration sectors including Retail Food Refrigeration, Industrial Process Refrigeration, and Cold Storage and Other Refrigeration.    Applicants must use the FRIP web portal to apply for funding. Funding will be awarded on a first come, first served basis.    FRIP is administered in partnership with CARB\u2019s third-party administrator, the North American Sustainable Refrigeration Council (NASRC). NASRC is available to provide application assistance, including support understanding eligible technologies, scoping projects, obtaining project bids, and submitting FRIP applications. Contact info@fripfunding.com or 833-852-FRIP (833-852-3747) for more information and for application assistance.",
       "AgencyName": "",
       "Agency": "",
       "Status": "closed",
@@ -38136,23 +38168,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Research Center for Promoting Work and Strong Families",
-      "GrantTitle": "National Research Center for Promoting Work and Strong Families",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OFA-PG-0059",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362168",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362168",
-      "Source": "federal"
-    },
-    {
       "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
       "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
       "Description": "",
@@ -38201,23 +38216,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358863",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358863",
-      "Source": "federal"
-    },
-    {
-      "Title": "Title X Family Planning Services Grants",
-      "GrantTitle": "Title X Family Planning Services Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-FPH-27-001",
-      "Status": "posted",
-      "ApplicationDeadline": "01/09/2027",
-      "PostedDate": "04/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361754",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361754",
       "Source": "federal"
     },
     {
@@ -41978,6 +41976,40 @@
       "Source": "federal"
     },
     {
+      "Title": "National Research Center for Promoting Work and Strong Families",
+      "GrantTitle": "National Research Center for Promoting Work and Strong Families",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-OFA-PG-0059",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/01/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362168",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362168",
+      "Source": "federal"
+    },
+    {
+      "Title": "Tobacco Centers of Regulatory Science (TCORS) (Clinical Trial Optional)",
+      "GrantTitle": "Tobacco Centers of Regulatory Science (TCORS) (Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-OD-28-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363126",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363126",
+      "Source": "federal"
+    },
+    {
       "Title": "Kinship Navigator Programs: Evaluations",
       "GrantTitle": "Kinship Navigator Programs: Evaluations",
       "Description": "",
@@ -41993,16 +42025,33 @@
       "OpportunityID": "361914",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361914",
       "Source": "federal"
+    },
+    {
+      "Title": "Title X Family Planning Services Grants",
+      "GrantTitle": "Title X Family Planning Services Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-FPH-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "01/11/2027",
+      "PostedDate": "04/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361754",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361754",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2571,
+  "totalCount": 2574,
   "sources": {
     "ca": {
-      "count": 1960,
+      "count": 1962,
       "success": true
     },
     "federal": {
-      "count": 877,
+      "count": 878,
       "success": true
     }
   },
