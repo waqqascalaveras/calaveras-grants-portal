@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-10T07:17:09.358170Z",
+  "fetchedAt": "2026-07-10T18:34:20.222844Z",
   "success": true,
   "grants": [
     {
@@ -259,22 +259,6 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "OPIOID AND STIMULANT USE DISORDER PREVENTION AND EDUCATION",
-      "GrantTitle": "OPIOID AND STIMULANT USE DISORDER PREVENTION AND EDUCATION",
-      "Description": "This funding opportunity will support programs addressing opioid use, stimulant use and polysubstance use in California\u2019s communities, which have been impacted by the opioid and stimulant use disorder crises. While California has made significant progress in addressing the opioid epidemic, in 2024 there were still 5,462 overdose deaths reported1.The goals of this funding opportunity are to support awareness, outreach and education addressing opioids and stimulants, as well as polysubstance use, and to strengthen referral pathways to care and treatment services, including Medications for Opioid Use Disorder (MOUD), in all communities across the state.We invite applications from community-based and nonprofit organizations that have a strong track record of delivering community outreach and education projects.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "2026-07-22 00:00:00",
-      "PostedDate": "",
-      "EstAvailFunds": null,
-      "Categories": "Health & Human Services",
-      "ApplicantType": "Nonprofit",
-      "GrantInfoURL": "",
-      "PortalID": "183486",
-      "Source": "ca.gov"
-    },
-    {
       "Title": "The Electric Vehicle Infrastructure Training Program Fund (EVITP Fund) 2.0",
       "GrantTitle": "The Electric Vehicle Infrastructure Training Program Fund (EVITP Fund) 2.0",
       "Description": "EVITP is a nonprofit organization that provides online proprietary training and certification for general electricians to install electric vehicle supply equipment in the United States and Canada. The $275 online training program takes approximately 20 hours to complete. Curriculum modules include load requirements, electrical codes and regulations, electric installation of direct current chargers, inductive charging, vehicle-to-grid applications, and best practices for charger installation and maintenance. After successful completion of the online training course, electricians are certified through a proctored online examination. EVITP does not train or certify contractors or employers, only eligible electricians. EVITP certification is valid for three years.",
@@ -336,6 +320,22 @@
       "ApplicantType": "Nonprofit; Public Agency",
       "GrantInfoURL": "",
       "PortalID": "182691",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "OPIOID AND STIMULANT USE DISORDER PREVENTION AND EDUCATION",
+      "GrantTitle": "OPIOID AND STIMULANT USE DISORDER PREVENTION AND EDUCATION",
+      "Description": "This funding opportunity will support programs addressing opioid use, stimulant use and polysubstance use in California\u2019s communities, which have been impacted by the opioid and stimulant use disorder crises. While California has made significant progress in addressing the opioid epidemic, in 2024 there were still 5,462 overdose deaths reported1.The goals of this funding opportunity are to support awareness, outreach and education addressing opioids and stimulants, as well as polysubstance use, and to strengthen referral pathways to care and treatment services, including Medications for Opioid Use Disorder (MOUD), in all communities across the state.We invite applications from community-based and nonprofit organizations that have a strong track record of delivering community outreach and education projects.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-07-22 01:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "183486",
       "Source": "ca.gov"
     },
     {
@@ -1045,7 +1045,7 @@
     {
       "Title": "2026-2027 Zip Books",
       "GrantTitle": "2026-2027 Zip Books",
-      "Description": "The Zip Books program is an alternative model for interlibrary loan service that bridges the gaps between a library\u2019s patron request service, a normal acquisitions process, and an outreach/home delivery service. It is based on a project called \u201cZip Books\u2014Digital Library of Northern California,\u201d conducted by the Butte, Shasta, and Humboldt County Libraries under a FY 2011/12 LSTA grant from the California State Library. The Zip Books program is currently supported with California Library Services Act funds from the state of California.  Under the Zip Books program, patrons request books that the library does not own. The library then orders the book from Amazon, and the book is shipped directly to the patron\u2019s home. When the patron is finished with the book, the book is returned to the library and added to the collection.",
+      "Description": "The Zip Books program is an alternative model for interlibrary loan service that bridges the gaps between a library\u2019s patron request service, a normal acquisitions process, and an outreach/home delivery service. It is based on a project called \u201cZip Books\u2014Digital Library of Northern California,\u201d conducted by the Butte, Shasta, and Humboldt County Libraries under a FY 2011/12 LSTA grant from the California State Library. The Zip Books program is currently supported with California Library Services Act funds from the state of California.    Under the Zip Books program, patrons request books that the library does not own. The library then orders the book from Amazon, and the book is shipped directly to the patron\u2019s home. When the patron is finished with the book, the book is returned to the library and added to the collection.    Please note, the recently passed state budget does not contain money for the Zip Books program. The State Library is unable to award grants to libraries that applied for funds for the 2026-2027 fiscal year. We want to express our appreciation for the time and effort your library team put into your 2026-2027 Zip Books applications.\u00a0    If you have any questions, please contact Reed Strege, Library Programs Administrator, at reed.strege@library.ca.gov.",
       "AgencyName": "",
       "Agency": "",
       "Status": "closed",
@@ -37437,23 +37437,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Wilson Fish Bridge to Employment Program",
-      "GrantTitle": "Wilson Fish Bridge to Employment Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ORR-RW-0008",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/14/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361890",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361890",
-      "Source": "federal"
-    },
-    {
       "Title": "Medical Scientist Training Program (MSTP) (T32)",
       "GrantTitle": "Medical Scientist Training Program (MSTP) (T32)",
       "Description": "",
@@ -41942,6 +41925,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Rigorously Evaluating Approaches to Prevent Child Sexual Abuse and Problematic Sexual Behavior among Youth",
+      "GrantTitle": "Rigorously Evaluating Approaches to Prevent Child Sexual Abuse and Problematic Sexual Behavior among Youth",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-016",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363147",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363147",
+      "Source": "federal"
+    },
+    {
+      "Title": "Eviction Protection Grant Program",
+      "GrantTitle": "Eviction Protection Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PDR-2600-DC-0079",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363148",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363148",
+      "Source": "federal"
+    },
+    {
       "Title": "Preventing Suicide and Interpersonal Violence Among Youth and Young Adults",
       "GrantTitle": "Preventing Suicide and Interpersonal Violence Among Youth and Young Adults",
       "Description": "",
@@ -41957,16 +41974,50 @@
       "OpportunityID": "363141",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363141",
       "Source": "federal"
+    },
+    {
+      "Title": "Continuing Enhanced National Surveillance for Prion Diseases in the United States",
+      "GrantTitle": "Continuing Enhanced National Surveillance for Prion Diseases in the United States",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-CK-27-0046",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363153",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363153",
+      "Source": "federal"
+    },
+    {
+      "Title": "Wilson Fish Bridge to Employment Program",
+      "GrantTitle": "Wilson Fish Bridge to Employment Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ORR-RW-0008",
+      "Status": "posted",
+      "ApplicationDeadline": "08/10/2026",
+      "PostedDate": "07/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361890",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361890",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2569,
+  "totalCount": 2572,
   "sources": {
     "ca": {
       "count": 1962,
       "success": true
     },
     "federal": {
-      "count": 873,
+      "count": 876,
       "success": true
     }
   },
