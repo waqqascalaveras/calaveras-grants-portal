@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-09T18:39:56.291049Z",
+  "fetchedAt": "2026-07-10T07:17:09.358170Z",
   "success": true,
   "grants": [
     {
@@ -34496,23 +34496,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
-      "GrantTitle": "NIH SIREN Neurologic Clinical Trials (UG3/UH3 - Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-049",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "11/07/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357036",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357036",
-      "Source": "federal"
-    },
-    {
       "Title": "Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)",
       "GrantTitle": "Expanding the Therapeutic Pipeline for Treating and Preventing Alzheimer's Disease and Related Dementias: Preclinical Validation and Drug Discovery for Novel Candidate Targets (U01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -37573,23 +37556,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Coccidioidomycosis Collaborative Research Centers (P01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Coccidioidomycosis Collaborative Research Centers (P01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-012",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "05/04/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360878",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360878",
-      "Source": "federal"
-    },
-    {
       "Title": "Tuberculosis Research Advancement Centers (TRACs) (P30 Clinical Trial Not Allowed)",
       "GrantTitle": "Tuberculosis Research Advancement Centers (TRACs) (P30 Clinical Trial Not Allowed)",
       "Description": "",
@@ -37706,23 +37672,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360543",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360543",
-      "Source": "federal"
-    },
-    {
-      "Title": "NEA Grants for Arts Projects 2, FY 2027",
-      "GrantTitle": "NEA Grants for Arts Projects 2, FY 2027",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "2026NEA01GAP2",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "05/04/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362192",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362192",
       "Source": "federal"
     },
     {
@@ -38525,23 +38474,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center  (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study Renewal - Data Analysis, Informatics and Resource Center, and Coordinating Center  (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-003",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "06/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359275",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359275",
-      "Source": "federal"
-    },
-    {
       "Title": "Optimal Treatment Strategies for use of Anti-Obesity Medications (AOMs) in Children and Adolescents Research Coordinating Center (U24 Clinical Trial Not Allowed)",
       "GrantTitle": "Optimal Treatment Strategies for use of Anti-Obesity Medications (AOMs) in Children and Adolescents Research Coordinating Center (U24 Clinical Trial Not Allowed)",
       "Description": "",
@@ -38556,23 +38488,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360441",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360441",
-      "Source": "federal"
-    },
-    {
-      "Title": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study-Research Project Sites (U01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Limited Competition for the Adolescent Brain Cognitive Development -Extended (ABCD-E) Study-Research Project Sites (U01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-002",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "06/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358885",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358885",
       "Source": "federal"
     },
     {
@@ -39508,40 +39423,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358964",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358964",
-      "Source": "federal"
-    },
-    {
-      "Title": "Single Source: HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Data Translation Center (U54 Clinical Trial Optional)",
-      "GrantTitle": "Single Source: HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Data Translation Center (U54 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HL-27-009",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "05/19/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360444",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360444",
-      "Source": "federal"
-    },
-    {
-      "Title": "HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Clinical Trial Center and Clinical Centers (U01 Clinical Trial Optional)",
-      "GrantTitle": "HeartShare 2.0: Refining Heart Failure Subtypes and Treatment Targets for Personalized Clinical Trials - Clinical Trial Center and Clinical Centers (U01 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HL-27-008",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "05/19/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360439",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360439",
       "Source": "federal"
     },
     {
@@ -41500,23 +41381,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
-      "GrantTitle": "Increasing awareness and knowledge of Alpha-gal Syndrome in the United States",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CK-26-0193",
-      "Status": "posted",
-      "ApplicationDeadline": "07/09/2026",
-      "PostedDate": "05/19/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360958",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360958",
-      "Source": "federal"
-    },
-    {
       "Title": "Grants to Support New Investigators in Conducting Research to Prevent Interpersonal Violence and Suicide Among Children and Adolescents",
       "GrantTitle": "Grants to Support New Investigators in Conducting Research to Prevent Interpersonal Violence and Suicide Among Children and Adolescents",
       "Description": "",
@@ -42010,6 +41874,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Title X Family Planning Services Grants",
+      "GrantTitle": "Title X Family Planning Services Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-FPH-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "01/11/2027",
+      "PostedDate": "04/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361754",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361754",
+      "Source": "federal"
+    },
+    {
       "Title": "Kinship Navigator Programs: Evaluations",
       "GrantTitle": "Kinship Navigator Programs: Evaluations",
       "Description": "",
@@ -42027,31 +41908,65 @@
       "Source": "federal"
     },
     {
-      "Title": "Title X Family Planning Services Grants",
-      "GrantTitle": "Title X Family Planning Services Grants",
+      "Title": "Research Grants to Rigorously Evaluate Innovative and Promising Approaches to Prevent Firearm-Related Violence and Injuries",
+      "GrantTitle": "Research Grants to Rigorously Evaluate Innovative and Promising Approaches to Prevent Firearm-Related Violence and Injuries",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "PA-FPH-27-001",
-      "Status": "posted",
-      "ApplicationDeadline": "01/11/2027",
-      "PostedDate": "04/03/2026",
+      "OpportunityNumber": "RFA-CE-27-014",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/09/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361754",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361754",
+      "OpportunityID": "363137",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363137",
+      "Source": "federal"
+    },
+    {
+      "Title": "National Viral Hepatitis Education, Awareness, and Capacity Building for Communities and Providers",
+      "GrantTitle": "National Viral Hepatitis Education, Awareness, and Capacity Building for Communities and Providers",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0011",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363142",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363142",
+      "Source": "federal"
+    },
+    {
+      "Title": "Preventing Suicide and Interpersonal Violence Among Youth and Young Adults",
+      "GrantTitle": "Preventing Suicide and Interpersonal Violence Among Youth and Young Adults",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-015",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363141",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363141",
       "Source": "federal"
     }
   ],
-  "totalCount": 2574,
+  "totalCount": 2569,
   "sources": {
     "ca": {
       "count": 1962,
       "success": true
     },
     "federal": {
-      "count": 878,
+      "count": 873,
       "success": true
     }
   },
