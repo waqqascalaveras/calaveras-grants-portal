@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-07-11T06:50:57.017723Z",
+  "fetchedAt": "2026-07-11T18:21:35.489646Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Local Highway Safety Improvement Program (HSIP)",
+      "GrantTitle": "Local Highway Safety Improvement Program (HSIP)",
+      "Description": "The Highway Safety Improvement Program (HSIP), codified as Section 148 of Title 23, United States Code (23 U.S.C \u00a7148), is a core federal-aid program with the purpose to achieve a significant reduction in traffic fatalities and serious injuries on all public roads. The Division of Local Assistance (DLA) manages California's local agency share of HSIP funds. California's Local HSIP focuses on infrastructure projects with nationally recognized crash reduction factors (CRFs). Local HSIP projects must be identified on the basis of crash experience, crash potential, crash rate, or other data-supported means.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-11-02 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$370,000,000",
+      "Categories": "Transportation",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "187065",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR92",
       "GrantTitle": "Farm and Ranch Solid Waste Cleanup and Abatement Grant Program FR92",
@@ -8768,22 +8784,6 @@
       "ApplicantType": "Nonprofit; Other Legal Entity; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": "61971",
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Local Highway Safety Improvement Program (HSIP)",
-      "GrantTitle": "Local Highway Safety Improvement Program (HSIP)",
-      "Description": "The Highway Safety Improvement Program (HSIP), codified as Section 148 of Title 23, United States Code (23 U.S.C \u00a7148), is a core federal-aid program to States for the purpose of achieving a significant reduction in fatalities and serious injuries on all public roads. The Division of Local Assistance (DLA) manages California's local agency share of HSIP funds. California's Local HSIP focuses on infrastructure projects with nationally recognized crash reduction factors (CRFs). Local HSIP projects must be identified on the basis of crash experience, crash potential, crash rate, or other data-supported means.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2024-09-09 23:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$300,000,000",
-      "Categories": "Transportation",
-      "ApplicantType": "Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": "61968",
       "Source": "ca.gov"
     },
     {
@@ -41741,7 +41741,7 @@
   "totalCount": 2556,
   "sources": {
     "ca": {
-      "count": 1962,
+      "count": 1963,
       "success": true
     },
     "federal": {
@@ -41750,7 +41750,7 @@
     }
   },
   "duplicates": {
-    "count": 266,
+    "count": 267,
     "examples": [
       {
         "original": "Beverage Container Redemption Innovation Grant",
