@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-12T18:22:32.667366Z",
+  "fetchedAt": "2026-07-13T07:15:18.119871Z",
   "success": true,
   "grants": [
     {
@@ -36077,40 +36077,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
-      "GrantTitle": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0142",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360710",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360710",
-      "Source": "federal"
-    },
-    {
-      "Title": "Strengthening Botswana's national data, performance management, and surveillance systems for a sustainable and government-led HIV, TB, and related public health response",
-      "GrantTitle": "Strengthening Botswana's national data, performance management, and surveillance systems for a sustainable and government-led HIV, TB, and related public health response",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0126",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360701",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360701",
-      "Source": "federal"
-    },
-    {
       "Title": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
       "GrantTitle": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
       "Description": "",
@@ -41738,14 +41704,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2556,
+  "totalCount": 2554,
   "sources": {
     "ca": {
       "count": 1963,
       "success": true
     },
     "federal": {
-      "count": 860,
+      "count": 858,
       "success": true
     }
   },
