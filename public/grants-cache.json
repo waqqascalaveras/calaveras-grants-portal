@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-07-18T06:43:57.141054Z",
+  "fetchedAt": "2026-07-18T18:21:47.164611Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Technical Assistance Program (TAP) 2026-2027",
+      "GrantTitle": "Technical Assistance Program (TAP) 2026-2027",
+      "Description": "This grant is ONLY open to Small Business Technical Assistance Centers.\u00a0This is NOT a grant to small businesses.\u00a0  Program Background:\u00a0California is home to a range of small business technical assistance centers (\u201cCenters\u201d) that provide free or low-cost one-on-one, confidential consulting and training to help small businesses and entrepreneurs start, grow and expand, and create jobs in California. These Centers are funded in part by federal and private funding sources and are a crucial aspect of the support system for small business growth and entrepreneurship across the State.  TAP provides state funding to support direct services to small businesses and entrepreneurs including through expansion of services to underserved businesses and regions. The program is intended for established Centers with a track record of high-quality technical assistance work. In addition, the program is intended for centers with the capacity to build on existing work, expand to serve California\u2019s underserved business groups, and ensure equitable access and opportunity for all California small businesses.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-08-17 16:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$23,000,000",
+      "Categories": "Housing, Community and Economic Development",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "187587",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Workforce Accelerator Fund 14",
       "GrantTitle": "Workforce Accelerator Fund 14",
@@ -456,7 +472,7 @@
       "Description": "CDFW may make grants to, reimburse, or enter into contracts or other agreements, as defined in subdivision (a) of Section 1571, with public and private entities, including universities, nonprofit organizations, and California Native American tribes, as defined in Section 21073 of the Public Resources Code, for the use of the funds from the Upland Game Bird Account to carry out the purposes of Fish and Game Code \u00a73684, including related habitat conservation projects. Any proposal fitting the criteria in this statue is qualified to be funded.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-07-17 16:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$300,000",
@@ -1064,7 +1080,7 @@
       "Description": "Conservancy priority for the funding is for projects that advance the evaluation of sea otter reintroduction as a potential recovery strategy for southern sea otters in California. This may include activities such as conducting biological and socioeconomic studies, stakeholder engagement, risk and impact analyses, baseline assessments, and other research and planning.  \u00a0  Other projects that plan, implement, or conducted research related to other critical recovery actions of the Federal Southern Sea Otter Recovery Plan will be considered as a second priority.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-07-17 23:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -25611,7 +25627,7 @@
       "Status": "active",
       "ApplicationDeadline": "Ongoing",
       "PostedDate": "",
-      "EstAvailFunds": "$5,500,000",
+      "EstAvailFunds": "$5,280,000",
       "Categories": "Energy; Environment & Water",
       "ApplicantType": "Business; Nonprofit; Public Agency",
       "GrantInfoURL": "",
@@ -41447,10 +41463,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2539,
+  "totalCount": 2540,
   "sources": {
     "ca": {
-      "count": 1965,
+      "count": 1966,
       "success": true
     },
     "federal": {
