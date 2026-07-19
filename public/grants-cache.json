@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-18T18:21:47.164611Z",
+  "fetchedAt": "2026-07-19T06:56:18.287656Z",
   "success": true,
   "grants": [
     {
@@ -35853,23 +35853,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
-      "GrantTitle": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-DP-26-0122",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "03/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361560",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361560",
-      "Source": "federal"
-    },
-    {
       "Title": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
       "GrantTitle": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
       "Description": "",
@@ -41463,14 +41446,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2540,
+  "totalCount": 2539,
   "sources": {
     "ca": {
       "count": 1966,
       "success": true
     },
     "federal": {
-      "count": 842,
+      "count": 841,
       "success": true
     }
   },
