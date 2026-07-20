@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-19T18:22:03.748053Z",
+  "fetchedAt": "2026-07-20T07:12:25.739283Z",
   "success": true,
   "grants": [
     {
@@ -35853,23 +35853,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
-      "GrantTitle": "Improving regional capacity to respond to HIV, TB, and other global health priorities in Central America",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0130",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/01/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360704",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360704",
-      "Source": "federal"
-    },
-    {
       "Title": "Neural Ensembles &amp; Used Substances (NExUS) Collaboratory: Building a Multimodal Inventory of Cell Ensembles Encoding the Effects of Addictive Substances",
       "GrantTitle": "Neural Ensembles &amp; Used Substances (NExUS) Collaboratory: Building a Multimodal Inventory of Cell Ensembles Encoding the Effects of Addictive Substances",
       "Description": "",
@@ -41446,14 +41429,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2539,
+  "totalCount": 2538,
   "sources": {
     "ca": {
       "count": 1966,
       "success": true
     },
     "federal": {
-      "count": 841,
+      "count": 840,
       "success": true
     }
   },
