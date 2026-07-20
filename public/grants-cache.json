@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T07:12:25.739283Z",
+  "fetchedAt": "2026-07-20T18:41:18.587763Z",
   "success": true,
   "grants": [
     {
@@ -40800,23 +40800,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
-      "GrantTitle": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ACYF-CF-0005",
-      "Status": "posted",
-      "ApplicationDeadline": "08/07/2026",
-      "PostedDate": "07/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361961",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361961",
-      "Source": "federal"
-    },
-    {
       "Title": "Regional Partnership Grants",
       "GrantTitle": "Regional Partnership Grants",
       "Description": "",
@@ -41242,6 +41225,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Improving Linkage to Care for People with Opioid Use Disorder (U01)",
+      "GrantTitle": "Improving Linkage to Care for People with Opioid Use Disorder (U01)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-CE-27-017",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363058",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363058",
+      "Source": "federal"
+    },
+    {
       "Title": "NIJ FY 2026 State and Local Collection and Reporting of Crime Data",
       "GrantTitle": "NIJ FY 2026 State and Local Collection and Reporting of Crime Data",
       "Description": "",
@@ -41361,23 +41361,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Lead Hazard Reduction Grant Program",
-      "GrantTitle": "Lead Hazard Reduction Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "LHC-2600-DC-0013",
-      "Status": "posted",
-      "ApplicationDeadline": "08/31/2026",
-      "PostedDate": "07/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362367",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362367",
-      "Source": "federal"
-    },
-    {
       "Title": "Healthy Homes Production Grant Program",
       "GrantTitle": "Healthy Homes Production Grant Program",
       "Description": "",
@@ -41392,6 +41375,57 @@
       "AwardFloor": 0,
       "OpportunityID": "362368",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
+      "Source": "federal"
+    },
+    {
+      "Title": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
+      "GrantTitle": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ACYF-CF-0005",
+      "Status": "posted",
+      "ApplicationDeadline": "08/07/2026",
+      "PostedDate": "07/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361961",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361961",
+      "Source": "federal"
+    },
+    {
+      "Title": "Clinical and Translational Science Award",
+      "GrantTitle": "Clinical and Translational Science Award",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363244",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363244",
+      "Source": "federal"
+    },
+    {
+      "Title": "Lead Hazard Reduction Grant Program",
+      "GrantTitle": "Lead Hazard Reduction Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LHC-2600-DC-0013",
+      "Status": "posted",
+      "ApplicationDeadline": "08/31/2026",
+      "PostedDate": "07/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362367",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362367",
       "Source": "federal"
     },
     {
@@ -41412,31 +41446,31 @@
       "Source": "federal"
     },
     {
-      "Title": "Improving Linkage to Care for People with Opioid Use Disorder (U01)",
-      "GrantTitle": "Improving Linkage to Care for People with Opioid Use Disorder (U01)",
+      "Title": "The Next Generation of the Clinical and Translational Science Awards Program Trial Innovation Network",
+      "GrantTitle": "The Next Generation of the Clinical and Translational Science Awards Program Trial Innovation Network",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-CE-27-017",
+      "OpportunityNumber": "PAR-28-007",
       "Status": "forecasted",
       "ApplicationDeadline": "",
-      "PostedDate": "07/02/2026",
+      "PostedDate": "07/20/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "363058",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363058",
+      "OpportunityID": "363253",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363253",
       "Source": "federal"
     }
   ],
-  "totalCount": 2538,
+  "totalCount": 2540,
   "sources": {
     "ca": {
       "count": 1966,
       "success": true
     },
     "federal": {
-      "count": 840,
+      "count": 842,
       "success": true
     }
   },
