@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-20T18:41:18.587763Z",
+  "fetchedAt": "2026-07-21T06:57:27.595794Z",
   "success": true,
   "grants": [
     {
@@ -38573,23 +38573,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Protecting and Rehabilitating Sexually Exploited Women and Girls Through Long-Term Safe Homes",
-      "GrantTitle": "Protecting and Rehabilitating Sexually Exploited Women and Girls Through Long-Term Safe Homes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "WH-AST-26-001",
-      "Status": "posted",
-      "ApplicationDeadline": "07/20/2026",
-      "PostedDate": "06/18/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362875",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362875",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: Centers of Biomedical Research Excellence: Expansion/Sustainability Phases (COBRE-E/S) (P30 - Clinical Trial Not Allowed)",
       "GrantTitle": "Limited Competition: Centers of Biomedical Research Excellence: Expansion/Sustainability Phases (COBRE-E/S) (P30 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -38604,23 +38587,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360613",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360613",
-      "Source": "federal"
-    },
-    {
-      "Title": "Protecting Women and Girls through Founding and Replication of Existing Long-Term Safe Homes",
-      "GrantTitle": "Protecting Women and Girls through Founding and Replication of Existing Long-Term Safe Homes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "WH-AST-26-002",
-      "Status": "posted",
-      "ApplicationDeadline": "07/20/2026",
-      "PostedDate": "06/18/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362878",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362878",
       "Source": "federal"
     },
     {
@@ -39032,23 +38998,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Sustaining life-saving HIV services in Ukraine by strengthening resilient health systems under the Ukraine Ministry of Health, Public Health Center",
-      "GrantTitle": "Sustaining life-saving HIV services in Ukraine by strengthening resilient health systems under the Ukraine Ministry of Health, Public Health Center",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0172",
-      "Status": "posted",
-      "ApplicationDeadline": "07/20/2026",
-      "PostedDate": "06/18/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360755",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360755",
-      "Source": "federal"
-    },
-    {
       "Title": "Disability and Rehabilitation Research Projects (DRRP) Program: Americans with Disabilities Act (ADA) National Network",
       "GrantTitle": "Disability and Rehabilitation Research Projects (DRRP) Program: Americans with Disabilities Act (ADA) National Network",
       "Description": "",
@@ -39267,23 +39216,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362073",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362073",
-      "Source": "federal"
-    },
-    {
-      "Title": "Rural Communities Opioid Response Program (RCORP)-Technical Assistance",
-      "GrantTitle": "Rural Communities Opioid Response Program (RCORP)-Technical Assistance",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-038",
-      "Status": "posted",
-      "ApplicationDeadline": "07/27/2026",
-      "PostedDate": "06/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362834",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362834",
       "Source": "federal"
     },
     {
@@ -39981,23 +39913,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362910",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362910",
-      "Source": "federal"
-    },
-    {
-      "Title": "Housing Policy Research Grant Notice of Funding Opportunity",
-      "GrantTitle": "Housing Policy Research Grant Notice of Funding Opportunity",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PDR-2600-DC-029M",
-      "Status": "posted",
-      "ApplicationDeadline": "07/20/2026",
-      "PostedDate": "04/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361988",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361988",
       "Source": "federal"
     },
     {
@@ -41461,16 +41376,67 @@
       "OpportunityID": "363253",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363253",
       "Source": "federal"
+    },
+    {
+      "Title": "Rural Communities Opioid Response Program (RCORP)-Technical Assistance",
+      "GrantTitle": "Rural Communities Opioid Response Program (RCORP)-Technical Assistance",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-26-038",
+      "Status": "posted",
+      "ApplicationDeadline": "07/27/2026",
+      "PostedDate": "06/25/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362834",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362834",
+      "Source": "federal"
+    },
+    {
+      "Title": "Use of Digital Health Technologies in Clinical Investigations to Support Drug and Biological Product Development (U01) Clinical Trials Optional",
+      "GrantTitle": "Use of Digital Health Technologies in Clinical Investigations to Support Drug and Biological Product Development (U01) Clinical Trials Optional",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-FD-26-012",
+      "Status": "posted",
+      "ApplicationDeadline": "08/20/2026",
+      "PostedDate": "07/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363255",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363255",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 US DOT Drone Infrastructure Inspection Grants (DIIG) Program",
+      "GrantTitle": "FY26 US DOT Drone Infrastructure Inspection Grants (DIIG) Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DOT-HASS-FY26-DIIG",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363242",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363242",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2540,
+  "totalCount": 2538,
   "sources": {
     "ca": {
       "count": 1966,
       "success": true
     },
     "federal": {
-      "count": 842,
+      "count": 840,
       "success": true
     }
   },
