@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-21T18:32:48.422900Z",
+  "fetchedAt": "2026-07-22T06:58:16.097519Z",
   "success": true,
   "grants": [
     {
@@ -36549,23 +36549,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Strengthening Public Health Systems and Services through National Partnerships to Improve and Protect the Nation's Health",
-      "GrantTitle": "Strengthening Public Health Systems and Services through National Partnerships to Improve and Protect the Nation's Health",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PW-24-00800301SUPP26",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362634",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362634",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: The NHGRI Analysis, Visualization, and Informatics Lab-space (AnVIL) (U54 Clinical Trial Not Allowed)",
       "GrantTitle": "Limited Competition: The NHGRI Analysis, Visualization, and Informatics Lab-space (AnVIL) (U54 Clinical Trial Not Allowed)",
       "Description": "",
@@ -37365,23 +37348,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Communication System for Runaway and Homeless Youth Program",
-      "GrantTitle": "National Communication System for Runaway and Homeless Youth Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ACYF-CY-0160",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362072",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362072",
-      "Source": "federal"
-    },
-    {
       "Title": "Community-Based Participatory Research to Advance Data and Practice Transformation (ADAPT) for Optimizing Oral Health for All (UG3/UH3 Clinical Trial Optional)",
       "GrantTitle": "Community-Based Participatory Research to Advance Data and Practice Transformation (ADAPT) for Optimizing Oral Health for All (UG3/UH3 Clinical Trial Optional)",
       "Description": "",
@@ -38127,23 +38093,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362748",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362748",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY2025 &amp; FY2026 Historic Preservation Fund- History of Equal Rights- Preservation Grants",
-      "GrantTitle": "FY2025 &amp; FY2026 Historic Preservation Fund- History of Equal Rights- Preservation Grants",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P25AS00499",
-      "Status": "posted",
-      "ApplicationDeadline": "07/21/2026",
-      "PostedDate": "06/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362764",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362764",
       "Source": "federal"
     },
     {
@@ -41224,23 +41173,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 COPS Technology and Equipment Program",
-      "GrantTitle": "FY26 COPS Technology and Equipment Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172583",
-      "Status": "posted",
-      "ApplicationDeadline": "07/21/2026",
-      "PostedDate": "06/02/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362643",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362643",
-      "Source": "federal"
-    },
-    {
       "Title": "General Departmental Sexual Risk Avoidance Education (GDSRAE)",
       "GrantTitle": "General Departmental Sexual Risk Avoidance Education (GDSRAE)",
       "Description": "",
@@ -41428,6 +41360,23 @@
       "Source": "federal"
     },
     {
+      "Title": "National Communication System for Runaway and Homeless Youth Program",
+      "GrantTitle": "National Communication System for Runaway and Homeless Youth Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ACYF-CY-0160",
+      "Status": "posted",
+      "ApplicationDeadline": "08/19/2026",
+      "PostedDate": "07/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362072",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362072",
+      "Source": "federal"
+    },
+    {
       "Title": "FY26 Safer Outcomes Program",
       "GrantTitle": "FY26 Safer Outcomes Program",
       "Description": "",
@@ -41479,14 +41428,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2541,
+  "totalCount": 2538,
   "sources": {
     "ca": {
       "count": 1967,
       "success": true
     },
     "federal": {
-      "count": 842,
+      "count": 839,
       "success": true
     }
   },
