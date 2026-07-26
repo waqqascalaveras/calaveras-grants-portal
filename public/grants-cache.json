@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-25T18:21:54.855095Z",
+  "fetchedAt": "2026-07-26T07:00:01.311254Z",
   "success": true,
   "grants": [
     {
@@ -35290,108 +35290,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Strengthening global health security in India to contain public health threats and accelerate outbreak response",
-      "GrantTitle": "Strengthening global health security in India to contain public health threats and accelerate outbreak response",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0051",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360336",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360336",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security through local partnerships in Nigeria",
-      "GrantTitle": "Expanding global health security through local partnerships in Nigeria",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0043",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360332",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360332",
-      "Source": "federal"
-    },
-    {
-      "Title": "Strengthening Global Health Security through local partnerships in&nbsp;Sierra Leone",
-      "GrantTitle": "Strengthening Global Health Security through local partnerships in&nbsp;Sierra Leone",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0050",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360335",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360335",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding Global Health Security through local partnerships in Senegal",
-      "GrantTitle": "Expanding Global Health Security through local partnerships in Senegal",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0048",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360334",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360334",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security though local partnerships in Tanzania",
-      "GrantTitle": "Expanding global health security though local partnerships in Tanzania",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0052",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360337",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360337",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security through local partnerships in Indonesia",
-      "GrantTitle": "Expanding global health security through local partnerships in Indonesia",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0053",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360338",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360338",
-      "Source": "federal"
-    },
-    {
       "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
       "Description": "",
@@ -41274,14 +41172,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2529,
+  "totalCount": 2523,
   "sources": {
     "ca": {
       "count": 1973,
       "success": true
     },
     "federal": {
-      "count": 828,
+      "count": 822,
       "success": true
     }
   },
