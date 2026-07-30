@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-30T06:59:08.512559Z",
+  "fetchedAt": "2026-07-30T18:34:22.626527Z",
   "success": true,
   "grants": [
     {
@@ -1344,6 +1344,22 @@
       "ApplicantType": "Nonprofit",
       "GrantInfoURL": "",
       "PortalID": "163110",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Encampment Resolution Funding (ERF) Program Round 5",
+      "GrantTitle": "Encampment Resolution Funding (ERF) Program Round 5",
+      "Description": "The California Department of Housing and Community Development (HCD) is pleased to announce the availability of Encampment Resolution Funding (ERF) Program Round 5 (ERF Round 5) grant funding. Pursuant to Health and Safety Code (HSC) section 50251. ERF was established to increase collaboration between HCD, local jurisdictions, and continuums of care (CoCs) for the following purposes:    Assist local jurisdictions in ensuring the safety and wellness of people experiencing homelessness in encampments.  Provide encampment resolution grants to local jurisdictions and continuums of care to resolve critical encampment concerns and transition individuals into safe and stable housing.  Encourage a data-informed, coordinated approach to address encampment concerns.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-07-30 00:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$93,000,000",
+      "Categories": "Disadvantaged Communities; Health & Human Services; Housing, Community and Economic Development",
+      "ApplicantType": "Other Legal Entity; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "164106",
       "Source": "ca.gov"
     },
     {
@@ -36735,23 +36751,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
-      "GrantTitle": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CK-26-0230",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361931",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361931",
-      "Source": "federal"
-    },
-    {
       "Title": "Amyotrophic Lateral Sclerosis (ALS) Intermediate Patient Population Expanded Access (U01 Clinical Trial Required)",
       "GrantTitle": "Amyotrophic Lateral Sclerosis (ALS) Intermediate Patient Population Expanded Access (U01 Clinical Trial Required)",
       "Description": "",
@@ -40220,23 +40219,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Healthy Homes Production Grant Program",
-      "GrantTitle": "Healthy Homes Production Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "LHC-2600-DC-0044",
-      "Status": "posted",
-      "ApplicationDeadline": "08/31/2026",
-      "PostedDate": "07/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362368",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
-      "Source": "federal"
-    },
-    {
       "Title": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
       "GrantTitle": "Kinship Navigator Programs: Replication and Tribal Adaptation&#8203;&#8203;",
       "Description": "",
@@ -41104,23 +41086,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
-      "GrantTitle": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FTA-2026-004-TRI",
-      "Status": "posted",
-      "ApplicationDeadline": "09/28/2026",
-      "PostedDate": "07/29/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363372",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363372",
-      "Source": "federal"
-    },
-    {
       "Title": "The National Network of STI Prevention Training Centers (NNPTC)",
       "GrantTitle": "The National Network of STI Prevention Training Centers (NNPTC)",
       "Description": "",
@@ -41291,6 +41256,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Investigator-Focused Award (Parent R35)",
+      "GrantTitle": "Investigator-Focused Award (Parent R35)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-037",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363391",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363391",
+      "Source": "federal"
+    },
+    {
       "Title": "Demonstration Projects for Whole-Person Health Models for Women Living with HIV in the South",
       "GrantTitle": "Demonstration Projects for Whole-Person Health Models for Women Living with HIV in the South",
       "Description": "",
@@ -41306,16 +41288,101 @@
       "OpportunityID": "363389",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363389",
       "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2027 Regional Nutrition Hubs",
+      "GrantTitle": "Fiscal Year 2027 Regional Nutrition Hubs",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-019",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363392",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363392",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
+      "GrantTitle": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-CK-26-0230",
+      "Status": "posted",
+      "ApplicationDeadline": "08/31/2026",
+      "PostedDate": "07/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361931",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361931",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
+      "GrantTitle": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FTA-2026-004-TRI",
+      "Status": "posted",
+      "ApplicationDeadline": "09/28/2026",
+      "PostedDate": "07/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363372",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363372",
+      "Source": "federal"
+    },
+    {
+      "Title": "Core State Injury Prevention Program (Core SIPP)",
+      "GrantTitle": "Core State Injury Prevention Program (Core SIPP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-CE-27-0039",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363398",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363398",
+      "Source": "federal"
+    },
+    {
+      "Title": "Healthy Homes Production Grant Program",
+      "GrantTitle": "Healthy Homes Production Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "LHC-2600-DC-0044",
+      "Status": "posted",
+      "ApplicationDeadline": "08/31/2026",
+      "PostedDate": "07/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362368",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2531,
+  "totalCount": 2535,
   "sources": {
     "ca": {
-      "count": 1974,
+      "count": 1975,
       "success": true
     },
     "federal": {
-      "count": 830,
+      "count": 833,
       "success": true
     }
   },
