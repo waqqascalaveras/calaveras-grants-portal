@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-07-30T18:34:22.626527Z",
+  "fetchedAt": "2026-07-31T07:04:48.197137Z",
   "success": true,
   "grants": [
     {
@@ -38451,23 +38451,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Placement and Coordination Program",
-      "GrantTitle": "Placement and Coordination Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ORR-RP-0007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362962",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362962",
-      "Source": "federal"
-    },
-    {
       "Title": "Health and Extreme Weather Solutions-Focused Research Hubs (U54 - Clinical Trial Optional)",
       "GrantTitle": "Health and Extreme Weather Solutions-Focused Research Hubs (U54 - Clinical Trial Optional)",
       "Description": "",
@@ -38975,23 +38958,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360339",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360339",
-      "Source": "federal"
-    },
-    {
-      "Title": "Fiscal Year 2026 BioWatch Grant Program",
-      "GrantTitle": "Fiscal Year 2026 BioWatch Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DHS-26-GPD-091-00-99",
-      "Status": "posted",
-      "ApplicationDeadline": "07/30/2026",
-      "PostedDate": "07/15/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363186",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363186",
       "Source": "federal"
     },
     {
@@ -40012,23 +39978,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363107",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363107",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY26 Law Enforcement Mental Health and Wellness Act Program",
-      "GrantTitle": "FY26 Law Enforcement Mental Health and Wellness Act Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172553",
-      "Status": "posted",
-      "ApplicationDeadline": "07/30/2026",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362726",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362726",
       "Source": "federal"
     },
     {
@@ -41373,16 +41322,33 @@
       "OpportunityID": "362368",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
       "Source": "federal"
+    },
+    {
+      "Title": "Placement and Coordination Program",
+      "GrantTitle": "Placement and Coordination Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ORR-RP-0007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/24/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362962",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362962",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2535,
+  "totalCount": 2533,
   "sources": {
     "ca": {
       "count": 1975,
       "success": true
     },
     "federal": {
-      "count": 833,
+      "count": 831,
       "success": true
     }
   },
