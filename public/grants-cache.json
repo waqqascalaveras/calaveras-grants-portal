@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-01T06:55:19.677247Z",
+  "fetchedAt": "2026-08-01T18:23:21.484359Z",
   "success": true,
   "grants": [
     {
@@ -376,7 +376,7 @@
       "Description": "EVITP is a nonprofit organization that provides online proprietary training and certification for general electricians to install electric vehicle supply equipment in the United States and Canada. The $275 online training program takes approximately 20 hours to complete. Curriculum modules include load requirements, electrical codes and regulations, electric installation of direct current chargers, inductive charging, vehicle-to-grid applications, and best practices for charger installation and maintenance. After successful completion of the online training course, electricians are certified through a proctored online examination. EVITP does not train or certify contractors or employers, only eligible electricians. EVITP certification is valid for three years.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-07-31 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$2,700,000",
@@ -744,7 +744,7 @@
       "Description": "The California Department of Fish and Wildlife seeks proposals for highest priority projects associated with the implementation of an NCCP. The intention of this Proposal Solicitation Package (PSP) is to solicit proposals of the highest quality that are consistent with the goals of the NCCP Program. To help achieve this intention, the PSP provides guidance on Applicant eligibility, the grant process and deadlines, and application and submission procedures.  Proposals must address the highest priority tasks associated with the implementation of an NCCP such as:  Management Activities: Immediate management actions on newly acquired NCCP reserve lands.  Restoration/Enhancement: Restoration or enhancement of habitats or species populations on NCCP reserve lands.  Monitoring: Design and implementation of biological monitoring programs identified in an NCCP, including the establishment of sampling methods, monitoring plots, data collection, management, and analysis.  Reserve Management Plans: Development and implementation of individual reserve management plans.  Mapping: New or updated mapping in support of NCCP management or monitoring activities, such as vegetation community mapping.  Targeted Studies for Adaptive Management: Studies to evaluate management actions for covered habitats or species, and whether such actions are meeting stated goals or require adjustments through adaptive management.  Other: Other non-land acquisition priority tasks, identified by the applicant and implementing partners, which are needed to ensure effective implementation of the NCCP.  This solicitation opens on June 1st, 2026, and closes at 8:00 pm (PDT) July 31st, 2026.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-07-31 20:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$576,000",
@@ -41408,20 +41408,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Healthy Homes Production Grant Program",
-      "GrantTitle": "Healthy Homes Production Grant Program",
+      "Title": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "GrantTitle": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "LHC-2600-DC-0044",
+      "OpportunityNumber": "CPD-2600-DC-0025",
       "Status": "posted",
-      "ApplicationDeadline": "08/31/2026",
-      "PostedDate": "07/17/2026",
+      "ApplicationDeadline": "08/26/2026",
+      "PostedDate": "06/01/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362368",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
+      "OpportunityID": "361999",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
       "Source": "federal"
     },
     {
@@ -41442,20 +41442,20 @@
       "Source": "federal"
     },
     {
-      "Title": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
-      "GrantTitle": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "Title": "Healthy Homes Production Grant Program",
+      "GrantTitle": "Healthy Homes Production Grant Program",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "CPD-2600-DC-0025",
+      "OpportunityNumber": "LHC-2600-DC-0044",
       "Status": "posted",
-      "ApplicationDeadline": "08/26/2026",
-      "PostedDate": "06/01/2026",
+      "ApplicationDeadline": "08/31/2026",
+      "PostedDate": "07/17/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "361999",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
+      "OpportunityID": "362368",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362368",
       "Source": "federal"
     },
     {
@@ -41476,23 +41476,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Community Policing Development (CPD) Accreditation Program",
-      "GrantTitle": "FY26 Community Policing Development (CPD) Accreditation Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172562",
-      "Status": "posted",
-      "ApplicationDeadline": "08/27/2026",
-      "PostedDate": "07/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363261",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363261",
-      "Source": "federal"
-    },
-    {
       "Title": "FY26 Safer Outcomes Program",
       "GrantTitle": "FY26 Safer Outcomes Program",
       "Description": "",
@@ -41507,6 +41490,23 @@
       "AwardFloor": 0,
       "OpportunityID": "363260",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363260",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 Community Policing Development (CPD) Accreditation Program",
+      "GrantTitle": "FY26 Community Policing Development (CPD) Accreditation Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-COPS-2026-172562",
+      "Status": "posted",
+      "ApplicationDeadline": "08/27/2026",
+      "PostedDate": "07/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363261",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363261",
       "Source": "federal"
     }
   ],
