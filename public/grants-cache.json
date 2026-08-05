@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-04T18:35:22.694814Z",
+  "fetchedAt": "2026-08-05T06:59:36.082239Z",
   "success": true,
   "grants": [
     {
@@ -37294,23 +37294,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Preparing for Active Shooter Situations (PASS)",
-      "GrantTitle": "FY26 Preparing for Active Shooter Situations (PASS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172557",
-      "Status": "posted",
-      "ApplicationDeadline": "08/04/2026",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362735",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362735",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
       "GrantTitle": "Limited Competition: NIGMS Mature Synchrotron Resources (MSR) for Structural Biology (P30 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -37563,23 +37546,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362686",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362686",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY26 COPS School Violence Prevention Program",
-      "GrantTitle": "FY26 COPS School Violence Prevention Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172540",
-      "Status": "posted",
-      "ApplicationDeadline": "08/04/2026",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362738",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362738",
       "Source": "federal"
     },
     {
@@ -39606,23 +39572,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Research Center for Promoting Work and Strong Families",
-      "GrantTitle": "National Research Center for Promoting Work and Strong Families",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OFA-PG-0059",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362168",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362168",
-      "Source": "federal"
-    },
-    {
       "Title": "Tobacco Centers of Regulatory Science (TCORS) (Clinical Trial Optional)",
       "GrantTitle": "Tobacco Centers of Regulatory Science (TCORS) (Clinical Trial Optional)",
       "Description": "",
@@ -39960,23 +39909,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361986",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361986",
-      "Source": "federal"
-    },
-    {
-      "Title": "Competitive Personal Responsibility Education Program",
-      "GrantTitle": "Competitive Personal Responsibility Education Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ACYF-AK-0014",
-      "Status": "posted",
-      "ApplicationDeadline": "08/17/2026",
-      "PostedDate": "07/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361929",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361929",
       "Source": "federal"
     },
     {
@@ -41578,6 +41510,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Healthy Cooking in Communities",
+      "GrantTitle": "Healthy Cooking in Communities",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HP-DPH-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "08/17/2026",
+      "PostedDate": "08/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363453",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363453",
+      "Source": "federal"
+    },
+    {
       "Title": "FY26 COPS Technology and Equipment Program",
       "GrantTitle": "FY26 COPS Technology and Equipment Program",
       "Description": "",
@@ -41595,31 +41544,31 @@
       "Source": "federal"
     },
     {
-      "Title": "Healthy Cooking in Communities",
-      "GrantTitle": "Healthy Cooking in Communities",
+      "Title": "National Research Center for Promoting Work and Strong Families",
+      "GrantTitle": "National Research Center for Promoting Work and Strong Families",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "HP-DPH-26-001",
+      "OpportunityNumber": "HHS-2026-ACF-OFA-PG-0059",
       "Status": "posted",
-      "ApplicationDeadline": "08/17/2026",
-      "PostedDate": "08/03/2026",
+      "ApplicationDeadline": "08/31/2026",
+      "PostedDate": "08/04/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "363453",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363453",
+      "OpportunityID": "362168",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362168",
       "Source": "federal"
     }
   ],
-  "totalCount": 2549,
+  "totalCount": 2546,
   "sources": {
     "ca": {
       "count": 1977,
       "success": true
     },
     "federal": {
-      "count": 848,
+      "count": 845,
       "success": true
     }
   },
