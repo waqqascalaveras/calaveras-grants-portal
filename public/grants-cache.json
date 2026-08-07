@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-07T06:28:24.457861Z",
+  "fetchedAt": "2026-08-07T18:19:21.378913Z",
   "success": true,
   "grants": [
     {
@@ -40557,23 +40557,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) Service Area Competition (SAC)",
-      "GrantTitle": "Fiscal Year (FY) Service Area Competition (SAC)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-27-007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/31/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363420",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363420",
-      "Source": "federal"
-    },
-    {
       "Title": "Fiscal Year (FY) 2027 Service Area Competition (SAC)",
       "GrantTitle": "Fiscal Year (FY) 2027 Service Area Competition (SAC)",
       "Description": "",
@@ -41541,16 +41524,67 @@
       "OpportunityID": "357168",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357168",
       "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year (FY) Service Area Competition (SAC)",
+      "GrantTitle": "Fiscal Year (FY) Service Area Competition (SAC)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/31/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363420",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363420",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Residency Planning and Development Program",
+      "GrantTitle": "Rural Residency Planning and Development Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-046",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/07/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363508",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363508",
+      "Source": "federal"
+    },
+    {
+      "Title": "Rural Health Value Program",
+      "GrantTitle": "Rural Health Value Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-045",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/07/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363509",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363509",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2545,
+  "totalCount": 2547,
   "sources": {
     "ca": {
       "count": 1979,
       "success": true
     },
     "federal": {
-      "count": 843,
+      "count": 845,
       "success": true
     }
   },
