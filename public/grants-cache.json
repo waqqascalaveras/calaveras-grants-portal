@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-08-08T06:18:25.336348Z",
+  "fetchedAt": "2026-08-08T18:09:43.017496Z",
   "success": true,
   "grants": [
+    {
+      "Title": "California Serves Grant Program 2026-27",
+      "GrantTitle": "California Serves Grant Program 2026-27",
+      "Description": "The California Department of Education invites eligible local educational agencies, which include school districts, county offices of education, or charter schools, to apply for a California Serves Grant to be used for the purpose of promoting access to effective service-learning with the goal of expanding access for high school graduates in obtaining a State Seal of Civic Engagement through service-learning.  Grant funding can be used for a wide range of purposes that promote access to effective service-learning for students in grade twelve, with the goal of expanding access for high school graduates in obtaining a State Seal of Civic Engagement through service-learning.  Allowable expenditures may include:  Paid planning time for teachers to increase the use of service-learning in instruction.  Professional development on service learning for administrators and teachers.  Purchase of instructional materials to help integrate service-learning in instruction.  Participation costs, including materials or travel expenses related to service-learning activities.  Personnel costs for coordinating service-learning at the local educational agency or a school site.  Participation costs associated with grant program evaluation.  Applicants must submit a Notice of Intent to Apply by 4 p.m. on Tuesday, September 8, 2026. See the Request for Applications for guidance on submitting the Notice of Intent to Apply.  For any questions about the California Serves Grant Program, please contact Sarah Smith by email at SSCE@cde.ca.gov.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-05 16:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$5,000,000",
+      "Categories": "Education",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "190254",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Watershed Resilience Conservation Implementation",
       "GrantTitle": "Watershed Resilience Conservation Implementation",
@@ -232,7 +248,7 @@
       "Description": "Projects under this grant:  Make funding available through agreements with private nonindustrial forest landowners to pay for specific, non-commercial ecological forest improvement and wildfire resilience practices to the extent they support reforestation and longevity of existing regeneration.Provide technical assistance to promote information sharing and education on the full range of effective reforestation practices and opportunities as well as forest management education and management planni\u00a0 \u00a0 \u00a0 \u00a0 \u00a0Promote long-term storage of carbon in forest trees and soils through reforestation and reduction of forest overcrowding and pests.  Further the goals of the California Forest Carbon Plan, California\u2019s Natural and Working Lands Climate Smart Strategy, California\u2019s Wildfire & Forest Resilience Action Plan, California\u2019s Strategic Plan for Expanding the Use of Beneficial Fire, and AB 32 Climate Change Scoping Plan.CAL FIRE seeks to significantly increase reforestation of forests degraded by overcrowding, drought, pest infestation, and catastrophic fire.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-08-07 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$10,000,000",
@@ -680,7 +696,7 @@
       "Description": "The purpose of the Intimate Partner Violence Prevention (FD) Program is to prevent intimate partner violence, including teen dating violence, and sexual assault.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-08-07 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,461,111",
@@ -41492,10 +41508,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2542,
+  "totalCount": 2543,
   "sources": {
     "ca": {
-      "count": 1979,
+      "count": 1980,
       "success": true
     },
     "federal": {
