@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-11T06:22:40.097697Z",
+  "fetchedAt": "2026-08-11T18:20:12.277743Z",
   "success": true,
   "grants": [
     {
@@ -19736,8 +19736,8 @@
       "Description": "EBIP is intended to encourage adoption for low-income individuals of electric bicycles as a replacement for motor vehicle trips. Consistent with the goals of SB 375, EBIP would increase access to clean transportation options while offsetting vehicle miles traveled (VMT) by way of incentivizing electric bicycles (e-bikes). A portion of project funds would support the development and administration of a virtual bike safety class, so that consumers understand bicycle road safety. EBIP will provide incentives for eligible e-bikes to income-qualified consumers at the time of purchase, on a first-come, first-serve basis. Furthermore, EBIP will pilot an approach that aims to 1) help people replace car trips with e-bike trips, 2) increase access to electric bicycles, and 3) reduce GHG emissions.  EBIP will be administered and implemented through a partnership between CARB and a Grantee, selected via this completive solicitation. Eligible applicants wishing to apply for the role of project administrator must submit an application via mail or in person to CARB no later than 5:00 p.m. (PDT) May 11, 2022. More information regarding the application process can be found in Section IX, Application Instructions of this solicitation.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
+      "Status": "closed",
+      "ApplicationDeadline": "2022-08-10 05:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$10,000,000",
       "Categories": "Environment & Water; Transportation",
@@ -41440,6 +41440,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Evaluations of Practices for Program Integrity and Fraud Prevention",
+      "GrantTitle": "Evaluations of Practices for Program Integrity and Fraud Prevention",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2026-ACF-ECD-YJ-0058",
+      "Status": "posted",
+      "ApplicationDeadline": "09/08/2026",
+      "PostedDate": "08/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362412",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362412",
+      "Source": "federal"
+    },
+    {
       "Title": "Community Services Block Grant (CSBG) Essentials for Improved Outcomes",
       "GrantTitle": "Community Services Block Grant (CSBG) Essentials for Improved Outcomes",
       "Description": "",
@@ -41474,31 +41491,48 @@
       "Source": "federal"
     },
     {
-      "Title": "Evaluations of Practices for Program Integrity and Fraud Prevention",
-      "GrantTitle": "Evaluations of Practices for Program Integrity and Fraud Prevention",
+      "Title": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
+      "GrantTitle": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ECD-YJ-0058",
-      "Status": "posted",
-      "ApplicationDeadline": "09/08/2026",
-      "PostedDate": "08/10/2026",
+      "OpportunityNumber": "HRSA-27-033",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/11/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362412",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362412",
+      "OpportunityID": "363533",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363533",
+      "Source": "federal"
+    },
+    {
+      "Title": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
+      "GrantTitle": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NHTSA-693JJ926R000024-FY26",
+      "Status": "posted",
+      "ApplicationDeadline": "09/01/2027",
+      "PostedDate": "08/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363446",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363446",
       "Source": "federal"
     }
   ],
-  "totalCount": 2542,
+  "totalCount": 2544,
   "sources": {
     "ca": {
       "count": 1980,
       "success": true
     },
     "federal": {
-      "count": 839,
+      "count": 841,
       "success": true
     }
   },
