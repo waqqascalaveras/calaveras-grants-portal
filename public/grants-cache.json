@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-12T18:21:06.843451Z",
+  "fetchedAt": "2026-08-13T06:35:05.434273Z",
   "success": true,
   "grants": [
     {
@@ -584,7 +584,7 @@
       "Description": "CalRecycle is seeking projects that implement new programs or enhance existing programs to provide convenient beverage container recycling opportunities in various locations statewide.\u00a0 Eligible projects include:  \u2022 Multi-family residential dwellings (five units or more).  \u2022 Public colleges/universities, non-profit colleges/universities, and public K-12 school districts.  \u2022 Curbside Residential Program locations (excluding single stream).  \u2022 Community events including, but not limited to, those sponsored by local jurisdictions.  \u2022 Parks/recreational areas.  \u2022 Purchase of water refill stations, including the installation, education and outreach, or replacement of infrastructure, plumbing, maintenance, additional attachments or modifications.  \u2022 Purchase of mobile water trailer bars, including replacement of filters, maintenance, additional attachments or modifications, reusable cups utilized for the water trailer bars, and related educational and outreach activities/materials as eligible expenditures.  \u2022 Litter reduction and clean-up along the United States-Mexico border where the waste stream includes beverage containers that will be recycled.  \u00a0 \u00a0 o Out of State beverage containers collected as part of the litter abatement and clean-up projects cannot be funded under this grant program.\u00a0 \u00a0\u00a0  Ongoing collection programs may include the following activities as a component of the grant project:  \u2022 Temporary Community events (i.e., recycling or collection events sponsored by local jurisdictions, Earth Day events).  \u2022 Drop-off, Collection Program, or Community Service Program.  \u2022 Education and Outreach related to beverage container recycling.  Note: Education activities and/or materials (signage, flyers, curriculum, etc.) related to the beverage container recycling project are capped at 25 percent of the total grant award.  \u2022 Funding must have a direct connection to the California Redemption Value (CRV) of beverage containers and the overall program.\u00a0 If non-CRV items are included in the grant, they are subject to proportional cost.\u00a0 For example: a three-bin system with composting, paper and CRV recycling, can only be funded at one third of the cost.\u00a0 A mixed recycling bin will be funded proportionately based on the CRV content of materials collected.  Priority funding will be given to Tribal Entities and applicants with litter abatement projects along the United States-Mexico border.\u00a0 Applicants who meet the criteria will be given priority and will be considered for funding first.  \u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-08-11 11:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -1000,7 +1000,7 @@
       "Description": "Eligible activities include but are not limited to Planning Activities, such as Community Needs Assessment\u202f. Feasibility Studies, Market Analyses\u202f. Environmental Assessments\u202f, and similar activities to determine housing needs and develop a project plan that is responsive to the needs of the community. The grant also funds Infrastructure Investments, such as Sewage and Drainage Infrastructure, Waste Management, and Electric Utility, Broadband, and Renewable Energy Infrastructure. The grant funds Sustainable Transportation Investments\u202f such as Road and Safety infrastructure that do not increase vehicle capacity. The grant funds Site Acquisition and Preparation Site Appraisal and Acquisition, such as Site Preparation, including Surveying, Grading, and Mitigation, Architectural and Engineering costs, Ecological and Wildlife Restoration, and Disaster Preparedness. The grant also funds Other Associated Costs Legal Fees, such as Consultant Fees, Staff Development and Training, and Staff Salaries.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-08-11 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$20,000,000",
@@ -1064,7 +1064,7 @@
       "Description": "The Tribal Capacity Building Program provides funding and technical assistance to California Native American Tribes, enhancing staff capacity to advance Tribes\u2019 climate- and housing-related work. The goal of the program is to help Tribes develop long-term capacity to secure funding and implement Tribal-led climate- and housing-related projects. More details about the program can be found below:  Eligible Applicants: California Native American Tribes listed on the Native American Heritage Commission (NAHC) Contact List as of February 2026, including federally recognized and non-federally recognized Tribes. Non-federally recognized Tribes must be registered with the California Secretary of State as a nonprofit, a for-profit corporation, or a limited liability company.\u00a0Tribally\u00a0Designated\u00a0Housing Entities (TDHE)\u00a0listed in the U.S. Department of Housing and Urban Development\u2019s National Directory of Tribes and TDHEs.\u00a0  Eligible Activities: The program funds staff salaries and activities that advance Tribes\u2019 climate- and housing-related work. Activities may include planning, securing funding for, and implementing housing projects and related efforts to advance climate mitigation, adaptation, and resilience.\u00a0  Funding Available for Round\u00a02\u00a0Awards:\u00a0Grantees\u00a0may receive funding\u00a0between\u00a0$350,000 and\u00a0$420,000\u00a0total\u00a0for the\u00a0three-year grant term.\u00a0  Grant Term Length: 36-month period\u00a0  Grant Availability Type: Competitive\u00a0  Match Funding Required: No\u00a0  Limited Waiver of Sovereign Immunity: The SGC will not require a waiver of sovereign immunity from Tribes who are receiving funds on a reimbursement basis. However, requests for advance pay will necessitate federally recognized Tribal awardees to sign a limited waiver of sovereign immunity.\u00a0  Disbursement Type: Reimbursement/advance pay for eligible entities  Technical Assistance: In addition to providing funding, the program will offer grantees no-cost, flexible support that responds to each Tribe\u2019s needs. The capacity building and technical assistance services offered include, but are not limited to:\u00a0 Grant application assistance; Grant management support; Planning support; Implementation assistance; Staff development; Economic development; Trainings and workshops; Partnership building; Peer learning\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-08-11 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$5,000,000",
@@ -15963,7 +15963,7 @@
       "Status": "active",
       "ApplicationDeadline": "Ongoing",
       "PostedDate": "",
-      "EstAvailFunds": "$10,000",
+      "EstAvailFunds": "$15,000",
       "Categories": "Disaster Prevention & Relief; Environment & Water",
       "ApplicantType": "Tribal Government",
       "GrantInfoURL": "",
@@ -38907,23 +38907,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Delta States Rural Development Network Program",
-      "GrantTitle": "Delta States Rural Development Network Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-26-045",
-      "Status": "posted",
-      "ApplicationDeadline": "08/12/2026",
-      "PostedDate": "07/13/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362942",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362942",
-      "Source": "federal"
-    },
-    {
       "Title": "Occupational Safety and Health Research (R01)",
       "GrantTitle": "Occupational Safety and Health Research (R01)",
       "Description": "",
@@ -41574,16 +41557,67 @@
       "OpportunityID": "361315",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361315",
       "Source": "federal"
+    },
+    {
+      "Title": "Supply Chain Acceleration and Logistics Enablement (SCALE) Program",
+      "GrantTitle": "Supply Chain Acceleration and Logistics Enablement (SCALE) Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "SB-OIIGA-26-001",
+      "Status": "posted",
+      "ApplicationDeadline": "08/13/2026",
+      "PostedDate": "07/07/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363089",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363089",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJP FY 2026 Special Attorneys Program Round 7",
+      "GrantTitle": "OJP FY 2026 Special Attorneys Program Round 7",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172684",
+      "Status": "posted",
+      "ApplicationDeadline": "08/25/2026",
+      "PostedDate": "08/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363550",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363550",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJS FY 2026 Annual Surveys of Probation and Parole (ASPP) RY 2026-2030",
+      "GrantTitle": "BJS FY 2026 Annual Surveys of Probation and Parole (ASPP) RY 2026-2030",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJS-2026-172682",
+      "Status": "posted",
+      "ApplicationDeadline": "09/21/2026",
+      "PostedDate": "08/13/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363552",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363552",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2547,
+  "totalCount": 2549,
   "sources": {
     "ca": {
       "count": 1980,
       "success": true
     },
     "federal": {
-      "count": 844,
+      "count": 846,
       "success": true
     }
   },
