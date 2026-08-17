@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-17T06:15:22.876277Z",
+  "fetchedAt": "2026-08-17T18:09:52.388763Z",
   "success": true,
   "grants": [
     {
@@ -41791,16 +41791,84 @@
       "OpportunityID": "362099",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362099",
       "Source": "federal"
+    },
+    {
+      "Title": "Surveillance and Case Control Study of Stillbirth and Birth Defects (SUCCSSBD)",
+      "GrantTitle": "Surveillance and Case Control Study of Stillbirth and Birth Defects (SUCCSSBD)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-DD-27-0065",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363625",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363625",
+      "Source": "federal"
+    },
+    {
+      "Title": "Strengthening Ghana Health Service laboratory services, diagnostic networks, and systems for a more effective, efficient, and sustainable response to HIV, TB, and other priority health threats",
+      "GrantTitle": "Strengthening Ghana Health Service laboratory services, diagnostic networks, and systems for a more effective, efficient, and sustainable response to HIV, TB, and other priority health threats",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-JG-26-0178",
+      "Status": "posted",
+      "ApplicationDeadline": "10/16/2026",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360759",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360759",
+      "Source": "federal"
+    },
+    {
+      "Title": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
+      "GrantTitle": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-JG-26-0142",
+      "Status": "posted",
+      "ApplicationDeadline": "09/16/2026",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360710",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360710",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
+      "GrantTitle": "BJA FY 2026 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172697",
+      "Status": "posted",
+      "ApplicationDeadline": "10/05/2026",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363629",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363629",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2560,
+  "totalCount": 2564,
   "sources": {
     "ca": {
       "count": 1986,
       "success": true
     },
     "federal": {
-      "count": 854,
+      "count": 858,
       "success": true
     }
   },
