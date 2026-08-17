@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-16T18:05:56.438148Z",
+  "fetchedAt": "2026-08-17T06:15:22.876277Z",
   "success": true,
   "grants": [
     {
@@ -35146,23 +35146,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Strengthening Ghana Health Service laboratory services, diagnostic networks, and systems for a more effective, efficient, and sustainable response to HIV, TB, and other priority health threats",
-      "GrantTitle": "Strengthening Ghana Health Service laboratory services, diagnostic networks, and systems for a more effective, efficient, and sustainable response to HIV, TB, and other priority health threats",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0178",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/16/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360759",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360759",
-      "Source": "federal"
-    },
-    {
       "Title": "Functional Target Validation for Alzheimer's Disease-Related Dementias",
       "GrantTitle": "Functional Target Validation for Alzheimer's Disease-Related Dementias",
       "Description": "",
@@ -41810,14 +41793,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2561,
+  "totalCount": 2560,
   "sources": {
     "ca": {
       "count": 1986,
       "success": true
     },
     "federal": {
-      "count": 855,
+      "count": 854,
       "success": true
     }
   },
