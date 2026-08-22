@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-08-22T06:10:01.605926Z",
+  "fetchedAt": "2026-08-22T18:06:31.605309Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Flood Partnership: Real-time Data Grant Program",
+      "GrantTitle": "Flood Partnership: Real-time Data Grant Program",
+      "Description": "The need to improve public safety and achieve other benefits through integrated flood management is urgent due to more people living and working in flood-prone areas, better understanding of system deficiencies, and possible changes in flood magnitude and frequency from a changing climate. In 2018, the Department of Water Resources (DWR) launched the Flood Partnership, in collaboration with the Governor\u2019s Office of Emergency Services (Cal OES) and the Federal Emergency Management Agency (FEMA). The Flood Partnership is intended to reduce the risk and consequences of flooding in California by strengthening the collaboration, data sharing, and funding resources that are already in place; and by identifying and addressing unmet needs.  As part of the Flood Partnership, California began the long process of improving the coordination and alignment of federal, State, and local agencies in planning for and responding to flood emergencies, on a watershed-by-watershed basis. To encourage this increased level of coordination and alignment, DWR has set up funding programs to support this effort. DWR is also planning on assisting other agencies in identifying other non-DWR sponsored grant and funding assistance programs and assisting in obtaining funding assistance from those programs.  Program Directed Activities  DWR will use program funds for Direct Expenditures or Directed Action activities that fulfill the intent of the funding source used. Direct expenditure projects are proposed by DWR either on its own initiative or in response to a solicitation from a California public agency. DWR will apply these guidelines as it deems applicable and appropriate. Direct expenditure projects must address an interest of the State and may be proposed and approved at any time.  Grant Eligibility  California public agencies that own or have primary responsibility for a dam under the jurisdiction of the Division of Safety of Dams are eligible to apply. Public agencies include counties, cities, water districts, flood control districts, irrigation districts, municipal utility districts, service districts, Joint Power Authorities, or other local government entities in California. The geographic scope of this grant is statewide.  Eligible Grant Activities and Tasks  This is a direct Grant Program designed to achieve the objective and goals of the Flood Safety Partnership. The typical activities funded under the first round of this Grant Program include:  \u2022 Purchase and installation of equipment needed for collecting, storing, transmitting, and sharing of real-time reservoir elevation data with the California Data Exchange Center (CDEC). Specifications and standards for real-time data collection will be included in the final Grant Guideline.\u2022 Purchase and installation of equipment needed for collecting, storing, transmitting, and sharing of real-time hydro-meteorological data with CDEC.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$3,500,000",
+      "Categories": "Disaster Prevention & Relief; Environment & Water",
+      "ApplicantType": "Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "191055",
+      "Source": "ca.gov"
+    },
     {
       "Title": "CDSS San Diego Newcomers Project",
       "GrantTitle": "CDSS San Diego Newcomers Project",
@@ -41977,10 +41993,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2571,
+  "totalCount": 2572,
   "sources": {
     "ca": {
-      "count": 1989,
+      "count": 1990,
       "success": true
     },
     "federal": {
