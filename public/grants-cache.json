@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-24T18:10:44.185299Z",
+  "fetchedAt": "2026-08-25T06:13:00.848814Z",
   "success": true,
   "grants": [
     {
@@ -37896,23 +37896,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Southwest Border Resource Protection Program",
-      "GrantTitle": "Southwest Border Resource Protection Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P26AS00060",
-      "Status": "posted",
-      "ApplicationDeadline": "09/08/2026",
-      "PostedDate": "06/10/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362754",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362754",
-      "Source": "federal"
-    },
-    {
       "Title": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
       "GrantTitle": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -39613,40 +39596,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Regional Conservation Partnership Program (RCPP) Classic for federal fiscal year (FY) 2026",
-      "GrantTitle": "Regional Conservation Partnership Program (RCPP) Classic for federal fiscal year (FY) 2026",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-NRCS-NHQ-RCPP-CLASSIC-26-NOFO000145",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "06/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362909",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362909",
-      "Source": "federal"
-    },
-    {
-      "Title": "Regional Conservation Partnership Program (RCPP) Alternative Funding Arrangements (AFA) for Federal fiscal year (FY) 2026",
-      "GrantTitle": "Regional Conservation Partnership Program (RCPP) Alternative Funding Arrangements (AFA) for Federal fiscal year (FY) 2026",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-NRCS-NHQ-RCPP-AFA-26-NOFO0001451",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "06/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362910",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362910",
-      "Source": "federal"
-    },
-    {
       "Title": "Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
       "GrantTitle": "Multi-Site Investigator-Initiated Clinical Trials (Collaborative UG3/UH3 Clinical Trial Required)",
       "Description": "",
@@ -40276,40 +40225,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Affordable Housing and Supportive Services Demonstration",
-      "GrantTitle": "Affordable Housing and Supportive Services Demonstration",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OCS-EAH-0027",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362839",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362839",
-      "Source": "federal"
-    },
-    {
-      "Title": "Reflective Supervision in Home Visiting Research Awards",
-      "GrantTitle": "Reflective Supervision in Home Visiting Research Awards",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OPRE-PV-0114",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362147",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362147",
-      "Source": "federal"
-    },
-    {
       "Title": "Wetland Mitigation Banking Program Fiscal Year (FY) 2026",
       "GrantTitle": "Wetland Mitigation Banking Program Fiscal Year (FY) 2026",
       "Description": "",
@@ -40633,40 +40548,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Community Services Block Grant (CSBG) Tribal Capacity Building Training and Technical Assistance (TCBTTA)",
-      "GrantTitle": "Community Services Block Grant (CSBG) Tribal Capacity Building Training and Technical Assistance (TCBTTA)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OCS-ET-0028",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362070",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362070",
-      "Source": "federal"
-    },
-    {
-      "Title": "Community Services Block Grant (CSBG) Communities of Practice (COP)",
-      "GrantTitle": "Community Services Block Grant (CSBG) Communities of Practice (COP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OCS-ET-0029",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362069",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362069",
-      "Source": "federal"
-    },
-    {
       "Title": "Placement and Coordination Program",
       "GrantTitle": "Placement and Coordination Program",
       "Description": "",
@@ -40817,40 +40698,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361999",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
-      "Source": "federal"
-    },
-    {
-      "Title": "Community Services Block Grant (CSBG) Essentials for Improved Outcomes",
-      "GrantTitle": "Community Services Block Grant (CSBG) Essentials for Improved Outcomes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OCS-ET-0030",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362068",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362068",
-      "Source": "federal"
-    },
-    {
-      "Title": "Community Services Block Grant (CSBG) Performance Management, Data Collection, and Compliance Support",
-      "GrantTitle": "Community Services Block Grant (CSBG) Performance Management, Data Collection, and Compliance Support",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-OCS-ET-0031",
-      "Status": "posted",
-      "ApplicationDeadline": "08/24/2026",
-      "PostedDate": "07/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362067",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362067",
       "Source": "federal"
     },
     {
@@ -42059,16 +41906,50 @@
       "OpportunityID": "363697",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363697",
       "Source": "federal"
+    },
+    {
+      "Title": "Southwest Border Resource Protection Program",
+      "GrantTitle": "Southwest Border Resource Protection Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "P26AS00060",
+      "Status": "posted",
+      "ApplicationDeadline": "09/08/2026",
+      "PostedDate": "06/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362754",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362754",
+      "Source": "federal"
+    },
+    {
+      "Title": "U.S. Mission to Australia 2026 Annual Program Statement",
+      "GrantTitle": "U.S. Mission to Australia 2026 Annual Program Statement",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PDS-AUSTRALIA-2026-01",
+      "Status": "posted",
+      "ApplicationDeadline": "09/20/2026",
+      "PostedDate": "08/25/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363708",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363708",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2576,
+  "totalCount": 2569,
   "sources": {
     "ca": {
       "count": 1990,
       "success": true
     },
     "federal": {
-      "count": 866,
+      "count": 859,
       "success": true
     }
   },
