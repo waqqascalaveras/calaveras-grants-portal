@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-25T18:10:48.204318Z",
+  "fetchedAt": "2026-08-26T06:13:45.213553Z",
   "success": true,
   "grants": [
     {
@@ -13297,23 +13297,6 @@
       "Source": "federal"
     },
     {
-      "Title": "OJP FY 2026 Special Attorneys Program Round 7",
-      "GrantTitle": "OJP FY 2026 Special Attorneys Program Round 7",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172684",
-      "Status": "posted",
-      "ApplicationDeadline": "08/25/2026",
-      "PostedDate": "08/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363550",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363550",
-      "Source": "federal"
-    },
-    {
       "Title": "Preventing Violence Affecting Young Lives (PREVAYL 2.0)",
       "GrantTitle": "Preventing Violence Affecting Young Lives (PREVAYL 2.0)",
       "Description": "",
@@ -14181,40 +14164,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
-      "GrantTitle": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172705",
-      "Status": "posted",
-      "ApplicationDeadline": "10/09/2026",
-      "PostedDate": "08/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363712",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363712",
-      "Source": "federal"
-    },
-    {
-      "Title": "Innovative Research to Improve Native Hawaiian and Pacific Islander (NHPI) Health Outcomes (R34 - Clinical Trial Optional)",
-      "GrantTitle": "Innovative Research to Improve Native Hawaiian and Pacific Islander (NHPI) Health Outcomes (R34 - Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MD-27-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363713",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363713",
-      "Source": "federal"
-    },
-    {
       "Title": "Fiscal Year 2026 Competitive Funding Opportunity: Buses and Bus Facilities Program",
       "GrantTitle": "Fiscal Year 2026 Competitive Funding Opportunity: Buses and Bus Facilities Program",
       "Description": "",
@@ -14247,16 +14196,50 @@
       "OpportunityID": "363322",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363322",
       "Source": "federal"
+    },
+    {
+      "Title": "Innovative Research to Improve Native Hawaiian and Pacific Islander (NHPI) Health Outcomes (R34 - Clinical Trial Optional)",
+      "GrantTitle": "Innovative Research to Improve Native Hawaiian and Pacific Islander (NHPI) Health Outcomes (R34 - Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MD-27-004",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/25/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363713",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363713",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
+      "GrantTitle": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172705",
+      "Status": "posted",
+      "ApplicationDeadline": "10/09/2026",
+      "PostedDate": "08/25/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363712",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363712",
+      "Source": "federal"
     }
   ],
-  "totalCount": 838,
+  "totalCount": 837,
   "sources": {
     "ca": {
       "count": 0,
       "success": false
     },
     "federal": {
-      "count": 862,
+      "count": 861,
       "success": true
     }
   },
