@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-26T18:39:34.574514Z",
+  "fetchedAt": "2026-08-27T09:12:12.691023Z",
   "success": true,
   "grants": [
     {
@@ -11342,23 +11342,6 @@
       "Source": "federal"
     },
     {
-      "Title": "DOJ FY 2026 Bridging Immigration-Related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program Round 2",
-      "GrantTitle": "DOJ FY 2026 Bridging Immigration-Related Deficits Experienced Nationwide (&ldquo;BIDEN&rdquo;) Program Round 2",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172656",
-      "Status": "posted",
-      "ApplicationDeadline": "08/26/2026",
-      "PostedDate": "07/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363368",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363368",
-      "Source": "federal"
-    },
-    {
       "Title": "Core State Injury Prevention Program (Core SIPP)",
       "GrantTitle": "Core State Injury Prevention Program (Core SIPP)",
       "Description": "",
@@ -11968,23 +11951,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361960",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361960",
-      "Source": "federal"
-    },
-    {
-      "Title": "Collaborative Approaches to Adoption for Children with Complex Needs",
-      "GrantTitle": "Collaborative Approaches to Adoption for Children with Complex Needs",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ACYF-CO-0055",
-      "Status": "posted",
-      "ApplicationDeadline": "08/26/2026",
-      "PostedDate": "07/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362891",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362891",
       "Source": "federal"
     },
     {
@@ -12903,23 +12869,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363512",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363512",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
-      "GrantTitle": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CPD-2600-DC-0025",
-      "Status": "posted",
-      "ApplicationDeadline": "08/26/2026",
-      "PostedDate": "06/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361999",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
       "Source": "federal"
     },
     {
@@ -13858,23 +13807,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
-      "GrantTitle": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NHTSA-693JJ926R000024-FY26",
-      "Status": "posted",
-      "ApplicationDeadline": "09/01/2027",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363446",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363446",
-      "Source": "federal"
-    },
-    {
       "Title": "Multimodal AI to Accelerate Precision Medicine for Type 1 Diabetes (U01- Clinical Trials Not Allowed)",
       "GrantTitle": "Multimodal AI to Accelerate Precision Medicine for Type 1 Diabetes (U01- Clinical Trials Not Allowed)",
       "Description": "",
@@ -14203,15 +14135,15 @@
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "HRSA-27-005",
+      "OpportunityNumber": "HRSA-27-006",
       "Status": "forecasted",
       "ApplicationDeadline": "",
       "PostedDate": "07/31/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "363423",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363423",
+      "OpportunityID": "363419",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363419",
       "Source": "federal"
     },
     {
@@ -14230,16 +14162,33 @@
       "OpportunityID": "363420",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363420",
       "Source": "federal"
+    },
+    {
+      "Title": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
+      "GrantTitle": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NHTSA-693JJ926R000024-FY26",
+      "Status": "posted",
+      "ApplicationDeadline": "09/01/2027",
+      "PostedDate": "08/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363446",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363446",
+      "Source": "federal"
     }
   ],
-  "totalCount": 837,
+  "totalCount": 834,
   "sources": {
     "ca": {
       "count": 0,
       "success": false
     },
     "federal": {
-      "count": 861,
+      "count": 858,
       "success": true
     }
   },
