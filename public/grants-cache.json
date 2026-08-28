@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-08-27T21:15:06.808786Z",
+  "fetchedAt": "2026-08-28T09:16:17.083614Z",
   "success": true,
   "grants": [
     {
@@ -11206,23 +11206,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Safer Outcomes Program",
-      "GrantTitle": "FY26 Safer Outcomes Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172549",
-      "Status": "posted",
-      "ApplicationDeadline": "08/27/2026",
-      "PostedDate": "07/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363260",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363260",
-      "Source": "federal"
-    },
-    {
       "Title": "World Trade Center Youth Research Coordinating Center (U54)",
       "GrantTitle": "World Trade Center Youth Research Coordinating Center (U54)",
       "Description": "",
@@ -11903,23 +11886,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Center for Native Training and Technical Assistance (the Center)",
-      "GrantTitle": "National Center for Native Training and Technical Assistance (the Center)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ANA-NTA-0038",
-      "Status": "posted",
-      "ApplicationDeadline": "08/27/2026",
-      "PostedDate": "07/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361960",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361960",
-      "Source": "federal"
-    },
-    {
       "Title": "Advanced Development and Sustainment of Informatics Technologies for Cancer Research and Management (U24 Clinical Trial Optional)",
       "GrantTitle": "Advanced Development and Sustainment of Informatics Technologies for Cancer Research and Management (U24 Clinical Trial Optional)",
       "Description": "",
@@ -12512,23 +12478,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360199",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360199",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY26 Community Policing Development (CPD) Accreditation Program",
-      "GrantTitle": "FY26 Community Policing Development (CPD) Accreditation Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172562",
-      "Status": "posted",
-      "ApplicationDeadline": "08/27/2026",
-      "PostedDate": "07/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363261",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363261",
       "Source": "federal"
     },
     {
@@ -14232,14 +14181,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 837,
+  "totalCount": 834,
   "sources": {
     "ca": {
       "count": 0,
       "success": false
     },
     "federal": {
-      "count": 861,
+      "count": 858,
       "success": true
     }
   },
