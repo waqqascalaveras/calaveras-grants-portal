@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-02T18:18:35.120845Z",
+  "fetchedAt": "2026-09-03T06:24:54.297324Z",
   "success": true,
   "grants": [
     {
@@ -29207,23 +29207,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Multidisciplinary Research to Accelerate Hepatitis B Cure in Persons Living with HIV and HBV (MRA-HBV)",
-      "GrantTitle": "Multidisciplinary Research to Accelerate Hepatitis B Cure in Persons Living with HIV and HBV (MRA-HBV)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOR-AI-27-017",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/27/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359860",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359860",
-      "Source": "federal"
-    },
-    {
       "Title": "Alzheimer's Clinical Trials Consortium (ACTC) Clinical Trials",
       "GrantTitle": "Alzheimer's Clinical Trials Consortium (ACTC) Clinical Trials",
       "Description": "",
@@ -38489,23 +38472,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Enhancing Security Measures for Houses of Worship",
-      "GrantTitle": "BJA FY 2026 Enhancing Security Measures for Houses of Worship",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172658",
-      "Status": "posted",
-      "ApplicationDeadline": "09/02/2026",
-      "PostedDate": "07/22/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363280",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363280",
-      "Source": "federal"
-    },
-    {
       "Title": "NIOSH Support for Conferences and Scientific Meetings (U13 Clinical Trial Not Allowed)",
       "GrantTitle": "NIOSH Support for Conferences and Scientific Meetings (U13 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41736,37 +41702,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
-      "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "Title": "International Programs &amp; Trade, Invasive Species Program Funding Opportunity",
+      "GrantTitle": "International Programs &amp; Trade, Invasive Species Program Funding Opportunity",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PS-27-0008",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/11/2026",
+      "OpportunityNumber": "USDA-FS-IPT-INVASIVE-SPECIES-2026",
+      "Status": "posted",
+      "ApplicationDeadline": "09/30/2026",
+      "PostedDate": "08/03/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362349",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
-      "Source": "federal"
-    },
-    {
-      "Title": "Residential Services for Unaccompanied Alien Children",
-      "GrantTitle": "Residential Services for Unaccompanied Alien Children",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ORR-ZU-0045",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/02/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363790",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363790",
+      "OpportunityID": "363287",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363287",
       "Source": "federal"
     },
     {
@@ -41804,31 +41753,65 @@
       "Source": "federal"
     },
     {
-      "Title": "International Programs &amp; Trade, Invasive Species Program Funding Opportunity",
-      "GrantTitle": "International Programs &amp; Trade, Invasive Species Program Funding Opportunity",
+      "Title": "Residential Services for Unaccompanied Alien Children",
+      "GrantTitle": "Residential Services for Unaccompanied Alien Children",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "USDA-FS-IPT-INVASIVE-SPECIES-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "09/30/2026",
-      "PostedDate": "08/03/2026",
+      "OpportunityNumber": "HHS-2026-ACF-ORR-ZU-0045",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/02/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "363287",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363287",
+      "OpportunityID": "363790",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363790",
+      "Source": "federal"
+    },
+    {
+      "Title": "Multidisciplinary Research to Accelerate Hepatitis B Cure in Persons Living with HIV and HBV (MRA-HBV)",
+      "GrantTitle": "Multidisciplinary Research to Accelerate Hepatitis B Cure in Persons Living with HIV and HBV (MRA-HBV)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOR-AI-27-017",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/27/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359860",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359860",
+      "Source": "federal"
+    },
+    {
+      "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0008",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362349",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
       "Source": "federal"
     }
   ],
-  "totalCount": 2562,
+  "totalCount": 2561,
   "sources": {
     "ca": {
       "count": 1993,
       "success": true
     },
     "federal": {
-      "count": 851,
+      "count": 850,
       "success": true
     }
   },
