@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-03T06:24:54.297324Z",
+  "fetchedAt": "2026-09-03T18:17:48.679651Z",
   "success": true,
   "grants": [
     {
@@ -27651,6 +27651,22 @@
       "Source": "ca.gov"
     },
     {
+      "Title": "Orphan Site Cleanup Fund",
+      "GrantTitle": "Orphan Site Cleanup Fund",
+      "Description": "Senate Bill 445 (Hill, chapter 547, statutes of 2014), effective September 25, 2014, changed the OSCF eligibility criteria by not limiting the program to brownfield sites.    \u00a0    Grant Details    Grants provide funding for response actions that characterize, assess, andinvestigate an unauthorized release from petroleum USTs. These actions include apreliminary site assessment, soil and groundwater investigations, and preparation of a corrective action plan in accordance with California Code of Regulations, Title 23, Chapter 16, Article 11. Grants may also provide funding for UST system removal, petroleum product removal and soil excavation, not to exceed 500 cubic yards at the eligible site. Grants also provide funding for response actions that carry out cleanup activities,implement a corrective action plans, and perform verification monitoring in accordance with California Code of Regulations, Title 23, Chapter 16, Article 11. If a corrective action plan is required, the State Water Board cannot award a cleanup grant until the applicant demonstrates the corrective action plan is complete and approved by the regulatory agency. However, the applicant may apply for a cleanup grant before completion and approval of the corrective action plan. Note that only the current property owner is eligible for a Cleanup Grant.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,000,000",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Individual",
+      "GrantInfoURL": "",
+      "PortalID": "191196",
+      "Source": "ca.gov"
+    },
+    {
       "Title": "Charter School Facility Grant Program \u2013 (SB740)",
       "GrantTitle": "Charter School Facility Grant Program \u2013 (SB740)",
       "Description": "The Charter School Facility Grant Program provides annual grants to offset annual on-going facility costs for charter schools that service a high-percentage of students eligible for free or reduced-price meals or located in a public elementary school boundary serving a similar demographic. This program, previously administered by the California Department of Education, was transferred to the California School Finance Authority (CSFA) in 2013-14. Availability of funding is announced on the CSFA website each year.",
@@ -41802,16 +41818,67 @@
       "OpportunityID": "362349",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
       "Source": "federal"
+    },
+    {
+      "Title": "NIH Director's New Innovator Award (DP2 Clinical Trial Optional)",
+      "GrantTitle": "NIH Director's New Innovator Award (DP2 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363799",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363799",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Director's Early Independence Award (DP5 Clinical Trial Optional)",
+      "GrantTitle": "NIH Director's Early Independence Award (DP5 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-004",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363800",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363800",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Director's Pioneer Award (DP1 Clinical Trial Optional)",
+      "GrantTitle": "NIH Director's Pioneer Award (DP1 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-001",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363801",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363801",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2561,
+  "totalCount": 2565,
   "sources": {
     "ca": {
-      "count": 1993,
+      "count": 1994,
       "success": true
     },
     "federal": {
-      "count": 850,
+      "count": 853,
       "success": true
     }
   },
