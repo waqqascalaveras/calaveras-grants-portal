@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-09-04T18:16:36.705466Z",
+  "fetchedAt": "2026-09-05T06:21:37.076197Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Farmworkers Advancement Program (FAP) Grant for Program Year 2026-27 (PY 26-27)",
+      "GrantTitle": "Farmworkers Advancement Program (FAP) Grant for Program Year 2026-27 (PY 26-27)",
+      "Description": "FAP PY 26-27 programs will position farmworkers to obtain access to good-quality jobs\u00a0 including jobs that pay family-sustaining wages, offer benefits, have predictable hours, opportunities for career advancement, and promote worker voice. Projects will also provide wrap-around support and resources to build skills to prevent job loss and lay the foundation for upward mobility. Funded programs will assist with referrals to health, housing, educational resources, and career and financial coaching.  This SFP aims to build on previous Farmworkers Advancement Program efforts. Funding is available for programs demonstrating a track record of workforce outcomes. There is $10 million available through FAP PY 26-27, and the EDD anticipates that an estimated 8 organizations will be funded. Only one application per organization will be accepted.  Applicants must demonstrate the ability to leverage at least 20 percent of their budget with leveraged resources from other sources.\u00a0 Applicants are encouraged to leverage human capital, and utilize other resources to maximize the project's success.  Proposals must be received by 11:59 p.m. PT on October 12, 2026. An informational webinar will be held on September 15, 2026, at 10 a.m. PT.\u00a0 Pre-registration is required for all attendees. \u00a0Please register through the link in the SFP by 9 a.m. PT on September 15, 2026.  The EDD encourages applicants to submit a Notice of Intent to apply by September 25, 2026, at noon PT to WSBSFP3@edd.ca.gov. To view the SFP, visit the EDD Workforce Development Solicitation for Proposals webpage.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-12 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$10,000,000",
+      "Categories": "Agriculture; Disadvantaged Communities; Employment, Labor & Training",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "190281",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Lunch at the Library Summer 2027",
       "GrantTitle": "Lunch at the Library Summer 2027",
@@ -41531,40 +41547,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Investigator Initiated Innovation in Computational Genomics and Data Science (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Investigator Initiated Innovation in Computational Genomics and Data Science (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-228",
-      "Status": "posted",
-      "ApplicationDeadline": "09/04/2026",
-      "PostedDate": "11/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357194",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357194",
-      "Source": "federal"
-    },
-    {
-      "Title": "Investigator Initiated Innovation in Computational Genomics and Data Science (R21 Clinical Trial Not Allowed)",
-      "GrantTitle": "Investigator Initiated Innovation in Computational Genomics and Data Science (R21 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-229",
-      "Status": "posted",
-      "ApplicationDeadline": "09/04/2026",
-      "PostedDate": "11/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357195",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357195",
-      "Source": "federal"
-    },
-    {
       "Title": "Population Assessment of Tobacco and Health (PATH) Study Biospecimen Access (X01)",
       "GrantTitle": "Population Assessment of Tobacco and Health (PATH) Study Biospecimen Access (X01)",
       "Description": "",
@@ -41956,14 +41938,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2570,
+  "totalCount": 2569,
   "sources": {
     "ca": {
-      "count": 1994,
+      "count": 1995,
       "success": true
     },
     "federal": {
-      "count": 858,
+      "count": 856,
       "success": true
     }
   },
