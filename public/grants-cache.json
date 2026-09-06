@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-05T18:15:06.970601Z",
+  "fetchedAt": "2026-09-06T06:22:13.061202Z",
   "success": true,
   "grants": [
     {
@@ -41547,23 +41547,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Population Assessment of Tobacco and Health (PATH) Study Biospecimen Access (X01)",
-      "GrantTitle": "Population Assessment of Tobacco and Health (PATH) Study Biospecimen Access (X01)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-027",
-      "Status": "posted",
-      "ApplicationDeadline": "09/05/2026",
-      "PostedDate": "08/24/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "349976",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/349976",
-      "Source": "federal"
-    },
-    {
       "Title": "Children's Mental Health Initiative",
       "GrantTitle": "Children's Mental Health Initiative",
       "Description": "",
@@ -41938,14 +41921,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2569,
+  "totalCount": 2568,
   "sources": {
     "ca": {
       "count": 1995,
       "success": true
     },
     "federal": {
-      "count": 856,
+      "count": 855,
       "success": true
     }
   },
