@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-09-09T06:25:10.739540Z",
+  "fetchedAt": "2026-09-09T18:17:57.970994Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Recycled Glass Processing Incentive Grant Program (FY 2026-27)",
+      "GrantTitle": "Recycled Glass Processing Incentive Grant Program (FY 2026-27)",
+      "Description": "Eligible Projects Include:  This grant is for projects that demonstrate the ability to expand furnace-ready glass cullet processing in the State of California. Projects must be located in California. Applicants will be required to identify the location and provide location documentation within the application.  The applicant must match the amount of any grant received from the grant program in an amount equal to or greater than the grant amount. Other funding received from CalRecycle is not eligible to be used as match for this grant program.  Within 12 months of receiving a grant from CalRecycle the entity receiving the grant shall demonstrate to CalRecycle the amount of additional glass cullet processed as a result of utilization of the grant funds.  Eligible Applicants Include:  All eligible applicants must be a current certified beneficiating processor within the State of California and one of the following:  \u2022 Private for-profit entities. For purposes of this program, a \"private, for-profit entity\" is defined as a business intended to operate at a profit and return a profit to its owners. Private entities must be authorized to conduct business in the State of California, by either being registered with the California Secretary of State as a business located in California, being registered as a foreign (out\u2013of\u2013state or out\u2013of\u2013country) business or processing a business license issued by a California city, county, or city and county. The business must be qualified to do business in California and be in good standing with all applicable California state agencies, including, but not limited to, the Secretary of State and the Franchise Tax Board. \u202fAny and all subsidiaries, divisions or affiliated businesses are considered part of the primary business entity for the purpose of applying for and receiving a grant award under the program. \u202fA business is considered an \"affiliated business\" if it has at least one owner with a forty (40) percent or greater interest in another applicant business.  \u2022 Non-profit entities (except private schools) registered with the federal government under 501(c)3, (c)4, (c)6 or (c)10 of the internal revenue code. The applicant must match the amount of any grant received from the grant program in an amount equal to or greater than the grant amount. Other funding received from CalRecycle is not eligible to be used as match for this grant program.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-22 11:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$8,782,179",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": "191106",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Forest Legacy Program Capacity and Project Development 2026",
+      "GrantTitle": "Forest Legacy Program Capacity and Project Development 2026",
+      "Description": "Eligible Activities:\u00a0  Future Projects - Funding for Forest Legacy Grant Due Diligence: Grant funds can be requested to prepare and develop future working forest conservation easement or fee acquisition projects for completion under a Federal OR State Grant. These will be referred to as \u201cFuture Projects\u201d throughout the grant guide. The actual transactions for these Future Projects will need to be prepared and submitted for Federal or State Forest Legacy Funding at a future date, for either Forest Legacy solicitations, or solicitations to other federal or state conservation programs. Projects receiving funding under this grant line item are not guaranteed Federal or State Forest Legacy funding for projects in the future.  Future Projects can include costs for preparing the following: Market analysis or restricted use appraisal for Future Projects in development; Preliminary title report and any associated documents listed in that report (deed, easements, MOUs), as well as the costs to remove exceptions; Minerals Remoteness Report or statement; Land survey with acreage and Description verification; Mapping products / GIS; Development and negotiation of Conservation Easement (CE) Deed (if not acquiring in fee); CE Baseline Document (if not acquiring in fee);\u00a0 \u00a0 Phase 1 Environmental Assessment; Forest Management Plan, Agricultural Management Plan and/or Grazing Management Plan; Soliciting and developing potential FLP projects; Organizational staff time associated with preparation of the above mentioned documents or general work towards completion of the project; Salaries, fringe benefits, travel and supplies that directly support the FLP; Facilitating the donation of lands or interests of lands into the FLP.  Eligible Applicants:\u00a0  These can include, but are not limited to; nonprofits, land trusts, and conservation organizations. This program will not grant funding to a private person, business or other private entity to hold ownership of these interests (fee title or CE) using State funds. Any applicant not eligible to hold a Land Conservation Easement shall specify the intended Land Conservation Easement organization within the application.  Eligible Lands are:  Land that can support 10-percent native tree cover of any species, including hardwoods, under natural conditions, and has a minimum of 75 percent forestland or a documented plan that includes sufficient landowner capacity to reforest to at least 75 percent forestland. The land should allow for management of one or more forest resources, including timber, grazing, aesthetics, fish and wildlife, biodiversity, water quality, recreation, and other public benefits.  Eligible Costs:  The following costs are eligible for reimbursement: Future Projects \u2013 Due Diligence for Future Forest Legacy Project (a) The development and due diligence costs for future conservation easement or fee acquisition projects as stated above under Future Projects.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-09-30 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$500,000",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Nonprofit; Other Legal Entity",
+      "GrantInfoURL": "",
+      "PortalID": "191109",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Farmworkers Advancement Program (FAP) Grant for Program Year 2026-27 (PY 26-27)",
       "GrantTitle": "Farmworkers Advancement Program (FAP) Grant for Program Year 2026-27 (PY 26-27)",
@@ -472,7 +504,7 @@
       "Description": "Tribal Wildfire Resilience grants fund projects that serve California Native American tribes, support Traditional Ecological Knowledge and cultural fire, improve forest health through forest fuels reduction, pest management, reforestation, biomass utilization, forest watershed restoration, upper watershed, riparian, and mountain meadow restoration, or research thereof, and directly or indirectly reduce greenhouse gas emissions. These projects address critical needs in tribal communities, and may include a combination of:  Implementing & training Traditional Ecological Knowledges & indigenous stewardship Cultural and prescribed burns Creation and maintenance of shaded fuel breaks and defensible space Forest and wildfire resilience projects such as: reforestation dead and dying tree removal understory thinning and/or removal Forest health & restoration projects Increasing biodiversity and improving access to and use of traditional foods and culturally significant species Workforce Development and training programs in fire, forestry, and related Traditional Ecological Knowledge Mapping projects Development of restoration plans, fire or forest management plans Biological and cultural surveys Environmental compliance and permitting Fuels management Fire reintroduction (and planning for fire reintroduction)",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-08 12:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$10,000,000",
@@ -41598,10 +41630,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2549,
+  "totalCount": 2551,
   "sources": {
     "ca": {
-      "count": 1995,
+      "count": 1997,
       "success": true
     },
     "federal": {
