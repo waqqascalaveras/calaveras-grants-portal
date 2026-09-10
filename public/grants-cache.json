@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-09T18:17:57.970994Z",
+  "fetchedAt": "2026-09-10T06:25:00.814885Z",
   "success": true,
   "grants": [
     {
@@ -37737,23 +37737,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH Director&rsquo;s Pioneer Award (DP1 Clinical Trial Optional)",
-      "GrantTitle": "NIH Director&rsquo;s Pioneer Award (DP1 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-RM-27-001",
-      "Status": "posted",
-      "ApplicationDeadline": "09/09/2026",
-      "PostedDate": "06/29/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360986",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360986",
-      "Source": "federal"
-    },
-    {
       "Title": "National Viral Hepatitis Education, Awareness, and Capacity Building for Communities and Providers",
       "GrantTitle": "National Viral Hepatitis Education, Awareness, and Capacity Building for Communities and Providers",
       "Description": "",
@@ -39451,23 +39434,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362962",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362962",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY26 - Stopping Threats On Pedestrian Competitive Grant Program (Bollards)",
-      "GrantTitle": "FY26 - Stopping Threats On Pedestrian Competitive Grant Program (Bollards)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FHWA-BOLL-26-001",
-      "Status": "posted",
-      "ApplicationDeadline": "09/09/2026",
-      "PostedDate": "08/10/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363521",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363521",
       "Source": "federal"
     },
     {
@@ -41628,16 +41594,33 @@
       "OpportunityID": "363392",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363392",
       "Source": "federal"
+    },
+    {
+      "Title": "Agriculture Innovation Center Grant Program",
+      "GrantTitle": "Agriculture Innovation Center Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RBCS-2026-AIC",
+      "Status": "posted",
+      "ApplicationDeadline": "01/31/2027",
+      "PostedDate": "09/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363833",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363833",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2551,
+  "totalCount": 2550,
   "sources": {
     "ca": {
       "count": 1997,
       "success": true
     },
     "federal": {
-      "count": 835,
+      "count": 834,
       "success": true
     }
   },
