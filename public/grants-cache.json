@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-10T18:16:36.844946Z",
+  "fetchedAt": "2026-09-11T06:24:11.913659Z",
   "success": true,
   "grants": [
     {
@@ -37686,23 +37686,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH Director&rsquo;s Early Independence Award (DP5 Clinical Trial Optional)",
-      "GrantTitle": "NIH Director&rsquo;s Early Independence Award (DP5 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-RM-27-004",
-      "Status": "posted",
-      "ApplicationDeadline": "09/10/2026",
-      "PostedDate": "06/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360988",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360988",
-      "Source": "federal"
-    },
-    {
       "Title": "Seed Instrumentation Support (SIS) Program (S10 Clinical Trial Not Allowed)",
       "GrantTitle": "Seed Instrumentation Support (SIS) Program (S10 Clinical Trial Not Allowed)",
       "Description": "",
@@ -40032,23 +40015,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
-      "GrantTitle": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172698",
-      "Status": "posted",
-      "ApplicationDeadline": "09/24/2026",
-      "PostedDate": "08/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363637",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363637",
-      "Source": "federal"
-    },
-    {
       "Title": "BJA FY 2026 Second Chance Act Family-Based Substance Use Disorder Treatment Program",
       "GrantTitle": "BJA FY 2026 Second Chance Act Family-Based Substance Use Disorder Treatment Program",
       "Description": "",
@@ -41732,23 +41698,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Cancer Prevention and Control Programs for State, Territorial, and Tribal Organizations",
-      "GrantTitle": "Cancer Prevention and Control Programs for State, Territorial, and Tribal Organizations",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-DP-27-0023",
-      "Status": "posted",
-      "ApplicationDeadline": "02/05/2027",
-      "PostedDate": "09/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363814",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363814",
-      "Source": "federal"
-    },
-    {
       "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
       "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
       "Description": "",
@@ -41763,6 +41712,23 @@
       "AwardFloor": 0,
       "OpportunityID": "363845",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363845",
+      "Source": "federal"
+    },
+    {
+      "Title": "Cancer Prevention and Control Programs for State, Territorial, and Tribal Organizations",
+      "GrantTitle": "Cancer Prevention and Control Programs for State, Territorial, and Tribal Organizations",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-DP-27-0023",
+      "Status": "posted",
+      "ApplicationDeadline": "02/05/2027",
+      "PostedDate": "09/03/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363814",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363814",
       "Source": "federal"
     },
     {
@@ -41781,16 +41747,33 @@
       "OpportunityID": "363848",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363848",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
+      "GrantTitle": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172698",
+      "Status": "posted",
+      "ApplicationDeadline": "09/24/2026",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363637",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363637",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2560,
+  "totalCount": 2559,
   "sources": {
     "ca": {
       "count": 1999,
       "success": true
     },
     "federal": {
-      "count": 845,
+      "count": 844,
       "success": true
     }
   },
