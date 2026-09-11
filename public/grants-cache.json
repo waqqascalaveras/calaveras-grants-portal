@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-09-11T06:24:11.913659Z",
+  "fetchedAt": "2026-09-11T18:16:46.598916Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Cypress Test Grant Title",
+      "GrantTitle": "Cypress Test Grant Title",
+      "Description": "Suspendisse tempor ante sit amet erat sodales, et venenatis diam vulputate. Suspendisse vitae arcu placerat, ultricies purus tincidunt, pellentesque mi. Cras dolor mauris, scelerisque sit amet metus ut, consequat feugiat sem. Duis iaculis pulvinar diam. Maecenas imperdiet dictum diam eu faucibus. Maecenas bibendum, ex id porttitor imperdiet, orci mi cursus dui, malesuada interdum tortor ipsum eu ligula. Duis eget bibendum purus. Ut lorem elit, vehicula non viverra ut, pretium quis diam. Donec commodo mauris augue, sed iaculis ante porta eget. Pellentesque sollicitudin eros in suscipit condimentum. Cras et egestas erat. Praesent auctor ante pellentesque, tempor justo vitae, ornare diam. Nullam facilisis augue ipsum, in euismod arcu facilisis sit amet. Phasellus lobortis lacinia eleifend. Proin vehicula sollicitudin felis, ut ullamcorper purus blandit ut. Integer dignissim, lorem id commodo convallis, enim erat maximus sapien, id tempus mi dolor id risus.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,000",
+      "Categories": "Agriculture; Energy",
+      "ApplicantType": "Business",
+      "GrantInfoURL": "",
+      "PortalID": "191307",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Illegal Disposal Site Abatement Grant Program",
       "GrantTitle": "Illegal Disposal Site Abatement Grant Program",
@@ -344,7 +360,7 @@
       "Description": "An application may include rubberized pavement (hot-mix and chip seal) projects for roadways, Class 1 bikeways [as defined in Streets and Highways Code section 890.4(a)], greenways, and disability access at parks.\u00a0 A greenway is a travel corridor for pedestrians, bicycles, non-motorized vehicle transportation, recreation, or a combination thereof, located along natural landscape features, such as an urban watercourse.\u00a0  State agencies are eligible only for projects for Class 1 bikeways, greenways, and disability access at parks.  All projects are subject to the following requirements:  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 The grantee will construct one or more Rubberized Asphalt Concrete (RAC) Hot-Mix or Rubberized Chip Seal project(s) at the location(s) specified in the approved grant application, unless otherwise approved by the Grant Manager.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Only California-generated waste tires that are processed in California shall be used in the crumb rubber portion of the project(s).\u00a0 Recycled end-of-life crumb rubber that meets all specifications and standards can be used, as appropriate with prior written permission from the Grant Manager.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 The project(s) must be located in California.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Projects must be owned and maintained by the applicant and accessible to the general public.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Reimbursement will not exceed the amount stated on the Grant Agreement Cover Sheet (CalRecycle 110).  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Construction of the RAC portion of any project must commence on or after the date indicated in the Notice to Proceed and be completed by April 1, 2029.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 The binder material must contain a minimum of 300 pounds (equivalent to 15 percent by weight) of the tire-derived crumb rubber per ton of rubberized binder.\u00a0 The binder may be either asphalt rubber/field blend or terminal blend.  \u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-10 11:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$6,371,315",
@@ -584,7 +600,7 @@
       "Description": "Applicants must be a California School District or County Office of Education.For an organization to be able to submit a proposal and/or eligible to compete for funding (i.e. read and rated) they must meet the following requirements:  \u2022 Have a Unique Entity Identifier (UEI) registered in the federal System for Award Management (SAM). Applicants who do not currently have a UEI will need to register at SAM.gov to obtain one. Applicants without an UEI will be unable to submit a proposal in GCS. Staff Note: remove if there are no federal funds supporting the Program.  \u2022 Not have an exclusion record within SAM.gov. An exclusion record within SAM.gov indicates that a contractor (agency) is listed in the federal government-wide system for debarment and suspension. An agency that is debarred or suspended is excluded from activities involving federal financial and nonfinancial assistance and benefits. Check SAM status. Applicants with an exclusion record will be unable to submit a proposal in GCS. Staff Note: remove if there are no federal funds supporting the Program.  \u2022 Be registered with the California Department of Justice\u2019s Registry of Charitable Trusts with a \u201ccurrent,\u201d \u201cexempt,\u201d or \u201cpending\u201d status (applies to non-profit organizations only. Check non-profit status. Staff Note: delete this bullet point if all eligible Applicants are governmental organizations.  \u2022 Have a current registration on the IRS Tax Exempt Organization Search website (e.g., must not be on the Auto-Revocation List). If an Applicant is on the Auto-Revocation List, they must provide documentation that substantiates they have been registered. Check IRS Status. Staff Note: delete this bull if all eligible Applicants are governmental organizations.  \u2022 Upload the written Proof of Authority by the governing body (e.g., County Board of Supervisors, City Council, or Governing Board) granting authority to the Authorized Agent to enter the Subrecipient into a specific Grant Subaward(s) with Cal OES.  Please Note: proposals that do not meet the above requirements will be disqualified (i.e., ineligible) and will not be read or rated.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-10 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$430,000",
@@ -41749,6 +41765,57 @@
       "Source": "federal"
     },
     {
+      "Title": "R3PEATS Grassroots Rigor Projects: Individual Metascience and Individual Laboratory Capacity-Building (RP1)",
+      "GrantTitle": "R3PEATS Grassroots Rigor Projects: Individual Metascience and Individual Laboratory Capacity-Building (RP1)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-011",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363849",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363849",
+      "Source": "federal"
+    },
+    {
+      "Title": "R3PEATS Multi-Team Triangulation: Collaborative Cross-Method Approaches to Scientific Discovery (RM1)",
+      "GrantTitle": "R3PEATS Multi-Team Triangulation: Collaborative Cross-Method Approaches to Scientific Discovery (RM1)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-012",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363850",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363850",
+      "Source": "federal"
+    },
+    {
+      "Title": "R3PEATS Rigor Scholar Cohort Awards (K12)",
+      "GrantTitle": "R3PEATS Rigor Scholar Cohort Awards (K12)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-28-013",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363851",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363851",
+      "Source": "federal"
+    },
+    {
       "Title": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
       "GrantTitle": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
       "Description": "",
@@ -41766,14 +41833,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2559,
+  "totalCount": 2563,
   "sources": {
     "ca": {
-      "count": 1999,
+      "count": 2000,
       "success": true
     },
     "federal": {
-      "count": 844,
+      "count": 847,
       "success": true
     }
   },
