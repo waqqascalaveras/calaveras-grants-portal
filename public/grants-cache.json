@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-11T18:16:46.598916Z",
+  "fetchedAt": "2026-09-12T06:21:52.494808Z",
   "success": true,
   "grants": [
     {
@@ -39521,40 +39521,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Bureau of Land Management Wildlife Resource Management Program - Bureau wide",
-      "GrantTitle": "FY26 Bureau of Land Management Wildlife Resource Management Program - Bureau wide",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "L26AS00045",
-      "Status": "posted",
-      "ApplicationDeadline": "09/11/2026",
-      "PostedDate": "08/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363535",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363535",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY26 Bureau of Land Management Threatened and Endangered Species - Bureau wide",
-      "GrantTitle": "FY26 Bureau of Land Management Threatened and Endangered Species - Bureau wide",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "L26AS00043",
-      "Status": "posted",
-      "ApplicationDeadline": "09/11/2026",
-      "PostedDate": "08/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363534",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363534",
-      "Source": "federal"
-    },
-    {
       "Title": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
       "GrantTitle": "FY26 Bus Safety, Accessibility, and Innovation Notice of Funding Opportunity",
       "Description": "",
@@ -41136,23 +41102,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Accelerating Scale-up and Pre-piloting of Emerging Chemical Technologies (ASPECT)",
-      "GrantTitle": "Accelerating Scale-up and Pre-piloting of Emerging Chemical Technologies (ASPECT)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003647",
-      "Status": "posted",
-      "ApplicationDeadline": "12/01/2026",
-      "PostedDate": "09/04/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363815",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363815",
-      "Source": "federal"
-    },
-    {
       "Title": "Children's Mental Health Initiative",
       "GrantTitle": "Children's Mental Health Initiative",
       "Description": "",
@@ -41831,16 +41780,33 @@
       "OpportunityID": "363637",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363637",
       "Source": "federal"
+    },
+    {
+      "Title": "Accelerating Scale-up and Pre-piloting of Emerging Chemical Technologies (ASPECT)",
+      "GrantTitle": "Accelerating Scale-up and Pre-piloting of Emerging Chemical Technologies (ASPECT)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003647",
+      "Status": "posted",
+      "ApplicationDeadline": "12/01/2026",
+      "PostedDate": "09/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363815",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363815",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2563,
+  "totalCount": 2561,
   "sources": {
     "ca": {
       "count": 2000,
       "success": true
     },
     "federal": {
-      "count": 847,
+      "count": 845,
       "success": true
     }
   },
