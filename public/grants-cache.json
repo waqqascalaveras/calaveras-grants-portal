@@ -1,23 +1,7 @@
 {
-  "fetchedAt": "2026-09-12T06:21:52.494808Z",
+  "fetchedAt": "2026-09-12T18:14:53.748418Z",
   "success": true,
   "grants": [
-    {
-      "Title": "Cypress Test Grant Title",
-      "GrantTitle": "Cypress Test Grant Title",
-      "Description": "Suspendisse tempor ante sit amet erat sodales, et venenatis diam vulputate. Suspendisse vitae arcu placerat, ultricies purus tincidunt, pellentesque mi. Cras dolor mauris, scelerisque sit amet metus ut, consequat feugiat sem. Duis iaculis pulvinar diam. Maecenas imperdiet dictum diam eu faucibus. Maecenas bibendum, ex id porttitor imperdiet, orci mi cursus dui, malesuada interdum tortor ipsum eu ligula. Duis eget bibendum purus. Ut lorem elit, vehicula non viverra ut, pretium quis diam. Donec commodo mauris augue, sed iaculis ante porta eget. Pellentesque sollicitudin eros in suscipit condimentum. Cras et egestas erat. Praesent auctor ante pellentesque, tempor justo vitae, ornare diam. Nullam facilisis augue ipsum, in euismod arcu facilisis sit amet. Phasellus lobortis lacinia eleifend. Proin vehicula sollicitudin felis, ut ullamcorper purus blandit ut. Integer dignissim, lorem id commodo convallis, enim erat maximus sapien, id tempus mi dolor id risus.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
-      "PostedDate": "",
-      "EstAvailFunds": "$1,000",
-      "Categories": "Agriculture; Energy",
-      "ApplicantType": "Business",
-      "GrantInfoURL": "",
-      "PortalID": "191307",
-      "Source": "ca.gov"
-    },
     {
       "Title": "Illegal Disposal Site Abatement Grant Program",
       "GrantTitle": "Illegal Disposal Site Abatement Grant Program",
@@ -216,7 +200,7 @@
       "Description": "$3 million is provided each year for Small Business Development Centers' local cash match funding. Funding is designated to support SBDC networks to help small businesses in California access capital.\u00a0  \u00a0  Funding is only available to the five small business development center networks in California.  \u00a0  This is NOT a grant for small businesses.\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-11 16:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$3,000,000",
@@ -41799,10 +41783,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2561,
+  "totalCount": 2560,
   "sources": {
     "ca": {
-      "count": 2000,
+      "count": 1999,
       "success": true
     },
     "federal": {
