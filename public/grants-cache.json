@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-15T06:25:56.742260Z",
+  "fetchedAt": "2026-09-15T18:15:55.259544Z",
   "success": true,
   "grants": [
     {
@@ -568,7 +568,7 @@
       "Description": "Funding provided under this Program must not be used to support prevention-focused activities or initiatives.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-14 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$254,998",
@@ -872,7 +872,7 @@
       "Description": "The 2026 Dairy Plus Program will make approximately $34 million available to support the implementation of advanced manure management practices.  The 2026 Dairy Plus Program will provide supplemental funding opportunities for projects in previous and in-progress Alternative Manure Management Program (AMMP) and Dairy Digester Research and Development Program (DDRDP), and for projects in the process of implementing a system that is equivalent to approved AMMP and/or DDRDP practices (i.e., AMMP-like and/or DDRDP-like practices). Projects proposing advanced manure management practices must go beyond the usual GHG emission reductions and benefits already provided by the AMMP and DDRDP, and equivalent AMMP and/or DDRDP-like practices:  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00b7 The maximum grant term will be 12 months initially, with the possibility of 24 months pending extension of contract end date approval from USDA. The start and end dates of the grant agreement are subject to change and contingent on the approval of the CPA 52 (NRCS-CPA-52 Environmental Evaluation Worksheet) for the proposed project, as well as pending extension of contract end date approval from USDA.  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00b7 Project funding award cap at $750 per cow, for a maximum of $1,250,000 per project.  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00b7 Grants are paid out on a reimbursement basis following invoice submission by the awardee. Grant funds are subject to state and federal program reimbursement timelines and the availability of program funding.  The proposed project must meet the following eligibility requirements for the 2026 Dairy Plus Program:  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0\u00b7 The project site must be in a commercial California dairy operation. A dairy operation is defined as an entity that operates a dairy herd, which produces milk or cream commercially, and whose bulk milk or bulk cream is received or handled by any distributor, manufacturer, or any nonprofit cooperative association of dairy producers.  \u00a0 \u00a0 \u00a0 \u00a0 \u00b7 California farmers, ranchers, and California Native American Tribes are eligible to apply. Producers receiving grant award funds must be located in California with a physical California business address.  \u00a0 \u00a0 \u00a0 \u00a0 \u00b7 Producers receiving grant award funds must be registered with the USDA Farm Service Agency (FSA) for the specific farm/tract information for all tracts. Note: One farm per tract is eligible for award.  \u00a0 \u00a0 \u00a0 \u00a0\u00b7 Only 1 FSA-registered entity is eligible for an award in each solicitation round. If multiple dairy operations under one FSA-registered entity/producer name are selected, only 1 dairy will be awarded.  \u00a0 \u00a0 \u00a0 \u00a0\u00b7Eligible project types can be categorized as:  \u00a0 \u00a0 \u00a0 \u00a0 o In-progress or previous AMMP recipient proposing a Dairy Plus Program project.  \u00a0 \u00a0 \u00a0 \u00a0 o In-progress or previous DDRDP recipient proposing a Dairy Plus Program project.  \u00a0 \u00a0 \u00a0 \u00a0 o In-progress or already operational \u201cAMMP approved practice/AMMP-like\u201d or \u201cDDRDP approved practice/DDRDP-like\" system proposing a Dairy Plus Program project.  \u00a0 \u00a0 \u00a0 \u00b7 The recipient and project must adhere to all \u201cRequirements and Limitations,\u201d which include federal requirements specific to the USDA Advancing Markets for Producers program.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-14 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$34,000,000",
@@ -40117,23 +40117,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) 2027 AmeriCorps Seniors RSVP Competition",
-      "GrantTitle": "Fiscal Year (FY) 2027 AmeriCorps Seniors RSVP Competition",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "AC-08-20-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "10/20/2026",
-      "PostedDate": "08/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363482",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363482",
-      "Source": "federal"
-    },
-    {
       "Title": "OVC FY 2026 Preventing Trafficking of Girls",
       "GrantTitle": "OVC FY 2026 Preventing Trafficking of Girls",
       "Description": "",
@@ -41797,6 +41780,23 @@
       "AwardFloor": 0,
       "OpportunityID": "359701",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359701",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year (FY) 2027 AmeriCorps Seniors RSVP Competition",
+      "GrantTitle": "Fiscal Year (FY) 2027 AmeriCorps Seniors RSVP Competition",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "AC-08-20-2026",
+      "Status": "posted",
+      "ApplicationDeadline": "10/20/2026",
+      "PostedDate": "08/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363482",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363482",
       "Source": "federal"
     },
     {
