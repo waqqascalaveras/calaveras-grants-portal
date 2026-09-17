@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-09-17T06:25:43.292528Z",
+  "fetchedAt": "2026-09-17T18:18:00.677841Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Scaling Dyadic Care Grant Program",
+      "GrantTitle": "Scaling Dyadic Care Grant Program",
+      "Description": "This two-year funding opportunity will provide Medi-Cal provider organizations with funding, training, and technical assistance to build strong clinical, operational, and billing infrastructure. This funding aims to strengthen care teams, standardize workflows, enhance electronic health record readiness, and improve billing capacity. These efforts are focused on enabling providers\u2014especially those providers serving high-need and historically underserved communities\u2014to consistently deliver and maintain integrated behavioral health services for young children and their caregivers.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-26 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$17,000,000",
+      "Categories": "Disadvantaged Communities; Education; Health & Human Services; Housing, Community and Economic Development",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "191499",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Division of Boating and Waterways 2026 Boating Infrastructure Grant",
       "GrantTitle": "Division of Boating and Waterways 2026 Boating Infrastructure Grant",
@@ -56,7 +72,7 @@
       "Description": "Public entities bear a financial responsibility for maintaining public landfill sites in compliance with state regulations and standards. The program provides financial assistance in the form of reimbursement grants up to $750,000 in matching funds for eligible costs to assist public entities requiring financial assistance, and committed to accelerating the pace of cleanup, restoring sites, and protecting public health and safety and the environment. Eligible projects include the remediation of disposal sites closed in accordance with the local laws at the time of the closure and prior to implementation of the State\u2019s current permitting and/or closure requirements for landfills and disposal sites.\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-16 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,500,000",
@@ -41881,16 +41897,33 @@
       "OpportunityID": "363878",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363878",
       "Source": "federal"
+    },
+    {
+      "Title": "Landmarks of History and Culture and Summer Institutes",
+      "GrantTitle": "Landmarks of History and Culture and Summer Institutes",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "20261209-EDK-EDU",
+      "Status": "posted",
+      "ApplicationDeadline": "12/09/2026",
+      "PostedDate": "09/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363880",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363880",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2566,
+  "totalCount": 2568,
   "sources": {
     "ca": {
-      "count": 2001,
+      "count": 2002,
       "success": true
     },
     "federal": {
-      "count": 849,
+      "count": 850,
       "success": true
     }
   },
