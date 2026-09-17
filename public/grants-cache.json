@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-16T18:17:05.579530Z",
+  "fetchedAt": "2026-09-17T06:25:43.292528Z",
   "success": true,
   "grants": [
     {
@@ -34488,23 +34488,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research",
-      "GrantTitle": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-27-102",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/26/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360659",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360659",
-      "Source": "federal"
-    },
-    {
       "Title": "Intramural - Extramural Collaboration for Advanced 3-D Tissue Models for Drug Screening (Clinical Trial Not Allowed)",
       "GrantTitle": "Intramural - Extramural Collaboration for Advanced 3-D Tissue Models for Drug Screening (Clinical Trial Not Allowed)",
       "Description": "",
@@ -37871,23 +37854,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Scholarly Editions and Translations",
-      "GrantTitle": "Scholarly Editions and Translations",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20260916-RQ",
-      "Status": "posted",
-      "ApplicationDeadline": "09/16/2026",
-      "PostedDate": "06/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363014",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363014",
-      "Source": "federal"
-    },
-    {
       "Title": "Digital Health Technology and Reciprocal Innovation to Improve Clinical and Public Health Outcomes",
       "GrantTitle": "Digital Health Technology and Reciprocal Innovation to Improve Clinical and Public Health Outcomes",
       "Description": "",
@@ -38976,23 +38942,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collaborative Research",
-      "GrantTitle": "Collaborative Research",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "20260916-RZ",
-      "Status": "posted",
-      "ApplicationDeadline": "09/16/2026",
-      "PostedDate": "07/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363084",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363084",
-      "Source": "federal"
-    },
-    {
       "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
       "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
       "Description": "",
@@ -39738,23 +39687,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363585",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363585",
-      "Source": "federal"
-    },
-    {
-      "Title": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
-      "GrantTitle": "Ending HIV and TB as public health threats through an accelerated and sustained comprehensive response in India",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0142",
-      "Status": "posted",
-      "ApplicationDeadline": "09/16/2026",
-      "PostedDate": "08/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360710",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360710",
       "Source": "federal"
     },
     {
@@ -41390,23 +41322,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year (FY) Service Area Competition (SAC)",
-      "GrantTitle": "Fiscal Year (FY) Service Area Competition (SAC)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-27-007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/31/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363420",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363420",
-      "Source": "federal"
-    },
-    {
       "Title": "Fiscal Year 2027 Regional Nutrition Hubs",
       "GrantTitle": "Fiscal Year 2027 Regional Nutrition Hubs",
       "Description": "",
@@ -41815,23 +41730,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Development of Collaborative Research Facilities or Research-Resource Facilities (C06 Clinical Trial Not Allowed)",
-      "GrantTitle": "Development of Collaborative Research Facilities or Research-Resource Facilities (C06 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-106",
-      "Status": "posted",
-      "ApplicationDeadline": "01/25/2028",
-      "PostedDate": "03/06/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359701",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359701",
-      "Source": "federal"
-    },
-    {
       "Title": "Head Start/Early Head Grants in Multiple States",
       "GrantTitle": "Head Start/Early Head Grants in Multiple States",
       "Description": "",
@@ -41864,16 +41762,135 @@
       "OpportunityID": "363792",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363792",
       "Source": "federal"
+    },
+    {
+      "Title": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research (R21, Clinical Trial Not Allowed)",
+      "GrantTitle": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research (R21, Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DK-27-102",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/26/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360659",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360659",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year (FY) Service Area Competition (SAC)",
+      "GrantTitle": "Fiscal Year (FY) Service Area Competition (SAC)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/31/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363420",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363420",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
+      "GrantTitle": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-150",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363875",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363875",
+      "Source": "federal"
+    },
+    {
+      "Title": "Development of Models, New Approach Methodologies, and Biological Materials for Studying Human Health and Diseases (R21 Clinical Trial Not Allowed)",
+      "GrantTitle": "Development of Models, New Approach Methodologies, and Biological Materials for Studying Human Health and Diseases (R21 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-29-002",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363877",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363877",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY26 Safer Outcomes Program",
+      "GrantTitle": "FY26 Safer Outcomes Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-COPS-2026-172549",
+      "Status": "posted",
+      "ApplicationDeadline": "09/18/2026",
+      "PostedDate": "07/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363260",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363260",
+      "Source": "federal"
+    },
+    {
+      "Title": "Technology Development Program",
+      "GrantTitle": "Technology Development Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-29-005",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363876",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363876",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
+      "GrantTitle": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PDR-2600-DC-0006",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363878",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363878",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2565,
+  "totalCount": 2566,
   "sources": {
     "ca": {
       "count": 2001,
       "success": true
     },
     "federal": {
-      "count": 848,
+      "count": 849,
       "success": true
     }
   },
