@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-17T18:18:00.677841Z",
+  "fetchedAt": "2026-09-18T06:24:40.072344Z",
   "success": true,
   "grants": [
     {
@@ -37955,57 +37955,6 @@
       "Source": "federal"
     },
     {
-      "Title": "U.S. Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP) Primary Announcement",
-      "GrantTitle": "U.S. Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP) Primary Announcement",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FA-NOFO0027-002",
-      "Status": "posted",
-      "ApplicationDeadline": "09/17/2026",
-      "PostedDate": "07/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363103",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363103",
-      "Source": "federal"
-    },
-    {
-      "Title": "Department of Interior Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP)Fire Leaders And Managers, Emerging Scientists (FLAMES)",
-      "GrantTitle": "Department of Interior Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP)Fire Leaders And Managers, Emerging Scientists (FLAMES)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FA-NOFO0027-001",
-      "Status": "posted",
-      "ApplicationDeadline": "09/17/2026",
-      "PostedDate": "07/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363101",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363101",
-      "Source": "federal"
-    },
-    {
-      "Title": "U.S Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP) Regional Fire Science Exchange Announcement",
-      "GrantTitle": "U.S Wildland Fire Service BLM-National Interagency Fire Center (NIFC) Joint Fire Science Program (JFSP) Regional Fire Science Exchange Announcement",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FA-NOFO0027-003",
-      "Status": "posted",
-      "ApplicationDeadline": "09/17/2026",
-      "PostedDate": "07/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363102",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363102",
-      "Source": "federal"
-    },
-    {
       "Title": "Elucidation and Validation of the role of Transporters in the Placenta, Lactating Mammary Gland, Developing Gut, and Blood Brain Barrier",
       "GrantTitle": "Elucidation and Validation of the role of Transporters in the Placenta, Lactating Mammary Gland, Developing Gut, and Blood Brain Barrier",
       "Description": "",
@@ -39346,23 +39295,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363488",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363488",
-      "Source": "federal"
-    },
-    {
-      "Title": "Placement and Coordination Program",
-      "GrantTitle": "Placement and Coordination Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ORR-RP-0007",
-      "Status": "posted",
-      "ApplicationDeadline": "09/17/2026",
-      "PostedDate": "07/31/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362962",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362962",
       "Source": "federal"
     },
     {
@@ -41780,23 +41712,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research (R21, Clinical Trial Not Allowed)",
-      "GrantTitle": "Collaborative Awards to Support Microphysiological System Pilot Studies in Type 2 Diabetes Research (R21, Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-27-102",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/26/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360659",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360659",
-      "Source": "federal"
-    },
-    {
       "Title": "Fiscal Year (FY) Service Area Competition (SAC)",
       "GrantTitle": "Fiscal Year (FY) Service Area Competition (SAC)",
       "Description": "",
@@ -41916,14 +41831,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2568,
+  "totalCount": 2563,
   "sources": {
     "ca": {
       "count": 2002,
       "success": true
     },
     "federal": {
-      "count": 850,
+      "count": 845,
       "success": true
     }
   },
