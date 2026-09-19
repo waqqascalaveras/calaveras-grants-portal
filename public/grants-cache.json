@@ -1,7 +1,55 @@
 {
-  "fetchedAt": "2026-09-19T06:22:16.528238Z",
+  "fetchedAt": "2026-09-19T18:15:16.435051Z",
   "success": true,
   "grants": [
+    {
+      "Title": "2027 Nonpoint Source (NPS) Grant Program \u2013 Clean Water Act section 319(h)",
+      "GrantTitle": "2027 Nonpoint Source (NPS) Grant Program \u2013 Clean Water Act section 319(h)",
+      "Description": "The 2027 Nonpoint Source Grant Program Guidelines (Guidelines), posted on the NPS Grant Program website (https://www.waterboards.ca.gov/water_issues/programs/nps/319grants.html), describe program preferences, eligibility requirements, application process and instructions, project selection criteria, and the grant award process. Please note one of the minimum eligibility requirements is to consult with the NPS Grant Coordinator in the corresponding Regional Water Board listed in Appendix 7 of the Guidelines.\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-12-18 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$3,500,000",
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water; Science, Technology, and Research & Development",
+      "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "191763",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Division of Boating and Waterways Aquatic Center Boating Safety Education Grant FY26",
+      "GrantTitle": "Division of Boating and Waterways Aquatic Center Boating Safety Education Grant FY26",
+      "Description": "These grants are available to organizations that offer on-the-water boating safety education courses. Courses offered should be designed to enhance boater knowledge of boating laws, practical handling of vessels on the water, weather and water conditions, rules of the road, and equipment requirements.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-10-30 12:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$1,400,000",
+      "Categories": "Education; Environment & Water; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "191211",
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Small Grants Program",
+      "GrantTitle": "Small Grants Program",
+      "Description": "The Grant has three focus areas: Nature Based Solutions (NBS), community enhancement and access, and ecosystem restoration.  NBS goals are to support restoration, conservation, and 3 climate projects that will stop or reverse ongoing subsidence and reduce greenhouse gas emissions occurring on highly organic soils. NBS projects provide technical assistance and financial support for crop conversion, restoration of managed wetland, research, education and outreach on related topics, land acquisition or easement, and technical assistance to access the Voluntary Carbon Market.  Community enhancement and access projects will benefit Delta communities through public access, recreation and tourism, historic and cultural preservation, environmental education, and community engagement or education.  Ecosystem Restoration and Climate Adaptation projects will restore and conserve the Delta and Suisun Marsh\u2019s natural resources, environment, and biodiversity. Current projects restore, research, plan or educate about landscape health or reduce the risks of climate change impacts upon natural resources, fish, and wildlife. Priorities within these programs include:  1. Protecting and enhancing habitat and habitat restoration.  2. Protecting and preserving Delta agriculture and working landscapes.  3. Providing increased opportunities for tourism and recreation in the Delta.  4. Promoting Delta legacy communities, historical preservation and economic vitality in the Delta.  5. Mitigating the impacts of climate change and increasing climate change resilience.  6. Increasing the resilience of the Delta to the effects of natural disasters such as floods and earthquakes, in coordination with the Delta Protection Commission.  7. Protecting and improving water quality.  8. Protecting, conserving, and restoring the region\u2019s physical, agricultural, cultural, historical, and living resources.  9. Promoting environmental education.  10. Other projects that show a significant benefit to the environment, economy, culture or agriculture in the Delta.  11. Projects that plan for or provide capacity for any of the priorities in this list.  12. Research projects that provide a scientific foundation or inform the priorities listed above.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "Ongoing",
+      "PostedDate": "",
+      "EstAvailFunds": null,
+      "Categories": "Agriculture; Disadvantaged Communities; Environment & Water; Housing, Community and Economic Development; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "191454",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Emergency Medical Services Technical Assistance (EMS TA) Solicitation for Proposals (SFP) for Program Year 2026 (PY 26-27)",
       "GrantTitle": "Emergency Medical Services Technical Assistance (EMS TA) Solicitation for Proposals (SFP) for Program Year 2026 (PY 26-27)",
@@ -264,7 +312,7 @@
       "Description": "Title 45 Code of Federal Regulations (CFR) Section (\u00a7) 400.69, authorizes the California Department of Social Services to establish an alternative approach to the administration of the RCA program rather than one modeled after the TANF program. Additionally, Welfare and Institutions Code (WIC) sections 13302-13307 authorize the California Department of Social Services (CDSS) to award funding to qualified nonprofit organizations to provide services to immigrants residing in, or formerly residing in, the State of California.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-18 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -41828,10 +41876,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2563,
+  "totalCount": 2566,
   "sources": {
     "ca": {
-      "count": 2005,
+      "count": 2008,
       "success": true
     },
     "federal": {
