@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-18T18:16:38.412357Z",
+  "fetchedAt": "2026-09-19T06:22:16.528238Z",
   "success": true,
   "grants": [
     {
@@ -37221,57 +37221,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NCI Community Oncology Research Program (NCORP) Research Bases (UG1 Clinical Trial Required)",
-      "GrantTitle": "NCI Community Oncology Research Program (NCORP) Research Bases (UG1 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CA-27-006",
-      "Status": "posted",
-      "ApplicationDeadline": "09/18/2026",
-      "PostedDate": "05/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358963",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358963",
-      "Source": "federal"
-    },
-    {
-      "Title": "NCI Community Oncology Research Program (NCORP) Academic Community Sites (UG1 Clinical Trials Not Allowed)",
-      "GrantTitle": "NCI Community Oncology Research Program (NCORP) Academic Community Sites (UG1 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CA-27-008",
-      "Status": "posted",
-      "ApplicationDeadline": "09/18/2026",
-      "PostedDate": "05/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359132",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359132",
-      "Source": "federal"
-    },
-    {
-      "Title": "NCI Community Oncology Research Program (NCORP) Community Sites (UG1 Clinical Trial Not Allowed)",
-      "GrantTitle": "NCI Community Oncology Research Program (NCORP) Community Sites (UG1 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-CA-27-007",
-      "Status": "posted",
-      "ApplicationDeadline": "09/18/2026",
-      "PostedDate": "05/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358964",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358964",
-      "Source": "federal"
-    },
-    {
       "Title": "NIAMS P30 Centers Program (P30 - Clinical Trial Not Allowed)",
       "GrantTitle": "NIAMS P30 Centers Program (P30 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -40485,23 +40434,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
-      "GrantTitle": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P27AS00032",
-      "Status": "posted",
-      "ApplicationDeadline": "11/04/2026",
-      "PostedDate": "08/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363728",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363728",
-      "Source": "federal"
-    },
-    {
       "Title": "SEFSC Bluefin Tuna Research Program",
       "GrantTitle": "SEFSC Bluefin Tuna Research Program",
       "Description": "",
@@ -41811,23 +41743,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 Safer Outcomes Program",
-      "GrantTitle": "FY26 Safer Outcomes Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172549",
-      "Status": "posted",
-      "ApplicationDeadline": "09/18/2026",
-      "PostedDate": "07/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363260",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363260",
-      "Source": "federal"
-    },
-    {
       "Title": "Technology Development Program",
       "GrantTitle": "Technology Development Program",
       "Description": "",
@@ -41877,16 +41792,50 @@
       "OpportunityID": "363880",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363880",
       "Source": "federal"
+    },
+    {
+      "Title": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
+      "GrantTitle": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "P27AS00032",
+      "Status": "posted",
+      "ApplicationDeadline": "11/04/2026",
+      "PostedDate": "08/27/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363728",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363728",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "GrantTitle": "FY 2026 Continuum of Care Competition and Youth Homelessness Demonstration Program Grants NOFO",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CPD-2600-DC-0025",
+      "Status": "posted",
+      "ApplicationDeadline": "09/30/2026",
+      "PostedDate": "06/01/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361999",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361999",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2566,
+  "totalCount": 2563,
   "sources": {
     "ca": {
       "count": 2005,
       "success": true
     },
     "federal": {
-      "count": 845,
+      "count": 842,
       "success": true
     }
   },
