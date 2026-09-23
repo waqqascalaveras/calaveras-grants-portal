@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-22T18:19:09.034688Z",
+  "fetchedAt": "2026-09-23T06:26:29.149003Z",
   "success": true,
   "grants": [
     {
@@ -37863,23 +37863,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
-      "GrantTitle": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PS-27-0009",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362731",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362731",
-      "Source": "federal"
-    },
-    {
       "Title": "Ryan White HIV/AIDS Program Part C Capacity Development Program",
       "GrantTitle": "Ryan White HIV/AIDS Program Part C Capacity Development Program",
       "Description": "",
@@ -38319,23 +38302,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363342",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363342",
-      "Source": "federal"
-    },
-    {
-      "Title": "Implementation Research on Coordinated Combinations of Community-Clinical Linkage Strategies for Diabetes Prevention and Management",
-      "GrantTitle": "Implementation Research on Coordinated Combinations of Community-Clinical Linkage Strategies for Diabetes Prevention and Management",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DP-27-051",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363360",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363360",
       "Source": "federal"
     },
     {
@@ -42059,6 +42025,40 @@
       "AwardFloor": 0,
       "OpportunityID": "363917",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363917",
+      "Source": "federal"
+    },
+    {
+      "Title": "Implementation Research on Multi-component Community-Clinical Linkage Approaches for Diabetes Prevention and Management",
+      "GrantTitle": "Implementation Research on Multi-component Community-Clinical Linkage Approaches for Diabetes Prevention and Management",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DP-27-051",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363360",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363360",
+      "Source": "federal"
+    },
+    {
+      "Title": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
+      "GrantTitle": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0009",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "06/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362731",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362731",
       "Source": "federal"
     }
   ],
