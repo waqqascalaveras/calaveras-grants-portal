@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-09-26T06:23:20.876070Z",
+  "fetchedAt": "2026-09-26T18:16:28.927704Z",
   "success": true,
   "grants": [
+    {
+      "Title": "2026 California Nutrition Incentive Program",
+      "GrantTitle": "2026 California Nutrition Incentive Program",
+      "Description": "The California Department of Food and Agriculture\u2019s (CDFA) Office of Farm to Fork is currently accepting proposals for the 2026 California Nutrition Incentive Program (CNIP) competitive grant solicitation. Authority for CNIP is derived from California Food and Agriculture Code Section 49010-49016. CNIP was established to encourage the purchase and consumption of fresh California grown fruits, vegetables, and nuts by nutrition benefit clients.  For the 2026 CNIP Request for Proposal (RFP), CDFA is seeking project proposals from eligible entities to distribute nutrition incentives to shoppers using their CalFresh (SNAP) benefits to purchase fresh, California grown fruits and vegetables at direct marketing outlets (Certified Farmers\u2019 Markets, Certified Mobile Farmers\u2019 Market, Community Supported Agriculture programs, and farm stands) and small businesses in California. CalFresh shoppers should be able to receive the incentive at the time of purchase. Projects that reach low-access areas and low-income populations, particularly communities where a large proportion of the population is eligible for CalFresh and experiences high rates of diet-related diseases, will be prioritized.  CDFA reserves the right to fund a portion of the selected proposals, in whole or in part, without further competition. If project funding and timeline allows, CDFA will combine selected proposals into a unified state application for submission to the U.S. Department of Agriculture\u2019s (USDA) National Institute of Food and Agriculture Gus Schumacher Nutrition Incentive Program (GusNIP).  Eligibility is limited to the following entities or combination of eligible entities:  a.\u00a0\u00a0\u00a0\u00a0 Certified Farmers\u2019 Markets authorized by USDA to accept SNAP benefits  b.\u00a0\u00a0\u00a0\u00a0 Community Supported Agriculture Programs (CSAs) authorized by USDA to accept SNAP benefits  c.\u00a0\u00a0\u00a0\u00a0\u00a0 Certified mobile farmers\u2019 market authorized by USDA to accept SNAP benefits  d.\u00a0\u00a0\u00a0\u00a0 Farm Stands authorized by USDA to accept SNAP benefits  e.\u00a0\u00a0\u00a0\u00a0 Small businesses authorized by USDA to accept SNAP benefits such as retail stores  f.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Non-profit organizations that are applying on behalf of organizations that fall into categories (a), (b), (c), (d) and/or (e)  Certified Farmers\u2019 Markets are described in Food and Agriculture Code Section 47004, Community-Supported Agriculture programs are defined in Section 47060, Farm Stands are defined in Section 47050, and Certified Mobile Farmers\u2019 Markets are defined in Section 47007.  Small Businesses are defined by California Government Code Section Government Code Section 14837 (d) (1) (A):  \u00a0\u201cSmall business\u201d means an independently owned and operated business that is not dominant in its field of operation, the principal office of which is located in California, the officers of which are domiciled in California, and which, together with affiliates, has 100 or fewer employees, and average annual gross receipts of ten million dollars ($10,000,000) or less over the previous three years, or is a manufacturer, as defined in subdivision (c), with 100 or fewer employees. Commencing January 1, 2019, the average annual gross receipts threshold shall be fifteen million dollars ($15,000,000).\u201d",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-11-03 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$13,500,000",
+      "Categories": "Disadvantaged Communities; Food & Nutrition; Health & Human Services",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": "191343",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Increased Recycling of Empty Glass Beverage Containers Grant Program, FY 2026-27",
       "GrantTitle": "Increased Recycling of Empty Glass Beverage Containers Grant Program, FY 2026-27",
@@ -872,7 +888,7 @@
       "Description": "CRC Implementation Grants will fund new construction and upgrades of CRC Facilities and Campus Amenities that support use of the CRC Facility. Additionally, Implementation Grants fund programs and services that build social cohesion and community resilience. In addition to advancing general program objectives Implementation Grant activities include pre-development, community engagement, construction, services and programs, and evaluation.  Eligible implementation activities include:\u00a0\u00a0\u00a0  - Pre-Development Phase: pre-construction activities such as facility condition assessments, planning, engineering, architectural, and other design work, and soft costs for construction plans.\u00a0  - CRC Facility Construction and Retrofits: Activities related to direct construction, retrofits, and other upgrades to the CRC Facility itself.\u00a0  - Campus Amenities: Activities related to construction or improvements to amenities located at the CRC Facility that strengthen the local community\u2019s resilience to climate and other disasters.  - Community Resilience Services and Programs: Services and programs that operate out of the CRC Facility that build community resilience and encourage year-round use of the CRC Facility.  - Partner Sites: Site(s) managed by\u202fApplicants that offers programming and services that advance resilience within the community.  Each CRC Implementation Grant application must include at least two Partners with at least one being a community-based organization (CBO), if the Lead Applicant is not already a CBO. The Lead Applicant and Partners will submit a signed Collaborative Governance Worksheet and letters of commitment at application.  Application Technical Assistance (Application TA) is available during the application period for eligible applicants.\u00a0CRC will prioritize Tribal applicants for Application TA.\u00a0Application TA may be available for\u00a0additional\u00a0applicants on a case-by-case basis. If you are interested in Application TA, complete the Application TA Request Form by July 31, 2026:\u00a0https://forms.cloud.microsoft/g/2aSjd31Y7E\u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-09-25 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$52,000,000",
@@ -42112,10 +42128,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2580,
+  "totalCount": 2581,
   "sources": {
     "ca": {
-      "count": 2010,
+      "count": 2011,
       "success": true
     },
     "federal": {
