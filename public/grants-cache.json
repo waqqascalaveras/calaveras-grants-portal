@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-26T18:16:28.927704Z",
+  "fetchedAt": "2026-09-27T06:24:36.740711Z",
   "success": true,
   "grants": [
     {
@@ -42109,33 +42109,16 @@
       "OpportunityID": "361275",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361275",
       "Source": "federal"
-    },
-    {
-      "Title": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
-      "GrantTitle": "Advancing Global Capacity to Detect and Respond to Fungal Diseases",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CK-26-0230",
-      "Status": "posted",
-      "ApplicationDeadline": "09/26/2026",
-      "PostedDate": "07/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361931",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361931",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2581,
+  "totalCount": 2580,
   "sources": {
     "ca": {
       "count": 2011,
       "success": true
     },
     "federal": {
-      "count": 855,
+      "count": 854,
       "success": true
     }
   },
