@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-29T06:26:20.482598Z",
+  "fetchedAt": "2026-09-29T18:19:25.905861Z",
   "success": true,
   "grants": [
     {
@@ -41992,6 +41992,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
+      "GrantTitle": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-DP-27-0076",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363986",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363986",
+      "Source": "federal"
+    },
+    {
       "Title": "OJJDP FY 2026 Community and Schools Youth Drug Prevention Program",
       "GrantTitle": "OJJDP FY 2026 Community and Schools Youth Drug Prevention Program",
       "Description": "",
@@ -42009,31 +42026,48 @@
       "Source": "federal"
     },
     {
-      "Title": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
-      "GrantTitle": "Promoting Cancer Surveillance Workforce, Education, and Data Use",
+      "Title": "F26AS00062: Great Lakes Fish and Wildlife Restoration Act FY 2026",
+      "GrantTitle": "F26AS00062: Great Lakes Fish and Wildlife Restoration Act FY 2026",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "CDC-RFA-DP-27-0076",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/28/2026",
+      "OpportunityNumber": "F26AS00062",
+      "Status": "posted",
+      "ApplicationDeadline": "10/13/2026",
+      "PostedDate": "06/01/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "363986",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363986",
+      "OpportunityID": "362629",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362629",
+      "Source": "federal"
+    },
+    {
+      "Title": "Early to Definitive Clinical Trials (R61/R33 Clinical Trial Required)",
+      "GrantTitle": "Early to Definitive Clinical Trials (R61/R33 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-074",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363991",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363991",
       "Source": "federal"
     }
   ],
-  "totalCount": 2575,
+  "totalCount": 2577,
   "sources": {
     "ca": {
       "count": 2011,
       "success": true
     },
     "federal": {
-      "count": 848,
+      "count": 850,
       "success": true
     }
   },
