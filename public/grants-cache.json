@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-01T18:20:25.888162Z",
+  "fetchedAt": "2026-10-02T06:25:57.346420Z",
   "success": true,
   "grants": [
     {
@@ -31482,40 +31482,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Cooperative Agreement for In Vivo High-Resolution Imaging for Inner Ear Visualization (U01 Clinical Trial Required)",
-      "GrantTitle": "Cooperative Agreement for In Vivo High-Resolution Imaging for Inner Ear Visualization (U01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DC-25-003",
-      "Status": "posted",
-      "ApplicationDeadline": "10/01/2026",
-      "PostedDate": "01/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358021",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358021",
-      "Source": "federal"
-    },
-    {
-      "Title": "In Vivo High-Resolution Imaging for Inner Ear Visualization (R01 Clinical Trial optional)",
-      "GrantTitle": "In Vivo High-Resolution Imaging for Inner Ear Visualization (R01 Clinical Trial optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DC-25-005",
-      "Status": "posted",
-      "ApplicationDeadline": "10/01/2026",
-      "PostedDate": "01/06/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358022",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358022",
-      "Source": "federal"
-    },
-    {
       "Title": "NCI Pathway to Independence Award (K99/R00  Clinical Trial Required)",
       "GrantTitle": "NCI Pathway to Independence Award (K99/R00  Clinical Trial Required)",
       "Description": "",
@@ -33879,23 +33845,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Centers for Structural Biology of HIV and other Infectious Diseases",
-      "GrantTitle": "Centers for Structural Biology of HIV and other Infectious Diseases",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-009",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "12/22/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361050",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361050",
-      "Source": "federal"
-    },
-    {
       "Title": "Institutional Network Award for Promoting Kidney, Urologic, and Hematologic Research Training (U2C - Clinical Trial Not Allowed)",
       "GrantTitle": "Institutional Network Award for Promoting Kidney, Urologic, and Hematologic Research Training (U2C - Clinical Trial Not Allowed)",
       "Description": "",
@@ -36004,23 +35953,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National HIV Behavioral Surveillance",
-      "GrantTitle": "National HIV Behavioral Surveillance",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PS-27-0001",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361918",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361918",
-      "Source": "federal"
-    },
-    {
       "Title": "Animal and Biological Material Resource Centers (P40 Clinical Trial Not Allowed)",
       "GrantTitle": "Animal and Biological Material Resource Centers (P40 Clinical Trial Not Allowed)",
       "Description": "",
@@ -36834,23 +36766,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362488",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362488",
-      "Source": "federal"
-    },
-    {
-      "Title": "HEAL INITIATIVE: INTERACT Data Coordination and Integration Center (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "HEAL INITIATIVE: INTERACT Data Coordination and Integration Center (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AR-27-002",
-      "Status": "posted",
-      "ApplicationDeadline": "10/01/2026",
-      "PostedDate": "05/19/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358939",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358939",
       "Source": "federal"
     },
     {
@@ -38401,23 +38316,6 @@
       "Source": "federal"
     },
     {
-      "Title": "FY26 COPS Technology and Equipment Program",
-      "GrantTitle": "FY26 COPS Technology and Equipment Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-COPS-2026-172583",
-      "Status": "posted",
-      "ApplicationDeadline": "10/01/2026",
-      "PostedDate": "06/02/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362643",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362643",
-      "Source": "federal"
-    },
-    {
       "Title": "State Biomonitoring Cooperative Agreement",
       "GrantTitle": "State Biomonitoring Cooperative Agreement",
       "Description": "",
@@ -39418,23 +39316,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362958",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362958",
-      "Source": "federal"
-    },
-    {
-      "Title": "Limited Competition: Growing Great Ideas: Research Education Course in Entrepreneurship and Product Development for Researchers Studying Drug Use, Drug Misuse, and Drug Addiction (UE5 Clinical Trial Not Allowed)",
-      "GrantTitle": "Limited Competition: Growing Great Ideas: Research Education Course in Entrepreneurship and Product Development for Researchers Studying Drug Use, Drug Misuse, and Drug Addiction (UE5 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-27-007",
-      "Status": "posted",
-      "ApplicationDeadline": "10/01/2026",
-      "PostedDate": "06/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360561",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360561",
       "Source": "federal"
     },
     {
@@ -41852,23 +41733,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
-      "GrantTitle": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-125",
-      "Status": "posted",
-      "ApplicationDeadline": "10/28/2027",
-      "PostedDate": "09/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359657",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359657",
-      "Source": "federal"
-    },
-    {
       "Title": "HIV Prevention and Alcohol (R61/R33 Clinical Trials Optional)",
       "GrantTitle": "HIV Prevention and Alcohol (R61/R33 Clinical Trials Optional)",
       "Description": "",
@@ -41901,16 +41765,50 @@
       "OpportunityID": "363902",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363902",
       "Source": "federal"
+    },
+    {
+      "Title": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
+      "GrantTitle": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-125",
+      "Status": "posted",
+      "ApplicationDeadline": "10/28/2027",
+      "PostedDate": "09/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359657",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359657",
+      "Source": "federal"
+    },
+    {
+      "Title": "Centers for Structural Biology of HIV and Other Infectious Diseases (U54 Clinical Trial Not Allowed)",
+      "GrantTitle": "Centers for Structural Biology of HIV and Other Infectious Diseases (U54 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-031",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "12/22/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361050",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361050",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2568,
+  "totalCount": 2562,
   "sources": {
     "ca": {
       "count": 2015,
       "success": true
     },
     "federal": {
-      "count": 837,
+      "count": 831,
       "success": true
     }
   },
