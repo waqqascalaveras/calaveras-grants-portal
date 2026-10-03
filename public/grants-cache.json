@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-02T18:19:52.902356Z",
+  "fetchedAt": "2026-10-03T06:26:11.614259Z",
   "success": true,
   "grants": [
     {
@@ -35595,23 +35595,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Novel Experiential Technologies Assisting Individual Learning (NExT AI) Hubs (P20 Clinical Trial Optional)",
-      "GrantTitle": "Novel Experiential Technologies Assisting Individual Learning (NExT AI) Hubs (P20 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-HD-27-006",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "06/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359949",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359949",
-      "Source": "federal"
-    },
-    {
       "Title": "Administrative Supplements to Existing NIH Grants and Cooperative Agreements (Parent Admin Supp Clinical Trial Optional)",
       "GrantTitle": "Administrative Supplements to Existing NIH Grants and Cooperative Agreements (Parent Admin Supp Clinical Trial Optional)",
       "Description": "",
@@ -40202,40 +40185,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Validation Center for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U54 Clinical Trials Not Allowed)",
-      "GrantTitle": "Validation Center for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U54 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-RM-27-014",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "06/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359269",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359269",
-      "Source": "federal"
-    },
-    {
-      "Title": "Logistics Center for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U24 Clinical Trials Not Allowed)",
-      "GrantTitle": "Logistics Center for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U24 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-RM-27-015",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "06/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359268",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359268",
-      "Source": "federal"
-    },
-    {
       "Title": "Development and Testing of a Multi-use Frameworks Playbook for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U01 Clinical Trial Not Allowed)",
       "GrantTitle": "Development and Testing of a Multi-use Frameworks Playbook for Precision Medicine with AI: Integrating Imaging with Multimodal Data (PRIMED-AI) (U01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -40661,40 +40610,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Improving global health security in C&ocirc;te d'Ivoire to stop the spread of infectious disease",
-      "GrantTitle": "Improving global health security in C&ocirc;te d'Ivoire to stop the spread of infectious disease",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0042",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360324",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360324",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security though local partnerships in Tanzania",
-      "GrantTitle": "Expanding global health security though local partnerships in Tanzania",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0052",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360337",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360337",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: Institutional Development Award (IDeA) for Clinical &amp; Translational Research (CTR) (P30 - CT Optional)",
       "GrantTitle": "Limited Competition: Institutional Development Award (IDeA) for Clinical &amp; Translational Research (CTR) (P30 - CT Optional)",
       "Description": "",
@@ -40712,40 +40627,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Expanding global health security through local partnerships in Nigeria",
-      "GrantTitle": "Expanding global health security through local partnerships in Nigeria",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0043",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360332",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360332",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security through local partnerships in Indonesia",
-      "GrantTitle": "Expanding global health security through local partnerships in Indonesia",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0053",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360338",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360338",
-      "Source": "federal"
-    },
-    {
       "Title": "OVC FY 2026 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking",
       "GrantTitle": "OVC FY 2026 Enhanced Collaborative Model (ECM) Task Force to Combat Human Trafficking",
       "Description": "",
@@ -40760,91 +40641,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363655",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363655",
-      "Source": "federal"
-    },
-    {
-      "Title": "Protecting and Improving Global Health Security by Engaging Local Partners: Strengthening and Sustaining Public Health Systems in Ghana",
-      "GrantTitle": "Protecting and Improving Global Health Security by Engaging Local Partners: Strengthening and Sustaining Public Health Systems in Ghana",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0047",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360455",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360455",
-      "Source": "federal"
-    },
-    {
-      "Title": "Strengthening global health security in India to contain public health threats and accelerate outbreak response",
-      "GrantTitle": "Strengthening global health security in India to contain public health threats and accelerate outbreak response",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0051",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360336",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360336",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding Global Health Security through local partnerships in Senegal",
-      "GrantTitle": "Expanding Global Health Security through local partnerships in Senegal",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0048",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360334",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360334",
-      "Source": "federal"
-    },
-    {
-      "Title": "Strengthening Global Health Security through local partnerships in&nbsp;Sierra Leone",
-      "GrantTitle": "Strengthening Global Health Security through local partnerships in&nbsp;Sierra Leone",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0050",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360335",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360335",
-      "Source": "federal"
-    },
-    {
-      "Title": "Expanding global health security through local partnerships in Ethiopia",
-      "GrantTitle": "Expanding global health security through local partnerships in Ethiopia",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-26-0046",
-      "Status": "posted",
-      "ApplicationDeadline": "10/02/2026",
-      "PostedDate": "08/03/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360333",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360333",
       "Source": "federal"
     },
     {
@@ -41834,14 +41630,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2564,
+  "totalCount": 2552,
   "sources": {
     "ca": {
       "count": 2016,
       "success": true
     },
     "federal": {
-      "count": 832,
+      "count": 820,
       "success": true
     }
   },
