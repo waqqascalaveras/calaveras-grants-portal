@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-10-03T06:26:11.614259Z",
+  "fetchedAt": "2026-10-03T18:44:47.552036Z",
   "success": true,
   "grants": [
+    {
+      "Title": "The Recreational Trails Program (RTP) \u2013 R27",
+      "GrantTitle": "The Recreational Trails Program (RTP) \u2013 R27",
+      "Description": "The Recreational Trails Program (RTP) provides funds to develop and maintain Recreational Trails and trail-related facilities for motorized Recreational Trail uses. This includes acquisition, development and rehabilitation of trails and facilities, construction and maintenance of trails, purchase or lease of equipment, trail conditions assessments, and the development and distribution of educational messages.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-11-02 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$3,000,000.00",
+      "Categories": "Education; Environment & Water; Parks & Recreation",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": "191046",
+      "Source": "ca.gov"
+    },
     {
       "Title": "Urban Streams Restoration Program",
       "GrantTitle": "Urban Streams Restoration Program",
@@ -296,8 +312,8 @@
       "Description": "Widespread illegal dumping of solid waste adversely impacts Californians in many ways. Properties on which illegal dumping occurs lose economic value; create public health and safety and environmental problems; and degrade the enjoyment and pride in the affected communities. Abandoned, idled, or underutilized properties due to unauthorized dumping impact what were once the sources of economic benefits to a community. Many such properties have been abandoned or have owners who are unable or unwilling to pay the costs of cleanup.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "2026-10-16 23:59:00",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-09-16 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,000,000.00",
       "Categories": "Disadvantaged Communities; Environment & Water; Health & Human Services; Housing, Community and Economic Development",
@@ -41630,10 +41646,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2552,
+  "totalCount": 2553,
   "sources": {
     "ca": {
-      "count": 2016,
+      "count": 2017,
       "success": true
     },
     "federal": {
