@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-03T18:44:47.552036Z",
+  "fetchedAt": "2026-10-04T08:06:46.054895Z",
   "success": true,
   "grants": [
     {
@@ -36257,23 +36257,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIDCD Clinical Research Center Grant (P50 Clinical Trial Optional)",
-      "GrantTitle": "NIDCD Clinical Research Center Grant (P50 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-445",
-      "Status": "posted",
-      "ApplicationDeadline": "10/03/2026",
-      "PostedDate": "09/15/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358863",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358863",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Specialized Center Grant (Parent P50)",
       "GrantTitle": "NIH Specialized Center Grant (Parent P50)",
       "Description": "",
@@ -41646,14 +41629,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2553,
+  "totalCount": 2552,
   "sources": {
     "ca": {
       "count": 2017,
       "success": true
     },
     "federal": {
-      "count": 820,
+      "count": 819,
       "success": true
     }
   },
