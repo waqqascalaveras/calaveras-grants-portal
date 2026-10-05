@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-05T06:38:45.791884Z",
+  "fetchedAt": "2026-10-05T18:19:40.532026Z",
   "success": true,
   "grants": [
     {
@@ -41612,6 +41612,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003577",
+      "Status": "posted",
+      "ApplicationDeadline": "12/07/2026",
+      "PostedDate": "10/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364026",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
+      "Source": "federal"
+    },
+    {
       "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "Description": "",
@@ -41629,14 +41646,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2552,
+  "totalCount": 2553,
   "sources": {
     "ca": {
       "count": 2017,
       "success": true
     },
     "federal": {
-      "count": 819,
+      "count": 820,
       "success": true
     }
   },
