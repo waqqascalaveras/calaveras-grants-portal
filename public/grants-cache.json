@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-05T18:19:40.532026Z",
+  "fetchedAt": "2026-10-06T06:26:16.400210Z",
   "success": true,
   "grants": [
     {
@@ -40796,23 +40796,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Crisis Response Training Program",
-      "GrantTitle": "BJA FY 2026 Crisis Response Training Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172706",
-      "Status": "posted",
-      "ApplicationDeadline": "10/05/2026",
-      "PostedDate": "08/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363710",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363710",
-      "Source": "federal"
-    },
-    {
       "Title": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
       "GrantTitle": "Innovative Traffic Safety Enforcement (ITSE) Grant Program",
       "Description": "",
@@ -41646,14 +41629,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2553,
+  "totalCount": 2552,
   "sources": {
     "ca": {
       "count": 2017,
       "success": true
     },
     "federal": {
-      "count": 820,
+      "count": 819,
       "success": true
     }
   },
