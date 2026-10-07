@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-06T18:18:30.080372Z",
+  "fetchedAt": "2026-10-07T06:26:04.945854Z",
   "success": true,
   "grants": [
     {
@@ -34015,23 +34015,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Advancing Research on the Application of Digital Health Technology to the Management of Type 2 Diabetes (R01- Clinical Trail Required)",
-      "GrantTitle": "Advancing Research on the Application of Digital Health Technology to the Management of Type 2 Diabetes (R01- Clinical Trail Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DK-26-315",
-      "Status": "posted",
-      "ApplicationDeadline": "10/06/2026",
-      "PostedDate": "09/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359252",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359252",
-      "Source": "federal"
-    },
-    {
       "Title": "The NIDDK Disorders of Gastrointestinal Interoception Consortium Clinical Centers (DGIC)",
       "GrantTitle": "The NIDDK Disorders of Gastrointestinal Interoception Consortium Clinical Centers (DGIC)",
       "Description": "",
@@ -34301,23 +34284,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360869",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360869",
-      "Source": "federal"
-    },
-    {
-      "Title": "Implementation Science to End the HIV Epidemic",
-      "GrantTitle": "Implementation Science to End the HIV Epidemic",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-27-018",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "11/18/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360873",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360873",
       "Source": "federal"
     },
     {
@@ -37548,23 +37514,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363634",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363634",
-      "Source": "federal"
-    },
-    {
-      "Title": "BJA FY 2026 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
-      "GrantTitle": "BJA FY 2026 The Kevin and Avonte Program: Reducing Injury and Death of Missing Individuals with Dementia and Developmental Disabilities",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172697",
-      "Status": "posted",
-      "ApplicationDeadline": "10/06/2026",
-      "PostedDate": "08/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363629",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363629",
       "Source": "federal"
     },
     {
@@ -41444,6 +41393,57 @@
       "Source": "federal"
     },
     {
+      "Title": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
+      "GrantTitle": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-125",
+      "Status": "posted",
+      "ApplicationDeadline": "10/28/2027",
+      "PostedDate": "09/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359657",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359657",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
+      "GrantTitle": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PDR-2600-DC-0006",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363878",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363878",
+      "Source": "federal"
+    },
+    {
+      "Title": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
+      "GrantTitle": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "UST-SIPPRA-2027-003",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/07/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364003",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364003",
+      "Source": "federal"
+    },
+    {
       "Title": "HIV Prevention and Alcohol (R61/R33 Clinical Trials Optional)",
       "GrantTitle": "HIV Prevention and Alcohol (R61/R33 Clinical Trials Optional)",
       "Description": "",
@@ -41546,40 +41546,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
-      "GrantTitle": "Mechanistic Evaluation of Therapeutic Targets derived from Treatable Traits to Improve CNS Outcomes in People with HIV (R21/R33 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-125",
-      "Status": "posted",
-      "ApplicationDeadline": "10/28/2027",
-      "PostedDate": "09/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359657",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359657",
-      "Source": "federal"
-    },
-    {
-      "Title": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
-      "GrantTitle": "FY2026/2027 Community Compass Technical Assistance and Capacity Building Program Notice of Funding Opportunity",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PDR-2600-DC-0006",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363878",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363878",
-      "Source": "federal"
-    },
-    {
       "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
       "Description": "",
@@ -41594,6 +41560,40 @@
       "AwardFloor": 0,
       "OpportunityID": "358100",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358100",
+      "Source": "federal"
+    },
+    {
+      "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
+      "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-28-012",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "10/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360366",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360366",
+      "Source": "federal"
+    },
+    {
+      "Title": "HEAL Initiative: Integrative Management of Chronic Pain and OUD for Whole Recovery (IMPOWR): Research Centers (RM1 Clinical Trial Required)",
+      "GrantTitle": "HEAL Initiative: Integrative Management of Chronic Pain and OUD for Whole Recovery (IMPOWR): Research Centers (RM1 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-DA-28-011",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "10/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360048",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360048",
       "Source": "federal"
     },
     {
@@ -41614,48 +41614,31 @@
       "Source": "federal"
     },
     {
-      "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
-      "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
+      "Title": "Implementation Science to Advance HIV Prevention, Treatment, and Care (R61/R33 Clinical Trial Optional)",
+      "GrantTitle": "Implementation Science to Advance HIV Prevention, Treatment, and Care (R61/R33 Clinical Trial Optional)",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-DA-28-012",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/27/2025",
+      "OpportunityNumber": "RFA-AI-27-018",
+      "Status": "posted",
+      "ApplicationDeadline": "06/20/2029",
+      "PostedDate": "10/06/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "360366",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360366",
-      "Source": "federal"
-    },
-    {
-      "Title": "HEAL Initiative: Integrative Management of Chronic Pain and OUD for Whole Recovery (IMPOWR): Research Centers (RM1 Clinical Trial Required)",
-      "GrantTitle": "HEAL Initiative: Integrative Management of Chronic Pain and OUD for Whole Recovery (IMPOWR): Research Centers (RM1 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-DA-28-011",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/17/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360048",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360048",
+      "OpportunityID": "360873",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360873",
       "Source": "federal"
     }
   ],
-  "totalCount": 2553,
+  "totalCount": 2552,
   "sources": {
     "ca": {
       "count": 2015,
       "success": true
     },
     "federal": {
-      "count": 822,
+      "count": 821,
       "success": true
     }
   },
