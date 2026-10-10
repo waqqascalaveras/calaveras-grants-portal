@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-10-10T06:24:28.826814Z",
+  "fetchedAt": "2026-10-10T18:17:43.785007Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
+      "GrantTitle": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
+      "Description": "The ETPP grants will be awarded to develop and implement projects that accelerate pathways to employment for populations facing significant employment barriers into high-demand occupations for good-quality jobs. The ETPP will develop skill-based pathways by integrating education and workforce training programs to align with the specific needs of the state\u2019s strategic industry sectors which will will not only ensure that individuals are connected to good-quality jobs but become better prepared to enter high-demand fields. The ETPP aligns with the California Master Plan for Career Education and the Unified Strategic Workforce Development Plan to help connect California workers to jobs and promote sustainable growth of the state\u2019s economy. \u00a0Proposals must be received by 11:59 p.m. on November 9, 2026.  Two informational webinars will be held on October 20, 2026 at 10:00 a.m. and 2:00 p.m. Pre-registration is required for all participants. Once the SFP releases, please refer to the EDD\u2019s Workforce Development Solicitation for Proposals website for the pre-registration link. After successfully pre-registering, a system-generated email will provide the webinar link. \u00a0  Applicants must demonstrate the ability to leverage a minimum of 20 percent of their budget with funds or services from other sources. The leverage needed for funds is based on the total grant funding requested. Applicants are encouraged to braid funds, leverage human capital, and utilize other resources to maximize the success of the project. Leveraged resources can come from a variety of sources.  To view the SFP once it releases, visit the EDD Workforce Development Solicitations for Proposals webpage at https://edd.ca.gov/en/jobs_and_training/wdsfp_workforce_development_solicitations_for_proposals.\u00a0 The EDD encourages applicants to submit a notice of intent to apply by October 23, 2026, at noon PT to WSBSFP3@edd.ca.gov. \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-11-09 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$17,000,000.00",
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 193566,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Cannabis Equity Grants Program for Local Jurisdictions",
       "GrantTitle": "Cannabis Equity Grants Program for Local Jurisdictions",
@@ -584,7 +600,7 @@
       "Description": "The Sustainable Transportation Planning Grant Program was created to support the California Department of Transportation\u2019s (Caltrans) Mission: Improving lives and communities through transportation.  The California Legislature passed, and Governor Edmund G. Brown Jr. signed into law, Senate Bill 1 (SB 1, Beall, Chapter 5, Statutes of 2017) \u2013 The Road Repair and Accountability Act of 2017, a transportation funding bill that provides a reliable fund source to maintain and integrate the State\u2019s multimodal transportation system. In addition to the $10 million in traditional State and federal grants, approximately $25 million in SB 1 funds for Sustainable Communities Grants is available for each grant cycle.  The State-funded Sustainable Communities grants ($30 million) are intended to support and implement Regional Transportation Plan (RTP) Sustainable Communities Strategies/Alternative Planning Strategies (SCS/APS) (where applicable) and to ultimately achieve the State\u2019s greenhouse gas (GHG) reduction target of 40 and 85 percent below 1990 levels by 2030 and 2045, respectively.  Eligible planning projects must have a transportation nexus per Article XIX Sections 2 and 3 of the California Constitution. Therefore, successful planning projects are expected to directly benefit the multimodal transportation system. These grants will also improve public health, social equity, environmental justice, the environment, and provide other important community benefits.  Additional details are provided in the STPG Application Guide available on the STPG website using the URL below.  https://dot.ca.gov/programs/transportation-planning/division-of-transportation-planning/regional-and-community-planning/sustainable-transportation-planning-grants",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-09 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": null,
@@ -41913,10 +41929,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2569,
+  "totalCount": 2570,
   "sources": {
     "ca": {
-      "count": 2022,
+      "count": 2023,
       "success": true
     },
     "federal": {
