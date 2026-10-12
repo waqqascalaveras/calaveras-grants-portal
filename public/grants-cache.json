@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-11T18:18:29.629590Z",
+  "fetchedAt": "2026-10-12T06:38:55.310166Z",
   "success": true,
   "grants": [
     {
@@ -36081,23 +36081,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
-      "GrantTitle": "Addressing Methodological Challenges with Clinical Trials of Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (R01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-135",
-      "Status": "posted",
-      "ApplicationDeadline": "10/11/2026",
-      "PostedDate": "04/29/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359202",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359202",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Specialized Center Grant (Parent P50)",
       "GrantTitle": "NIH Specialized Center Grant (Parent P50)",
       "Description": "",
@@ -41929,14 +41912,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2570,
+  "totalCount": 2569,
   "sources": {
     "ca": {
       "count": 2023,
       "success": true
     },
     "federal": {
-      "count": 831,
+      "count": 830,
       "success": true
     }
   },
