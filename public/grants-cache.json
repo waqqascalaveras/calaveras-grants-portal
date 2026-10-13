@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-12T18:18:25.075115Z",
+  "fetchedAt": "2026-10-13T06:29:11.435013Z",
   "success": true,
   "grants": [
     {
@@ -41130,23 +41130,6 @@
       "Source": "federal"
     },
     {
-      "Title": "2026 National Urban and Community Forestry Challenge Cost Share Grant Program",
-      "GrantTitle": "2026 National Urban and Community Forestry Challenge Cost Share Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-FS-UCF-01-2026",
-      "Status": "posted",
-      "ApplicationDeadline": "10/12/2026",
-      "PostedDate": "08/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361315",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361315",
-      "Source": "federal"
-    },
-    {
       "Title": "Early to Definitive Clinical Trials (R61/R33 Clinical Trial Required)",
       "GrantTitle": "Early to Definitive Clinical Trials (R61/R33 Clinical Trial Required)",
       "Description": "",
@@ -41912,14 +41895,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2569,
+  "totalCount": 2568,
   "sources": {
     "ca": {
       "count": 2023,
       "success": true
     },
     "federal": {
-      "count": 830,
+      "count": 829,
       "success": true
     }
   },
