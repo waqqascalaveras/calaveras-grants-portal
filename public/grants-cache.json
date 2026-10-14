@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-13T18:20:51.350023Z",
+  "fetchedAt": "2026-10-14T06:24:27.843898Z",
   "success": true,
   "grants": [
     {
@@ -41045,23 +41045,6 @@
       "Source": "federal"
     },
     {
-      "Title": "F26AS00062: Great Lakes Fish and Wildlife Restoration Act FY 2026",
-      "GrantTitle": "F26AS00062: Great Lakes Fish and Wildlife Restoration Act FY 2026",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "F26AS00062",
-      "Status": "posted",
-      "ApplicationDeadline": "10/13/2026",
-      "PostedDate": "06/01/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362629",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362629",
-      "Source": "federal"
-    },
-    {
       "Title": "F26AS00023 FY2026 Prescott Marine Mammal Rescue and Response Grant Program",
       "GrantTitle": "F26AS00023 FY2026 Prescott Marine Mammal Rescue and Response Grant Program",
       "Description": "",
@@ -41895,23 +41878,6 @@
       "Source": "federal"
     },
     {
-      "Title": "OJJDP FY 2026 Opioid Affected Youth Initiative",
-      "GrantTitle": "OJJDP FY 2026 Opioid Affected Youth Initiative",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-OJJDP-2026-172748",
-      "Status": "posted",
-      "ApplicationDeadline": "11/16/2026",
-      "PostedDate": "10/09/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364057",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364057",
-      "Source": "federal"
-    },
-    {
       "Title": "Sustained Support for Informatics Technologies for Cancer Research and Management (U24 Clinical Trial Optional)",
       "GrantTitle": "Sustained Support for Informatics Technologies for Cancer Research and Management (U24 Clinical Trial Optional)",
       "Description": "",
@@ -41944,16 +41910,33 @@
       "OpportunityID": "360554",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360554",
       "Source": "federal"
+    },
+    {
+      "Title": "OJJDP FY 2026 Opioid Affected Youth Initiative",
+      "GrantTitle": "OJJDP FY 2026 Opioid Affected Youth Initiative",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-OJJDP-2026-172748",
+      "Status": "posted",
+      "ApplicationDeadline": "11/16/2026",
+      "PostedDate": "10/09/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364057",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364057",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2571,
+  "totalCount": 2570,
   "sources": {
     "ca": {
       "count": 2022,
       "success": true
     },
     "federal": {
-      "count": 832,
+      "count": 831,
       "success": true
     }
   },
