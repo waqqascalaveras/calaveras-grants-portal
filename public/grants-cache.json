@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T06:23:56.175646Z",
+  "fetchedAt": "2026-10-16T18:16:20.548686Z",
   "success": true,
   "grants": [
     {
@@ -824,7 +824,7 @@
       "Description": "Tire-Derived Aggregate (TDA)\u00a0is made from shredded tires as an alternative to conventional lightweight aggregates that is:  Lightweight  Free-draining  Less expensive  Eligible Applicants Include:  -All California local government entities, including cities, counties, and cities and counties.  -Special districts, including transportation districts.  -Joint Powers Authorities in which all JPA members are also eligible applicants.  -Public school districts.  -All California state agencies, including offices, departments, bureaus, and boards.  -University of California, California State University, and California Community Colleges.  -Private, for-profit entities.  \u00a0 \u00a0 \u00a0Defined as a business intended to operate at a profit and return a profit to its owner(s).  \u00a0 \u00a0 \u00a0The business must be California-based, or if in another state, must have an operational presence in\u00a0 \u00a0California: see Application Guidelines and Instructions for complete details and restrictions.  -Non-profit organizations, except private elementary or secondary schools, registered with the federal government under section 501(c)(3), (c)(4), (c)(6), or (c)(10) of the Internal Revenue Code.  -Qualifying Tribal Entities.  \u00a0 \u00a0 \u00a0 A Qualifying Tribal Entity is defined as a tribe, band, nation, or other organized group or community, residing within the borders of California, which:  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Is recognized for special programs and services provided by the United States to Indians because of the\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0status of its members as Indians or:  \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Can prove that it is a government entity and meets the criteria of the grant program.  Eligible projects include:  Category 1: Mechanically Stabilized TDA for retaining walls.  Category 2: Low Impact Development, stormwater mitigation including stormwater infiltration galleries.  Category 3: Lightweight film, slope stabilization, embankment fill, landslide repair, and retaining walls.  Category 4: Vibration mitigation under rail lines.  Category 5: Landfill application, aggregate replacement projects such as leachate and gas collection systems, drainage layers, and leachate injection.  \u00a0  How to apply:\u00a0Funding - CalRecycle Home Page\u00a0  Applications due October 15, 2026.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-15 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$750,000.00",
@@ -34448,23 +34448,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
-      "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-26-092",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "01/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361204",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361204",
-      "Source": "federal"
-    },
-    {
       "Title": "National Resource Network for the Study of Human Auditory and Vestibular Disorders",
       "GrantTitle": "National Resource Network for the Study of Human Auditory and Vestibular Disorders",
       "Description": "",
@@ -41894,23 +41877,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
-      "GrantTitle": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-28-090",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "11/18/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360869",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360869",
-      "Source": "federal"
-    },
-    {
       "Title": "OJP FY 2026 Integrity in American Elections Grant Program",
       "GrantTitle": "OJP FY 2026 Integrity in American Elections Grant Program",
       "Description": "",
@@ -41926,16 +41892,101 @@
       "OpportunityID": "364097",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364097",
       "Source": "federal"
+    },
+    {
+      "Title": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
+      "GrantTitle": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-090",
+      "Status": "posted",
+      "ApplicationDeadline": "05/25/2029",
+      "PostedDate": "10/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360869",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360869",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
+      "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-093",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "01/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361204",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361204",
+      "Source": "federal"
+    },
+    {
+      "Title": "NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI (T15 Independent Clinical Trial Not Allowed)",
+      "GrantTitle": "NLM Institutional Grants for Research Training in Biomedical Informatics, Data Science, and AI (T15 Independent Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-LM-28-001",
+      "Status": "posted",
+      "ApplicationDeadline": "02/11/2027",
+      "PostedDate": "10/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361318",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361318",
+      "Source": "federal"
+    },
+    {
+      "Title": "Public Humanities Projects",
+      "GrantTitle": "Public Humanities Projects",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "20261209-GE-GI-BP-BR-GGX",
+      "Status": "posted",
+      "ApplicationDeadline": "12/16/2026",
+      "PostedDate": "10/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364098",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364098",
+      "Source": "federal"
+    },
+    {
+      "Title": "FY 2027 &ndash; 2029 Broad Agency Announcement (BAA), National Marine Fisheries Service",
+      "GrantTitle": "FY 2027 &ndash; 2029 Broad Agency Announcement (BAA), National Marine Fisheries Service",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "NOAA-NMFS-FHQ-2027-33600",
+      "Status": "posted",
+      "ApplicationDeadline": "09/30/2028",
+      "PostedDate": "10/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364099",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364099",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2570,
+  "totalCount": 2573,
   "sources": {
     "ca": {
       "count": 2023,
       "success": true
     },
     "federal": {
-      "count": 827,
+      "count": 830,
       "success": true
     }
   },
