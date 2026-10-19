@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T06:32:29.138217Z",
+  "fetchedAt": "2026-10-19T18:18:25.218316Z",
   "success": true,
   "grants": [
     {
@@ -34482,23 +34482,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
-      "GrantTitle": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-26-002",
-      "Status": "posted",
-      "ApplicationDeadline": "05/07/2029",
-      "PostedDate": "01/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "360581",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360581",
-      "Source": "federal"
-    },
-    {
       "Title": "Restoring Joint Health and Function to Reduce Pain (RE-JOIN) 2.0",
       "GrantTitle": "Restoring Joint Health and Function to Reduce Pain (RE-JOIN) 2.0",
       "Description": "",
@@ -36451,23 +36434,6 @@
       "AwardFloor": 0,
       "OpportunityID": "359161",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/359161",
-      "Source": "federal"
-    },
-    {
-      "Title": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
-      "GrantTitle": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-27-037",
-      "Status": "posted",
-      "ApplicationDeadline": "04/08/2029",
-      "PostedDate": "06/16/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359702",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359702",
       "Source": "federal"
     },
     {
@@ -41843,23 +41809,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
-      "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-28-093",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "01/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361204",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361204",
-      "Source": "federal"
-    },
-    {
       "Title": "OJP FY 2026 Integrity in American Elections Grant Program",
       "GrantTitle": "OJP FY 2026 Integrity in American Elections Grant Program",
       "Description": "",
@@ -41877,6 +41826,23 @@
       "Source": "federal"
     },
     {
+      "Title": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
+      "GrantTitle": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-26-002",
+      "Status": "posted",
+      "ApplicationDeadline": "05/07/2029",
+      "PostedDate": "01/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "360581",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/360581",
+      "Source": "federal"
+    },
+    {
       "Title": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
       "GrantTitle": "Centers for AIDS Research (CFAR) and Developmental Centers for AIDS Research (D-CFAR) (P30 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41891,6 +41857,23 @@
       "AwardFloor": 0,
       "OpportunityID": "360869",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360869",
+      "Source": "federal"
+    },
+    {
+      "Title": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
+      "GrantTitle": "Predoctoral to Postdoctoral Transition Award (Parent F99/K00 - Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-27-037",
+      "Status": "posted",
+      "ApplicationDeadline": "04/08/2029",
+      "PostedDate": "06/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359702",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359702",
       "Source": "federal"
     },
     {
@@ -41926,16 +41909,84 @@
       "OpportunityID": "364098",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364098",
       "Source": "federal"
+    },
+    {
+      "Title": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
+      "GrantTitle": "Pilot and Feasibility Studies in Preparation for Substance Use and HIV Prevention Intervention and Services Research Trials (R34 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-28-093",
+      "Status": "posted",
+      "ApplicationDeadline": "07/16/2029",
+      "PostedDate": "10/19/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361204",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361204",
+      "Source": "federal"
+    },
+    {
+      "Title": "Alzheimer's Disease Programs Initiative (ADPI) - States and Community Grants",
+      "GrantTitle": "Alzheimer's Disease Programs Initiative (ADPI) - States and Community Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-AOA-ADPI-0008",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/19/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364113",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364113",
+      "Source": "federal"
+    },
+    {
+      "Title": "Evaluating Innovative Community Based Nutrition Models that Improve Health Outcomes for Older Adults in Senior Nutrition Programs",
+      "GrantTitle": "Evaluating Innovative Community Based Nutrition Models that Improve Health Outcomes for Older Adults in Senior Nutrition Programs",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-AOA-INNU-0014",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/19/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364120",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364120",
+      "Source": "federal"
+    },
+    {
+      "Title": "No Wrong Door System Modernization: Connecting People to Services",
+      "GrantTitle": "No Wrong Door System Modernization: Connecting People to Services",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-CIP-NWGV-0005",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/19/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364121",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364121",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2570,
+  "totalCount": 2573,
   "sources": {
     "ca": {
       "count": 2023,
       "success": true
     },
     "federal": {
-      "count": 827,
+      "count": 830,
       "success": true
     }
   },
