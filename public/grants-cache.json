@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T06:24:01.735324Z",
+  "fetchedAt": "2026-10-21T18:17:48.336346Z",
   "success": true,
   "grants": [
     {
@@ -824,7 +824,7 @@
       "Description": "The Quantum FAST Challenge is a competitive grant program that seeks to strengthen California's quantum ecosystem by funding projects in two priority areas: (1) Education and workforce development projects that build the talent pipeline that quantum technologies require; and (2) Applied use case demonstrations that pair researchers and students with industry partners to demonstrate applications in quantum-adjacent disciplines.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-20 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$2,700,000.00",
@@ -35247,23 +35247,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
-      "GrantTitle": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-NS-27-015",
-      "Status": "posted",
-      "ApplicationDeadline": "10/04/2027",
-      "PostedDate": "05/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "356205",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356205",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: The NHGRI Analysis, Visualization, and Informatics Lab-space (AnVIL) (U54 Clinical Trial Not Allowed)",
       "GrantTitle": "Limited Competition: The NHGRI Analysis, Visualization, and Informatics Lab-space (AnVIL) (U54 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41892,6 +41875,23 @@
       "OpportunityID": "361159",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361159",
       "Source": "federal"
+    },
+    {
+      "Title": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
+      "GrantTitle": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-NS-27-015",
+      "Status": "posted",
+      "ApplicationDeadline": "10/04/2027",
+      "PostedDate": "05/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "356205",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356205",
+      "Source": "federal"
     }
   ],
   "totalCount": 2568,
@@ -41901,12 +41901,12 @@
       "success": true
     },
     "federal": {
-      "count": 823,
+      "count": 824,
       "success": true
     }
   },
   "duplicates": {
-    "count": 279,
+    "count": 280,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
