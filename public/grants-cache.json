@@ -1,21 +1,21 @@
 {
-  "fetchedAt": "2026-10-22T06:24:05.415235Z",
+  "fetchedAt": "2026-10-22T18:16:53.149876Z",
   "success": true,
   "grants": [
     {
-      "Title": "Beverage Container Redemption Innovation Grant",
-      "GrantTitle": "Beverage Container Redemption Innovation Grant",
-      "Description": "The fundamental goal of the Program is to support start-up costs for mobile recycling programs to increase the California Refund Value (CRV) beverage container redemption opportunities that utilize innovative projects.",
+      "Title": "Mojave Desert Tortoise Recovery",
+      "GrantTitle": "Mojave Desert Tortoise Recovery",
+      "Description": "Eligible projects should be focused on:  Managing habitat connectivity and linkage protection, including maintenance and installation of Mojave Desert tortoise fencing along roads within and near the Tortoise Conservation Area corridors to concentrate desert tortoise and increase adult survivorship and overall population densities. Installing, or improving culverts, underpasses or overpasses to allow for Mojave Desert tortoise movement.  Cumulative-impact monitoring and data infrastructure, such as a centralized geospatial tracking system for surface disturbance, remediation effectiveness, and translocation outcomes across the species' range.  Supporting on-the-ground efforts to improve habitat conditions for Mojave Desert tortoises in landscapes affected by adjacent development including, but not limited to, addressing surface hydrology disruptions, predator monitoring and control, habitat restoration and enhancement actions (including seeding with desert tortoise forage species), and nonnative removal and control to benefit population recovery.  Activities to support population augmentation of depleted Mojave Desert tortoise populations including establishment of facilities, head-starting and reintroduction, genetic testing, translocation logistics, health screening, post release monitoring.  \u00a0",
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
-      "ApplicationDeadline": "2027-01-05 16:00:00",
+      "ApplicationDeadline": "2026-12-03 04:00:00",
       "PostedDate": "",
-      "EstAvailFunds": "$20,000,000.00",
+      "EstAvailFunds": "$2,000,000.00",
       "Categories": "Environment & Water",
-      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "ApplicantType": "Business; Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
-      "PortalID": 193827,
+      "PortalID": 193758,
       "Source": "ca.gov"
     },
     {
@@ -1696,6 +1696,22 @@
       "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency",
       "GrantInfoURL": "",
       "PortalID": 171591,
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Beverage Container Redemption Innovation Grant",
+      "GrantTitle": "Beverage Container Redemption Innovation Grant",
+      "Description": "The fundamental goal of the Program is to support start-up costs for mobile recycling programs to increase the California Refund Value (CRV) beverage container redemption opportunities that utilize innovative projects.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-06-23 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$20,000,000.00",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 164127,
       "Source": "ca.gov"
     },
     {
@@ -35553,23 +35569,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
-      "GrantTitle": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-27-077",
-      "Status": "posted",
-      "ApplicationDeadline": "05/25/2029",
-      "PostedDate": "05/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359157",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359157",
-      "Source": "federal"
-    },
-    {
       "Title": "Feasibility Studies to Inform the Design of Future Clinical Trials",
       "GrantTitle": "Feasibility Studies to Inform the Design of Future Clinical Trials",
       "Description": "",
@@ -37661,23 +37660,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
-      "GrantTitle": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172718",
-      "Status": "posted",
-      "ApplicationDeadline": "10/29/2026",
-      "PostedDate": "09/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363889",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363889",
-      "Source": "federal"
-    },
-    {
       "Title": "BJA FY 2026 Adult Treatment Court Program",
       "GrantTitle": "BJA FY 2026 Adult Treatment Court Program",
       "Description": "",
@@ -38253,23 +38235,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361304",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361304",
-      "Source": "federal"
-    },
-    {
-      "Title": "National Parks Business Plan Internship",
-      "GrantTitle": "National Parks Business Plan Internship",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P26AS00055",
-      "Status": "posted",
-      "ApplicationDeadline": "01/04/2027",
-      "PostedDate": "09/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363985",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363985",
       "Source": "federal"
     },
     {
@@ -41469,23 +41434,6 @@
       "Source": "federal"
     },
     {
-      "Title": "OJP FY 2026 Integrity in American Elections Grant Program",
-      "GrantTitle": "OJP FY 2026 Integrity in American Elections Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172793",
-      "Status": "posted",
-      "ApplicationDeadline": "12/01/2026",
-      "PostedDate": "10/15/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364097",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364097",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
       "GrantTitle": "NIH Collaborative International Research Project (Parent PF5 Clinical Trial Optional)",
       "Description": "",
@@ -41892,29 +41840,161 @@
       "OpportunityID": "363845",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363845",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
+      "GrantTitle": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172718",
+      "Status": "posted",
+      "ApplicationDeadline": "10/29/2026",
+      "PostedDate": "09/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363889",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363889",
+      "Source": "federal"
+    },
+    {
+      "Title": "OJP FY 2026 Integrity in American Elections Grant Program",
+      "GrantTitle": "OJP FY 2026 Integrity in American Elections Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172793",
+      "Status": "posted",
+      "ApplicationDeadline": "12/01/2026",
+      "PostedDate": "10/15/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364097",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364097",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2026 Flood Mitigation Assistance",
+      "GrantTitle": "Fiscal Year 2026 Flood Mitigation Assistance",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DHS-26-MT-029-000-98",
+      "Status": "posted",
+      "ApplicationDeadline": "02/26/2027",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364124",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364124",
+      "Source": "federal"
+    },
+    {
+      "Title": "National Parks Business Plan Internship",
+      "GrantTitle": "National Parks Business Plan Internship",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "P26AS00055",
+      "Status": "posted",
+      "ApplicationDeadline": "01/04/2027",
+      "PostedDate": "09/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363985",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363985",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIJ FY 2026 Research on the Abuse, Neglect, and Exploitation of Elderly Individuals",
+      "GrantTitle": "NIJ FY 2026 Research on the Abuse, Neglect, and Exploitation of Elderly Individuals",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-NIJ-2026-172804",
+      "Status": "posted",
+      "ApplicationDeadline": "11/30/2026",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364138",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364138",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
+      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-NIJ-2026-172805",
+      "Status": "posted",
+      "ApplicationDeadline": "11/30/2026",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364139",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364139",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
+      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-NIJ-2026-172806",
+      "Status": "posted",
+      "ApplicationDeadline": "11/30/2026",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364140",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364140",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
+      "GrantTitle": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-27-077",
+      "Status": "posted",
+      "ApplicationDeadline": "05/25/2029",
+      "PostedDate": "05/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359157",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359157",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2568,
+  "totalCount": 2573,
   "sources": {
     "ca": {
       "count": 2024,
       "success": true
     },
     "federal": {
-      "count": 824,
+      "count": 828,
       "success": true
     }
   },
   "duplicates": {
-    "count": 280,
+    "count": 279,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
         "duplicate": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental"
-      },
-      {
-        "original": "Beverage Container Redemption Innovation Grant",
-        "duplicate": "Beverage Container Redemption Innovation Grant"
       },
       {
         "original": "Beverage Container Redemption Innovation Grant",
@@ -41927,6 +42007,10 @@
       {
         "original": "Tire-Derived Aggregate Grant Program",
         "duplicate": "Tire-Derived Aggregate Grant Program"
+      },
+      {
+        "original": "CAL FIRE Forest Health",
+        "duplicate": "CAL FIRE Forest Health"
       }
     ]
   }
