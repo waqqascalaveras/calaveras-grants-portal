@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-21T18:17:48.336346Z",
+  "fetchedAt": "2026-10-22T06:24:05.415235Z",
   "success": true,
   "grants": [
     {
@@ -37304,23 +37304,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FOA-VETS-27-01",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/10/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363845",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363845",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: BRAIN Initiative: Promoting Health for All Through BRAIN Technology Partnerships",
       "GrantTitle": "Limited Competition: BRAIN Initiative: Promoting Health for All Through BRAIN Technology Partnerships",
       "Description": "",
@@ -41843,23 +41826,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Immune Tolerance Network (UM1 Clinical Trial Required)",
-      "GrantTitle": "Immune Tolerance Network (UM1 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-28-005",
-      "Status": "posted",
-      "ApplicationDeadline": "01/29/2027",
-      "PostedDate": "10/20/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362946",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362946",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Research Education Program - Research Experiences (Parent R25 - Clinical Trial Not Allowed)",
       "GrantTitle": "NIH Research Education Program - Research Experiences (Parent R25 - Clinical Trial Not Allowed)",
       "Description": "",
@@ -41877,6 +41843,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Immune Tolerance Network (UM1 Clinical Trial Required)",
+      "GrantTitle": "Immune Tolerance Network (UM1 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-005",
+      "Status": "posted",
+      "ApplicationDeadline": "01/29/2027",
+      "PostedDate": "10/20/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362946",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362946",
+      "Source": "federal"
+    },
+    {
       "Title": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
       "GrantTitle": "BRAIN Initiative Connectivity across Scales (BRAIN CONNECTS): Specialized Projects for Scalable Technologies (U01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41891,6 +41874,23 @@
       "AwardFloor": 0,
       "OpportunityID": "356205",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/356205",
+      "Source": "federal"
+    },
+    {
+      "Title": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "GrantTitle": "Homeless Veterans&rsquo; Reintegration Program (HVRP), Incarcerated Veterans&rsquo; Transition Program (IVTP), and the Homeless Women Veterans' and Homeless Veterans' with Children Reintegration Grant Program (HWVHVWC) (referred to collectively as HVRP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FOA-VETS-27-01",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "09/10/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363845",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363845",
       "Source": "federal"
     }
   ],
