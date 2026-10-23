@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T18:16:53.149876Z",
+  "fetchedAt": "2026-10-23T06:24:31.850722Z",
   "success": true,
   "grants": [
     {
@@ -35195,23 +35195,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Optimizing Behavioral Sleep Interventions for Adolescents and Young Adults (R34 Clinical Trial Required)",
-      "GrantTitle": "Optimizing Behavioral Sleep Interventions for Adolescents and Young Adults (R34 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-140",
-      "Status": "posted",
-      "ApplicationDeadline": "10/22/2026",
-      "PostedDate": "05/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359159",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359159",
-      "Source": "federal"
-    },
-    {
       "Title": "Biological Testing Facility for Contraception &amp; Reproductive Health (X01 Clinical Trial Not Allowed)",
       "GrantTitle": "Biological Testing Facility for Contraception &amp; Reproductive Health (X01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41876,6 +41859,23 @@
       "Source": "federal"
     },
     {
+      "Title": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
+      "GrantTitle": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-27-077",
+      "Status": "posted",
+      "ApplicationDeadline": "05/25/2029",
+      "PostedDate": "05/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "359157",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359157",
+      "Source": "federal"
+    },
+    {
       "Title": "Fiscal Year 2026 Flood Mitigation Assistance",
       "GrantTitle": "Fiscal Year 2026 Flood Mitigation Assistance",
       "Description": "",
@@ -41907,6 +41907,23 @@
       "AwardFloor": 0,
       "OpportunityID": "363985",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363985",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
+      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-NIJ-2026-172806",
+      "Status": "posted",
+      "ApplicationDeadline": "11/30/2026",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364140",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364140",
       "Source": "federal"
     },
     {
@@ -41942,50 +41959,16 @@
       "OpportunityID": "364139",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364139",
       "Source": "federal"
-    },
-    {
-      "Title": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
-      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2026-172806",
-      "Status": "posted",
-      "ApplicationDeadline": "11/30/2026",
-      "PostedDate": "10/22/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364140",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364140",
-      "Source": "federal"
-    },
-    {
-      "Title": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
-      "GrantTitle": "NIH Science Education Partnership Award (SEPA) (R25 - Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-27-077",
-      "Status": "posted",
-      "ApplicationDeadline": "05/25/2029",
-      "PostedDate": "05/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "359157",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/359157",
-      "Source": "federal"
     }
   ],
-  "totalCount": 2573,
+  "totalCount": 2572,
   "sources": {
     "ca": {
       "count": 2024,
       "success": true
     },
     "federal": {
-      "count": 828,
+      "count": 827,
       "success": true
     }
   },
