@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T06:24:31.850722Z",
+  "fetchedAt": "2026-10-23T18:17:01.080705Z",
   "success": true,
   "grants": [
     {
@@ -35,22 +35,6 @@
       "Source": "ca.gov"
     },
     {
-      "Title": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
-      "GrantTitle": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
-      "Description": "The ETPP grants will be awarded to develop and implement projects that accelerate pathways to employment for populations facing significant employment barriers into high-demand occupations for good-quality jobs. The ETPP will develop skill-based pathways by integrating education and workforce training programs to align with the specific needs of the state\u2019s strategic industry sectors which will will not only ensure that individuals are connected to good-quality jobs but become better prepared to enter high-demand fields. The ETPP aligns with the California Master Plan for Career Education and the Unified Strategic Workforce Development Plan to help connect California workers to jobs and promote sustainable growth of the state\u2019s economy. \u00a0Proposals must be received by 11:59 p.m. on November 9, 2026.  Two informational webinars will be held on October 20, 2026 at 10:00 a.m. and 2:00 p.m. Pre-registration is required for all participants. Once the SFP releases, please refer to the EDD\u2019s Workforce Development Solicitation for Proposals website for the pre-registration link. After successfully pre-registering, a system-generated email will provide the webinar link. \u00a0  Applicants must demonstrate the ability to leverage a minimum of 20 percent of their budget with funds or services from other sources. The leverage needed for funds is based on the total grant funding requested. Applicants are encouraged to braid funds, leverage human capital, and utilize other resources to maximize the success of the project. Leveraged resources can come from a variety of sources.  To view the SFP once it releases, visit the EDD Workforce Development Solicitations for Proposals webpage at https://edd.ca.gov/en/jobs_and_training/wdsfp_workforce_development_solicitations_for_proposals.\u00a0 The EDD encourages applicants to submit a notice of intent to apply by October 23, 2026, at noon PT to WSBSFP3@edd.ca.gov. \u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "2026-11-09 23:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$17,000,000.00",
-      "Categories": "Disadvantaged Communities; Employment, Labor & Training",
-      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": 193566,
-      "Source": "ca.gov"
-    },
-    {
       "Title": "Cannabis Equity Grants Program for Local Jurisdictions",
       "GrantTitle": "Cannabis Equity Grants Program for Local Jurisdictions",
       "Description": "On November 8, 2016, California voters approved Proposition 64, the Control, Regulate, and Tax Adult Use of Marijuana Act (AUMA). In its statement of purpose and intent, AUMA calls for regulating cannabis in a way that \u201creduces barriers to entry into the legal, regulated market.\u201d  GO-Biz administers the Cannabis Equity Grants Program for Local Jurisdictions to aid local equity program efforts to support equity applicants and equity licensees. Offering technical support, regulatory compliance assistance, and assistance with securing the capital necessary to begin a business will further the stated intent of the AUMA by reducing barriers to licensure and employment in the regulated industry. Offering these types of support will also aid the state in its goal of eliminating or reducing the illicit cannabis market by bringing more people into the legal marketplace.",
@@ -64,6 +48,22 @@
       "ApplicantType": "Public Agency",
       "GrantInfoURL": "",
       "PortalID": 192603,
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
+      "GrantTitle": "Employment and Training Pathways Program (ETPP) Program Year 2026-27 (PY 26-27)",
+      "Description": "The ETPP grants will be awarded to develop and implement projects that accelerate pathways to employment for populations facing significant employment barriers into high-demand occupations for good-quality jobs. The ETPP will develop skill-based pathways by integrating education and workforce training programs to align with the specific needs of the state\u2019s strategic industry sectors which will will not only ensure that individuals are connected to good-quality jobs but become better prepared to enter high-demand fields. The ETPP aligns with the California Master Plan for Career Education and the Unified Strategic Workforce Development Plan to help connect California workers to jobs and promote sustainable growth of the state\u2019s economy. \u00a0Proposals must be received by 11:59 p.m. on November 9, 2026.  Two informational webinars will be held on October 20, 2026 at 10:00 a.m. and 2:00 p.m. Pre-registration is required for all participants. Once the SFP releases, please refer to the EDD\u2019s Workforce Development Solicitation for Proposals website for the pre-registration link. After successfully pre-registering, a system-generated email will provide the webinar link. \u00a0  Applicants must demonstrate the ability to leverage a minimum of 20 percent of their budget with funds or services from other sources. The leverage needed for funds is based on the total grant funding requested. Applicants are encouraged to braid funds, leverage human capital, and utilize other resources to maximize the success of the project. Leveraged resources can come from a variety of sources.  To view the SFP once it releases, visit the EDD Workforce Development Solicitations for Proposals webpage at https://edd.ca.gov/en/jobs_and_training/wdsfp_workforce_development_solicitations_for_proposals.\u00a0 The EDD encourages applicants to submit a notice of intent to apply by October 23, 2026, at noon PT to WSBSFP3@edd.ca.gov. \u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-11-09 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$17,000,000.00",
+      "Categories": "Disadvantaged Communities; Employment, Labor & Training",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 193566,
       "Source": "ca.gov"
     },
     {
@@ -392,7 +392,7 @@
       "Description": "The purpose of the Delta Community, Environment and Climate Grant Program is to fund multibenefit projects in the Delta and Suisun Marsh. The Conservancy is soliciting proposals for three different priorities: Community Enhancement, Nature-Based Solutions, and Ecosystem Restoration.  \u2022 Community Enhancement planning and implementation projects will benefit Delta communities through public access, recreation and tourism, historic and cultural preservation, environmental education, and community engagement. Funded projects will provide outdoor access for all, sustain the Delta\u2019s heritage, and/or enhance the unique values of the Delta today. Example projects include, but are not limited to, water or hiking trails, sidewalks, bike routes, community parks or picnic sites, public boating infrastructure, visitor centers, kiosks, signage, renovation of historic buildings for public use, development of cultural relevant historic districts, educational materials for the public about environmental or environmental justice issues, and land acquisition to support community enhancement projects.  \u2022 Nature Based Solutions projects will address ongoing subsidence and greenhouse gas emissions occurring on highly organic soils in the Delta and Suisun Marsh, which threaten the region\u2019s communities, agriculture, ecosystem, and the State and Federal water projects. Example projects include, but are not limited to, planning and implementation of managed and tidal wetland restoration, crop conversion to paludiculture (e.g., rice, walking wetlands, other wet crops), technical assistance to access the Voluntary Carbon Market or support practice implementation, scientific research, education and outreach on related topics, and land acquisition or easement.  \u2022 Ecosystem Restoration and Climate Adaptation projects protect the Delta and Suisun Marsh\u2019s natural resources, environment, and biodiversity. Funded projects will restore, research, plan, or educate about landscape health and/or reduce the risks of climate change impacts upon natural resources, fish, and wildlife. Example projects include, but are not limited to, planning, education, habitat restoration and enhancement, wetland protection, watershed resilience, land acquisitions, and conservation easements.  All projects funded through the Delta Community, Environment and Climate Program should aim to include multiple benefits as described below in Section IV Evaluation Criteria. Projects may span two or more of the funding priorities listed above.  With rare exceptions, the Conservancy will cap funding amounts based on project type: \u2022 Planning, research, communication, and capacity building grants can be awarded between $100,000 to $750,000. \u2022 Implementation and acquisition grants can be awarded between $100,000 to $2 million.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-23 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$24,752,000.00",
@@ -488,7 +488,7 @@
       "Description": "Eligible Projects Include:  This grant is for projects that demonstrate the ability to expand furnace-ready glass cullet processing in the State of California. Projects must be located in California. Applicants will be required to identify the location and provide location documentation within the application.  The applicant must match the amount of any grant received from the grant program in an amount equal to or greater than the grant amount. Other funding received from CalRecycle is not eligible to be used as match for this grant program.  Within 12 months of receiving a grant from CalRecycle the entity receiving the grant shall demonstrate to CalRecycle the amount of additional glass cullet processed as a result of utilization of the grant funds.  Eligible Applicants Include:  All eligible applicants must be a current certified beneficiating processor within the State of California and one of the following:  \u2022 Private for-profit entities. For purposes of this program, a \"private, for-profit entity\" is defined as a business intended to operate at a profit and return a profit to its owners. Private entities must be authorized to conduct business in the State of California, by either being registered with the California Secretary of State as a business located in California, being registered as a foreign (out\u2013of\u2013state or out\u2013of\u2013country) business or processing a business license issued by a California city, county, or city and county. The business must be qualified to do business in California and be in good standing with all applicable California state agencies, including, but not limited to, the Secretary of State and the Franchise Tax Board. \u202fAny and all subsidiaries, divisions or affiliated businesses are considered part of the primary business entity for the purpose of applying for and receiving a grant award under the program. \u202fA business is considered an \"affiliated business\" if it has at least one owner with a forty (40) percent or greater interest in another applicant business.  \u2022 Non-profit entities (except private schools) registered with the federal government under 501(c)3, (c)4, (c)6 or (c)10 of the internal revenue code. The applicant must match the amount of any grant received from the grant program in an amount equal to or greater than the grant amount. Other funding received from CalRecycle is not eligible to be used as match for this grant program.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-22 11:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$8,782,179.00",
@@ -2520,7 +2520,7 @@
       "Description": "This grant opportunity will result in funding organizations to train Registered Nurse trainees to work in underserved communities. Such strategies shall incorporate the following elements:  1.Establishing procedures to identify, recruit, and admit registered nurse trainees who possess characteristics which would suggest a predisposition to practice in areas of unmet need, and who express a commitment to serve in areas of unmet need.  2. Implementing counseling and placement programs to encourage training program graduates to enter practice in areas of unmet need.  3.Providing preceptorship experience in an area of unmet need to enhance the potential of training program graduates to practice in such an area.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-22 15:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$2,725,000.00",
@@ -33597,23 +33597,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)",
-      "GrantTitle": "NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-EB-26-004",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "02/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361380",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361380",
-      "Source": "federal"
-    },
-    {
       "Title": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
       "GrantTitle": "Precision Approaches in Radiation Synthetic Combinations (PAIRS, RP1 Clinical Trial Optional)",
       "Description": "",
@@ -36637,23 +36620,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363523",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363523",
-      "Source": "federal"
-    },
-    {
-      "Title": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
-      "GrantTitle": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-27-033",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363533",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363533",
       "Source": "federal"
     },
     {
@@ -41958,6 +41924,40 @@
       "AwardFloor": 0,
       "OpportunityID": "364139",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364139",
+      "Source": "federal"
+    },
+    {
+      "Title": "NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)",
+      "GrantTitle": "NextTech: Translational Development of Next-Generation Diagnostic and Therapeutic Devices (R18 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-EB-28-004",
+      "Status": "posted",
+      "ApplicationDeadline": "12/01/2030",
+      "PostedDate": "10/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361380",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361380",
+      "Source": "federal"
+    },
+    {
+      "Title": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
+      "GrantTitle": "Healthy Tomorrows Partnership for Children Program (HTPCP)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-033",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363533",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363533",
       "Source": "federal"
     }
   ],
