@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-10-24T06:21:53.660745Z",
+  "fetchedAt": "2026-10-24T18:15:02.655636Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Land and Water Conservation Fund (LWCF)",
+      "GrantTitle": "Land and Water Conservation Fund (LWCF)",
+      "Description": "Eligible Local and Non-State Agencies:  \u00a0 \u00a0 \u00b7\u00a0 Cities and counties  \u00a0 \u00a0 \u00b7\u00a0 Federally recognized Native American tribes  \u00a0 \u00a0 \u00b7\u00a0 Joint Powers Authorities (JPA) where all members are public agencies.  \u00a0 \u00a0 \u00a0 \u00a0o\u00a0 A JPA can include a state agency if at least one member is a local (non-state) public agency or district, and the JPA was formed for the purpose of providing PARK and recreation areas.  \u00a0 \u00a0 \u00b7\u00a0 Non-state agency recreation and park districts and special districts with authority to acquire, operate, and maintain public park and recreation areas.  Deadline: Thursday, January 14, 2027  Maximum Grant Request: $6 million  Match Requirement: 50%  Eligible Projects:  ACQUISITION PROJECTS or DEVELOPMENT PROJECTS are eligible for LWCF funding. Combination PROJECTS are not eligible. All PROJECTS must meet at least one State Comprehensive Outdoor Recreation Plan (SCORP).  Visit https://www.parksforcalifornia.org/scorp/ to read the current SCORP and review the SCORP Priorities. priority.  Acquisition Examples:  \u00a0 \u00a0 \u00b7\u00a0 ACQUISITION to create a NEW PARK.  \u00a0 \u00a0 \u00b7\u00a0 ACQUISITION to EXPAND or provide a buffer for an existing PARK.  \u00a0 \u00a0 \u00b7\u00a0 ACQUISITION to provide a wildlife corridor that supports public viewing and outdoor recreational use (not habitat conservation for its own sake\u2014all PROJECTS must have a primary purpose of public outdoor recreation).  \u00a0 \u00a0 \u00b7\u00a0 ACQUISITION to provide a recreational/active transportation trail corridor that connects neighborhoods to workplaces, schools, homes, and other recreational opportunities.  New Recreation Opportunity for Acquisitions:  ACQUISITION PROJECTS must result in at least one NEW RECREATION OPPORTUNITY for the public within three years after the completion of the ACQUISITION. The entire PARK DEVELOPMENT does not need to be completed; a phased portion is acceptable and must be completed within three years.  In some cases, the ACQUISITION property may not require DEVELOPMENT to provide a NEW RECREATION OPPORTUNITY. Examples include:  \u00a0 \u00a0 \u00b7\u00a0 An existing fire or safety road in the ACQUISITION property that is readily useable as a trail or walking pathway.  \u00a0 \u00a0 \u00b7\u00a0 EXPANSIONS: The ACQUISITION property is adjacent to an existing PARK, and can serve:  \u00a0 \u00a0 \u00a0 \u00a0o\u00a0 To protect the VIEWSHED of the PARK for current and future generations of PARK visitors. In this case, enjoying the VIEWSHED is a recreation opportunity for the PARK visitors.  \u00a0 \u00a0 \u00a0 \u00a0o\u00a0 To protect a wildlife corridor for current and future generations, where visitors of the existing PARK come to enjoy watching wildlife.  Development:  DEVELOPMENT of RECREATION FEATURES must be for outdoor recreation. LWCF funds are intended to increase outdoor recreational opportunities for the health and wellness of Californians.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2027-01-14 23:59:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$27,500,000.00",
+      "Categories": "Parks & Recreation",
+      "ApplicantType": "Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 194175,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Mojave Desert Tortoise Recovery",
       "GrantTitle": "Mojave Desert Tortoise Recovery",
@@ -41961,10 +41977,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2572,
+  "totalCount": 2573,
   "sources": {
     "ca": {
-      "count": 2024,
+      "count": 2025,
       "success": true
     },
     "federal": {
