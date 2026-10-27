@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T06:24:47.539362Z",
+  "fetchedAt": "2026-10-27T18:12:31.671152Z",
   "success": true,
   "grants": [
     {
@@ -424,7 +424,7 @@
       "Description": "This two-year funding opportunity will provide Medi-Cal provider organizations with funding, training, and technical assistance to build strong clinical, operational, and billing infrastructure. This funding aims to strengthen care teams, standardize workflows, enhance electronic health record readiness, and improve billing capacity. These efforts are focused on enabling providers\u2014especially those providers serving high-need and historically underserved communities\u2014to consistently deliver and maintain integrated behavioral health services for young children and their caregivers.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-10-26 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$17,000,000.00",
@@ -31369,23 +31369,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
-      "GrantTitle": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-100",
-      "Status": "posted",
-      "ApplicationDeadline": "05/07/2027",
-      "PostedDate": "12/06/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357573",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357573",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
       "GrantTitle": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
       "Description": "",
@@ -34698,23 +34681,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358082",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358082",
-      "Source": "federal"
-    },
-    {
-      "Title": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
-      "GrantTitle": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-329",
-      "Status": "posted",
-      "ApplicationDeadline": "03/16/2027",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358093",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358093",
       "Source": "federal"
     },
     {
@@ -41943,23 +41909,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
-      "GrantTitle": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2027-ACL-AOD-DNDP-0016",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364153",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
-      "Source": "federal"
-    },
-    {
       "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "Description": "",
@@ -41974,6 +41923,57 @@
       "AwardFloor": 0,
       "OpportunityID": "364026",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
+      "Source": "federal"
+    },
+    {
+      "Title": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
+      "GrantTitle": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-24-329",
+      "Status": "posted",
+      "ApplicationDeadline": "10/27/2026",
+      "PostedDate": "01/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358093",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358093",
+      "Source": "federal"
+    },
+    {
+      "Title": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
+      "GrantTitle": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PAR-25-100",
+      "Status": "posted",
+      "ApplicationDeadline": "10/27/2027",
+      "PostedDate": "12/06/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "357573",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357573",
+      "Source": "federal"
+    },
+    {
+      "Title": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "GrantTitle": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-AOD-DNDP-0016",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364153",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
       "Source": "federal"
     }
   ],
