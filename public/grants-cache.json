@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T18:22:33.365665Z",
+  "fetchedAt": "2026-10-27T06:24:47.539362Z",
   "success": true,
   "grants": [
     {
@@ -39563,23 +39563,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Long-term health outcomes of people living with spina bifida",
-      "GrantTitle": "Long-term health outcomes of people living with spina bifida",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-DD-26-0222",
-      "Status": "posted",
-      "ApplicationDeadline": "10/26/2026",
-      "PostedDate": "08/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361002",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361002",
-      "Source": "federal"
-    },
-    {
       "Title": "Avant Garde/Avenir Awards for Investigators Conducting High Risk/High Reward Research on HIV and Substance Use (or Substance Use Disorders) (DP1 Clinical Trial Optional)",
       "GrantTitle": "Avant Garde/Avenir Awards for Investigators Conducting High Risk/High Reward Research on HIV and Substance Use (or Substance Use Disorders) (DP1 Clinical Trial Optional)",
       "Description": "",
@@ -40444,23 +40427,6 @@
       "AwardFloor": 0,
       "OpportunityID": "361050",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361050",
-      "Source": "federal"
-    },
-    {
-      "Title": "Silicon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "GrantTitle": "Silicon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003577",
-      "Status": "posted",
-      "ApplicationDeadline": "12/07/2026",
-      "PostedDate": "10/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364026",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
       "Source": "federal"
     },
     {
@@ -41974,6 +41940,40 @@
       "AwardFloor": 0,
       "OpportunityID": "362946",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362946",
+      "Source": "federal"
+    },
+    {
+      "Title": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "GrantTitle": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-AOD-DNDP-0016",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364153",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
+      "Source": "federal"
+    },
+    {
+      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003577",
+      "Status": "posted",
+      "ApplicationDeadline": "12/07/2026",
+      "PostedDate": "10/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364026",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
       "Source": "federal"
     }
   ],
