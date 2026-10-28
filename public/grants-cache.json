@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T18:12:31.671152Z",
+  "fetchedAt": "2026-10-28T06:17:59.754104Z",
   "success": true,
   "grants": [
     {
@@ -40719,23 +40719,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year 2027 Regional Nutrition Hubs",
-      "GrantTitle": "Fiscal Year 2027 Regional Nutrition Hubs",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-27-019",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/30/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363392",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363392",
-      "Source": "federal"
-    },
-    {
       "Title": "Early-Onset Cancers: Investigating Etiology, Mechanisms, and Early Detection Strategies (RP1 Clinical Trials Optional)",
       "GrantTitle": "Early-Onset Cancers: Investigating Etiology, Mechanisms, and Early Detection Strategies (RP1 Clinical Trials Optional)",
       "Description": "",
@@ -41824,23 +41807,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Trailblazer Award for New and Early Stage Investigators (R21 Clinical Trial Optional)",
-      "GrantTitle": "Trailblazer Award for New and Early Stage Investigators (R21 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-27-120",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/11/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358886",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358886",
-      "Source": "federal"
-    },
-    {
       "Title": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
       "GrantTitle": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
       "Description": "",
@@ -41926,23 +41892,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
-      "GrantTitle": "Development and Testing of Novel Interventions to Improve HIV Prevention, Treatment, and Program Implementation for People Who Use Substances (R34 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-329",
-      "Status": "posted",
-      "ApplicationDeadline": "10/27/2026",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358093",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358093",
-      "Source": "federal"
-    },
-    {
       "Title": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
       "GrantTitle": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
       "Description": "",
@@ -41957,6 +41906,23 @@
       "AwardFloor": 0,
       "OpportunityID": "357573",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357573",
+      "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2027 Regional Nutrition Hubs",
+      "GrantTitle": "Fiscal Year 2027 Regional Nutrition Hubs",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-019",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/30/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363392",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363392",
       "Source": "federal"
     },
     {
@@ -41977,14 +41943,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2573,
+  "totalCount": 2571,
   "sources": {
     "ca": {
       "count": 2025,
       "success": true
     },
     "federal": {
-      "count": 827,
+      "count": 825,
       "success": true
     }
   },
