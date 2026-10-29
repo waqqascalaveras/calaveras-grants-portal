@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T06:18:27.162776Z",
+  "fetchedAt": "2026-10-29T18:13:17.195349Z",
   "success": true,
   "grants": [
     {
@@ -29023,40 +29023,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Continued Development of the Gabriella Miller Kids First Pediatric Data Resource Center (U2C Clinical Trials Not Allowed)",
-      "GrantTitle": "Continued Development of the Gabriella Miller Kids First Pediatric Data Resource Center (U2C Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-RM-25-035",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/14/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358959",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358959",
-      "Source": "federal"
-    },
-    {
-      "Title": "Gabriella Miller Kids First Training and Outreach Core (U24 Clinical Trials Not Allowed)",
-      "GrantTitle": "Gabriella Miller Kids First Training and Outreach Core (U24 Clinical Trials Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-RM-25-036",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/14/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358960",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358960",
-      "Source": "federal"
-    },
-    {
       "Title": "Forecast to Publish a Funding Opportunity Announcement for Limited Competition for the Continuation of the National Consortium on Alcohol and Neurodevelopment in Adolescence (NCANDA) Research Project Sites (U01 Clinical Trials Optional)",
       "GrantTitle": "Forecast to Publish a Funding Opportunity Announcement for Limited Competition for the Continuation of the National Consortium on Alcohol and Neurodevelopment in Adolescence (NCANDA) Research Project Sites (U01 Clinical Trials Optional)",
       "Description": "",
@@ -29071,23 +29037,6 @@
       "AwardFloor": 0,
       "OpportunityID": "358940",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/358940",
-      "Source": "federal"
-    },
-    {
-      "Title": "Genome Sequencing Center for the Gabriella Miller Kids First Pediatric Research Program (U24 Clinical Trial Not Allowed)",
-      "GrantTitle": "Genome Sequencing Center for the Gabriella Miller Kids First Pediatric Research Program (U24 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "NOT-RM-25-034",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/14/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358954",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358954",
       "Source": "federal"
     },
     {
@@ -39733,23 +39682,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Residential Services for Unaccompanied Alien Children",
-      "GrantTitle": "Residential Services for Unaccompanied Alien Children",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2026-ACF-ORR-ZU-0045",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "09/02/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363790",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363790",
-      "Source": "federal"
-    },
-    {
       "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
       "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
       "Description": "",
@@ -41773,6 +41705,23 @@
       "Source": "federal"
     },
     {
+      "Title": "Residential Services for Unaccompanied Alien Children",
+      "GrantTitle": "Residential Services for Unaccompanied Alien Children",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACF-ORR-ZU-0045",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364134",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364134",
+      "Source": "federal"
+    },
+    {
       "Title": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
       "GrantTitle": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
       "Description": "",
@@ -41892,20 +41841,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
-      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "Title": "FY 2027 Crash Causal Factors Program",
+      "GrantTitle": "FY 2027 Crash Causal Factors Program",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "USDA-FS-2026-LSR",
+      "OpportunityNumber": "FM-CCFP-27-001",
       "Status": "posted",
-      "ApplicationDeadline": "01/26/2027",
-      "PostedDate": "10/28/2026",
+      "ApplicationDeadline": "12/28/2026",
+      "PostedDate": "10/29/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "364144",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
+      "OpportunityID": "364171",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364171",
       "Source": "federal"
     },
     {
@@ -41958,9 +41907,77 @@
       "OpportunityID": "364153",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
       "Source": "federal"
+    },
+    {
+      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-FS-2026-LSR",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "10/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364144",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
+      "Source": "federal"
+    },
+    {
+      "Title": "Genomic Data Generation Center for the Gabriella Miller Kids First Pediatric Research Program (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Genomic Data Generation Center for the Gabriella Miller Kids First Pediatric Research Program (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-27-008",
+      "Status": "posted",
+      "ApplicationDeadline": "01/08/2027",
+      "PostedDate": "10/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358954",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358954",
+      "Source": "federal"
+    },
+    {
+      "Title": "Gabriella Miller Kids First Training and Outreach Core (U24 Clinical Trial Not Allowed)",
+      "GrantTitle": "Gabriella Miller Kids First Training and Outreach Core (U24 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-27-010",
+      "Status": "posted",
+      "ApplicationDeadline": "01/08/2027",
+      "PostedDate": "10/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358960",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358960",
+      "Source": "federal"
+    },
+    {
+      "Title": "Single Source: Continued Development of the Gabriella Miller Kids First Pediatric Data Resource Center (U2C Clinical Trial Not Allowed)",
+      "GrantTitle": "Single Source: Continued Development of the Gabriella Miller Kids First Pediatric Data Resource Center (U2C Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-RM-27-009",
+      "Status": "posted",
+      "ApplicationDeadline": "01/08/2027",
+      "PostedDate": "10/29/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358959",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358959",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2572,
+  "totalCount": 2573,
   "sources": {
     "ca": {
       "count": 2025,
@@ -41972,7 +41989,7 @@
     }
   },
   "duplicates": {
-    "count": 280,
+    "count": 279,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
