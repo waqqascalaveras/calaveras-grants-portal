@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T18:13:14.212382Z",
+  "fetchedAt": "2026-10-29T06:18:27.162776Z",
   "success": true,
   "grants": [
     {
@@ -32372,40 +32372,6 @@
       "Source": "federal"
     },
     {
-      "Title": "RESTORE Act Direct Component - Non-Construction Activities",
-      "GrantTitle": "RESTORE Act Direct Component - Non-Construction Activities",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "GR-RDC-25-002",
-      "Status": "posted",
-      "ApplicationDeadline": "10/31/2026",
-      "PostedDate": "09/26/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "356561",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356561",
-      "Source": "federal"
-    },
-    {
-      "Title": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
-      "GrantTitle": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "GR-RDC-25-001",
-      "Status": "posted",
-      "ApplicationDeadline": "10/31/2026",
-      "PostedDate": "09/26/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "356562",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356562",
-      "Source": "federal"
-    },
-    {
       "Title": "Limited Competition: Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium- Field Epidemiology Sites",
       "GrantTitle": "Limited Competition: Chronic Kidney Diseases of UnceRtain Etiology (CKDu) in Agricultural Communities (CURE) Research Consortium- Field Epidemiology Sites",
       "Description": "",
@@ -40753,23 +40719,6 @@
       "Source": "federal"
     },
     {
-      "Title": "OJP FY 2026 Special Attorneys Program Round 10",
-      "GrantTitle": "OJP FY 2026 Special Attorneys Program Round 10",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172792",
-      "Status": "posted",
-      "ApplicationDeadline": "10/28/2026",
-      "PostedDate": "10/14/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364072",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364072",
-      "Source": "federal"
-    },
-    {
       "Title": "OJJDP FY 2026 Strategies to Support Children Exposed to Violence",
       "GrantTitle": "OJJDP FY 2026 Strategies to Support Children Exposed to Violence",
       "Description": "",
@@ -41926,23 +41875,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
-      "GrantTitle": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HHS-2027-ACL-AOD-DNDP-0016",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "10/26/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364153",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
-      "Source": "federal"
-    },
-    {
       "Title": "BJA FY 2026 Postconviction Testing of DNA Evidence",
       "GrantTitle": "BJA FY 2026 Postconviction Testing of DNA Evidence",
       "Description": "",
@@ -41975,9 +41907,60 @@
       "OpportunityID": "364144",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
       "Source": "federal"
+    },
+    {
+      "Title": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
+      "GrantTitle": "RESTORE Act Direct Component &ndash; Construction and Real Property Acquisition Activities",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "GR-RDC-25-001",
+      "Status": "posted",
+      "ApplicationDeadline": "10/31/2026",
+      "PostedDate": "09/26/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "356562",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/356562",
+      "Source": "federal"
+    },
+    {
+      "Title": "RESTORE Act Direct Component - Non-Construction Activities",
+      "GrantTitle": "RESTORE Act Direct Component - Non-Construction Activities",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "GR-RDC-26-002",
+      "Status": "posted",
+      "ApplicationDeadline": "10/31/2027",
+      "PostedDate": "10/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364169",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364169",
+      "Source": "federal"
+    },
+    {
+      "Title": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "GrantTitle": "Strengthening the Direct Care Workforce: A Technical Assistance and Capacity Building Initiative",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HHS-2027-ACL-AOD-DNDP-0016",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "10/26/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364153",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364153",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2573,
+  "totalCount": 2572,
   "sources": {
     "ca": {
       "count": 2025,
@@ -41989,7 +41972,7 @@
     }
   },
   "duplicates": {
-    "count": 279,
+    "count": 280,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
