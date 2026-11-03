@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-02T18:11:15.659742Z",
+  "fetchedAt": "2026-11-03T06:15:59.071906Z",
   "success": true,
   "grants": [
     {
@@ -31265,23 +31265,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Clinical Observational (CO) Studies in Musculoskeletal, Rheumatic, and Skin Diseases (R01 Clinical Trial Not Allowed)",
-      "GrantTitle": "Clinical Observational (CO) Studies in Musculoskeletal, Rheumatic, and Skin Diseases (R01 Clinical Trial Not Allowed)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-280",
-      "Status": "posted",
-      "ApplicationDeadline": "11/02/2026",
-      "PostedDate": "12/09/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357604",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357604",
-      "Source": "federal"
-    },
-    {
       "Title": "Translational Efforts to Advance Gene-based Therapies for Ultra-Rare Neurological and Neuromuscular Disorders (U01 - Clinical Trial Optional)",
       "GrantTitle": "Translational Efforts to Advance Gene-based Therapies for Ultra-Rare Neurological and Neuromuscular Disorders (U01 - Clinical Trial Optional)",
       "Description": "",
@@ -31364,23 +31347,6 @@
       "AwardFloor": 0,
       "OpportunityID": "357813",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357813",
-      "Source": "federal"
-    },
-    {
-      "Title": "Exploratory Clinical Trial Grants in Arthritis and Musculoskeletal and Skin Diseases (R61 Clinical Trial Required)",
-      "GrantTitle": "Exploratory Clinical Trial Grants in Arthritis and Musculoskeletal and Skin Diseases (R61 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-279",
-      "Status": "posted",
-      "ApplicationDeadline": "11/02/2026",
-      "PostedDate": "12/09/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357602",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357602",
       "Source": "federal"
     },
     {
@@ -37385,23 +37351,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Upholding the Rule of Law and Preventing Wrongful Convictions Program",
-      "GrantTitle": "BJA FY 2026 Upholding the Rule of Law and Preventing Wrongful Convictions Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172726",
-      "Status": "posted",
-      "ApplicationDeadline": "11/02/2026",
-      "PostedDate": "09/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363893",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363893",
-      "Source": "federal"
-    },
-    {
       "Title": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
       "GrantTitle": "Integrated Viral Hepatitis Surveillance, Testing, Treatment, and Prevention Programs for Health Departments (IVH-STTP)",
       "Description": "",
@@ -37807,23 +37756,6 @@
       "AwardFloor": 0,
       "OpportunityID": "363975",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363975",
-      "Source": "federal"
-    },
-    {
-      "Title": "OJJDP FY 2026 Second Chance Act Youth Reentry Program",
-      "GrantTitle": "OJJDP FY 2026 Second Chance Act Youth Reentry Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-OJJDP-2026-172751",
-      "Status": "posted",
-      "ApplicationDeadline": "11/02/2026",
-      "PostedDate": "09/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363961",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363961",
       "Source": "federal"
     },
     {
@@ -40615,23 +40547,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003577",
-      "Status": "posted",
-      "ApplicationDeadline": "12/07/2026",
-      "PostedDate": "10/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364026",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
-      "Source": "federal"
-    },
-    {
       "Title": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
       "GrantTitle": "Pilot Health Services and Economic Research on the Treatment of Drug, Alcohol, and Tobacco Use Disorders (R34 Clinical Trial Optional)",
       "Description": "",
@@ -41720,6 +41635,40 @@
       "Source": "federal"
     },
     {
+      "Title": "OJP FY 2026 Special Attorneys Program Round 11",
+      "GrantTitle": "OJP FY 2026 Special Attorneys Program Round 11",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172812",
+      "Status": "posted",
+      "ApplicationDeadline": "11/17/2026",
+      "PostedDate": "11/02/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364197",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364197",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
+      "GrantTitle": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172661",
+      "Status": "posted",
+      "ApplicationDeadline": "11/03/2026",
+      "PostedDate": "07/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363296",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363296",
+      "Source": "federal"
+    },
+    {
       "Title": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
       "GrantTitle": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
       "Description": "",
@@ -41751,23 +41700,6 @@
       "AwardFloor": 0,
       "OpportunityID": "364195",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364195",
-      "Source": "federal"
-    },
-    {
-      "Title": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
-      "GrantTitle": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172661",
-      "Status": "posted",
-      "ApplicationDeadline": "11/03/2026",
-      "PostedDate": "07/23/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363296",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363296",
       "Source": "federal"
     },
     {
@@ -41803,16 +41735,33 @@
       "OpportunityID": "361431",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/361431",
       "Source": "federal"
+    },
+    {
+      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003577",
+      "Status": "posted",
+      "ApplicationDeadline": "12/07/2026",
+      "PostedDate": "10/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364026",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2563,
+  "totalCount": 2560,
   "sources": {
     "ca": {
       "count": 2027,
       "success": true
     },
     "federal": {
-      "count": 814,
+      "count": 811,
       "success": true
     }
   },
