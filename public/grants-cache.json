@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T06:15:50.426829Z",
+  "fetchedAt": "2026-11-04T18:10:28.528015Z",
   "success": true,
   "grants": [
     {
@@ -312,7 +312,7 @@
       "Description": "The California Department of Food and Agriculture\u2019s (CDFA) Office of Farm to Fork is currently accepting proposals for the 2026 California Nutrition Incentive Program (CNIP) competitive grant solicitation. Authority for CNIP is derived from California Food and Agriculture Code Section 49010-49016. CNIP was established to encourage the purchase and consumption of fresh California grown fruits, vegetables, and nuts by nutrition benefit clients.  For the 2026 CNIP Request for Proposal (RFP), CDFA is seeking project proposals from eligible entities to distribute nutrition incentives to shoppers using their CalFresh (SNAP) benefits to purchase fresh, California grown fruits and vegetables at direct marketing outlets (Certified Farmers\u2019 Markets, Certified Mobile Farmers\u2019 Market, Community Supported Agriculture programs, and farm stands) and small businesses in California. CalFresh shoppers should be able to receive the incentive at the time of purchase. Projects that reach low-access areas and low-income populations, particularly communities where a large proportion of the population is eligible for CalFresh and experiences high rates of diet-related diseases, will be prioritized.  CDFA reserves the right to fund a portion of the selected proposals, in whole or in part, without further competition. If project funding and timeline allows, CDFA will combine selected proposals into a unified state application for submission to the U.S. Department of Agriculture\u2019s (USDA) National Institute of Food and Agriculture Gus Schumacher Nutrition Incentive Program (GusNIP).  Eligibility is limited to the following entities or combination of eligible entities:  a.\u00a0\u00a0\u00a0\u00a0 Certified Farmers\u2019 Markets authorized by USDA to accept SNAP benefits  b.\u00a0\u00a0\u00a0\u00a0 Community Supported Agriculture Programs (CSAs) authorized by USDA to accept SNAP benefits  c.\u00a0\u00a0\u00a0\u00a0\u00a0 Certified mobile farmers\u2019 market authorized by USDA to accept SNAP benefits  d.\u00a0\u00a0\u00a0\u00a0 Farm Stands authorized by USDA to accept SNAP benefits  e.\u00a0\u00a0\u00a0\u00a0 Small businesses authorized by USDA to accept SNAP benefits such as retail stores  f.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Non-profit organizations that are applying on behalf of organizations that fall into categories (a), (b), (c), (d) and/or (e)  Certified Farmers\u2019 Markets are described in Food and Agriculture Code Section 47004, Community-Supported Agriculture programs are defined in Section 47060, Farm Stands are defined in Section 47050, and Certified Mobile Farmers\u2019 Markets are defined in Section 47007.  Small Businesses are defined by California Government Code Section Government Code Section 14837 (d) (1) (A):  \u00a0\u201cSmall business\u201d means an independently owned and operated business that is not dominant in its field of operation, the principal office of which is located in California, the officers of which are domiciled in California, and which, together with affiliates, has 100 or fewer employees, and average annual gross receipts of ten million dollars ($10,000,000) or less over the previous three years, or is a manufacturer, as defined in subdivision (c), with 100 or fewer employees. Commencing January 1, 2019, the average annual gross receipts threshold shall be fifteen million dollars ($15,000,000).\u201d",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-11-03 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$13,500,000.00",
@@ -36671,23 +36671,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-TS-27-018",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "07/08/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363115",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363115",
-      "Source": "federal"
-    },
-    {
       "Title": "NIOSH Miner Safety and Health Training Program - Western United States &ndash; U60",
       "GrantTitle": "NIOSH Miner Safety and Health Training Program - Western United States &ndash; U60",
       "Description": "",
@@ -37705,23 +37688,6 @@
       "AwardFloor": 0,
       "OpportunityID": "362957",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362957",
-      "Source": "federal"
-    },
-    {
-      "Title": "Precision and Systems Biology to Uncover the Link Between Chronic and Infectious Diseases",
-      "GrantTitle": "Precision and Systems Biology to Uncover the Link Between Chronic and Infectious Diseases",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-AI-28-014",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "06/24/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362952",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362952",
       "Source": "federal"
     },
     {
@@ -41717,6 +41683,40 @@
       "AwardFloor": 0,
       "OpportunityID": "362277",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/362277",
+      "Source": "federal"
+    },
+    {
+      "Title": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
+      "GrantTitle": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-014",
+      "Status": "posted",
+      "ApplicationDeadline": "02/18/2027",
+      "PostedDate": "11/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362952",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362952",
+      "Source": "federal"
+    },
+    {
+      "Title": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "GrantTitle": "Identify and Evaluate Potential Risk Factors for Amyotrophic Lateral Sclerosis (ALS)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-TS-27-018",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "07/08/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363115",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363115",
       "Source": "federal"
     }
   ],
