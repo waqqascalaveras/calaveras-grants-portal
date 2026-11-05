@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T18:10:28.528015Z",
+  "fetchedAt": "2026-11-05T06:16:03.138008Z",
   "success": true,
   "grants": [
     {
@@ -36586,23 +36586,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Capacity Building for Global, Regional, and National Immunization Programs",
-      "GrantTitle": "Capacity Building for Global, Regional, and National Immunization Programs",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-JG-27-0069",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/14/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363591",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363591",
-      "Source": "federal"
-    },
-    {
       "Title": "Promoting Population Health through Increased Capacity in Alcohol Epidemiology &amp; the Prevention of Excessive Alcohol Use",
       "GrantTitle": "Promoting Population Health through Increased Capacity in Alcohol Epidemiology &amp; the Prevention of Excessive Alcohol Use",
       "Description": "",
@@ -39595,23 +39578,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
-      "GrantTitle": "Exploring and Enhancing Outdoor and Heritage Tourism in the Chesapeake Bay Watershed",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P27AS00032",
-      "Status": "posted",
-      "ApplicationDeadline": "11/04/2026",
-      "PostedDate": "08/27/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363728",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363728",
-      "Source": "federal"
-    },
-    {
       "Title": "BRAIN Initiative: Research Opportunities Using Invasive Neural Recording and Stimulating Technologies in the Human Brain (R01 Clinical Trial Not Allowed)",
       "GrantTitle": "BRAIN Initiative: Research Opportunities Using Invasive Neural Recording and Stimulating Technologies in the Human Brain (R01 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41397,23 +41363,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
-      "GrantTitle": "BJA FY 2026 DNA Capacity Enhancement for Backlog Reduction (CEBR)&mdash;Formula Grants Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172718",
-      "Status": "posted",
-      "ApplicationDeadline": "11/04/2026",
-      "PostedDate": "09/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363889",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363889",
-      "Source": "federal"
-    },
-    {
       "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "Description": "",
@@ -41686,20 +41635,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
-      "GrantTitle": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
+      "Title": "Capacity Building for Global, Regional, and National Immunization Programs",
+      "GrantTitle": "Capacity Building for Global, Regional, and National Immunization Programs",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "RFA-AI-28-014",
-      "Status": "posted",
-      "ApplicationDeadline": "02/18/2027",
-      "PostedDate": "11/04/2026",
+      "OpportunityNumber": "CDC-RFA-JG-27-0069",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "08/14/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "362952",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362952",
+      "OpportunityID": "363591",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363591",
       "Source": "federal"
     },
     {
@@ -41718,16 +41667,50 @@
       "OpportunityID": "363115",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363115",
       "Source": "federal"
+    },
+    {
+      "Title": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
+      "GrantTitle": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-AI-28-014",
+      "Status": "posted",
+      "ApplicationDeadline": "02/18/2027",
+      "PostedDate": "11/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362952",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362952",
+      "Source": "federal"
+    },
+    {
+      "Title": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "GrantTitle": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DOW2027APEXACCELERATORCLOSED",
+      "Status": "posted",
+      "ApplicationDeadline": "07/04/2027",
+      "PostedDate": "11/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364213",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364213",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2558,
+  "totalCount": 2557,
   "sources": {
     "ca": {
       "count": 2027,
       "success": true
     },
     "federal": {
-      "count": 808,
+      "count": 807,
       "success": true
     }
   },
