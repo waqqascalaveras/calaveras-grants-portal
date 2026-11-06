@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T06:16:40.270121Z",
+  "fetchedAt": "2026-11-06T18:12:11.216803Z",
   "success": true,
   "grants": [
     {
@@ -184,7 +184,7 @@
       "Description": "Project activities eligible for Boating Access grant funds include:  Planning, permitting, and design for Boating Access Facilities.  Construction of Boating Access Facilities Administration and Coordination of boating access programs (personnel, travel, training, planning, etc.).  Amenities for Boaters, including compliance with Americans with Disabilities Act (ADA) at Boating Access Facilities: This may include restrooms, wash-down stations, fish cleaning stations for boaters, ramps, courtesy or loading docks, maneuvering areas, parking areas, walkways, beaching areas for boats, picnic tables, garbage facilities for boaters, shade structures, lighting, signage, etc.  Launching and landing facilities for paddle craft and non-motorized boats.  Outreach to boaters about available boating access and amenities.  Aquatic Invasive Species Information and Education \u2013 including inspection (not enforcement) as long as the purpose is to keep boaters boating.  Vegetation management \u2013 As long as the purpose is to keep boaters accessing the water.  Pump out facilities for vessels that have on-board sanitary holding tanks.  Fueling docks for boaters.  Potable water supplies for boaters. Dinghy docks. Operation and Maintenance of boating access facilities.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-11-05 16:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$3,000,000.00",
@@ -1712,22 +1712,6 @@
       "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": 171636,
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Dam Safety and Climate Resilience Local Assistance",
-      "GrantTitle": "Dam Safety and Climate Resilience Local Assistance",
-      "Description": "Approximately 10 percent of the 1,236 State jurisdictional dams regulated by DWR\u2019s Division of Safety of Dams (DSOD) have been assigned a condition assessment classification of less than \u201cSatisfactory\u201d (e.g., they have noted deficiencies that need remediation). In many cases, these dams pose a significant threat to communities downstream. As an interim risk reduction measure, more than 40 of these dams have had reservoir restrictions imposed. The loss of water storage from these reservoir restrictions is about 350,000 acre-feet. Many dam owners, even those with sources of funding, do not have the ability to secure funding for dam remediation or improvement projects. This program will provide much-needed grant funding for the repair, retrofit, and rehabilitation of these critical infrastructure facilities, reduce the unacceptable risks to the public, and regain lost storage capacity that is needed to face California\u2019s climate-related water shortages.\u00a0\u00a0",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
-      "PostedDate": "",
-      "EstAvailFunds": "$240,000,000.00",
-      "Categories": "Environment & Water",
-      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": 171777,
       "Source": "ca.gov"
     },
     {
@@ -31332,23 +31316,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
-      "GrantTitle": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-25-305",
-      "Status": "posted",
-      "ApplicationDeadline": "01/07/2028",
-      "PostedDate": "12/18/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357813",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357813",
-      "Source": "federal"
-    },
-    {
       "Title": "NCI Pathway to Independence Award (K99/R00  Clinical Trial Required)",
       "GrantTitle": "NCI Pathway to Independence Award (K99/R00  Clinical Trial Required)",
       "Description": "",
@@ -36347,23 +36314,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Women's Initiative for Screening and Health (WISH)",
-      "GrantTitle": "Women's Initiative for Screening and Health (WISH)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "HRSA-27-072",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "08/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363546",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363546",
-      "Source": "federal"
-    },
-    {
       "Title": "Strategies to Innovate EmeRgENcy Care Clinical Trials Network (SIREN) Infrastructure &ndash; Clinical Coordinating Center (CCC) and Data Coordinating Center (DCC)",
       "GrantTitle": "Strategies to Innovate EmeRgENcy Care Clinical Trials Network (SIREN) Infrastructure &ndash; Clinical Coordinating Center (CCC) and Data Coordinating Center (DCC)",
       "Description": "",
@@ -41294,23 +41244,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003577",
-      "Status": "posted",
-      "ApplicationDeadline": "12/07/2026",
-      "PostedDate": "10/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364026",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
-      "Source": "federal"
-    },
-    {
       "Title": "George M. O&rsquo;Brien Urology Cooperative Research Centers Program (U54 Clinical Trial Optional)",
       "GrantTitle": "George M. O&rsquo;Brien Urology Cooperative Research Centers Program (U54 Clinical Trial Optional)",
       "Description": "",
@@ -41600,23 +41533,6 @@
       "Source": "federal"
     },
     {
-      "Title": "APEX Accelerator-Option Period for Existing Award Recipients",
-      "GrantTitle": "APEX Accelerator-Option Period for Existing Award Recipients",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DOW2027APEXACCELERATORCLOSED",
-      "Status": "posted",
-      "ApplicationDeadline": "07/04/2027",
-      "PostedDate": "11/04/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364213",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364213",
-      "Source": "federal"
-    },
-    {
       "Title": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
       "GrantTitle": "Systems Biology of Infection and Inflammation in Chronic Diseases (U19 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41665,6 +41581,23 @@
       "AwardFloor": 0,
       "OpportunityID": "364232",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364232",
+      "Source": "federal"
+    },
+    {
+      "Title": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "GrantTitle": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DOW2027APEXACCELERATORCLOSED",
+      "Status": "posted",
+      "ApplicationDeadline": "07/04/2027",
+      "PostedDate": "11/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364213",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364213",
       "Source": "federal"
     },
     {
@@ -41751,12 +41684,63 @@
       "OpportunityID": "364224",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364224",
       "Source": "federal"
+    },
+    {
+      "Title": "Women's Initiative for Screening and Health (WISH)",
+      "GrantTitle": "Women's Initiative for Screening and Health (WISH)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "HRSA-27-072",
+      "Status": "posted",
+      "ApplicationDeadline": "01/08/2027",
+      "PostedDate": "11/06/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363546",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363546",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
+      "GrantTitle": "NIH Research Project Grant (Parent R01 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-25-305",
+      "Status": "posted",
+      "ApplicationDeadline": "01/07/2028",
+      "PostedDate": "12/18/2024",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "357813",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357813",
+      "Source": "federal"
+    },
+    {
+      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003577",
+      "Status": "posted",
+      "ApplicationDeadline": "12/07/2026",
+      "PostedDate": "10/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364026",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2560,
+  "totalCount": 2559,
   "sources": {
     "ca": {
-      "count": 2028,
+      "count": 2027,
       "success": true
     },
     "federal": {
