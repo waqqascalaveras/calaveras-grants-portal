@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-07T06:13:19.567757Z",
+  "fetchedAt": "2026-11-07T18:09:04.495533Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Dam Safety and Climate Resilience Local Assistance",
+      "GrantTitle": "Dam Safety and Climate Resilience Local Assistance",
+      "Description": "Approximately 10 percent of the 1,236 State jurisdictional dams regulated by DWR\u2019s Division of Safety of Dams (DSOD) have been assigned a condition assessment classification of less than \u201cSatisfactory\u201d (e.g., they have noted deficiencies that need remediation). In many cases, these dams pose a significant threat to communities downstream. As an interim risk reduction measure, more than 40 of these dams have had reservoir restrictions imposed. The loss of water storage from these reservoir restrictions is about 350,000 acre-feet. Many dam owners, even those with sources of funding, do not have the ability to secure funding for dam remediation or improvement projects. This program will provide much-needed grant funding for the repair, retrofit, and rehabilitation of these critical infrastructure facilities, reduce the unacceptable risks to the public, and regain lost storage capacity that is needed to face California\u2019s climate-related water shortages.\u00a0\u00a0",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2027-02-04 05:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$240,000,000.00",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 171777,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Delta-Based Decontamination Control Sites to Prevent the Spread of Golden Mussel",
       "GrantTitle": "Delta-Based Decontamination Control Sites to Prevent the Spread of Golden Mussel",
@@ -41703,10 +41719,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2557,
+  "totalCount": 2558,
   "sources": {
     "ca": {
-      "count": 2027,
+      "count": 2028,
       "success": true
     },
     "federal": {
