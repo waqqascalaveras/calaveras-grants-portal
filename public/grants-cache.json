@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-10T06:15:21.818172Z",
+  "fetchedAt": "2026-11-10T18:09:32.638465Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Beverage Container Redemption Innovation Grant",
+      "GrantTitle": "Beverage Container Redemption Innovation Grant",
+      "Description": "The fundamental goal of the Program is to support start-up costs for mobile recycling programs to increase the California Refund Value (CRV) beverage container redemption opportunities that utilize innovative projects.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2027-01-05 16:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$20,000,000.00",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 193827,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Dam Safety and Climate Resilience Local Assistance",
       "GrantTitle": "Dam Safety and Climate Resilience Local Assistance",
@@ -136,7 +152,7 @@
       "Description": "The ETPP grants will be awarded to develop and implement projects that accelerate pathways to employment for populations facing significant employment barriers into high-demand occupations for good-quality jobs. The ETPP will develop skill-based pathways by integrating education and workforce training programs to align with the specific needs of the state\u2019s strategic industry sectors which will will not only ensure that individuals are connected to good-quality jobs but become better prepared to enter high-demand fields. The ETPP aligns with the California Master Plan for Career Education and the Unified Strategic Workforce Development Plan to help connect California workers to jobs and promote sustainable growth of the state\u2019s economy. \u00a0Proposals must be received by 11:59 p.m. on November 9, 2026.  Two informational webinars will be held on October 20, 2026 at 10:00 a.m. and 2:00 p.m. Pre-registration is required for all participants. Once the SFP releases, please refer to the EDD\u2019s Workforce Development Solicitation for Proposals website for the pre-registration link. After successfully pre-registering, a system-generated email will provide the webinar link. \u00a0  Applicants must demonstrate the ability to leverage a minimum of 20 percent of their budget with funds or services from other sources. The leverage needed for funds is based on the total grant funding requested. Applicants are encouraged to braid funds, leverage human capital, and utilize other resources to maximize the success of the project. Leveraged resources can come from a variety of sources.  To view the SFP once it releases, visit the EDD Workforce Development Solicitations for Proposals webpage at https://edd.ca.gov/en/jobs_and_training/wdsfp_workforce_development_solicitations_for_proposals.\u00a0 The EDD encourages applicants to submit a notice of intent to apply by October 23, 2026, at noon PT to WSBSFP3@edd.ca.gov. \u00a0",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-11-09 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$17,000,000.00",
@@ -1760,22 +1776,6 @@
       "ApplicantType": "Nonprofit; Other Legal Entity; Public Agency",
       "GrantInfoURL": "",
       "PortalID": 171591,
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "Beverage Container Redemption Innovation Grant",
-      "GrantTitle": "Beverage Container Redemption Innovation Grant",
-      "Description": "The fundamental goal of the Program is to support start-up costs for mobile recycling programs to increase the California Refund Value (CRV) beverage container redemption opportunities that utilize innovative projects.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "closed",
-      "ApplicationDeadline": "2026-06-23 23:59:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$20,000,000.00",
-      "Categories": "Environment & Water",
-      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
-      "GrantInfoURL": "",
-      "PortalID": 164127,
       "Source": "ca.gov"
     },
     {
@@ -35786,23 +35786,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Centers of Excellence in Healthcare Quality and Safety",
-      "GrantTitle": "Centers of Excellence in Healthcare Quality and Safety",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-CK-27-0007",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "04/21/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "361997",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361997",
-      "Source": "federal"
-    },
-    {
       "Title": "2026 Alaska Marine Education and Training Mini-Grant Program",
       "GrantTitle": "2026 Alaska Marine Education and Training Mini-Grant Program",
       "Description": "",
@@ -40308,23 +40291,6 @@
       "Source": "federal"
     },
     {
-      "Title": "National Parks Business Plan Internship",
-      "GrantTitle": "National Parks Business Plan Internship",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "P26AS00055",
-      "Status": "posted",
-      "ApplicationDeadline": "01/04/2027",
-      "PostedDate": "09/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363985",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363985",
-      "Source": "federal"
-    },
-    {
       "Title": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
       "GrantTitle": "NIJ FY 2026 Research and Evaluation on Violent Crime: Gangs and Organized Criminal Groups (Domestic and Transnational)",
       "Description": "",
@@ -41717,25 +41683,97 @@
       "OpportunityID": "363409",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/363409",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
+      "GrantTitle": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172698",
+      "Status": "posted",
+      "ApplicationDeadline": "11/11/2026",
+      "PostedDate": "08/17/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363637",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363637",
+      "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
+      "GrantTitle": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172705",
+      "Status": "posted",
+      "ApplicationDeadline": "11/18/2026",
+      "PostedDate": "08/25/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363712",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363712",
+      "Source": "federal"
+    },
+    {
+      "Title": "National Parks Business Plan Internship",
+      "GrantTitle": "National Parks Business Plan Internship",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "P26AS00055",
+      "Status": "posted",
+      "ApplicationDeadline": "03/05/2027",
+      "PostedDate": "09/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363985",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363985",
+      "Source": "federal"
+    },
+    {
+      "Title": "Centers of Excellence in Healthcare Quality and Safety",
+      "GrantTitle": "Centers of Excellence in Healthcare Quality and Safety",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-CK-27-0007",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "04/21/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "361997",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/361997",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2558,
+  "totalCount": 2560,
   "sources": {
     "ca": {
-      "count": 2028,
+      "count": 2029,
       "success": true
     },
     "federal": {
-      "count": 806,
+      "count": 808,
       "success": true
     }
   },
   "duplicates": {
-    "count": 276,
+    "count": 277,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
         "duplicate": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental"
+      },
+      {
+        "original": "Beverage Container Redemption Innovation Grant",
+        "duplicate": "Beverage Container Redemption Innovation Grant"
       },
       {
         "original": "Beverage Container Redemption Innovation Grant",
@@ -41748,10 +41786,6 @@
       {
         "original": "Tire-Derived Aggregate Grant Program",
         "duplicate": "Tire-Derived Aggregate Grant Program"
-      },
-      {
-        "original": "CAL FIRE Forest Health",
-        "duplicate": "CAL FIRE Forest Health"
       }
     ]
   }
