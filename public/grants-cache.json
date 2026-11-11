@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T06:15:50.733873Z",
+  "fetchedAt": "2026-11-11T18:09:28.764437Z",
   "success": true,
   "grants": [
     {
@@ -200,8 +200,8 @@
       "Description": "Funding for the HRCC 2026 program is being awarded in two rounds. All current HRCC grantees are eligible to apply. In Round Two, approximately $19 million will be awarded to regions with demonstrated hiring demand through a competitive application process.  The CWDB will release a closed, competitive funding opportunity during the 2026-27 State Fiscal Year, through which the remaining HRCC 2026 funds will be awarded to further support HRCC program goals and align investments with regional labor market demand. Additionally, past grantee performance, including compliance with and timeliness of required participant data collection and reporting under previous HRCC grants, will be considered. Additional information about eligibility, funding amounts, application requirements, and evaluation criteria will be released in the Round Two solicitation. Details outlined in the RFA regarding the Round Two solicitation are subject to change.  HRCC 2026 grant program\u2019s objectives are to:  Meet demand: Train workers to meet the hiring needs of public infrastructure and construction projects.  Promote access: Support entry into joint-apprenticeship programs for individuals who have traditionally faced barriers to employment in the construction trades, including women, veterans, and justice-involved individuals.  Boost the economy: Increase employment, boost incomes, and drive economic activity in communities that need it most.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "forecasted",
-      "ApplicationDeadline": null,
+      "Status": "active",
+      "ApplicationDeadline": "2026-12-05 17:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$19,000,000.00",
       "Categories": "Disadvantaged Communities; Education; Employment, Labor & Training",
