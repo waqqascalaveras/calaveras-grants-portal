@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T18:09:28.764437Z",
+  "fetchedAt": "2026-11-12T06:16:06.821065Z",
   "success": true,
   "grants": [
     {
@@ -41447,23 +41447,6 @@
       "Source": "federal"
     },
     {
-      "Title": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
-      "GrantTitle": "BJA FY 2026 Second Chance Act Improving Reentry Education and Employment Outcomes",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172698",
-      "Status": "posted",
-      "ApplicationDeadline": "11/11/2026",
-      "PostedDate": "08/17/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363637",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363637",
-      "Source": "federal"
-    },
-    {
       "Title": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
       "GrantTitle": "BJA FY 2026 Edward Byrne Memorial Justice Assistance Grant (JAG) Program&mdash;Local Formula",
       "Description": "",
@@ -41736,14 +41719,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2559,
+  "totalCount": 2558,
   "sources": {
     "ca": {
       "count": 2029,
       "success": true
     },
     "federal": {
-      "count": 804,
+      "count": 803,
       "success": true
     }
   },
