@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-13T06:15:36.369753Z",
+  "fetchedAt": "2026-11-13T18:09:47.332738Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Psychedelic Precision Medicine Research with Veterans",
+      "GrantTitle": "Psychedelic Precision Medicine Research with Veterans",
+      "Description": "Timeline  RFA Release:\u202f\u202f November\u00a010, 2026\u00a0  RFA Informational Webinar and Q&A:\u202f\u202f December 2, 2026 (1:00pm PT)\u00a0  Letter of Intent Deadline:\u202f\u202f December 18, 2026\u202f(3:00pm PT)\u202f  Initial Application Deadline:\u202f\u202f February 19, 2027\u00a0(3:00pm PT)  Notification of Finalists:\u202f\u202f April\u00a023,\u00a02027\u00a0  Full Application Deadline:\u202f\u202f June 4, 2027\u00a0(3:00pm PT)  Notification of Awards:\u202f\u202f July\u00a02027\u202f(earliest possible)\u202f\u202f\u00a0  Awards Start:\u202f\u202f August\u00a02027\u202f(earliest possible)\u202f\u00a0  Awards End: August\u00a02030\u00a0or 2031  Projects will be selected through a\u00a0three-stage process, involving:  (1) submission of\u00a0a Letter of\u00a0Intent\u00a0(LOI)\u00a0to\u00a0submit\u00a0an application\u00a0(required,\u00a0but not\u00a0scored),\u00a0  (2) submission of\u00a0an\u00a0Initial\u00a0Application,\u00a0and  (3)\u00a0submission of a\u00a0Full\u00a0Application.  By the LOI stage, partnerships are recommended but not required. By the Initial Application stage, partnerships are a required component of the application. Additional matching funds and in-kind contributions are highly encouraged and will be considered during the selection process.\u00a0\u00a0  This funding opportunity aims to support research projects that advance precision medicine in psychedelics research, engage and impact veterans, aim to reduce health disparities, and leverage team expertise and partnerships. CIAPM developed this RFA in coordination and collaboration with the California Department of Veterans Affairs (CalVet).  Specifically, projects should focus on\u00a0one of the following:\u00a0  1. A new psychedelic-based (1) clinical trial, (2) clinical research study, or (3) study based on tribal practices and traditions, that focuses on veterans.  2. Expansion of an existing psychedelic-based (1) clinical trial, (2) clinical research study, or (3) study based on tribal practices and traditions, that supports greater focus on veterans.\u00a0  Projects must be co-led by a California non-profit public or private academic research institution and at least one California-based nonprofit community-based organization, veterans organization, community clinic, or non-state public or tribal entity, including facilities administered by the United States Department of Veterans Affairs, Veterans Health Administration, that provides support for veterans and adds lived experience, expertise, and/or community or data assets. Partnerships should aim to break down silos between academic institutions and communities, effectively integrate community perspectives to ground the research in the real-world needs of veteran communities, and foster co-learning in which partners\u2019 strengths and capacity needs are acknowledged for meaningful integration of perspectives. Partnership authenticity should be evident from project conception to completion and beyond.\u00a0 \u00a0  The applicant must describe how their application advances precision medicine in psychedelics research, engages and impacts veterans, aims to reduce health disparities, and leverages team expertise and partnerships. The proposed research must include a deliverable of a precision medicine asset, such as new infrastructure, tools, measurements, and data. Projects must take place in California, and the project must focus on people that live in California but\u202fare\u202fnot limited to only California populations.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-12-18 15:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$4,000,000.00",
+      "Categories": "Disadvantaged Communities; Health & Human Services; Science, Technology, and Research & Development; Veterans & Military",
+      "ApplicantType": "Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": 194472,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Beverage Container Redemption Innovation Grant",
       "GrantTitle": "Beverage Container Redemption Innovation Grant",
@@ -41702,23 +41718,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
-      "GrantTitle": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "UST-SIPPRA-2027-003",
-      "Status": "posted",
-      "ApplicationDeadline": "04/06/2027",
-      "PostedDate": "11/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364003",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364003",
-      "Source": "federal"
-    },
-    {
       "Title": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
       "GrantTitle": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
       "Description": "",
@@ -41751,16 +41750,50 @@
       "OpportunityID": "364026",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
       "Source": "federal"
+    },
+    {
+      "Title": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
+      "GrantTitle": "BJA FY 2026 Daniel Anderl Judicial Security and Privacy Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-BJA-2026-172661",
+      "Status": "posted",
+      "ApplicationDeadline": "11/14/2026",
+      "PostedDate": "07/23/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363296",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363296",
+      "Source": "federal"
+    },
+    {
+      "Title": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
+      "GrantTitle": "Social Impact Partnerships to Pay for Results Act Demonstration Projects",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "UST-SIPPRA-2027-003",
+      "Status": "posted",
+      "ApplicationDeadline": "04/06/2027",
+      "PostedDate": "11/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364003",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364003",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2560,
+  "totalCount": 2562,
   "sources": {
     "ca": {
-      "count": 2029,
+      "count": 2030,
       "success": true
     },
     "federal": {
-      "count": 805,
+      "count": 806,
       "success": true
     }
   },
