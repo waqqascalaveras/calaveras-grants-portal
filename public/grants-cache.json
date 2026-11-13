@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-12T18:10:52.522151Z",
+  "fetchedAt": "2026-11-13T06:15:36.369753Z",
   "success": true,
   "grants": [
     {
@@ -41481,23 +41481,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003577",
-      "Status": "posted",
-      "ApplicationDeadline": "12/07/2026",
-      "PostedDate": "10/05/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364026",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
-      "Source": "federal"
-    },
-    {
       "Title": "Women's Initiative for Screening and Health (WISH)",
       "GrantTitle": "Women's Initiative for Screening and Health (WISH)",
       "Description": "",
@@ -41529,6 +41512,23 @@
       "AwardFloor": 0,
       "OpportunityID": "357813",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357813",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (UM1 Clinical Trial Required)",
+      "GrantTitle": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (UM1 Clinical Trial Required)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-MH-27-150",
+      "Status": "posted",
+      "ApplicationDeadline": "06/10/2027",
+      "PostedDate": "11/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "363875",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363875",
       "Source": "federal"
     },
     {
@@ -41597,23 +41597,6 @@
       "AwardFloor": 0,
       "OpportunityID": "364253",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364253",
-      "Source": "federal"
-    },
-    {
-      "Title": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (UM1 Clinical Trial Required)",
-      "GrantTitle": "Advancing Real-World Effectiveness Evidence for Rapid-Acting Psychotropic Interventional Drugs (RAPIDs) (UM1 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "RFA-MH-27-150",
-      "Status": "posted",
-      "ApplicationDeadline": "06/10/2027",
-      "PostedDate": "11/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363875",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363875",
       "Source": "federal"
     },
     {
@@ -41734,16 +41717,50 @@
       "OpportunityID": "364003",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364003",
       "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
+      "GrantTitle": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FHWA-GADC-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "12/28/2026",
+      "PostedDate": "11/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364263",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364263",
+      "Source": "federal"
+    },
+    {
+      "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003577",
+      "Status": "posted",
+      "ApplicationDeadline": "12/07/2026",
+      "PostedDate": "10/05/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364026",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364026",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2559,
+  "totalCount": 2560,
   "sources": {
     "ca": {
       "count": 2029,
       "success": true
     },
     "federal": {
-      "count": 804,
+      "count": 805,
       "success": true
     }
   },
