@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T18:09:47.332738Z",
+  "fetchedAt": "2026-11-14T06:13:26.300201Z",
   "success": true,
   "grants": [
     {
@@ -30107,23 +30107,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NCCIH Natural Product Mid Phase Clinical Trial (R01 Clinical Trial Required)",
-      "GrantTitle": "NCCIH Natural Product Mid Phase Clinical Trial (R01 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-271",
-      "Status": "posted",
-      "ApplicationDeadline": "11/13/2026",
-      "PostedDate": "12/02/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357493",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357493",
-      "Source": "federal"
-    },
-    {
       "Title": "NCCIH Multi-Site Feasibility Clinical Trials of Mind and Body Interventions (R01 Clinical Trial Required)",
       "GrantTitle": "NCCIH Multi-Site Feasibility Clinical Trials of Mind and Body Interventions (R01 Clinical Trial Required)",
       "Description": "",
@@ -31960,23 +31943,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NCCIH Natural Product Early Phase Clinical Trial Phased Innovation Award (R61/R33 Clinical Trial Required)",
-      "GrantTitle": "NCCIH Natural Product Early Phase Clinical Trial Phased Innovation Award (R61/R33 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-269",
-      "Status": "posted",
-      "ApplicationDeadline": "11/13/2026",
-      "PostedDate": "12/02/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357490",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357490",
-      "Source": "federal"
-    },
-    {
       "Title": "Prevention and Intervention Approaches for Fetal Alcohol Spectrum Disorders (R61/R33 Clinical Trial Optional)",
       "GrantTitle": "Prevention and Intervention Approaches for Fetal Alcohol Spectrum Disorders (R61/R33 Clinical Trial Optional)",
       "Description": "",
@@ -32555,23 +32521,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIDA Mentored Clinical Scientist Development Program Award in Substance Use and Substance Use Disorder Research (K12 Clinical Trial Optional)",
-      "GrantTitle": "NIDA Mentored Clinical Scientist Development Program Award in Substance Use and Substance Use Disorder Research (K12 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-24-089",
-      "Status": "posted",
-      "ApplicationDeadline": "11/13/2026",
-      "PostedDate": "01/03/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "351679",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/351679",
-      "Source": "federal"
-    },
-    {
       "Title": "Competing Revisions to Existing NIH Single Project Research Grants and Cooperative Agreements (Clinical Trial Optional)",
       "GrantTitle": "Competing Revisions to Existing NIH Single Project Research Grants and Cooperative Agreements (Clinical Trial Optional)",
       "Description": "",
@@ -32943,23 +32892,6 @@
       "AwardFloor": 0,
       "OpportunityID": "356530",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/356530",
-      "Source": "federal"
-    },
-    {
-      "Title": "NCCIH Natural Product Early Phase Clinical Trial Award (R33 Clinical Trial Required)",
-      "GrantTitle": "NCCIH Natural Product Early Phase Clinical Trial Award (R33 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-270",
-      "Status": "posted",
-      "ApplicationDeadline": "11/13/2026",
-      "PostedDate": "12/02/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357492",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357492",
       "Source": "federal"
     },
     {
@@ -41718,23 +41650,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
-      "GrantTitle": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "FHWA-GADC-27-001",
-      "Status": "posted",
-      "ApplicationDeadline": "12/28/2026",
-      "PostedDate": "11/12/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364263",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364263",
-      "Source": "federal"
-    },
-    {
       "Title": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "GrantTitle": "Silcon Carbide Cladding Lead Test Rod Development-Phase 1",
       "Description": "",
@@ -41784,16 +41699,33 @@
       "OpportunityID": "364003",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364003",
       "Source": "federal"
+    },
+    {
+      "Title": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
+      "GrantTitle": "Fiscal Year 2026 Great American Digital Corridors (GADC) Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "FHWA-GADC-27-001",
+      "Status": "posted",
+      "ApplicationDeadline": "12/28/2026",
+      "PostedDate": "11/12/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364263",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364263",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2562,
+  "totalCount": 2558,
   "sources": {
     "ca": {
       "count": 2030,
       "success": true
     },
     "federal": {
-      "count": 806,
+      "count": 802,
       "success": true
     }
   },
