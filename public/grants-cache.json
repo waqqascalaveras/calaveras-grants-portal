@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-16T06:23:38.658969Z",
+  "fetchedAt": "2026-11-16T18:11:21.352623Z",
   "success": true,
   "grants": [
     {
@@ -41699,16 +41699,67 @@
       "OpportunityID": "364263",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364263",
       "Source": "federal"
+    },
+    {
+      "Title": "Educational Hub for Expanding the Computational Genomics and Data Science Workforce (U24 Clinical Trials Not Allowed)",
+      "GrantTitle": "Educational Hub for Expanding the Computational Genomics and Data Science Workforce (U24 Clinical Trials Not Allowed)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "RFA-HG-28-008",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "11/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364269",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364269",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIH Research Center Core Grants",
+      "GrantTitle": "NIH Research Center Core Grants",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "PA-28-086",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "11/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364268",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364268",
+      "Source": "federal"
+    },
+    {
+      "Title": "Strengthening U.S. Public Health Infrastructure, Workforce, and Data Systems",
+      "GrantTitle": "Strengthening U.S. Public Health Infrastructure, Workforce, and Data Systems",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PW-27-0038",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "11/16/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364270",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364270",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2557,
+  "totalCount": 2560,
   "sources": {
     "ca": {
       "count": 2030,
       "success": true
     },
     "federal": {
-      "count": 801,
+      "count": 804,
       "success": true
     }
   },
