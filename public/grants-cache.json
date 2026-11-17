@@ -1,7 +1,39 @@
 {
-  "fetchedAt": "2026-11-17T06:15:57.734332Z",
+  "fetchedAt": "2026-11-17T18:11:12.996972Z",
   "success": true,
   "grants": [
+    {
+      "Title": "Prop 4 Invasive Species Grant",
+      "GrantTitle": "Prop 4 Invasive Species Grant",
+      "Description": "The California Department of Food and Agriculture (CDFA) on behalf of the Invasive Species Council of California (ISCC) is pleased to announce funding availability through the Climate Bond for Invasive Species Grants (ISG) in the amount of $16,450,000. Projects shall minimize the ecological, economic, and human health impacts caused by invasive species and restore and protect biodiversity and ecosystem health, with particular attention to projects providing direct and meaningful benefits to disadvantaged communities, severely disadvantaged communities, and vulnerable populations. Individual grant awards can range from $250,000 to $1,000,000, and CDFA reserves the right to offer an award amount other than the amount requested.  The maximum grant duration is 36 months; awarded projects and all associated expenditures must be completed within 36 months of the agreement start date. Costs incurred before the beginning of the grant agreement will not be reimbursed. No-cost time extensions may be considered on a case-by-case basis in compliance with all applicable state contracting rules and regulations. The Climate Bond language requires that \u201cat least 40 percent of the total funding made available pursuant to this division shall be invested in programs or projects that provide direct and meaningful benefits to disadvantaged communities, severely disadvantaged communities, and vulnerable populations.\u201d\u00a0  Eligible applicants must be a: Public college or university, Federal, state, or local government entities, including Tribal entities, 501(c)(3) Non-profit organization, Special district, Joint powers authority, and Mutual water companies. Allowable costs include those costs necessary to complete the grant objectives and include, but are not limited to the following: 1.Salaries and fringe benefits for staff conducting work on the project. 2.Operating expenses for items required to complete work on the project. 3.Supplies must be used exclusively for the project. 4.Travel necessary to complete the work of the project. 5.Equipment necessary to complete the work of the project. 6.Contractor expenses associated with subawards identified in the agreement for completion of work associated with the project. 7.Attendance at meetings or conferences in alignment with the work project. 8.Outreach and communications costs associated with the project. 9.Training necessary to complete the project. 10.Indirect costs incurred for common or joint objectives that cannot be specifically identified with a particular project. Please see the guidance from the Climate Bond for details on the four acceptable indirect cost rates. See page 3 of the ISG Budget Template for more details. Please note applicants will need to complete the attached Cover page and Narrative and Budget Template and attach them to the application prior to submission.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "forecasted",
+      "ApplicationDeadline": null,
+      "PostedDate": "",
+      "EstAvailFunds": "$16,450,000.00",
+      "Categories": "Agriculture; Animal Services; Disadvantaged Communities; Disaster Prevention & Relief; Education; Energy; Environment & Water; Health & Human Services; Housing, Community and Economic Development; Parks & Recreation; Science, Technology, and Research & Development",
+      "ApplicantType": "Business; Nonprofit; Other Legal Entity; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 194676,
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "2026-27 Human Trafficking Victim Assistance (HV) Program",
+      "GrantTitle": "2026-27 Human Trafficking Victim Assistance (HV) Program",
+      "Description": "Using a trauma-informed, culturally sensitive, victim/survivor centered approach, Subrecipients must provide comprehensive services to victims/survivors of human trafficking (sex trafficking and labor trafficking) and their children.Human trafficking caseworkers must conduct an initial assessment to identify the immediate needs of the victim/survivor (e.g., shelter, food, and clothing), assist the victim/survivor in addressing safety concerns, and provide ongoing, intensive case management as appropriate to the victim\u2019s/survivor\u2019s needs.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2027-01-12 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$20,000,000.00",
+      "Categories": "Health & Human Services",
+      "ApplicantType": "Nonprofit",
+      "GrantInfoURL": "",
+      "PortalID": 194670,
+      "Source": "ca.gov"
+    },
     {
       "Title": "Psychedelic Precision Medicine Research with Veterans",
       "GrantTitle": "Psychedelic Precision Medicine Research with Veterans",
@@ -38624,23 +38656,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
-      "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "CDC-RFA-PS-27-0008",
-      "Status": "forecasted",
-      "ApplicationDeadline": "",
-      "PostedDate": "05/11/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "362349",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
-      "Source": "federal"
-    },
-    {
       "Title": "NIH Director's Early Independence Award (DP5 Clinical Trial Optional)",
       "GrantTitle": "NIH Director's Early Independence Award (DP5 Clinical Trial Optional)",
       "Description": "",
@@ -40970,23 +40985,6 @@
       "Source": "federal"
     },
     {
-      "Title": "APEX Accelerator-Option Period for Existing Award Recipients",
-      "GrantTitle": "APEX Accelerator-Option Period for Existing Award Recipients",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DOW2027APEXACCELERATORCLOSED",
-      "Status": "posted",
-      "ApplicationDeadline": "07/04/2027",
-      "PostedDate": "11/04/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364213",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364213",
-      "Source": "federal"
-    },
-    {
       "Title": "Women's Initiative for Screening and Health (WISH)",
       "GrantTitle": "Women's Initiative for Screening and Health (WISH)",
       "Description": "",
@@ -41529,12 +41527,46 @@
       "OpportunityID": "353751",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/353751",
       "Source": "federal"
+    },
+    {
+      "Title": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "GrantTitle": "Controlling and Preventing STIs in US Health Departments (CAP-STIs)",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "CDC-RFA-PS-27-0008",
+      "Status": "forecasted",
+      "ApplicationDeadline": "",
+      "PostedDate": "05/11/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "362349",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/362349",
+      "Source": "federal"
+    },
+    {
+      "Title": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "GrantTitle": "APEX Accelerator-Option Period for Existing Award Recipients",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DOW2027APEXACCELERATORCLOSED",
+      "Status": "posted",
+      "ApplicationDeadline": "07/12/2027",
+      "PostedDate": "11/04/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364213",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364213",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2547,
+  "totalCount": 2549,
   "sources": {
     "ca": {
-      "count": 2030,
+      "count": 2032,
       "success": true
     },
     "federal": {
