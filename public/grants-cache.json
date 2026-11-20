@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T18:11:09.464061Z",
+  "fetchedAt": "2026-11-20T06:15:46.514870Z",
   "success": true,
   "grants": [
     {
@@ -29917,23 +29917,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIH StrokeNet Clinical Trials and Biomarker Studies for Stroke Treatment, Recovery, and Prevention (UG3/UH3 Clinical Trial Optional)",
-      "GrantTitle": "NIH StrokeNet Clinical Trials and Biomarker Studies for Stroke Treatment, Recovery, and Prevention (UG3/UH3 Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-052",
-      "Status": "posted",
-      "ApplicationDeadline": "11/19/2026",
-      "PostedDate": "11/20/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357256",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357256",
-      "Source": "federal"
-    },
-    {
       "Title": "NICHD Resource Program Grants in Bioinformatics (P41 Clinical Trial Not Allowed)",
       "GrantTitle": "NICHD Resource Program Grants in Bioinformatics (P41 Clinical Trial Not Allowed)",
       "Description": "",
@@ -32583,23 +32566,6 @@
       "AwardFloor": 0,
       "OpportunityID": "357330",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/357330",
-      "Source": "federal"
-    },
-    {
-      "Title": "Seamless Early-Stage Clinical Drug Development (Phase 1 to 2a) for Novel therapeutic Agents for the Spectrum of Alzheimer's Disease (AD) and AD-related Dementias (ADRD) (UG3/UH3 Clinical Trial Required)",
-      "GrantTitle": "Seamless Early-Stage Clinical Drug Development (Phase 1 to 2a) for Novel therapeutic Agents for the Spectrum of Alzheimer's Disease (AD) and AD-related Dementias (ADRD) (UG3/UH3 Clinical Trial Required)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PAR-25-226",
-      "Status": "posted",
-      "ApplicationDeadline": "11/19/2026",
-      "PostedDate": "11/22/2024",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "357343",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/357343",
       "Source": "federal"
     },
     {
@@ -39692,23 +39658,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Easement Restoration and Stewardship",
-      "GrantTitle": "Easement Restoration and Stewardship",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-NHQ-ACEP-26-NOFO0001456",
-      "Status": "posted",
-      "ApplicationDeadline": "11/19/2026",
-      "PostedDate": "09/25/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "363920",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/363920",
-      "Source": "federal"
-    },
-    {
       "Title": "National Resource Network for the Study of Human Auditory and Vestibular Disorders (U24 Clinical Trial Not Allowed)",
       "GrantTitle": "National Resource Network for the Study of Human Auditory and Vestibular Disorders (U24 Clinical Trial Not Allowed)",
       "Description": "",
@@ -41426,14 +41375,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2541,
+  "totalCount": 2538,
   "sources": {
     "ca": {
       "count": 2033,
       "success": true
     },
     "federal": {
-      "count": 782,
+      "count": 779,
       "success": true
     }
   },
