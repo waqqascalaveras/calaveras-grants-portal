@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-20T18:11:12.925340Z",
+  "fetchedAt": "2026-11-21T06:13:50.551969Z",
   "success": true,
   "grants": [
     {
@@ -38977,23 +38977,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
-      "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "DE-FOA-0003339",
-      "Status": "posted",
-      "ApplicationDeadline": "11/30/2026",
-      "PostedDate": "01/08/2025",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "358100",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358100",
-      "Source": "federal"
-    },
-    {
       "Title": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
       "GrantTitle": "HEAL Initiative: Integrative Management of chronic Pain and OUD for Whole Recovery (IMPOWR) - Building Engagement, Assistance, Capacity, Outreach, and Networks (BEACON) Center (U2C Clinical Trial Not Allowed)",
       "Description": "",
@@ -39943,23 +39926,6 @@
       "AwardFloor": 0,
       "OpportunityID": "360873",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/360873",
-      "Source": "federal"
-    },
-    {
-      "Title": "BJA FY 2026 Justice Reinvestment Initiative: Strengthening State and Local Operations to Reduce Crime and Recidivism",
-      "GrantTitle": "BJA FY 2026 Justice Reinvestment Initiative: Strengthening State and Local Operations to Reduce Crime and Recidivism",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-BJA-2026-172770",
-      "Status": "posted",
-      "ApplicationDeadline": "11/20/2026",
-      "PostedDate": "10/07/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364037",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364037",
       "Source": "federal"
     },
     {
@@ -41221,23 +41187,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
-      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "USDA-FS-2026-LSR",
-      "Status": "posted",
-      "ApplicationDeadline": "01/26/2027",
-      "PostedDate": "10/28/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364144",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
-      "Source": "federal"
-    },
-    {
       "Title": "FY 2027 Crash Causal Factors Program",
       "GrantTitle": "FY 2027 Crash Causal Factors Program",
       "Description": "",
@@ -41423,9 +41372,43 @@
       "OpportunityID": "364297",
       "GrantInfoURL": "https://www.grants.gov/search-results-detail/364297",
       "Source": "federal"
+    },
+    {
+      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-FS-2026-LSR",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "10/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364144",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
+      "Source": "federal"
+    },
+    {
+      "Title": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "GrantTitle": "Advanced Nuclear Energy Licensing Cost-Share Grant Program",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "DE-FOA-0003339",
+      "Status": "posted",
+      "ApplicationDeadline": "01/31/2027",
+      "PostedDate": "01/08/2025",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "358100",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/358100",
+      "Source": "federal"
     }
   ],
-  "totalCount": 2541,
+  "totalCount": 2540,
   "sources": {
     "ca": {
       "count": 2034,
@@ -41437,7 +41420,7 @@
     }
   },
   "duplicates": {
-    "count": 274,
+    "count": 275,
     "examples": [
       {
         "original": "FY 2026-27 Intimate Partner Violence Prevention (FD) Program Supplemental",
