@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-21T06:13:50.551969Z",
+  "fetchedAt": "2026-11-21T18:09:15.525361Z",
   "success": true,
   "grants": [
+    {
+      "Title": "2026 National School Lunch Program Equipment Assistance Grant",
+      "GrantTitle": "2026 National School Lunch Program Equipment Assistance Grant",
+      "Description": "The National School Lunch Program (NSLP) Equipment Assistance Grant is funded by the U.S. Department of Agriculture (USDA) and administered by the California Department of Education (CDE).\u00a0  School Food Authorities (SFA) must submit the 2026 NSLP EAG application found online on the CDE, NSLP-EAG website. If your agency would like to apply for the EAG, please complete the application and have the appropriate agency official electronically sign it. The CDE must receive your online submission no later than 4 p.m. on Friday, December 18, 2026.\u00a0  The CDE will award competitive grants of up to $100,000 per SFA. Each SFA may apply for no more than five sites. A central kitchen is considered one site regardless of the number of sites that benefit from its equipment purchases. Recipients will receive up to 90 percent of the funding at the time of award with the remaining 10 percent awarded upon approval of all invoices. The CDE will recover funds from SFAs that do not submit invoices for approved budget items by September 1, 2028. All state procurement and expenditure activities must be completed no later than the end of the federal fiscal year 2028, September 30, 2028.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-12-18 16:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,114,203.00",
+      "Categories": "Education; Food & Nutrition",
+      "ApplicantType": "Other Legal Entity; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": 194916,
+      "Source": "ca.gov"
+    },
     {
       "Title": "FFY2026-27 Prosecutorial Restorative Justice Pilot (PJ) Program",
       "GrantTitle": "FFY2026-27 Prosecutorial Restorative Justice Pilot (PJ) Program",
@@ -73,7 +89,7 @@
       "AgencyName": "",
       "Agency": "",
       "Status": "active",
-      "ApplicationDeadline": "2026-12-18 15:00:00",
+      "ApplicationDeadline": "2027-06-04 15:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$4,000,000.00",
       "Categories": "Disadvantaged Communities; Health & Human Services; Science, Technology, and Research & Development; Veterans & Military",
@@ -160,6 +176,22 @@
       "ApplicantType": "Public Agency",
       "GrantInfoURL": "",
       "PortalID": 194244,
+      "Source": "ca.gov"
+    },
+    {
+      "Title": "High Road to Construction Careers 2026",
+      "GrantTitle": "High Road to Construction Careers 2026",
+      "Description": "Funding for the HRCC 2026 program is being awarded in two rounds. All current HRCC grantees are eligible to apply. In Round Two, approximately $19 million will be awarded to regions with demonstrated hiring demand through a competitive application process.  The CWDB will release a closed, competitive funding opportunity during the 2026-27 State Fiscal Year, through which the remaining HRCC 2026 funds will be awarded to further support HRCC program goals and align investments with regional labor market demand. Additionally, past grantee performance, including compliance with and timeliness of required participant data collection and reporting under previous HRCC grants, will be considered. Additional information about eligibility, funding amounts, application requirements, and evaluation criteria will be released in the Round Two solicitation. Details outlined in the RFA regarding the Round Two solicitation are subject to change.  HRCC 2026 grant program\u2019s objectives are to:  Meet demand: Train workers to meet the hiring needs of public infrastructure and construction projects.  Promote access: Support entry into joint-apprenticeship programs for individuals who have traditionally faced barriers to employment in the construction trades, including women, veterans, and justice-involved individuals.  Boost the economy: Increase employment, boost incomes, and drive economic activity in communities that need it most.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2026-12-03 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$19,000,000.00",
+      "Categories": "Disadvantaged Communities; Education; Employment, Labor & Training",
+      "ApplicantType": "Business; Nonprofit; Public Agency",
+      "GrantInfoURL": "",
+      "PortalID": 192864,
       "Source": "ca.gov"
     },
     {
@@ -272,22 +304,6 @@
       "ApplicantType": "Public Agency; Tribal Government",
       "GrantInfoURL": "",
       "PortalID": 163104,
-      "Source": "ca.gov"
-    },
-    {
-      "Title": "High Road to Construction Careers 2026",
-      "GrantTitle": "High Road to Construction Careers 2026",
-      "Description": "Funding for the HRCC 2026 program is being awarded in two rounds. All current HRCC grantees are eligible to apply. In Round Two, approximately $19 million will be awarded to regions with demonstrated hiring demand through a competitive application process.  The CWDB will release a closed, competitive funding opportunity during the 2026-27 State Fiscal Year, through which the remaining HRCC 2026 funds will be awarded to further support HRCC program goals and align investments with regional labor market demand. Additionally, past grantee performance, including compliance with and timeliness of required participant data collection and reporting under previous HRCC grants, will be considered. Additional information about eligibility, funding amounts, application requirements, and evaluation criteria will be released in the Round Two solicitation. Details outlined in the RFA regarding the Round Two solicitation are subject to change.  HRCC 2026 grant program\u2019s objectives are to:  Meet demand: Train workers to meet the hiring needs of public infrastructure and construction projects.  Promote access: Support entry into joint-apprenticeship programs for individuals who have traditionally faced barriers to employment in the construction trades, including women, veterans, and justice-involved individuals.  Boost the economy: Increase employment, boost incomes, and drive economic activity in communities that need it most.",
-      "AgencyName": "",
-      "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "2026-12-05 17:00:00",
-      "PostedDate": "",
-      "EstAvailFunds": "$19,000,000.00",
-      "Categories": "Disadvantaged Communities; Education; Employment, Labor & Training",
-      "ApplicantType": "Business; Nonprofit; Public Agency",
-      "GrantInfoURL": "",
-      "PortalID": 192864,
       "Source": "ca.gov"
     },
     {
@@ -424,7 +440,7 @@
       "Description": "Eligible applicants apply for program funds through the nomination of projects.\u00a0 All projects nominated must be identified in a currently adopted regional transportation plan.\u00a0 The Commission is required to evaluate and select submitted applications based on the following criteria:  Freight System Factors: Throughput, Velocity, and Reliability  Transportation System Factors: Safety, Congestion Reduction/Mitigation, Key Transportation Bottleneck Relief, Multi-Modal Strategy, Interregional Benefits, and Advanced Technology  Community Impact Factors: Air Quality Impact, Community Impact Mitigation, Economic/Jobs Growth, Cost Effectiveness  Project Readiness: Ability to complete the project in a timely manner  Matching Funds: Demonstration of the required 30% matching funds  Leveraging: The leveraging and coordination of funds from multiple sources  Program guidelines are created in consultation with agencies identified in Governor's Executive Order B-32-15, regional transportation planning agencies, local governments, private industry, advocates, and other interested parties. Prior to adoption of the guidelines, the Commission conducts numerous public workshops throughout the state to solicit input and feedback.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
+      "Status": "closed",
       "ApplicationDeadline": "2026-11-20 23:59:00",
       "PostedDate": "",
       "EstAvailFunds": "$1,287,958,000.00",
@@ -41408,10 +41424,10 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2540,
+  "totalCount": 2541,
   "sources": {
     "ca": {
-      "count": 2034,
+      "count": 2035,
       "success": true
     },
     "federal": {
