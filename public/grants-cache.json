@@ -1,7 +1,23 @@
 {
-  "fetchedAt": "2026-11-24T06:15:59.295803Z",
+  "fetchedAt": "2026-11-24T18:10:57.735360Z",
   "success": true,
   "grants": [
+    {
+      "Title": "California State Duck Stamp Funding Fiscal Year 2027",
+      "GrantTitle": "California State Duck Stamp Funding Fiscal Year 2027",
+      "Description": "The goals of the Stamp Project, as described in legislation, are to protect, preserve, restore, enhance, and develop migratory waterfowl breeding and wintering habitat, evaluate habitat projects, and conduct waterfowl resource assessments and other waterfowl related research. To achieve these goals the Department has adopted the following four objectives:  1.\u00a0\u00a0\u00a0\u00a0 Identify activities which are needed for the conservation and maintenance of California's waterfowl habitat on public land.  2.\u00a0\u00a0\u00a0\u00a0 Develop and fund project-specific strategies to protect, enhance, maintain or restore significant waterfowl habitat on public land.  3.\u00a0\u00a0\u00a0\u00a0 Develop and fund project-specific strategies to conserve waterfowl populations.  4.\u00a0\u00a0\u00a0\u00a0 Develop, administer, and fund a grants program for waterfowl conservation.  Examples of eligible projects include, but are not limited to:  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Enhance/restore/maintain wintering or nesting habitat for CA waterfowl species.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Restoring or creating brood ponds/summer water for CA waterfowl species.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Enhancing or restoring fall and spring use areas for CA waterfowl species.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Establishing islands and loafing bars.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Levee repair, replacement of water control structures, pump repair and installation.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Fence installation to control and/or manage livestock or wildlife and/or to enhance upland habitat for waterfowl nesting and goose forage.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Removal of nonnative invasive plant species and restoration (active or passive) of native and other desirable wetland or upland vegetation.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Research to obtain population parameters of species/subspecies/population.  \u00b7\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 Investigations of limited resources for specific species or subspecies such as eelgrass for Black brant.",
+      "AgencyName": "",
+      "Agency": "",
+      "Status": "active",
+      "ApplicationDeadline": "2027-01-22 17:00:00",
+      "PostedDate": "",
+      "EstAvailFunds": "$2,000,000.00",
+      "Categories": "Environment & Water",
+      "ApplicantType": "Nonprofit; Public Agency; Tribal Government",
+      "GrantInfoURL": "",
+      "PortalID": 194937,
+      "Source": "ca.gov"
+    },
     {
       "Title": "2026 National School Lunch Program Equipment Assistance Grant",
       "GrantTitle": "2026 National School Lunch Program Equipment Assistance Grant",
@@ -2856,8 +2872,8 @@
       "Description": "The Department of Resources Recycling and Recovery (CalRecycle) receives an annual and continuous appropriation of $1,000,000 from the Beverage Container Recycling Fund to administer the Empty Glass Beverage Transportation Grant Program (PRC section 14545).  All projects must be located within California and transportation must come from California located businesses.  Eligible projects include:  \u2022 Projects that facilitate the use of rail transportation of empty glass beverage containers to glass processing facilities Certified by CalRecycle within the state of California.  Eligible costs and activities may include:  \u2022 Equipment related to transportation of empty glass beverage containers through the use of rail. (e.g. loaders, bunkers, scales, emptying hoppers)  \u2022 Supplies and materials related to rail transportation of empty glass beverage containers.  \u2022 Transportation costs of empty glass beverage containers via rail.  \u2022 Construction of a new rail line or updating of an existing rail line to improve access to empty glass beverage container transportation. (i.e. steel rails, wooden ties or sleepers, ballast, spikes, bolts, and rail plates)  \u2022 Personnel directly related to project construction, empty glass beverage container rail transportation, and the implementation of equipment, materials and supplies.",
       "AgencyName": "",
       "Agency": "",
-      "Status": "active",
-      "ApplicationDeadline": "Ongoing",
+      "Status": "closed",
+      "ApplicationDeadline": "2026-03-26 00:00:00",
       "PostedDate": "",
       "EstAvailFunds": "$4,000,000.00",
       "Categories": "Environment & Water",
@@ -40404,23 +40420,6 @@
       "Source": "federal"
     },
     {
-      "Title": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
-      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "O-NIJ-2026-172805",
-      "Status": "posted",
-      "ApplicationDeadline": "11/30/2026",
-      "PostedDate": "10/22/2026",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "364139",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364139",
-      "Source": "federal"
-    },
-    {
       "Title": "Fetal, Infant, and Child Death Review Program",
       "GrantTitle": "Fetal, Infant, and Child Death Review Program",
       "Description": "",
@@ -41271,6 +41270,40 @@
       "Source": "federal"
     },
     {
+      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "USDA-FS-2026-LSR",
+      "Status": "posted",
+      "ApplicationDeadline": "01/26/2027",
+      "PostedDate": "10/28/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364144",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
+      "Source": "federal"
+    },
+    {
+      "Title": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
+      "GrantTitle": "NIJ FY 2026 Research and Evaluation on Drones as First Responders",
+      "Description": "",
+      "AgencyName": "",
+      "Agency": "",
+      "OpportunityNumber": "O-NIJ-2026-172805",
+      "Status": "posted",
+      "ApplicationDeadline": "11/30/2026",
+      "PostedDate": "10/22/2026",
+      "EstAvailFunds": "N/A",
+      "AwardCeiling": 0,
+      "AwardFloor": 0,
+      "OpportunityID": "364139",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364139",
+      "Source": "federal"
+    },
+    {
       "Title": "OJP FY 2026 Special Attorneys Program Round 12",
       "GrantTitle": "OJP FY 2026 Special Attorneys Program Round 12",
       "Description": "",
@@ -41288,20 +41321,20 @@
       "Source": "federal"
     },
     {
-      "Title": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
-      "GrantTitle": "Landscape Scale Restoration Grant Program for Non-Federal Lands",
+      "Title": "NEA Jazz Masters Tribute Concert and Related Events, FY 2027",
+      "GrantTitle": "NEA Jazz Masters Tribute Concert and Related Events, FY 2027",
       "Description": "",
       "AgencyName": "",
       "Agency": "",
-      "OpportunityNumber": "USDA-FS-2026-LSR",
+      "OpportunityNumber": "NEAPS2605",
       "Status": "posted",
-      "ApplicationDeadline": "01/26/2027",
-      "PostedDate": "10/28/2026",
+      "ApplicationDeadline": "01/14/2027",
+      "PostedDate": "11/24/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
       "AwardFloor": 0,
-      "OpportunityID": "364144",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364144",
+      "OpportunityID": "364303",
+      "GrantInfoURL": "https://www.grants.gov/search-results-detail/364303",
       "Source": "federal"
     },
     {
@@ -41339,14 +41372,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2536,
+  "totalCount": 2538,
   "sources": {
     "ca": {
-      "count": 2035,
+      "count": 2036,
       "success": true
     },
     "federal": {
-      "count": 776,
+      "count": 777,
       "success": true
     }
   },
