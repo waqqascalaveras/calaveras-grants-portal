@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T18:10:57.735360Z",
+  "fetchedAt": "2026-11-25T06:16:13.224053Z",
   "success": true,
   "grants": [
     {
@@ -32379,23 +32379,6 @@
       "Source": "federal"
     },
     {
-      "Title": "Competing Revisions to Existing NIH Single Project Research Grants and Cooperative Agreements (Clinical Trial Optional)",
-      "GrantTitle": "Competing Revisions to Existing NIH Single Project Research Grants and Cooperative Agreements (Clinical Trial Optional)",
-      "Description": "",
-      "AgencyName": "",
-      "Agency": "",
-      "OpportunityNumber": "PA-23-317",
-      "Status": "posted",
-      "ApplicationDeadline": "11/24/2026",
-      "PostedDate": "11/24/2023",
-      "EstAvailFunds": "N/A",
-      "AwardCeiling": 0,
-      "AwardFloor": 0,
-      "OpportunityID": "351124",
-      "GrantInfoURL": "https://www.grants.gov/search-results-detail/351124",
-      "Source": "federal"
-    },
-    {
       "Title": "National Center for Construction Safety and Health Research and Translation (U54)",
       "GrantTitle": "National Center for Construction Safety and Health Research and Translation (U54)",
       "Description": "",
@@ -41362,7 +41345,7 @@
       "Agency": "",
       "OpportunityNumber": "RFA-OH-26-001",
       "Status": "posted",
-      "ApplicationDeadline": "12/08/2026",
+      "ApplicationDeadline": "01/05/2027",
       "PostedDate": "05/08/2026",
       "EstAvailFunds": "N/A",
       "AwardCeiling": 0,
@@ -41372,14 +41355,14 @@
       "Source": "federal"
     }
   ],
-  "totalCount": 2538,
+  "totalCount": 2537,
   "sources": {
     "ca": {
       "count": 2036,
       "success": true
     },
     "federal": {
-      "count": 777,
+      "count": 776,
       "success": true
     }
   },
